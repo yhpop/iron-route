@@ -1,0 +1,87 @@
+{
+  "boundary": "actual generated 1024² existing B, CPU bytes only",
+  "texels": 1048576,
+  "totalBytes": 4194304,
+  "oldMaskSHA256": "a3ec7d03558fe4c666c8fb893ee824bab477cf76cf5c130997882800a5348d8c",
+  "newMaskSHA256": "01050b3833518cc14345327eb7e128c09a8c401f16ce042175c7eaaffc28ac7a",
+  "changedB": 1041337,
+  "RGAByteMismatches": 0,
+  "channelSHA256": [
+    {
+      "channel": "R",
+      "old": "9bb398cfa903addbc769347c108332409671b87709e92f296b7c4310440557e9",
+      "new": "9bb398cfa903addbc769347c108332409671b87709e92f296b7c4310440557e9"
+    },
+    {
+      "channel": "G",
+      "old": "5e6e1acd140518bab72ac1018c01d2f6efa383a307a15111bee67f2fa3236cbf",
+      "new": "5e6e1acd140518bab72ac1018c01d2f6efa383a307a15111bee67f2fa3236cbf"
+    },
+    {
+      "channel": "B",
+      "old": "e389e574a01b25e67f7fbb504d8f243ca227bce1e3fb57983b906deda3f00945",
+      "new": "9a726935c007862484f45746dbe58a77ca393f469ec4206d10057eee0f898fc1"
+    },
+    {
+      "channel": "A",
+      "old": "3949e22eb50c996e883de0d802256d364e6f373fdce18c8e06f32270d5aaf61a",
+      "new": "3949e22eb50c996e883de0d802256d364e6f373fdce18c8e06f32270d5aaf61a"
+    }
+  ],
+  "lowBlt035Fraction": 0.8550491333007812,
+  "highBgt072Fraction": 0.044615745544433594,
+  "minByte": 22,
+  "maxByte": 247,
+  "histogram16": [
+    0,
+    384268,
+    392861,
+    58724,
+    41048,
+    29841,
+    23959,
+    19562,
+    16308,
+    14670,
+    13879,
+    13295,
+    12939,
+    12228,
+    11913,
+    3081
+  ],
+  "anchors": [
+    {
+      "x": -26,
+      "z": 25,
+      "core": 0.9535461924040884,
+      "falloffX20": 0.12546597691246622,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.005056397559074055
+    },
+    {
+      "x": -30,
+      "z": 18,
+      "core": 0.9608920616438401,
+      "falloffX20": 0.11482010188627353,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.00535908433753296
+    },
+    {
+      "x": -32,
+      "z": -5,
+      "core": 0.9381265039373629,
+      "falloffX20": 0.12781920572810498,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.006292089056278316
+    },
+    {
+      "x": 19.5,
+      "z": 0,
+      "core": 0.9525454271454673,
+      "falloffX20": 0.10051509121568249,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.005448893838492785
+    }
+  ]
+}

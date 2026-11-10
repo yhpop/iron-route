@@ -1,0 +1,42 @@
+[
+  {
+    "vehicleId": "vanguard",
+    "movements": {
+      "forward": 1.12252475727119,
+      "reverse": 0.8431050431069202,
+      "pivot": 0.7903466666670198
+    }
+  },
+  {
+    "vehicleId": "pz3",
+    "movements": {
+      "forward": 1.381317353621732,
+      "reverse": 1.1446926870167928,
+      "pivot": 0.8826439999993774
+    }
+  },
+  {
+    "vehicleId": "newc-leichttraktor",
+    "movements": {
+      "forward": 1.6009989624041978,
+      "reverse": 1.3846657715208224,
+      "pivot": 1.0343333333330484
+    }
+  },
+  {
+    "vehicleId": "newc-tiger",
+    "movements": {
+      "forward": 0.8644999999947522,
+      "reverse": 0.6352352605822915,
+      "pivot": 0.5633733333332813
+    }
+  },
+  {
+    "vehicleId": "sandfalcon",
+    "movements": {
+      "forward": 1.12252475727119,
+      "reverse": 0.8431050431069202,
+      "pivot": 0.7903466666670198
+    }
+  }
+]

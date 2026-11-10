@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "production_id": "tank-city-v51-rebuilt-20261005",
+  "blender_version": "4.3.2",
+  "blend_file": "Tank_City_V5_Production.blend",
+  "blend_sha256": "8fc13fe7b7e07a1a8147967d8bd605d046c011bae7d9d0441ef22a46fdcf97eb",
+  "audio_file": "source/Tank_City_Final_Soundtrack.wav",
+  "audio_sha256": "9fefc99b5565d9c689a3b96b703564411d0e9dd1f81c5f1c89d795e6925343d6",
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_start": 1,
+    "frame_end": 720,
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 96,
+    "raytracing": true,
+    "raytracing_resolution": "1",
+    "temporal_denoise": false,
+    "threads": 8
+  },
+  "shot_starts": [
+    1,
+    121,
+    265,
+    385,
+    505,
+    601
+  ],
+  "events": {
+    "stop_fire": 481,
+    "impact": 510,
+    "restart": 601
+  }
+}

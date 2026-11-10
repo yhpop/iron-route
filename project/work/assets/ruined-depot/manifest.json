@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "asset": "ruins.glb",
+  "sha256": "6c0748ab179e824f68fbf5ef339cefef9c9b1877628281ee300e405d66ef83c7",
+  "bytes": 12332368,
+  "format": "glTF 2.0 GLB, closed embedded PNG textures",
+  "units": "metres",
+  "coordinateSystem": "right-handed glTF, X right Y up; runtime Z = -source Blender Y",
+  "sourceTransform": {
+    "metresPerSourceUnit": 0.8,
+    "x": ".8*(sourceX-sourceAABBCentreX)",
+    "y": ".8*(sourceZ-sourceAABBMinZ)",
+    "z": "-.8*(sourceY-sourceAABBCentreY)"
+  },
+  "triangles": 757,
+  "meshCount": 3,
+  "materialCount": 1,
+  "imageCount": 3,
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Depot weathered concrete \u2014 baked",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "name": "normal",
+      "role": "tangent-normal",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 2048,
+      "embeddedBytes": 3370913,
+      "sha256": "c61ffb3f505939690bed9f5c465cadeeae1d0ff885f6e1cc1f80ec1c077fafc5",
+      "rgbExtrema": [
+        [
+          64,
+          177
+        ],
+        [
+          69,
+          194
+        ],
+        [
+          220,
+          255
+        ]
+      ],
+      "rgbStandardDeviation": [
+        3.1341657676536756,
+        2.902489586206728,
+        0.6739422231684011
+      ]
+    },
+    {
+      "index": 1,
+      "name": "baseColor",
+      "role": "base-colour",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 2048,
+      "embeddedBytes": 6308529,
+      "sha256": "a8c7b320f5d56f3b4b57303802064958a2ab5df87e16718ad1b26c00d59490f2",
+      "rgbExtrema": [
+        [
+          0,
+          220
+        ],
+        [
+          0,
+          226
+        ],
+        [
+          0,
+          237
+        ]
+      ],
+      "rgbStandardDeviation": [
+        69.13745702034743,
+        70.91787750401154,
+        70.88606796657287
+      ]
+    },
+    {
+      "index": 2,
+      "name": "roughness",
+      "role": "roughness-green-metallic-blue",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 2048,
+      "embeddedBytes": 2610029,
+      "sha256": "8e33866637ada1a18afdee19ef02ba04cc552a9fb9942b3796a3238184674204",
+      "rgbExtrema": [
+        [
+          255,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "rgbStandardDeviation": [
+        0.0,
+        100.35063793218094,
+        0.0
+      ]
+    }
+  ],
+  "modules": {
+    "workshop": {
+      "sourceObject": "polySurface1011",
+      "triangles": 291,
+      "bounds": {
+        "min": [
+          -4.79998779296875,
+          0.0,
+          -6.265538215637207
+        ],
+        "max": [
+          4.799991130828857,
+          3.299938678741455,
+          6.265539646148682
+        ],
+        "size": [
+          9.599978923797607,
+          3.299938678741455,
+          12.531077861785889
+        ]
+      },
+      "rootTransform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "sourceVertices": 155,
+      "sourcePolygons": 117,
+      "surfaceAreaM2": 184.47399977349414,
+      "areaWeightedTexelsPerMetre": 77.59588553797361,
+      "texelsPerMetreTriangleRange": [
+        55.5904168399954,
+        95.81987695096272
+      ],
+      "originalUVSha256": {
+        "UV1": "562b81894c1f301840e4da0396797227d198365545a73bc5127cebfe05f9ffab",
+        "UV2": "23b03f059507309b1b90a2880545da17f222079e44a62c5e653d5f146f0e70e2"
+      }
+    },
+    "broken-corner": {
+      "sourceObject": "polySurface773",
+      "triangles": 308,
+      "bounds": {
+        "min": [
+          -5.014026165008545,
+          0.0,
+          -5.235354900360107
+        ],
+        "max": [
+          5.014026165008545,
+          3.2999379634857178,
+          5.235354900360107
+        ],
+        "size": [
+          10.02805233001709,
+          3.2999379634857178,
+          10.470709800720215
+        ]
+      },
+      "rootTransform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "sourceVertices": 164,
+      "sourcePolygons": 103,
+      "surfaceAreaM2": 98.25855820797733,
+      "areaWeightedTexelsPerMetre": 77.54065581550572,
+      "texelsPerMetreTriangleRange": [
+        0.0,
+        1050.2675849515683
+      ],
+      "originalUVSha256": {
+        "UV1": "f10eb858720e0c53cfb0df2d119bbbd44f04e4591990065339c72ceb1b6add1c",
+        "UV2": "24cbd91547eae3333b9664fa861cd69d542f87901451b5d0252423e730dd06f5"
+      }
+    },
+    "window-wall": {
+      "sourceObject": "polySurface806",
+      "triangles": 158,
+      "bounds": {
+        "min": [
+          -4.800000190734863,
+          0.0,
+          -0.22666016221046448
+        ],
+        "max": [
+          4.800000190734863,
+          3.2999379634857178,
+          0.22666016221046448
+        ],
+        "size": [
+          9.600000381469727,
+          3.2999379634857178,
+          0.45332032442092896
+        ]
+      },
+      "rootTransform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "sourceVertices": 89,
+      "sourcePolygons": 57,
+      "surfaceAreaM2": 44.62752403756531,
+      "areaWeightedTexelsPerMetre": 77.50076879822238,
+      "texelsPerMetreTriangleRange": [
+        67.91244061941934,
+        77.68946052251687
+      ],
+      "originalUVSha256": {
+        "UV1": "3ad81315af81813e55d2f6853c1ad0765822f553eb12086dd0d7c3ff7de01b86",
+        "UV2": "645cd7c7605069374de1ce8c9482c911ffab953d5bb08cd133e15e124c0d9615"
+      }
+    }
+  },
+  "sourceHashes": {
+    "evidence/lfa-recovered-two-uv-audit.blend": "e431e07679d6b9b01b0eda057f873d872199c5a58715182911c5ceffa3f85464",
+    "evidence/Ciment_bris\u00e9.png": "9078d1ae0ba86e0a84a998f0157fd272e0aa273eac98f6f38e690c7baf50d6c3",
+    "sources/destroyedwalls_by_lfa/destroyedWalls_UV1.obj": "dbf70cebd80e0eb80f2d5fc2174e2be9abe75b309f21ab020be115f0b63d0f42",
+    "sources/destroyedwalls_by_lfa/destroyedWalls_UV2.obj": "8885b13999bc34fc1f47e6593910aedbf8fc3f24b7c486356ba7d46b1e97bbe0",
+    "sources/destroyedwalls_by_lfa/detail.bmp": "d47aed414b88bbd7a0bc94528f1c3c89e64afc8efc1cc7779f53f8c0824ab89f",
+    "sources/destroyedwalls_by_lfa/wall.bmp": "2f4efb203f16af670c259ed83546cac4315131e8395af1c241b8da776d22d608"
+  },
+  "license": {
+    "geometry": {
+      "author": "LFA",
+      "license": "CC BY 3.0",
+      "source": "https://opengameart.org/content/destroyed-walls-3d-models",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    "colourOnly": {
+      "author": "Fleurman",
+      "license": "CC0 1.0",
+      "source": "https://opengameart.org/content/destroyed-city-assets",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  },
+  "materialAuthoring": {
+    "colourMapping": "box projection blend .18, .30 repeats per metre / 3.333 metre source-image tile; deterministic ObjectInfo random phase; .23-scale low-frequency weather .72-1.0; uneven base grime .64-1 across lowest .65m; original upward fracture normals dotZ>.23 darkened by .44-.76 aggregate noise",
+    "atlasResolution": [
+      2048,
+      2048
+    ],
+    "islandMarginUV": 0.012,
+    "smartProjectionAngleDegrees": 30,
+    "bakeMarginPixels": 16,
+    "roughness": {
+      "body": [
+        0.78,
+        0.94
+      ],
+      "fractureAdditional": 0.1,
+      "clamp": [
+        0,
+        1
+      ]
+    },
+    "normal": "artist-authored noise26/metre, bump strength .22, distance .012m; upward fracture noise11/metre, strength .20 distance .018m; tangent-space bake; not measured PBR",
+    "sourceUVsPreserved": [
+      "UV1",
+      "UV2"
+    ],
+    "outputAxes": "glTF X right Y up Z = -Blender Y",
+    "scale": 0.8
+  },
+  "atlasCoverage": 0.4695831681581299,
+  "atlasOverlapCheck": {
+    "positiveAreaIntersectionsAbove1eMinus8": [],
+    "trianglePairsChecked": 286146
+  },
+  "shippingUVChannel": 0,
+  "budget": {
+    "uncompressedRGBA8TextureBytes": 50331648,
+    "estimatedWithMipmapsBytes": 67108864.0,
+    "compression": "lossless PNG; no Draco/Meshopt/KTX2 tools installed or fetched; no performance claim"
+  },
+  "collision": "Not authored in Task1. Task2 derives real apertures against this exact geometry."
+}

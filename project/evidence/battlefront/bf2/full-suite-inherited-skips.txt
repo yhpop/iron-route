@@ -1,0 +1,21 @@
+﹣ crossfire complete independent input replay newc-leichttraktor-covered-locked-westlane-straight-clear-inputs.json.gz
+﹣ crossfire complete independent input replay newc-leichttraktor-direct-locked-inputs.json.gz
+﹣ crossfire complete independent input replay newc-tiger-covered-locked-westlane-inputs.json.gz
+﹣ crossfire complete independent input replay newc-tiger-direct-locked-inputs.json.gz
+﹣ crossfire complete independent input replay pz3-covered-locked-westlane-straight-clear-inputs.json.gz
+﹣ crossfire complete independent input replay pz3-direct-locked-inputs.json.gz
+﹣ crossfire complete independent input replay vanguard-covered-locked-westlane-inputs.json.gz
+﹣ crossfire complete independent input replay vanguard-direct-locked-inputs.json.gz
+﹣ V3 complete independent full-state input replay sandfalcon-covered-locked-westlane-straight-clear-southentry-inputs.json.gz
+﹣ V3 complete independent full-state input replay sandfalcon-covered-locked-westlane-straight-clear-spawnclear-inputs.json.gz
+﹣ V3 complete independent full-state input replay sandfalcon-direct-locked-spawnclear-inputs.json.gz
+﹣ V3 acceptance includes independently replayable wins for both genuine fifth-chassis routes
+﹣ V4 complete independent full-state input replay sandfalcon-direct-final-flat-direct-04-inputs.json.gz
+﹣ V4 complete independent full-state input replay sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz
+﹣ V4 complete independent full-state input replay newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz
+﹣ V4 acceptance includes independently replayable wins for both genuine fifth-chassis routes
+﹣ scorched complete independent input replay newc-leichttraktor-direct-initial-inputs.json.gz
+﹣ scorched complete independent input replay newc-tiger-direct-initial-inputs.json.gz
+﹣ scorched complete independent input replay pz3-direct-initial-inputs.json.gz
+﹣ scorched complete independent input replay vanguard-covered-maneuver-inputs.json.gz
+﹣ scorched complete independent input replay vanguard-direct-initial-inputs.json.gz

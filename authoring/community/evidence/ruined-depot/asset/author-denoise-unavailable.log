@@ -1,0 +1,30 @@
+Blender 4.3.2
+Read blend: "/workspace/scratch/08f39b8da479/asset_round2_20261031/structures/evidence/lfa-recovered-two-uv-audit.blend"
+Fra:1 Mem:13.28M (Peak 13.28M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broken-corner
+Fra:1 Mem:13.28M (Peak 13.28M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | PROOF-ground
+Fra:1 Mem:13.37M (Peak 13.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:13.35M (Peak 13.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading wall.bmp
+Fra:1 Mem:13.35M (Peak 13.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading detail.bmp
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Failed to denoise, build has no OpenImageDenoise support
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Failed to denoise, build has no OpenImageDenoise support
+Traceback (most recent call last):
+  File "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/author_ruins.py", line 38, in <module>
+    arrange();render('baseline-gameplay');render('baseline-closeup',True)
+              ~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/author_ruins.py", line 37, in render
+    camera.rotation_euler=(target-camera.location).to_track_quat('-Z','Y').to_euler();scene.render.filepath=str(OUT/(name+'.png'));bpy.ops.render.render(write_still=True)
+                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+RuntimeError: Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Blender quit

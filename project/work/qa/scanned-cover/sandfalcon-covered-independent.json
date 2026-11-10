@@ -1,0 +1,11 @@
+{
+  "route": "covered",
+  "finalHash": "cbda3ac65af0f8bd2a7fae5f85a26c4073d854b8e40b714e2764a6f10dfea475",
+  "fullEvidenceExact": true,
+  "inputs": 13600,
+  "tick": 13599,
+  "phase": "won",
+  "hp": 92,
+  "truckHp": 100,
+  "truckArrived": true
+}

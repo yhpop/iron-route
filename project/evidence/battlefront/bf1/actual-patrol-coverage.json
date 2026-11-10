@@ -1,0 +1,207 @@
+{
+  "boundary": "Actual winning covered-route production states; not nominal waypoint-only animation",
+  "actors": {
+    "allied-support": {
+      "final": {
+        "id": "allied-support",
+        "kind": "turret",
+        "vehicle": "pz3",
+        "team": "allied",
+        "pose": {
+          "x": -15.99891725120909,
+          "y": 0.008,
+          "z": 37.939851847955374,
+          "yaw": -2.6741801513982626,
+          "basis": {
+            "right": [
+              1,
+              -8.164266416291768e-76,
+              0
+            ],
+            "up": [
+              8.164266416291768e-76,
+              1,
+              -1.9182225162973745e-69
+            ],
+            "forward": [
+              1.5660879668781344e-144,
+              1.9182225162973745e-69,
+              1
+            ]
+          }
+        },
+        "hp": 98,
+        "protected": false,
+        "damage": 12,
+        "chargeTime": 2.4,
+        "reload": 5,
+        "range": 26,
+        "shieldArc": 0,
+        "radius": 2.2,
+        "width": 1.921792,
+        "depth": 3.532506,
+        "height": 1.7,
+        "speed": 0.008639244004684063,
+        "travel": 167.551358925378,
+        "patrol": [
+          {
+            "x": -10,
+            "z": 31
+          },
+          {
+            "x": -16,
+            "z": 31
+          },
+          {
+            "x": -16,
+            "z": 38
+          },
+          {
+            "x": -10,
+            "z": 38
+          }
+        ],
+        "maxHp": 110,
+        "alive": true,
+        "destroyed": false,
+        "status": "idle",
+        "aimYaw": -0.6304430670072344,
+        "aimElevation": -0.0003823917608500192,
+        "charge": 0,
+        "chargeElapsed": 0,
+        "cooldown": 0,
+        "telegraphTarget": null,
+        "targetId": null,
+        "turnTravel": 41.982857941077874,
+        "patrolBlocked": false,
+        "patrolIndex": 3
+      },
+      "observedPatrolIndices": [
+        null,
+        2,
+        3,
+        0,
+        1
+      ],
+      "blockedFrames": [],
+      "motionWhileCharging": []
+    },
+    "hostile-flanker": {
+      "final": {
+        "id": "hostile-flanker",
+        "kind": "turret",
+        "vehicle": "pz3",
+        "team": "hostile",
+        "pose": {
+          "x": 2,
+          "y": 0.1264276131746473,
+          "z": 16,
+          "yaw": 2.4668517113662407
+        },
+        "hp": 0,
+        "protected": false,
+        "damage": 12,
+        "chargeTime": 2,
+        "reload": 4.2,
+        "range": 22,
+        "shieldArc": 0,
+        "radius": 2.2,
+        "width": 1.921792,
+        "depth": 3.532506,
+        "height": 1.7,
+        "speed": 0,
+        "travel": 0,
+        "patrol": [],
+        "maxHp": 110,
+        "alive": false,
+        "destroyed": true,
+        "status": "destroyed",
+        "aimYaw": 2.9322740050612714,
+        "aimElevation": -0.048298868572808434,
+        "charge": 0,
+        "chargeElapsed": 0,
+        "cooldown": 0.5333333333333434,
+        "telegraphTarget": null,
+        "targetId": "supply"
+      },
+      "observedPatrolIndices": [
+        null
+      ],
+      "blockedFrames": [],
+      "motionWhileCharging": []
+    },
+    "road-gun": {
+      "final": {
+        "id": "road-gun",
+        "kind": "turret",
+        "pose": {
+          "x": 22.971824905287466,
+          "y": 0.008000000000000002,
+          "z": 25.443210184487747,
+          "yaw": -0.002983626389426064,
+          "basis": {
+            "right": [
+              1,
+              -1.8269141573142298e-22,
+              0
+            ],
+            "up": [
+              1.8269141573142298e-22,
+              1,
+              2.167553295153898e-20
+            ],
+            "forward": [
+              -3.9599338016497656e-42,
+              -2.167553295153898e-20,
+              1
+            ]
+          }
+        },
+        "hp": 90,
+        "range": 19,
+        "chargeTime": 1.9,
+        "reload": 4.5,
+        "damage": 14,
+        "shieldArc": 1.7,
+        "vehicle": "pz3",
+        "radius": 2.2,
+        "width": 1.921792,
+        "depth": 3.532506,
+        "height": 1.7,
+        "patrol": [
+          {
+            "x": 23,
+            "z": 16
+          },
+          {
+            "x": 23,
+            "z": 31
+          }
+        ],
+        "patrolIndex": 0,
+        "speed": 1.35,
+        "travel": 198.88245237030188,
+        "team": "hostile",
+        "maxHp": 90,
+        "alive": true,
+        "destroyed": false,
+        "status": "idle",
+        "aimYaw": 0,
+        "aimElevation": 0,
+        "charge": 0,
+        "chargeElapsed": 0,
+        "cooldown": 0,
+        "telegraphTarget": null,
+        "targetId": null,
+        "turnTravel": -43.9852807766416,
+        "patrolBlocked": false
+      },
+      "observedPatrolIndices": [
+        1,
+        0
+      ],
+      "blockedFrames": [],
+      "motionWhileCharging": []
+    }
+  }
+}

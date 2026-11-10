@@ -1,0 +1,9 @@
+START 2026-10-31T12:14:46.844353+00:00
+COMMAND ["python3", "../evidence/battlefront/bf2/check-replay-mirror.py", "09-after-recovered"]
+CAP_SECONDS 120
+{"mirrorCheck": "09-after-recovered", "equalFiles": 120, "acceptedRawAndInputsUnchanged": true, "finalFrozenCodeDrift": []}
+
+EXIT 0
+SECONDS 0.1145196279976517
+CODE_DRIFT []
+END 2026-10-31T12:14:46.984367+00:00

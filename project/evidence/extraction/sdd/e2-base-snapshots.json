@@ -1,0 +1,8 @@
+{
+  "work/locales/en-ui.json": "91a1095c101bfb4973a02df426617af6fa2a3fc33891e29e90cc93a88325b5ce",
+  "work/locales/en-missions.json": "56bc120c55d4204505555b49b1d54d6d1f1089db5e63b76abbe8e925ddd202f4",
+  "work/scripts/english-localization.mjs": "199501466512f23763b0186a6632438b6cac5e53300882c10fc89bc1b33398b4",
+  "work/src/main.js": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+  "work/src/campaign-ui.js": "ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f",
+  "work/tests/sweep-acceleration-entry.test.mjs": "47894f1592518cb10d32423067bcd5f30006b83341bc3c42d77fc91e0311a57c"
+}

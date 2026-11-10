@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "at": "2026-10-30T21:55:16.215Z",
+  "file": "pz3-covered-locked-westlane-straight-recovery-escape-inputs.json.gz",
+  "inputSHA256": "e8689592eb091175005df8aac9af9eba8e8f73db0d0ea652e9e84e6e27961d69",
+  "inputs": 19744,
+  "tick": 19743,
+  "phase": "playing",
+  "expectedFinalHash": "873673b55a7e933771635ea9127f5059f29e189e1daa4c92f17a85ba28cfbaa6",
+  "finalHash": "873673b55a7e933771635ea9127f5059f29e189e1daa4c92f17a85ba28cfbaa6",
+  "originalObstacleVerified": true,
+  "realSupplyContactPrefixVerified": true,
+  "reverseEscapeVerified": true,
+  "reverseDisplacement": 1.1598702421577447,
+  "hp": 67,
+  "truckHp": 100,
+  "truckStoppedReason": "obstacle",
+  "failure": {
+    "kind": "pilot-inconclusive",
+    "reason": "blocked-aim",
+    "id": "ridge-fence-2"
+  },
+  "muzzle": {
+    "position": {
+      "x": -13.560141979094503,
+      "y": 1.111837444533671,
+      "z": 22.101628057926995
+    },
+    "direction": {
+      "x": -0.555644559837358,
+      "y": -0.0803701022804797,
+      "z": -0.8275262955233351
+    },
+    "barrelStart": {
+      "x": -12.715562248141719,
+      "y": 1.234,
+      "z": 23.359468027122464
+    },
+    "barrelEnd": {
+      "x": -13.560141979094503,
+      "y": 1.111837444533671,
+      "z": 22.101628057926995
+    },
+    "turretOrigin": {
+      "x": -12.403391450513645,
+      "y": 1.052,
+      "z": 23.82438672228136
+    },
+    "hinge": {
+      "x": -12.715562248141719,
+      "y": 1.234,
+      "z": 23.359468027122464
+    },
+    "pose": {
+      "x": -12.403391450513645,
+      "y": 0.008,
+      "z": 23.82438672228136,
+      "yaw": -1.9812623182790752,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "turret": {
+      "yawRel": 2.572570843235404,
+      "elevation": -0.08045687789744373,
+      "recoil": 0,
+      "recoilVelocity": 0
+    }
+  },
+  "aim": {
+    "x": -19,
+    "y": 0.325,
+    "z": 14
+  },
+  "aimDot": 1.0000000000000002,
+  "nearestRayHit": {
+    "id": "supply",
+    "colliderId": "supply",
+    "fraction": 0.7461984666758628,
+    "distance": 7.3054143017655875,
+    "point": {
+      "x": -17.619355693228577,
+      "y": 0.5247005498994914,
+      "z": 16.056205623523724
+    },
+    "position": {
+      "x": -17.619355693228577,
+      "y": 0.5247005498994914,
+      "z": 16.056205623523724
+    },
+    "normal": {
+      "x": 0.961523947640823,
+      "y": 0,
+      "z": -0.2747211278973784
+    }
+  },
+  "remainingFenceHp": 90,
+  "interpretation": "Normal reverse and body separation verified. Full blocked-convoy recovery did not complete; no further pilot strategy attempted."
+}

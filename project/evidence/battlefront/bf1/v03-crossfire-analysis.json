@@ -1,0 +1,1182 @@
+{
+  "boundary": "Read-only analysis of already saved full input-only raw evidence; failed/incomplete cover retreats are not waived",
+  "attempt": "v03-crossfire",
+  "rawSHA256": "d75f4574826cdc3b10d6a1704ae4dc0b2bf9309462e2e2accae46c15fc6c7180",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "sourceHashes": {
+    "assets/armor/quaternius-sandfalcon-rig.js": "6192ef322244f152417670e6373072517f8a799e97fadd7dc815fb4a858aaa5f",
+    "assets/armor/rigs.js": "e3e5476836101dc5aa8707b55245e5d9bf0cc798579e0e2f0fcdb57bfa8d97df",
+    "src/battlefront-depot-front.js": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+    "src/campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+    "src/campaign-world-accelerated.js": "bd1879bc34cafc2c4ce0b3207fa6d41aaf17742f7f10844b194883854966719f",
+    "src/collision-broadphase.js": "7c65a35ee156927f158e23fc47f7663f03d048786354fef4f7e0d5ad103be275",
+    "src/combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+    "src/combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+    "src/crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+    "src/crossfire-v3-front.js": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9",
+    "src/crossfire-v4-front.js": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f",
+    "src/crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+    "src/interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+    "src/mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+    "src/player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+    "src/player-vehicles-v3.js": "69ab18712fbc956dccd6ea235b5bb43bb1a63c3a164b5ce63f95b32374cad53a",
+    "src/player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+    "src/ruined-depot-collision-data.js": "cff2b1cdc675a1203ec04fa83e2d4220b506a5f5e5c3763aff29a0fb7e4015e6",
+    "src/ruined-depot-layout.js": "3ab5ced6d8b924c5b14412c9cc375ea858ca9e40a371aea8411bbefe0adf8545",
+    "src/ruined-depot-world-accelerated.js": "8cfad7acf74f04f1c7939185a0f948ebb394c0811527f6d11ccecf7bd5d7a34f",
+    "src/scanned-cover-front.js": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1",
+    "src/scorched-front.js": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+    "src/sentry-rig.js": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+    "src/tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "src/terrain-candidate/combat-surface.js": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+    "src/terrain-candidate/combat-world-accelerated.js": "92a435fbd24cee4b3cc8f6ad09b4a127bbd7aca0844d42c0374a62d1f4165987",
+    "src/terrain-candidate/heightfield.js": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d",
+    "src/terrain-candidate/interceptor-mission.js": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+    "src/terrain-candidate/ridge-convoy.js": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+    "src/terrain-candidate/vendor/three-terrain/noise.js": "0bb467885e17befd4ea3563a2331c0c348fbd80f451c9352b965ec504dd72542",
+    "src/terrain-candidate/vertical-slice.js": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d"
+  },
+  "pair": {
+    "a": {
+      "tick": 820,
+      "owner": "road-gun",
+      "origin": {
+        "x": 20.963075907948397,
+        "y": 1.193837132156045,
+        "z": 20.688353913023434
+      },
+      "player": {
+        "x": 7.63043858655369,
+        "y": 0.008,
+        "z": 19.222473943692698,
+        "yaw": -1.0300904275252734,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "bearing": 1.4612894265305485,
+      "projectiles": [
+        {
+          "id": "projectile-6",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 20.963075907948397,
+            "y": 1.193837132156045,
+            "z": 20.688353913023434
+          },
+          "previousPosition": {
+            "x": 20.963075907948397,
+            "y": 1.193837132156045,
+            "z": 20.688353913023434
+          },
+          "velocity": {
+            "x": -13.911282746253825,
+            "y": -0.3699211512365301,
+            "z": -1.529500145684348
+          },
+          "damage": 14,
+          "life": 4
+        }
+      ],
+      "entities": {
+        "road-gun": {
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown"
+        },
+        "hostile-flanker": {
+          "alive": true,
+          "targetId": "tank",
+          "status": "charging"
+        }
+      }
+    },
+    "b": {
+      "tick": 867,
+      "owner": "hostile-flanker",
+      "origin": {
+        "x": 3.800328077043437,
+        "y": 1.221333868226041,
+        "z": 17.030383375857383
+      },
+      "player": {
+        "x": 7.63043858655369,
+        "y": 0.008,
+        "z": 19.222473943692698,
+        "yaw": -1.0300904275252734,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "bearing": -2.090622388221368,
+      "projectiles": [
+        {
+          "id": "projectile-6",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 10.065904423382918,
+            "y": 0.9040655636874284,
+            "z": 19.49024546557077
+          },
+          "previousPosition": {
+            "x": 10.297759135820481,
+            "y": 0.9102309162080372,
+            "z": 19.515737134665507
+          },
+          "velocity": {
+            "x": -13.911282746253825,
+            "y": -0.3699211512365301,
+            "z": -1.529500145684348
+          },
+          "damage": 14,
+          "life": 3.2166666666666694
+        },
+        {
+          "id": "projectile-7",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 3.800328077043437,
+            "y": 1.221333868226041,
+            "z": 17.030383375857383
+          },
+          "previousPosition": {
+            "x": 3.800328077043437,
+            "y": 1.221333868226041,
+            "z": 17.030383375857383
+          },
+          "velocity": {
+            "x": 12.105403439566416,
+            "y": -1.2074423876845306,
+            "z": 6.928296359550178
+          },
+          "damage": 12,
+          "life": 4
+        }
+      ],
+      "entities": {
+        "road-gun": {
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown"
+        },
+        "hostile-flanker": {
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown"
+        }
+      }
+    },
+    "degrees": 156.4904438120621
+  },
+  "overlapTicks": 1273,
+  "overlappingActualHostileProjectiles": [
+    {
+      "tick": 867,
+      "player": {
+        "x": 7.63043858655369,
+        "y": 0.008,
+        "z": 19.222473943692698,
+        "yaw": -1.0300904275252734,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "projectiles": [
+        {
+          "id": "projectile-6",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 10.065904423382918,
+            "y": 0.9040655636874284,
+            "z": 19.49024546557077
+          },
+          "previousPosition": {
+            "x": 10.297759135820481,
+            "y": 0.9102309162080372,
+            "z": 19.515737134665507
+          },
+          "velocity": {
+            "x": -13.911282746253825,
+            "y": -0.3699211512365301,
+            "z": -1.529500145684348
+          },
+          "damage": 14,
+          "life": 3.2166666666666694
+        },
+        {
+          "id": "projectile-7",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 3.800328077043437,
+            "y": 1.221333868226041,
+            "z": 17.030383375857383
+          },
+          "previousPosition": {
+            "x": 3.800328077043437,
+            "y": 1.221333868226041,
+            "z": 17.030383375857383
+          },
+          "velocity": {
+            "x": 12.105403439566416,
+            "y": -1.2074423876845306,
+            "z": 6.928296359550178
+          },
+          "damage": 12,
+          "life": 4
+        }
+      ],
+      "hostiles": [
+        {
+          "id": "hostile-flanker",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.2,
+          "pose": {
+            "x": 2,
+            "y": 0.1264276131746473,
+            "z": 16,
+            "yaw": 2.4668517113662407
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": -2.0906223882213686
+        },
+        {
+          "id": "road-gun",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 3.7166666666666694,
+          "pose": {
+            "x": 23.029481719602302,
+            "y": 0.008000000002759406,
+            "z": 21.119281062999686,
+            "yaw": 3.13860889984673,
+            "basis": {
+              "right": [
+                1,
+                1.489362137975333e-14,
+                0
+              ],
+              "up": [
+                -1.489362137975333e-14,
+                1,
+                -4.4204757480219605e-14
+              ],
+              "forward": [
+                -6.583689210942097e-28,
+                4.4204757480219605e-14,
+                1
+              ]
+            }
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": 1.448236739230717
+        },
+        {
+          "id": "ridge-gun",
+          "alive": true,
+          "targetId": null,
+          "status": "idle",
+          "charge": 0,
+          "cooldown": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "los": false,
+          "occluder": "terrain",
+          "bearing": -2.939398402831843
+        }
+      ]
+    },
+    {
+      "tick": 1240,
+      "player": {
+        "x": 10.122207796105032,
+        "y": 0.008,
+        "z": 18.050610043346254,
+        "yaw": -1.3350932629993455,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "projectiles": [
+        {
+          "id": "projectile-9",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 13.557925356453783,
+            "y": 0.9966525969765028,
+            "z": 21.688121007963296
+          },
+          "previousPosition": {
+            "x": 13.773298662360233,
+            "y": 1.002369843436119,
+            "z": 21.777709492939273
+          },
+          "velocity": {
+            "x": -12.922398354387049,
+            "y": -0.3430347875769747,
+            "z": -5.375309098558607
+          },
+          "damage": 14,
+          "life": 3.4166666666666687
+        },
+        {
+          "id": "projectile-10",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 3.8048802599734355,
+            "y": 1.221686630910695,
+            "z": 17.022450417010123
+          },
+          "previousPosition": {
+            "x": 3.8048802599734355,
+            "y": 1.221686630910695,
+            "z": 17.022450417010123
+          },
+          "velocity": {
+            "x": 12.136078290686488,
+            "y": -1.2041932576942966,
+            "z": 6.874992532392436
+          },
+          "damage": 12,
+          "life": 4
+        }
+      ],
+      "hostiles": [
+        {
+          "id": "hostile-flanker",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.2,
+          "pose": {
+            "x": 2,
+            "y": 0.1264276131746473,
+            "z": 16,
+            "yaw": 2.4668517113662407
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": -1.8180979062781992
+        },
+        {
+          "id": "road-gun",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 3.9166666666666687,
+          "pose": {
+            "x": 23.015706080539214,
+            "y": 0.008,
+            "z": 25.736149400315885,
+            "yaw": 3.1386088998467,
+            "basis": {
+              "right": [
+                1,
+                2.800315702081429e-23,
+                0
+              ],
+              "up": [
+                -2.800315702081429e-23,
+                1,
+                -3.505267729917414e-21
+              ],
+              "forward": [
+                -9.81585626408706e-44,
+                3.505267729917414e-21,
+                1
+              ]
+            }
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": 1.0332651434342406
+        },
+        {
+          "id": "ridge-gun",
+          "alive": true,
+          "targetId": null,
+          "status": "idle",
+          "charge": 0,
+          "cooldown": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "los": false,
+          "occluder": "terrain",
+          "bearing": -2.8678629243242777
+        }
+      ]
+    },
+    {
+      "tick": 1259,
+      "player": {
+        "x": 10.739771585283684,
+        "y": 0.008,
+        "z": 17.92813288074803,
+        "yaw": -1.412160889167616,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "projectiles": [
+        {
+          "id": "projectile-9",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 9.465832544231233,
+            "y": 0.8880249142437942,
+            "z": 19.98593979341974
+          },
+          "previousPosition": {
+            "x": 9.681205850137683,
+            "y": 0.8937421607034104,
+            "z": 20.075528278395716
+          },
+          "velocity": {
+            "x": -12.922398354387049,
+            "y": -0.3430347875769747,
+            "z": -5.375309098558607
+          },
+          "damage": 14,
+          "life": 3.100000000000003
+        },
+        {
+          "id": "projectile-10",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 7.647971718690815,
+            "y": 0.8403587659741671,
+            "z": 19.199531385601045
+          },
+          "previousPosition": {
+            "x": 7.445703747179374,
+            "y": 0.8604286536024054,
+            "z": 19.08494817672784
+          },
+          "velocity": {
+            "x": 12.136078290686488,
+            "y": -1.2041932576942966,
+            "z": 6.874992532392436
+          },
+          "damage": 12,
+          "life": 3.6833333333333345
+        }
+      ],
+      "hostiles": [
+        {
+          "id": "hostile-flanker",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 3.8833333333333346,
+          "pose": {
+            "x": 2,
+            "y": 0.1264276131746473,
+            "z": 16,
+            "yaw": 2.4668517113662407
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": -1.7879340558633336
+        },
+        {
+          "id": "road-gun",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 3.600000000000003,
+          "pose": {
+            "x": 23.015245464238586,
+            "y": 0.008,
+            "z": 25.890523713132584,
+            "yaw": 3.1386088998467,
+            "basis": {
+              "right": [
+                1,
+                1.3942472611144095e-23,
+                0
+              ],
+              "up": [
+                -1.3942472611144095e-23,
+                1,
+                -2.2260229590965305e-21
+              ],
+              "forward": [
+                -3.1036264138981307e-44,
+                2.2260229590965305e-21,
+                1
+              ]
+            }
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": 0.9953761894197095
+        },
+        {
+          "id": "ridge-gun",
+          "alive": true,
+          "targetId": null,
+          "status": "idle",
+          "charge": 0,
+          "cooldown": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "los": false,
+          "occluder": "terrain",
+          "bearing": -2.8511235526700935
+        }
+      ]
+    },
+    {
+      "tick": 1613,
+      "player": {
+        "x": 13.586868354820963,
+        "y": 0.008,
+        "z": 17.279334907768614,
+        "yaw": 0.20831189595618405,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "projectiles": [
+        {
+          "id": "projectile-12",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 18.497158653438515,
+            "y": 1.0531230154824671,
+            "z": 24.402646098297975
+          },
+          "previousPosition": {
+            "x": 18.638309423184733,
+            "y": 1.0592514709114251,
+            "z": 24.588343019862524
+          },
+          "velocity": {
+            "x": -8.469046184773045,
+            "y": -0.3677073257374872,
+            "z": -11.141815293872899
+          },
+          "damage": 14,
+          "life": 3.616666666666668
+        },
+        {
+          "id": "projectile-13",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 1.869870264282652,
+            "y": 1.272788777039059,
+            "z": 18.073833563408378
+          },
+          "previousPosition": {
+            "x": 1.869870264282652,
+            "y": 1.272788777039059,
+            "z": 18.073833563408378
+          },
+          "velocity": {
+            "x": -0.8755490062061612,
+            "y": -0.7335155959856828,
+            "z": 13.953328234087277
+          },
+          "damage": 12,
+          "life": 4
+        }
+      ],
+      "hostiles": [
+        {
+          "id": "hostile-flanker",
+          "alive": true,
+          "targetId": "supply",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.2,
+          "pose": {
+            "x": 2,
+            "y": 0.1264276131746473,
+            "z": 16,
+            "yaw": 2.4668517113662407
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": -1.680763387116374
+        },
+        {
+          "id": "road-gun",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.116666666666668,
+          "pose": {
+            "x": 23.00185286399362,
+            "y": 0.008,
+            "z": 30.37901762189595,
+            "yaw": 3.1386088998466963,
+            "basis": {
+              "right": [
+                1,
+                1.0544385942599124e-38,
+                0
+              ],
+              "up": [
+                -1.0544385942599124e-38,
+                1,
+                -4.696102643293452e-34
+              ],
+              "forward": [
+                -4.951751869694607e-72,
+                4.696102643293452e-34,
+                1
+              ]
+            }
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": 0.6231785694883174
+        },
+        {
+          "id": "ridge-gun",
+          "alive": true,
+          "targetId": null,
+          "status": "idle",
+          "charge": 0,
+          "cooldown": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "los": false,
+          "occluder": "terrain",
+          "bearing": -2.7739770628157894
+        }
+      ]
+    },
+    {
+      "tick": 1619,
+      "player": {
+        "x": 13.55961250442081,
+        "y": 0.008,
+        "z": 17.16538690328965,
+        "yaw": 0.2593118959561611,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "projectiles": [
+        {
+          "id": "projectile-12",
+          "ownerId": "road-gun",
+          "faction": "hostile",
+          "position": {
+            "x": 17.650254034961204,
+            "y": 1.016352282908719,
+            "z": 23.28846456891068
+          },
+          "previousPosition": {
+            "x": 17.791404804707422,
+            "y": 1.022480738337677,
+            "z": 23.47416149047523
+          },
+          "velocity": {
+            "x": -8.469046184773045,
+            "y": -0.3677073257374872,
+            "z": -11.141815293872899
+          },
+          "damage": 14,
+          "life": 3.5166666666666684
+        },
+        {
+          "id": "projectile-13",
+          "ownerId": "hostile-flanker",
+          "faction": "hostile",
+          "position": {
+            "x": 1.7823153636620352,
+            "y": 1.1994372174404904,
+            "z": 19.469166386817115
+          },
+          "previousPosition": {
+            "x": 1.7969078470988047,
+            "y": 1.2116624773735851,
+            "z": 19.236610916248992
+          },
+          "velocity": {
+            "x": -0.8755490062061612,
+            "y": -0.7335155959856828,
+            "z": 13.953328234087277
+          },
+          "damage": 12,
+          "life": 3.9000000000000004
+        }
+      ],
+      "hostiles": [
+        {
+          "id": "hostile-flanker",
+          "alive": true,
+          "targetId": "supply",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.1000000000000005,
+          "pose": {
+            "x": 2,
+            "y": 0.1264276131746473,
+            "z": 16,
+            "yaw": 2.4668517113662407
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": -1.6712722359447731
+        },
+        {
+          "id": "road-gun",
+          "alive": true,
+          "targetId": "tank",
+          "status": "cooldown",
+          "charge": 0,
+          "cooldown": 4.016666666666668,
+          "pose": {
+            "x": 23.001767205523677,
+            "y": 0.008,
+            "z": 30.407725827437293,
+            "yaw": 3.138608899846698,
+            "basis": {
+              "right": [
+                1,
+                8.214825691495073e-39,
+                0
+              ],
+              "up": [
+                -8.214825691495073e-39,
+                1,
+                -4.168309433978746e-34
+              ],
+              "forward": [
+                -3.424193542834989e-72,
+                4.168309433978746e-34,
+                1
+              ]
+            }
+          },
+          "los": true,
+          "occluder": null,
+          "bearing": 0.6194159925597227
+        },
+        {
+          "id": "ridge-gun",
+          "alive": true,
+          "targetId": null,
+          "status": "idle",
+          "charge": 0,
+          "cooldown": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "los": false,
+          "occluder": "terrain",
+          "bearing": -2.773565348849704
+        }
+      ]
+    }
+  ],
+  "alliedEnemyDamage": [
+    {
+      "id": "event-8",
+      "tick": 215,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "value": 12
+    },
+    {
+      "id": "event-18",
+      "tick": 664,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.6002768240774345,
+        "y": 1.2266640258429744,
+        "z": 16.45404784539755
+      },
+      "value": 12
+    },
+    {
+      "id": "event-27",
+      "tick": 1124,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5050433821412108,
+        "y": 1.2266418292303716,
+        "z": 16.414159084695
+      },
+      "value": 12
+    },
+    {
+      "id": "event-34",
+      "tick": 1578,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.353190869399153,
+        "y": 1.2267060340071878,
+        "z": 16.658233386744605
+      },
+      "value": 12
+    },
+    {
+      "id": "event-46",
+      "tick": 2313,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5477623580914381,
+        "y": 1.2266799850742192,
+        "z": 16.717155207319404
+      },
+      "value": 12
+    }
+  ],
+  "damage": [
+    {
+      "id": "event-5",
+      "tick": 138,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.3927335937036046,
+        "y": 0.9484602195828329,
+        "z": 21.62543242203737
+      },
+      "value": 12
+    },
+    {
+      "id": "event-8",
+      "tick": 215,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "value": 12
+    },
+    {
+      "id": "event-12",
+      "tick": 490,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 8.770342376970923,
+        "y": 0.9301373449556252,
+        "z": 19.88603578281125
+      },
+      "value": 14
+    },
+    {
+      "id": "event-15",
+      "tick": 507,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 5.659537869859427,
+        "y": 0.9139648402335713,
+        "z": 19.52582172321212
+      },
+      "value": 12
+    },
+    {
+      "id": "event-18",
+      "tick": 664,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.6002768240774345,
+        "y": 1.2266640258429744,
+        "z": 16.45404784539755
+      },
+      "value": 12
+    },
+    {
+      "id": "event-22",
+      "tick": 870,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 9.601255525771826,
+        "y": 0.8917098767058403,
+        "z": 19.43915883541946
+      },
+      "value": 14
+    },
+    {
+      "id": "event-24",
+      "tick": 880,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 6.287766350672678,
+        "y": 0.9732266140297816,
+        "z": 18.454021144051303
+      },
+      "value": 12
+    },
+    {
+      "id": "event-27",
+      "tick": 1124,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5050433821412108,
+        "y": 1.2266418292303716,
+        "z": 16.414159084695
+      },
+      "value": 12
+    },
+    {
+      "id": "event-34",
+      "tick": 1578,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.353190869399153,
+        "y": 1.2267060340071878,
+        "z": 16.658233386744605
+      },
+      "value": 12
+    },
+    {
+      "id": "event-38",
+      "tick": 1645,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 14.069764107389618,
+        "y": 0.860895299043819,
+        "z": 18.577998175859097
+      },
+      "value": 14
+    },
+    {
+      "id": "event-40",
+      "tick": 1647,
+      "type": "damaged",
+      "targetId": "supply",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 1.3781906721909143,
+        "y": 0.8608704875192992,
+        "z": 25.909564842672417
+      },
+      "value": 12
+    },
+    {
+      "id": "event-43",
+      "tick": 2020,
+      "type": "damaged",
+      "targetId": "supply",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 1.3781906721909143,
+        "y": 0.8608704875192992,
+        "z": 25.909564842672417
+      },
+      "value": 12
+    },
+    {
+      "id": "event-46",
+      "tick": 2313,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5477623580914381,
+        "y": 1.2266799850742192,
+        "z": 16.717155207319404
+      },
+      "value": 12
+    },
+    {
+      "id": "event-49",
+      "tick": 2393,
+      "type": "damaged",
+      "targetId": "supply",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 1.3781906721909143,
+        "y": 0.8608704875192992,
+        "z": 25.909564842672417
+      },
+      "value": 12
+    },
+    {
+      "id": "event-53",
+      "tick": 2710,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 9.887466204929776,
+        "y": 1.3003007886575548,
+        "z": 9.135422978754463
+      },
+      "value": 14
+    }
+  ],
+  "phase": "playing",
+  "playerHp": 8,
+  "truckHp": 64
+}

@@ -1,0 +1,16 @@
+{
+  "file": "newc-leichttraktor-direct-initial-inputs.json.gz",
+  "inputSHA256": "93ef7a9d82de2a0e887666cf83d0dfd776dd49b9e04f613d8c1688018d477952",
+  "specHash": "dbe2d863dcaee1d473c864c928bee73bd0103b8917058b2fb5f5e74d1fb68276",
+  "vehicleId": "newc-leichttraktor",
+  "vehicleVersion": 1,
+  "inputs": 7618,
+  "tick": 7617,
+  "phase": "won",
+  "expectedFinalHash": "ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5",
+  "finalHash": "ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5",
+  "hp": 60,
+  "truckHp": 86,
+  "truckArrived": true,
+  "at": "2026-10-30T20:43:41.669Z"
+}

@@ -1,0 +1,14 @@
+✔ explicitly ISOLATED seeded shells step through new windows and impact exact jamb/sill masonry (849.066223ms)
+✔ retained direct win pins entire physical closure/spec and independent full-evidence replay (109.709004ms)
+✔ retained covered win pins entire physical closure/spec and independent full-evidence replay (146.450424ms)
+✔ actual input-fired Sandfalcon window/jamb/sill fixture independently reproduces ENTIRE artifact (3254.452983ms)
+✔ main one-time initial groundPose diagnostic converges ENTIRE state at first physical tick (4.601808ms)
+✔ complete JSON comparison accepts signed-zero persistence semantics but rejects actual evidence changes (112.955934ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4674.030361

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "blenderVersion": "4.3.2",
+  "scope": "Staging-only path normalization; mesh data, object transforms and packed texture bytes match preserved original. Runtime GLBs were not re-exported.",
+  "sources": [
+    {
+      "file": "assets/art-kit/industrial-canal-kit.blend",
+      "meshCount": 13,
+      "objectCount": 27,
+      "packedImages": 12,
+      "geometryTransformsAndImageBytesMatchOriginal": true,
+      "externalDependencies": []
+    },
+    {
+      "file": "assets/terrain/terrain-lookdev.blend",
+      "meshCount": 7,
+      "objectCount": 11,
+      "packedImages": 6,
+      "geometryTransformsAndImageBytesMatchOriginal": true,
+      "externalDependencies": []
+    }
+  ]
+}

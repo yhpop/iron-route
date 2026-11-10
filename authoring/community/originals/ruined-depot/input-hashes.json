@@ -1,0 +1,38 @@
+{
+  "README.md": {
+    "bytes": 1031,
+    "sha256": "09cc54b9cfc7180cbdda62359da3b5fd5a651330145f9e62d094efed8944da0a"
+  },
+  "evidence/lfa-recovered-two-uv-audit.blend": {
+    "bytes": 3246952,
+    "sha256": "e431e07679d6b9b01b0eda057f873d872199c5a58715182911c5ceffa3f85464"
+  },
+  "evidence/Ciment_bris\u00e9.png": {
+    "bytes": 2600817,
+    "sha256": "9078d1ae0ba86e0a84a998f0157fd272e0aa273eac98f6f38e690c7baf50d6c3"
+  },
+  "sources/destroyed-city.html": {
+    "bytes": 24117,
+    "sha256": "cec10755f0a8eaed6de567f3d6f90aa4b23c94ffb76e02e66604553fd73909ff"
+  },
+  "sources/destroyed-walls.html": {
+    "bytes": 60481,
+    "sha256": "6cee22c3f7d278241395c2c7a4ab8619a9a0e6d3d6a0bf92d0a6b28370f7036f"
+  },
+  "sources/destroyedwalls_by_lfa/detail.bmp": {
+    "bytes": 263224,
+    "sha256": "d47aed414b88bbd7a0bc94528f1c3c89e64afc8efc1cc7779f53f8c0824ab89f"
+  },
+  "sources/destroyedwalls_by_lfa/wall.bmp": {
+    "bytes": 786488,
+    "sha256": "2f4efb203f16af670c259ed83546cac4315131e8395af1c241b8da776d22d608"
+  },
+  "sources/destroyedwalls_by_lfa/destroyedWalls_UV1.obj": {
+    "bytes": 2059507,
+    "sha256": "dbf70cebd80e0eb80f2d5fc2174e2be9abe75b309f21ab020be115f0b63d0f42"
+  },
+  "sources/destroyedwalls_by_lfa/destroyedWalls_UV2.obj": {
+    "bytes": 2056261,
+    "sha256": "8885b13999bc34fc1f47e6593910aedbf8fc3f24b7c486356ba7d46b1e97bbe0"
+  }
+}

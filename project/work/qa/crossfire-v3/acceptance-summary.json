@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "verification": {
+    "fullReplayStats": {
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "skipped": 0
+    },
+    "fullReplayLogSHA256": "44c2fc4a7eabd60767be2e71159c84d464aeee4319ce1c8a65acc2eb178c7d14"
+  },
+  "at": "2026-10-31T00:10:01.263Z",
+  "acceptance": "PASS: offline production simulation only",
+  "evidenceBoundary": "No Mac, browser, WebGL, device visual or human-play acceptance is claimed. Actual skinned model/render acceptance belongs to separate evidence.",
+  "currentHarnessHashes": {
+    "scripts/record-crossfire-v3.mjs": "db46817e24466908f13e41a42e3f96790611c7980ddcc7c8c6707a95294bf998",
+    "tests/crossfire-v3-replay.test.mjs": "b9804180b0b08a13ae6b2b7baade6984e848e7469a5b1edc264108731dac856a",
+    "qa/crossfire-v3/replay-rejected.mjs": "502a5841c61167c017ffc6d34e8d49a6a181a465001aa42432527abde32e8dd7"
+  },
+  "missionId": "mission-9051",
+  "vehicleId": "sandfalcon",
+  "vehicleVersion": 1,
+  "specHash": "9c07cea89919ef34bcd051eb14b41addace0a2ad5ba5375e16dbb96c28950234",
+  "runs": [
+    {
+      "route": "direct",
+      "attempt": "locked-spawnclear",
+      "vehicleId": "sandfalcon",
+      "phase": "won",
+      "tick": 8140,
+      "inputs": 8141,
+      "hp": 100,
+      "truckHp": 74,
+      "truckArrived": true,
+      "specHash": "9c07cea89919ef34bcd051eb14b41addace0a2ad5ba5375e16dbb96c28950234",
+      "finalHash": "aff3d3dd07194ee96cd063e7690845fc95d3d3936062fad8a6cd6954246b5c52",
+      "inputSHA256": "cd4250c21e1e58d384e667d03b1a88fe219af48a1e6abc0328ee7078929ff94c",
+      "recordSHA256": "cc01068c613e057f26f6d3409aa24dca917e977cd871c3da77aff92facec40d9",
+      "independentSHA256": "f857fab932c6a7561cee615ba8e82c03247effbe9237bb2e8071112fb87f5c8d",
+      "fullStateExact": true,
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 12,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 10,
+        "friendlyDamageEvents": 0
+      },
+      "damage": {
+        "hostile-flanker -> allied-support": 110,
+        "allied-support -> hostile-flanker": 96,
+        "road-gun -> supply": 14,
+        "tank -> road-gun": 90,
+        "tank -> ridge-gun": 90,
+        "hostile-flanker -> supply": 12
+      },
+      "files": {
+        "tape": "sandfalcon-direct-locked-spawnclear-inputs.json.gz",
+        "record": "sandfalcon-direct-locked-spawnclear-report.json",
+        "independent": "sandfalcon-direct-locked-spawnclear-independent.json"
+      }
+    },
+    {
+      "route": "covered",
+      "attempt": "locked-westlane-straight-clear-southentry",
+      "vehicleId": "sandfalcon",
+      "phase": "won",
+      "tick": 13355,
+      "inputs": 13356,
+      "hp": 92,
+      "truckHp": 100,
+      "truckArrived": true,
+      "specHash": "9c07cea89919ef34bcd051eb14b41addace0a2ad5ba5375e16dbb96c28950234",
+      "finalHash": "39fb59f870769d8d7f9032748c3e54136cb822927ebef059c2dbaf00cca77a22",
+      "inputSHA256": "133d8d176cc053692c85fe0078ff1799abf41929c8ff0144c8e5aa6f72bf4e97",
+      "recordSHA256": "ed253a3991dd2f22fb51967de4d8133c42795066a5505ad342a86b186c05424d",
+      "independentSHA256": "e41c915c3a24dc256bce1325d23edd6a61b0cd2fe5265058ee96e060f62d44f8",
+      "fullStateExact": true,
+      "mutual": {
+        "supportShots": 7,
+        "flankerShots": 8,
+        "supportDamageEvents": 7,
+        "flankerDamageEvents": 8,
+        "friendlyDamageEvents": 0
+      },
+      "damage": {
+        "hostile-flanker -> allied-support": 96,
+        "allied-support -> hostile-flanker": 84,
+        "tank -> hostile-flanker": 26,
+        "ridge-gun -> tank": 8,
+        "tank -> ridge-gun": 90,
+        "tank -> ridge-fence-2": 90,
+        "tank -> ridge-fence-3": 90,
+        "tank -> ridge-fence-4": 90
+      },
+      "files": {
+        "tape": "sandfalcon-covered-locked-westlane-straight-clear-southentry-inputs.json.gz",
+        "record": "sandfalcon-covered-locked-westlane-straight-clear-southentry-report.json",
+        "independent": "sandfalcon-covered-locked-westlane-straight-clear-southentry-independent.json"
+      }
+    }
+  ],
+  "behaviors": {
+    "pause": {
+      "ticks": 120,
+      "exact": true
+    },
+    "retry": {
+      "exact": true
+    },
+    "friendlyCollision": {
+      "fixture": "Explicit seeded projectile in unmodified V3 terrain; excluded from route tapes",
+      "hpBefore": 110,
+      "hpAfter": 110
+    },
+    "defeat": {
+      "fixture": "Copied V3 spec with allied-support removed; not a route tape",
+      "inputs": 519,
+      "dt": 0.1,
+      "phase": "lost",
+      "hp": 0,
+      "terminalExact": true,
+      "retryExact": true
+    }
+  },
+  "preservedFailures": [
+    {
+      "file": "sandfalcon-covered-locked-westlane-straight-clear-spawnclear-inputs.json.gz",
+      "phase": "playing",
+      "reason": {
+        "kind": "pilot-inconclusive",
+        "reason": "no-motion",
+        "target": {
+          "x": -8,
+          "z": 19
+        }
+      },
+      "independentExact": true
+    },
+    {
+      "file": "rejected/initial-spawn-contact/sandfalcon-covered-locked-westlane-straight-clear-inputs.json.gz",
+      "phase": "playing",
+      "reason": "Irrecoverable opening spawn barrel contact with allied-support",
+      "independentExact": true
+    },
+    {
+      "file": "rejected/initial-spawn-contact/sandfalcon-direct-locked-v3-inputs.json.gz",
+      "phase": "playing",
+      "reason": "Irrecoverable opening spawn barrel contact with allied-support",
+      "independentExact": true
+    }
+  ],
+  "oldNarrowBreachEvidence": "../crossfire-front/ retained unchanged; not claimed fixed",
+  "commands": [
+    "node scripts/record-crossfire-v3.mjs direct sandfalcon locked-spawnclear",
+    "node scripts/record-crossfire-v3.mjs covered sandfalcon locked-westlane-straight-clear-southentry",
+    "CROSSFIRE_V3_REPLAY_FULL=1 node --test tests/crossfire-v3-replay.test.mjs",
+    "node qa/crossfire-v3/replay-rejected.mjs"
+  ],
+  "fullReplayLog": "../../../evidence/acceptance-v3/full-independent-replay.log"
+}

@@ -1,0 +1,9 @@
+{
+  "work/src/campaign-simulation.js": "196445d775321510e14689be8de4b9d00921e737da7b51fe7853a4ef43324c38",
+  "work/src/combat.js": "0a3ee2ed4e091a05073ef76c7a2ef7bb89536cd2b614acb035ef2a4804a4c2a2",
+  "work/src/crushing.js": "7874610e24b8a52ab68abc34667bb2412b0dbe9fce060faf5acb3ac1753d8639",
+  "work/src/interceptor.js": "e22648a74b220b143801c91e8211787914a255b625216c68dfc7c21bfa9c2c02",
+  "work/src/mission-runtime.js": "0988c8d645389db8f60c9225bd94ed9747a545aba9d16420ed5ad47d64e611ab",
+  "work/src/sentry-rig.js": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+  "work/src/tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44"
+}

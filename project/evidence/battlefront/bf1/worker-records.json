@@ -1,0 +1,161 @@
+{
+  "boundary": "Serial worker records; a session ID is recorded whenever exec yielded. Shell wall UTC stamps and actual outcomes are in each immutable log. No speed claim.",
+  "workers": [
+    {
+      "log": "01-red.log",
+      "timeoutSeconds": 120,
+      "sessionId": null,
+      "purpose": "Expected assertion RED",
+      "firstRecord": "Sat Oct 31 11:17:26 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:17:26 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:1"
+      ]
+    },
+    {
+      "log": "02-green-inventory.log",
+      "timeoutSeconds": 120,
+      "sessionId": null,
+      "purpose": "builder GREEN / ground budget",
+      "firstRecord": "Sat Oct 31 11:18:53 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:18:54 UTC 2026",
+      "terminalExitRecords": [
+        "TEST_EXIT:0",
+        "INVENTORY_EXIT:0"
+      ]
+    },
+    {
+      "log": "03-opening-v01.log",
+      "timeoutSeconds": 120,
+      "sessionId": 92896,
+      "purpose": "v01 input-only opening diagnostic",
+      "firstRecord": "Sat Oct 31 11:19:38 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:19:57 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "04-envelope-red.log",
+      "timeoutSeconds": 120,
+      "sessionId": null,
+      "purpose": "Expected envelope assertion RED",
+      "firstRecord": "Sat Oct 31 11:20:39 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:20:40 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:1"
+      ]
+    },
+    {
+      "log": "05-v02-envelope-opening.log",
+      "timeoutSeconds": 120,
+      "sessionId": 79351,
+      "purpose": "v02 GREEN / input-only opening",
+      "firstRecord": "Sat Oct 31 11:20:55 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:21:07 UTC 2026",
+      "terminalExitRecords": [
+        "CONTRACT_EXIT:0",
+        "OPENING_EXIT:0"
+      ]
+    },
+    {
+      "log": "06-v02-crossfire.log",
+      "timeoutSeconds": 120,
+      "sessionId": 96923,
+      "purpose": "v02 failed crossfire/retreat retained",
+      "firstRecord": "Sat Oct 31 11:21:32 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:21:59 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "07-v03-contracts-world.log",
+      "timeoutSeconds": 120,
+      "sessionId": 52336,
+      "purpose": "12 tests including unchanged world contracts",
+      "firstRecord": "Sat Oct 31 11:23:56 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:24:13 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "08-v03-crossfire.log",
+      "timeoutSeconds": 120,
+      "sessionId": 20082,
+      "purpose": "v03 natural crossfire, late retreat failed",
+      "firstRecord": "Sat Oct 31 11:24:30 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:24:48 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "09-v03-covered-tape.log",
+      "timeoutSeconds": 600,
+      "sessionId": 89512,
+      "purpose": "covered literal input win",
+      "firstRecord": "Sat Oct 31 11:25:56 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:28:04 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "10-v03-direct-pilot.log",
+      "timeoutSeconds": 600,
+      "sessionId": 52032,
+      "purpose": "direct literal input win",
+      "firstRecord": "Sat Oct 31 11:28:32 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:29:45 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "11-v03-cover-retreat.log",
+      "timeoutSeconds": 120,
+      "sessionId": 37397,
+      "purpose": "sole early retreat real input diagnostic",
+      "firstRecord": "Sat Oct 31 11:32:48 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:33:15 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "12-direct-independent.log",
+      "timeoutSeconds": 600,
+      "sessionId": 20286,
+      "purpose": "direct full JSON exact replay",
+      "firstRecord": "Sat Oct 31 11:34:51 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:35:54 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "13-covered-independent.log",
+      "timeoutSeconds": 600,
+      "sessionId": 79022,
+      "purpose": "covered full JSON exact replay",
+      "firstRecord": "Sat Oct 31 11:36:23 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:38:31 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    },
+    {
+      "log": "14-final-focused.log",
+      "timeoutSeconds": 120,
+      "sessionId": 18897,
+      "purpose": "Final16/16BF1+unchangedcollisioncontracts",
+      "firstRecord": "Sat Oct 31 11:38:58 UTC 2026",
+      "lastRecord": "Sat Oct 31 11:39:16 UTC 2026",
+      "terminalExitRecords": [
+        "EXIT:0"
+      ]
+    }
+  ]
+}

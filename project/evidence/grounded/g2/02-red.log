@@ -1,0 +1,219 @@
+✖ actual consolidated eight primitive 7156 triangle warehouse retains indices positions normals UV slots transforms and borrowed maps (33.269273ms)
+✖ all primitives share fixed inverse-root coordinates including transformed children; other roots isolate uniforms (1.66119ms)
+✖ arrays preserve identity sharing and unsupported missing or wrong materials stay untouched (0.605358ms)
+✖ upstream hooks and keys chain through owned and temporary clone generations without owning temporary materials (0.611836ms)
+✖ missing anchors leave upstream intact and diagnose shader fallback; repeat apply and external replacements are safe (0.518851ms)
+✖ throwing clone or upstream cache key rolls back earlier arrays and releases every created clone exactly once (1.394379ms)
+✖ actual warehouse ray selection preserves shader/cache/uniform on occlusion fade and restores ownership in required disposal order (14.139002ms)
+✖ real scene integration changes only south-depot and context warehouse indices 0/3 with frozen spec/state and exact world geometry (199.15316ms)
+✖ scene construction rejection after warehouse finish releases owned clones without touching library prototype (119.821703ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 0
+ℹ fail 9
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 608.693933
+
+✖ failing tests:
+
+test at tests/battlefront-building-finish.test.mjs:24:1
+✖ actual consolidated eight primitive 7156 triangle warehouse retains indices positions normals UV slots transforms and borrowed maps (33.269273ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:26:164)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:32:1
+✖ all primitives share fixed inverse-root coordinates including transformed children; other roots isolate uniforms (1.66119ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:33:311)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:37:1
+✖ arrays preserve identity sharing and unsupported missing or wrong materials stay untouched (0.605358ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:38:263)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:41:1
+✖ upstream hooks and keys chain through owned and temporary clone generations without owning temporary materials (0.611836ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:42:193)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:44:1
+✖ missing anchors leave upstream intact and diagnose shader fallback; repeat apply and external replacements are safe (0.518851ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:45:22)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:47:1
+✖ throwing clone or upstream cache key rolls back earlier arrays and releases every created clone exactly once (1.394379ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /rejected/. Input:
+  
+  'AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist\n' +
+    '+ actual - expected\n' +
+    '\n' +
+    "+ 'undefined'\n" +
+    "- 'function'\n"
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:48:662)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+        at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+        at file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:48:673
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:48:662)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19)
+        at Test.run (node:internal/test_runner/test:1467:12),
+    expected: /rejected/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:50:1
+✖ actual warehouse ray selection preserves shader/cache/uniform on occlusion fade and restores ownership in required disposal order (14.139002ms)
+  AssertionError [ERR_ASSERTION]: bounded building finish adapter must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at apply (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:14:29)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:51:160)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-building-finish.test.mjs:53:1
+✖ real scene integration changes only south-depot and context warehouse indices 0/3 with frozen spec/state and exact world geometry (199.15316ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:54:1025)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/battlefront-building-finish.test.mjs:59:1
+✖ scene construction rejection after warehouse finish releases owned clones without touching library prototype (119.821703ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(created>=8)
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-building-finish.test.mjs:60:627)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

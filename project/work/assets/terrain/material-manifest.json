@@ -1,0 +1,35 @@
+{
+  "generator": "scripts/terrain/bake_materials.py",
+  "seed": 27641,
+  "materials": {
+    "asphalt": {
+      "baseColor": "asphalt-basecolor.webp",
+      "normal": "asphalt-normal.png",
+      "orm": "asphalt-orm.png",
+      "resolution": 512,
+      "tileSizeMetres": 4.0,
+      "originalProcedural": true,
+      "maxHeightReliefMetres": 0.011946633270497034
+    },
+    "concrete": {
+      "baseColor": "concrete-basecolor.webp",
+      "normal": "concrete-normal.png",
+      "orm": "concrete-orm.png",
+      "resolution": 512,
+      "tileSizeMetres": 4.0,
+      "originalProcedural": true,
+      "maxHeightReliefMetres": 0.005991548865288496
+    },
+    "earth": {
+      "baseColor": "earth-basecolor.webp",
+      "normal": "earth-normal.png",
+      "orm": "earth-orm.png",
+      "resolution": 512,
+      "tileSizeMetres": 4.0,
+      "originalProcedural": true,
+      "maxHeightReliefMetres": 0.024113289610649118
+    }
+  },
+  "provenance": "Original procedural synthesis; no downloaded photographs or texture sources.",
+  "textureRuntime": "local WebP/PNG, no external decoder"
+}

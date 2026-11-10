@@ -1,0 +1,16 @@
+{
+  "file": "vanguard-direct-initial-inputs.json.gz",
+  "inputSHA256": "e74dcc6ba25333cbe2111dd5a1d54f972d99e9ae48b66882af24b835e4212b7f",
+  "specHash": "7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6",
+  "vehicleId": "vanguard",
+  "vehicleVersion": 1,
+  "inputs": 8207,
+  "tick": 8206,
+  "phase": "won",
+  "expectedFinalHash": "c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3",
+  "finalHash": "c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3",
+  "hp": 100,
+  "truckHp": 86,
+  "truckArrived": true,
+  "at": "2026-10-30T20:49:18.283Z"
+}

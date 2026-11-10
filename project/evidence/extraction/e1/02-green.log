@@ -1,0 +1,48 @@
+✔ independent playable battlefront mission builder exists (141.701633ms)
+✔ new battlefield combatants and their full conservative patrol envelopes avoid convoy corridors and route-choice zones (38.094228ms)
+✔ hold stops real truck, advance moves without teleport; command is immutable and serializable (93.021942ms)
+✔ commands are opt-in, paused/terminal and pre-choice guarded; retry restores advance (2.461671ms)
+✔ held protected truck still takes hostile projectile damage and loses normally (2.785341ms)
+✔ crossfire is isolated, serializable, and preserves scorched field, routes, geometry and victory objectives (111.657606ms)
+✔ relations and every participant team are explicit; support is not protected and both new weapons can damage (42.836733ms)
+✔ new static compounds fit actual terrain/world and have unobstructed reciprocal line of sight (31.634852ms)
+✔ new live vehicles do not block the west convoy centre corridor alongside their positions (75.424362ms)
+✔ V3 is a serializable independent wrapper preserving V2 terrain/routes/objectives and all old actors (156.873005ms)
+✔ V3 has real grounded compounds, reciprocal terrain LOS and clearance from every convoy centreline (175.303064ms)
+✔ opening actual simulation fires both real weapons, damages both opponents, has simultaneous on-screen shells and no allied damage (5024.093482ms)
+✔ every V3 player chassis starts with actual hull and muzzle clearance and can drive and pivot forward (8616.305457ms)
+✔ independent frozen V2 spec stays byte-identical to its recorded acceptance fixture (91.209042ms)
+
+Interrupted while running:
+
+⚠ tests/crossfire-v4-front.test.mjs (tests/crossfire-v4-front.test.mjs:1:1)
+✖ tests/crossfire-v4-front.test.mjs (44603.177832ms)
+✖ tests/loading-extraction.test.mjs
+✖ tests/mission-runtime.test.mjs
+✖ tests/route-choice.test.mjs
+ℹ tests 18
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 4
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 59861.837066
+
+✖ failing tests:
+
+test at tests/crossfire-v4-front.test.mjs:1:1
+✖ tests/crossfire-v4-front.test.mjs (44603.177832ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/loading-extraction.test.mjs:1:1
+✖ tests/loading-extraction.test.mjs
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/mission-runtime.test.mjs:1:1
+✖ tests/mission-runtime.test.mjs
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/route-choice.test.mjs:1:1
+✖ tests/route-choice.test.mjs
+  'Promise resolution is still pending but the event loop has already resolved'

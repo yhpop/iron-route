@@ -1,0 +1,288 @@
+[
+  {
+    "name": "playerloss-01",
+    "rawSHA256": "31da743a02c1dbd911fe85cd90966e197b6f182e4880884f746bd1062822092e",
+    "inputs": 3125,
+    "tick": 3124,
+    "phase": "lost",
+    "cause": "tank-destroyed",
+    "playerHp": 0,
+    "supplyHp": 100,
+    "preparationComplete": {
+      "id": "event-17",
+      "tick": 1080,
+      "type": "objective-changed",
+      "entityId": "prepare-extraction",
+      "value": "complete"
+    },
+    "choiceFrame": null,
+    "firstPreparationChain": {
+      "shotId": "event-1",
+      "projectileId": "projectile-1",
+      "shotTick": 121,
+      "impactId": "event-2",
+      "impactTick": 140,
+      "damageId": "event-3",
+      "damageTick": 140,
+      "owner": "hostile-flanker",
+      "target": "tank",
+      "damage": 12,
+      "beforeHp": 100,
+      "afterHp": 88,
+      "preparation": {
+        "id": "prepare-extraction",
+        "status": "active",
+        "progress": 0.12962962962962943,
+        "elapsed": 2.33333333333333,
+        "completedTick": null
+      },
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      }
+    },
+    "retry": true,
+    "failure": null,
+    "hostileDamageChains": 9
+  },
+  {
+    "name": "win-direct-01",
+    "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+    "inputs": 9190,
+    "tick": 9189,
+    "phase": "won",
+    "cause": "objectives-complete",
+    "playerHp": 52,
+    "supplyHp": 100,
+    "preparationComplete": {
+      "id": "event-17",
+      "tick": 1080,
+      "type": "objective-changed",
+      "entityId": "prepare-extraction",
+      "value": "complete"
+    },
+    "choice": {
+      "id": "event-19",
+      "tick": 1427,
+      "type": "convoy-route-selected",
+      "value": "direct",
+      "choiceId": "direct"
+    },
+    "choiceFrame": {
+      "tick": 1427,
+      "supply": {
+        "id": "supply",
+        "kind": "truck",
+        "yieldForTankTurn": true,
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 28,
+          "yaw": 0
+        },
+        "hp": 100,
+        "protected": true,
+        "routeId": "ridge-east",
+        "speed": 0,
+        "escortRange": 19,
+        "team": "allied",
+        "activationObjectiveId": "prepare-extraction",
+        "maxHp": 100,
+        "alive": true,
+        "destroyed": false,
+        "status": "waiting",
+        "width": 1.8,
+        "depth": 3.6,
+        "height": 2.2,
+        "routeIndex": 0,
+        "arrived": false,
+        "maxSpeed": 1.15,
+        "stoppedReason": null
+      }
+    },
+    "arrival": {
+      "id": "event-47",
+      "tick": 9189,
+      "type": "vehicle-arrived",
+      "entityId": "supply",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -32,
+        "yaw": 1.0516502125483707
+      }
+    },
+    "firstPreparationChain": {
+      "shotId": "event-1",
+      "projectileId": "projectile-1",
+      "shotTick": 121,
+      "impactId": "event-2",
+      "impactTick": 140,
+      "damageId": "event-3",
+      "damageTick": 140,
+      "owner": "hostile-flanker",
+      "target": "tank",
+      "damage": 12,
+      "beforeHp": 100,
+      "afterHp": 88,
+      "preparation": {
+        "id": "prepare-extraction",
+        "status": "active",
+        "progress": 0.12962962962962943,
+        "elapsed": 2.33333333333333,
+        "completedTick": null
+      },
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      }
+    },
+    "retry": false,
+    "failure": null,
+    "hostileDamageChains": 4
+  },
+  {
+    "name": "win-direct-01-fresh",
+    "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+    "inputs": 9190,
+    "tick": 9189,
+    "phase": "won",
+    "cause": "objectives-complete",
+    "playerHp": 52,
+    "supplyHp": 100,
+    "preparationComplete": {
+      "id": "event-17",
+      "tick": 1080,
+      "type": "objective-changed",
+      "entityId": "prepare-extraction",
+      "value": "complete"
+    },
+    "choice": {
+      "id": "event-19",
+      "tick": 1427,
+      "type": "convoy-route-selected",
+      "value": "direct",
+      "choiceId": "direct"
+    },
+    "choiceFrame": {
+      "tick": 1427,
+      "supply": {
+        "id": "supply",
+        "kind": "truck",
+        "yieldForTankTurn": true,
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 28,
+          "yaw": 0
+        },
+        "hp": 100,
+        "protected": true,
+        "routeId": "ridge-east",
+        "speed": 0,
+        "escortRange": 19,
+        "team": "allied",
+        "activationObjectiveId": "prepare-extraction",
+        "maxHp": 100,
+        "alive": true,
+        "destroyed": false,
+        "status": "waiting",
+        "width": 1.8,
+        "depth": 3.6,
+        "height": 2.2,
+        "routeIndex": 0,
+        "arrived": false,
+        "maxSpeed": 1.15,
+        "stoppedReason": null
+      }
+    },
+    "arrival": {
+      "id": "event-47",
+      "tick": 9189,
+      "type": "vehicle-arrived",
+      "entityId": "supply",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -32,
+        "yaw": 1.0516502125483707
+      }
+    },
+    "firstPreparationChain": {
+      "shotId": "event-1",
+      "projectileId": "projectile-1",
+      "shotTick": 121,
+      "impactId": "event-2",
+      "impactTick": 140,
+      "damageId": "event-3",
+      "damageTick": 140,
+      "owner": "hostile-flanker",
+      "target": "tank",
+      "damage": 12,
+      "beforeHp": 100,
+      "afterHp": 88,
+      "preparation": {
+        "id": "prepare-extraction",
+        "status": "active",
+        "progress": 0.12962962962962943,
+        "elapsed": 2.33333333333333,
+        "completedTick": null
+      },
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      }
+    },
+    "retry": false,
+    "failure": null,
+    "hostileDamageChains": 4
+  },
+  {
+    "name": "truckloss-01",
+    "rawSHA256": "d4b654fe1ae691ea48f5b176649616dcd89d22b73c1a2e30fc68fff6acb1fe1e",
+    "inputs": 1240,
+    "tick": 1239,
+    "phase": "playing",
+    "playerHp": 88,
+    "supplyHp": 88,
+    "choiceFrame": null,
+    "firstPreparationChain": {
+      "shotId": "event-1",
+      "projectileId": "projectile-1",
+      "shotTick": 121,
+      "impactId": "event-2",
+      "impactTick": 140,
+      "damageId": "event-3",
+      "damageTick": 140,
+      "owner": "hostile-flanker",
+      "target": "tank",
+      "damage": 12,
+      "beforeHp": 100,
+      "afterHp": 88,
+      "preparation": {
+        "id": "prepare-extraction",
+        "status": "active",
+        "progress": 0.12962962962962943,
+        "elapsed": 2.33333333333333,
+        "completedTick": null
+      },
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      }
+    },
+    "retry": false,
+    "failure": {
+      "name": "Error",
+      "message": "no-motion {\"target\":{\"x\":-22,\"z\":23},\"contacts\":[\"south-depot\"],\"pose\":{\"x\":-19.314542663231094,\"y\":0.008,\"z\":23.056899066314024,\"yaw\":1.549611710871229,\"basis\":{\"right\":[1,-4.0192406735573345e-21,0],\"up\":[4.0192406735573345e-21,1,0],\"forward\":[0,0,1]}}}",
+      "action": "drive -22,23",
+      "inputs": 1240,
+      "tick": 1239
+    },
+    "hostileDamageChains": 2
+  }
+]

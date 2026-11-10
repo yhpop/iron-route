@@ -1,0 +1,7 @@
+import {readFileSync} from 'node:fs';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+// CPU-only inspection of shipping GLB geometry/rig. Only image references omitted:
+// no browser pixel, texture decoder, GPU performance or lookdev claim.
+export async function parseArtGeometry(key){const b=readFileSync(new URL(`../../assets/art-kit/${key}.glb`,import.meta.url)),size=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+size));for(const m of j.materials){for(const p of ['normalTexture','occlusionTexture','emissiveTexture'])delete m[p];delete m.pbrMetallicRoughness?.baseColorTexture;delete m.pbrMetallicRoughness?.metallicRoughnessTexture;}delete j.images;delete j.textures;delete j.samplers;const raw=Buffer.from(JSON.stringify(j)),padded=Buffer.concat([raw,Buffer.alloc((4-raw.length%4)%4,32)]),bin=b.subarray(20+size),out=Buffer.alloc(20+padded.length+bin.length);out.writeUInt32LE(0x46546c67,0);out.writeUInt32LE(2,4);out.writeUInt32LE(out.length,8);out.writeUInt32LE(padded.length,12);out.writeUInt32LE(0x4e4f534a,16);padded.copy(out,20);bin.copy(out,20+padded.length);return new GLTFLoader().parseAsync(out.buffer.slice(out.byteOffset,out.byteOffset+out.byteLength),'');}
+export const keys=['warehouse-sawtooth','pump-station','service-workshop','cargo-truck','sentry-turret'];
+export async function geometryLibrary(){return Object.fromEntries(await Promise.all(keys.map(async k=>[k,await parseArtGeometry(k)])));}

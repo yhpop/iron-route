@@ -1,0 +1,22 @@
+{
+  "binary_positions": 12499,
+  "binary_indices": 71466,
+  "max_index": 12498,
+  "triangles": 23822,
+  "out_of_range": 0,
+  "degenerate_indices": 0,
+  "actual_bounds": {
+    "min": [
+      -0.7761769890785217,
+      -0.0027944163884967566,
+      -0.2540489733219147
+    ],
+    "max": [
+      0.7892323732376099,
+      1.1091585159301758,
+      0.18809300661087036
+    ]
+  },
+  "buffer_bytes": 542900,
+  "declared_buffer_bytes": 542900
+}

@@ -1,0 +1,184 @@
+{
+  "boundary": "Observed events from actual accepted mission9070 direct input run, not a static ray fixture",
+  "route": "direct",
+  "finalHash": "ba67ec6206b2c23ec66a9689ce2c9a945e73c62d93dbfd317a66723b872c4222",
+  "playerImpacts": [
+    {
+      "id": "event-32",
+      "tick": 1633,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ruin-east-window",
+      "position": {
+        "x": 19.273339837789536,
+        "y": 0.9431577846521592,
+        "z": -1.2946058906628608
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-11",
+      "value": "hit"
+    },
+    {
+      "id": "event-35",
+      "tick": 1687,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ruin-east-window",
+      "position": {
+        "x": 19.273339837789536,
+        "y": 0.9429275888752056,
+        "z": -0.8187360288353531
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-12",
+      "value": "hit"
+    },
+    {
+      "id": "event-51",
+      "tick": 2510,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7906506776386728,
+        "y": 0.9936527145594805,
+        "z": -18.12194878412476
+      },
+      "normal": {
+        "x": 0.9883133470483408,
+        "y": 0,
+        "z": -0.15243598015595175
+      },
+      "projectileId": "projectile-19",
+      "value": "hit"
+    },
+    {
+      "id": "event-54",
+      "tick": 2564,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7998315567545978,
+        "y": 0.9935418181657487,
+        "z": -17.98358412903569
+      },
+      "normal": {
+        "x": 0.9997894459432473,
+        "y": 0,
+        "z": 0.020519838705385506
+      },
+      "projectileId": "projectile-20",
+      "value": "hit"
+    }
+  ],
+  "hostileFinalStates": [
+    {
+      "id": "road-gun",
+      "hp": 90,
+      "alive": true,
+      "pose": {
+        "x": 22.984728555355034,
+        "y": 0.00800016971019878,
+        "z": -6.881559144451626,
+        "yaw": -0.0029836037498558454,
+        "basis": {
+          "right": [
+            0.9999999999999949,
+            -1.0261330970478539e-7,
+            4.930380657631325e-32
+          ],
+          "up": [
+            1.0261330970478536e-7,
+            0.9999999999999947,
+            -2.695775237453954e-9
+          ],
+          "forward": [
+            2.7662241933535393e-16,
+            2.6957752374539404e-9,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ridge-gun",
+      "hp": 0,
+      "alive": false,
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      }
+    },
+    {
+      "id": "hostile-flanker",
+      "hp": 0,
+      "alive": false,
+      "pose": {
+        "x": 0.12334926151524254,
+        "y": 0.10748100031956881,
+        "z": 15.973379410345812,
+        "yaw": -1.2698001777827592,
+        "basis": {
+          "right": [
+            0.9990559344213787,
+            -0.04344237444507241,
+            0
+          ],
+          "up": [
+            0.04344021490878296,
+            0.9990062709862391,
+            0.009970870516049687
+          ],
+          "forward": [
+            -0.00043315829050156286,
+            -0.009961457360406595,
+            0.999950289635016
+          ]
+        }
+      }
+    }
+  ],
+  "sourceFiles": [
+    "assets/armor/quaternius-sandfalcon-rig.js",
+    "assets/armor/rigs.js",
+    "src/campaign-simulation.js",
+    "src/campaign-world.js",
+    "src/combat-relations.js",
+    "src/combat.js",
+    "src/crossfire-front.js",
+    "src/crossfire-v3-front.js",
+    "src/crossfire-v4-front.js",
+    "src/crushing.js",
+    "src/interceptor.js",
+    "src/mission-runtime.js",
+    "src/player-config.js",
+    "src/player-vehicles-v3.js",
+    "src/player-vehicles.js",
+    "src/ruined-depot-collision-data.js",
+    "src/ruined-depot-front.js",
+    "src/ruined-depot-layout.js",
+    "src/ruined-depot-world.js",
+    "src/scanned-cover-front.js",
+    "src/scorched-front.js",
+    "src/sentry-rig.js",
+    "src/tank-controller.js",
+    "src/terrain-candidate/combat-surface.js",
+    "src/terrain-candidate/combat-world.js",
+    "src/terrain-candidate/heightfield.js",
+    "src/terrain-candidate/interceptor-mission.js",
+    "src/terrain-candidate/ridge-convoy.js",
+    "src/terrain-candidate/vendor/three-terrain/noise.js",
+    "src/terrain-candidate/vertical-slice.js"
+  ]
+}

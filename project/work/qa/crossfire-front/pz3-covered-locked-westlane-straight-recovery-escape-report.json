@@ -1,0 +1,2024 @@
+{
+  "sourceHashes": {
+    "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+    "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+    "combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+    "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+    "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+    "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+    "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+    "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+    "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+    "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+    "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+  },
+  "recovery": {
+    "originalObstacle": {
+      "inputs": 16172,
+      "finalHash": "71a4aed29527eb199773c5ccf1821594f40c3e7679749ad20c557bef6862b747",
+      "verified": true
+    },
+    "prefixStoppedReason": "tank",
+    "prefixFile": "pz3-covered-locked-westlane-straight-recovery-inputs.json.gz",
+    "prefixSHA256": "89ce2c51f3b5aed11ba13cc93e0925e820a2d2a6575f9d53a16715d7784181bf",
+    "prefixInputs": 17500,
+    "prefixFinalHash": "e9c7d59babb8a1598f162e521e92f96959641c0a4d6323a225eca2451f7fcede",
+    "blockedTick": 17499,
+    "blockedTruck": {
+      "id": "supply",
+      "kind": "truck",
+      "yieldForTankTurn": true,
+      "pose": {
+        "x": -18.53342489081844,
+        "y": 0,
+        "z": 16.133012882135436,
+        "yaw": 0.2782996590051117
+      },
+      "hp": 100,
+      "protected": true,
+      "routeId": "ridge-west",
+      "speed": 0,
+      "escortRange": 19,
+      "team": "allied",
+      "maxHp": 100,
+      "alive": true,
+      "destroyed": false,
+      "status": "waiting",
+      "width": 1.8,
+      "depth": 3.6,
+      "height": 2.2,
+      "routeIndex": 2,
+      "arrived": false,
+      "maxSpeed": 1.15,
+      "stoppedReason": "tank"
+    },
+    "noStateRepair": true,
+    "escape": {
+      "before": {
+        "x": -21.199972745479947,
+        "y": 0.008,
+        "z": 17.959453383014033,
+        "yaw": -1.8211398351443586,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "after": {
+        "x": -22.323686792426955,
+        "y": 0.00800000000000011,
+        "z": 17.672110870779864,
+        "yaw": -1.8211398351443586,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            -2.232626456592132e-18
+          ],
+          "forward": [
+            0,
+            2.232626456592132e-18,
+            1
+          ]
+        }
+      },
+      "contactsBefore": [
+        "supply"
+      ],
+      "contactsAfter": [],
+      "reverseDisplacement": 1.1598702421577447
+    }
+  },
+  "maneuver": null,
+  "vehicleId": "pz3",
+  "vehicleVersion": 1,
+  "attempt": "locked-westlane-straight-recovery-escape",
+  "specHash": "9ead673691a4ca1c22739c12ea2dd6093f0cc54e9a492b58ad8b87c08aad7089",
+  "route": "covered",
+  "phase": "playing",
+  "tick": 19743,
+  "hp": 67,
+  "truckHp": 100,
+  "shots": 6,
+  "failure": {
+    "kind": "pilot-inconclusive",
+    "reason": "blocked-aim",
+    "id": "ridge-fence-2"
+  },
+  "checkpoints": [
+    {
+      "action": "replay authentic blocked prefix",
+      "tick": 17499,
+      "phase": "playing",
+      "tank": {
+        "x": -21.199972745479947,
+        "y": 0.008,
+        "z": 17.959453383014033,
+        "yaw": -1.8211398351443586,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "tankBlocked": {
+        "body": false,
+        "barrel": false,
+        "muzzle": false
+      },
+      "desiredSpeed": 0,
+      "hp": 67,
+      "contacts": [],
+      "choice": "covered",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 0,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 0,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": -18.53342489081844,
+            "y": 0,
+            "z": 16.133012882135436,
+            "yaw": 0.2782996590051117
+          },
+          "status": "waiting",
+          "stoppedReason": "tank",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23.0165180918075,
+            "y": 0.008000110643302147,
+            "z": -2.536249410696593,
+            "yaw": 3.138609037504674,
+            "basis": {
+              "right": [
+                0.9999999999999947,
+                1.033050691484755e-7,
+                4.930380657631324e-32
+              ],
+              "up": [
+                -1.033050691484755e-7,
+                0.9999999999999947,
+                -3.6241336798492656e-9
+              ],
+              "forward": [
+                -3.743913804001474e-16,
+                3.624133679849246e-9,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "allied-support",
+          "hp": 30,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": 2,
+            "yaw": 0
+          },
+          "status": "idle"
+        },
+        {
+          "id": "hostile-flanker",
+          "hp": 0,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": -19,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "reverse away from real supply contact",
+      "tick": 17607,
+      "phase": "playing",
+      "tank": {
+        "x": -22.323686792426955,
+        "y": 0.00800000000000011,
+        "z": 17.672110870779864,
+        "yaw": -1.8211398351443586,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            -2.232626456592132e-18
+          ],
+          "forward": [
+            0,
+            2.232626456592132e-18,
+            1
+          ]
+        }
+      },
+      "tankBlocked": {
+        "body": false,
+        "barrel": false,
+        "muzzle": false
+      },
+      "desiredSpeed": 0,
+      "hp": 67,
+      "contacts": [],
+      "choice": "covered",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 0,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 0,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": -18.53342489081844,
+            "y": 0,
+            "z": 16.133012882135436,
+            "yaw": 0.2782996590051117
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23.009267915477388,
+            "y": 0.008000139582936428,
+            "z": -0.10626022657597478,
+            "yaw": 3.138609037504704,
+            "basis": {
+              "right": [
+                1,
+                1.3687795294966357e-9,
+                0
+              ],
+              "up": [
+                -1.3687795294966357e-9,
+                1,
+                -3.2984571731639586e-9
+              ],
+              "forward": [
+                -4.514860657548166e-18,
+                3.2984571731639586e-9,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "allied-support",
+          "hp": 30,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": 2,
+            "yaw": 0
+          },
+          "status": "idle"
+        },
+        {
+          "id": "hostile-flanker",
+          "hp": 0,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": -19,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive -22,21",
+      "tick": 17957,
+      "phase": "playing",
+      "tank": {
+        "x": -22.165237900368837,
+        "y": 0.008000000000000012,
+        "z": 20.595628262573875,
+        "yaw": -2.7705219616789147,
+        "basis": {
+          "right": [
+            1,
+            1.6884778010213179e-19,
+            0
+          ],
+          "up": [
+            -1.6884778010213179e-19,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "tankBlocked": {
+        "body": false,
+        "barrel": false,
+        "muzzle": false
+      },
+      "desiredSpeed": 0,
+      "hp": 67,
+      "contacts": [],
+      "choice": "covered",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 0,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 0,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": -18.53342489081844,
+            "y": 0,
+            "z": 16.133012882135436,
+            "yaw": 0.2782996590051117
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 22.996115005781604,
+            "y": 0.008,
+            "z": 2.9294488825054787,
+            "yaw": 0.9986090375047638,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "allied-support",
+          "hp": 30,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": 2,
+            "yaw": 0
+          },
+          "status": "idle"
+        },
+        {
+          "id": "hostile-flanker",
+          "hp": 0,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": -19,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive -12,24",
+      "tick": 18542,
+      "phase": "playing",
+      "tank": {
+        "x": -12.403391450513645,
+        "y": 0.008,
+        "z": 23.82438672228136,
+        "yaw": -1.9812623182790752,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "tankBlocked": {
+        "body": false,
+        "barrel": false,
+        "muzzle": false
+      },
+      "desiredSpeed": 0,
+      "hp": 67,
+      "contacts": [],
+      "choice": "covered",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 0,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 0,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": -18.53342489081844,
+            "y": 0,
+            "z": 16.133012882135436,
+            "yaw": 0.2782996590051117
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 22.986293598458538,
+            "y": 0.008000115311286542,
+            "z": -7.406119303366487,
+            "yaw": -0.002983612717732953,
+            "basis": {
+              "right": [
+                0.9999999999999976,
+                -7.165976019272609e-8,
+                -2.465190328815662e-32
+              ],
+              "up": [
+                7.165976019272609e-8,
+                0.9999999999999976,
+                -2.795161710827981e-9
+              ],
+              "forward": [
+                2.0030061789782306e-16,
+                2.795161710827973e-9,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "allied-support",
+          "hp": 30,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": 2,
+            "yaw": 0
+          },
+          "status": "idle"
+        },
+        {
+          "id": "hostile-flanker",
+          "hp": 0,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": -19,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "shoot ridge-fence-2",
+      "tick": 19742,
+      "phase": "playing",
+      "tank": {
+        "x": -12.403391450513645,
+        "y": 0.008,
+        "z": 23.82438672228136,
+        "yaw": -1.9812623182790752,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "tankBlocked": {
+        "body": false,
+        "barrel": false,
+        "muzzle": false
+      },
+      "desiredSpeed": 0,
+      "hp": 67,
+      "contacts": [],
+      "choice": "covered",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 0,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 0,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "crushed"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": -18.53342489081844,
+            "y": 0,
+            "z": 16.133012882135436,
+            "yaw": 0.2782996590051117
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23.00033945671585,
+            "y": 0.008,
+            "z": 2.8862267467267397,
+            "yaw": 3.138609037504228,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "allied-support",
+          "hp": 30,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": 2,
+            "yaw": 0
+          },
+          "status": "idle"
+        },
+        {
+          "id": "hostile-flanker",
+          "hp": 0,
+          "pose": {
+            "x": -27,
+            "y": 0.008,
+            "z": -19,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": {
+        "kind": "pilot-inconclusive",
+        "reason": "blocked-aim",
+        "id": "ridge-fence-2"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-3",
+      "tick": 121,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-1",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-4",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -0.07997112110826965
+      },
+      "projectileId": "projectile-2",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-5",
+      "tick": 199,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-1",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-6",
+      "tick": 199,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-7",
+      "tick": 223,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-2",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-8",
+      "tick": 223,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-9",
+      "tick": 349,
+      "type": "convoy-route-selected",
+      "value": "covered",
+      "choiceId": "covered",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-10",
+      "tick": 494,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-3",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-11",
+      "tick": 572,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-3",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-12",
+      "tick": 572,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-13",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -0.07997112110826965
+      },
+      "projectileId": "projectile-4",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-14",
+      "tick": 668,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-4",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-15",
+      "tick": 668,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-16",
+      "tick": 867,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-5",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-17",
+      "tick": 945,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-5",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-18",
+      "tick": 945,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-19",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -0.07997112110826965
+      },
+      "projectileId": "projectile-6",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-20",
+      "tick": 1113,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-6",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-21",
+      "tick": 1113,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-22",
+      "tick": 1240,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-7",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-23",
+      "tick": 1318,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-7",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-24",
+      "tick": 1318,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-25",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -0.07997112110826965
+      },
+      "projectileId": "projectile-8",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-26",
+      "tick": 1558,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-8",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-27",
+      "tick": 1558,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-28",
+      "tick": 1608,
+      "type": "crushed",
+      "entityId": "ridge-fence-0",
+      "position": {
+        "x": -22.6,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "value": "fence",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-29",
+      "tick": 1608,
+      "type": "destroyed",
+      "entityId": "ridge-fence-0",
+      "position": {
+        "x": -22.6,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-30",
+      "tick": 1608,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-0",
+      "position": {
+        "x": -22.6,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-31",
+      "tick": 1608,
+      "type": "crushed",
+      "entityId": "ridge-fence-1",
+      "position": {
+        "x": -20.8,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "value": "fence",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-32",
+      "tick": 1608,
+      "type": "destroyed",
+      "entityId": "ridge-fence-1",
+      "position": {
+        "x": -20.8,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-33",
+      "tick": 1608,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-1",
+      "position": {
+        "x": -20.8,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-34",
+      "tick": 1613,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-9",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-35",
+      "tick": 1691,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-9",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-36",
+      "tick": 1691,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-37",
+      "tick": 1925,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -0.07997112110826965
+      },
+      "projectileId": "projectile-10",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-38",
+      "tick": 1986,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.224630315006867,
+        "z": -16.92002887889173
+      },
+      "projectileId": "projectile-11",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-39",
+      "tick": 1994,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -22.259545502068548,
+        "y": 1.2487816864819183,
+        "z": 7.4508592390925275
+      },
+      "projectileId": "projectile-12",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-40",
+      "tick": 2003,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-10",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-41",
+      "tick": 2003,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": -18.255930999999997
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-42",
+      "tick": 2033,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -22.25955065044772,
+        "y": 1.2224299446763291,
+        "z": 7.450830512089041
+      },
+      "projectileId": "projectile-13",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-43",
+      "tick": 2037,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -26.866649880597866,
+        "y": 1.515032698587313,
+        "z": -18.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-12",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-44",
+      "tick": 2037,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": -26.866649880597866,
+        "y": 1.515032698587313,
+        "z": -18.255930999999997
+      },
+      "value": 32,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-45",
+      "tick": 2064,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-11",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-46",
+      "tick": 2064,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 1.1125867267123208,
+        "z": 1.255931
+      },
+      "value": 12,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-47",
+      "tick": 2072,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -22.25955065044772,
+        "y": 1.2224299446763291,
+        "z": 7.450830512089041
+      },
+      "projectileId": "projectile-14",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-48",
+      "tick": 2075,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -26.708610053857694,
+        "y": 1.0211807610256205,
+        "z": -17.374098
+      },
+      "normal": {
+        "x": -1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-13",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-49",
+      "tick": 2075,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": -26.708610053857694,
+        "y": 1.0211807610256205,
+        "z": -17.374098
+      },
+      "value": 18,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-50",
+      "tick": 2075,
+      "type": "destroyed",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -27,
+        "y": 0.008,
+        "z": -19,
+        "yaw": 3.141592653589793
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-51",
+      "tick": 2114,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -26.708610053857694,
+        "y": 1.0211807610256205,
+        "z": -17.374098
+      },
+      "normal": {
+        "x": -1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-14",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-52",
+      "tick": 2613,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.601563337486289,
+        "y": 1.2756132131179438,
+        "z": -17.541485051044894
+      },
+      "projectileId": "projectile-15",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-53",
+      "tick": 2751,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-support",
+      "position": {
+        "x": -26.052390000000003,
+        "y": 1.0199034989469469,
+        "z": 1.8572777405683618
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-15",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-54",
+      "tick": 2751,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -26.052390000000003,
+        "y": 1.0199034989469469,
+        "z": 1.8572777405683618
+      },
+      "value": 8,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-55",
+      "tick": 2974,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7270639247448156,
+        "y": 1.274654421359192,
+        "z": -17.79148237432082
+      },
+      "projectileId": "projectile-16",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-56",
+      "tick": 3101,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "west-workshop",
+      "position": {
+        "x": -29,
+        "y": 0.988252750678418,
+        "z": -9.682971828345691
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-16",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-57",
+      "tick": 3299,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -20.000784296428797,
+        "y": 1.2182204447735745,
+        "z": -19.42281303347375
+      },
+      "projectileId": "projectile-17",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-58",
+      "tick": 3331,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.7916205512287955,
+        "y": 1.0086816714299327,
+        "z": -18.115485509360344
+      },
+      "normal": {
+        "x": -0.9895256890359944,
+        "y": 0,
+        "z": -0.14435688670042995
+      },
+      "projectileId": "projectile-17",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-59",
+      "tick": 3331,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": -0.7916205512287955,
+        "y": 1.0086816714299327,
+        "z": -18.115485509360344
+      },
+      "value": 32,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-60",
+      "tick": 3335,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7546466168764142,
+        "y": 1.2744223028577308,
+        "z": -18.051054296039858
+      },
+      "projectileId": "projectile-18",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-61",
+      "tick": 3338,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -20.001172327612394,
+        "y": 1.2182204447735745,
+        "z": -19.417226410140792
+      },
+      "projectileId": "projectile-19",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-62",
+      "tick": 3370,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.797999235588631,
+        "y": 1.0087064770637846,
+        "z": -18.05654396519489
+      },
+      "normal": {
+        "x": -0.9974990444857885,
+        "y": 0,
+        "z": -0.07067995649361201
+      },
+      "projectileId": "projectile-19",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-63",
+      "tick": 3370,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": -0.797999235588631,
+        "y": 1.0087064770637846,
+        "z": -18.05654396519489
+      },
+      "value": 32,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-64",
+      "tick": 3377,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": -20.001172327612394,
+        "y": 1.2182204447735745,
+        "z": -19.417226410140792
+      },
+      "projectileId": "projectile-20",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-65",
+      "tick": 3409,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.797999235588631,
+        "y": 1.0087064770637846,
+        "z": -18.05654396519489
+      },
+      "normal": {
+        "x": -0.9974990444857885,
+        "y": 0,
+        "z": -0.07067995649361201
+      },
+      "projectileId": "projectile-20",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-66",
+      "tick": 3409,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": -0.797999235588631,
+        "y": 1.0087064770637846,
+        "z": -18.05654396519489
+      },
+      "value": 26,
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-67",
+      "tick": 3409,
+      "type": "destroyed",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      },
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-68",
+      "tick": 3422,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "tank",
+      "position": {
+        "x": -20.98560864940073,
+        "y": 1.068401563311596,
+        "z": -19.41974462298363
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-18",
+      "value": "hit",
+      "action": "replay authentic blocked prefix"
+    },
+    {
+      "id": "event-69",
+      "tick": 3422,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -20.98560864940073,
+        "y": 1.068401563311596,
+        "z": -19.41974462298363
+      },
+      "value": 8,
+      "action": "replay authentic blocked prefix"
+    }
+  ],
+  "result": null,
+  "finalHash": "873673b55a7e933771635ea9127f5059f29e189e1daa4c92f17a85ba28cfbaa6"
+}

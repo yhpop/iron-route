@@ -1,0 +1,83 @@
+[
+  {
+    "file": "barrier_6k.glb",
+    "bytes": 2530728,
+    "sha256": "63719451d7563d7b658ca31985cf8ff5a3d5b0775fb35b4685072b2a50fff7cb",
+    "triangles": 5999,
+    "materials": 1,
+    "images": 3,
+    "generator": "Khronos glTF Blender I/O v4.3.47",
+    "materials_json": [
+      {
+        "doubleSided": true,
+        "name": "concrete_road_barrier_02",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicFactor": 0,
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "barrier_original.glb",
+    "bytes": 2927052,
+    "sha256": "dc512bdb75e406beca3f35245f198818fb65407d8072b4111a68078212cbd7a5",
+    "triangles": 23822,
+    "materials": 1,
+    "images": 3,
+    "generator": "Khronos glTF Blender I/O v4.3.47",
+    "materials_json": [
+      {
+        "doubleSided": true,
+        "name": "concrete_road_barrier_02",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicFactor": 0,
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "barrier_2k.glb",
+    "bytes": 2437220,
+    "sha256": "bf34ed5b79b14af22c79e85bd9d394cf03202f08c6144106a4aa5b426faaefaa",
+    "triangles": 1999,
+    "materials": 1,
+    "images": 3,
+    "generator": "Khronos glTF Blender I/O v4.3.47",
+    "materials_json": [
+      {
+        "doubleSided": true,
+        "name": "concrete_road_barrier_02",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicFactor": 0,
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      }
+    ]
+  }
+]

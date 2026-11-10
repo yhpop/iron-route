@@ -1,0 +1,247 @@
+{
+  "updatedUTC": "2026-10-31T04:21:09.331Z",
+  "boundary": "Recovering only missing runs after explicitly probed stale host/Unknown old sessions; accepted direct record untouched",
+  "coveredRecord": {
+    "sessionId": 73202,
+    "attempt": "covered-original-controls-recovery-02",
+    "log": "work/qa/ruined-depot/covered-original-controls-recovery-02.log",
+    "state": "complete",
+    "lastObserved": {
+      "event": "progress",
+      "route": "covered",
+      "attempt": "covered-original-controls-recovery-02",
+      "inputs": 10000,
+      "tick": 9999,
+      "phase": "playing",
+      "hp": 92,
+      "truckHp": 100,
+      "pose": {
+        "x": -21.430012897797297,
+        "y": 0.008,
+        "z": 16.826724578488527,
+        "yaw": -0.17588216709219928,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "exitCode": 0,
+    "summary": {
+      "route": "covered",
+      "attempt": "covered-original-controls-recovery-02",
+      "mode": "tape",
+      "verify": false,
+      "inputs": 13600,
+      "tick": 13599,
+      "phase": "won",
+      "selectedConvoyChoiceId": "covered",
+      "hp": 92,
+      "truckHp": 100,
+      "truckArrived": true,
+      "shots": 9,
+      "alliedDamage": 0,
+      "failure": null,
+      "finalHash": "dc586e3d3b7a3ec00217424a90c0ad2b1dcc36068e659dd3d19b9298d109588b",
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "sourceHashesHash": "43731151b349d8d5ad6bbeee24b43ad215d40426ebc2fea1e13b18d21bf0e8c8",
+      "closureFiles": 30
+    }
+  },
+  "directVerify": {
+    "sessionId": 30719,
+    "log": "work/qa/ruined-depot/direct-independent-recovery-03.log",
+    "state": "complete",
+    "verificationTag": "independent-recovery-03",
+    "scope": "fresh verify only; accepted direct never overwritten",
+    "lastObserved": {
+      "event": "progress",
+      "route": "direct",
+      "attempt": "direct-tape-01",
+      "inputs": 2000,
+      "tick": 1999,
+      "phase": "playing",
+      "hp": 100,
+      "truckHp": 100,
+      "pose": {
+        "x": 15.646286696187385,
+        "y": 0.008,
+        "z": -7.723157345182709,
+        "yaw": -0.2233201148101891,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "exitCode": 0,
+    "independent": {
+      "route": "direct",
+      "attempt": "direct-tape-01",
+      "mode": "tape",
+      "verify": true,
+      "inputs": 8141,
+      "tick": 8140,
+      "phase": "won",
+      "selectedConvoyChoiceId": "direct",
+      "hp": 72,
+      "truckHp": 86,
+      "truckArrived": true,
+      "shots": 4,
+      "alliedDamage": 0,
+      "failure": null,
+      "finalHash": "ba67ec6206b2c23ec66a9689ce2c9a945e73c62d93dbfd317a66723b872c4222",
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "sourceHashesHash": "43731151b349d8d5ad6bbeee24b43ad215d40426ebc2fea1e13b18d21bf0e8c8",
+      "closureFiles": 30,
+      "fullEvidenceExact": true,
+      "comparison": "ENTIRE generated result JSON roundtripped exactly like saved evidence, then deepStrictEqual; no field subset or repair",
+      "generatedEvidenceFile": "qa/ruined-depot/direct-independent-recovery-03-result.json.gz",
+      "harnessSHA256": "0e5307d3c0acd6a1dc3f6e5d38979a32618f0739453272c05a7bc8582f4d2299",
+      "comparisonHelperSHA256": "dd43243e7621e7f032e4648729f5a9bbf396ea7bbea2285d83b4a4b7a6b91399"
+    }
+  },
+  "priorInterruption": "interruption-2026-10-31.json",
+  "acceptedDirectFinalHash": "ba67ec6206b2c23ec66a9689ce2c9a945e73c62d93dbfd317a66723b872c4222",
+  "failedDirectVerify": {
+    "sessionId": 16838,
+    "log": "work/qa/ruined-depot/direct-independent-recovery-02.log",
+    "state": "failed-verifier-json-signed-zero",
+    "lastObserved": {
+      "event": "progress",
+      "route": "direct",
+      "attempt": "direct-tape-01",
+      "inputs": 4000,
+      "tick": 3999,
+      "phase": "playing",
+      "hp": 86,
+      "truckHp": 100,
+      "pose": {
+        "x": 16.040584490736336,
+        "y": 0.008,
+        "z": 20.90956933538098,
+        "yaw": 3.1043910523338862,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "exitCode": 1,
+    "note": "Actual replay won with exact same finalHash; whole-memory-vs-decoded-JSON signed zero caused comparison failure. Log preserved. Fixed only QA comparison to ENTIRE JSON roundtrip with regression red/green."
+  },
+  "coveredVerify": {
+    "sessionId": 14408,
+    "log": "work/qa/ruined-depot/covered-independent-01.log",
+    "state": "complete",
+    "verificationTag": "independent-01",
+    "lastObserved": {
+      "event": "progress",
+      "route": "covered",
+      "attempt": "covered-tape-01",
+      "inputs": 12000,
+      "tick": 11999,
+      "phase": "playing",
+      "hp": 92,
+      "truckHp": 100,
+      "pose": {
+        "x": -21.000875669244895,
+        "y": 0.008,
+        "z": -20.438767928592394,
+        "yaw": -0.9094548482417224,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "exitCode": 0,
+    "independent": {
+      "route": "covered",
+      "attempt": "covered-tape-01",
+      "mode": "tape",
+      "verify": true,
+      "inputs": 13600,
+      "tick": 13599,
+      "phase": "won",
+      "selectedConvoyChoiceId": "covered",
+      "hp": 92,
+      "truckHp": 100,
+      "truckArrived": true,
+      "shots": 9,
+      "alliedDamage": 0,
+      "failure": null,
+      "finalHash": "dc586e3d3b7a3ec00217424a90c0ad2b1dcc36068e659dd3d19b9298d109588b",
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "sourceHashesHash": "43731151b349d8d5ad6bbeee24b43ad215d40426ebc2fea1e13b18d21bf0e8c8",
+      "closureFiles": 30,
+      "fullEvidenceExact": true,
+      "comparison": "ENTIRE generated result JSON roundtripped exactly like saved evidence, then deepStrictEqual; no field subset or repair",
+      "generatedEvidenceFile": "qa/ruined-depot/covered-independent-01-result.json.gz",
+      "harnessSHA256": "0e5307d3c0acd6a1dc3f6e5d38979a32618f0739453272c05a7bc8582f4d2299",
+      "comparisonHelperSHA256": "dd43243e7621e7f032e4648729f5a9bbf396ea7bbea2285d83b4a4b7a6b91399"
+    }
+  },
+  "taskState": "complete",
+  "focusedTest": {
+    "command": "node --test work/tests/ruined-depot-physics.test.mjs",
+    "log": "work/qa/ruined-depot/focused-final.tap",
+    "exitCode": 0,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "report": "evidence/ruined-depot/integration/route-qa/REPORT.md"
+}

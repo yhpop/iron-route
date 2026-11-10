@@ -1,0 +1,16 @@
+{
+  "file": "vanguard-covered-maneuver-inputs.json.gz",
+  "inputSHA256": "6b3975868fe5f32ecd8622911bad691f5c6778ed1634a1c83e07b50573791239",
+  "specHash": "7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6",
+  "vehicleId": "vanguard",
+  "vehicleVersion": 1,
+  "inputs": 11921,
+  "tick": 11920,
+  "phase": "won",
+  "expectedFinalHash": "40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef",
+  "finalHash": "40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef",
+  "hp": 100,
+  "truckHp": 100,
+  "truckArrived": true,
+  "at": "2026-10-30T20:48:33.325Z"
+}

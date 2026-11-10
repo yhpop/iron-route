@@ -1,0 +1,92 @@
+✔ real featured entry uses exact mission flags, Sandfalcon, shared field and accelerated world path (1217.959863ms)
+✔ candidate real direct URL retries rejected library without poisoning cache (392.432549ms)
+✔ candidate waits for actual loaded world readiness and discards stale selection (380.283318ms)
+✔ real English source/menu contains new translated entry without changing old default or old slugs (2347.221491ms)
+✔ optional catalog is immutable, contains exactly both existing providers and never expands ordinary registry (2.564482ms)
+✔ helper selects breach-cover, preserves path/origin/hash/state, replaces exactly once (0.50606ms)
+✔ helper selects warehouse-fork, preserves path/origin/hash/state, replaces exactly once (0.150341ms)
+✔ helper removes all duplicate and encoded sortie keys without reserializing unrelated raw segments (0.270368ms)
+✔ normal removes the sole sortie and preserves a trailing empty non-sortie segment (0.192883ms)
+✔ normal already-correct URL needs no History API (0.164148ms)
+✔ unknown/nonstring optional slug is rejected without URL/history changes (0.302085ms)
+✔ History API absent, inaccessible or throwing returns false without navigation fallback (0.697801ms)
+✔ unavailable, inaccessible or malformed location returns false (0.469516ms)
+✔ file URL keeps absolute local path, unrelated query bytes and hash (0.317697ms)
+✔ double-slash local pathname must never become a cross-origin history URL (0.135071ms)
+✔ empty hash delimiter remains byte-exact when changing entry (0.288306ms)
+✔ already-normal bare query is a successful no-op without History API (0.141042ms)
+✔ literal question-mark key ?sortie in first position survives normal selection byte-exactly (0.180967ms)
+✔ literal question-mark key ?sortie in first position survives breach-cover selection byte-exactly (0.079405ms)
+✔ literal question-mark key ?sortie in first position survives warehouse-fork selection byte-exactly (0.052551ms)
+✔ literal question-mark key ?sortie in later position survives normal selection byte-exactly (0.046878ms)
+✔ literal question-mark key ?sortie in later position survives breach-cover selection byte-exactly (0.051484ms)
+✔ literal question-mark key ?sortie in later position survives warehouse-fork selection byte-exactly (0.050296ms)
+✔ literal question-mark key ?%73ortie in first position survives normal selection byte-exactly (0.059559ms)
+✔ literal question-mark key ?%73ortie in first position survives breach-cover selection byte-exactly (0.198385ms)
+✔ literal question-mark key ?%73ortie in first position survives warehouse-fork selection byte-exactly (0.30964ms)
+✔ literal question-mark key ?%73ortie in later position survives normal selection byte-exactly (0.17047ms)
+✔ literal question-mark key ?%73ortie in later position survives breach-cover selection byte-exactly (0.063919ms)
+✔ literal question-mark key ?%73ortie in later position survives warehouse-fork selection byte-exactly (0.041072ms)
+✔ caller resolver can authorize featured sorties without expanding legacy catalog (0.157433ms)
+✔ actual main menu switches to featured URL, refresh restores sortie and campaign save remains byte-exact (683.616679ms)
+✔ actual main keeps playable featured scene and unchanged URL/save if History is unavailable (254.925025ms)
+✔ actual main keeps playable featured scene and unchanged URL/save if History is unavailable (266.495181ms)
+✔ English actual main featured card writes the same reloadable route without exposing legacy experiments (1507.289776ms)
+✔ optional fork launch is separate from campaign registry and forbids every progress write (1.31259ms)
+✔ normal and invalid queries preserve valid normal selection and do not unlock anything (0.751052ms)
+✔ unknown optional ID cannot produce a fake next campaign mission (0.763988ms)
+✔ optional start retry and win leave the actual normal storage bytes unchanged (2.04201ms)
+✔ actual optional slugs stay outside the 303-mission registry and malformed queries resume normal selection (0.485556ms)
+✔ real breach-cover start retry and simulated win make zero storage writes before normal progression resumes (794.198798ms)
+✔ real optional featured selection and direct slug bind own builder field, inherited dispatch, URL and no save writes (903.302608ms)
+✔ real preparation ticks, actual main pause/resume/lifecycle freeze and held-input release (710.770153ms)
+✔ BOUNDARY FIXTURES: real main ticks reset unfinished hold outside zone and replace countdown at escort activation (471.407552ms)
+✔ BOUNDARY FIXTURE: actual main tank-destroyed classification/retry restores full fresh state and clears held commands (413.308672ms)
+✔ BOUNDARY FIXTURE: actual main protected-vehicle-destroyed classification/retry restores full fresh state and clears held commands (405.012089ms)
+✔ new direct entry retries rejected loader and reuses successful app-owned cache (457.972213ms)
+✔ new entry async loading readiness discards stale selection and disposal decorations (750.303792ms)
+✖ candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text (436.248451ms)
+✔ actual production English modules translate new source/menu/readout and preserve default and old URLs (2108.485725ms)
+✔ English inventory completely covers new source and all actual main Han literals before final production build (8.787243ms)
+✔ actual main: discover warehouse-fork, retain optional retry/close, then refresh explicit normal choice (2336.72185ms)
+✔ actual main: warehouse-fork commands and synthetic terminal classification preserve exact optional storage bytes (943.616058ms)
+✔ actual main: discover breach-cover, retain optional retry/close, then refresh explicit normal choice (1279.689696ms)
+✔ actual main: breach-cover commands and synthetic terminal classification preserve exact optional storage bytes (352.366636ms)
+✔ actual main: all 20 authored cards stay paginated independently of two optional cards (402.88075ms)
+✔ actual main: invalid optional and locked/unknown normal selections have no world/storage/history effects (330.783699ms)
+✔ actual main: repeated optional switches replace entry without stale controls or normal writes (334.132165ms)
+✔ actual main: historyThrows warns without blocking play, retry retains warning and successful selection clears it (945.950532ms)
+✔ actual main: historyUnavailable warns without blocking play, retry retains warning and successful selection clears it (395.192507ms)
+✔ actual main: normal selection from warehouse-fork removes stale sortie before fresh boot (1164.832849ms)
+✔ actual main: normal selection from breach-cover removes stale sortie before fresh boot (1129.348414ms)
+✔ actual main and real input: changing optional selection clears held driving, boost and queued fire (468.623164ms)
+ℹ tests 62
+ℹ suites 0
+ℹ pass 61
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26494.691062
+
+✖ failing tests:
+
+test at tests/loading-extraction-entry.test.mjs:85:1
+✖ candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text (436.248451ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '0/2 · 绕到装甲侧面，清除仓库炮位'
+  - '0/3 · 突破标记路障'
+       ^
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:96:115)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '0/2 · 绕到装甲侧面，清除仓库炮位',
+    expected: '0/3 · 突破标记路障',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

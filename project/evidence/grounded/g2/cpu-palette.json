@@ -1,0 +1,678 @@
+{
+  "boundary": "actual generated GLSL arithmetic scalarized per channel; representative linear RGB, not decoded source textures, WebGL pixels, tone mapping or artistic acceptance",
+  "shaderPatchSourceSHA256": "c29859827996cce4839544443756be81d3b32f5e14d401baff9299f4952e64f7",
+  "roles": [
+    {
+      "role": "Concrete",
+      "roughness": 1,
+      "metalness": 0,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|Concrete",
+      "shaderSHA256": "28d82bf1012219abab5c97aa712e9a30f426faf548ead56a3194e614ce3bb46b",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.12143378265274443,
+            0.1367554740150684,
+            0.11536111357446055
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.19256673003766706,
+            0.20500417318251468,
+            0.177898798390075
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.24986774394664568,
+            0.26483516607704327,
+            0.22971670661977245
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1625030244817821,
+            0.19267762599043073,
+            0.15637144450554555
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Brick",
+      "roughness": 1,
+      "metalness": 0,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|Brick",
+      "shaderSHA256": "28d82bf1012219abab5c97aa712e9a30f426faf548ead56a3194e614ce3bb46b",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.12143378265274443,
+            0.1367554740150684,
+            0.11536111357446055
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.19256673003766706,
+            0.20500417318251468,
+            0.177898798390075
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.24986774394664568,
+            0.26483516607704327,
+            0.22971670661977245
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1625030244817821,
+            0.19267762599043073,
+            0.15637144450554555
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Glass",
+      "roughness": 0.88,
+      "metalness": 0.16,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|Glass",
+      "shaderSHA256": "348ee3a77e1fa0a495253c40a3f1c92676308bec629374195c7d95fa1854d520",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.09814493996575524,
+            0.09628039431394092,
+            0.09441584866212657
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.16908828250330796,
+            0.16419956781915643,
+            0.15678300874148848
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.2207214897571581,
+            0.21418013881079379,
+            0.20350346694075236
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1203345335679349,
+            0.11939047069663151,
+            0.11844640782532813
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Steel",
+      "roughness": 0.88,
+      "metalness": 0.16,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|Steel",
+      "shaderSHA256": "28d82bf1012219abab5c97aa712e9a30f426faf548ead56a3194e614ce3bb46b",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.12143378265274443,
+            0.1367554740150684,
+            0.11536111357446055
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.19256673003766706,
+            0.20500417318251468,
+            0.177898798390075
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.24986774394664568,
+            0.26483516607704327,
+            0.22971670661977245
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1625030244817821,
+            0.19267762599043073,
+            0.15637144450554555
+          ]
+        }
+      ]
+    },
+    {
+      "role": "SagePaint",
+      "roughness": 1,
+      "metalness": 0,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|SagePaint",
+      "shaderSHA256": "ec54801c957ebb0e039bfc02552913ec3e9c6122a056bcdb309d1f6292b39e98",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.11321152533651621,
+            0.11361183262454957,
+            0.10917359045018105
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.18427753166024347,
+            0.18167210909309178,
+            0.17166089988246944
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.23957749444944562,
+            0.2358706329783135,
+            0.22197295034096276
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.14761520083203133,
+            0.15077204722010146,
+            0.14516786019041908
+          ]
+        }
+      ]
+    },
+    {
+      "role": "DarkSteel",
+      "roughness": 0.88,
+      "metalness": 0.16,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|DarkSteel",
+      "shaderSHA256": "28d82bf1012219abab5c97aa712e9a30f426faf548ead56a3194e614ce3bb46b",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.12143378265274443,
+            0.1367554740150684,
+            0.11536111357446055
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.19256673003766706,
+            0.20500417318251468,
+            0.177898798390075
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.24986774394664568,
+            0.26483516607704327,
+            0.22971670661977245
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1625030244817821,
+            0.19267762599043073,
+            0.15637144450554555
+          ]
+        }
+      ]
+    },
+    {
+      "role": "ZincRoof",
+      "roughness": 1,
+      "metalness": 0.16,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|ZincRoof",
+      "shaderSHA256": "ec54801c957ebb0e039bfc02552913ec3e9c6122a056bcdb309d1f6292b39e98",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.11321152533651621,
+            0.11361183262454957,
+            0.10917359045018105
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.18427753166024347,
+            0.18167210909309178,
+            0.17166089988246944
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.23957749444944562,
+            0.2358706329783135,
+            0.22197295034096276
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.14761520083203133,
+            0.15077204722010146,
+            0.14516786019041908
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Ivory",
+      "roughness": 0.88,
+      "metalness": 0,
+      "envMapIntensity": 0.3,
+      "transparent": false,
+      "opacity": 1,
+      "cacheKey": "onBeforeCompile( /* shaderobject, renderer */ ) {}|battlefront-building-finish-v1|Ivory",
+      "shaderSHA256": "28d82bf1012219abab5c97aa712e9a30f426faf548ead56a3194e614ce3bb46b",
+      "samples": [
+        {
+          "label": "apron-facing low facade",
+          "localPosition": {
+            "x": -2,
+            "y": 0.5,
+            "z": -4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.12143378265274443,
+            0.1367554740150684,
+            0.11536111357446055
+          ]
+        },
+        {
+          "label": "roof front",
+          "localPosition": {
+            "x": 0,
+            "y": 3.5,
+            "z": -3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.19256673003766706,
+            0.20500417318251468,
+            0.177898798390075
+          ]
+        },
+        {
+          "label": "roof back",
+          "localPosition": {
+            "x": 3,
+            "y": 3.5,
+            "z": 3
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.24986774394664568,
+            0.26483516607704327,
+            0.22971670661977245
+          ]
+        },
+        {
+          "label": "opposite facade",
+          "localPosition": {
+            "x": 1,
+            "y": 1,
+            "z": 4
+          },
+          "inputLinearRGB": [
+            0.12,
+            0.34,
+            0.09
+          ],
+          "outputLinearRGB": [
+            0.1625030244817821,
+            0.19267762599043073,
+            0.15637144450554555
+          ]
+        }
+      ]
+    }
+  ]
+}

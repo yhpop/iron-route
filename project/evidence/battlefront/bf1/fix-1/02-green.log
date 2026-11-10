@@ -1,0 +1,17 @@
+Sat Oct 31 11:48:27 UTC 2026
+✔ actual direct convoy win binds full spec/source closure and complete independent generated evidence (181.745417ms)
+✔ actual covered convoy win binds full spec/source closure and complete independent generated evidence (172.979736ms)
+✔ natural crossfire is bound to current raw bytes/spec/closure and actual shots/projectiles/damage (134.862863ms)
+✔ early retreat derives exact production-height/range static-cover interval from bound raw (326.216765ms)
+✔ I1 mutation negatives reject edited summaries, stale raw bytes, stale specs and stale sources (1576.150961ms)
+✔ I1 mutation negatives reject unsupported raw combat and incorrect cover query semantics (592.856754ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3382.812498
+EXIT:0
+Sat Oct 31 11:48:31 UTC 2026

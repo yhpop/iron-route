@@ -1,0 +1,1437 @@
+{
+  "boundary": "actual original GLB JSON + binary binding and local-loader geometry/hierarchy; textures omitted for Node, NOT texture decoding/render acceptance",
+  "warehouseGLBSHA256": "3d36f5cc331470bb6e685019da941e45f93145f360eb1740e61a730e42e84dca",
+  "binaryChunkSHA256": "99b67e24df8be5f5fcaccb421f4feaf2f847c4f8de6d180871d7c8c91593c6c0",
+  "originalMaterials": [
+    {
+      "doubleSided": true,
+      "name": "Concrete",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Brick",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 3
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05400000140070915,
+          0.11999999731779099,
+          0.14000000059604645,
+          1
+        ],
+        "metallicFactor": 0.3199999928474426,
+        "roughnessFactor": 0.20000000298023224
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.17000000178813934,
+          0.20999999344348907,
+          0.20000000298023224,
+          1
+        ],
+        "metallicFactor": 0.6800000071525574,
+        "roughnessFactor": 0.47999998927116394
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "SagePaint",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "DarkSteel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.054999999701976776,
+          0.07000000029802322,
+          0.07000000029802322,
+          1
+        ],
+        "metallicFactor": 0.6000000238418579,
+        "roughnessFactor": 0.6000000238418579
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ZincRoof",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicFactor": 0.25,
+        "metallicRoughnessTexture": {
+          "index": 7
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ivory",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7200000286102295,
+          0.699999988079071,
+          0.5799999833106995,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6299999952316284
+      }
+    }
+  ],
+  "originalTextures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    },
+    {
+      "sampler": 0,
+      "source": 7
+    }
+  ],
+  "originalImages": [
+    {
+      "bufferView": 5,
+      "mimeType": "image/png",
+      "name": "warm_concrete_base"
+    },
+    {
+      "bufferView": 6,
+      "mimeType": "image/png",
+      "name": "warm_concrete_orm"
+    },
+    {
+      "bufferView": 12,
+      "mimeType": "image/png",
+      "name": "clay_brick_base"
+    },
+    {
+      "bufferView": 13,
+      "mimeType": "image/png",
+      "name": "clay_brick_orm"
+    },
+    {
+      "bufferView": 29,
+      "mimeType": "image/png",
+      "name": "paint_sage_base"
+    },
+    {
+      "bufferView": 30,
+      "mimeType": "image/png",
+      "name": "paint_sage_orm"
+    },
+    {
+      "bufferView": 41,
+      "mimeType": "image/png",
+      "name": "roof_zinc_base"
+    },
+    {
+      "bufferView": 42,
+      "mimeType": "image/png",
+      "name": "roof_zinc_orm"
+    }
+  ],
+  "originalNodes": [
+    {
+      "mesh": 0,
+      "name": "WarehouseSawtooth_Geometry",
+      "translation": [
+        0,
+        0.49000000953674316,
+        3.890000104904175
+      ]
+    },
+    {
+      "children": [
+        0
+      ],
+      "name": "WarehouseSawtooth"
+    }
+  ],
+  "originalPrimitives": [
+    {
+      "attributes": {
+        "POSITION": 0,
+        "NORMAL": 1,
+        "TEXCOORD_0": 2,
+        "TEXCOORD_1": 3
+      },
+      "indices": 4,
+      "material": 0
+    },
+    {
+      "attributes": {
+        "POSITION": 5,
+        "NORMAL": 6,
+        "TEXCOORD_0": 7,
+        "TEXCOORD_1": 8
+      },
+      "indices": 9,
+      "material": 1
+    },
+    {
+      "attributes": {
+        "POSITION": 10,
+        "NORMAL": 11,
+        "TEXCOORD_0": 12,
+        "TEXCOORD_1": 13
+      },
+      "indices": 14,
+      "material": 2
+    },
+    {
+      "attributes": {
+        "POSITION": 15,
+        "NORMAL": 16,
+        "TEXCOORD_0": 17,
+        "TEXCOORD_1": 18
+      },
+      "indices": 19,
+      "material": 3
+    },
+    {
+      "attributes": {
+        "POSITION": 20,
+        "NORMAL": 21,
+        "TEXCOORD_0": 22,
+        "TEXCOORD_1": 23
+      },
+      "indices": 24,
+      "material": 4
+    },
+    {
+      "attributes": {
+        "POSITION": 25,
+        "NORMAL": 26,
+        "TEXCOORD_0": 27,
+        "TEXCOORD_1": 28
+      },
+      "indices": 29,
+      "material": 5
+    },
+    {
+      "attributes": {
+        "POSITION": 30,
+        "NORMAL": 31,
+        "TEXCOORD_0": 32,
+        "TEXCOORD_1": 33
+      },
+      "indices": 34,
+      "material": 6
+    },
+    {
+      "attributes": {
+        "POSITION": 35,
+        "NORMAL": 36,
+        "TEXCOORD_0": 37,
+        "TEXCOORD_1": 38
+      },
+      "indices": 39,
+      "material": 7
+    }
+  ],
+  "instances": [
+    {
+      "id": "south-depot",
+      "position": [
+        -25,
+        0,
+        28
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1.125
+      ],
+      "primitives": 8,
+      "triangles": 7156,
+      "inverseRootMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.8888888888888888,
+        0,
+        25,
+        0,
+        -24.888888888888886,
+        1
+      ],
+      "parts": [
+        {
+          "name": "Cube093",
+          "material": "Concrete",
+          "triangles": 1932,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "1a4df81bd88404beb118853608c7967d76b52b34372f3d044ae6e00778380b5d",
+          "indexSHA256": "fb3588995d036e39030299f4ab80ea452abf091b0dd1623a063d103d3f91bf08"
+        },
+        {
+          "name": "Cube093_1",
+          "material": "Brick",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "f915f1e0cca63c1b1aed177daf2020f37fce5aa820bd0d1fbef376aad220614e",
+          "indexSHA256": "cc2209a5d64068d3a016261bb73be721ae943dfdc12f2260cd3d62a3b0f24efa"
+        },
+        {
+          "name": "Cube093_2",
+          "material": "Glass",
+          "triangles": 396,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "25350560595b66d1617e4e81831a9863e149aa446c7abed7fe83c123e606f876",
+          "indexSHA256": "cdfc23929ebcd288990cc3839a2e8f4edce3c37943d2a1c01f6e172e5e076761"
+        },
+        {
+          "name": "Cube093_3",
+          "material": "Steel",
+          "triangles": 3760,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "9e7fd18f1ae1468004d20f4c22b550fc127e830e9438f347ca3c9e2b8b14ee2c",
+          "indexSHA256": "bb969b41917a85ff7c41ff3fc6fda77d3e3eb9f498bd86ef58f7c96a3870c8cb"
+        },
+        {
+          "name": "Cube093_4",
+          "material": "SagePaint",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "cb99293b3d8596e94831fb8f825720bdd0a0a67df69c7330a03caf266945f6e5",
+          "indexSHA256": "f202d44fdbc5e4562459386fc4c20a051d4ab429910daccb6a105658a7b09e1f"
+        },
+        {
+          "name": "Cube093_5",
+          "material": "DarkSteel",
+          "triangles": 196,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "b34489aebc33a2f1079dd00e585452894775c431597321c64605e0426d09462f",
+          "indexSHA256": "d8781c872afb021e8aee6c1e13c833c82e3e6b7b4d18a1f336ad1b20621bada2"
+        },
+        {
+          "name": "Cube093_6",
+          "material": "ZincRoof",
+          "triangles": 348,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "d994df3a0eda28bab4529f2b3201de69c95d2f3766c1aa653f684a99cba07068",
+          "indexSHA256": "96c36581e28441ed5f7741093ea9d7084d6b729481ce3a8bcf837a27375eb44a"
+        },
+        {
+          "name": "Cube093_7",
+          "material": "Ivory",
+          "triangles": 308,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.125,
+            0,
+            -25,
+            0.49000000953674316,
+            32.3762501180172,
+            1
+          ],
+          "positionSHA256": "bf3a12a5fc1c9b0ecbe9186ba04f09dbde2e38abb7d531c64298d88a8810e1a9",
+          "indexSHA256": "a856f2fbc49c8cb3f1589892c3db922b7fd42e2ec416ed8d5d1f367c1054719c"
+        }
+      ]
+    },
+    {
+      "id": "context-warehouse-0",
+      "position": [
+        -53,
+        0,
+        -18
+      ],
+      "yaw": 1.5707963267948966,
+      "scale": [
+        1.5,
+        1.05,
+        1.6
+      ],
+      "primitives": 8,
+      "triangles": 7156,
+      "inverseRootMatrix": [
+        1.4802973661668753e-16,
+        0,
+        0.625,
+        0,
+        0,
+        0.9523809523809523,
+        0,
+        0,
+        -0.6666666666666666,
+        0,
+        1.3877787807814457e-16,
+        0,
+        -11.999999999999991,
+        0,
+        33.125,
+        1
+      ],
+      "parts": [
+        {
+          "name": "Cube093",
+          "material": "Concrete",
+          "triangles": 1932,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "1a4df81bd88404beb118853608c7967d76b52b34372f3d044ae6e00778380b5d",
+          "indexSHA256": "fb3588995d036e39030299f4ab80ea452abf091b0dd1623a063d103d3f91bf08"
+        },
+        {
+          "name": "Cube093_1",
+          "material": "Brick",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "f915f1e0cca63c1b1aed177daf2020f37fce5aa820bd0d1fbef376aad220614e",
+          "indexSHA256": "cc2209a5d64068d3a016261bb73be721ae943dfdc12f2260cd3d62a3b0f24efa"
+        },
+        {
+          "name": "Cube093_2",
+          "material": "Glass",
+          "triangles": 396,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "25350560595b66d1617e4e81831a9863e149aa446c7abed7fe83c123e606f876",
+          "indexSHA256": "cdfc23929ebcd288990cc3839a2e8f4edce3c37943d2a1c01f6e172e5e076761"
+        },
+        {
+          "name": "Cube093_3",
+          "material": "Steel",
+          "triangles": 3760,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "9e7fd18f1ae1468004d20f4c22b550fc127e830e9438f347ca3c9e2b8b14ee2c",
+          "indexSHA256": "bb969b41917a85ff7c41ff3fc6fda77d3e3eb9f498bd86ef58f7c96a3870c8cb"
+        },
+        {
+          "name": "Cube093_4",
+          "material": "SagePaint",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "cb99293b3d8596e94831fb8f825720bdd0a0a67df69c7330a03caf266945f6e5",
+          "indexSHA256": "f202d44fdbc5e4562459386fc4c20a051d4ab429910daccb6a105658a7b09e1f"
+        },
+        {
+          "name": "Cube093_5",
+          "material": "DarkSteel",
+          "triangles": 196,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "b34489aebc33a2f1079dd00e585452894775c431597321c64605e0426d09462f",
+          "indexSHA256": "d8781c872afb021e8aee6c1e13c833c82e3e6b7b4d18a1f336ad1b20621bada2"
+        },
+        {
+          "name": "Cube093_6",
+          "material": "ZincRoof",
+          "triangles": 348,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "d994df3a0eda28bab4529f2b3201de69c95d2f3766c1aa653f684a99cba07068",
+          "indexSHA256": "96c36581e28441ed5f7741093ea9d7084d6b729481ce3a8bcf837a27375eb44a"
+        },
+        {
+          "name": "Cube093_7",
+          "material": "Ivory",
+          "triangles": 308,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            -1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            -46.77599983215332,
+            0.5145000100135804,
+            -18,
+            1
+          ],
+          "positionSHA256": "bf3a12a5fc1c9b0ecbe9186ba04f09dbde2e38abb7d531c64298d88a8810e1a9",
+          "indexSHA256": "a856f2fbc49c8cb3f1589892c3db922b7fd42e2ec416ed8d5d1f367c1054719c"
+        }
+      ]
+    },
+    {
+      "id": "context-warehouse-3",
+      "position": [
+        53,
+        0,
+        21
+      ],
+      "yaw": -1.5707963267948966,
+      "scale": [
+        1.5,
+        1.05,
+        1.6
+      ],
+      "primitives": 8,
+      "triangles": 7156,
+      "inverseRootMatrix": [
+        1.4802973661668753e-16,
+        0,
+        -0.625,
+        0,
+        0,
+        0.9523809523809523,
+        0,
+        0,
+        0.6666666666666666,
+        0,
+        1.3877787807814457e-16,
+        0,
+        -14.000000000000005,
+        0,
+        33.12499999999999,
+        1
+      ],
+      "parts": [
+        {
+          "name": "Cube093",
+          "material": "Concrete",
+          "triangles": 1932,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "1a4df81bd88404beb118853608c7967d76b52b34372f3d044ae6e00778380b5d",
+          "indexSHA256": "fb3588995d036e39030299f4ab80ea452abf091b0dd1623a063d103d3f91bf08"
+        },
+        {
+          "name": "Cube093_1",
+          "material": "Brick",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "f915f1e0cca63c1b1aed177daf2020f37fce5aa820bd0d1fbef376aad220614e",
+          "indexSHA256": "cc2209a5d64068d3a016261bb73be721ae943dfdc12f2260cd3d62a3b0f24efa"
+        },
+        {
+          "name": "Cube093_2",
+          "material": "Glass",
+          "triangles": 396,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "25350560595b66d1617e4e81831a9863e149aa446c7abed7fe83c123e606f876",
+          "indexSHA256": "cdfc23929ebcd288990cc3839a2e8f4edce3c37943d2a1c01f6e172e5e076761"
+        },
+        {
+          "name": "Cube093_3",
+          "material": "Steel",
+          "triangles": 3760,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "9e7fd18f1ae1468004d20f4c22b550fc127e830e9438f347ca3c9e2b8b14ee2c",
+          "indexSHA256": "bb969b41917a85ff7c41ff3fc6fda77d3e3eb9f498bd86ef58f7c96a3870c8cb"
+        },
+        {
+          "name": "Cube093_4",
+          "material": "SagePaint",
+          "triangles": 108,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "cb99293b3d8596e94831fb8f825720bdd0a0a67df69c7330a03caf266945f6e5",
+          "indexSHA256": "f202d44fdbc5e4562459386fc4c20a051d4ab429910daccb6a105658a7b09e1f"
+        },
+        {
+          "name": "Cube093_5",
+          "material": "DarkSteel",
+          "triangles": 196,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "b34489aebc33a2f1079dd00e585452894775c431597321c64605e0426d09462f",
+          "indexSHA256": "d8781c872afb021e8aee6c1e13c833c82e3e6b7b4d18a1f336ad1b20621bada2"
+        },
+        {
+          "name": "Cube093_6",
+          "material": "ZincRoof",
+          "triangles": 348,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "d994df3a0eda28bab4529f2b3201de69c95d2f3766c1aa653f684a99cba07068",
+          "indexSHA256": "96c36581e28441ed5f7741093ea9d7084d6b729481ce3a8bcf837a27375eb44a"
+        },
+        {
+          "name": "Cube093_7",
+          "material": "Ivory",
+          "triangles": 308,
+          "localMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "worldMatrix": [
+            3.3306690738754696e-16,
+            0,
+            1.5,
+            0,
+            0,
+            1.05,
+            0,
+            0,
+            -1.6,
+            0,
+            3.552713678800501e-16,
+            0,
+            46.77599983215332,
+            0.5145000100135804,
+            21,
+            1
+          ],
+          "positionSHA256": "bf3a12a5fc1c9b0ecbe9186ba04f09dbde2e38abb7d531c64298d88a8810e1a9",
+          "indexSHA256": "a856f2fbc49c8cb3f1589892c3db922b7fd42e2ec416ed8d5d1f367c1054719c"
+        }
+      ]
+    }
+  ],
+  "addedTriangles": 0,
+  "addedDraws": 0,
+  "addedMaps": 0,
+  "ownedBaseMaterialClones": 24,
+  "perFrameWorkAdded": 0
+}

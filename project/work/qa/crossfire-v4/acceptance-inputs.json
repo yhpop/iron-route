@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "boundary": "Explicit final-geometry completed input tapes only. All diagnostics and uncertain attempt03 excluded. Independent replay remains mandatory.",
+  "files": [
+    "sandfalcon-direct-final-flat-direct-04-inputs.json.gz",
+    "sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz",
+    "newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz"
+  ]
+}

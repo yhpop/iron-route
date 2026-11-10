@@ -1,0 +1,3 @@
+# Parent-authorized Mac summary, received 2026-10-31 13:43 UTC
+
+New Battlefront candidate: no white test frames observed; ruined wall thickness, doors/windows and grounding improved. Actual driving/shooting/convoy hold worked; damage 45 observed. Ground remains too clean; west reveals gray off-map area; intact green-roof warehouse weakens damaged-warfield atmosphere. Sample recording had no observed >900ms intervals: not proof of a performance fix. Small-screen command automatic authorization review timed out twice without execution; not unsafe denial, do not retry now. Raw JSON/images/identity records remain on user's Mac, not uploaded or requested. This is a trusted parent summary, not independent local device evidence.

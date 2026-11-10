@@ -1,0 +1,8 @@
+before [('UV1', False), ('UV2', False), ('DepotAtlas', True)]
+copy [('UV1', False), ('UV2', False), ('DepotAtlas', True)]
+after ['UV1'] [('UV2', False), ('DepotAtlas', True)]
+attrs [('position', 'FLOAT_VECTOR'), ('.select_vert', 'BOOLEAN'), ('.edge_verts', 'INT32_2D'), ('.select_edge', 'BOOLEAN'), ('.select_poly', 'BOOLEAN'), ('sharp_face', 'BOOLEAN'), ('.corner_vert', 'INT'), ('.corner_edge', 'INT'), ('UV2', 'FLOAT2'), ('DepotAtlas', 'FLOAT2')]
+Blender 4.3.2
+Read blend: "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/ruins-baked-preserved-uv.blend"
+
+Blender quit

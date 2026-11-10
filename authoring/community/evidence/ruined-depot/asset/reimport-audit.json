@@ -1,0 +1,94 @@
+{
+  "workshop": {
+    "triangles": 291,
+    "bounds": [
+      [
+        -4.79998779296875,
+        -6.265539646148682,
+        0.0
+      ],
+      [
+        4.799991130828857,
+        6.265538215637207,
+        3.299938678741455
+      ]
+    ],
+    "uvLayers": [
+      "UVMap"
+    ],
+    "materials": [
+      "Depot weathered concrete \u2014 baked"
+    ]
+  },
+  "broken-corner": {
+    "triangles": 308,
+    "bounds": [
+      [
+        -5.014026165008545,
+        -5.235354900360107,
+        0.0
+      ],
+      [
+        5.014026165008545,
+        5.235354900360107,
+        3.2999379634857178
+      ]
+    ],
+    "uvLayers": [
+      "UVMap"
+    ],
+    "materials": [
+      "Depot weathered concrete \u2014 baked"
+    ]
+  },
+  "window-wall": {
+    "triangles": 158,
+    "bounds": [
+      [
+        -4.800000190734863,
+        -0.22666016221046448,
+        0.0
+      ],
+      [
+        4.800000190734863,
+        0.22666016221046448,
+        3.2999379634857178
+      ]
+    ],
+    "uvLayers": [
+      "UVMap"
+    ],
+    "materials": [
+      "Depot weathered concrete \u2014 baked"
+    ]
+  },
+  "images": [
+    {
+      "name": "baseColor",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "roughness",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    }
+  ]
+}

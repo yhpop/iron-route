@@ -1,0 +1,37 @@
+[
+  {
+    "path": "concrete_road_barrier_02_1k.gltf",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/concrete_road_barrier_02/concrete_road_barrier_02_1k.gltf",
+    "bytes": 2910,
+    "sha256": "52d13b5105ce861db5dd1413a1a924ad5594dee5a8eb37dbe1a9df441fcd7caf",
+    "md5": "4e6ba4903224a56a2dc3ce4126529c1e"
+  },
+  {
+    "path": "concrete_road_barrier_02.bin",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/concrete_road_barrier_02/concrete_road_barrier_02.bin",
+    "bytes": 542900,
+    "sha256": "254ee05467733e224e127dc76e019e5b5211c0da4248fa3fc75117ec005d7c90",
+    "md5": "205f6effdf30936bd1db4ea7d56e179c"
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/concrete_road_barrier_02/concrete_road_barrier_02_diff_1k.jpg",
+    "bytes": 741673,
+    "sha256": "9329260ebfc8632a5d47d9b344ab6f916e26604e73ebd2c495fee544df4bdefa",
+    "md5": "f2f6eea94258691bc344441b9e6a15fc"
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_nor_gl_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/concrete_road_barrier_02/concrete_road_barrier_02_nor_gl_1k.jpg",
+    "bytes": 923479,
+    "sha256": "42ec702843df209f0aef1d247c76dfb91385f0bf3b226b752d22a4c0e3780a31",
+    "md5": "473dc2f984640804503c500ccf677ae4"
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_arm_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/concrete_road_barrier_02/concrete_road_barrier_02_arm_1k.jpg",
+    "bytes": 717138,
+    "sha256": "6fb282f242ce86a3e44663678c2e0366c37de8244b08acc003d99771cb780e53",
+    "md5": "1da1c5b70aacf06c2aef3f7fe72d3bda"
+  }
+]

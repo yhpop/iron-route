@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+const css=readFileSync(new URL('../src/style.css',import.meta.url),'utf8');
+test('short landscape has dedicated compact HUD rules rather than full stacked desktop panel',()=>{const compact=css.split('/* Compact short-landscape HUD */')[1]||'';assert.match(compact,/max-height:\s*450px/);assert.match(compact,/\.campaign-mission-label\s*\{\s*display:\s*none/);assert.match(compact,/\.campaign-convoy-order\s*\{[^}]*position:\s*fixed/);assert.match(compact,/min-height:\s*44px/);assert.match(compact,/\.campaign-objective[^}]*white-space:\s*nowrap/s);});

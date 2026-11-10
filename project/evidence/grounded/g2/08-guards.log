@@ -1,0 +1,10 @@
+✔ BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings (195.742858ms)
+✔ V4 retains V3 physical sources and spec; grounded view and preserved V3 view have separate exact SHA bindings (151.988088ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 734.343453

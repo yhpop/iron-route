@@ -1,0 +1,117 @@
+{
+  "specHash": "eefbc9d8a9faf1ddf68897af555c047532ae8927b86edea844d4e399f07c0974",
+  "fieldHash": "ea4f9a216f2e5446e47f99548f51505e6f1038f3e97189e9caa3280db9814d24",
+  "scannedFieldHash": "ea4f9a216f2e5446e47f99548f51505e6f1038f3e97189e9caa3280db9814d24",
+  "diagnostics": {
+    "exactTriangles": 757,
+    "instances": 3,
+    "movementSpanCount": 61,
+    "instanceAABBBroadphase": true
+  },
+  "ground": [
+    {
+      "id": "ruin-west-loading",
+      "baseVertexCount": 126,
+      "minGap": -1.722979110925165e-30,
+      "maxGap": 7.987022740962857e-7
+    },
+    {
+      "id": "ruin-west-workshop",
+      "baseVertexCount": 144,
+      "minGap": -4.5231242535445663e-39,
+      "maxGap": 7.987022740962857e-7
+    },
+    {
+      "id": "ruin-east-window",
+      "baseVertexCount": 61,
+      "minGap": 0,
+      "maxGap": 7.987022740962857e-7
+    }
+  ],
+  "routes": [
+    {
+      "id": "ridge-east",
+      "clear": true
+    },
+    {
+      "id": "ridge-west",
+      "clear": false
+    }
+  ],
+  "actors": [
+    {
+      "id": "supply",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 28,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "road-gun",
+      "pose": {
+        "x": 23,
+        "y": 0,
+        "z": 3,
+        "yaw": 0
+      },
+      "patrol": [
+        {
+          "x": 23,
+          "z": 3
+        },
+        {
+          "x": 23,
+          "z": -12
+        }
+      ]
+    },
+    {
+      "id": "ridge-gun",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      }
+    },
+    {
+      "id": "allied-support",
+      "pose": {
+        "x": -4,
+        "z": 18,
+        "y": 0.01760499252811143,
+        "yaw": 0.5880026035475675
+      },
+      "patrol": []
+    },
+    {
+      "id": "hostile-flanker",
+      "pose": {
+        "x": 2,
+        "z": 17,
+        "y": 0.017713145476451878,
+        "yaw": 1.7359450042095235
+      },
+      "patrol": [
+        {
+          "x": 2,
+          "z": 17
+        },
+        {
+          "x": 8,
+          "z": 17
+        },
+        {
+          "x": 8,
+          "z": 24
+        },
+        {
+          "x": 2,
+          "z": 24
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "campaign-simulation.js": true,
+  "campaign-world.js": true,
+  "combat.js": true,
+  "mission-runtime.js": true,
+  "tank-controller.js": true,
+  "interceptor.js": true,
+  "sentry-rig.js": true,
+  "terrain-candidate/vertical-slice.js": true,
+  "terrain-candidate/interceptor-mission.js": true,
+  "terrain-candidate/ridge-convoy.js": true,
+  "terrain-candidate/combat-world.js": true,
+  "terrain-candidate/combat-surface.js": true,
+  "terrain-candidate/heightfield.js": true
+}

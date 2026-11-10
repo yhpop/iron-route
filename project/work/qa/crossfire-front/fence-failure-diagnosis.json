@@ -1,0 +1,292 @@
+[
+  {
+    "id": "pz3",
+    "tick": 1781,
+    "phase": "playing",
+    "hash": "fa2f3eb4cbea34cf461f2fe7978aeb853451224e5d813e1dcc8af864009bf755",
+    "blocked": {
+      "body": false,
+      "barrel": false,
+      "muzzle": false
+    },
+    "frame": {
+      "pose": {
+        "x": -19.965172793593233,
+        "y": 0.008,
+        "z": 11.834727472577994,
+        "yaw": 0.5787030749194155,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "turretYawRel": 0.04388350073196001,
+      "elevation": 0.060185377305416426,
+      "recoil": 0,
+      "muzzleWorld": {
+        "position": {
+          "x": -21.176495752778774,
+          "y": 1.3254265547451172,
+          "z": 10.147227688932329
+        },
+        "direction": {
+          "x": -0.5820825463571571,
+          "y": 0.060149049174419274,
+          "z": -0.8109019676322048
+        },
+        "barrelStart": {
+          "x": -20.291730282315896,
+          "y": 1.234,
+          "z": 11.37979867973328
+        },
+        "barrelEnd": {
+          "x": -21.176495752778774,
+          "y": 1.3254265547451172,
+          "z": 10.147227688932329
+        },
+        "turretOrigin": {
+          "x": -19.965172793593233,
+          "y": 1.052,
+          "z": 11.834727472577994
+        },
+        "hinge": {
+          "x": -20.291730282315896,
+          "y": 1.234,
+          "z": 11.37979867973328
+        },
+        "pose": {
+          "x": -19.965172793593233,
+          "y": 0.008,
+          "z": 11.834727472577994,
+          "yaw": 0.5787030749194155,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turret": {
+          "yawRel": 0.04388350073196001,
+          "elevation": 0.060185377305416426,
+          "recoil": 0,
+          "recoilVelocity": 0
+        }
+      },
+      "deltaTrackL": 0,
+      "deltaTrackR": 0,
+      "trackL": 24.897709280431,
+      "trackR": 25.829421231051263,
+      "speedForward": 0,
+      "yawRate": 0,
+      "canFire": true,
+      "contacts": [],
+      "desiredSpeed": 0,
+      "governor": "cruise",
+      "boostActive": false,
+      "surface": {
+        "id": null,
+        "class": "earth",
+        "traction": 0.76,
+        "drag": 1.35,
+        "speedMultiplier": 0.6541038540261415,
+        "accelerationMultiplier": 0.76,
+        "turnMultiplier": 0.9279999999999999
+      }
+    },
+    "hullContacts": [
+      "ridge-fence-0"
+    ],
+    "fences": [
+      {
+        "id": "ridge-fence-0",
+        "hp": 90
+      },
+      {
+        "id": "ridge-fence-1",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-2",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-3",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-4",
+        "hp": 90
+      }
+    ]
+  },
+  {
+    "id": "newc-leichttraktor",
+    "tick": 1700,
+    "phase": "playing",
+    "hash": "16cf9c75eb6b887534d567878552937d6d52ffae4133f035d46d0a837929d16d",
+    "blocked": {
+      "body": false,
+      "barrel": false,
+      "muzzle": false
+    },
+    "frame": {
+      "pose": {
+        "x": -19.94176071076402,
+        "y": 0.008,
+        "z": 11.948571797304057,
+        "yaw": 0.5770251165285174,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "turretYawRel": 0.03177079694559026,
+      "elevation": 0.04752571889359523,
+      "recoil": 0,
+      "muzzleWorld": {
+        "position": {
+          "x": -20.594158452461006,
+          "y": 1.6964024184570665,
+          "z": 11.2457791369809
+        },
+        "direction": {
+          "x": -0.5712343883989314,
+          "y": 0.04750782990499622,
+          "z": -0.8194109345183384
+        },
+        "barrelStart": {
+          "x": -20.041248897320962,
+          "y": 1.6467057574069168,
+          "z": 12.038903867561165
+        },
+        "barrelEnd": {
+          "x": -20.594158452461006,
+          "y": 1.6964024184570665,
+          "z": 11.2457791369809
+        },
+        "turretOrigin": {
+          "x": -19.6188427962106,
+          "y": 0.9654058055877686,
+          "z": 12.444179855480696
+        },
+        "hinge": {
+          "x": -19.81499379637378,
+          "y": 1.5752794580459595,
+          "z": 12.010618367942936
+        },
+        "pose": {
+          "x": -19.94176071076402,
+          "y": 0.008,
+          "z": 11.948571797304057,
+          "yaw": 0.5770251165285174,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turret": {
+          "yawRel": 0.03177079694559026,
+          "elevation": 0.04752571889359523,
+          "recoil": 0,
+          "recoilVelocity": 0
+        }
+      },
+      "deltaTrackL": 0,
+      "deltaTrackR": 0,
+      "trackL": 24.839008100879624,
+      "trackR": 25.704545775672383,
+      "speedForward": 0,
+      "yawRate": 0,
+      "canFire": true,
+      "contacts": [],
+      "desiredSpeed": 0,
+      "governor": "cruise",
+      "boostActive": false,
+      "surface": {
+        "id": null,
+        "class": "earth",
+        "traction": 0.76,
+        "drag": 1.35,
+        "speedMultiplier": 0.6541038540261415,
+        "accelerationMultiplier": 0.76,
+        "turnMultiplier": 0.9279999999999999
+      }
+    },
+    "hullContacts": [
+      "ridge-fence-0"
+    ],
+    "fences": [
+      {
+        "id": "ridge-fence-0",
+        "hp": 90
+      },
+      {
+        "id": "ridge-fence-1",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-2",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-3",
+        "hp": 0
+      },
+      {
+        "id": "ridge-fence-4",
+        "hp": 90
+      }
+    ]
+  }
+]

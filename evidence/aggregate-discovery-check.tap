@@ -1,0 +1,44 @@
+TAP version 13
+1..0
+# Subtest: tests/corruption.test.mjs
+ok 1 - tests/corruption.test.mjs
+  ---
+  duration_ms: 170.392922
+  type: 'test'
+  ...
+1..0
+# Subtest: tests/guards.test.mjs
+ok 2 - tests/guards.test.mjs
+  ---
+  duration_ms: 157.321255
+  type: 'test'
+  ...
+# Subtest: matching known failures are reported as still failing, never as a green historical suite
+ok 3 - matching known failures are reported as still failing, never as a green historical suite
+  ---
+  duration_ms: 2.473387
+  type: 'test'
+  ...
+1..0
+# Subtest: tests/provenance.test.mjs
+ok 4 - tests/provenance.test.mjs
+  ---
+  duration_ms: 180.218749
+  type: 'test'
+  ...
+1..0
+# Subtest: tests/routes.test.mjs
+ok 5 - tests/routes.test.mjs
+  ---
+  duration_ms: 168.774418
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 197.978842

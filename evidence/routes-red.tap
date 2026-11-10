@@ -1,0 +1,204 @@
+TAP version 13
+# Subtest: tiger-west fresh-process literal CPU victory, escort and full-event regression
+not ok 1 - tiger-west fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 57.541316
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:15:82'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined
+    -   14781,
+    -   14780,
+    -   139,
+    -   84,
+    -   132,
+    -   12334,
+    -   12334
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 14781
+    1: 14780
+    2: 139
+    3: 84
+    4: 132
+    5: 12334
+    6: 12334
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:20:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.start (node:internal/test_runner/test:1262:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+  ...
+# Subtest: sandfalcon-west fresh-process literal CPU victory, escort and full-event regression
+not ok 2 - sandfalcon-west fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 57.014084
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:15:82'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined
+    -   16157,
+    -   16156,
+    -   72,
+    -   100,
+    -   160,
+    -   10617,
+    -   10617
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 16157
+    1: 16156
+    2: 72
+    3: 100
+    4: 160
+    5: 10617
+    6: 10617
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:20:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: sandfalcon-east fresh-process literal CPU victory, escort and full-event regression
+not ok 3 - sandfalcon-east fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 62.893422
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:15:82'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined
+    -   15613,
+    -   15612,
+    -   34,
+    -   100,
+    -   156,
+    -   9190,
+    -   9190
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 15613
+    1: 15612
+    2: 34
+    3: 100
+    4: 156
+    5: 9190
+    6: 9190
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:20:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: tiger-east fresh-process literal CPU victory, escort and full-event regression
+not ok 4 - tiger-east fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 61.393492
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:15:82'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined
+    -   6401,
+    -   6400,
+    -   155,
+    -   86,
+    -   143,
+    -   2400,
+    -   9543
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 6401
+    1: 6400
+    2: 155
+    3: 86
+    4: 143
+    5: 2400
+    6: 9543
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/routes.test.mjs:20:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 0
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 322.570293

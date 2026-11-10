@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
+test('campaign entry is mobile-safe, independent from legacy and offers visible boot errors',async()=>{const html=await readFile(new URL('../index.html',import.meta.url),'utf8');assert.match(html,/viewport-fit=cover/);assert.match(html,/id="world"/);assert.match(html,/id="launch-help"/);assert.match(html,/\.\/game.js/);assert.doesNotMatch(html,/磁力|隔空|救援/);});

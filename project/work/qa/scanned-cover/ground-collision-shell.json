@@ -1,0 +1,266 @@
+{
+  "boundary": "CPU physics queries; projectile fixtures excluded from input-only wins",
+  "evidence": [
+    {
+      "id": "scan-east-entry",
+      "samples": [
+        {
+          "x": 19.27892901,
+          "z": 16.78270468,
+          "y": 0
+        },
+        {
+          "x": 19.72107099,
+          "z": 16.78270468,
+          "y": 0
+        },
+        {
+          "x": 19.27892901,
+          "z": 15.21729532,
+          "y": 0
+        },
+        {
+          "x": 19.72107099,
+          "z": 15.21729532,
+          "y": 0
+        }
+      ],
+      "hit": {
+        "id": "scan-east-entry",
+        "colliderId": "scan-east-entry",
+        "fraction": 0.4447322525,
+        "distance": 1.77892901,
+        "point": {
+          "x": 19.27892901,
+          "y": 0.55,
+          "z": 16
+        },
+        "position": {
+          "x": 19.27892901,
+          "y": 0.55,
+          "z": 16
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": -6.123233995736766e-17
+        }
+      },
+      "sweep": {
+        "blocked": true,
+        "contacts": [
+          "scan-east-entry"
+        ]
+      },
+      "events": [
+        {
+          "id": "event-1",
+          "tick": 1,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "scan-east-entry",
+          "position": {
+            "x": 19.27892901,
+            "y": 0.55,
+            "z": 16
+          },
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": -6.123233995736766e-17
+          },
+          "projectileId": "scan-shell-fixture",
+          "value": "hit"
+        },
+        {
+          "id": "event-2",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "receive-orders",
+          "value": "complete"
+        },
+        {
+          "id": "event-3",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "escort-supply",
+          "value": "active"
+        }
+      ]
+    },
+    {
+      "id": "scan-east-mid",
+      "samples": [
+        {
+          "x": 19.27892901,
+          "z": -11.21729532,
+          "y": 0
+        },
+        {
+          "x": 19.72107099,
+          "z": -11.21729532,
+          "y": 0
+        },
+        {
+          "x": 19.27892901,
+          "z": -12.78270468,
+          "y": 0
+        },
+        {
+          "x": 19.72107099,
+          "z": -12.78270468,
+          "y": 0
+        }
+      ],
+      "hit": {
+        "id": "scan-east-mid",
+        "colliderId": "scan-east-mid",
+        "fraction": 0.4447322525,
+        "distance": 1.77892901,
+        "point": {
+          "x": 19.27892901,
+          "y": 0.55,
+          "z": -12
+        },
+        "position": {
+          "x": 19.27892901,
+          "y": 0.55,
+          "z": -12
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": -6.123233995736766e-17
+        }
+      },
+      "sweep": {
+        "blocked": true,
+        "contacts": [
+          "scan-east-mid"
+        ]
+      },
+      "events": [
+        {
+          "id": "event-1",
+          "tick": 1,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "scan-east-mid",
+          "position": {
+            "x": 19.27892901,
+            "y": 0.55,
+            "z": -12
+          },
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": -6.123233995736766e-17
+          },
+          "projectileId": "scan-shell-fixture",
+          "value": "hit"
+        },
+        {
+          "id": "event-2",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "receive-orders",
+          "value": "complete"
+        },
+        {
+          "id": "event-3",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "escort-supply",
+          "value": "active"
+        }
+      ]
+    },
+    {
+      "id": "scan-west-shoulder",
+      "samples": [
+        {
+          "x": -26.42107099,
+          "z": 8.78270468,
+          "y": 0
+        },
+        {
+          "x": -25.978929009999998,
+          "z": 8.78270468,
+          "y": 0
+        },
+        {
+          "x": -26.42107099,
+          "z": 7.21729532,
+          "y": 0
+        },
+        {
+          "x": -25.978929009999998,
+          "z": 7.21729532,
+          "y": 0
+        }
+      ],
+      "hit": {
+        "id": "scan-west-shoulder",
+        "colliderId": "scan-west-shoulder",
+        "fraction": 0.4447322525,
+        "distance": 1.77892901,
+        "point": {
+          "x": -26.42107099,
+          "y": 0.55,
+          "z": 8
+        },
+        "position": {
+          "x": -26.42107099,
+          "y": 0.55,
+          "z": 8
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": -6.123233995736766e-17
+        }
+      },
+      "sweep": {
+        "blocked": true,
+        "contacts": [
+          "scan-west-shoulder"
+        ]
+      },
+      "events": [
+        {
+          "id": "event-1",
+          "tick": 1,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "scan-west-shoulder",
+          "position": {
+            "x": -26.42107099,
+            "y": 0.55,
+            "z": 8
+          },
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": -6.123233995736766e-17
+          },
+          "projectileId": "scan-shell-fixture",
+          "value": "hit"
+        },
+        {
+          "id": "event-2",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "receive-orders",
+          "value": "complete"
+        },
+        {
+          "id": "event-3",
+          "tick": 1,
+          "type": "objective-changed",
+          "entityId": "escort-supply",
+          "value": "active"
+        }
+      ]
+    }
+  ]
+}

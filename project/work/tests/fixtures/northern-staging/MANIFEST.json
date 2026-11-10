@@ -1,0 +1,42 @@
+{
+  "sandfalcon-east": {
+    "tapeSource": "candidate-sandfalcon-east-replay-inputs.json.gz",
+    "sha256": "8b4a0f4e554a9e96fc3427ce7a4c3bc313efeb6b6a15cc8a49e91bbd72899a9d",
+    "reportSha256": "bb1fbee5ffc059b202b46469435f317a0394f0dfae20dd719a0f6e81b4e32de3",
+    "vehicle": "sandfalcon",
+    "route": "direct",
+    "tick": 9189,
+    "finalHash": "1460c072853af70882e97d1a8a1756a14bae92285a35ee86d92a4f5942f84ec7",
+    "boundary": "Normal-input production simulation; not DOM, GPU or device acceptance"
+  },
+  "sandfalcon-west": {
+    "tapeSource": "candidate-sandfalcon-west-escort-replay-inputs.json.gz",
+    "sha256": "6c2de1a28984333d2daee133b87beaf2f387aa94c84877bab128c82aa680c1fb",
+    "reportSha256": "595ee6087333364d339b082890c5d80ef14a15735d54b05e5d599a558179431d",
+    "vehicle": "sandfalcon",
+    "route": "covered",
+    "tick": 10616,
+    "finalHash": "7dce6e8cba1a783463fdd4e27eac4114118525df79b4c69eb814607a13639eec",
+    "boundary": "Normal-input production simulation; not DOM, GPU or device acceptance"
+  },
+  "tiger-east": {
+    "tapeSource": "candidate-tiger-east-clearance-replay-inputs.json.gz",
+    "sha256": "7d687f05854d250cc4e37f9fc7e4872d9aa055ab3387665ef675d05fc0b37f4d",
+    "reportSha256": "d0112f8f250d971a223dcdb198bccc72533890eb7cd5b76cc47c9131ec09da1a",
+    "vehicle": "newc-tiger",
+    "route": "direct",
+    "tick": 9542,
+    "finalHash": "6d044173173ee09e84b9f57935ca1716ac1df13785b4c3571917b4beb1f36c8f",
+    "boundary": "Normal-input production simulation; not DOM, GPU or device acceptance"
+  },
+  "tiger-west": {
+    "tapeSource": "candidate-tiger-west-replay-inputs.json.gz",
+    "sha256": "a5c3b23ea953e07542e0342a7c9f5604a419e17215e3b41d5d5020ce7b199a78",
+    "reportSha256": "4dc6d6d36c66d3982fec6f5da63856ae4e1dac7e53c66b5d86363cd9df5833a0",
+    "vehicle": "newc-tiger",
+    "route": "covered",
+    "tick": 12333,
+    "finalHash": "96d882646265cee8277d47b03bc1cee4b5e7db79353385d58212c316f3c467cb",
+    "boundary": "Normal-input production simulation; not DOM, GPU or device acceptance"
+  }
+}

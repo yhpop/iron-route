@@ -1,0 +1,129 @@
+✖ four actual damage anchors have bounded continuous high cores, smooth falloff and quiet negative space (3.006825ms)
+✖ candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25 (0.829435ms)
+✖ actual 1024-square mask preserves R/G/A raw bytes, changes only existing B, and candidate alone has exterior predicate (1434.32868ms)
+✖ candidate supplies exact stitched 656-edge exterior-only ring with upward winding and joined corners (2250.362169ms)
+✖ candidate ring borrows one material and maps, has no raycast/caster, and disposes each resource exactly once (3111.640434ms)
+✖ actual production camera frustum and smoothing/aim envelope fit ring for aspect .25..8 and four review viewports (3773.16587ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11097.758497
+
+✖ failing tests:
+
+test at tests/battlefront-grounded-terrain.test.mjs:4:1
+✖ four actual damage anchors have bounded continuous high cores, smooth falloff and quiet negative space (3.006825ms)
+  AssertionError [ERR_ASSERTION]: missing four-zone B composition
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:5:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-grounded-terrain.test.mjs:12:1
+✖ candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25 (0.829435ms)
+  AssertionError [ERR_ASSERTION]: missing coherent char/ash pigment branch
+      at evaluate (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:9:127)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:13:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-grounded-terrain.test.mjs:16:1
+✖ actual 1024-square mask preserves R/G/A raw bytes, changes only existing B, and candidate alone has exterior predicate (1434.32868ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(changes>900000)
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:17:646)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-perimeter.test.mjs:6:1
+✖ candidate supplies exact stitched 656-edge exterior-only ring with upward winding and joined corners (2250.362169ms)
+  AssertionError [ERR_ASSERTION]: battlefront must supply missing optical exterior geometry
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-perimeter.test.mjs:10:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-perimeter.test.mjs:25:1
+✖ candidate ring borrows one material and maps, has no raycast/caster, and disposes each resource exactly once (3111.640434ms)
+  AssertionError [ERR_ASSERTION]: missing ring
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-perimeter.test.mjs:27:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-perimeter.test.mjs:31:1
+✖ actual production camera frustum and smoothing/aim envelope fit ring for aspect .25..8 and four review viewports (3773.16587ms)
+  AssertionError [ERR_ASSERTION]: missing ring
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-perimeter.test.mjs:33:159)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

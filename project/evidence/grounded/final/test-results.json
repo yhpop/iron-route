@@ -1,0 +1,124 @@
+{
+  "fullSuite": {
+    "counts": {
+      "tests": 1117,
+      "pass": 1094,
+      "fail": 2,
+      "cancelled": 0,
+      "skipped": 21
+    },
+    "terminal": {
+      "name": "06-full-suite",
+      "utc": "2026-10-31T14:21:15.536501+00:00",
+      "timeoutSeconds": 600.0,
+      "command": [
+        "bash",
+        "-c",
+        "node --test --test-concurrency=2 tests/*.test.mjs"
+      ],
+      "cwd": "/workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work",
+      "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+      "pid": 5,
+      "exitCode": 1,
+      "timedOut": false,
+      "elapsedSeconds": 294.0953329280019,
+      "sourceIdentityUnchanged": true,
+      "signaledPids": [],
+      "livingGroupAfterWait": []
+    },
+    "failedNames": [
+      "all BF2 base work outside exact authorized presentation/localization/build-test files remains byte-exact including BF1 gameplay and raw",
+      "V4 keeps frozen V3 builder/physical sources and spec hash unchanged"
+    ],
+    "inheritedSkipNamesExact": [
+      "\ufe63 crossfire complete independent input replay newc-leichttraktor-covered-locked-westlane-straight-clear-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay newc-leichttraktor-direct-locked-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay newc-tiger-covered-locked-westlane-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay newc-tiger-direct-locked-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay pz3-covered-locked-westlane-straight-clear-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay pz3-direct-locked-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay vanguard-covered-locked-westlane-inputs.json.gz",
+      "\ufe63 crossfire complete independent input replay vanguard-direct-locked-inputs.json.gz",
+      "\ufe63 V3 complete independent full-state input replay sandfalcon-covered-locked-westlane-straight-clear-southentry-inputs.json.gz",
+      "\ufe63 V3 complete independent full-state input replay sandfalcon-covered-locked-westlane-straight-clear-spawnclear-inputs.json.gz",
+      "\ufe63 V3 complete independent full-state input replay sandfalcon-direct-locked-spawnclear-inputs.json.gz",
+      "\ufe63 V3 acceptance includes independently replayable wins for both genuine fifth-chassis routes",
+      "\ufe63 V4 complete independent full-state input replay sandfalcon-direct-final-flat-direct-04-inputs.json.gz",
+      "\ufe63 V4 complete independent full-state input replay sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz",
+      "\ufe63 V4 complete independent full-state input replay newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz",
+      "\ufe63 V4 acceptance includes independently replayable wins for both genuine fifth-chassis routes",
+      "\ufe63 scorched complete independent input replay newc-leichttraktor-direct-initial-inputs.json.gz",
+      "\ufe63 scorched complete independent input replay newc-tiger-direct-initial-inputs.json.gz",
+      "\ufe63 scorched complete independent input replay pz3-direct-initial-inputs.json.gz",
+      "\ufe63 scorched complete independent input replay vanguard-covered-maneuver-inputs.json.gz",
+      "\ufe63 scorched complete independent input replay vanguard-direct-initial-inputs.json.gz"
+    ],
+    "inheritedSkipNamesMatchPrior21": true
+  },
+  "initialRecovery": {
+    "pass": 1,
+    "fail": 1,
+    "terminal": {
+      "name": "07-guards",
+      "utc": "2026-10-31T14:28:08.512656+00:00",
+      "timeoutSeconds": 60.0,
+      "command": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "--test-name-pattern=^(BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings|V4 retains V3 physical sources and spec; grounded view and preserved V3 view have separate exact SHA bindings)$",
+        "tests/battlefront-depot-scope.test.mjs",
+        "tests/crossfire-v4-front.test.mjs"
+      ],
+      "cwd": "/workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work",
+      "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+      "pid": 5,
+      "exitCode": 1,
+      "timedOut": false,
+      "elapsedSeconds": 0.9070056249911431,
+      "sourceIdentityUnchanged": true,
+      "signaledPids": [],
+      "livingGroupAfterWait": []
+    }
+  },
+  "finalFocusedRecovery": {
+    "pass": 2,
+    "fail": 0,
+    "terminal": {
+      "name": "08-guards",
+      "utc": "2026-10-31T14:29:28.875582+00:00",
+      "timeoutSeconds": 60.0,
+      "command": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "--test-name-pattern=^(BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings|V4 retains V3 physical sources and spec; grounded view and preserved V3 view have separate exact SHA bindings)$",
+        "tests/battlefront-depot-scope.test.mjs",
+        "tests/crossfire-v4-front.test.mjs"
+      ],
+      "cwd": "/workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work",
+      "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+      "pid": 5,
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 0.8834483629907481,
+      "sourceIdentityUnchanged": true,
+      "signaledPids": [],
+      "livingGroupAfterWait": []
+    }
+  },
+  "fullSuiteIsZeroFailure": false,
+  "fullSuiteToFinalDrift": [
+    {
+      "path": "work/tests/battlefront-depot-scope.test.mjs",
+      "fullSuiteSHA256": "87e481c2ca13778c9156989c229d338d0390492259442cc5618f797a7b55d0c0",
+      "finalSHA256": "93b9781e22e8e2f0d0fb66f4e19b71177ff4ee7a707a979e25e5849fb1320748"
+    },
+    {
+      "path": "work/tests/crossfire-v4-front.test.mjs",
+      "fullSuiteSHA256": "6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da",
+      "finalSHA256": "95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd"
+    }
+  ],
+  "finalHeadSHA256": "da33d2baf957d806e6ee6c7e228516c1cb0802385dfe814c9a33b738f8369894"
+}

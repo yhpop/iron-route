@@ -1,0 +1,26 @@
+Sat Oct 31 11:23:56 UTC 2026
+✔ independent playable battlefront mission builder exists (88.398641ms)
+✔ new battlefield combatants and their full conservative patrol envelopes avoid convoy corridors and route-choice zones (30.012436ms)
+✔ all retained combat rules and old builders remain exact; fresh layout drives view/movement/rays with no foundations (164.838792ms)
+✔ existing exported meshes stay at 757 triangles,61 spans and contact original field at every actual base vertex; real route envelopes retain only inherited fences (172.963137ms)
+✔ all five production player rigs spawn clear and respond to forward/reverse/pivot without initial state patches (9057.982893ms)
+✔ bounded full accelerated/reference state equality and exact static/dynamic/wreck queries on new layout (5683.683342ms)
+✔ compound tanks and trucks refresh every successful snapshot; failures and caller mutations preserve prior cache (767.034255ms)
+ℹ whole dynamic public outcomes compared: 8881
+✔ accelerated public query objects equal original for adversarial static shapes and articulated motion (450.506925ms)
+ℹ whole public outcomes compared: 1858; static scenarios: 59
+✔ malformed numeric and call behavior is not broadened by bounds validation (5.416989ms)
+✔ conservative bounds keep SAT threshold corner cases and fail open outside numerical domain (1.654905ms)
+✔ finite non-unit rotation matrices fail open even when determinant and inverse checks pass (1.015106ms)
+✔ whole sweep returns match on both sides of rotated SAT cutoff and at large finite query coordinates (28.848692ms)
+ℹ additional threshold/large finite whole outcomes: 75
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17040.312439
+EXIT:0
+Sat Oct 31 11:24:13 UTC 2026

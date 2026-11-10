@@ -1,0 +1,98 @@
+{
+  "boundary": "CPU-created render resources; old visible inventory applies existing ruined adapter hidden bucket names. Not actual GPU draw submission, decoded art memory, allocator totals, stutter or beauty.",
+  "oldAll": {
+    "rows": [
+      {
+        "name": "warfield-soot",
+        "triangles": 6454,
+        "attributeBytes": {
+          "position": 232344,
+          "color": 309792,
+          "normal": 232344
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      },
+      {
+        "name": "warfield-fragments",
+        "triangles": 460,
+        "attributeBytes": {
+          "position": 16560,
+          "color": 16560,
+          "normal": 16560
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      },
+      {
+        "name": "warfield-wall-scars",
+        "triangles": 2688,
+        "attributeBytes": {
+          "position": 96768,
+          "color": 96768,
+          "normal": 96768
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      },
+      {
+        "name": "warfield-ruins",
+        "triangles": 1440,
+        "attributeBytes": {
+          "position": 51840,
+          "color": 51840,
+          "normal": 51840
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      }
+    ],
+    "drawBuckets": 4,
+    "triangles": 11042,
+    "bufferBytes": 1269984
+  },
+  "oldVisible": {
+    "rows": [
+      {
+        "name": "warfield-soot",
+        "triangles": 6454,
+        "attributeBytes": {
+          "position": 232344,
+          "color": 309792,
+          "normal": 232344
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      }
+    ],
+    "drawBuckets": 1,
+    "triangles": 6454,
+    "bufferBytes": 774480
+  },
+  "candidate": {
+    "rows": [
+      {
+        "name": "battlefront-ground-detail",
+        "triangles": 2666,
+        "attributeBytes": {
+          "position": 95976,
+          "color": 127968,
+          "normal": 95976
+        },
+        "indexBytes": 0,
+        "materialCount": 1,
+        "mapTextures": []
+      }
+    ],
+    "drawBuckets": 1,
+    "triangles": 2666,
+    "bufferBytes": 319920
+  },
+  "visibleBufferByteDelta": -454560,
+  "totalGeneratedBufferByteDelta": -950064
+}

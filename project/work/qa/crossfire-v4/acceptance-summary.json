@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "at": "2026-10-31T01:13:12.795Z",
+  "acceptance": "PASS: offline production simulation only",
+  "evidenceBoundary": "No Mac, browser, WebGL, device visual or human-play acceptance claimed. Diagnostics excluded; physical rig/render evidence is separate.",
+  "missionId": "mission-9052",
+  "verification": {
+    "fullReplayStats": {
+      "tests": 18,
+      "pass": 18,
+      "fail": 0,
+      "skipped": 0
+    },
+    "fullReplayLog": "evidence/v4-replays/full-independent-replay.log",
+    "fullReplayLogSHA256": "d9390677058fcd863db5b8a44472a1287fd8dc94611b14a14a96186c2aa76241",
+    "fullReplayLogs": [
+      {
+        "file": "evidence/v4-replays/full-independent-replay.log",
+        "sha256": "d9390677058fcd863db5b8a44472a1287fd8dc94611b14a14a96186c2aa76241",
+        "stats": {
+          "tests": 10,
+          "pass": 10,
+          "fail": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "file": "evidence/v4-replays/tiger-independent-replay.log",
+        "sha256": "4b139b78fe9f57d87ae07381b2f0a927f4a3cc08eb4da6e21e5e04d402eb2928",
+        "stats": {
+          "tests": 8,
+          "pass": 8,
+          "fail": 0,
+          "skipped": 0
+        }
+      }
+    ]
+  },
+  "currentHarnessHashes": {
+    "scripts/record-crossfire-v4.mjs": "7e9c72d09b136e91d240e4b1e54d33bebee934bd6b25b42539728f6dc3b17759",
+    "tests/crossfire-v4-replay.test.mjs": "d870a9b8f6e9e20e0542a82b8fb15faa491640160cbe1f428c444d0781b82e68"
+  },
+  "runs": [
+    {
+      "route": "direct",
+      "attempt": "final-flat-direct-04",
+      "vehicleId": "sandfalcon",
+      "phase": "won",
+      "tick": 8140,
+      "inputs": 8141,
+      "hp": 100,
+      "truckHp": 86,
+      "truckArrived": true,
+      "specHash": "9ced0cda3da77bfa41d1fc65006ec6db830e9e1153b7e59a15da7576e27e139f",
+      "finalHash": "87afcc21e3772e288a3acb2fd4de5a2f3d32483bc22ccb11c4bcbcba093f4e45",
+      "inputSHA256": "45a1c93e1c7a65f92ff298fa4f91f233b8256883615f019c74325cf0dbdca509",
+      "recordSHA256": "f56c313570244a4decb2aafe3971c6bef48f97b346f725895a2c553960c3eb4f",
+      "independentSHA256": "2af6d34632acc11056576699c9c76351d31ceb0313aca12c890e231c165f6c56",
+      "fullStateExact": true,
+      "verificationLog": "evidence/v4-replays/full-independent-replay.log",
+      "mutual": {
+        "supportShots": 10,
+        "flankerShots": 11,
+        "supportDamageEvents": 10,
+        "flankerDamageEvents": 9,
+        "friendlyDamageEvents": 0
+      },
+      "acceptedPatrolTravel": {
+        "allied-support": 12.934526868807692,
+        "hostile-flanker": 7.622321382591083
+      },
+      "files": {
+        "tape": "sandfalcon-direct-final-flat-direct-04-inputs.json.gz",
+        "record": "sandfalcon-direct-final-flat-direct-04-report.json",
+        "independent": "sandfalcon-direct-final-flat-direct-04-independent.json"
+      }
+    },
+    {
+      "route": "covered",
+      "attempt": "final-flat-westlane-straight-clear-southentry-04",
+      "vehicleId": "sandfalcon",
+      "phase": "won",
+      "tick": 13599,
+      "inputs": 13600,
+      "hp": 92,
+      "truckHp": 100,
+      "truckArrived": true,
+      "specHash": "9ced0cda3da77bfa41d1fc65006ec6db830e9e1153b7e59a15da7576e27e139f",
+      "finalHash": "82743177116f08cb645c1de673e1fc13996b451ffdfed184a0568575a32dbf43",
+      "inputSHA256": "8b041349cb366786e13de318973994dd9d6da8cf6354538782236eeb8042f5f5",
+      "recordSHA256": "b36e7e32075774093f1d3959364e7b66c3ea73838c70b01b56db491a2ff9ed9c",
+      "independentSHA256": "e5c2e11ad1e3b755bf2edc1edb2dae2a64aa9dba46802b96e42858e59ca3217a",
+      "fullStateExact": true,
+      "verificationLog": "evidence/v4-replays/full-independent-replay.log",
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 9,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 8,
+        "friendlyDamageEvents": 0
+      },
+      "acceptedPatrolTravel": {
+        "allied-support": 61.50170281042742,
+        "hostile-flanker": 6.493676733254492
+      },
+      "files": {
+        "tape": "sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz",
+        "record": "sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-report.json",
+        "independent": "sandfalcon-covered-final-flat-westlane-straight-clear-southentry-04-independent.json"
+      }
+    },
+    {
+      "route": "covered",
+      "attempt": "final-flat-westlane-straight-clear-southentry-04",
+      "vehicleId": "newc-tiger",
+      "phase": "won",
+      "tick": 16149,
+      "inputs": 16150,
+      "hp": 147,
+      "truckHp": 100,
+      "truckArrived": true,
+      "specHash": "d493b33949a4658cf29472bcd78e3dbef8589da86571b0d110a11b350d210bc2",
+      "finalHash": "18543d05d281ffd7e735e629dbb6c3ef53f1a7103c460e5f3b6cbef79dcc7a33",
+      "inputSHA256": "f953ec40ab5c367143b497a713a66334c964d83b43d73bf87a1d07546c63ebe5",
+      "recordSHA256": "0d7910ccef482844c27b646975294de45a13c2c62dd8a6f03c8320fbceba6e5d",
+      "independentSHA256": "49b895727d7c235aa3674aeb7be2ba48c664c891925bb54828713dc6983046a2",
+      "fullStateExact": true,
+      "verificationLog": "evidence/v4-replays/tiger-independent-replay.log",
+      "mutual": {
+        "supportShots": 9,
+        "flankerShots": 10,
+        "supportDamageEvents": 9,
+        "flankerDamageEvents": 8,
+        "friendlyDamageEvents": 0
+      },
+      "acceptedPatrolTravel": {
+        "allied-support": 72.28528026107618,
+        "hostile-flanker": 7.565546907856911
+      },
+      "files": {
+        "tape": "newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-inputs.json.gz",
+        "record": "newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-report.json",
+        "independent": "newc-tiger-covered-final-flat-westlane-straight-clear-southentry-04-independent.json"
+      }
+    }
+  ]
+}

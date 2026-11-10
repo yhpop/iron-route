@@ -1,0 +1,13 @@
+{
+  "route": "covered",
+  "verify": false,
+  "inputs": 13600,
+  "tick": 13599,
+  "phase": "won",
+  "hp": 92,
+  "truckHp": 100,
+  "truckArrived": true,
+  "events": 103,
+  "finalHash": "cbda3ac65af0f8bd2a7fae5f85a26c4073d854b8e40b714e2764a6f10dfea475",
+  "specHash": "29bffced4fd2fb23a5cff0e1b201b6212600c47c71e8386c07fbc7f57c51ccaa"
+}

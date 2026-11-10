@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-31T11:40:53.685023+00:00",
+  "baseline": "BASE.json",
+  "baseSha256": "90fb8d9fb19e720acab5542b24ca28c8308b94bb13a39d55942195baa9520545",
+  "baseline709Unchanged": true,
+  "files": {
+    "work/scripts/battlefront-analyze.mjs": {
+      "bytes": 2604,
+      "sha256": "4075e3782df2756d8c2ea203d9fc0428db8cb8e68652497c415352d29b61e02c"
+    },
+    "work/scripts/battlefront-inspect.mjs": {
+      "bytes": 1538,
+      "sha256": "4831f76a08c32e5663f5b08c1dececb6d45f1e6f7dbe1de8ee73bde2807186bc"
+    },
+    "work/scripts/battlefront-replay.mjs": {
+      "bytes": 14814,
+      "sha256": "8ea10bd7bbbab432941829a7fb45b60ffd737324861af8f1c4b50e34714a87fb"
+    },
+    "work/src/battlefront-depot-front.js": {
+      "bytes": 2803,
+      "sha256": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c"
+    },
+    "work/tests/battlefront-depot-front.test.mjs": {
+      "bytes": 3043,
+      "sha256": "9a3704f24fc7694d2f15dfae6fc19f8257c6cb75b0ede823e9337eb0d5c66c19"
+    },
+    "work/tests/battlefront-depot-replays.test.mjs": {
+      "bytes": 3641,
+      "sha256": "8059a8908ab9f268a508b3c12f6a249c116b0e4ed14cf491171d3c243df67106"
+    },
+    "work/tests/battlefront-depot-world.test.mjs": {
+      "bytes": 7513,
+      "sha256": "e4cb016d1cf2e61115dc48831052e8cb6e840a9a46847500cb3b2a17e46ec9b7"
+    }
+  },
+  "reportSha256": "5d1f77266dc0dddbd62c5f9641fd3f6b1aeb69a8c8308c3996ab8a2d203dac2d"
+}

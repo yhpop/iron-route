@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "pass": true,
+  "controls": 4756,
+  "missionId": "mission-9030",
+  "specHash": "44e65e2cabcf0421d2631f1e191fbd30cf46210764d6984e61699eae33bf6633",
+  "traceSHA256": "4cd0d9bb64970961b515ecb64d830daca1a79826ab3d8a0b866054bfab84c7e7",
+  "finalHash": "507cf29187b01d224eea4ecb2955571122c1869cbc21d6451bb16ea140d9dd13",
+  "expectedFinalHash": "507cf29187b01d224eea4ecb2955571122c1869cbc21d6451bb16ea140d9dd13",
+  "phase": "playing",
+  "tick": 4755,
+  "tankHp": 84,
+  "truckHp": 100,
+  "shield": {
+    "id": "event-20",
+    "tick": 3727,
+    "type": "impact",
+    "entityId": "tank",
+    "targetId": "ridge-gun",
+    "position": {
+      "x": -0.6987089919724639,
+      "y": 1.0135782367198714,
+      "z": -17.610377433229512
+    },
+    "normal": {
+      "x": -0.87338623996558,
+      "y": 0,
+      "z": 0.4870282084631098
+    },
+    "projectileId": "projectile-4",
+    "value": "shield",
+    "tankPose": {
+      "x": -14.437894118361033,
+      "y": 0.1266620618528006,
+      "z": -9.93492212615008,
+      "yaw": -1.4235097910396917,
+      "basis": {
+        "right": [
+          0.9998825290373222,
+          0.015327365263743304,
+          0
+        ],
+        "up": [
+          -0.015316969388261624,
+          0.9992043528413933,
+          0.03682460741910665
+        ],
+        "forward": [
+          0.0005644242086065993,
+          -0.03682028159702291,
+          0.999321744128701
+        ]
+      }
+    },
+    "tankHp": 92,
+    "targetHpBefore": 90,
+    "targetHpAfter": 90,
+    "convoyOrder": "hold"
+  },
+  "hit": {
+    "id": "event-28",
+    "tick": 4755,
+    "type": "impact",
+    "entityId": "tank",
+    "targetId": "ridge-gun",
+    "position": {
+      "x": -0.7976350745662224,
+      "y": 1.0073215459611384,
+      "z": -18.061467778727856
+    },
+    "normal": {
+      "x": -0.9970438432077781,
+      "y": 0,
+      "z": -0.07683472340982038
+    },
+    "projectileId": "projectile-8",
+    "value": "hit",
+    "tankPose": {
+      "x": -21.750071008786936,
+      "y": 0.008,
+      "z": -19.633388586298572,
+      "yaw": 0.5983621891269824,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "tankHp": 84,
+    "targetHpBefore": 90,
+    "targetHpAfter": 45,
+    "convoyOrder": "hold"
+  },
+  "damage": {
+    "id": "event-29",
+    "tick": 4755,
+    "type": "damaged",
+    "targetId": "ridge-gun",
+    "entityId": "tank",
+    "position": {
+      "x": -0.7976350745662224,
+      "y": 1.0073215459611384,
+      "z": -18.061467778727856
+    },
+    "value": 45,
+    "tankPose": {
+      "x": -21.750071008786936,
+      "y": 0.008,
+      "z": -19.633388586298572,
+      "yaw": 0.5983621891269824,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "tankHp": 84,
+    "targetHpBefore": 90,
+    "targetHpAfter": 45,
+    "convoyOrder": "hold"
+  },
+  "sourceHashes": {
+    "campaign-simulation.js": "196445d775321510e14689be8de4b9d00921e737da7b51fe7853a4ef43324c38",
+    "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+    "combat.js": "0a3ee2ed4e091a05073ef76c7a2ef7bb89536cd2b614acb035ef2a4804a4c2a2",
+    "mission-runtime.js": "0988c8d645389db8f60c9225bd94ed9747a545aba9d16420ed5ad47d64e611ab",
+    "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "interceptor.js": "e22648a74b220b143801c91e8211787914a255b625216c68dfc7c21bfa9c2c02",
+    "sentry-rig.js": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+    "terrain-candidate/vertical-slice.js": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d",
+    "terrain-candidate/interceptor-mission.js": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+    "terrain-candidate/ridge-convoy.js": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+    "terrain-candidate/combat-world.js": "57e4b1979c3573389b4465ef45d1a05861f365c1a87a9a8dcdb8e0864786f7df",
+    "terrain-candidate/combat-surface.js": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+    "terrain-candidate/heightfield.js": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d"
+  },
+  "limitations": [
+    "Controls-only CPU verification; not browser rendering or visual-feedback acceptance.",
+    "Scenario intentionally stops after shield then flank damage; not a full mission win."
+  ]
+}

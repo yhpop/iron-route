@@ -1,0 +1,28 @@
+✔ old default/scorched/crossfire shader text is byte-exact; candidate adds no sampler and unique cache key (8.357004ms)
+✔ old mask/geometry remain exact, candidate uses same six maps and existing B weather channel without geometry or map URL changes (5286.954149ms)
+✔ four actual damage anchors have bounded continuous high cores, smooth falloff and quiet negative space (37.937026ms)
+✔ candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25 (5.22203ms)
+✔ actual 1024-square mask preserves R/G/A raw bytes, changes only existing B, and candidate alone has exterior predicate (1699.247917ms)
+✔ actual candidate outside-bounds mask predicate resets road/rut channels on all four sides, not on seam (0.830123ms)
+✔ candidate supplies exact stitched 656-edge exterior-only ring with upward winding and joined corners (2889.823159ms)
+✔ candidate ring borrows one material and maps, has no raycast/caster, and disposes each resource exactly once (3675.79103ms)
+✔ actual production camera frustum and smoothing/aim envelope fit ring for aspect .25..8 and four review viewports (1857.743611ms)
+✔ all three retained appearances remain one mesh with no optical ring (5076.016638ms)
+✔ default and previously device-tested scorched shader sources stay byte-identical (6.288298ms)
+✔ crossfire shallow weather is bounded, deterministic, spatially varied and not four metre periodic (29.280497ms)
+✔ crossfire shader uses existing channels and samples without geometry displacement or added sampler (1.763469ms)
+✔ crossfire view preserves field, roads and contact geometry; fixed mask has no frame upload and disposes once (959.972562ms)
+✔ actual crossfire final color consumes dirt and rut channels before ash/soot, with off-road and asphalt negative controls (5.883773ms)
+✔ pending real TextureLoader images stay unmarked and produce zero actual Three warnings (363.370892ms)
+✔ real TextureLoader completion marks all six valid images once and preserves configured sampling (318.415579ms)
+✔ decode failure still rejects readiness but does not leave persistent empty-image warnings (312.906258ms)
+✔ synchronous data-texture fallback and mask remain dirty with real initialized pixel buffers (252.65335ms)
+✔ dispose-before-completion releases maps once and late image callbacks never restore the mesh (319.051275ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24769.44609

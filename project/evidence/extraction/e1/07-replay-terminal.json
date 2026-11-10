@@ -1,0 +1,21 @@
+{
+  "name": "07-replay",
+  "utc": "2026-10-31T15:15:17.328902+00:00",
+  "timeoutSeconds": 300.0,
+  "command": [
+    "node",
+    "../evidence/extraction/e1/input-acceptance.mjs",
+    "replay",
+    "win-direct-01-fresh",
+    "win-direct-01"
+  ],
+  "cwd": "/workspace/scratch/08f39b8da479/loading_extraction_candidate/work",
+  "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+  "pid": 5,
+  "exitCode": 1,
+  "timedOut": false,
+  "elapsedSeconds": 115.20031140500214,
+  "sourceIdentityUnchanged": true,
+  "signaledPids": [],
+  "livingGroupAfterWait": []
+}

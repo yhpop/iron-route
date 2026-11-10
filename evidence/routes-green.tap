@@ -1,0 +1,38 @@
+TAP version 13
+# Subtest: tiger-west fresh-process literal CPU victory, escort and full-event regression
+ok 1 - tiger-west fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 67478.204443
+  type: 'test'
+  ...
+# {"route":"tiger-west","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":14781,"tick":14780,"phase":"won","playerHp":139,"supplyHp":84,"supplyArrived":true,"events":132,"finalHash":"2b315d36f0ee39c4c658671b9fd7de40f5359abac8a390629ce7ea27b0267b29","eventsHash":"e1754c6ad927b8f5508754c1b6c00308f35d74f3e938bd9f5540009dfeda391d","stats":{"muzzleChecks":14781,"lateNorthernShots":3,"lateNorthernDamage":3,"alliedContacts":0,"damageChecks":26,"projectileChecks":44,"sameTickImpacts":0},"retainedHistoricalInputs":12334,"originalHistoricalInputs":12334,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":false}
+# Subtest: sandfalcon-west fresh-process literal CPU victory, escort and full-event regression
+ok 2 - sandfalcon-west fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 116997.386766
+  type: 'test'
+  ...
+# {"route":"sandfalcon-west","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":16157,"tick":16156,"phase":"won","playerHp":72,"supplyHp":100,"supplyArrived":true,"events":160,"finalHash":"1d6e0791c959ae4ce96027374017e2c6fd1eb2110348e97636c67e4e475ba68d","eventsHash":"a60077df0536c70a878882debf2f776ed66547b5b6ba64a56eb3c3f94e927e67","stats":{"muzzleChecks":16157,"lateNorthernShots":1,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":26,"projectileChecks":58,"sameTickImpacts":0},"retainedHistoricalInputs":10617,"originalHistoricalInputs":10617,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":false}
+# Subtest: sandfalcon-east fresh-process literal CPU victory, escort and full-event regression
+ok 3 - sandfalcon-east fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 80537.234595
+  type: 'test'
+  ...
+# {"route":"sandfalcon-east","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":15613,"tick":15612,"phase":"won","playerHp":34,"supplyHp":100,"supplyArrived":true,"events":156,"finalHash":"0a2bc16968682ced0fff29f54ffed8c589f7f9265fd1c9a2d09473eb6b1a920b","eventsHash":"63c214a4460ed3c87a2cfc856c29bde4630b33fbb8f8df3b6bf2f216294523c4","stats":{"muzzleChecks":15613,"lateNorthernShots":0,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":33,"projectileChecks":62,"sameTickImpacts":0},"retainedHistoricalInputs":9190,"originalHistoricalInputs":9190,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":true}
+# Subtest: tiger-east fresh-process literal CPU victory, escort and full-event regression
+ok 4 - tiger-east fresh-process literal CPU victory, escort and full-event regression
+  ---
+  duration_ms: 34040.142733
+  type: 'test'
+  ...
+# {"route":"tiger-east","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":6401,"tick":6400,"phase":"won","playerHp":155,"supplyHp":86,"supplyArrived":true,"events":143,"finalHash":"e54602c2b7e737c2b734cbc657d6220b710037284341db989a237be8e5d9e6da","eventsHash":"5e670992fe1f41e3e944e9aa5c4fb85252a15461ce620ee498e3a0f0ac215c0c","stats":{"muzzleChecks":6401,"lateNorthernShots":1,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":24,"projectileChecks":58,"sameTickImpacts":0},"retainedHistoricalInputs":2400,"originalHistoricalInputs":9543,"completeOldTapeConsumed":false,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":true}
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 299158.238373

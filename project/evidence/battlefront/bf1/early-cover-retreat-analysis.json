@@ -1,0 +1,1280 @@
+{
+  "missionSpecHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "rawFile": "work/qa/battlefront-depot/v03-cover-retreat-01-result.json.gz",
+  "boundary": "Literal createGame and real input only; road remains alive/unmodified. Exact production origin+resolved player aimHeight LOS; no forced target, pose or health injection.",
+  "transitions": [
+    {
+      "before": {
+        "tick": 1916,
+        "player": {
+          "x": 15.712295532736526,
+          "y": 0.008,
+          "z": 4.649854944769568,
+          "yaw": -1.6810967260977367,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.96029765154739,
+            "y": 0.008,
+            "z": 29.306797806391444,
+            "yaw": -0.0029836051634219984,
+            "basis": {
+              "right": [
+                1,
+                -1.763104876322079e-34,
+                0
+              ],
+              "up": [
+                1.763104876322079e-34,
+                1,
+                1.6357303080837685e-30
+              ],
+              "forward": [
+                -2.883964082530309e-64,
+                -1.6357303080837685e-30,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 1.35,
+          "travel": 16.59031057429199,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -6.286168912343008,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 22.96029765154739,
+          "y": 1.308,
+          "z": 29.306797806391444
+        },
+        "to": {
+          "x": 15.712295532736526,
+          "y": 0.8393030006233075,
+          "z": 4.649854944769568
+        },
+        "inRange": false,
+        "hit": null
+      },
+      "after": {
+        "tick": 1917,
+        "player": {
+          "x": 15.71420658816956,
+          "y": 0.008,
+          "z": 4.650057623625971,
+          "yaw": -1.671817942088806,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.960364782563968,
+            "y": 0.008,
+            "z": 29.28429790653774,
+            "yaw": -0.0029836051634219984,
+            "basis": {
+              "right": [
+                1,
+                -1.954450722185249e-34,
+                0
+              ],
+              "up": [
+                1.954450722185249e-34,
+                1,
+                1.7440247401692943e-30
+              ],
+              "forward": [
+                -3.4086104129328184e-64,
+                -1.7440247401692943e-30,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 1.35,
+          "travel": 16.61281057429199,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -6.286168912343008,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 22.960364782563968,
+          "y": 1.308,
+          "z": 29.28429790653774
+        },
+        "to": {
+          "x": 15.71420658816956,
+          "y": 0.8393030006233075,
+          "z": 4.650057623625971
+        },
+        "inRange": false,
+        "hit": {
+          "id": "scan-east-entry",
+          "colliderId": "scan-east-entry",
+          "fraction": 0.5074884828175449,
+          "distance": 13.03338991624676,
+          "point": {
+            "x": 19.28302295423483,
+            "y": 1.0701416708851865,
+            "z": 16.782704680000002
+          },
+          "position": {
+            "x": 19.28302295423483,
+            "y": 1.0701416708851865,
+            "z": 16.782704680000002
+          },
+          "normal": {
+            "x": -6.123233995736766e-17,
+            "y": 0,
+            "z": 1
+          }
+        }
+      }
+    },
+    {
+      "before": {
+        "tick": 2161,
+        "player": {
+          "x": 17.10778664905709,
+          "y": 0.008,
+          "z": 4.178481638569149,
+          "yaw": -1.1509772098889162,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.976744750609125,
+            "y": 0.00800000000000114,
+            "z": 23.794322342234334,
+            "yaw": -0.0029836051634060112,
+            "basis": {
+              "right": [
+                1,
+                -8.53614715374376e-19,
+                0
+              ],
+              "up": [
+                8.53614715374376e-19,
+                1,
+                1.7079964333446335e-17
+              ],
+              "forward": [
+                -1.4579708893099288e-35,
+                -1.7079964333446335e-17,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 1.35,
+          "travel": 22.1028105742922,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -6.286168912342992,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 22.976744750609125,
+          "y": 1.3080000000000012,
+          "z": 23.794322342234334
+        },
+        "to": {
+          "x": 17.10778664905709,
+          "y": 0.8393030006233075,
+          "z": 4.178481638569149
+        },
+        "inRange": false,
+        "hit": null
+      },
+      "after": {
+        "tick": 2162,
+        "player": {
+          "x": 17.10778664905709,
+          "y": 0.008,
+          "z": 4.178481638569149,
+          "yaw": -1.1509772098889162,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.976811881625704,
+            "y": 0.008000000000001192,
+            "z": 23.771822442380632,
+            "yaw": -0.0029836051634060112,
+            "basis": {
+              "right": [
+                1,
+                -9.166072212656798e-19,
+                0
+              ],
+              "up": [
+                9.166072212656798e-19,
+                1,
+                1.7958226162718758e-17
+              ],
+              "forward": [
+                -1.6460639781870274e-35,
+                -1.7958226162718758e-17,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 1.35,
+          "travel": 22.1253105742922,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -6.286168912342992,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 22.976811881625704,
+          "y": 1.3080000000000012,
+          "z": 23.771822442380632
+        },
+        "to": {
+          "x": 17.10778664905709,
+          "y": 0.8393030006233075,
+          "z": 4.178481638569149
+        },
+        "inRange": false,
+        "hit": {
+          "id": "scorched-east-cover",
+          "colliderId": "scorched-east-cover",
+          "fraction": 0.6518450615576562,
+          "distance": 13.335993879200313,
+          "point": {
+            "x": 19.15111676761858,
+            "y": 1.0024821755894116,
+            "z": 10.999999999999998
+          },
+          "position": {
+            "x": 19.15111676761858,
+            "y": 1.0024821755894116,
+            "z": 10.999999999999998
+          },
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      }
+    },
+    {
+      "before": {
+        "tick": 3423,
+        "player": {
+          "x": 17.10778664905709,
+          "y": 0.008,
+          "z": 4.178481638569149,
+          "yaw": -1.1509772098889162,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 23.00569369100558,
+            "y": 0.008,
+            "z": 29.091691232061585,
+            "yaw": 3.1386090304958074,
+            "basis": {
+              "right": [
+                1,
+                3.997209935132883e-34,
+                0
+              ],
+              "up": [
+                -3.997209935132883e-34,
+                1,
+                -8.127260367894199e-30
+              ],
+              "forward": [
+                -3.2486365887958426e-63,
+                8.127260367894199e-30,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 1.35,
+          "travel": 42.84703890131251,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -9.427761583863365,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 23.00569369100558,
+          "y": 1.308,
+          "z": 29.091691232061585
+        },
+        "to": {
+          "x": 17.10778664905709,
+          "y": 0.8393030006233075,
+          "z": 4.178481638569149
+        },
+        "inRange": false,
+        "hit": null
+      },
+      "after": {
+        "tick": 3424,
+        "player": {
+          "x": 17.10778664905709,
+          "y": 0.008,
+          "z": 4.178481638569149,
+          "yaw": -1.1509772098889162,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "hp": 48,
+        "enemy": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 23.005626559585565,
+            "y": 0.008,
+            "z": 29.114191131914083,
+            "yaw": 3.1386090304958074,
+            "basis": {
+              "right": [
+                1,
+                3.3884570776211716e-34,
+                0
+              ],
+              "up": [
+                -3.3884570776211716e-34,
+                1,
+                -4.1223321146267826e-30
+              ],
+              "forward": [
+                -1.3968345430112173e-63,
+                4.1223321146267826e-30,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 16
+            },
+            {
+              "x": 23,
+              "z": 31
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 1.35,
+          "travel": 42.86953890131251,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.886839937680817,
+          "aimElevation": -0.033942179741676556,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -9.427761583863365,
+          "patrolBlocked": false
+        },
+        "from": {
+          "x": 23.005626559585565,
+          "y": 1.308,
+          "z": 29.114191131914083
+        },
+        "to": {
+          "x": 17.10778664905709,
+          "y": 0.8393030006233075,
+          "z": 4.178481638569149
+        },
+        "inRange": false,
+        "hit": {
+          "id": "scan-east-entry",
+          "colliderId": "scan-east-entry",
+          "fraction": 0.5569082273193225,
+          "distance": 14.272437709050092,
+          "point": {
+            "x": 19.72107099,
+            "y": 1.0469787849272407,
+            "z": 15.227289361025754
+          },
+          "position": {
+            "x": 19.72107099,
+            "y": 1.0469787849272407,
+            "z": 15.227289361025754
+          },
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 6.123233995736766e-17
+          }
+        }
+      }
+    }
+  ],
+  "firstInRangeMasonryBlocked": {
+    "tick": 2231,
+    "player": {
+      "x": 17.10778664905709,
+      "y": 0.008,
+      "z": 4.178481638569149,
+      "yaw": -1.1509772098889162,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "hp": 48,
+    "enemy": {
+      "id": "road-gun",
+      "kind": "turret",
+      "pose": {
+        "x": 22.98144392176962,
+        "y": 0.008000000000171707,
+        "z": 22.21932935247516,
+        "yaw": -0.002983605163395353,
+        "basis": {
+          "right": [
+            1,
+            -4.651458398924861e-16,
+            0
+          ],
+          "up": [
+            4.651458398924861e-16,
+            1,
+            2.775531176069476e-15
+          ],
+          "forward": [
+            -1.291026780040616e-30,
+            -2.775531176069476e-15,
+            1
+          ]
+        }
+      },
+      "hp": 90,
+      "range": 19,
+      "chargeTime": 1.9,
+      "reload": 4.5,
+      "damage": 14,
+      "shieldArc": 1.7,
+      "vehicle": "pz3",
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "patrol": [
+        {
+          "x": 23,
+          "z": 16
+        },
+        {
+          "x": 23,
+          "z": 31
+        }
+      ],
+      "patrolIndex": 0,
+      "speed": 1.35,
+      "travel": 23.67781057429226,
+      "team": "hostile",
+      "maxHp": 90,
+      "alive": true,
+      "destroyed": false,
+      "status": "idle",
+      "aimYaw": 0.886839937680817,
+      "aimElevation": -0.033942179741676556,
+      "charge": 0,
+      "chargeElapsed": 0,
+      "cooldown": 0,
+      "telegraphTarget": null,
+      "targetId": null,
+      "turnTravel": -6.286168912342982,
+      "patrolBlocked": false
+    },
+    "from": {
+      "x": 22.98144392176962,
+      "y": 1.3080000000001717,
+      "z": 22.21932935247516
+    },
+    "to": {
+      "x": 17.10778664905709,
+      "y": 0.8393030006233075,
+      "z": 4.178481638569149
+    },
+    "inRange": true,
+    "hit": {
+      "id": "scorched-east-cover",
+      "colliderId": "scorched-east-cover",
+      "fraction": 0.6218848210678716,
+      "distance": 11.80257625345498,
+      "point": {
+        "x": 19.328705619714786,
+        "y": 1.0165244504076423,
+        "z": 11
+      },
+      "position": {
+        "x": 19.328705619714786,
+        "y": 1.0165244504076423,
+        "z": 11
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    }
+  },
+  "lastInRangeMasonryBlocked": {
+    "tick": 3117,
+    "player": {
+      "x": 17.10778664905709,
+      "y": 0.008,
+      "z": 4.178481638569149,
+      "yaw": -1.1509772098889162,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "hp": 48,
+    "enemy": {
+      "id": "road-gun",
+      "kind": "turret",
+      "pose": {
+        "x": 23.02623590552987,
+        "y": 0.008000000000153058,
+        "z": 22.20672187719716,
+        "yaw": 3.138609030495802,
+        "basis": {
+          "right": [
+            1,
+            4.561932188571448e-16,
+            0
+          ],
+          "up": [
+            -4.561932188571448e-16,
+            1,
+            -2.614639681367276e-15
+          ],
+          "forward": [
+            -1.1927808923945571e-30,
+            2.614639681367276e-15,
+            1
+          ]
+        }
+      },
+      "hp": 90,
+      "range": 19,
+      "chargeTime": 1.9,
+      "reload": 4.5,
+      "damage": 14,
+      "shieldArc": 1.7,
+      "vehicle": "pz3",
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "patrol": [
+        {
+          "x": 23,
+          "z": 16
+        },
+        {
+          "x": 23,
+          "z": 31
+        }
+      ],
+      "patrolIndex": 1,
+      "speed": 1.35,
+      "travel": 35.96203890131225,
+      "team": "hostile",
+      "maxHp": 90,
+      "alive": true,
+      "destroyed": false,
+      "status": "idle",
+      "aimYaw": 0.886839937680817,
+      "aimElevation": -0.033942179741676556,
+      "charge": 0,
+      "chargeElapsed": 0,
+      "cooldown": 0,
+      "telegraphTarget": null,
+      "targetId": null,
+      "turnTravel": -9.42776158386337,
+      "patrolBlocked": false
+    },
+    "from": {
+      "x": 23.02623590552987,
+      "y": 1.308000000000153,
+      "z": 22.20672187719716
+    },
+    "to": {
+      "x": 17.10778664905709,
+      "y": 0.8393030006233075,
+      "z": 4.178481638569149
+    },
+    "inRange": true,
+    "hit": {
+      "id": "scorched-east-cover",
+      "colliderId": "scorched-east-cover",
+      "fraction": 0.6216203982674472,
+      "distance": 11.798760688719556,
+      "point": {
+        "x": 19.347207121595584,
+        "y": 1.016648384580761,
+        "z": 10.999999999999998
+      },
+      "position": {
+        "x": 19.347207121595584,
+        "y": 1.016648384580761,
+        "z": 10.999999999999998
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    }
+  },
+  "blockedInRangeTicks": 887,
+  "lastPriorLiveInRangeEngagedClear": {
+    "tick": 1370,
+    "player": {
+      "x": 12.94728222873746,
+      "y": 0.008,
+      "z": 11.853090791710912,
+      "yaw": -0.08662535597798104,
+      "basis": {
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "hp": 48,
+    "enemy": {
+      "id": "road-gun",
+      "kind": "turret",
+      "pose": {
+        "x": 23.00911779628606,
+        "y": 0.008,
+        "z": 27.944195126955226,
+        "yaw": 3.138608899846698,
+        "basis": {
+          "right": [
+            1,
+            1.228346057706952e-29,
+            0
+          ],
+          "up": [
+            -1.228346057706952e-29,
+            1,
+            -2.64055316598156e-26
+          ],
+          "forward": [
+            -3.2435130715990603e-55,
+            2.64055316598156e-26,
+            1
+          ]
+        }
+      },
+      "hp": 90,
+      "range": 19,
+      "chargeTime": 1.9,
+      "reload": 4.5,
+      "damage": 14,
+      "shieldArc": 1.7,
+      "vehicle": "pz3",
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "patrol": [
+        {
+          "x": 23,
+          "z": 16
+        },
+        {
+          "x": 23,
+          "z": 31
+        }
+      ],
+      "patrolIndex": 1,
+      "speed": 1.35,
+      "travel": 11.956083551579198,
+      "team": "hostile",
+      "maxHp": 90,
+      "alive": true,
+      "destroyed": false,
+      "status": "cooldown",
+      "aimYaw": 0.886839937680817,
+      "aimElevation": -0.033942179741676556,
+      "charge": 0,
+      "chargeElapsed": 0,
+      "cooldown": 1.7500000000000098,
+      "telegraphTarget": null,
+      "targetId": "tank",
+      "turnTravel": -3.144576407332888,
+      "patrolBlocked": false
+    },
+    "from": {
+      "x": 23.00911779628606,
+      "y": 1.308,
+      "z": 27.944195126955226
+    },
+    "to": {
+      "x": 12.94728222873746,
+      "y": 0.8393030006233075,
+      "z": 11.853090791710912
+    },
+    "inRange": true,
+    "hit": null
+  },
+  "damage": [
+    {
+      "id": "event-5",
+      "tick": 138,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.3927335937036046,
+        "y": 0.9484602195828329,
+        "z": 21.62543242203737
+      },
+      "value": 12
+    },
+    {
+      "id": "event-8",
+      "tick": 215,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "value": 12
+    },
+    {
+      "id": "event-12",
+      "tick": 490,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 8.770342376970923,
+        "y": 0.9301373449556252,
+        "z": 19.88603578281125
+      },
+      "value": 14
+    },
+    {
+      "id": "event-15",
+      "tick": 507,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 5.659537869859427,
+        "y": 0.9139648402335713,
+        "z": 19.52582172321212
+      },
+      "value": 12
+    },
+    {
+      "id": "event-19",
+      "tick": 625,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": 2.853275040255015,
+        "y": 1.081007369241486,
+        "z": 16.492858293648933
+      },
+      "value": 45
+    },
+    {
+      "id": "event-21",
+      "tick": 664,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.6002768240774345,
+        "y": 1.2266640258429744,
+        "z": 16.45404784539755
+      },
+      "value": 12
+    },
+    {
+      "id": "event-24",
+      "tick": 679,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": 2.853275040255015,
+        "y": 1.081007369241486,
+        "z": 16.492858293648933
+      },
+      "value": 41
+    },
+    {
+      "id": "event-30",
+      "tick": 1250,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 13.384642974913945,
+        "y": 0.8310754294563268,
+        "z": 17.770630016598833
+      },
+      "value": 14
+    }
+  ],
+  "shots": [
+    {
+      "id": "event-3",
+      "tick": 121,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 1.4297920594808418,
+        "y": 1.2367024780439433,
+        "z": 17.995727791817053
+      },
+      "projectileId": "projectile-1"
+    },
+    {
+      "id": "event-6",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -8.700634379361013,
+        "y": 1.233382819615261,
+        "z": 29.375792974201268
+      },
+      "projectileId": "projectile-2"
+    },
+    {
+      "id": "event-10",
+      "tick": 435,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 21.030237590061024,
+        "y": 1.2014351013060742,
+        "z": 16.727649259848434
+      },
+      "projectileId": "projectile-3"
+    },
+    {
+      "id": "event-13",
+      "tick": 494,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 3.4927830417135937,
+        "y": 1.205723376447762,
+        "z": 17.4382381228695
+      },
+      "projectileId": "projectile-4"
+    },
+    {
+      "id": "event-16",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -9.798901509436648,
+        "y": 1.2334059670886814,
+        "z": 29.402439816134255
+      },
+      "projectileId": "projectile-5"
+    },
+    {
+      "id": "event-17",
+      "tick": 620,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 5.62356347311892,
+        "y": 0.9329802556569197,
+        "z": 18.117186466538982
+      },
+      "projectileId": "projectile-6"
+    },
+    {
+      "id": "event-22",
+      "tick": 674,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 5.62356347311892,
+        "y": 0.9329802556569197,
+        "z": 18.117186466538982
+      },
+      "projectileId": "projectile-7"
+    },
+    {
+      "id": "event-26",
+      "tick": 820,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 20.964334133491086,
+        "y": 1.193543580062481,
+        "z": 20.67725568698257
+      },
+      "projectileId": "projectile-8"
+    },
+    {
+      "id": "event-28",
+      "tick": 1205,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 21.40455996553309,
+        "y": 1.182417792523135,
+        "z": 24.308674989930623
+      },
+      "projectileId": "projectile-9"
+    },
+    {
+      "id": "event-31",
+      "tick": 1706,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0.38593634011979727,
+        "y": 1.2709890516666393,
+        "z": -17.349552316213984
+      },
+      "projectileId": "projectile-10"
+    }
+  ],
+  "finalHp": 48,
+  "truckHp": 100
+}

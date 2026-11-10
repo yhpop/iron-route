@@ -1,0 +1,22 @@
+{
+  "route": "direct",
+  "attempt": "v03-cover-retreat-01",
+  "mode": "pilot",
+  "verify": false,
+  "inputs": 3870,
+  "tick": 3869,
+  "phase": "playing",
+  "selectedConvoyChoiceId": "direct",
+  "hp": 48,
+  "truckHp": 100,
+  "truckArrived": false,
+  "shots": 2,
+  "alliedDamage": 0,
+  "failure": {
+    "reason": "diagnostic-cover-not-route"
+  },
+  "finalHash": "7d06b60f2b03b98f09bbc96ad8edbe22aaaff4aaa6966fe682198632c139f9dc",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "sourceHashesHash": "2d8e706932808be909a52a890e3ee3524f40eb6532f476bff1feb7cac8beb9a1",
+  "closureFiles": 31
+}

@@ -1,0 +1,18 @@
+✔ scorched controls and config binding newc-leichttraktor-direct-initial-inputs.json.gz (75.665536ms)
+﹣ scorched complete independent input replay newc-leichttraktor-direct-initial-inputs.json.gz (0.195563ms) # SKIP
+✔ scorched controls and config binding newc-tiger-direct-initial-inputs.json.gz (49.379797ms)
+﹣ scorched complete independent input replay newc-tiger-direct-initial-inputs.json.gz (0.294728ms) # SKIP
+✔ scorched controls and config binding pz3-direct-initial-inputs.json.gz (27.483106ms)
+﹣ scorched complete independent input replay pz3-direct-initial-inputs.json.gz (0.254156ms) # SKIP
+✔ scorched controls and config binding vanguard-covered-maneuver-inputs.json.gz (25.287537ms)
+﹣ scorched complete independent input replay vanguard-covered-maneuver-inputs.json.gz (0.161046ms) # SKIP
+✔ scorched controls and config binding vanguard-direct-initial-inputs.json.gz (36.077306ms)
+﹣ scorched complete independent input replay vanguard-direct-initial-inputs.json.gz (0.296278ms) # SKIP
+ℹ tests 10
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 5
+ℹ todo 0
+ℹ duration_ms 590.033519

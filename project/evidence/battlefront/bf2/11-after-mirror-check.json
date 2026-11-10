@@ -1,0 +1,612 @@
+{
+  "label": "11-after",
+  "files": {
+    "src/architectural-wall.js": {
+      "frozen": "5e6b0b19c749e778cbaa5bde2f0aeb44e783c5470a221b8af4ca8a62dee7f149",
+      "final": "5e6b0b19c749e778cbaa5bde2f0aeb44e783c5470a221b8af4ca8a62dee7f149",
+      "mirror": "5e6b0b19c749e778cbaa5bde2f0aeb44e783c5470a221b8af4ca8a62dee7f149"
+    },
+    "src/art-kit-embedded.js": {
+      "frozen": "4d62685f483ad314bc3f8dd760a1ed90a5ec176cdd098e3a36995c0a27b4da7b",
+      "final": "4d62685f483ad314bc3f8dd760a1ed90a5ec176cdd098e3a36995c0a27b4da7b",
+      "mirror": "4d62685f483ad314bc3f8dd760a1ed90a5ec176cdd098e3a36995c0a27b4da7b"
+    },
+    "src/art-kit-payload.js": {
+      "frozen": "eab3b6a802d6a58d9ee92dcc71857e3cc1fd34a57abdc5d2f98dad7345688eb9",
+      "final": "eab3b6a802d6a58d9ee92dcc71857e3cc1fd34a57abdc5d2f98dad7345688eb9",
+      "mirror": "eab3b6a802d6a58d9ee92dcc71857e3cc1fd34a57abdc5d2f98dad7345688eb9"
+    },
+    "src/art-kit.js": {
+      "frozen": "07e128e9ac2a1fce98779bee211db679334089fe91b4a0375d108c185c422d65",
+      "final": "07e128e9ac2a1fce98779bee211db679334089fe91b4a0375d108c185c422d65",
+      "mirror": "07e128e9ac2a1fce98779bee211db679334089fe91b4a0375d108c185c422d65"
+    },
+    "src/asset-credits.js": {
+      "frozen": "bfad7eb09f825c7ec4133d9b992b30f46c54d612d319281629a66901babedbe1",
+      "final": "bfad7eb09f825c7ec4133d9b992b30f46c54d612d319281629a66901babedbe1",
+      "mirror": "bfad7eb09f825c7ec4133d9b992b30f46c54d612d319281629a66901babedbe1"
+    },
+    "src/authored-scene-view.js": {
+      "frozen": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "final": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "mirror": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c"
+    },
+    "src/battlefield-guidance.js": {
+      "frozen": "9040fcfcb7a56f0050ed3f3fdf839af5826c15b101d68fe359650e92cc80da23",
+      "final": "9040fcfcb7a56f0050ed3f3fdf839af5826c15b101d68fe359650e92cc80da23",
+      "mirror": "9040fcfcb7a56f0050ed3f3fdf839af5826c15b101d68fe359650e92cc80da23"
+    },
+    "src/battlefront-depot-front.js": {
+      "frozen": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+      "final": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+      "mirror": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c"
+    },
+    "src/battlefront-depot-ground-view.js": {
+      "frozen": "0184fd4b839f94c7573c05d7c663b0392384c7308721a823f61140e33dce38dc",
+      "final": "0184fd4b839f94c7573c05d7c663b0392384c7308721a823f61140e33dce38dc",
+      "mirror": "0184fd4b839f94c7573c05d7c663b0392384c7308721a823f61140e33dce38dc"
+    },
+    "src/campaign-input.js": {
+      "frozen": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f",
+      "final": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f",
+      "mirror": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f"
+    },
+    "src/campaign-simulation.js": {
+      "frozen": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+      "final": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+      "mirror": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae"
+    },
+    "src/campaign-ui.js": {
+      "frozen": "ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f",
+      "final": "ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f",
+      "mirror": "ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f"
+    },
+    "src/campaign-view.js": {
+      "frozen": "1f17bcc7b24868201afb93ab15894ecf2b93686b4108e8cfe59d063cd3b6a042",
+      "final": "1f17bcc7b24868201afb93ab15894ecf2b93686b4108e8cfe59d063cd3b6a042",
+      "mirror": "1f17bcc7b24868201afb93ab15894ecf2b93686b4108e8cfe59d063cd3b6a042"
+    },
+    "src/campaign-world-accelerated.js": {
+      "frozen": "bd1879bc34cafc2c4ce0b3207fa6d41aaf17742f7f10844b194883854966719f",
+      "final": "bd1879bc34cafc2c4ce0b3207fa6d41aaf17742f7f10844b194883854966719f",
+      "mirror": "bd1879bc34cafc2c4ce0b3207fa6d41aaf17742f7f10844b194883854966719f"
+    },
+    "src/campaign-world.js": {
+      "frozen": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+      "final": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+      "mirror": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6"
+    },
+    "src/collision-broadphase.js": {
+      "frozen": "7c65a35ee156927f158e23fc47f7663f03d048786354fef4f7e0d5ad103be275",
+      "final": "7c65a35ee156927f158e23fc47f7663f03d048786354fef4f7e0d5ad103be275",
+      "mirror": "7c65a35ee156927f158e23fc47f7663f03d048786354fef4f7e0d5ad103be275"
+    },
+    "src/combat-feedback.js": {
+      "frozen": "2117ec7e7c2e90fa4aa2cb873c3fb801a24144f9a78747f94ec0e3ad5b9888bf",
+      "final": "2117ec7e7c2e90fa4aa2cb873c3fb801a24144f9a78747f94ec0e3ad5b9888bf",
+      "mirror": "2117ec7e7c2e90fa4aa2cb873c3fb801a24144f9a78747f94ec0e3ad5b9888bf"
+    },
+    "src/combat-fx-frame.js": {
+      "frozen": "b9e238ca840f253c3c374d8a3512fc545adb8e979ce657ebf54bd93e869df160",
+      "final": "b9e238ca840f253c3c374d8a3512fc545adb8e979ce657ebf54bd93e869df160",
+      "mirror": "b9e238ca840f253c3c374d8a3512fc545adb8e979ce657ebf54bd93e869df160"
+    },
+    "src/combat-fx.js": {
+      "frozen": "4eda212fc10e52e6086b9647f1939fdb6443d4c079dc8a1c4a05e188955460cd",
+      "final": "4eda212fc10e52e6086b9647f1939fdb6443d4c079dc8a1c4a05e188955460cd",
+      "mirror": "4eda212fc10e52e6086b9647f1939fdb6443d4c079dc8a1c4a05e188955460cd"
+    },
+    "src/combat-relations.js": {
+      "frozen": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+      "final": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+      "mirror": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2"
+    },
+    "src/combat.js": {
+      "frozen": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+      "final": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+      "mirror": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6"
+    },
+    "src/content/README.md": {
+      "frozen": "039e0aebc26fd640f6ac6899b73fa8fcc9c046ac24d5b27762a56763ba6601b7",
+      "final": "039e0aebc26fd640f6ac6899b73fa8fcc9c046ac24d5b27762a56763ba6601b7",
+      "mirror": "039e0aebc26fd640f6ac6899b73fa8fcc9c046ac24d5b27762a56763ba6601b7"
+    },
+    "src/content/authored.js": {
+      "frozen": "ad8d4d33d5acb655207949522b7f4c2c2331e2699f2bc158642536c3b8390066",
+      "final": "ad8d4d33d5acb655207949522b7f4c2c2331e2699f2bc158642536c3b8390066",
+      "mirror": "ad8d4d33d5acb655207949522b7f4c2c2331e2699f2bc158642536c3b8390066"
+    },
+    "src/content/blueprints.js": {
+      "frozen": "9e60af9bf392e288dfeae2c77d78701345bc6436bbe4d5297cf31d95016e6de2",
+      "final": "9e60af9bf392e288dfeae2c77d78701345bc6436bbe4d5297cf31d95016e6de2",
+      "mirror": "9e60af9bf392e288dfeae2c77d78701345bc6436bbe4d5297cf31d95016e6de2"
+    },
+    "src/content/breach-cover.js": {
+      "frozen": "7b98468b2ca799e503625acc6f06c231a1d616f23f2d9c3eb652caef61c5af58",
+      "final": "7b98468b2ca799e503625acc6f06c231a1d616f23f2d9c3eb652caef61c5af58",
+      "mirror": "7b98468b2ca799e503625acc6f06c231a1d616f23f2d9c3eb652caef61c5af58"
+    },
+    "src/content/build-records.mjs": {
+      "frozen": "0cc4693028774ebb978e485ff4d50ebcdfa4d3ef12a7d5485e1c30774d5f158f",
+      "final": "0cc4693028774ebb978e485ff4d50ebcdfa4d3ef12a7d5485e1c30774d5f158f",
+      "mirror": "0cc4693028774ebb978e485ff4d50ebcdfa4d3ef12a7d5485e1c30774d5f158f"
+    },
+    "src/content/catalog.js": {
+      "frozen": "7fa3d811a6e5a2f1c44eeef61e59c9af8e80e47e595bf503b1e6c308af210072",
+      "final": "7fa3d811a6e5a2f1c44eeef61e59c9af8e80e47e595bf503b1e6c308af210072",
+      "mirror": "7fa3d811a6e5a2f1c44eeef61e59c9af8e80e47e595bf503b1e6c308af210072"
+    },
+    "src/content/crafted20/README.md": {
+      "frozen": "c5d31ca92fe0394ecaaa52bdefc84b6c19bafc8b2622ba94409faf9d1873b1fe",
+      "final": "c5d31ca92fe0394ecaaa52bdefc84b6c19bafc8b2622ba94409faf9d1873b1fe",
+      "mirror": "c5d31ca92fe0394ecaaa52bdefc84b6c19bafc8b2622ba94409faf9d1873b1fe"
+    },
+    "src/content/crafted20/authoring.js": {
+      "frozen": "4a21f42247f45ddb43a3a4d1f663ec7a68c4ea61777ed9d7908d2d2ae4d088c3",
+      "final": "4a21f42247f45ddb43a3a4d1f663ec7a68c4ea61777ed9d7908d2d2ae4d088c3",
+      "mirror": "4a21f42247f45ddb43a3a4d1f663ec7a68c4ea61777ed9d7908d2d2ae4d088c3"
+    },
+    "src/content/crafted20/index.js": {
+      "frozen": "c4a682d7ce9b111dde28584a6c8650c6430b95ebd6821560ecbc9bf9c4e87f75",
+      "final": "c4a682d7ce9b111dde28584a6c8650c6430b95ebd6821560ecbc9bf9c4e87f75",
+      "mirror": "c4a682d7ce9b111dde28584a6c8650c6430b95ebd6821560ecbc9bf9c4e87f75"
+    },
+    "src/content/crafted20/lockside.js": {
+      "frozen": "014180300c7b7e790a7bc797ab5600d34e3f746f58aa4514b92a0deba0d06b6a",
+      "final": "014180300c7b7e790a7bc797ab5600d34e3f746f58aa4514b92a0deba0d06b6a",
+      "mirror": "014180300c7b7e790a7bc797ab5600d34e3f746f58aa4514b92a0deba0d06b6a"
+    },
+    "src/content/crafted20/north-harbor.js": {
+      "frozen": "42665972af459a0423eb93914ff155421115853e997bf1bb0059f5b9e3b0286e",
+      "final": "42665972af459a0423eb93914ff155421115853e997bf1bb0059f5b9e3b0286e",
+      "mirror": "42665972af459a0423eb93914ff155421115853e997bf1bb0059f5b9e3b0286e"
+    },
+    "src/content/crafted20/rail-works.js": {
+      "frozen": "3035718549828306c6ad5991a89c5c0f224ba00ee38d1b506d673878787d5e95",
+      "final": "3035718549828306c6ad5991a89c5c0f224ba00ee38d1b506d673878787d5e95",
+      "mirror": "3035718549828306c6ad5991a89c5c0f224ba00ee38d1b506d673878787d5e95"
+    },
+    "src/content/crafted20/south-wharf-advanced.js": {
+      "frozen": "390f0e6a16ccdaef4c865044768a8d8ce9593d797f1db3831bec2e131d7e44f5",
+      "final": "390f0e6a16ccdaef4c865044768a8d8ce9593d797f1db3831bec2e131d7e44f5",
+      "mirror": "390f0e6a16ccdaef4c865044768a8d8ce9593d797f1db3831bec2e131d7e44f5"
+    },
+    "src/content/crafted20/south-wharf.js": {
+      "frozen": "c475ff32f42520e2205ea229ca2e719731d0e604e432e7d1df25a9a0b8d74d16",
+      "final": "c475ff32f42520e2205ea229ca2e719731d0e604e432e7d1df25a9a0b8d74d16",
+      "mirror": "c475ff32f42520e2205ea229ca2e719731d0e604e432e7d1df25a9a0b8d74d16"
+    },
+    "src/content/crafted20/validate.js": {
+      "frozen": "498ae2675b64da2b526d9d0a10e8af774ab15669b78f6da7f2fb899f11bc58fc",
+      "final": "498ae2675b64da2b526d9d0a10e8af774ab15669b78f6da7f2fb899f11bc58fc",
+      "mirror": "498ae2675b64da2b526d9d0a10e8af774ab15669b78f6da7f2fb899f11bc58fc"
+    },
+    "src/content/crush-flank.js": {
+      "frozen": "653ab9fd997fd318789a71a6833b2ff7dc209f088595dffbb1c1f08196cd62ac",
+      "final": "653ab9fd997fd318789a71a6833b2ff7dc209f088595dffbb1c1f08196cd62ac",
+      "mirror": "653ab9fd997fd318789a71a6833b2ff7dc209f088595dffbb1c1f08196cd62ac"
+    },
+    "src/content/generated-audit.json": {
+      "frozen": "e0c043a6327020cb7efad72ff25b21e707d42ab3292360b80b22aa3573f74159",
+      "final": "e0c043a6327020cb7efad72ff25b21e707d42ab3292360b80b22aa3573f74159",
+      "mirror": "e0c043a6327020cb7efad72ff25b21e707d42ab3292360b80b22aa3573f74159"
+    },
+    "src/content/generated-records.js": {
+      "frozen": "3649854ace5f44c64cbc150e2697ba5d51a4f0570d2c5c8366f5935f1c8048e8",
+      "final": "3649854ace5f44c64cbc150e2697ba5d51a4f0570d2c5c8366f5935f1c8048e8",
+      "mirror": "3649854ace5f44c64cbc150e2697ba5d51a4f0570d2c5c8366f5935f1c8048e8"
+    },
+    "src/content/geometry.js": {
+      "frozen": "6ca71080f5102defbb1b8264ba56b1d88f453a348575c68f3c6ceee03628acad",
+      "final": "6ca71080f5102defbb1b8264ba56b1d88f453a348575c68f3c6ceee03628acad",
+      "mirror": "6ca71080f5102defbb1b8264ba56b1d88f453a348575c68f3c6ceee03628acad"
+    },
+    "src/content/index.js": {
+      "frozen": "327e8e2d8eaf5fe00684131cc98dcf695c2086ff3aeef4125bda219a12cfa6de",
+      "final": "327e8e2d8eaf5fe00684131cc98dcf695c2086ff3aeef4125bda219a12cfa6de",
+      "mirror": "327e8e2d8eaf5fe00684131cc98dcf695c2086ff3aeef4125bda219a12cfa6de"
+    },
+    "src/content/optional-records.js": {
+      "frozen": "793035ef7cd48b2f5c2836504dcc2335cd95df0ad8d9cde269b1ba30da27f7f2",
+      "final": "793035ef7cd48b2f5c2836504dcc2335cd95df0ad8d9cde269b1ba30da27f7f2",
+      "mirror": "793035ef7cd48b2f5c2836504dcc2335cd95df0ad8d9cde269b1ba30da27f7f2"
+    },
+    "src/content/signatures.js": {
+      "frozen": "de5b4caa2517c41af8827dd3e88c732ff53c41a7695f09c89d8941134fc16a33",
+      "final": "de5b4caa2517c41af8827dd3e88c732ff53c41a7695f09c89d8941134fc16a33",
+      "mirror": "de5b4caa2517c41af8827dd3e88c732ff53c41a7695f09c89d8941134fc16a33"
+    },
+    "src/content/validate.js": {
+      "frozen": "33df5465840e929905ac4df32efd93b263ced5734ff2988f0c3494ea71bb0f7f",
+      "final": "33df5465840e929905ac4df32efd93b263ced5734ff2988f0c3494ea71bb0f7f",
+      "mirror": "33df5465840e929905ac4df32efd93b263ced5734ff2988f0c3494ea71bb0f7f"
+    },
+    "src/crossfire-effects.js": {
+      "frozen": "bb036ff5d4294e3798db4a59b0de08a50ec9aaca530083d21d3897336e92ddce",
+      "final": "bb036ff5d4294e3798db4a59b0de08a50ec9aaca530083d21d3897336e92ddce",
+      "mirror": "bb036ff5d4294e3798db4a59b0de08a50ec9aaca530083d21d3897336e92ddce"
+    },
+    "src/crossfire-front.js": {
+      "frozen": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+      "final": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+      "mirror": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6"
+    },
+    "src/crossfire-v3-front.js": {
+      "frozen": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9",
+      "final": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9",
+      "mirror": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9"
+    },
+    "src/crossfire-v4-front.js": {
+      "frozen": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f",
+      "final": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f",
+      "mirror": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f"
+    },
+    "src/crossfire-warfield-view.js": {
+      "frozen": "2b7e70b904646a8eb814c862a143d1ed155a492ce2671e324a77cc5fd6378a30",
+      "final": "2b7e70b904646a8eb814c862a143d1ed155a492ce2671e324a77cc5fd6378a30",
+      "mirror": "2b7e70b904646a8eb814c862a143d1ed155a492ce2671e324a77cc5fd6378a30"
+    },
+    "src/crushable-prop-view.js": {
+      "frozen": "5c080c0fcb0516697541520b029269e83d7b15cee89e1685ce1664a7f8c5d6ac",
+      "final": "5c080c0fcb0516697541520b029269e83d7b15cee89e1685ce1664a7f8c5d6ac",
+      "mirror": "5c080c0fcb0516697541520b029269e83d7b15cee89e1685ce1664a7f8c5d6ac"
+    },
+    "src/crushing.js": {
+      "frozen": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+      "final": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+      "mirror": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212"
+    },
+    "src/entry-navigation.js": {
+      "frozen": "50ec8fb3e8a31a2ce6d48f7e5057347118bd3f61c6a5e3fd336217a44bc883f8",
+      "final": "50ec8fb3e8a31a2ce6d48f7e5057347118bd3f61c6a5e3fd336217a44bc883f8",
+      "mirror": "50ec8fb3e8a31a2ce6d48f7e5057347118bd3f61c6a5e3fd336217a44bc883f8"
+    },
+    "src/gameplay-gestures.js": {
+      "frozen": "253c8a5c3ee1a3f9060250b3b42f73800709e7ed694d1610c7a5d8111646e0d5",
+      "final": "253c8a5c3ee1a3f9060250b3b42f73800709e7ed694d1610c7a5d8111646e0d5",
+      "mirror": "253c8a5c3ee1a3f9060250b3b42f73800709e7ed694d1610c7a5d8111646e0d5"
+    },
+    "src/industrial-details.js": {
+      "frozen": "34f22ae02b2c07ea6618190aaccafe2df823a1adbd2d02ab4351f086e55ae718",
+      "final": "34f22ae02b2c07ea6618190aaccafe2df823a1adbd2d02ab4351f086e55ae718",
+      "mirror": "34f22ae02b2c07ea6618190aaccafe2df823a1adbd2d02ab4351f086e55ae718"
+    },
+    "src/interceptor-art-embedded.js": {
+      "frozen": "1575b3c6027b0f80d1b8070a04433322591e6796c79701cba346b0ac4db8ed10",
+      "final": "1575b3c6027b0f80d1b8070a04433322591e6796c79701cba346b0ac4db8ed10",
+      "mirror": "1575b3c6027b0f80d1b8070a04433322591e6796c79701cba346b0ac4db8ed10"
+    },
+    "src/interceptor-art-loader.js": {
+      "frozen": "4f1919f6792d267223b9d80527399d2cabd0526b57332dd6cd1edb5d402dc667",
+      "final": "4f1919f6792d267223b9d80527399d2cabd0526b57332dd6cd1edb5d402dc667",
+      "mirror": "4f1919f6792d267223b9d80527399d2cabd0526b57332dd6cd1edb5d402dc667"
+    },
+    "src/interceptor-art.js": {
+      "frozen": "9a7096f865721a9a308d17f71853414a0031175eb4a02c46f1dc3e20db634a73",
+      "final": "9a7096f865721a9a308d17f71853414a0031175eb4a02c46f1dc3e20db634a73",
+      "mirror": "9a7096f865721a9a308d17f71853414a0031175eb4a02c46f1dc3e20db634a73"
+    },
+    "src/interceptor.js": {
+      "frozen": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+      "final": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+      "mirror": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63"
+    },
+    "src/launch-selection.js": {
+      "frozen": "898f8bbbac3da7475f3d3cbedc8b48d3f0b2a38e071424938f23dab32415d8df",
+      "final": "898f8bbbac3da7475f3d3cbedc8b48d3f0b2a38e071424938f23dab32415d8df",
+      "mirror": "898f8bbbac3da7475f3d3cbedc8b48d3f0b2a38e071424938f23dab32415d8df"
+    },
+    "src/living-world.js": {
+      "frozen": "3b9b0b1d1e17ebc3ecb72fc22e88edb335542b52db1726c49d27e5203ff11f9c",
+      "final": "3b9b0b1d1e17ebc3ecb72fc22e88edb335542b52db1726c49d27e5203ff11f9c",
+      "mirror": "3b9b0b1d1e17ebc3ecb72fc22e88edb335542b52db1726c49d27e5203ff11f9c"
+    },
+    "src/main.js": {
+      "frozen": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+      "final": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+      "mirror": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73"
+    },
+    "src/mission-runtime.js": {
+      "frozen": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+      "final": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+      "mirror": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34"
+    },
+    "src/objective-guidance.js": {
+      "frozen": "6cc593addd5a7a6630b368c2e75043a4107fcfa17fcf92b275ce7d691ed06a7b",
+      "final": "6cc593addd5a7a6630b368c2e75043a4107fcfa17fcf92b275ce7d691ed06a7b",
+      "mirror": "6cc593addd5a7a6630b368c2e75043a4107fcfa17fcf92b275ce7d691ed06a7b"
+    },
+    "src/player-config.js": {
+      "frozen": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+      "final": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+      "mirror": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197"
+    },
+    "src/player-model-asset.js": {
+      "frozen": "7b827aa828ea142eeca5160b9a2a8ce49bf286401a4c3535bfebc81424cad3ce",
+      "final": "7b827aa828ea142eeca5160b9a2a8ce49bf286401a4c3535bfebc81424cad3ce",
+      "mirror": "7b827aa828ea142eeca5160b9a2a8ce49bf286401a4c3535bfebc81424cad3ce"
+    },
+    "src/player-model-embedded.js": {
+      "frozen": "95fc8e66c9d89b715d072c85bf69447352a87268e7978a2b3db58b6f8baa39b3",
+      "final": "95fc8e66c9d89b715d072c85bf69447352a87268e7978a2b3db58b6f8baa39b3",
+      "mirror": "95fc8e66c9d89b715d072c85bf69447352a87268e7978a2b3db58b6f8baa39b3"
+    },
+    "src/player-model-loader.js": {
+      "frozen": "a350af5bfd9451293f2987f5b6bc199872c9fafda476c097941577ff09ca4792",
+      "final": "a350af5bfd9451293f2987f5b6bc199872c9fafda476c097941577ff09ca4792",
+      "mirror": "a350af5bfd9451293f2987f5b6bc199872c9fafda476c097941577ff09ca4792"
+    },
+    "src/player-model-view.js": {
+      "frozen": "a379d6cf82e68a72494dc0eadfbd8af6ff82a796e19766475ea2e8aa93e1888e",
+      "final": "a379d6cf82e68a72494dc0eadfbd8af6ff82a796e19766475ea2e8aa93e1888e",
+      "mirror": "a379d6cf82e68a72494dc0eadfbd8af6ff82a796e19766475ea2e8aa93e1888e"
+    },
+    "src/player-occlusion.js": {
+      "frozen": "22a06acb6535b71f1536ef71732abd2c1c1eb628b18ae70360ba9d231e6e4ca7",
+      "final": "22a06acb6535b71f1536ef71732abd2c1c1eb628b18ae70360ba9d231e6e4ca7",
+      "mirror": "22a06acb6535b71f1536ef71732abd2c1c1eb628b18ae70360ba9d231e6e4ca7"
+    },
+    "src/player-vehicles-v3.js": {
+      "frozen": "69ab18712fbc956dccd6ea235b5bb43bb1a63c3a164b5ce63f95b32374cad53a",
+      "final": "69ab18712fbc956dccd6ea235b5bb43bb1a63c3a164b5ce63f95b32374cad53a",
+      "mirror": "69ab18712fbc956dccd6ea235b5bb43bb1a63c3a164b5ce63f95b32374cad53a"
+    },
+    "src/player-vehicles.js": {
+      "frozen": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+      "final": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+      "mirror": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f"
+    },
+    "src/recovery-direction.js": {
+      "frozen": "81b1defa74e29c889dfb357593817893206f2990a553cfa2cbac575d4c201108",
+      "final": "81b1defa74e29c889dfb357593817893206f2990a553cfa2cbac575d4c201108",
+      "mirror": "81b1defa74e29c889dfb357593817893206f2990a553cfa2cbac575d4c201108"
+    },
+    "src/route-choice-guidance.js": {
+      "frozen": "85e170f5e5769f6e6b1620a552dc0d5281ebfa382cc90aba1caef5e951bafcfd",
+      "final": "85e170f5e5769f6e6b1620a552dc0d5281ebfa382cc90aba1caef5e951bafcfd",
+      "mirror": "85e170f5e5769f6e6b1620a552dc0d5281ebfa382cc90aba1caef5e951bafcfd"
+    },
+    "src/ruined-depot-art.js": {
+      "frozen": "e85e720bbcc583e8ed3db6f67f4e16f8995247e0f519e8e65f33d4b04f9a4477",
+      "final": "e85e720bbcc583e8ed3db6f67f4e16f8995247e0f519e8e65f33d4b04f9a4477",
+      "mirror": "e85e720bbcc583e8ed3db6f67f4e16f8995247e0f519e8e65f33d4b04f9a4477"
+    },
+    "src/ruined-depot-collision-data.js": {
+      "frozen": "cff2b1cdc675a1203ec04fa83e2d4220b506a5f5e5c3763aff29a0fb7e4015e6",
+      "final": "cff2b1cdc675a1203ec04fa83e2d4220b506a5f5e5c3763aff29a0fb7e4015e6",
+      "mirror": "cff2b1cdc675a1203ec04fa83e2d4220b506a5f5e5c3763aff29a0fb7e4015e6"
+    },
+    "src/ruined-depot-embedded.js": {
+      "frozen": "1fc771945103e1fedd08a5952250e1c02970102c0dad74da485ff2dd43a10ee2",
+      "final": "1fc771945103e1fedd08a5952250e1c02970102c0dad74da485ff2dd43a10ee2",
+      "mirror": "1fc771945103e1fedd08a5952250e1c02970102c0dad74da485ff2dd43a10ee2"
+    },
+    "src/ruined-depot-front.js": {
+      "frozen": "54320a398ac2c724d1042fa8237e185bb662ef09a168db276cdeb95fd952e921",
+      "final": "54320a398ac2c724d1042fa8237e185bb662ef09a168db276cdeb95fd952e921",
+      "mirror": "54320a398ac2c724d1042fa8237e185bb662ef09a168db276cdeb95fd952e921"
+    },
+    "src/ruined-depot-layout.js": {
+      "frozen": "3ab5ced6d8b924c5b14412c9cc375ea858ca9e40a371aea8411bbefe0adf8545",
+      "final": "3ab5ced6d8b924c5b14412c9cc375ea858ca9e40a371aea8411bbefe0adf8545",
+      "mirror": "3ab5ced6d8b924c5b14412c9cc375ea858ca9e40a371aea8411bbefe0adf8545"
+    },
+    "src/ruined-depot-loader.js": {
+      "frozen": "d77d4fcce0e18be5bc49e6719b9d40e52484c4a844719f46dfb039d9cfea3031",
+      "final": "d77d4fcce0e18be5bc49e6719b9d40e52484c4a844719f46dfb039d9cfea3031",
+      "mirror": "d77d4fcce0e18be5bc49e6719b9d40e52484c4a844719f46dfb039d9cfea3031"
+    },
+    "src/ruined-depot-view.js": {
+      "frozen": "1184c830911b03d0439fbbd5966f8f79c5c1bba9ca99ad1e2f6191f7bf0c593c",
+      "final": "1184c830911b03d0439fbbd5966f8f79c5c1bba9ca99ad1e2f6191f7bf0c593c",
+      "mirror": "1184c830911b03d0439fbbd5966f8f79c5c1bba9ca99ad1e2f6191f7bf0c593c"
+    },
+    "src/ruined-depot-world-accelerated.js": {
+      "frozen": "8cfad7acf74f04f1c7939185a0f948ebb394c0811527f6d11ccecf7bd5d7a34f",
+      "final": "8cfad7acf74f04f1c7939185a0f948ebb394c0811527f6d11ccecf7bd5d7a34f",
+      "mirror": "8cfad7acf74f04f1c7939185a0f948ebb394c0811527f6d11ccecf7bd5d7a34f"
+    },
+    "src/ruined-depot-world.js": {
+      "frozen": "f5284079635f973299f1b6b2ec4766d329a9e882c2c1044be84b169dfead6952",
+      "final": "f5284079635f973299f1b6b2ec4766d329a9e882c2c1044be84b169dfead6952",
+      "mirror": "f5284079635f973299f1b6b2ec4766d329a9e882c2c1044be84b169dfead6952"
+    },
+    "src/scanned-cover-art.js": {
+      "frozen": "f6fc7e30a85a76d551aad0265fd0375e5ce3bce08d43540daf39cbc1c997d1b1",
+      "final": "f6fc7e30a85a76d551aad0265fd0375e5ce3bce08d43540daf39cbc1c997d1b1",
+      "mirror": "f6fc7e30a85a76d551aad0265fd0375e5ce3bce08d43540daf39cbc1c997d1b1"
+    },
+    "src/scanned-cover-embedded.js": {
+      "frozen": "9487fb1b33b48dfbcc79862c6a89870050f760715cb1a4d727114c26cff0d5fe",
+      "final": "9487fb1b33b48dfbcc79862c6a89870050f760715cb1a4d727114c26cff0d5fe",
+      "mirror": "9487fb1b33b48dfbcc79862c6a89870050f760715cb1a4d727114c26cff0d5fe"
+    },
+    "src/scanned-cover-front.js": {
+      "frozen": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1",
+      "final": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1",
+      "mirror": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1"
+    },
+    "src/scanned-cover-loader.js": {
+      "frozen": "8c727ebf25ca4f344915ded01a56f9347448fae8f1c55c1926b6405959a69299",
+      "final": "8c727ebf25ca4f344915ded01a56f9347448fae8f1c55c1926b6405959a69299",
+      "mirror": "8c727ebf25ca4f344915ded01a56f9347448fae8f1c55c1926b6405959a69299"
+    },
+    "src/scanned-cover-view.js": {
+      "frozen": "ddba7205cac6e9782a829b6b52dfe4cb4b35ada955f4bfa12c769f7e52ded8b8",
+      "final": "ddba7205cac6e9782a829b6b52dfe4cb4b35ada955f4bfa12c769f7e52ded8b8",
+      "mirror": "ddba7205cac6e9782a829b6b52dfe4cb4b35ada955f4bfa12c769f7e52ded8b8"
+    },
+    "src/scorched-front.js": {
+      "frozen": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+      "final": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+      "mirror": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b"
+    },
+    "src/scorched-world-view.js": {
+      "frozen": "9d83d4ba7a9a4171d46595ecc4ac7155cecd182885c9baafe449cd934860237f",
+      "final": "9d83d4ba7a9a4171d46595ecc4ac7155cecd182885c9baafe449cd934860237f",
+      "mirror": "9d83d4ba7a9a4171d46595ecc4ac7155cecd182885c9baafe449cd934860237f"
+    },
+    "src/sentry-rig.js": {
+      "frozen": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+      "final": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+      "mirror": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241"
+    },
+    "src/session.js": {
+      "frozen": "7a58672a36bf64cccf2a49ea1369acfd16ebfcf83c459cad6154e0883903010b",
+      "final": "7a58672a36bf64cccf2a49ea1369acfd16ebfcf83c459cad6154e0883903010b",
+      "mirror": "7a58672a36bf64cccf2a49ea1369acfd16ebfcf83c459cad6154e0883903010b"
+    },
+    "src/skinned-player-model-view.js": {
+      "frozen": "132a131dc4038585f3906a0594b6ca1a0256891689f5b8c8b3647f0df6f13afe",
+      "final": "132a131dc4038585f3906a0594b6ca1a0256891689f5b8c8b3647f0df6f13afe",
+      "mirror": "132a131dc4038585f3906a0594b6ca1a0256891689f5b8c8b3647f0df6f13afe"
+    },
+    "src/startup-diagnostic.js": {
+      "frozen": "62dd0a1ce84c6679ffc30b5842bb3ba3cfdf29995df8a6a8c6e916dd30dd9eec",
+      "final": "62dd0a1ce84c6679ffc30b5842bb3ba3cfdf29995df8a6a8c6e916dd30dd9eec",
+      "mirror": "62dd0a1ce84c6679ffc30b5842bb3ba3cfdf29995df8a6a8c6e916dd30dd9eec"
+    },
+    "src/style.css": {
+      "frozen": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "final": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "mirror": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0"
+    },
+    "src/tank-audio.js": {
+      "frozen": "a867de2fe1df876a3585cd8fd78bad023a3f1d174427f657bfb2aff56d7a876d",
+      "final": "a867de2fe1df876a3585cd8fd78bad023a3f1d174427f657bfb2aff56d7a876d",
+      "mirror": "a867de2fe1df876a3585cd8fd78bad023a3f1d174427f657bfb2aff56d7a876d"
+    },
+    "src/tank-controller.js": {
+      "frozen": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+      "final": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+      "mirror": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44"
+    },
+    "src/tank-view.js": {
+      "frozen": "8edf560ef9f2768f7818e680c3dc97b0d9b8f5bcb1bf1de30e2aab9a354ff5cf",
+      "final": "8edf560ef9f2768f7818e680c3dc97b0d9b8f5bcb1bf1de30e2aab9a354ff5cf",
+      "mirror": "8edf560ef9f2768f7818e680c3dc97b0d9b8f5bcb1bf1de30e2aab9a354ff5cf"
+    },
+    "src/targeting-view.js": {
+      "frozen": "4539fe8de2006fc30f598dd4a1ad4692e2bfa7a976057af089a5b66852bd5d43",
+      "final": "4539fe8de2006fc30f598dd4a1ad4692e2bfa7a976057af089a5b66852bd5d43",
+      "mirror": "4539fe8de2006fc30f598dd4a1ad4692e2bfa7a976057af089a5b66852bd5d43"
+    },
+    "src/terrain-candidate/combat-mission.js": {
+      "frozen": "e17a68d6b0e0c9f02c9b6ab5eca81138f834fa5c7323f8696359657f0290e239",
+      "final": "e17a68d6b0e0c9f02c9b6ab5eca81138f834fa5c7323f8696359657f0290e239",
+      "mirror": "e17a68d6b0e0c9f02c9b6ab5eca81138f834fa5c7323f8696359657f0290e239"
+    },
+    "src/terrain-candidate/combat-surface.js": {
+      "frozen": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+      "final": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+      "mirror": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603"
+    },
+    "src/terrain-candidate/combat-world-accelerated.js": {
+      "frozen": "92a435fbd24cee4b3cc8f6ad09b4a127bbd7aca0844d42c0374a62d1f4165987",
+      "final": "92a435fbd24cee4b3cc8f6ad09b4a127bbd7aca0844d42c0374a62d1f4165987",
+      "mirror": "92a435fbd24cee4b3cc8f6ad09b4a127bbd7aca0844d42c0374a62d1f4165987"
+    },
+    "src/terrain-candidate/combat-world.js": {
+      "frozen": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d",
+      "final": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d",
+      "mirror": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+    },
+    "src/terrain-candidate/drive-world.js": {
+      "frozen": "976849b36ff33c9b6b20edc121734e02605c7aa2155de7192634cfb80aef07cb",
+      "final": "976849b36ff33c9b6b20edc121734e02605c7aa2155de7192634cfb80aef07cb",
+      "mirror": "976849b36ff33c9b6b20edc121734e02605c7aa2155de7192634cfb80aef07cb"
+    },
+    "src/terrain-candidate/heightfield.js": {
+      "frozen": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d",
+      "final": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d",
+      "mirror": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d"
+    },
+    "src/terrain-candidate/interceptor-mission.js": {
+      "frozen": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+      "final": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+      "mirror": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538"
+    },
+    "src/terrain-candidate/main.js": {
+      "frozen": "6537545a8040680d993951a8e6d677dcf0622993099c45b79417f55b1af68c68",
+      "final": "6537545a8040680d993951a8e6d677dcf0622993099c45b79417f55b1af68c68",
+      "mirror": "6537545a8040680d993951a8e6d677dcf0622993099c45b79417f55b1af68c68"
+    },
+    "src/terrain-candidate/relief-view.js": {
+      "frozen": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53",
+      "final": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53",
+      "mirror": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53"
+    },
+    "src/terrain-candidate/ridge-convoy.js": {
+      "frozen": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+      "final": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+      "mirror": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21"
+    },
+    "src/terrain-candidate/vendor/three-terrain/LICENSE.txt": {
+      "frozen": "a8b64a32f0a11ef27d9f30fb4c1538ccb8536d9e9e48d841497e8dbaad5bfc69",
+      "final": "a8b64a32f0a11ef27d9f30fb4c1538ccb8536d9e9e48d841497e8dbaad5bfc69",
+      "mirror": "a8b64a32f0a11ef27d9f30fb4c1538ccb8536d9e9e48d841497e8dbaad5bfc69"
+    },
+    "src/terrain-candidate/vendor/three-terrain/noise.js": {
+      "frozen": "0bb467885e17befd4ea3563a2331c0c348fbd80f451c9352b965ec504dd72542",
+      "final": "0bb467885e17befd4ea3563a2331c0c348fbd80f451c9352b965ec504dd72542",
+      "mirror": "0bb467885e17befd4ea3563a2331c0c348fbd80f451c9352b965ec504dd72542"
+    },
+    "src/terrain-candidate/vertical-slice.js": {
+      "frozen": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d",
+      "final": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d",
+      "mirror": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d"
+    },
+    "src/terrain-view.js": {
+      "frozen": "844fb705e78a10d844ebcaba955bfed60db540f7a81b2ce7758a33f94b8aa188",
+      "final": "844fb705e78a10d844ebcaba955bfed60db540f7a81b2ce7758a33f94b8aa188",
+      "mirror": "844fb705e78a10d844ebcaba955bfed60db540f7a81b2ce7758a33f94b8aa188"
+    },
+    "src/threat-warnings.js": {
+      "frozen": "8de7f09afbebe5d58be638aa1490dd539989759bce033cf570ffe4b339ef951d",
+      "final": "8de7f09afbebe5d58be638aa1490dd539989759bce033cf570ffe4b339ef951d",
+      "mirror": "8de7f09afbebe5d58be638aa1490dd539989759bce033cf570ffe4b339ef951d"
+    },
+    "src/war-vehicle-finish.js": {
+      "frozen": "379b9937729582b32e1890a5457219a5ce359a5ca7b304ca3aa7cdbdf636c4ba",
+      "final": "379b9937729582b32e1890a5457219a5ce359a5ca7b304ca3aa7cdbdf636c4ba",
+      "mirror": "379b9937729582b32e1890a5457219a5ce359a5ca7b304ca3aa7cdbdf636c4ba"
+    },
+    "src/water-material.js": {
+      "frozen": "d4084abc31d5f43ffee11555a4d56497ce0f7a62a2b0c03cda6e77d772314ecc",
+      "final": "d4084abc31d5f43ffee11555a4d56497ce0f7a62a2b0c03cda6e77d772314ecc",
+      "mirror": "d4084abc31d5f43ffee11555a4d56497ce0f7a62a2b0c03cda6e77d772314ecc"
+    },
+    "scripts/battlefront-replay.mjs": {
+      "frozen": "8ea10bd7bbbab432941829a7fb45b60ffd737324861af8f1c4b50e34714a87fb",
+      "final": "8ea10bd7bbbab432941829a7fb45b60ffd737324861af8f1c4b50e34714a87fb",
+      "mirror": "8ea10bd7bbbab432941829a7fb45b60ffd737324861af8f1c4b50e34714a87fb"
+    },
+    "assets/armor/rigs.js": {
+      "frozen": "e3e5476836101dc5aa8707b55245e5d9bf0cc798579e0e2f0fcdb57bfa8d97df",
+      "final": "e3e5476836101dc5aa8707b55245e5d9bf0cc798579e0e2f0fcdb57bfa8d97df",
+      "mirror": "e3e5476836101dc5aa8707b55245e5d9bf0cc798579e0e2f0fcdb57bfa8d97df"
+    },
+    "assets/armor/quaternius-sandfalcon-rig.js": {
+      "frozen": "6192ef322244f152417670e6373072517f8a799e97fadd7dc815fb4a858aaa5f",
+      "final": "6192ef322244f152417670e6373072517f8a799e97fadd7dc815fb4a858aaa5f",
+      "mirror": "6192ef322244f152417670e6373072517f8a799e97fadd7dc815fb4a858aaa5f"
+    },
+    "package.json": {
+      "frozen": "f745dba4afa276901d1db2357b5ca2fd0fc9c8b2b8720dd88bea933864134c8c",
+      "final": "f745dba4afa276901d1db2357b5ca2fd0fc9c8b2b8720dd88bea933864134c8c",
+      "mirror": "f745dba4afa276901d1db2357b5ca2fd0fc9c8b2b8720dd88bea933864134c8c"
+    },
+    "package-lock.json": {
+      "frozen": "6aae30bd9134d981fc4f2c5a7d2dda9284b2f796628abde1617cee8f1b40aee2",
+      "final": "6aae30bd9134d981fc4f2c5a7d2dda9284b2f796628abde1617cee8f1b40aee2",
+      "mirror": "6aae30bd9134d981fc4f2c5a7d2dda9284b2f796628abde1617cee8f1b40aee2"
+    }
+  },
+  "raw": {
+    "sandfalcon-covered-inputs.json": "98a17844ea552a567955330d88e2f5784b426cf4d58848c7fcdd0a6cc5f8ed86",
+    "sandfalcon-covered-result.json.gz": "5a470daefbd47a83e045f772fe3bb4f3c568e1ab6bb0c4e2c66bdf21b810bb08",
+    "sandfalcon-direct-inputs.json": "2c1c5c411cfce72d047c27d94c17d1dfca5281014c1f19cb53b7568040507fb8",
+    "sandfalcon-direct-result.json.gz": "0d76b716b131103839fd8e9fcfb61de5aa74bc58cb44e6d0bbbdf1061dbc1361"
+  },
+  "finalFrozenCodeDrift": []
+}

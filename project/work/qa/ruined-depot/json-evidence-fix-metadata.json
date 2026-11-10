@@ -1,0 +1,12 @@
+{
+  "boundary": "QA harness only; no production source changed. Before source reconstructed by exact inverse of the four uniquely targeted replacements in this QA patch; not falsely presented as a pre-edit filesystem snapshot.",
+  "beforeSHA256": "9f24ba6d507e29d08d78c76f3e521f39d84c4224c14145b3a38c880664a7dccb",
+  "afterSHA256": "0e5307d3c0acd6a1dc3f6e5d38979a32618f0739453272c05a7bc8582f4d2299",
+  "changes": [
+    "Import complete JSON evidence comparator",
+    "Optional verification-tag chooses new non-overwriting generated replay evidence filename",
+    "Retain ENTIRE freshly generated result gzip before exact comparison",
+    "Deep compare ENTIRE JSON roundtripped result, not memory -0 against JSON0; independent proof pins harness/helper SHA256"
+  ],
+  "productionSourceChanges": []
+}

@@ -1,0 +1,8 @@
+{
+  "boundary": "Interrupted CPU runs are NOT terminal results or verified evidence",
+  "coveredRecord": {"sessionId": 28156, "attempt": "covered-original-controls-01", "lastObserved": "start only; no accepted covered output", "recoveryProbe": "write_stdin failed: Unknown process id 28156"},
+  "directVerify": {"sessionId": 32167, "lastObserved": "2000 inputs; no independent output", "recoveryProbe": "write_stdin failed: Unknown process id 32167"},
+  "waitCell": {"id": "g34:49", "recoveryProbe": "belongs to a stale code-mode host generation"},
+  "terminalStateObserved": false,
+  "authorization": "Controller explicitly authorized fresh recovery of missing covered record and direct verify only, with new logs/attempt. Accepted direct record must not be repeated or overwritten."
+}

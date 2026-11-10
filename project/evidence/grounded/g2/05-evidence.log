@@ -1,0 +1,43 @@
+{"warehouseGLBSHA256":"3d36f5cc331470bb6e685019da941e45f93145f360eb1740e61a730e42e84dca","instances":[{"id":"south-depot","primitives":8,"triangles":7156},{"id":"context-warehouse-0","primitives":8,"triangles":7156},{"id":"context-warehouse-3","primitives":8,"triangles":7156}],"CPUOnly":true}
+{
+  "mode": "pre",
+  "baseHeadSHA256": "d4f625c03caff0fd5a6757fad208e8b05486805d8133059ce393fa2dc4c31f59",
+  "sourceHeadSHA256": "7b14f59b031208455818bff3b6bcb8377726b9aee95d238496284f016b84c76a",
+  "sourceFileCount": 387,
+  "changedFromG2Base": [
+    {
+      "path": "work/src/authored-scene-view.js",
+      "old": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "new": "56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab"
+    }
+  ],
+  "addedFromG2Base": [
+    "work/src/battlefront-building-finish.js",
+    "work/tests/battlefront-building-finish.test.mjs"
+  ],
+  "inheritedEntryCount": 1654,
+  "inheritedChanges": [
+    {
+      "path": "work/src/authored-scene-view.js",
+      "old": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "new": "56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab"
+    },
+    {
+      "path": "work/src/terrain-candidate/relief-view.js",
+      "old": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53",
+      "new": "9ebc5e6cf71836e35b6e662fc150adfcdaf0c6414dc4278904648fc68d7e510c"
+    },
+    {
+      "path": "work/tests/battlefront-depot-terrain.test.mjs",
+      "old": "fc728983e1d71a632cfa8a9473dc2ac979ccc4a7702fe79c7664c48a5ff7213d",
+      "new": "cffa47b1d5d907456bb37f432cebc1e3cbb34da1b865ee6347508783a6156916"
+    }
+  ],
+  "protectedParentSourceFileCount": 382,
+  "protectedParentSourceHeadSHA256": "9de857120ed130b231c1761c99098babf35e02b0fbfa809c1f1ab52b513a378e",
+  "mainSHA256": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+  "originalMainSHA256": "9d937baf1d64fcb3409d3e975e1cf836c221e900dea420fdd57741289867e6dc",
+  "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+  "noGit": "Canonical SHA256 sorted compact JSON map; no Git operations or commits.",
+  "sourceDiffSHA256": "c0e38ac98371c6dfcf3fe5d1d3f5c289473956c4f92415e615bf34b7162dd48e"
+}

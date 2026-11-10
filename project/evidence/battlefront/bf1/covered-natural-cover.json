@@ -1,0 +1,111 @@
+{
+  "boundary": "Actual input-only winning covered route, live hostile clear-to-real-terrain LOS transition; no state injection or forced target",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "transition": null,
+  "alliedEnemyDamage": [
+    {
+      "id": "event-8",
+      "tick": 215,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "value": 12
+    },
+    {
+      "id": "event-11",
+      "tick": 569,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -9.25943303586341,
+        "y": 0.3242324019401248,
+        "z": 31.73225854293493
+      },
+      "value": 12
+    },
+    {
+      "id": "event-14",
+      "tick": 664,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5058334074097965,
+        "y": 1.2267198835502222,
+        "z": 16.5613266634219
+      },
+      "value": 12
+    },
+    {
+      "id": "event-21",
+      "tick": 1123,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.2879925215752464,
+        "y": 1.2267357683304163,
+        "z": 16.59577820544377
+      },
+      "value": 12
+    },
+    {
+      "id": "event-27",
+      "tick": 1578,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.381613766738588,
+        "y": 1.2266937992900724,
+        "z": 16.629308470425862
+      },
+      "value": 12
+    },
+    {
+      "id": "event-36",
+      "tick": 2314,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5769866252534654,
+        "y": 1.2266636764277599,
+        "z": 16.670811574164738
+      },
+      "value": 12
+    },
+    {
+      "id": "event-49",
+      "tick": 2754,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.6250715482852753,
+        "y": 1.2266692772570293,
+        "z": 16.681026266031534
+      },
+      "value": 12
+    },
+    {
+      "id": "event-57",
+      "tick": 3179,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.5193772341204235,
+        "y": 1.2267393779747988,
+        "z": 16.65857359722821
+      },
+      "value": 12
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "src/main.js": {
+    "bytes": 25880,
+    "sha256": "97e05f02a26e9b1f63ada2d9dfecb9e024b4a6f79cad2ced444d3322d49d417a"
+  },
+  "src/campaign-input.js": {
+    "bytes": 9982,
+    "sha256": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f"
+  },
+  "src/session.js": {
+    "bytes": 4770,
+    "sha256": "7a58672a36bf64cccf2a49ea1369acfd16ebfcf83c459cad6154e0883903010b"
+  },
+  "src/tank-controller.js": {
+    "bytes": 15093,
+    "sha256": "2cb8051f98e4a3dbe1010c21ecbd04ff94b6a858c7b19479437a8084f4fab76b"
+  }
+}

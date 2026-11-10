@@ -1,0 +1,259 @@
+{
+  "boundary": "EXPLICIT ISOLATED SEEDED-PROJECTILE FIXTURE. Actual stepGame/stepCombat/nearestHit against complete new-world exact triangles, not a raw raycast and not an input-fired/player route. Shell position/velocity supplied ONLY in this fixture; no route artifact contains this mutation. Exact authored route geometry/terrain/enemies unchanged. Fresh createGame/world for each case.",
+  "evidence": [
+    {
+      "id": "ISOLATED-ruin-west-loading-solid-jamb",
+      "ruinId": "ruin-west-loading",
+      "label": "solid-jamb",
+      "from": {
+        "x": -31.75,
+        "y": 1.4,
+        "z": 16
+      },
+      "to": {
+        "x": -31.75,
+        "y": 1.4,
+        "z": 10
+      },
+      "steps": 6,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [
+        {
+          "id": "event-3",
+          "tick": 3,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "ruin-west-loading",
+          "position": {
+            "x": -31.75,
+            "y": 1.4,
+            "z": 13.217965602874756
+          },
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "projectileId": "ISOLATED-ruin-west-loading-solid-jamb",
+          "value": "hit"
+        }
+      ],
+      "finalProjectile": null,
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "4869b2ece80945b0349e2c7ddfb6f2cb89c2bcb7be4525a308866cb1575bf476"
+    },
+    {
+      "id": "ISOLATED-ruin-west-loading-window",
+      "ruinId": "ruin-west-loading",
+      "label": "window",
+      "from": {
+        "x": -32.75,
+        "y": 1.4,
+        "z": 16
+      },
+      "to": {
+        "x": -32.75,
+        "y": 1.4,
+        "z": 10
+      },
+      "steps": 6,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [],
+      "finalProjectile": {
+        "id": "ISOLATED-ruin-west-loading-window",
+        "ownerId": "tank",
+        "faction": "allied",
+        "position": {
+          "x": -32.75,
+          "y": 1.4,
+          "z": 10
+        },
+        "previousPosition": {
+          "x": -32.75,
+          "y": 1.4,
+          "z": 11
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": -60
+        },
+        "damage": 45,
+        "life": 3.9000000000000004
+      },
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "aa0f614fbd2684351b7b72c84d6105e7375520b8d0e95a562bd7b3342284578b"
+    },
+    {
+      "id": "ISOLATED-ruin-west-loading-window-sill",
+      "ruinId": "ruin-west-loading",
+      "label": "window-sill",
+      "from": {
+        "x": -32.75,
+        "y": 0.3,
+        "z": 16
+      },
+      "to": {
+        "x": -32.75,
+        "y": 0.3,
+        "z": 10
+      },
+      "steps": 6,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [
+        {
+          "id": "event-3",
+          "tick": 3,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "ruin-west-loading",
+          "position": {
+            "x": -32.75,
+            "y": 0.3,
+            "z": 13.217965602874756
+          },
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "projectileId": "ISOLATED-ruin-west-loading-window-sill",
+          "value": "hit"
+        }
+      ],
+      "finalProjectile": null,
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "4869b2ece80945b0349e2c7ddfb6f2cb89c2bcb7be4525a308866cb1575bf476"
+    },
+    {
+      "id": "ISOLATED-ruin-east-window-solid-jamb",
+      "ruinId": "ruin-east-window",
+      "label": "solid-jamb",
+      "from": {
+        "x": 17.5,
+        "y": 1.4,
+        "z": -1.7500000000000002
+      },
+      "to": {
+        "x": 21.5,
+        "y": 1.4,
+        "z": -1.7499999999999998
+      },
+      "steps": 4,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [
+        {
+          "id": "event-3",
+          "tick": 2,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "ruin-east-window",
+          "position": {
+            "x": 19.273339837789536,
+            "y": 1.4,
+            "z": -1.75
+          },
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "projectileId": "ISOLATED-ruin-east-window-solid-jamb",
+          "value": "hit"
+        }
+      ],
+      "finalProjectile": null,
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "7c281ad9c77cd62d871dd0f16509ef00fb4f84f68bccad13a793a61c2ac31a89"
+    },
+    {
+      "id": "ISOLATED-ruin-east-window-window",
+      "ruinId": "ruin-east-window",
+      "label": "window",
+      "from": {
+        "x": 17.5,
+        "y": 1.4,
+        "z": -2.75
+      },
+      "to": {
+        "x": 21.5,
+        "y": 1.4,
+        "z": -2.75
+      },
+      "steps": 4,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [],
+      "finalProjectile": {
+        "id": "ISOLATED-ruin-east-window-window",
+        "ownerId": "tank",
+        "faction": "allied",
+        "position": {
+          "x": 21.5,
+          "y": 1.4,
+          "z": -2.75
+        },
+        "previousPosition": {
+          "x": 20.5,
+          "y": 1.4,
+          "z": -2.75
+        },
+        "velocity": {
+          "x": 60,
+          "y": 0,
+          "z": 0
+        },
+        "damage": 45,
+        "life": 3.9333333333333336
+      },
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "e59323f042a5ddda8fbc9d7a0a94de2b81db2c0e7f4bd591212c42c96578996b"
+    },
+    {
+      "id": "ISOLATED-ruin-east-window-window-sill",
+      "ruinId": "ruin-east-window",
+      "label": "window-sill",
+      "from": {
+        "x": 17.5,
+        "y": 0.3,
+        "z": -2.75
+      },
+      "to": {
+        "x": 21.5,
+        "y": 0.3,
+        "z": -2.75
+      },
+      "steps": 4,
+      "dt": 0.016666666666666666,
+      "initialProjectileSpeed": 60,
+      "impacts": [
+        {
+          "id": "event-3",
+          "tick": 2,
+          "type": "impact",
+          "entityId": "tank",
+          "targetId": "ruin-east-window",
+          "position": {
+            "x": 19.273339837789536,
+            "y": 0.3,
+            "z": -2.75
+          },
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "projectileId": "ISOLATED-ruin-east-window-window-sill",
+          "value": "hit"
+        }
+      ],
+      "finalProjectile": null,
+      "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+      "finalStateHash": "7c281ad9c77cd62d871dd0f16509ef00fb4f84f68bccad13a793a61c2ac31a89"
+    }
+  ]
+}

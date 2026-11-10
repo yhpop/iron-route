@@ -1,0 +1,4115 @@
+{
+  "boundary": "Fresh verification input-run simulation states, no camera/HUD/GPU capture",
+  "checkpoints": [
+    {
+      "inputs": 1000,
+      "action": "start",
+      "tick": 999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 13.618602706242708,
+          "y": 0.008,
+          "z": 17.555783414692844,
+          "yaw": 0.051978562622858604,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 0.36717522041969186,
+        "vR": 1.5828247795810246,
+        "governor": "cruise",
+        "trackL": 15.130931059389214,
+        "trackR": 15.221199226158166,
+        "turret": {
+          "yawRel": -0.07499252569568249,
+          "elevation": 0.0729488229461345,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 999
+      },
+      "tankCombat": {
+        "hp": 100,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 0,
+        "damageTaken": 0
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 13.618602706242708,
+          "y": 0.008,
+          "z": 17.555783414692844,
+          "yaw": 0.051978562622858604,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.07499252569568249,
+        "elevation": 0.0729488229461345,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 13.676278747412546,
+            "y": 0.980658851132972,
+            "z": 15.314692130119754
+          },
+          "direction": {
+            "x": 0.022950729394792112,
+            "y": 0.07288414025809803,
+            "z": -0.9970763090752306
+          },
+          "barrelStart": {
+            "x": 13.644942309869535,
+            "y": 0.8811438074262424,
+            "z": 16.67609339683434
+          },
+          "barrelEnd": {
+            "x": 13.676278747412546,
+            "y": 0.980658851132972,
+            "z": 15.314692130119754
+          },
+          "turretOrigin": {
+            "x": 13.616394386850057,
+            "y": 0.663419265974557,
+            "z": 17.637037206032982
+          },
+          "hinge": {
+            "x": 13.638656754693953,
+            "y": 0.8611834525878612,
+            "z": 16.949150812339667
+          },
+          "pose": {
+            "x": 13.618602706242708,
+            "y": 0.008,
+            "z": 17.555783414692844,
+            "yaw": 0.051978562622858604,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.07499252569568249,
+            "elevation": 0.0729488229461345,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.006119587006994864,
+        "deltaTrackR": 0.026380412993017077,
+        "trackL": 15.130931059389214,
+        "trackR": 15.221199226158166,
+        "speedForward": 0.9750000000003582,
+        "yawRate": 0.7000000000000028,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 2.2,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "road",
+          "traction": 1,
+          "drag": 1,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1,
+          "turnMultiplier": 1
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 1.3055336010304996,
+            "y": 0,
+            "z": 27.067475999263905,
+            "yaw": -0.9505468408120764
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 1,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": "commander-hold"
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 23.024156520758048,
+            "y": 0.008000015424444385,
+            "z": -11.891361438954469,
+            "yaw": -2.729999999999942,
+            "basis": {
+              "right": [
+                1,
+                9.600134290368224e-9,
+                0
+              ],
+              "up": [
+                -9.600134290368224e-9,
+                1,
+                -4.254935474391618e-10
+              ],
+              "forward": [
+                -4.0847951951011154e-18,
+                4.254935474391618e-10,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 0.08200112122717296,
+          "travel": 14.961721720409958,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0,
+          "aimElevation": 0,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -2.7299999999999414,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 90,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": 3.141592653589793,
+          "aimElevation": 0,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.031672823046823,
+            "y": 0.023775255370191598,
+            "z": 17.933092716297452,
+            "yaw": -2.779463831209121,
+            "basis": {
+              "right": [
+                0.9999999110509735,
+                -0.0004217796163532894,
+                0
+              ],
+              "up": [
+                0.000421778546538664,
+                0.999997374620836,
+                -0.0022522997786462626
+              ],
+              "forward": [
+                9.499741365500195e-7,
+                0.0022522995783063903,
+                0.9999974635696367
+              ]
+            }
+          },
+          "hp": 86,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 4.262761972860079,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "charging",
+          "aimYaw": -1.211815721644015,
+          "aimElevation": -0.010922576320248952,
+          "charge": 0.7569444444444439,
+          "chargeElapsed": 1.816666666666665,
+          "cooldown": 0,
+          "telegraphTarget": {
+            "x": 1.128130555074133,
+            "y": 1.1956942670517776,
+            "z": 15.996930801309379
+          },
+          "targetId": "hostile-flanker",
+          "turnTravel": -3.3674664347566883,
+          "patrolBlocked": false,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 1.128130555074133,
+            "y": 0.12972694687336425,
+            "z": 15.996930801309379,
+            "yaw": -2.933475589621871,
+            "basis": {
+              "right": [
+                0.9999930135185541,
+                -0.003738036126214458,
+                -2.7105054312137617e-20
+              ],
+              "up": [
+                0.0037330506169663104,
+                0.9986592986349506,
+                -0.051630122826111804
+              ],
+              "forward": [
+                0.0001929952643248957,
+                0.05162976211321664,
+                0.9986662757983573
+              ]
+            }
+          },
+          "hp": 86,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 2.1933589957515136,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 1.5922283159160302,
+          "aimElevation": -0.008355962110497845,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 2.000000000000008,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -4.871445750234987,
+          "patrolBlocked": false,
+          "patrolIndex": 1
+        }
+      }
+    },
+    {
+      "inputs": 2000,
+      "action": "start",
+      "tick": 1999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 15.646286696187385,
+          "y": 0.008,
+          "z": -7.723157345182709,
+          "yaw": -0.2233201148101891,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 2.200000000000275,
+        "vR": 2.1958275514050563,
+        "governor": "cruise",
+        "trackL": 40.97787297080096,
+        "trackR": 40.590045829199404,
+        "turret": {
+          "yawRel": -0.002032404249991515,
+          "elevation": 0.07299998560681134,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 1999
+      },
+      "tankCombat": {
+        "hp": 100,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 2,
+        "damageTaken": 0
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 15.646286696187385,
+          "y": 0.008,
+          "z": -7.723157345182709,
+          "yaw": -0.2233201148101891,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.002032404249991515,
+        "elevation": 0.07299998560681134,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 16.147435423012404,
+            "y": 0.9807424963815915,
+            "z": -9.908490783307935
+          },
+          "direction": {
+            "x": 0.22285486387507566,
+            "y": 0.07293516675188312,
+            "z": -0.9721194222409593
+          },
+          "barrelStart": {
+            "x": 15.843151221876777,
+            "y": 0.8811577814448349,
+            "z": -8.581165414476263
+          },
+          "barrelEnd": {
+            "x": 16.147435423012404,
+            "y": 0.9807424963815915,
+            "z": -9.908490783307935
+          },
+          "turretOrigin": {
+            "x": 15.622073959206716,
+            "y": 0.663419265974557,
+            "z": -7.645563539698045
+          },
+          "hinge": {
+            "x": 15.782120308239312,
+            "y": 0.8611834525878612,
+            "z": -8.31494270714483
+          },
+          "pose": {
+            "x": 15.646286696187385,
+            "y": 0.008,
+            "z": -7.723157345182709,
+            "yaw": -0.2233201148101891,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.002032404249991515,
+            "elevation": 0.07299998560681134,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.03666666666667125,
+        "deltaTrackR": 0.036597125856750935,
+        "trackL": 40.97787297080096,
+        "trackR": 40.590045829199404,
+        "speedForward": 2.1979137757026654,
+        "yawRate": -0.0024025953817385926,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 2.2,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "road",
+          "traction": 1,
+          "drag": 1,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1,
+          "turnMultiplier": 1
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 1.3055336010304996,
+            "y": 0,
+            "z": 27.067475999263905,
+            "yaw": -0.9505468408120764
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 1,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": "commander-hold"
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.97643190190638,
+            "y": 0.008,
+            "z": 2.9016964174818516,
+            "yaw": 0.4185931644965546,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 0.07996285469896806,
+          "travel": 29.825729109374894,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0,
+          "aimElevation": 0,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -5.864592142683032,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 90,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -2.3953277993259143,
+          "aimElevation": -0.020863822541254268,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 3.4833333333333343,
+          "telegraphTarget": null,
+          "targetId": "tank"
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.966271614269287,
+            "y": 0.06158147271963934,
+            "z": 16.05545097815558,
+            "yaw": -1.806870359118049,
+            "basis": {
+              "right": [
+                0.9993906112866436,
+                -0.03490567392428477,
+                6.776263578034401e-21
+              ],
+              "up": [
+                0.03490564916817896,
+                0.9993899024901375,
+                -0.001190989883005818
+              ],
+              "forward": [
+                0.000041572304503323165,
+                0.001190264107213393,
+                0.9999992907712979
+              ]
+            }
+          },
+          "hp": 50,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0.017848021921512483,
+          "travel": 6.383568704629696,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": -1.5537112292698019,
+          "aimElevation": -0.03608209212669498,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 3.766666666666671,
+          "telegraphTarget": null,
+          "targetId": "hostile-flanker",
+          "turnTravel": -8.678058269845202,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.9574070733463893,
+            "y": 0.06779254205057858,
+            "z": 15.990105285197027,
+            "yaw": -1.6115610491762453,
+            "basis": {
+              "right": [
+                0.9989584563340426,
+                -0.04562896578607622,
+                2.7105054312137617e-20
+              ],
+              "up": [
+                0.04562844676365594,
+                0.9989470933362881,
+                -0.004769649978513778
+              ],
+              "forward": [
+                0.00021763419568116433,
+                0.004764682179789823,
+                0.9999886251548477
+              ]
+            }
+          },
+          "hp": 50,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0.14083333333333334,
+          "travel": 4.169443976642099,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 1.5819007955193838,
+          "aimElevation": -0.011514061438556433,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 3.9833333333333343,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -9.832716516968947,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 3000,
+      "action": "start",
+      "tick": 2999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 17.404641695808483,
+          "y": 0.008,
+          "z": -14.616433944438015,
+          "yaw": 3.0692569573913335,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 1.9024113204591007,
+        "vR": 2.1323618121911285,
+        "governor": "cruise",
+        "trackL": 56.68376950477436,
+        "trackR": 51.10232581677833,
+        "turret": {
+          "yawRel": 0.0336952571169995,
+          "elevation": 0.07299316397709701,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 2999
+      },
+      "tankCombat": {
+        "hp": 86,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 14
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 17.404641695808483,
+          "y": 0.008,
+          "z": -14.616433944438015,
+          "yaw": 3.0692569573913335,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": 0.0336952571169995,
+        "elevation": 0.07299316397709701,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 17.320742544287803,
+            "y": 0.9807313437952909,
+            "z": -12.375666375438769
+          },
+          "direction": {
+            "x": -0.03852795736299933,
+            "y": 0.07292836328862672,
+            "z": 0.9965927203875599
+          },
+          "barrelStart": {
+            "x": 17.373348023865216,
+            "y": 0.8811559182613202,
+            "z": -13.736407358654192
+          },
+          "barrelEnd": {
+            "x": 17.320742544287803,
+            "y": 0.9807313437952909,
+            "z": -12.375666375438769
+          },
+          "turretOrigin": {
+            "x": 17.416907981505013,
+            "y": 0.663419265974557,
+            "z": -14.696786875416903
+          },
+          "hinge": {
+            "x": 17.383899528930748,
+            "y": 0.8611834525878612,
+            "z": -14.009332334585972
+          },
+          "pose": {
+            "x": 17.404641695808483,
+            "y": 0.008,
+            "z": -14.616433944438015,
+            "yaw": 3.0692569573913335,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": 0.0336952571169995,
+            "elevation": 0.07299316397709701,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.03170685534098501,
+        "deltaTrackR": 0.035539363536518806,
+        "trackL": 56.68376950477436,
+        "trackR": 51.10232581677833,
+        "speedForward": 2.0173865663251145,
+        "yawRate": 0.13241097567910032,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 2.2,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "road",
+          "traction": 1,
+          "drag": 1,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1,
+          "turnMultiplier": 1
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 1.3055336010304996,
+            "y": 0,
+            "z": 27.067475999263905,
+            "yaw": -0.9505468408120764
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 1,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": "commander-hold"
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.991827928170256,
+            "y": 0.008000141266940156,
+            "z": -9.006809669528803,
+            "yaw": -0.0027302144609624435,
+            "basis": {
+              "right": [
+                0.9999999999999987,
+                -5.356077366502932e-8,
+                0
+              ],
+              "up": [
+                5.356077366502932e-8,
+                0.9999999999999987,
+                -2.701982550880156e-9
+              ],
+              "forward": [
+                1.4472027585455057e-16,
+                2.701982550880152e-9,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 0.2925000000000001,
+          "travel": 41.73654941127226,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.7023261706834796,
+          "aimElevation": -0.04955926331501043,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -6.285915521640549,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.971217024606287,
+            "y": 0.10906436701209604,
+            "z": 16.060545938044122,
+            "yaw": 0.11376705787992059,
+            "basis": {
+              "right": [
+                0.9999736586414361,
+                0.007258238302820612,
+                0
+              ],
+              "up": [
+                -0.0072512168256731934,
+                0.9990063037683613,
+                0.04397527584477283
+              ],
+              "forward": [
+                0.00031918303151363226,
+                -0.04397411747626386,
+                0.9990326196448124
+              ]
+            }
+          },
+          "hp": 26,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 10.619806812918691,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": -1.1548747724672819,
+          "aimElevation": -0.0002676135322945421,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 1.9333333333333442,
+          "telegraphTarget": null,
+          "targetId": "hostile-flanker",
+          "turnTravel": -13.040606160026819,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.3480425380888734,
+            "y": 0.06821338674185601,
+            "z": 15.965372439340683,
+            "yaw": -1.611418673487007,
+            "basis": {
+              "right": [
+                0.9989120415902589,
+                -0.04663403441673196,
+                2.710505431213761e-20
+              ],
+              "up": [
+                0.0466336746783203,
+                0.9989043359084384,
+                -0.003927860654156049
+              ],
+              "forward": [
+                0.0001831719889300404,
+                0.003923587305125068,
+                0.9999922859255873
+              ]
+            }
+          },
+          "hp": 26,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 5.704468399921156,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "charging",
+          "aimYaw": 1.5886866635025203,
+          "aimElevation": -0.013757400063166454,
+          "charge": 0.12499999999999999,
+          "chargeElapsed": 0.24999999999999997,
+          "cooldown": 0,
+          "telegraphTarget": {
+            "x": -4.971217024606287,
+            "y": 1.2287225045693941,
+            "z": 16.060545938044122
+          },
+          "targetId": "allied-support",
+          "turnTravel": -16.115759448459272,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 4000,
+      "action": "start",
+      "tick": 3999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 16.040584490736336,
+          "y": 0.008,
+          "z": 20.90956933538098,
+          "yaw": 3.1043910523338862,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 0.7779370893794308,
+        "vR": 0.7779370899237917,
+        "governor": "cruise",
+        "trackL": 92.20568751540895,
+        "trackR": 86.68525918030925,
+        "turret": {
+          "yawRel": -0.0002137445620160605,
+          "elevation": 0.07294141930165093,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 3999
+      },
+      "tankCombat": {
+        "hp": 86,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 14
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 16.040584490736336,
+          "y": 0.008,
+          "z": 20.90956933538098,
+          "yaw": 3.1043910523338862,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.0002137445620160605,
+        "elevation": 0.07294141930165093,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 15.956698651714301,
+            "y": 0.9806467469733987,
+            "z": 23.150077866325606
+          },
+          "direction": {
+            "x": -0.037307150837461694,
+            "y": 0.0728767563022436,
+            "z": 0.9966429425261858
+          },
+          "barrelStart": {
+            "x": 16.007637250289527,
+            "y": 0.8811417852701281,
+            "z": 21.78926831057376
+          },
+          "barrelEnd": {
+            "x": 15.956698651714301,
+            "y": 0.9806467469733987,
+            "z": 23.150077866325606
+          },
+          "turretOrigin": {
+            "x": 16.05002065970354,
+            "y": 0.663419265974557,
+            "z": 20.828835117128065
+          },
+          "hinge": {
+            "x": 16.01785442761599,
+            "y": 0.8611834525878612,
+            "z": 21.516329580497555
+          },
+          "pose": {
+            "x": 16.040584490736336,
+            "y": 0.008,
+            "z": 20.90956933538098,
+            "yaw": 3.1043910523338862,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.0002137445620160605,
+            "elevation": 0.07294141930165093,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.012965618156323848,
+        "deltaTrackR": 0.012965618165396528,
+        "trackL": 92.20568751540895,
+        "trackR": 86.68525918030925,
+        "speedForward": 0.7779370896516113,
+        "yawRate": 3.134559278805682e-10,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 0.5296350426895483,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "earth",
+          "traction": 0.76,
+          "drag": 1.35,
+          "speedMultiplier": 0.6541038540261415,
+          "accelerationMultiplier": 0.76,
+          "turnMultiplier": 0.9279999999999999
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 1.3055336010304996,
+            "y": 0,
+            "z": 27.067475999263905,
+            "yaw": -0.9505468408120764
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 1,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": "commander-hold"
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 23.024898370287715,
+            "y": 0.008000158662036688,
+            "z": -5.341103527034531,
+            "yaw": 3.1386076413241693,
+            "basis": {
+              "right": [
+                0.9999999999999933,
+                1.1541895043831488e-7,
+                -2.465190328815662e-32
+              ],
+              "up": [
+                -1.1541895043831488e-7,
+                0.9999999999999933,
+                1.549777399878901e-9
+              ],
+              "forward": [
+                1.7887368090704338e-16,
+                -1.5497773998788906e-9,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 1.35,
+          "travel": 51.241304251656615,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 2.7497961201425403,
+          "aimElevation": -0.02473687672036559,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -9.427762973035003,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.142826624113799,
+            "y": 0.029267758900485198,
+            "z": 17.807271352187573,
+            "yaw": 0.46439876316591544,
+            "basis": {
+              "right": [
+                0.9999996673606809,
+                0.000815646079777398,
+                4.235164736271503e-22
+              ],
+              "up": [
+                -0.0008156437287556606,
+                0.9999967849573769,
+                0.0024009998369832887
+              ],
+              "forward": [
+                0.000001958366104581591,
+                -0.0024009990383163384,
+                0.9999971175957372
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0.34777108760409786,
+          "travel": 12.88891022297334,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": -1.214966674350194,
+          "aimElevation": 0.0006017001410426911,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.10000000000001275,
+          "telegraphTarget": null,
+          "targetId": "hostile-flanker",
+          "turnTravel": -18.973159761919884,
+          "patrolBlocked": false,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.07707414311245765,
+            "y": 0.12514027078604575,
+            "z": 16.00264233277076,
+            "yaw": -0.2198001777827816,
+            "basis": {
+              "right": [
+                0.9999525056270173,
+                -0.009746101284626862,
+                1.0842021724855047e-19
+              ],
+              "up": [
+                0.009733495034671162,
+                0.9986591011300164,
+                0.05084544035208849
+              ],
+              "forward": [
+                -0.000495544811532908,
+                -0.050843025479779924,
+                0.9987065340706459
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0.0028465162239071427,
+          "travel": 7.566038667352599,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 2.0086215043792643,
+          "aimElevation": -0.05292329850330853,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 1.7333333333333423,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -21.00732625993376,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 5000,
+      "action": "start",
+      "tick": 4999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 15.994917263651404,
+          "y": 0.008,
+          "z": 6.751605413025759,
+          "yaw": -0.0649182023847299,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 2.199999999998093,
+        "vR": 2.199560002796955,
+        "governor": "cruise",
+        "trackL": 105.03730854153294,
+        "trackR": 104.92456884994282,
+        "turret": {
+          "yawRel": -0.0004055726475868937,
+          "elevation": 0.07300008840858173,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 4999
+      },
+      "tankCombat": {
+        "hp": 86,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 14
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 15.994917263651404,
+          "y": 0.008,
+          "z": 6.751605413025759,
+          "yaw": -0.0649182023847299,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.0004055726475868937,
+        "elevation": 0.07300008840858173,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 16.14130636628302,
+            "y": 0.9807426644507149,
+            "z": 4.514319424431475
+          },
+          "direction": {
+            "x": 0.065103472091261,
+            "y": 0.07293526927985954,
+            "z": -0.9952095178487476
+          },
+          "barrelStart": {
+            "x": 16.052414857900043,
+            "y": 0.8811578095229516,
+            "z": 5.873171801130406
+          },
+          "barrelEnd": {
+            "x": 16.14130636628302,
+            "y": 0.9807426644507149,
+            "z": 4.514319424431475
+          },
+          "turretOrigin": {
+            "x": 15.983247327297095,
+            "y": 0.663419265974557,
+            "z": 6.832047117801163
+          },
+          "hinge": {
+            "x": 16.034585433321165,
+            "y": 0.8611834525878612,
+            "z": 6.145717967523925
+          },
+          "pose": {
+            "x": 15.994917263651404,
+            "y": 0.008,
+            "z": 6.751605413025759,
+            "yaw": -0.0649182023847299,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.0004055726475868937,
+            "elevation": 0.07300008840858173,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.03666666666663488,
+        "deltaTrackR": 0.03665933337994925,
+        "trackL": 105.03730854153294,
+        "trackR": 104.92456884994282,
+        "speedForward": 2.199780001397524,
+        "yawRate": -0.0002533608789434538,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 2.2,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "road",
+          "traction": 1,
+          "drag": 1,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1,
+          "turnMultiplier": 1
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 14,
+            "y": 0,
+            "z": 17.934289134671285,
+            "yaw": -0.3505468408121849
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0.12521155718471713,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "moving",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 2,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.96422998436477,
+            "y": 0.008000180459181758,
+            "z": -0.011146123363411546,
+            "yaw": -0.0029835970863807404,
+            "basis": {
+              "right": [
+                1,
+                -2.278508447274935e-10,
+                0
+              ],
+              "up": [
+                2.278508447274935e-10,
+                1,
+                3.58202790016973e-9
+              ],
+              "forward": [
+                -8.161680828911228e-19,
+                -3.58202790016973e-9,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 0.6716666666666677,
+          "travel": 62.483158843939414,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 2.6203892002879523,
+          "aimElevation": -0.027689564726034798,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 3.4666666666666703,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "turnTravel": -12.569354211445553,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.162444304599456,
+            "y": 0.03049243936191977,
+            "z": 17.7660889041193,
+            "yaw": 0.44283069388588814,
+            "basis": {
+              "right": [
+                0.9999996352204098,
+                0.0008541422876073407,
+                8.470329472543007e-22
+              ],
+              "up": [
+                -0.0008541391162633453,
+                0.9999959223228229,
+                0.002725029191864664
+              ],
+              "forward": [
+                0.0000023275626677360663,
+                -0.002725028197829632,
+                0.9999962871010588
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 12.934526868807692,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": -1.1765408145058909,
+          "aimElevation": -0.005730196304785527,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -18.99472783119991,
+          "patrolBlocked": true,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.12334926151524254,
+            "y": 0.10748100031956881,
+            "z": 15.973379410345812,
+            "yaw": -1.2698001777827592,
+            "basis": {
+              "right": [
+                0.9990559344213787,
+                -0.04344237444507241,
+                0
+              ],
+              "up": [
+                0.04344021490878296,
+                0.9990062709862391,
+                0.009970870516049687
+              ],
+              "forward": [
+                -0.00043315829050156286,
+                -0.009961457360406595,
+                0.999950289635016
+              ]
+            }
+          },
+          "hp": 0,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 7.622321382591083,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "aimYaw": 1.9669708178160876,
+          "aimElevation": -0.049642777594423385,
+          "charge": 0,
+          "chargeElapsed": 0.8000000000000008,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -22.05732625993355,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 6000,
+      "action": "start",
+      "tick": 5999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 17.340210225374353,
+          "y": 0.008,
+          "z": -13.849491668990142,
+          "yaw": -0.06447957437438845,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 0.5182747839375899,
+        "vR": 0.5216666666662106,
+        "governor": "cruise",
+        "trackL": 125.68190482796761,
+        "trackR": 125.56992687630228,
+        "turret": {
+          "yawRel": -0.0006420999966927354,
+          "elevation": 0.07293077765016004,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 5999
+      },
+      "tankCombat": {
+        "hp": 72,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 28
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 17.340210225374353,
+          "y": 0.008,
+          "z": -13.849491668990142,
+          "yaw": -0.06447957437438845,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.0006420999966927354,
+        "elevation": 0.07293077765016004,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 17.486166734597692,
+            "y": 0.9806293490104123,
+            "z": -16.086812708320412
+          },
+          "direction": {
+            "x": 0.06490266707592371,
+            "y": 0.07286614294326801,
+            "z": -0.9952276970718826
+          },
+          "barrelStart": {
+            "x": 17.397549404033114,
+            "y": 0.8811388787158136,
+            "z": -14.727935509932685
+          },
+          "barrelEnd": {
+            "x": 17.486166734597692,
+            "y": 0.9806293490104123,
+            "z": -16.086812708320412
+          },
+          "turretOrigin": {
+            "x": 17.328575574126443,
+            "y": 0.663419265974557,
+            "z": -13.76904485319221
+          },
+          "hinge": {
+            "x": 17.379774971527915,
+            "y": 0.8611834525878612,
+            "z": -14.455384364918105
+          },
+          "pose": {
+            "x": 17.340210225374353,
+            "y": 0.008,
+            "z": -13.849491668990142,
+            "yaw": -0.06447957437438845,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.0006420999966927354,
+            "elevation": 0.07293077765016004,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.008637913065626498,
+        "deltaTrackR": 0.008694444444436844,
+        "trackL": 125.68190482796761,
+        "trackR": 125.56992687630228,
+        "speedForward": 0.5199707253019002,
+        "yawRate": 0.0019531269452954803,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 2.2,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "road",
+          "traction": 1,
+          "drag": 1,
+          "speedMultiplier": 1,
+          "accelerationMultiplier": 1,
+          "turnMultiplier": 1
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 14,
+            "y": 0,
+            "z": -0.5570663416153139,
+            "yaw": 0
+          },
+          "hp": 86,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 1.15,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "moving",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 2,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.99980273806568,
+            "y": 0.008000033741408364,
+            "z": -11.933884722608626,
+            "yaw": -1.0229835970863181,
+            "basis": {
+              "right": [
+                1,
+                -1.0446688275151195e-9,
+                3.0814879110195774e-33
+              ],
+              "up": [
+                1.0446688275151193e-9,
+                0.9999999999999998,
+                -1.9959282806768486e-8
+              ],
+              "forward": [
+                2.0850840567789516e-17,
+                1.9959282806768486e-8,
+                0.9999999999999998
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 0,
+          "travel": 74.40595051060393,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 2.0341418613664883,
+          "aimElevation": -0.06299500103334565,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.4000000000000109,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "turnTravel": -13.58935421144549,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.162444304599456,
+            "y": 0.03049243936191977,
+            "z": 17.7660889041193,
+            "yaw": 0.44283069388588814,
+            "basis": {
+              "right": [
+                0.9999996352204098,
+                0.0008541422876073407,
+                8.470329472543007e-22
+              ],
+              "up": [
+                -0.0008541391162633453,
+                0.9999959223228229,
+                0.002725029191864664
+              ],
+              "forward": [
+                0.0000023275626677360663,
+                -0.002725028197829632,
+                0.9999962871010588
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 12.934526868807692,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": -1.1765408145058909,
+          "aimElevation": -0.005730196304785527,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -18.99472783119991,
+          "patrolBlocked": true,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.12334926151524254,
+            "y": 0.10748100031956881,
+            "z": 15.973379410345812,
+            "yaw": -1.2698001777827592,
+            "basis": {
+              "right": [
+                0.9990559344213787,
+                -0.04344237444507241,
+                0
+              ],
+              "up": [
+                0.04344021490878296,
+                0.9990062709862391,
+                0.009970870516049687
+              ],
+              "forward": [
+                -0.00043315829050156286,
+                -0.009961457360406595,
+                0.999950289635016
+              ]
+            }
+          },
+          "hp": 0,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 7.622321382591083,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "aimYaw": 1.9669708178160876,
+          "aimElevation": -0.049642777594423385,
+          "charge": 0,
+          "chargeElapsed": 0.8000000000000008,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -22.05732625993355,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 7000,
+      "action": "start",
+      "tick": 6999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 12.082614296776864,
+          "y": 0.008,
+          "z": -30.055404617910135,
+          "yaw": 0.6037743228577028,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "vL": 1.43902847885879,
+        "vR": 1.4343221496472256,
+        "governor": "cruise",
+        "trackL": 143.67696814842634,
+        "trackR": 144.72550813330125,
+        "turret": {
+          "yawRel": -0.0021812358489814443,
+          "elevation": 0.07296855930426942,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 6999
+      },
+      "tankCombat": {
+        "hp": 72,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 28
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 12.082614296776864,
+          "y": 0.008,
+          "z": -30.055404617910135,
+          "yaw": 0.6037743228577028,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.0021812358489814443,
+        "elevation": 0.07296855930426942,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 10.813849868492547,
+            "y": 0.9806911179161588,
+            "z": -31.903939654407942
+          },
+          "direction": {
+            "x": -0.5644505635359058,
+            "y": 0.07290382411150176,
+            "z": -0.8222412016883597
+          },
+          "barrelStart": {
+            "x": 11.584547131076413,
+            "y": 0.881149198008919,
+            "z": -30.781257259034774
+          },
+          "barrelEnd": {
+            "x": 10.813849868492547,
+            "y": 0.9806911179161588,
+            "z": -31.903939654407942
+          },
+          "turretOrigin": {
+            "x": 12.1233283704792,
+            "y": 0.663419265974557,
+            "z": -29.985052507179557
+          },
+          "hinge": {
+            "x": 11.739126232119633,
+            "y": 0.8611834525878612,
+            "z": -30.556079669870044
+          },
+          "pose": {
+            "x": 12.082614296776864,
+            "y": 0.008,
+            "z": -30.055404617910135,
+            "yaw": 0.6037743228577028,
+            "basis": {
+              "right": [
+                1,
+                0,
+                0
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "forward": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.0021812358489814443,
+            "elevation": 0.07296855930426942,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0.02398380798097983,
+        "deltaTrackR": 0.02390536916078709,
+        "trackL": 143.67696814842634,
+        "trackR": 144.72550813330125,
+        "speedForward": 1.4366753142530078,
+        "yawRate": -0.002710016569551499,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 1.4390284788575114,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "earth",
+          "traction": 0.76,
+          "drag": 1.35,
+          "speedMultiplier": 0.6541038540261415,
+          "accelerationMultiplier": 0.76,
+          "turnMultiplier": 0.9279999999999999
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 14,
+            "y": 0,
+            "z": -19.723733008282235,
+            "yaw": 0
+          },
+          "hp": 86,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 1.15,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "moving",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 2,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 23.024324473334236,
+            "y": 0.008000158985565185,
+            "z": -5.152676093649747,
+            "yaw": 3.1386090441741157,
+            "basis": {
+              "right": [
+                0.9999999999999931,
+                1.1726613710480006e-7,
+                -2.465190328815662e-32
+              ],
+              "up": [
+                -1.1726613710480006e-7,
+                0.9999999999999931,
+                1.4601954568507048e-9
+              ],
+              "forward": [
+                1.7123148064286092e-16,
+                -1.4601954568506947e-9,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 0,
+          "speed": 0.9858333333333352,
+          "travel": 81.19902510944397,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "cooldown",
+          "aimYaw": 0.7409496300127894,
+          "aimElevation": -0.03385909937656451,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 2.9833333333333387,
+          "telegraphTarget": null,
+          "targetId": "supply",
+          "turnTravel": -15.710946877364643,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.162444304599456,
+            "y": 0.03049243936191977,
+            "z": 17.7660889041193,
+            "yaw": 0.44283069388588814,
+            "basis": {
+              "right": [
+                0.9999996352204098,
+                0.0008541422876073407,
+                8.470329472543007e-22
+              ],
+              "up": [
+                -0.0008541391162633453,
+                0.9999959223228229,
+                0.002725029191864664
+              ],
+              "forward": [
+                0.0000023275626677360663,
+                -0.002725028197829632,
+                0.9999962871010588
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 12.934526868807692,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": -1.1765408145058909,
+          "aimElevation": -0.005730196304785527,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -18.99472783119991,
+          "patrolBlocked": true,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.12334926151524254,
+            "y": 0.10748100031956881,
+            "z": 15.973379410345812,
+            "yaw": -1.2698001777827592,
+            "basis": {
+              "right": [
+                0.9990559344213787,
+                -0.04344237444507241,
+                0
+              ],
+              "up": [
+                0.04344021490878296,
+                0.9990062709862391,
+                0.009970870516049687
+              ],
+              "forward": [
+                -0.00043315829050156286,
+                -0.009961457360406595,
+                0.999950289635016
+              ]
+            }
+          },
+          "hp": 0,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 7.622321382591083,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "aimYaw": 1.9669708178160876,
+          "aimElevation": -0.049642777594423385,
+          "charge": 0,
+          "chargeElapsed": 0.8000000000000008,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -22.05732625993355,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    },
+    {
+      "inputs": 8000,
+      "action": "start",
+      "tick": 7999,
+      "phase": "playing",
+      "player": {
+        "pose": {
+          "x": 8.249502205429293,
+          "y": 0.008,
+          "z": -35.63634764428489,
+          "yaw": 0.6013380458015121,
+          "basis": {
+            "right": [
+              1,
+              -2.190209231021764e-75,
+              0
+            ],
+            "up": [
+              2.190209231021764e-75,
+              1,
+              -1.7176724879846037e-68
+            ],
+            "forward": [
+              3.762062139055999e-143,
+              1.7176724879846037e-68,
+              1
+            ]
+          }
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 150.44958503725366,
+        "trackR": 151.49389408051536,
+        "turret": {
+          "yawRel": -0.00021518534231468323,
+          "elevation": 0.07291825331261063,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": false,
+          "muzzle": false
+        },
+        "tick": 7999
+      },
+      "tankCombat": {
+        "hp": 72,
+        "maxHp": 100,
+        "reload": 0,
+        "shotsFired": 4,
+        "damageTaken": 28
+      },
+      "tankFrame": {
+        "pose": {
+          "x": 8.249502205429293,
+          "y": 0.008,
+          "z": -35.63634764428489,
+          "yaw": 0.6013380458015121,
+          "basis": {
+            "right": [
+              1,
+              -2.190209231021764e-75,
+              0
+            ],
+            "up": [
+              2.190209231021764e-75,
+              1,
+              -1.7176724879846037e-68
+            ],
+            "forward": [
+              3.762062139055999e-143,
+              1.7176724879846037e-68,
+              1
+            ]
+          }
+        },
+        "turretYawRel": -0.00021518534231468323,
+        "elevation": 0.07291825331261063,
+        "recoil": 0,
+        "muzzleWorld": {
+          "position": {
+            "x": 6.981465316670957,
+            "y": 0.9806088730395822,
+            "z": -37.485404194649114
+          },
+          "direction": {
+            "x": -0.5640659350128924,
+            "y": 0.07285365189308231,
+            "z": -0.8225095539651033
+          },
+          "barrelStart": {
+            "x": 7.751637410142303,
+            "y": 0.8811354579405535,
+            "z": -36.36235539277966
+          },
+          "barrelEnd": {
+            "x": 6.981465316670957,
+            "y": 0.9806088730395822,
+            "z": -37.485404194649114
+          },
+          "turretOrigin": {
+            "x": 8.290044761239924,
+            "y": 0.663419265974557,
+            "z": -35.56589655167428
+          },
+          "hinge": {
+            "x": 7.906111177478901,
+            "y": 0.8611834525878612,
+            "z": -36.137104313273184
+          },
+          "pose": {
+            "x": 8.249502205429293,
+            "y": 0.008,
+            "z": -35.63634764428489,
+            "yaw": 0.6013380458015121,
+            "basis": {
+              "right": [
+                1,
+                -2.190209231021764e-75,
+                0
+              ],
+              "up": [
+                2.190209231021764e-75,
+                1,
+                -1.7176724879846037e-68
+              ],
+              "forward": [
+                3.762062139055999e-143,
+                1.7176724879846037e-68,
+                1
+              ]
+            }
+          },
+          "turret": {
+            "yawRel": -0.00021518534231468323,
+            "elevation": 0.07291825331261063,
+            "recoil": 0,
+            "recoilVelocity": 0
+          }
+        },
+        "deltaTrackL": 0,
+        "deltaTrackR": 0,
+        "trackL": 150.44958503725366,
+        "trackR": 151.49389408051536,
+        "speedForward": 0,
+        "yawRate": 0,
+        "canFire": true,
+        "contacts": [],
+        "desiredSpeed": 0,
+        "governor": "cruise",
+        "boostActive": false,
+        "surface": {
+          "id": null,
+          "class": "earth",
+          "traction": 0.76,
+          "drag": 1.35,
+          "speedMultiplier": 0.6541038540261415,
+          "accelerationMultiplier": 0.76,
+          "turnMultiplier": 0.9279999999999999
+        }
+      },
+      "selectedConvoyChoiceId": "direct",
+      "entities": {
+        "ridge-fence-0": {
+          "id": "ridge-fence-0",
+          "kind": "barrier",
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-1": {
+          "id": "ridge-fence-1",
+          "kind": "barrier",
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-2": {
+          "id": "ridge-fence-2",
+          "kind": "barrier",
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-3": {
+          "id": "ridge-fence-3",
+          "kind": "barrier",
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "ridge-fence-4": {
+          "id": "ridge-fence-4",
+          "kind": "barrier",
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "intact",
+          "width": 1.8,
+          "depth": 0.25,
+          "height": 0.65
+        },
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 2.365993926468546,
+            "y": 0,
+            "z": -30.648003470589348,
+            "yaw": 1.0516502125483569
+          },
+          "hp": 86,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 1.15,
+          "escortRange": 19,
+          "team": "allied",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "moving",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 3,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        },
+        "road-gun": {
+          "id": "road-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 22.975263086501922,
+            "y": 0.008000166900118422,
+            "z": -3.7090732650663,
+            "yaw": -0.0029836037498718326,
+            "basis": {
+              "right": [
+                0.9999999999999896,
+                -1.4455574864495132e-7,
+                0
+              ],
+              "up": [
+                1.4455574864495132e-7,
+                0.9999999999999896,
+                3.3448042569614765e-10
+              ],
+              "forward": [
+                -4.8351068343588634e-17,
+                -3.3448042569614414e-10,
+                1
+              ]
+            }
+          },
+          "hp": 90,
+          "range": 19,
+          "chargeTime": 1.9,
+          "reload": 4.5,
+          "damage": 14,
+          "shieldArc": 1.7,
+          "vehicle": "pz3",
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "patrol": [
+            {
+              "x": 23,
+              "z": 3
+            },
+            {
+              "x": 23,
+              "z": -12
+            }
+          ],
+          "patrolIndex": 1,
+          "speed": 1.35,
+          "travel": 95.94925161300151,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": 0.7409496300127894,
+          "aimElevation": -0.03385909937656451,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -18.852539525288144,
+          "patrolBlocked": false
+        },
+        "ridge-gun": {
+          "id": "ridge-gun",
+          "kind": "turret",
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "hp": 0,
+          "range": 28,
+          "chargeTime": 2.2,
+          "reload": 3.8,
+          "damage": 8,
+          "shieldArc": 2.5,
+          "team": "hostile",
+          "maxHp": 90,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "radius": 0.8,
+          "height": 2.2,
+          "aimYaw": -1.729294147236368,
+          "aimElevation": -0.025356940306611973,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0.1000000000000083,
+          "telegraphTarget": null,
+          "targetId": "tank",
+          "speed": 0
+        },
+        "allied-support": {
+          "id": "allied-support",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "allied",
+          "pose": {
+            "x": -4.162444304599456,
+            "y": 0.03049243936191977,
+            "z": 17.7660889041193,
+            "yaw": 0.44283069388588814,
+            "basis": {
+              "right": [
+                0.9999996352204098,
+                0.0008541422876073407,
+                8.470329472543007e-22
+              ],
+              "up": [
+                -0.0008541391162633453,
+                0.9999959223228229,
+                0.002725029191864664
+              ],
+              "forward": [
+                0.0000023275626677360663,
+                -0.002725028197829632,
+                0.9999962871010588
+              ]
+            }
+          },
+          "hp": 2,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2.4,
+          "reload": 5,
+          "range": 26,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 12.934526868807692,
+          "patrol": [
+            {
+              "x": -4,
+              "z": 18
+            },
+            {
+              "x": -5,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": true,
+          "destroyed": false,
+          "status": "idle",
+          "aimYaw": -1.1765408145058909,
+          "aimElevation": -0.005730196304785527,
+          "charge": 0,
+          "chargeElapsed": 0,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": null,
+          "turnTravel": -18.99472783119991,
+          "patrolBlocked": true,
+          "patrolIndex": 1
+        },
+        "hostile-flanker": {
+          "id": "hostile-flanker",
+          "kind": "turret",
+          "vehicle": "pz3",
+          "team": "hostile",
+          "pose": {
+            "x": 0.12334926151524254,
+            "y": 0.10748100031956881,
+            "z": 15.973379410345812,
+            "yaw": -1.2698001777827592,
+            "basis": {
+              "right": [
+                0.9990559344213787,
+                -0.04344237444507241,
+                0
+              ],
+              "up": [
+                0.04344021490878296,
+                0.9990062709862391,
+                0.009970870516049687
+              ],
+              "forward": [
+                -0.00043315829050156286,
+                -0.009961457360406595,
+                0.999950289635016
+              ]
+            }
+          },
+          "hp": 0,
+          "protected": false,
+          "damage": 12,
+          "chargeTime": 2,
+          "reload": 4.2,
+          "range": 22,
+          "shieldArc": 0,
+          "radius": 2.2,
+          "width": 1.921792,
+          "depth": 3.532506,
+          "height": 1.7,
+          "speed": 0,
+          "travel": 7.622321382591083,
+          "patrol": [
+            {
+              "x": 1.2,
+              "z": 16
+            },
+            {
+              "x": 0,
+              "z": 16
+            }
+          ],
+          "maxHp": 110,
+          "alive": false,
+          "destroyed": true,
+          "status": "destroyed",
+          "aimYaw": 1.9669708178160876,
+          "aimElevation": -0.049642777594423385,
+          "charge": 0,
+          "chargeElapsed": 0.8000000000000008,
+          "cooldown": 0,
+          "telegraphTarget": null,
+          "targetId": "allied-support",
+          "turnTravel": -22.05732625993355,
+          "patrolBlocked": false,
+          "patrolIndex": 0
+        }
+      }
+    }
+  ]
+}

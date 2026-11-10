@@ -1,0 +1,31 @@
+{
+  "name": "truckloss-02",
+  "mode": "truckloss",
+  "inputs": 3888,
+  "tick": 3887,
+  "elapsed": 64.78333333333094,
+  "phase": "lost",
+  "cause": "protected-vehicle-destroyed",
+  "route": null,
+  "playerHp": 88,
+  "truckHp": 0,
+  "truckArrived": false,
+  "preparation": {
+    "id": "prepare-extraction",
+    "status": "active",
+    "progress": 0,
+    "elapsed": 0,
+    "completedTick": null
+  },
+  "shots": 0,
+  "events": 59,
+  "closureFiles": 32,
+  "specHash": "be443ab70fac10ecd2bf3a9e04cc1a1bddd46545bc6c3201715e2e301fe075c3",
+  "sourceHashesHash": "4502dcf7b00095a950a0374a8315b846a90657cb4bad82a41b39b3d34a78e349",
+  "finalHash": "11efa641b459c65499987b7e8f4df4a96ea8c300e180b15ca8a4dd8c89a9ff4b",
+  "rawSHA256": "58032bdd11727a1820207a115f67cfa1e328f55191785a3a2133b1969a12bc53",
+  "retryProof": true,
+  "fullEvidenceExact": null,
+  "failure": null,
+  "accepted": true
+}

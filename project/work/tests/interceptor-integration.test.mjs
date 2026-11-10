@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createInterceptorMission} from '../src/terrain-candidate/interceptor-mission.js';
+import {createGame,stepGame} from '../src/campaign-simulation.js';
+import {createTerrainCombatWorld} from '../src/terrain-candidate/combat-world.js';
+import {listCraftedMissions} from '../src/content/crafted20/index.js';
+test('interceptor is isolated from the 20 authored campaign missions',()=>{const {spec}=createInterceptorMission();assert.equal(spec.id,'mission-9006');assert.equal(listCraftedMissions().length,20);assert.ok(listCraftedMissions().every(m=>m.id!==spec.id));assert.equal(spec.entities.filter(e=>e.vehicle==='pz3').length,1);});
+test('real world patrol moves, then stops charging and launches from own bore',()=>{const {spec,field}=createInterceptorMission(),w=createTerrainCombatWorld(spec,field);try{let s=createGame(spec);s=stepGame(s,{start:true},1/60,w);const first=s.entities['road-gun'].pose.z;for(let i=0;i<180;i++)s=stepGame(s,{},1/60,w);assert.ok(s.entities['road-gun'].pose.z<first-.5);s.tank.pose={x:14,y:0,z:0,yaw:0};s.entities.supply.protected=false;let shot=false,stopped=false;for(let i=0;i<240;i++){const old=s.entities['road-gun'];s=stepGame(s,{},1/60,w);const next=s.entities['road-gun'];if(old.charge>0){assert.deepEqual(next.pose,old.pose);stopped=true;}if(s.events.some(e=>e.type==='shot'&&e.entityId==='road-gun'))shot=true;}assert.ok(stopped);assert.ok(shot);}finally{w.dispose();}});

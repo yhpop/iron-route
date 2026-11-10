@@ -1,0 +1,73 @@
+{
+  "provenance": "CPU Three ray intersections with actual shipping GLB triangles at the replayed first-charge camera; unchanged CSS fire rectangle modeled at 390x664, 34px bottom inset and 14px side inset. Not a browser screenshot.",
+  "tick": 1392,
+  "seconds": 23.2,
+  "gunStatus": "charging",
+  "control": {
+    "id": "fire-side14-bottom34",
+    "left": 313,
+    "right": 371,
+    "top": 429,
+    "bottom": 487
+  },
+  "projectedGunBounds": {
+    "left": 288.0645171266372,
+    "right": 331.9774094364957,
+    "top": 371.8848537867778,
+    "bottom": 434.50424906294506
+  },
+  "tested": 114,
+  "visibleGunSamplesUnderFireButton": 54,
+  "examples": [
+    {
+      "x": 313.5,
+      "y": 429.5,
+      "gunMesh": "Cone089_1",
+      "worldPoint": [
+        0.2816507539755548,
+        0.23000001162290218,
+        -7.370320854230666
+      ]
+    },
+    {
+      "x": 314.5,
+      "y": 429.5,
+      "gunMesh": "Cone089_1",
+      "worldPoint": [
+        0.3140157400845171,
+        0.23000001162290928,
+        -7.382089940088424
+      ]
+    },
+    {
+      "x": 315.5,
+      "y": 429.5,
+      "gunMesh": "Cone089_1",
+      "worldPoint": [
+        0.34638072619345633,
+        0.23000001162290573,
+        -7.393859025946188
+      ]
+    },
+    {
+      "x": 316.5,
+      "y": 429.5,
+      "gunMesh": "Cone089_1",
+      "worldPoint": [
+        0.37874571230239557,
+        0.23000001162290573,
+        -7.405628111804042
+      ]
+    },
+    {
+      "x": 317.5,
+      "y": 429.5,
+      "gunMesh": "Cone089_1",
+      "worldPoint": [
+        0.4110868945368162,
+        0.22977772545233321,
+        -7.417580580487584
+      ]
+    }
+  ]
+}

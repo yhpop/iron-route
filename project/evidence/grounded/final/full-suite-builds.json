@@ -1,0 +1,70 @@
+{
+  "dist": {
+    "THREE_LICENSE.txt": {
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    "build-manifest.json": {
+      "sha256": "eb098bd99d5ad289878d0a9c80024bb028bd0f0fa106c99969cb48b9936268e4",
+      "bytes": 4057
+    },
+    "build-metafile.json": {
+      "sha256": "5f07250e15feb3ea36bd9cb88322eec388fb0c732e443c7589031cb07161cb4a",
+      "bytes": 70578
+    },
+    "game.js": {
+      "sha256": "12e20eae7187051bfa6071ab5c1a02b7d28046cc4c05230dc70cce7fbe923c31",
+      "bytes": 38702545
+    },
+    "game.js.LEGAL.txt": {
+      "sha256": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
+      "bytes": 188
+    },
+    "index.html": {
+      "sha256": "cfb6e12f43bba526461ca4be7a888b63db5cffb6fd9818bf4f0e27b67dfa55fa",
+      "bytes": 3416
+    },
+    "style.css": {
+      "sha256": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "bytes": 28174
+    },
+    "\u94c1\u6d41_\u7535\u8111\u6d4f\u89c8\u5668\u79bb\u7ebf\u7248.html": {
+      "sha256": "3d061b3dbf64efbbf0d4ee4959b94491b75fb5074ff15ae897a2a43dfd3b096d",
+      "bytes": 38734062
+    }
+  },
+  "dist-en": {
+    "Iron_Route_Desktop_Offline.html": {
+      "sha256": "507796af246c27a70582e80401bfb10c6ccbb7f5f11d9a6483df9ef3e6322781",
+      "bytes": 38720028
+    },
+    "THREE_LICENSE.txt": {
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    "build-manifest.json": {
+      "sha256": "33a2bc5c749abf87cce5e4c88856ad41e41144dd5f83673804e4add4d7387002",
+      "bytes": 4386
+    },
+    "build-metafile.json": {
+      "sha256": "96bcf54f05e3d34ec4f9ab91a9a3b16bda8ad77f7a0d95388061ab7a537b4f28",
+      "bytes": 70581
+    },
+    "game.js": {
+      "sha256": "a3e3dd5418547dd7afed25700cc9fc2c8eeb0e16b0a79e5655e180e0dcdf03a5",
+      "bytes": 38688493
+    },
+    "game.js.LEGAL.txt": {
+      "sha256": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
+      "bytes": 188
+    },
+    "index.html": {
+      "sha256": "18bbf82e57ad1848838961f472c1d643f7148c62363fd0f91fd5281abe191991",
+      "bytes": 3434
+    },
+    "style.css": {
+      "sha256": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "bytes": 28174
+    }
+  }
+}

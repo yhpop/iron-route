@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-31T15:56:10.905095+00:00",
+  "base": "917d3cbd8475a29e354f49af1a3c11e42b4d8d30c01896c5c06209b7c1e51c19",
+  "head": "452dec8b3e6ed8c85b3b85ca15fc072e73730e7fe3fe2689016d7ff09ccdbc03",
+  "sourceFilesAndMembershipVerified": 397,
+  "e2EvidenceFilesVerified": 69,
+  "packageSHA256": "c8cc5e449e1ede1c541682d5b6ece038ceb003461fa785b0e9ab3a74f2a65fdc",
+  "reportSHA256": "f869b933d2e90a0f1d3063e514cc9bf832ef1f86273bc9976aad6031513f8284",
+  "sourceDiffSHA256": "09c6dd7906d380c4b1cbdcbce99f025167f49f4ca0f83ee806e6f4ede773d802",
+  "delta": {
+    "work/src/main.js": {
+      "before": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+      "after": "11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5"
+    },
+    "work/src/campaign-ui.js": {
+      "before": "ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f",
+      "after": "394761e2d1fa51f57fb07fa3d0d2176b376d3d681b24fb0ed391b4aa270f8567"
+    },
+    "work/tests/loading-extraction-entry.test.mjs": {
+      "before": null,
+      "after": "de627494c94fee8119e126f1ddcd691e3e9119b2f8ad3c4d8f46e2834d0c6b0d"
+    },
+    "work/tests/sweep-acceleration-entry.test.mjs": {
+      "before": "47894f1592518cb10d32423067bcd5f30006b83341bc3c42d77fc91e0311a57c",
+      "after": "7c4e1b03562a3457827f0986c69eb68d3995090a2deda712cfc1b3f241af84ac"
+    },
+    "work/tests/battlefront-depot-scope.test.mjs": {
+      "before": "93b9781e22e8e2f0d0fb66f4e19b71177ff4ee7a707a979e25e5849fb1320748",
+      "after": "80f7f0bdcbcc75a44f58c42fd5022b51f7414f281b1d312d24949173a0770b1b"
+    },
+    "work/locales/en-ui.json": {
+      "before": "91a1095c101bfb4973a02df426617af6fa2a3fc33891e29e90cc93a88325b5ce",
+      "after": "c58168fd5a0b8562a3d9c64d03e4abd2435fcf66354dbc96d2fe56b56759147e"
+    },
+    "work/locales/en-missions.json": {
+      "before": "56bc120c55d4204505555b49b1d54d6d1f1089db5e63b76abbe8e925ddd202f4",
+      "after": "a69ca39fcbf0612e4c74e778f5757a844524549c7a650171da0bade8dd40a965"
+    },
+    "work/build.mjs": {
+      "before": null,
+      "after": "1e1a1db662fd79290e30b9eb555c44a6e4a1b50145ab8f875e1c82b2e478b177"
+    },
+    "work/build-english.mjs": {
+      "before": null,
+      "after": "223692868fed507039151aa44235c9c5d3bd513599d3865dcd1cf2e854dc39cd"
+    },
+    "work/package.json": {
+      "before": null,
+      "after": "f745dba4afa276901d1db2357b5ca2fd0fc9c8b2b8720dd88bea933864134c8c"
+    },
+    "work/package-lock.json": {
+      "before": null,
+      "after": "6aae30bd9134d981fc4f2c5a7d2dda9284b2f796628abde1617cee8f1b40aee2"
+    },
+    "work/index.html": {
+      "before": null,
+      "after": "2f42dbe6626069160285e5f7fdef33ca1ef962b8a161b3311434ab68db0584c4"
+    }
+  }
+}

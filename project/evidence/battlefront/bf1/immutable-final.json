@@ -1,0 +1,34 @@
+{
+  "baselineFileCount": 709,
+  "changedPreexisting": [],
+  "all709ByteExact": true,
+  "ownedFiles": {
+    "work/qa/battlefront-depot/covered-fresh-final-v03-result.json.gz": "5a470daefbd47a83e045f772fe3bb4f3c568e1ab6bb0c4e2c66bdf21b810bb08",
+    "work/qa/battlefront-depot/direct-fresh-final-v03-result.json.gz": "0d76b716b131103839fd8e9fcfb61de5aa74bc58cb44e6d0bbbdf1061dbc1361",
+    "work/qa/battlefront-depot/v01-opening-result.json.gz": "6c454c1509ba6ce827f8ae28ca9101aa7d8a1380626cc6f58e02eb289dd3b614",
+    "work/qa/battlefront-depot/v01-opening-summary.json": "f07af3533521f523eed11e3c2c4fdc3b98d25373599be8a9cdddc92979d04063",
+    "work/qa/battlefront-depot/v02-crossfire-result.json.gz": "2b6f1204514d2aafbf4ce102271d3f1cc9fa0e336c71f4ee0a7e0fb23610a51f",
+    "work/qa/battlefront-depot/v02-crossfire-summary.json": "85d49ea5728fc692f92d025fd5b320d06db138be48f4c5f75dbd8936c7b777e7",
+    "work/qa/battlefront-depot/v02-opening-result.json.gz": "dadd351a9baae497d4133eb3c112718bad601f3768053b5fdc42e31b3a5de147",
+    "work/qa/battlefront-depot/v02-opening-summary.json": "709f1bbd2c8b8ce825f5ff51d2faa4eb87d8e1d986bf44f27663292f60200120",
+    "work/qa/battlefront-depot/v03-cover-retreat-01-result.json.gz": "546f3665e6e8a567bc30f8948034ff785f89078355ae20899feff711aeec56dc",
+    "work/qa/battlefront-depot/v03-cover-retreat-01-summary.json": "0c5927e15ae5ff2a10c064078e256157828eb37ec1ebb24a1356495834ba7e82",
+    "work/qa/battlefront-depot/v03-covered-old-controls-result.json.gz": "9ba44721f87f88a2a8552fcaf1095c905e01d5ee52446d24893f4dc638b1ff59",
+    "work/qa/battlefront-depot/v03-covered-old-controls-summary.json": "b9d93f664839af289617c780130498358ced98e09c3c68b1078e45e7822636e2",
+    "work/qa/battlefront-depot/v03-crossfire-result.json.gz": "d75f4574826cdc3b10d6a1704ae4dc0b2bf9309462e2e2accae46c15fc6c7180",
+    "work/qa/battlefront-depot/v03-crossfire-summary.json": "fc047d0ad86c055c322800de6444b2f03b51f9ba0571e4ecfe5d4b3f76315b54",
+    "work/qa/battlefront-depot/v03-direct-pilot-01-result.json.gz": "ae712ada0fcb0fbfe25ee3752750c7ca2c510f3f559ee9132129ebfb7d9eca02",
+    "work/qa/battlefront-depot/v03-direct-pilot-01-summary.json": "9fb9c5e1e6b336ac90ccc832cff6979005dcac1da23ce640e01de1f9a1f8031e",
+    "work/scripts/battlefront-analyze.mjs": "4075e3782df2756d8c2ea203d9fc0428db8cb8e68652497c415352d29b61e02c",
+    "work/scripts/battlefront-inspect.mjs": "4831f76a08c32e5663f5b08c1dececb6d45f1e6f7dbe1de8ee73bde2807186bc",
+    "work/scripts/battlefront-replay.mjs": "8ea10bd7bbbab432941829a7fb45b60ffd737324861af8f1c4b50e34714a87fb",
+    "work/src/battlefront-depot-front.js": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+    "work/tests/battlefront-depot-front.test.mjs": "9a3704f24fc7694d2f15dfae6fc19f8257c6cb75b0ede823e9337eb0d5c66c19",
+    "work/tests/battlefront-depot-replays.test.mjs": "8059a8908ab9f268a508b3c12f6a249c116b0e4ed14cf491171d3c243df67106",
+    "work/tests/battlefront-depot-world.test.mjs": "e4cb016d1cf2e61115dc48831052e8cb6e840a9a46847500cb3b2a17e46ec9b7"
+  },
+  "acceptedEvidenceExists": {
+    "evidence/battlefront/bf1/route-qa/sandfalcon-direct-result.json.gz": true,
+    "evidence/battlefront/bf1/route-qa/sandfalcon-covered-result.json.gz": true
+  }
+}

@@ -1,0 +1,9 @@
+# Grounded candidate private delivery plan — not executed
+
+After G2 final suite and independent task/strongest whole review only, freeze new `iron-route-grounded-freight-yard-device-candidate.zip` and `iron-route-grounded-freight-yard-source-candidate.zip`. Never overwrite any older archive or Library file. One-shot process-group-bounded registration; inspect outcome before any retry.
+
+Source: all current runtime assets/source/tests/scripts/fixtures, exact final CN/EN outputs, inherited evidence plus new grounded evidence/docs/credits, new primary START_HERE_GROUNDED note and complete entry manifest. Exclude node_modules, Git, pycache, temporary replay mirror, archives/status outputs. Preserve inherited documents as historical rather than rewriting old results. Prior upstream/DCC collections remain in the unchanged predecessor source Library package; no claim every original is copied.
+
+Device: exact final standalone CN/EN HTML, locale launchers `Open_Grounded_Freight_Yard_CN.html` and EN using unchanged `?sortie=battlefront-depot`, licenses/credits, current pending Mac checklist, final review/disposition and exact identity manifest. No new build or source edit during packaging. No new actors, no performance-fix or device-acceptance claim.
+
+Before and after, verify reviewed source head, scoped/full-suite terminal records and build identities, both retained 31-key physical closures and historical replay artifacts, all frozen predecessor archive hashes. Verify every new archive entry SHA/CRC, safe unique names, exact standalone bytes, source manifest and actual whole-review bytes. Then only authorized private Library create device-first/source-second via official prepared helper; verify returned IDs/version and pinned remote SHA/size. Never replace files, expose signed URLs, publish publicly or upload Mac raw records.

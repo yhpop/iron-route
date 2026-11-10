@@ -1,0 +1,388 @@
+TAP version 13
+# Subtest: changed file bytes fail the fixed SHA-256 check
+ok 1 - changed file bytes fail the fixed SHA-256 check
+  ---
+  duration_ms: 4.81038
+  type: 'test'
+  ...
+# Subtest: matching file bytes are returned without normalization
+ok 2 - matching file bytes are returned without normalization
+  ---
+  duration_ms: 1.08502
+  type: 'test'
+  ...
+# Subtest: manifest paths cannot escape their declared root
+ok 3 - manifest paths cannot escape their declared root
+  ---
+  duration_ms: 0.185689
+  type: 'test'
+  ...
+# Subtest: changed source or dependency fails before simulation
+ok 4 - changed source or dependency fails before simulation
+  ---
+  duration_ms: 0.71869
+  type: 'test'
+  ...
+# Subtest: unsupported Node version fails rather than silently normalizing V8 evidence
+ok 5 - unsupported Node version fails rather than silently normalizing V8 evidence
+  ---
+  duration_ms: 0.208123
+  type: 'test'
+  ...
+# Subtest: valid original partial-prefix input is accepted
+ok 6 - valid original partial-prefix input is accepted
+  ---
+  duration_ms: 23.402323
+  type: 'test'
+  ...
+# Subtest: rejects zero run length
+ok 7 - rejects zero run length
+  ---
+  duration_ms: 9.749062
+  type: 'test'
+  ...
+# Subtest: rejects fractional run length
+ok 8 - rejects fractional run length
+  ---
+  duration_ms: 9.050243
+  type: 'test'
+  ...
+# Subtest: rejects excessive run length
+ok 9 - rejects excessive run length
+  ---
+  duration_ms: 10.602845
+  type: 'test'
+  ...
+# Subtest: rejects missing declared input
+ok 10 - rejects missing declared input
+  ---
+  duration_ms: 25.062749
+  type: 'test'
+  ...
+# Subtest: rejects saved-state injection
+ok 11 - rejects saved-state injection
+  ---
+  duration_ms: 8.139824
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite steering
+ok 12 - rejects nonfinite steering
+  ---
+  duration_ms: 10.754804
+  type: 'test'
+  ...
+# Subtest: rejects out of range throttle
+ok 13 - rejects out of range throttle
+  ---
+  duration_ms: 14.206382
+  type: 'test'
+  ...
+# Subtest: rejects non-boolean fire
+ok 14 - rejects non-boolean fire
+  ---
+  duration_ms: 16.928873
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite aim
+ok 15 - rejects nonfinite aim
+  ---
+  duration_ms: 14.378081
+  type: 'test'
+  ...
+# Subtest: rejects hidden aim property
+ok 16 - rejects hidden aim property
+  ---
+  duration_ms: 15.035378
+  type: 'test'
+  ...
+# Subtest: rejects unknown convoy command
+ok 17 - rejects unknown convoy command
+  ---
+  duration_ms: 16.395682
+  type: 'test'
+  ...
+# Subtest: rejects unknown governor
+ok 18 - rejects unknown governor
+  ---
+  duration_ms: 17.240723
+  type: 'test'
+  ...
+# Subtest: rejects changed time step
+ok 19 - rejects changed time step
+  ---
+  duration_ms: 14.507454
+  type: 'test'
+  ...
+# Subtest: rejects wrong vehicle
+ok 20 - rejects wrong vehicle
+  ---
+  duration_ms: 14.719522
+  type: 'test'
+  ...
+# Subtest: rejects misreported old prefix
+ok 21 - rejects misreported old prefix
+  ---
+  duration_ms: 36.287149
+  type: 'test'
+  ...
+# Subtest: rejects false full historical replay claim
+ok 22 - rejects false full historical replay claim
+  ---
+  duration_ms: 36.41534
+  type: 'test'
+  ...
+# Subtest: rejects second start or resurrection
+ok 23 - rejects second start or resurrection
+  ---
+  duration_ms: 16.414551
+  type: 'test'
+  ...
+# Subtest: rejects changed historical input
+ok 24 - rejects changed historical input
+  ---
+  duration_ms: 28.920417
+  type: 'test'
+  ...
+# Subtest: real stored victory and complete ordered events satisfy escort contract
+ok 25 - real stored victory and complete ordered events satisfy escort contract
+  ---
+  duration_ms: 0.438459
+  type: 'test'
+  ...
+# Subtest: rejects false victory
+ok 26 - rejects false victory
+  ---
+  duration_ms: 1.283078
+  type: 'test'
+  ...
+# Subtest: rejects dead player
+ok 27 - rejects dead player
+  ---
+  duration_ms: 1.056217
+  type: 'test'
+  ...
+# Subtest: rejects dead escort
+ok 28 - rejects dead escort
+  ---
+  duration_ms: 1.077249
+  type: 'test'
+  ...
+# Subtest: rejects false arrival flag
+ok 29 - rejects false arrival flag
+  ---
+  duration_ms: 1.162717
+  type: 'test'
+  ...
+# Subtest: rejects teleported destination claim
+ok 30 - rejects teleported destination claim
+  ---
+  duration_ms: 1.29715
+  type: 'test'
+  ...
+# Subtest: rejects missing physical arrival event
+ok 31 - rejects missing physical arrival event
+  ---
+  duration_ms: 1.110529
+  type: 'test'
+  ...
+# Subtest: rejects premature mission completion
+ok 32 - rejects premature mission completion
+  ---
+  duration_ms: 1.119002
+  type: 'test'
+  ...
+# Subtest: rejects wrong route
+ok 33 - rejects wrong route
+  ---
+  duration_ms: 1.115607
+  type: 'test'
+  ...
+# Subtest: JSON zero-sign loss is not accepted as lossless event equality
+ok 34 - JSON zero-sign loss is not accepted as lossless event equality
+  ---
+  duration_ms: 9.161099
+  type: 'test'
+  ...
+# Subtest: full final-state drift fails even if victory and HP still match
+ok 35 - full final-state drift fails even if victory and HP still match
+  ---
+  duration_ms: 8.005521
+  type: 'test'
+  ...
+# Subtest: same-tick shot and physical impact are valid even without a live end-frame projectile
+ok 36 - same-tick shot and physical impact are valid even without a live end-frame projectile
+  ---
+  duration_ms: 0.60505
+  type: 'test'
+  ...
+# Subtest: shot without a projectile or physical same-tick impact fails
+ok 37 - shot without a projectile or physical same-tick impact fails
+  ---
+  duration_ms: 0.260201
+  type: 'test'
+  ...
+# Subtest: friendly damage fails even with a valid projectile chain
+ok 38 - friendly damage fails even with a valid projectile chain
+  ---
+  duration_ms: 0.269986
+  type: 'test'
+  ...
+# Subtest: damage without preceding physical impact fails
+ok 39 - damage without preceding physical impact fails
+  ---
+  duration_ms: 0.328443
+  type: 'test'
+  ...
+# Subtest: duplicate shot projectile IDs fail
+ok 40 - duplicate shot projectile IDs fail
+  ---
+  duration_ms: 0.221342
+  type: 'test'
+  ...
+# Subtest: duplicate event IDs fail
+ok 41 - duplicate event IDs fail
+  ---
+  duration_ms: 0.243356
+  type: 'test'
+  ...
+# Subtest: impact and damage before the shot in the same tick fail causal ordering
+ok 42 - impact and damage before the shot in the same tick fail causal ordering
+  ---
+  duration_ms: 0.261864
+  type: 'test'
+  ...
+# Subtest: one projectile cannot cause two physical impact and damage chains
+ok 43 - one projectile cannot cause two physical impact and damage chains
+  ---
+  duration_ms: 0.36559
+  type: 'test'
+  ...
+# Subtest: live projectile with wrong owner cannot satisfy shot creation
+not ok 44 - live projectile with wrong owner cannot satisfy shot creation
+  ---
+  duration_ms: 0.503006
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:119:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:120:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: arrival event must agree with the supply position in its actual event frame
+not ok 45 - arrival event must agree with the supply position in its actual event frame
+  ---
+  duration_ms: 0.781154
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:122:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:126:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: arrival event must not claim a still-moving unarrived supply
+not ok 46 - arrival event must not claim a still-moving unarrived supply
+  ---
+  duration_ms: 0.696507
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:128:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:132:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: matching known failures are reported as still failing, never as a green historical suite
+ok 47 - matching known failures are reported as still failing, never as a green historical suite
+  ---
+  duration_ms: 1.777251
+  type: 'test'
+  ...
+# Subtest: added failure and missing historical failure are both surfaced
+ok 48 - added failure and missing historical failure are both surfaced
+  ---
+  duration_ms: 0.267342
+  type: 'test'
+  ...
+# Subtest: incomplete log cannot be mistaken for zero failures
+ok 49 - incomplete log cannot be mistaken for zero failures
+  ---
+  duration_ms: 0.734474
+  type: 'test'
+  ...
+# Subtest: TAP summaries and duplicate detailed failures retain exact counts
+ok 50 - TAP summaries and duplicate detailed failures retain exact counts
+  ---
+  duration_ms: 0.199039
+  type: 'test'
+  ...
+# Subtest: a zero exit cannot turn recorded failures into a passing suite
+ok 51 - a zero exit cannot turn recorded failures into a passing suite
+  ---
+  duration_ms: 0.351879
+  type: 'test'
+  ...
+# Subtest: unexpected process termination cannot attest the exact recorded failing baseline
+not ok 52 - unexpected process termination cannot attest the exact recorded failing baseline
+  ---
+  duration_ms: 0.589596
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/legacy.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/legacy.test.mjs:28:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..52
+# tests 52
+# suites 0
+# pass 48
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 495.976315

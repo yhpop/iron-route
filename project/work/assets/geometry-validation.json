@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "assetSha256": "ab3c8c530fc120671da0381b0a481a23014d685a36565de25366153ce98b3eb7",
+  "triangles": 49748,
+  "embeddedAtlasHashes": [
+    "02b247f05f1b6fdd002e67d3a78dc1bdbfccc9fe3fdab4f598d6717beb697549",
+    "3c6a318f5ef88a4c3d3f4c472b9293c928544023fefa8dc9ee48058298af853b"
+  ],
+  "originalPaintUvIdentity": true,
+  "maxNeutralVertexErrorRawByMaterial": {
+    "Tank_V5_Baked_Paint": 7.152557373046875e-07,
+    "Tank_V5_exposed_armor_edge": 7.152557373046875e-07,
+    "Tank_V5_oiled_steel": 7.152557373046875e-07,
+    "Tank_V5_optical_glass": 7.152557373046875e-07,
+    "Tank_V5_scorched_interior": 6.705522537231445e-07,
+    "Tank_V5_weathered_equipment_canvas": 6.705522537231445e-07,
+    "Tank_V5_wheel_tire_rubber": 5.643043285985527e-07
+  },
+  "maxCanonicalTrackErrorRaw": 6.638467311859131e-06,
+  "maxCanonicalWheelGuideErrorRaw": 0,
+  "neutralBoundsRaw": [
+    [
+      -2.0875000953674316,
+      0.0,
+      -6.5173845291137695
+    ],
+    [
+      2.087501049041748,
+      3.9231255054473877,
+      3.0974808229488353
+    ]
+  ],
+  "limitations": [
+    "CPU binary geometry and texture identity checks only; no browser, GPU or device test."
+  ]
+}

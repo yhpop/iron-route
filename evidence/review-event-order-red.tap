@@ -1,0 +1,298 @@
+TAP version 13
+# Subtest: changed file bytes fail the fixed SHA-256 check
+ok 1 - changed file bytes fail the fixed SHA-256 check
+  ---
+  duration_ms: 7.03901
+  type: 'test'
+  ...
+# Subtest: matching file bytes are returned without normalization
+ok 2 - matching file bytes are returned without normalization
+  ---
+  duration_ms: 1.63706
+  type: 'test'
+  ...
+# Subtest: manifest paths cannot escape their declared root
+ok 3 - manifest paths cannot escape their declared root
+  ---
+  duration_ms: 0.352309
+  type: 'test'
+  ...
+# Subtest: changed source or dependency fails before simulation
+ok 4 - changed source or dependency fails before simulation
+  ---
+  duration_ms: 1.054035
+  type: 'test'
+  ...
+# Subtest: unsupported Node version fails rather than silently normalizing V8 evidence
+ok 5 - unsupported Node version fails rather than silently normalizing V8 evidence
+  ---
+  duration_ms: 0.339501
+  type: 'test'
+  ...
+# Subtest: valid original partial-prefix input is accepted
+ok 6 - valid original partial-prefix input is accepted
+  ---
+  duration_ms: 35.22278
+  type: 'test'
+  ...
+# Subtest: rejects zero run length
+ok 7 - rejects zero run length
+  ---
+  duration_ms: 16.980953
+  type: 'test'
+  ...
+# Subtest: rejects fractional run length
+ok 8 - rejects fractional run length
+  ---
+  duration_ms: 14.241199
+  type: 'test'
+  ...
+# Subtest: rejects excessive run length
+ok 9 - rejects excessive run length
+  ---
+  duration_ms: 10.448214
+  type: 'test'
+  ...
+# Subtest: rejects missing declared input
+ok 10 - rejects missing declared input
+  ---
+  duration_ms: 39.279137
+  type: 'test'
+  ...
+# Subtest: rejects saved-state injection
+ok 11 - rejects saved-state injection
+  ---
+  duration_ms: 9.675663
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite steering
+ok 12 - rejects nonfinite steering
+  ---
+  duration_ms: 10.05978
+  type: 'test'
+  ...
+# Subtest: rejects out of range throttle
+ok 13 - rejects out of range throttle
+  ---
+  duration_ms: 8.983432
+  type: 'test'
+  ...
+# Subtest: rejects non-boolean fire
+ok 14 - rejects non-boolean fire
+  ---
+  duration_ms: 8.726916
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite aim
+ok 15 - rejects nonfinite aim
+  ---
+  duration_ms: 9.979379
+  type: 'test'
+  ...
+# Subtest: rejects hidden aim property
+ok 16 - rejects hidden aim property
+  ---
+  duration_ms: 9.046487
+  type: 'test'
+  ...
+# Subtest: rejects unknown convoy command
+ok 17 - rejects unknown convoy command
+  ---
+  duration_ms: 9.967331
+  type: 'test'
+  ...
+# Subtest: rejects unknown governor
+ok 18 - rejects unknown governor
+  ---
+  duration_ms: 8.809321
+  type: 'test'
+  ...
+# Subtest: rejects changed time step
+ok 19 - rejects changed time step
+  ---
+  duration_ms: 8.464492
+  type: 'test'
+  ...
+# Subtest: rejects wrong vehicle
+ok 20 - rejects wrong vehicle
+  ---
+  duration_ms: 8.495519
+  type: 'test'
+  ...
+# Subtest: rejects misreported old prefix
+ok 21 - rejects misreported old prefix
+  ---
+  duration_ms: 21.952214
+  type: 'test'
+  ...
+# Subtest: rejects false full historical replay claim
+ok 22 - rejects false full historical replay claim
+  ---
+  duration_ms: 20.623447
+  type: 'test'
+  ...
+# Subtest: rejects second start or resurrection
+ok 23 - rejects second start or resurrection
+  ---
+  duration_ms: 13.911039
+  type: 'test'
+  ...
+# Subtest: rejects changed historical input
+ok 24 - rejects changed historical input
+  ---
+  duration_ms: 18.969814
+  type: 'test'
+  ...
+# Subtest: real stored victory and complete ordered events satisfy escort contract
+ok 25 - real stored victory and complete ordered events satisfy escort contract
+  ---
+  duration_ms: 0.283225
+  type: 'test'
+  ...
+# Subtest: rejects false victory
+ok 26 - rejects false victory
+  ---
+  duration_ms: 0.81855
+  type: 'test'
+  ...
+# Subtest: rejects dead player
+ok 27 - rejects dead player
+  ---
+  duration_ms: 0.573532
+  type: 'test'
+  ...
+# Subtest: rejects dead escort
+ok 28 - rejects dead escort
+  ---
+  duration_ms: 0.958921
+  type: 'test'
+  ...
+# Subtest: rejects false arrival flag
+ok 29 - rejects false arrival flag
+  ---
+  duration_ms: 0.663938
+  type: 'test'
+  ...
+# Subtest: rejects teleported destination claim
+ok 30 - rejects teleported destination claim
+  ---
+  duration_ms: 1.147795
+  type: 'test'
+  ...
+# Subtest: rejects missing physical arrival event
+ok 31 - rejects missing physical arrival event
+  ---
+  duration_ms: 0.772131
+  type: 'test'
+  ...
+# Subtest: rejects premature mission completion
+ok 32 - rejects premature mission completion
+  ---
+  duration_ms: 0.732841
+  type: 'test'
+  ...
+# Subtest: rejects wrong route
+ok 33 - rejects wrong route
+  ---
+  duration_ms: 0.898791
+  type: 'test'
+  ...
+# Subtest: JSON zero-sign loss is not accepted as lossless event equality
+ok 34 - JSON zero-sign loss is not accepted as lossless event equality
+  ---
+  duration_ms: 7.527991
+  type: 'test'
+  ...
+# Subtest: full final-state drift fails even if victory and HP still match
+ok 35 - full final-state drift fails even if victory and HP still match
+  ---
+  duration_ms: 5.718245
+  type: 'test'
+  ...
+# Subtest: same-tick shot and physical impact are valid even without a live end-frame projectile
+ok 36 - same-tick shot and physical impact are valid even without a live end-frame projectile
+  ---
+  duration_ms: 0.425239
+  type: 'test'
+  ...
+# Subtest: shot without a projectile or physical same-tick impact fails
+ok 37 - shot without a projectile or physical same-tick impact fails
+  ---
+  duration_ms: 0.289616
+  type: 'test'
+  ...
+# Subtest: friendly damage fails even with a valid projectile chain
+ok 38 - friendly damage fails even with a valid projectile chain
+  ---
+  duration_ms: 0.173321
+  type: 'test'
+  ...
+# Subtest: damage without preceding physical impact fails
+ok 39 - damage without preceding physical impact fails
+  ---
+  duration_ms: 0.231288
+  type: 'test'
+  ...
+# Subtest: duplicate shot projectile IDs fail
+ok 40 - duplicate shot projectile IDs fail
+  ---
+  duration_ms: 0.190587
+  type: 'test'
+  ...
+# Subtest: duplicate event IDs fail
+ok 41 - duplicate event IDs fail
+  ---
+  duration_ms: 0.162784
+  type: 'test'
+  ...
+# Subtest: impact and damage before the shot in the same tick fail causal ordering
+not ok 42 - impact and damage before the shot in the same tick fail causal ordering
+  ---
+  duration_ms: 0.371509
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:113:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:114:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: one projectile cannot cause two physical impact and damage chains
+not ok 43 - one projectile cannot cause two physical impact and damage chains
+  ---
+  duration_ms: 0.174773
+  type: 'test'
+  location: '/workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:116:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:117:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 41
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 468.47473

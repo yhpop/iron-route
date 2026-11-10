@@ -1,0 +1,61 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: ENTIRE JSON evidence must exactly reproduce
++ actual - expected
+
+  {
+    events: [
+      {
+        normal: {
++         x: -0,
+-         x: 0,
+          y: 1,
++         z: -0
+-         z: 0
+        }
+      }
+    ],
+    finalHash: 'unchanged',
+    finalState: {
+      phase: 'won',
+      tank: {
++       yaw: -0
+-       yaw: 0
+      }
+    },
+    runs: [
+      {
+        input: {
+
+    at assertFullEvidenceExact (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/qa/ruined-depot/full-evidence-json.mjs:2:63)
+    at file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/qa/ruined-depot/json-evidence-comparison-regression.mjs:4:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: {
+    spec: { id: 'mission-9070' },
+    sourceSnapshot: { all: 'retained' },
+    sourceHashes: { all: 'abc' },
+    runs: [ { n: 1, input: { start: true } } ],
+    events: [ { normal: { x: -0, y: 1, z: -0 } } ],
+    finalState: { tank: { yaw: -0 }, phase: 'won' },
+    finalHash: 'unchanged'
+  },
+  expected: {
+    spec: { id: 'mission-9070' },
+    sourceSnapshot: { all: 'retained' },
+    sourceHashes: { all: 'abc' },
+    runs: [ { n: 1, input: { start: true } } ],
+    events: [ { normal: { x: 0, y: 1, z: 0 } } ],
+    finalState: { tank: { yaw: 0 }, phase: 'won' },
+    finalHash: 'unchanged'
+  },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

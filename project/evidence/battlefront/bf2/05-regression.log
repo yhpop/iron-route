@@ -1,0 +1,67 @@
+START 2026-10-31T12:02:49.153041+00:00
+COMMAND ["node", "--test", "--test-concurrency=1", "tests/battlefront-depot-scope.test.mjs", "tests/ruined-depot-runtime-view.test.mjs", "tests/ruined-depot-entry.test.mjs", "tests/scanned-cover-entry.test.mjs", "tests/player-occlusion.test.mjs", "tests/v4-tiny-viewport.test.mjs", "tests/sweep-acceleration.test.mjs"]
+CAP_SECONDS 120
+✔ all BF2 base work outside exact authorized presentation/localization/build-test files remains byte-exact including BF1 gameplay and raw (455.114626ms)
+✔ cutaway clones shared materials then restores when clear (12.609903ms)
+✔ dispose restores arrays and can repeat; hidden buildings do not fade (2.608292ms)
+✔ non-solid entities remain opaque (0.900626ms)
+✔ actual main resolves ruined-depot, new shared field/exact world, lighter scorched view, independent app-owned libraries (616.901106ms)
+✔ new featured card selects real mission from prior campaign and reloadable URL; optional saves untouched (340.746628ms)
+✔ old defaults, V4 and scan startup never request or decorate ruins (917.072732ms)
+✔ ruin independently gates new start/resume/input (340.253696ms)
+✔ scan independently gates new start/resume/input (318.704709ms)
+✔ ruin Retry clears 1 rejection(s), success reused without new load (330.480718ms)
+✔ ruin Retry clears 2 rejection(s), success reused without new load (421.366426ms)
+✔ pending multiple Retry shares one ruin load, only latest world decorates (991.164947ms)
+✔ switch away and return before shared ruin completion decorates only latest view (390.474815ms)
+✔ failed-retry pending selection blocks stale decoration and owns late release once (430.383634ms)
+✔ failed-retry pending dispose blocks stale decoration and owns late release once (402.846581ms)
+✔ late initial library after app teardown is disposed exactly once and never decorated (388.512059ms)
+✔ adapter failure fails closed, retains successful library for a genuine retry (391.854612ms)
+✔ late campaign-ready creates proxies/cosmetics before real ruin adapter hides them (488.413417ms)
+✔ actual teardown callbacks order occlusion before ruin before campaign view before libraries (539.989621ms)
+✔ lazy GPU boundary imports only embedded new asset; credits disclose separate sources and authored maps (0.726499ms)
+✔ cached success survives switching missions and return without a duplicate decode (435.761955ms)
+✔ translated new production source has exact English title and no Han; real English menu selects it with same input gate (1022.643793ms)
+✔ source remedy is new-mission-only: old V4 and scan still execute their original floating-label projector (938.904397ms)
+✔ all five original chassis choices remain available in new briefing and keep cached app art (367.719789ms)
+✔ real campaign owner resets 61 proxies, then ruin update suppresses them across briefing, playing, pause and resume frames (455.87479ms)
+✔ runtime suppression restores captured mixed visibility on retry/dispose, is inert after dispose and never frees borrowed resources (371.005009ms)
+✔ old scanned mission real campaign owner keeps original solid and cosmetic visibility without new adapter (253.440046ms)
+✔ actual entry opts into scanned mission; artwork installed before ready, retry reuses library, teardown owns it (632.217848ms)
+✔ old default and V4 startup never request scan library (704.030807ms)
+✔ pending scan load gates start and canceled application disposes late library without decorating (312.182773ms)
+✔ scan load error fails closed and never enables start (331.271007ms)
+✔ production lazy boundary dynamically imports embedded scan; decorator disposed ahead of wall owner (1.94718ms)
+✔ English inventory covers opt-in title without changing source Chinese (4.674639ms)
+✔ switching away during pending scan never decorates replacement mission (326.877476ms)
+✔ actual main retries 1 failed scan load(s), reaches ready and reuses success (367.04532ms)
+✔ actual main retries 2 failed scan load(s), reaches ready and reuses success (323.503513ms)
+✔ Retry while scan is pending shares one load and only latest selection decorates (335.566541ms)
+✔ failed-load retry pending dispose race cannot decorate stale world (329.388718ms)
+✔ failed-load retry pending selection race cannot decorate stale world (319.831211ms)
+✔ accelerated public query objects equal original for adversarial static shapes and articulated motion (683.204922ms)
+ℹ whole public outcomes compared: 1858; static scenarios: 59
+✔ malformed numeric and call behavior is not broadened by bounds validation (5.119597ms)
+✔ conservative bounds keep SAT threshold corner cases and fail open outside numerical domain (0.995346ms)
+✔ finite non-unit rotation matrices fail open even when determinant and inverse checks pass (0.56083ms)
+✔ whole sweep returns match on both sides of rotated SAT cutoff and at large finite query coordinates (18.561764ms)
+ℹ additional threshold/large finite whole outcomes: 75
+✔ V4 tags UI and document for scoped control layout and clears it on legacy selection/disposal (73.538045ms)
+✔ tiny tier bounds and scrolls full status rather than obscuring or hiding action controls (0.56202ms)
+✔ source-budget rectangles keep all tiny controls separate from HUD/nav and one another with safe areas (2.536454ms)
+✔ long support/recovery CN and EN text remains in actual HUD DOM with accessible full meaning (38.86692ms)
+✔ V4 world route labels also avoid the convoy control relocated outside HUD band (24.032784ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18145.218058
+
+EXIT 0
+SECONDS 18.273618310995516
+CODE_DRIFT []
+END 2026-10-31T12:03:07.465520+00:00

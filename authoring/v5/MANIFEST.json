@@ -1,0 +1,241 @@
+{
+  "format_version": 1,
+  "created_utc": "2026-10-05T15:38:41.494721+00:00",
+  "files": [
+    {
+      "path": "Tank_City_V5_Production.blend",
+      "bytes": 36744052,
+      "sha256": "8fc13fe7b7e07a1a8147967d8bd605d046c011bae7d9d0441ef22a46fdcf97eb"
+    },
+    {
+      "path": "production_config.json",
+      "bytes": 818,
+      "sha256": "cdce1d273fd2e5e9c49ba8794b2d6e8bc6357c57571c21c63ea4cdba5f076b0e"
+    },
+    {
+      "path": "source/animation_and_fx.py",
+      "bytes": 10547,
+      "sha256": "14d9b610464e3118d7c0b439d3fd6312a293c93af51baafaf552a9c0a521bda8"
+    },
+    {
+      "path": "source/apply_scanned_surfaces.py",
+      "bytes": 4682,
+      "sha256": "ea19e01504fb78ab966850ec0ca5834272edd56847fec6b85b2d6850fe5d0ed5"
+    },
+    {
+      "path": "source/build_v5.py",
+      "bytes": 3329,
+      "sha256": "bc1b4dc0c7925721380da73ebce2c82189a7d3a25dea9db14c5f8627601f0eb3"
+    },
+    {
+      "path": "source/create_audio_original.py",
+      "bytes": 1530,
+      "sha256": "878342e484483d07fc44daec23896e74ada78fb17fb801cdc95d6231696104b3"
+    },
+    {
+      "path": "source/create_final_audio_v5.py",
+      "bytes": 1801,
+      "sha256": "632bcacba870033a39eec8ef1195510a9c040703c64184ea18ac96b392775775"
+    },
+    {
+      "path": "source/encode_validate_v5.py",
+      "bytes": 9378,
+      "sha256": "6f5c350fa5daa7cd8d1cdd2519c893eeb6d6e94ac4807aa78373713a07428d9a"
+    },
+    {
+      "path": "source/freeze_production_v5.py",
+      "bytes": 12034,
+      "sha256": "a8aac67d88560dccd5ad6cefa8dbb586762ad813263465c70d6a7793df7974d8"
+    },
+    {
+      "path": "source/improve_cinematography.py",
+      "bytes": 5850,
+      "sha256": "e1a95388adb60cb5d91abbb08376b66d13c1f72e76606621db9cbfcae4351e72"
+    },
+    {
+      "path": "source/improve_effects.py",
+      "bytes": 21737,
+      "sha256": "3f46636cb87ec336d099f09b922602722487a7450f27a1a796833f992081be5e"
+    },
+    {
+      "path": "source/improve_environment.py",
+      "bytes": 40395,
+      "sha256": "6fadafc0c4350251c335a8b591899f440dc3ca2a78b2539b636a12cfef28716d"
+    },
+    {
+      "path": "source/improve_hardware.py",
+      "bytes": 5882,
+      "sha256": "4924b024ce48f08009ef3b48ea1c3af825dabfe544e8bf06967936553ac6fb0f"
+    },
+    {
+      "path": "source/improve_materials.py",
+      "bytes": 15986,
+      "sha256": "313a080536639b53df4e9edb9722cb76732cfa3d6380522227d4a72b06cc5747"
+    },
+    {
+      "path": "source/improve_running_gear.py",
+      "bytes": 19311,
+      "sha256": "2b80dec2baeb0d3c42bfb1efc14c82a996155cf22a4106a097e60fd9cedda4af"
+    },
+    {
+      "path": "source/inspect_normals.py",
+      "bytes": 636,
+      "sha256": "c91b1b73bda03de79ed0c52b8420f9b1e6de634b61594b29c69291e56d60fc99"
+    },
+    {
+      "path": "source/inspect_scene.py",
+      "bytes": 850,
+      "sha256": "8177957e77e1b6d5de93fba12c4742a2b12157f9e470f65bc4cecc46d9e08a50"
+    },
+    {
+      "path": "source/materials.py",
+      "bytes": 7281,
+      "sha256": "646a03e62a7b42f8908ce66c84e130ba118a37b0c52e64aba6153aae343a5924"
+    },
+    {
+      "path": "source/rebuild_scene.py",
+      "bytes": 14974,
+      "sha256": "83acdafb922dca3b1fd8b8435fda17d9ac4fbd664dfcbd41c79db31cee3e1dd4"
+    },
+    {
+      "path": "source/rebuild_support_recovery_staged.py",
+      "bytes": 15402,
+      "sha256": "1b65f40fad1a7eb1e2deaba2d4b435922966f44a3613f2ad2fdbb5774af1d0de"
+    },
+    {
+      "path": "source/render_chunk_v5.py",
+      "bytes": 4450,
+      "sha256": "0c8e7be8ec9dbeb7b0e65fef73d4a9b40a08674bce8002b1cda422daf44ea75d"
+    },
+    {
+      "path": "source/render_common_v5.py",
+      "bytes": 9769,
+      "sha256": "82771b164dbf6578341d0915a49711018984d3b4bfd94800444c6ca9c3e9d316"
+    },
+    {
+      "path": "source/render_range_v5_recovery.py",
+      "bytes": 11060,
+      "sha256": "e4549f68ae8a9a389baaefd771b028bad11e8cd4cf480b3346c90fa49faa34d4"
+    },
+    {
+      "path": "source/render_sequence_v5.py",
+      "bytes": 16085,
+      "sha256": "3c95fbf5fb5787fe687c498f763da614088619bcc9005a7eb8a0321a4cdac496"
+    },
+    {
+      "path": "source/render_still.py",
+      "bytes": 2667,
+      "sha256": "622e519dc5e696576a8f96b366721856e7600bf84702256e981ce2dfdcc5eb0a"
+    },
+    {
+      "path": "source/run_single_probe.py",
+      "bytes": 2638,
+      "sha256": "737e3593b325f63bb9ce402efc571a0f224f922aeeea3748f1ad54357573cb04"
+    },
+    {
+      "path": "source/test_render_range_v5_recovery.py",
+      "bytes": 14568,
+      "sha256": "0f9f6522fd98f236ca31310a22cddf5f2f2527b92ddea3ad8dd6f1bd9646dd1c"
+    },
+    {
+      "path": "source/validate_scene_v5.py",
+      "bytes": 2769,
+      "sha256": "2766a2248c3fbaa51f094b1b67a5abbc41227caf1ca78eaf024c8a8735239738"
+    },
+    {
+      "path": "source/Tank_City_Final_Soundtrack.wav",
+      "bytes": 5760044,
+      "sha256": "9fefc99b5565d9c689a3b96b703564411d0e9dd1f81c5f1c89d795e6925343d6"
+    },
+    {
+      "path": "textures/damaged_concrete_floor_diff_2k.jpg",
+      "bytes": 2655011,
+      "sha256": "966eb64db1609b43689280ddaa8b7e501855faec050deb2ede0665fc97862783"
+    },
+    {
+      "path": "textures/damaged_concrete_floor_nor_gl_2k.jpg",
+      "bytes": 2572000,
+      "sha256": "2355737257e06e69e4952966f00c3667241a3eb8902e89ace66ce1441ed58a6c"
+    },
+    {
+      "path": "textures/damaged_concrete_floor_rough_2k.jpg",
+      "bytes": 2547184,
+      "sha256": "16015336fdc9b85c89ac21448782eab5f1485445234ea51794b266482fea237f"
+    },
+    {
+      "path": "textures/source_license_manifest.json",
+      "bytes": 5211,
+      "sha256": "119cd2c5a69d933fc6d5afd353a91ec03b5c3080ca3d083572ec4a0497955e9f"
+    },
+    {
+      "path": "textures/worn_asphalt_diff_2k.jpg",
+      "bytes": 3573942,
+      "sha256": "8313d3f8d25515d6ef0be59d461cdeb0feb484694eae385711ecf688c0afa4de"
+    },
+    {
+      "path": "textures/worn_asphalt_nor_gl_2k.jpg",
+      "bytes": 5863366,
+      "sha256": "114db3391e7d74c03758b06c8af2901a2c9392cf4cb37e7a8a3254a3235ce63e"
+    },
+    {
+      "path": "textures/worn_asphalt_rough_2k.jpg",
+      "bytes": 1823718,
+      "sha256": "71572c4d7f3b4f33bd45f2b25368b853101e58c85c826a7109bab851eb847a6a"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0060.png",
+      "bytes": 1268538,
+      "sha256": "0afa999afbb8d5c05e2a6c2c82fe29dd22beab7ca8c2dba8352565a975ef7cc6"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0193.png",
+      "bytes": 1054580,
+      "sha256": "34f1922e55106d8a4bb72c91884d101ecf3785a687b14416540604860a6652ed"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0324.png",
+      "bytes": 1097705,
+      "sha256": "c6af23a0474eece29c984817c53ce5caf40a564703cc33d4fd87e31c022b4437"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0445.png",
+      "bytes": 1113196,
+      "sha256": "513d2111f4c2cb345e2ffec09ab8e69fb09a62f0ff674b51fc0250d819f184d4"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0509.png",
+      "bytes": 1105443,
+      "sha256": "bae8c26b2ddbbba66c83ddcd3949d9fdf4f8e16bc749c0ad6d0b015df3812f7c"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0523.png",
+      "bytes": 1138559,
+      "sha256": "af68d5ab133d75303912e4bf4f2e14572580f3b5dbffb4e1a6e881889efac5ec"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0550.png",
+      "bytes": 1099602,
+      "sha256": "93663c7b403925f29bc77656b958682bdf9a4b36739cd97ef2ffd17b83ac35cf"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0600.png",
+      "bytes": 1090326,
+      "sha256": "355a8e0e4fe3b16391f253b1f0d7a4fadc8a125d8f8d55986631d2567fcae39f"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0660.png",
+      "bytes": 1213384,
+      "sha256": "1874472a8ed966fcd93bc522d2a89d2897a252c2786aa86ac718b7dc97eb3901"
+    },
+    {
+      "path": "review_stills/V5_Verified_frame_0720.png",
+      "bytes": 1204742,
+      "sha256": "d509e3500e6c36df6823d754da8ae7b256567655db473c1647527a6381d9573d"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 990,
+      "sha256": "c2d059e35328bec1d9abe048378c42de7da3ebebbffb62a49c712ba2baafdcb5"
+    }
+  ]
+}

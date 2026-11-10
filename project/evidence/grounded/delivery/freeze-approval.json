@@ -1,0 +1,65 @@
+{
+  "createdUTC": "2026-10-31T14:46:46.137193+00:00",
+  "privateFreezeApproved": true,
+  "requiredFindingsOpen": 0,
+  "compositeGateAccepted": true,
+  "zeroFailureFullSuiteClaim": false,
+  "wholeReviewPath": "evidence/grounded/final/whole-review.md",
+  "wholeReviewSHA256": "08b0e1dbf7c373ada7b1776e2d93915fc5531f7c283c5568cea4996bbdaa8e47",
+  "reviewHeadPath": "evidence/grounded/sdd/whole-review-head.json",
+  "reviewHeadSHA256": "2eb4e23e7822d5e972f6a41228dc02e61bfcd587a7c2bef224361f6b339be424",
+  "finalIdentitySHA256": "0591fbee040da66a5c8b513a3eac389370c64d74e38c44ddbb4594637b66e4f9",
+  "declinedItemsDisposition": [
+    {
+      "topic": "Real pixels/WebGL/decode/seams/artistic quality",
+      "decision": "Remains parent-owned actual-device gate; no source/CPU approval promoted to visual acceptance."
+    },
+    {
+      "topic": "Performance/memory/seconds scheduling",
+      "decision": "Unresolved; added draw/shadercost disclosed; no performance fix claimed."
+    },
+    {
+      "topic": "Small-screen/UI and timed-out attempts",
+      "decision": "Not executed; no retry by this task. Prior UI issues remain external acceptance."
+    },
+    {
+      "topic": "Physical contact/roof envelope/wall/projectile-ID/routes/AI",
+      "decision": "Protected sources and historical bindings unchanged; no new physical or route acceptance claimed."
+    },
+    {
+      "topic": "Moving/instanced/skinned roots, arbitrary future material/shader support",
+      "decision": "Only three actual static shipping targets supported; unsupported inputs remain outside the implemented contract."
+    },
+    {
+      "topic": "Aspect outside .25..8 or different camera",
+      "decision": "No coverage claim outside stated source envelope."
+    },
+    {
+      "topic": "Undocumented historical actions/transient edit-revert",
+      "decision": "Boundary snapshots/logs are evidence only; no omniscient history claim."
+    },
+    {
+      "topic": "Future freeze/upload/Library/device launch",
+      "decision": "Not yet executed; actual job/ZIP/remote identities required before success report."
+    },
+    {
+      "topic": "Rights/new tank/Strv",
+      "decision": "Private development only; original Vanguard rights unresolved, no new tank; Strv paused."
+    }
+  ],
+  "minorFindingDisposition": "Dense local formatting retained, no frozen candidate churn; consider separately scoped later cleanup.",
+  "executionPrecondition": {
+    "runnerPath": "evidence/grounded/delivery/run-job.py",
+    "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+    "workerPath": "evidence/grounded/delivery/freeze-worker.py",
+    "workerSHA256": "54ecbcef0bfdd5b72796ada39b7edc485dbd3babcbb3e0cae6872ab577aea2e1",
+    "deadlineSeconds": 900,
+    "processGroupTerminationRequired": true,
+    "exclusiveAttemptRequired": true
+  },
+  "noGitOrMerge": "Explicit noGit/once-only composite gate and archive workflow supersede generic branch merge/fullsuite repetition. Preserve evidence workspace and prior versions.",
+  "deviceAcceptance": false,
+  "performanceFixProved": false,
+  "publicReleaseApproved": false,
+  "uploadAttempted": false
+}

@@ -1,0 +1,29 @@
+Sat Oct 31 11:20:39 UTC 2026
+✔ independent playable battlefront mission builder exists (108.634152ms)
+✖ new battlefield combatants and their full conservative patrol envelopes avoid convoy corridors and route-choice zones (28.082604ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 267.015697
+
+✖ failing tests:
+
+test at work/tests/battlefront-depot-front.test.mjs:5:1
+✖ new battlefield combatants and their full conservative patrol envelopes avoid convoy corridors and route-choice zones (28.082604ms)
+  AssertionError [ERR_ASSERTION]: allied-support choose-west: combined rig envelope
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-front.test.mjs:5:1218)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+EXIT:1
+Sat Oct 31 11:20:40 UTC 2026

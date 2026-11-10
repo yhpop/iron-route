@@ -1,0 +1,149 @@
+{
+  "boundary": "Offline source geometry + production-reset camera formula. No DOM layout, browser screenshot, texture/lighting/material rendering, touch, screenshot alignment, smoothing schedule or full-cycle occlusion acceptance.",
+  "records": [
+    {
+      "name": "direct-checkpoint-0-400x300",
+      "tick": 506,
+      "inputs": 507,
+      "svgSHA256": "dae9124db6805b24793980ccb25f0ce2b52bb3faa87eb27c1bdf0b3414f241c4"
+    },
+    {
+      "name": "direct-checkpoint-0-844x390",
+      "tick": 506,
+      "inputs": 507,
+      "svgSHA256": "a7240cae96f15b0801ea4df5ab92e6fdf1834b9fa467f23898d3dc4ee37b7468"
+    },
+    {
+      "name": "direct-checkpoint-0-1280x720",
+      "tick": 506,
+      "inputs": 507,
+      "svgSHA256": "a13763c31e9ed53dcbe094019e48c494930b30a1507ed782846ce7ec69896640"
+    },
+    {
+      "name": "direct-checkpoint-0-390x844",
+      "tick": 506,
+      "inputs": 507,
+      "svgSHA256": "c5dcf562f526ccc59f467e30f8ea7e4df1ebcae833b251f979771e14d197798f"
+    },
+    {
+      "name": "direct-checkpoint-5-400x300",
+      "tick": 2573,
+      "inputs": 2574,
+      "svgSHA256": "7904463ac22ba315d211af195dad786702096cd82bddb89fa043e382f541a5b5"
+    },
+    {
+      "name": "direct-checkpoint-5-844x390",
+      "tick": 2573,
+      "inputs": 2574,
+      "svgSHA256": "1c46baaf2cd50aad67d7e8e2226065b3dc60578a1c1a28c6d8d9ec2fbf3fefe1"
+    },
+    {
+      "name": "direct-checkpoint-5-1280x720",
+      "tick": 2573,
+      "inputs": 2574,
+      "svgSHA256": "c372e231129d17e8479b9bbdbea41da1b3167bea3cfc1eb2e82e66bfb6eb6e03"
+    },
+    {
+      "name": "direct-checkpoint-5-390x844",
+      "tick": 2573,
+      "inputs": 2574,
+      "svgSHA256": "c4088c8ba537c98e9a13630ed045b2e3351b56fad9c35af0e2a2c632ed2e1f04"
+    },
+    {
+      "name": "direct-checkpoint-10-400x300",
+      "tick": 8322,
+      "inputs": 8323,
+      "svgSHA256": "ff493ec72f88faf37ce12aaf87362993d13279ae124c2dd010ac2857644f80ed"
+    },
+    {
+      "name": "direct-checkpoint-10-844x390",
+      "tick": 8322,
+      "inputs": 8323,
+      "svgSHA256": "8e085c6b8ec3c597272be99a0af9de62a15004f1cf432ab6c5eed5fc7b7a3bc3"
+    },
+    {
+      "name": "direct-checkpoint-10-1280x720",
+      "tick": 8322,
+      "inputs": 8323,
+      "svgSHA256": "014d8e3c27f0ddd0b94146f404ad8696e52fc88771be29dc941b89794c80f15a"
+    },
+    {
+      "name": "direct-checkpoint-10-390x844",
+      "tick": 8322,
+      "inputs": 8323,
+      "svgSHA256": "52b68ab8dcae9f35b59d186aea7ece112acebb577c527f87c12c3dc4a14c9517"
+    },
+    {
+      "name": "covered-checkpoint-0-400x300",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "80e4de2157fe2e265a653277165ec208c793bdda0557e539caf534d861df5265"
+    },
+    {
+      "name": "covered-checkpoint-0-844x390",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "c1cbfc9018024ed6c4b3cf3f9264bee6e7bf662a6d28a3eae35fb580001a1bfe"
+    },
+    {
+      "name": "covered-checkpoint-0-1280x720",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "0b9615d2f8d0a0349e877ab081cb8b3676cade9054513c37553c81cf6255cd92"
+    },
+    {
+      "name": "covered-checkpoint-0-390x844",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "811f4a8894e54719983626a1e57f97710ee03012503026d5b91580aadcaa1a29"
+    },
+    {
+      "name": "covered-checkpoint-0-400x300",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "80e4de2157fe2e265a653277165ec208c793bdda0557e539caf534d861df5265"
+    },
+    {
+      "name": "covered-checkpoint-0-844x390",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "c1cbfc9018024ed6c4b3cf3f9264bee6e7bf662a6d28a3eae35fb580001a1bfe"
+    },
+    {
+      "name": "covered-checkpoint-0-1280x720",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "0b9615d2f8d0a0349e877ab081cb8b3676cade9054513c37553c81cf6255cd92"
+    },
+    {
+      "name": "covered-checkpoint-0-390x844",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "811f4a8894e54719983626a1e57f97710ee03012503026d5b91580aadcaa1a29"
+    },
+    {
+      "name": "covered-checkpoint-0-400x300",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "80e4de2157fe2e265a653277165ec208c793bdda0557e539caf534d861df5265"
+    },
+    {
+      "name": "covered-checkpoint-0-844x390",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "c1cbfc9018024ed6c4b3cf3f9264bee6e7bf662a6d28a3eae35fb580001a1bfe"
+    },
+    {
+      "name": "covered-checkpoint-0-1280x720",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "0b9615d2f8d0a0349e877ab081cb8b3676cade9054513c37553c81cf6255cd92"
+    },
+    {
+      "name": "covered-checkpoint-0-390x844",
+      "tick": 13599,
+      "inputs": 13600,
+      "svgSHA256": "811f4a8894e54719983626a1e57f97710ee03012503026d5b91580aadcaa1a29"
+    }
+  ]
+}

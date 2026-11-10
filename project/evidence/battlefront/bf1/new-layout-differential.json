@@ -1,0 +1,6 @@
+{
+  "boundary": "120 literal input simulation steps full state exact; subsequent explicitly isolated dynamic/wreck query fixtures, not acceptance state injection",
+  "steps": 120,
+  "queries": 84,
+  "fullStateExact": true
+}

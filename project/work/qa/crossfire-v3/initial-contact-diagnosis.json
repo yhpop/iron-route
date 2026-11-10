@@ -1,0 +1,313 @@
+{
+  "missionId": "mission-9051",
+  "support": {
+    "x": -1,
+    "z": 20,
+    "y": 0.008320325725760504,
+    "yaw": 0.7853981633974483
+  },
+  "results": [
+    {
+      "name": "reverse",
+      "input": {
+        "throttle": -1
+      },
+      "before": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 1
+      },
+      "contactsBefore": {
+        "gap": -0.0748723770348739,
+        "contacts": [
+          "allied-support"
+        ],
+        "blockedPart": "barrel"
+      },
+      "after": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 121
+      },
+      "contactsAfter": [
+        "allied-support"
+      ],
+      "blocked": {
+        "body": false,
+        "barrel": true,
+        "muzzle": true
+      },
+      "realControlsOnly": true
+    },
+    {
+      "name": "pivot",
+      "input": {
+        "steer": 1
+      },
+      "before": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 1
+      },
+      "contactsBefore": {
+        "gap": -0.0748723770348739,
+        "contacts": [
+          "allied-support"
+        ],
+        "blockedPart": "barrel"
+      },
+      "after": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 121
+      },
+      "contactsAfter": [
+        "allied-support"
+      ],
+      "blocked": {
+        "body": false,
+        "barrel": true,
+        "muzzle": true
+      },
+      "realControlsOnly": true
+    },
+    {
+      "name": "raise",
+      "input": {
+        "brake": true,
+        "aim": {
+          "worldPoint": {
+            "x": 0,
+            "y": 20,
+            "z": 0
+          }
+        }
+      },
+      "before": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 1
+      },
+      "contactsBefore": {
+        "gap": -0.0748723770348739,
+        "contacts": [
+          "allied-support"
+        ],
+        "blockedPart": "barrel"
+      },
+      "after": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 121
+      },
+      "contactsAfter": [
+        "allied-support"
+      ],
+      "blocked": {
+        "body": false,
+        "barrel": true,
+        "muzzle": true
+      },
+      "realControlsOnly": true
+    },
+    {
+      "name": "sideAim",
+      "input": {
+        "brake": true,
+        "aim": {
+          "worldPoint": {
+            "x": 20,
+            "y": 1,
+            "z": 23
+          }
+        }
+      },
+      "before": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 1
+      },
+      "contactsBefore": {
+        "gap": -0.0748723770348739,
+        "contacts": [
+          "allied-support"
+        ],
+        "blockedPart": "barrel"
+      },
+      "after": {
+        "pose": {
+          "x": 0,
+          "y": 0,
+          "z": 23,
+          "yaw": 0
+        },
+        "vL": 0,
+        "vR": 0,
+        "governor": "cruise",
+        "trackL": 0,
+        "trackR": 0,
+        "turret": {
+          "yawRel": 0,
+          "elevation": 0,
+          "recoil": 0,
+          "recoilVelocity": 0
+        },
+        "blocked": {
+          "body": false,
+          "barrel": true,
+          "muzzle": true
+        },
+        "tick": 121
+      },
+      "contactsAfter": [
+        "allied-support"
+      ],
+      "blocked": {
+        "body": false,
+        "barrel": true,
+        "muzzle": true
+      },
+      "realControlsOnly": true
+    }
+  ]
+}

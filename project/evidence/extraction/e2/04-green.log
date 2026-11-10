@@ -1,0 +1,18 @@
+✔ real optional featured selection and direct slug bind own builder field, inherited dispatch, URL and no save writes (887.572567ms)
+✔ real preparation ticks, actual main pause/resume/lifecycle freeze and held-input release (555.707276ms)
+✔ BOUNDARY FIXTURES: real main ticks reset unfinished hold outside zone and replace countdown at escort activation (396.085758ms)
+✔ BOUNDARY FIXTURE: actual main tank-destroyed classification/retry restores full fresh state and clears held commands (341.992053ms)
+✔ BOUNDARY FIXTURE: actual main protected-vehicle-destroyed classification/retry restores full fresh state and clears held commands (374.048932ms)
+✔ new direct entry retries rejected loader and reuses successful app-owned cache (304.516881ms)
+✔ new entry async loading readiness discards stale selection and disposal decorations (560.86269ms)
+✔ candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text (1553.714937ms)
+✔ actual production English modules translate new source/menu/readout and preserve default and old URLs (2836.26659ms)
+✔ English inventory completely covers new source and all actual main Han literals before final production build (10.810493ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8127.622792

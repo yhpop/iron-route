@@ -1,0 +1,662 @@
+{
+  "schema": 2,
+  "version": "0.8.1-preview.1",
+  "releaseCommit": "401f22b156a515a8b23dc5f9682c3d445d2d9199",
+  "replaySourceHashes": {
+    "campaign-simulation.js": "e9d062713f8240430af9998929d7e6c5616fc9f527fd4a7b7d9b16bfbab271b3",
+    "campaign-world.js": "e2b6e5a654e5eb44d18a74fc9701c05dae54ba7f5511af93bc64c08cd1578a49",
+    "combat.js": "d0290aba328cdd6079c7276a6df89e2be77fce166546c954c7ffe91e69e7d9a7",
+    "content/crafted20/authoring.js": "4a21f42247f45ddb43a3a4d1f663ec7a68c4ea61777ed9d7908d2d2ae4d088c3",
+    "content/crafted20/index.js": "c4a682d7ce9b111dde28584a6c8650c6430b95ebd6821560ecbc9bf9c4e87f75",
+    "content/crafted20/lockside.js": "014180300c7b7e790a7bc797ab5600d34e3f746f58aa4514b92a0deba0d06b6a",
+    "content/crafted20/north-harbor.js": "42665972af459a0423eb93914ff155421115853e997bf1bb0059f5b9e3b0286e",
+    "content/crafted20/rail-works.js": "3035718549828306c6ad5991a89c5c0f224ba00ee38d1b506d673878787d5e95",
+    "content/crafted20/south-wharf-advanced.js": "390f0e6a16ccdaef4c865044768a8d8ce9593d797f1db3831bec2e131d7e44f5",
+    "content/crafted20/south-wharf.js": "c475ff32f42520e2205ea229ca2e719731d0e604e432e7d1df25a9a0b8d74d16",
+    "content/crafted20/validate.js": "498ae2675b64da2b526d9d0a10e8af774ab15669b78f6da7f2fb899f11bc58fc",
+    "content/geometry.js": "6ca71080f5102defbb1b8264ba56b1d88f453a348575c68f3c6ceee03628acad",
+    "content/validate.js": "33df5465840e929905ac4df32efd93b263ced5734ff2988f0c3494ea71bb0f7f",
+    "mission-runtime.js": "8d3ba9b7f2b7fcec7c9dcb08fc0d9e25a01e6d3cd30a533db8afabe5b6caf209",
+    "sentry-rig.js": "d088df4f3767908277581535eb780d77805ae68c75fcb3a78301ff574aa01213",
+    "tank-controller.js": "56f1ab94323bab2c34aae0d8e72953d451fbae5e502d175d0cfb9a228c0c8736"
+  },
+  "scope": "40 exact-input CPU replays on packaged source: 20 main + 20 alternative; recording metadata is preserved and distinct from current replay verification. No human/browser/device acceptance.",
+  "missions": [
+    {
+      "id": "crafted20-001",
+      "specHash": "0c17e5ceacdb9fc0e885d90c5c3bc521ea0c8de42bc4e8582677d2a5e9210db2",
+      "main": {
+        "tape": "accepted-main-crafted20-001-inputs.json.gz",
+        "finalHash": "20c2b50913df2876b6c0bc97e159e3959467e3738f56a64f91409fe41bbf6957",
+        "phase": "won",
+        "tick": 1751,
+        "simulatedSeconds": 29.183333333332957,
+        "tankHP": 100,
+        "distanceMetres": 56.158152252375174,
+        "tapeSHA256": "cb64ecf95cf06e1441a895fd6b74234c3a5037e4c8757470717ad86d32d39e95",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-001-inputs.json.gz",
+        "finalHash": "cee20e912c0358e29973a678686590ab4ac4160f5fe9156e30d68e12eb1dabd5",
+        "phase": "won",
+        "tick": 3405,
+        "simulatedSeconds": 56.74999999999806,
+        "tankHP": 100,
+        "distanceMetres": 94.83535883224813,
+        "tapeSHA256": "d16e212fee9fa3cb990953ad475041ea2aca915546d74a526319a15fb9285445",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-002",
+      "specHash": "18876eff4c14baa8fbc564f06cb6755a499164740af7f313268000bec381657b",
+      "main": {
+        "tape": "opening-v5-west-crafted20-002-inputs.json.gz",
+        "finalHash": "f017822087074d7c65e7baece5181c8874bf0158d72f19088b89dd63e8a734d3",
+        "phase": "won",
+        "tick": 2619,
+        "simulatedSeconds": 43.649999999998805,
+        "tankHP": 91,
+        "distanceMetres": 55.98997109071023,
+        "tapeSHA256": "cc85dd4b178a1f7dbb5e99795ade32b5f7b7aef607009cae3d05c7260cfa23b4",
+        "recordedSourceHash": "13e8f0dfc2e876b75715031e40509aafeefabfa911f946d1caaea550f3ee8fab",
+        "sourceDifferencesFromReplay": []
+      },
+      "alternative": {
+        "tape": "opening-v5-east-crafted20-002-inputs.json.gz",
+        "finalHash": "7a6367293883e4aac7ca3695a7d9ba8a4f8a567932c36be72fb8978422838407",
+        "phase": "won",
+        "tick": 2312,
+        "simulatedSeconds": 38.53333333333243,
+        "tankHP": 91,
+        "distanceMetres": 55.90090187858888,
+        "tapeSHA256": "7f5a1999673920ecfac85adeb07b9f7c8be1ce45427aea61a38c9b0a69be63e0",
+        "recordedSourceHash": "13e8f0dfc2e876b75715031e40509aafeefabfa911f946d1caaea550f3ee8fab",
+        "sourceDifferencesFromReplay": []
+      }
+    },
+    {
+      "id": "crafted20-003",
+      "specHash": "9a6a5b7fd5019fecda23d662a6a01f6bb716801018f7ee4afc98b3cb9f4aec7c",
+      "main": {
+        "tape": "accepted-main-crafted20-003-inputs.json.gz",
+        "finalHash": "7c02c1314bc45d51df36f639e3f6bec03497031aff30e4c61ca8dd72b31e0f26",
+        "phase": "won",
+        "tick": 5467,
+        "simulatedSeconds": 91.11666666666278,
+        "tankHP": 100,
+        "distanceMetres": 117.24114738560283,
+        "tapeSHA256": "3f1b90b438af9bf248669da2c26d2f0cb023d5d61ad69504bff0578d1b8ddcb1",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-003-inputs.json.gz",
+        "finalHash": "6e428f16dc138161446f520db34d7a5d79bea1ea674d89dddc26cc7ee7449c66",
+        "phase": "won",
+        "tick": 6535,
+        "simulatedSeconds": 108.91666666666177,
+        "tankHP": 91,
+        "distanceMetres": 135.47924261702147,
+        "tapeSHA256": "03ff11fcc5177297763c74c5069b378eeb016e90d3d69536c9c04f1c37fed8a3",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-004",
+      "specHash": "32eb54556e444e16be5904239cfd026fba0c07468d81804ae3ebc3332a6cad4e",
+      "main": {
+        "tape": "accepted-main-crafted20-004-inputs.json.gz",
+        "finalHash": "64149080d2e67fe89d8d4759f200b8f0378b63901dd40dca7d916841b9497387",
+        "phase": "won",
+        "tick": 3098,
+        "simulatedSeconds": 51.633333333331684,
+        "tankHP": 100,
+        "distanceMetres": 104.44753834045235,
+        "tapeSHA256": "0a0ab236c8e856c6a05a5af9b0076fc349958d1384384381265a002e0869c7b8",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-004-inputs.json.gz",
+        "finalHash": "d69fb1541271f34c9bd9290c2bfa7198fa3f172bd87c918863d51433bc323652",
+        "phase": "won",
+        "tick": 4048,
+        "simulatedSeconds": 67.46666666666412,
+        "tankHP": 100,
+        "distanceMetres": 111.00185566980096,
+        "tapeSHA256": "1c7532b00d9c3543214df512ed3adbeefae729aa6c244c0a655a8b40a760d58e",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-005",
+      "specHash": "6d1b6e0317b80290d889a5e83fcf194af1d6b8cfd88d2323bd501414a45148a1",
+      "main": {
+        "tape": "accepted-main-crafted20-005-inputs.json.gz",
+        "finalHash": "d1aeab1e76b02fd4d29419c9015132c8466a2940178e1ea8088768cc5ee4ed24",
+        "phase": "won",
+        "tick": 5024,
+        "simulatedSeconds": 83.73333333332987,
+        "tankHP": 91,
+        "distanceMetres": 128.1316013626922,
+        "tapeSHA256": "4fab4465bdc6d6248cbc1573d20c35200175067bc79adc2b14d25f6aee5af8fa",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-005-inputs.json.gz",
+        "finalHash": "c9e051717181cdd358865cfc877ad5f8f075caa2197ba00d9b8ca94ba3423647",
+        "phase": "won",
+        "tick": 4960,
+        "simulatedSeconds": 82.66666666666326,
+        "tankHP": 73,
+        "distanceMetres": 133.6816369721163,
+        "tapeSHA256": "6f2e2dd58dd4e6c62f8dfdbaef681e1f3f5e837c0425821695c5a78c8f30dab8",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-006",
+      "specHash": "db016aa0f50e7b1f528fe54b3a3c2dd88f7195d9336ebad48128ff5d80054046",
+      "main": {
+        "tape": "accepted-main-crafted20-006-inputs.json.gz",
+        "finalHash": "3b94dcd03b734298e51b41a663e8151f6858adfb0eb84c83ec73f1e79701d909",
+        "phase": "won",
+        "tick": 3272,
+        "simulatedSeconds": 54.53333333333152,
+        "tankHP": 91,
+        "distanceMetres": 98.1443276962642,
+        "tapeSHA256": "20b91b6af29b8af7fda895e4c366335e5dff059f6882ff4fe92e0b20de31ec24",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-006-inputs.json.gz",
+        "finalHash": "a8161abe0c154db44bfd315f4e9f66b88303f5b066daad43c628390912f10d98",
+        "phase": "won",
+        "tick": 2576,
+        "simulatedSeconds": 42.93333333333218,
+        "tankHP": 100,
+        "distanceMetres": 67.802808035002,
+        "tapeSHA256": "0257a517afec55616963db47e3278067df0e17d77d40b7a43a4c822833db366e",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-007",
+      "specHash": "e391c350b2b3a2479b35de494579321ce99bafd51e5d42ef2da18a3f9f67bf86",
+      "main": {
+        "tape": "accepted-main-crafted20-007-inputs.json.gz",
+        "finalHash": "7858ce8db47192625c56db6966addeee1780e10b17fe5c1b88bdfecfe76165cb",
+        "phase": "won",
+        "tick": 4199,
+        "simulatedSeconds": 69.98333333333065,
+        "tankHP": 100,
+        "distanceMetres": 127.69217986226785,
+        "tapeSHA256": "8fcef920ad216454029d6082d7a138beb975f85388509a8c7e016300018d6853",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-007-inputs.json.gz",
+        "finalHash": "f50e43f883709658c8149d4e703b96095a52ed599a96804549d6b5f9235ad438",
+        "phase": "won",
+        "tick": 3818,
+        "simulatedSeconds": 63.633333333331,
+        "tankHP": 91,
+        "distanceMetres": 102.9369126092599,
+        "tapeSHA256": "e7fc0c98ab60a22075d20056c569a113e05b992aee55002e0b18f29fac92dca9",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-008",
+      "specHash": "0d8aa8bba9a6619985207b71e5696f8e477064a31fe7dd154620420493e15b3c",
+      "main": {
+        "tape": "accepted-main-crafted20-008-inputs.json.gz",
+        "finalHash": "00025333a964ae089f50fb53ff839771760a2e6ca973b83c173867de944beee2",
+        "phase": "won",
+        "tick": 4783,
+        "simulatedSeconds": 79.71666666666343,
+        "tankHP": 82,
+        "distanceMetres": 72.06922805052639,
+        "tapeSHA256": "00dc7323cedbbe6e19be1ab9e33a2aae23f87fb871c10f7db526618ef24c7961",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-008-inputs.json.gz",
+        "finalHash": "8dba796deb797acf74dd7beb5ec01bf3f2d9e0f63a0d289e49465db6541d9061",
+        "phase": "won",
+        "tick": 7665,
+        "simulatedSeconds": 127.74999999999403,
+        "tankHP": 82,
+        "distanceMetres": 110.5625348740662,
+        "tapeSHA256": "43bc21834e58325932cf48bc8458b75ba2378b15a3af7d9bc4057fc276cf6a45",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-009",
+      "specHash": "1cf5d4c4d307b8e6639afdf934b2b09564634db8f329a9aeeb381203c0485b2a",
+      "main": {
+        "tape": "accepted-main-crafted20-009-inputs.json.gz",
+        "finalHash": "b4f3fa42d7f3214e5cfac60716bd5b0cda84d709f8fbad146da12f4a1b0275c7",
+        "phase": "won",
+        "tick": 3396,
+        "simulatedSeconds": 56.59999999999807,
+        "tankHP": 91,
+        "distanceMetres": 92.69227817155867,
+        "tapeSHA256": "96484727533f0611eeee0e8ac08055d59ca9dcc537c2b3c6a02f0e4bc333eaff",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-009-inputs.json.gz",
+        "finalHash": "c9e5e98d2e777a0f8db2d898f7efa3674255a0594a094ff726611412d30f52f6",
+        "phase": "won",
+        "tick": 5059,
+        "simulatedSeconds": 84.31666666666317,
+        "tankHP": 82,
+        "distanceMetres": 126.07634752908258,
+        "tapeSHA256": "3ec967920f17509ac5bce6a25c95c31e0fa58cc80d328645d4f853e5474ee0e3",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-010",
+      "specHash": "97e2cc6d72ec70a0319ee5c8d85d47e2d943fea547f962c86e987a7e94315860",
+      "main": {
+        "tape": "accepted-main-crafted20-010-inputs.json.gz",
+        "finalHash": "da59ee2587fa864da45442f4d50b79160e34a36a1f91e4ae8afd1358f7137dc8",
+        "phase": "won",
+        "tick": 3762,
+        "simulatedSeconds": 62.69999999999772,
+        "tankHP": 100,
+        "distanceMetres": 129.69758626472827,
+        "tapeSHA256": "52aee5cbbcbffc344ecac212bf725d75107fd17b2a18c16903d99cfea2931b96",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-crafted20-010-inputs.json.gz",
+        "finalHash": "016b0365c3a7f31208c7e551f1362e89320c0f9cf8d3bf343acc256f2c40641f",
+        "phase": "won",
+        "tick": 2980,
+        "simulatedSeconds": 49.66666666666513,
+        "tankHP": 100,
+        "distanceMetres": 91.14230711662053,
+        "tapeSHA256": "d44f3b24d84c8b78261845ec2350a74814420da4e95c4170ac065a8aed12c1d7",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-011",
+      "specHash": "8aefae32d0dd7cb7ea6481112abe5dbed69f8b18a236ce6f26c11340ec1b4a48",
+      "main": {
+        "tape": "accepted-main-b-crafted20-011-inputs.json.gz",
+        "finalHash": "f78c44ddf3ecd3c1673846225a1f086ee80d0fc72ba3d8ff73aca00e7be35e37",
+        "phase": "won",
+        "tick": 4588,
+        "simulatedSeconds": 76.46666666666361,
+        "tankHP": 100,
+        "distanceMetres": 132.68689095107237,
+        "tapeSHA256": "df6360b3eb605f94212a599733c217e19ab9463cd18cd915e0887c63de89036c",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-011-inputs.json.gz",
+        "finalHash": "5c4ea83bdc683714fe6d95556573940d4f18d45810a27b0fc005909bb241de28",
+        "phase": "won",
+        "tick": 2485,
+        "simulatedSeconds": 41.4166666666656,
+        "tankHP": 91,
+        "distanceMetres": 76.94428202178678,
+        "tapeSHA256": "6a984f0d53d358c7e2ec9aa216ef171769d3e8301baaedd170d19ac3378c9468",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-012",
+      "specHash": "fdd9a3d29a294822ebab8bb7c6ecb9af584cfa5871388b27aded652c339e11e1",
+      "main": {
+        "tape": "accepted-main-b-crafted20-012-inputs.json.gz",
+        "finalHash": "3d7ab2263b46b16d12e14efda9ef9064b4504114cfa4d35fded6e1292eef1d3e",
+        "phase": "won",
+        "tick": 6593,
+        "simulatedSeconds": 109.88333333332838,
+        "tankHP": 100,
+        "distanceMetres": 191.66316641228022,
+        "tapeSHA256": "f9398a62ec39d33eeb437e1fc858881d69da898b9b1c0712579e00c9dcba9375",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-012-inputs.json.gz",
+        "finalHash": "aef018f8db2154e30f33f34fe0d431f44ebed432b4f7c7b3272fa53e9afee77f",
+        "phase": "won",
+        "tick": 6922,
+        "simulatedSeconds": 115.3666666666614,
+        "tankHP": 91,
+        "distanceMetres": 192.65263327140372,
+        "tapeSHA256": "df44555d38dc9b35438c4f61d8f780707baac74f19104b2c59b851eb136c3b18",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-013",
+      "specHash": "17f742d5ae3316c3d796983cf5b6d27d57d2ead8c9c1a1694d57292d329674e2",
+      "main": {
+        "tape": "accepted-main-b-crafted20-013-inputs.json.gz",
+        "finalHash": "3b8a9fb48c8ef38ec5e1105f4990d345d67acdc1fe7342f694173aa95a4e84e6",
+        "phase": "won",
+        "tick": 4762,
+        "simulatedSeconds": 79.36666666666345,
+        "tankHP": 91,
+        "distanceMetres": 107.22786271853238,
+        "tapeSHA256": "85e3818d777267c7fa6e518141038c72dfd0237010828e5149907a0bb33b2239",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-013-inputs.json.gz",
+        "finalHash": "b1da5a1617eeaedac2efde1e9bac69437543e93660ab1d3cdb9e5ffb8e820cd1",
+        "phase": "won",
+        "tick": 6994,
+        "simulatedSeconds": 116.56666666666133,
+        "tankHP": 100,
+        "distanceMetres": 202.88162786825993,
+        "tapeSHA256": "cc5b7eda85e2033ee2176015224e21ebecb148a4138f3fc97b744cb6cd889f4c",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-014",
+      "specHash": "2a7b21eb5f3e1f9a1ddcb4a0c888f30dcb94d943b1510d0ccbbc50c09569aa0e",
+      "main": {
+        "tape": "accepted-main-b-crafted20-014-inputs.json.gz",
+        "finalHash": "3514a33cdd49fa55ef8b702ec1ab557c90454fb43f05075c03602c07200507cd",
+        "phase": "won",
+        "tick": 4030,
+        "simulatedSeconds": 67.16666666666414,
+        "tankHP": 100,
+        "distanceMetres": 83.66358023652855,
+        "tapeSHA256": "befe768f1f5da9c1bce505c22258c8812faf051bca13769aa347db6d7e11bf30",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-014-inputs.json.gz",
+        "finalHash": "6f0b7fc7aa3bf3b773ff64120c52a6377f6bd949c195e9996fb604ee04c2a78f",
+        "phase": "won",
+        "tick": 9964,
+        "simulatedSeconds": 166.06666666669096,
+        "tankHP": 73,
+        "distanceMetres": 292.61488789152764,
+        "tapeSHA256": "467e51c32e74e17afa8c52bcfda325643d5df767362de2c718489680b58e42c9",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-015",
+      "specHash": "947c40bcbd42830b632fcf8e15822535f5ec07bcb54eca04840e7b0827e8cc2c",
+      "main": {
+        "tape": "accepted-main-b-crafted20-015-inputs.json.gz",
+        "finalHash": "c369a3eeef1e24f37dad7002f8066d669c70d74cd6c982550b3836aa250ad4b6",
+        "phase": "won",
+        "tick": 2615,
+        "simulatedSeconds": 43.58333333333214,
+        "tankHP": 100,
+        "distanceMetres": 99.5894752974056,
+        "tapeSHA256": "3dfa56ccc5d6952bf5f730fa6eacf9ec1566d02ceccadcc5f0159d8638549ae0",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-015-inputs.json.gz",
+        "finalHash": "5ce6971f20e780d3c4436fa01d79af6f1c933954debf2b6e43893fd4eff7351c",
+        "phase": "won",
+        "tick": 4307,
+        "simulatedSeconds": 71.78333333333055,
+        "tankHP": 100,
+        "distanceMetres": 105.4225853638861,
+        "tapeSHA256": "f69627ae3b9f62d8c940b6889b88fe9b96c588d1704476073ff2a688e1400b79",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-016",
+      "specHash": "88b34e9da98ea70369673d49fb5a4a06832ba96065055b3efe198e527b854df0",
+      "main": {
+        "tape": "accepted-main-b-crafted20-016-inputs.json.gz",
+        "finalHash": "9f4f1f350c73f6b95d0e4295fab90d85af1a3f09a5f293b5720d0167b80da2fc",
+        "phase": "won",
+        "tick": 5632,
+        "simulatedSeconds": 93.86666666666262,
+        "tankHP": 100,
+        "distanceMetres": 155.13164922019826,
+        "tapeSHA256": "e87dac7861c12d62d82af835899a1c100367caf25da70e7e8852868620184261",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-016-inputs.json.gz",
+        "finalHash": "d0191163fde018250bf947370ff2fbaa2a3c1a5f8d34b78dde31955b715b8bdc",
+        "phase": "won",
+        "tick": 9506,
+        "simulatedSeconds": 158.43333333335156,
+        "tankHP": 91,
+        "distanceMetres": 310.71043480254696,
+        "tapeSHA256": "19c69bdcaad951af71baa6ba2e50ddd409a9368f4f2592b518196e1955a2d231",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-017",
+      "specHash": "f0a3e26eeaf2c180b9ad08a782d03c4c9923e4f176917a585e7283217ab9f707",
+      "main": {
+        "tape": "accepted-main-b-crafted20-017-inputs.json.gz",
+        "finalHash": "51105c3e530ce4bf13377d9b6da6a658d448f8545fd0e81fa6f47b241aafae5e",
+        "phase": "won",
+        "tick": 8529,
+        "simulatedSeconds": 142.15000000000526,
+        "tankHP": 100,
+        "distanceMetres": 263.8027853210718,
+        "tapeSHA256": "5ac1635474a571223153e41fbb7f34e6153463dd18345471cc8c6b7e2ac91a85",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-017-inputs.json.gz",
+        "finalHash": "3f18ebfa3ff73f712e83f545be95cf73902ff8dcd90c84d05db08eca05b6d7cd",
+        "phase": "won",
+        "tick": 3906,
+        "simulatedSeconds": 65.09999999999759,
+        "tankHP": 91,
+        "distanceMetres": 110.26732953282907,
+        "tapeSHA256": "b3123b78b177e51849c5c4145b6e97ae2fcdaa56c802d41bf2aaf70112116ca0",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-018",
+      "specHash": "f78b3c027da474c7eb4ac7fe3e3bfb53033496f9a61b677a3b807a79bd4a430a",
+      "main": {
+        "tape": "accepted-main-b-crafted20-018-inputs.json.gz",
+        "finalHash": "48c24247724283a7fc86a2a8c80909c40b6b1a599549972a69985e1e2d93a551",
+        "phase": "won",
+        "tick": 4652,
+        "simulatedSeconds": 77.53333333333022,
+        "tankHP": 82,
+        "distanceMetres": 139.7791065169997,
+        "tapeSHA256": "65baccd943330cd5480a0643d7fdd8f5ffebb3ad0ad9f6eab0f74f53ea83775a",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-018-inputs.json.gz",
+        "finalHash": "ff840870052a527c409ee9a3e2539628adc15d89dd67d7535190cb36769e30fa",
+        "phase": "won",
+        "tick": 7571,
+        "simulatedSeconds": 126.18333333332745,
+        "tankHP": 82,
+        "distanceMetres": 233.00398286059502,
+        "tapeSHA256": "d21a3f2c7393c97b77bf2b51b049b98de1a6294310d4ce9ae006d84f109e84ff",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-019",
+      "specHash": "7c8e30c45b344f439231de8c3b35f108752c35ba9459434aa8a63f4dce8d8093",
+      "main": {
+        "tape": "accepted-main-b-crafted20-019-inputs.json.gz",
+        "finalHash": "a24466e4e242d9021148b6a59a1aee924280c99a18095b27ce72ebbdc66742a4",
+        "phase": "won",
+        "tick": 6250,
+        "simulatedSeconds": 104.16666666666204,
+        "tankHP": 82,
+        "distanceMetres": 214.28683628133675,
+        "tapeSHA256": "da753942d1c4c7060ee0261dfd2cb38f1faaeb80bc58177480d39e12ace77720",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-019-inputs.json.gz",
+        "finalHash": "208566d7a22dd80e34f17b40d9242d512dce5e1766f29539d164774eac3391d0",
+        "phase": "won",
+        "tick": 4986,
+        "simulatedSeconds": 83.09999999999657,
+        "tankHP": 82,
+        "distanceMetres": 157.73693045309366,
+        "tapeSHA256": "163baa9904133ca25892efd16288889f8dd3fccb2d3ab2141cb5978b6aa976f2",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    },
+    {
+      "id": "crafted20-020",
+      "specHash": "fb543f4bc28a6b470073dd1f4c0e7c04a8c0ffae578d01207b50c5b835f7dced",
+      "main": {
+        "tape": "accepted-main-b-crafted20-020-inputs.json.gz",
+        "finalHash": "a4ae0eb3e1db03fa23357cf398ac8408c0ce156956f5af7ce8dd4fe4374627ef",
+        "phase": "won",
+        "tick": 11269,
+        "simulatedSeconds": 187.81666666670827,
+        "tankHP": 82,
+        "distanceMetres": 311.5782935974512,
+        "tapeSHA256": "f75c2b6e41b5d2c85fbd0f22ae705a2a42c16d1915df78aad5514007e3d8c2cc",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      },
+      "alternative": {
+        "tape": "accepted-alt-b-crafted20-020-inputs.json.gz",
+        "finalHash": "674a71d8aab3709f1cb839ab684d08baae48a6b17acab798461cbecc50668655",
+        "phase": "won",
+        "tick": 10819,
+        "simulatedSeconds": 180.3166666667023,
+        "tankHP": 82,
+        "distanceMetres": 296.5251097025249,
+        "tapeSHA256": "89e8dd419260cfd0b4941cdf0459a13c00ced698b5baa12ac41064d475f327fc",
+        "recordedSourceHash": "7904d33df79f88f550d5ee3d2ea49465cd1339c6b77cd14f563069da7dd975c9",
+        "sourceDifferencesFromReplay": [
+          "content/crafted20/south-wharf.js"
+        ]
+      }
+    }
+  ]
+}

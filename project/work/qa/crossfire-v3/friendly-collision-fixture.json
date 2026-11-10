@@ -1,0 +1,41 @@
+{
+  "fixture": "Explicit seeded projectile in unmodified V3 terrain; excluded from route tapes",
+  "missionId": "mission-9051",
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "allied-support",
+      "position": {
+        "x": -2.8611145186191886,
+        "y": 0.6176049925281114,
+        "z": 18
+      },
+      "normal": {
+        "x": 0.8320502943378437,
+        "y": 0,
+        "z": -0.554700196225229
+      },
+      "projectileId": "friendly-v3-fixture",
+      "value": "friendly-block"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete"
+    },
+    {
+      "id": "event-3",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active"
+    }
+  ],
+  "supportHpBefore": 110,
+  "supportHpAfter": 110
+}

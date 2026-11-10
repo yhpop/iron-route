@@ -1,0 +1,15 @@
+{
+  "finalHeadSHA256": "da33d2baf957d806e6ee6c7e228516c1cb0802385dfe814c9a33b738f8369894",
+  "finalIdentitySHA256": "0591fbee040da66a5c8b513a3eac389370c64d74e38c44ddbb4594637b66e4f9",
+  "reportSHA256": "8d95533a90206e008ce9ca965c40271a509c41da602867f86dff442a57234ea3",
+  "sourceDiffSHA256": "c5ef68385790957a399370478a1264d73f56ff3b6e60ded49a06c8efd8c812ed",
+  "sourceHeadStillExact": true,
+  "G1ReviewSHA256": "0b0dd182fb888fe37778c5cd5969c0c42d7b42deb4c5acd9c95be5cf67d6e637",
+  "fullSuiteTerminalSHA256": "87483cac7711df5c1dd3ac7b8a98ff46f39251f0c98ae5a460de205255c5982a",
+  "guardTerminalSHA256": "a18d0e7429107c9dd2e4cef04f8ca931c2bf41f641e9574a6b1e3e3ba59af638",
+  "finalIntegrityTerminalSHA256": "a83907c3ef9c1f23611f1e88d937ba1faaa8b2739d1aca21e3337c311cd50be9",
+  "g1CurrentEvidenceCensusSHA256": "d562c8b318e89a5a87c2ab487af31713ee48f7b54570aa5dfd14444cc8dfd7e4",
+  "activeOwnedWorkers": 0,
+  "reviewsPending": true,
+  "zeroFailureFullSuiteClaim": false
+}

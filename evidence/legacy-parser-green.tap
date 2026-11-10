@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: matching known failures are reported as still failing, never as a green historical suite
+ok 1 - matching known failures are reported as still failing, never as a green historical suite
+  ---
+  duration_ms: 1.738663
+  type: 'test'
+  ...
+# Subtest: added failure and missing historical failure are both surfaced
+ok 2 - added failure and missing historical failure are both surfaced
+  ---
+  duration_ms: 0.47911
+  type: 'test'
+  ...
+# Subtest: incomplete log cannot be mistaken for zero failures
+ok 3 - incomplete log cannot be mistaken for zero failures
+  ---
+  duration_ms: 1.234866
+  type: 'test'
+  ...
+# Subtest: TAP summaries and duplicate detailed failures retain exact counts
+ok 4 - TAP summaries and duplicate detailed failures retain exact counts
+  ---
+  duration_ms: 0.378629
+  type: 'test'
+  ...
+# Subtest: a zero exit cannot turn recorded failures into a passing suite
+ok 5 - a zero exit cannot turn recorded failures into a passing suite
+  ---
+  duration_ms: 0.377567
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 278.953485

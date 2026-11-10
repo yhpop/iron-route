@@ -1,0 +1,45 @@
+{
+  "fix": "BF1 I1 round1/5",
+  "base": "evidence/battlefront/sdd/bf1-fix-1-base",
+  "baseHeadSHA256": "e9013e8a02cdc01c5a39b98c81bdc4e322dafac78907425645c49bf935d5d104",
+  "changedPriorOwnedFiles": [
+    "work/tests/battlefront-depot-replays.test.mjs"
+  ],
+  "old709Changed": [],
+  "all709ByteExact": true,
+  "testBeforeSHA256": "8059a8908ab9f268a508b3c12f6a249c116b0e4ed14cf491171d3c243df67106",
+  "testAfterSHA256": "d64d23bba3da2363aa2b5e190829d7325e09d2d036d2bec893e019865ea4d8d6",
+  "frozenDiagnosticRawSHA256": {
+    "work/qa/battlefront-depot/v03-crossfire-result.json.gz": "d75f4574826cdc3b10d6a1704ae4dc0b2bf9309462e2e2accae46c15fc6c7180",
+    "work/qa/battlefront-depot/v03-cover-retreat-01-result.json.gz": "546f3665e6e8a567bc30f8948034ff785f89078355ae20899feff711aeec56dc"
+  },
+  "command": "node --test --test-concurrency=1 tests/battlefront-depot-replays.test.mjs",
+  "workingDirectory": "work",
+  "timeoutSeconds": 120,
+  "red": {
+    "log": "evidence/battlefront/bf1/fix-1/01-red.log",
+    "exit": 1,
+    "tests": 5,
+    "pass": 4,
+    "fail": 1,
+    "cause": "actual AssertionError Missing expected exception: edited +1 degree summary passed old gate"
+  },
+  "green": {
+    "log": "evidence/battlefront/bf1/fix-1/02-green.log",
+    "session": 30894,
+    "exit": 0,
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "skip": 0,
+    "durationMilliseconds": 3382.812498
+  },
+  "noSimulationReplayBuildOrProductionChange": true,
+  "addedEvidenceSHA256": {
+    "evidence/battlefront/bf1/fix-1/01-red.log": "b58c1546e3baf24263c08262bcab62a2e3a0878e3f02aa780d89c30195a2f69b",
+    "evidence/battlefront/bf1/fix-1/02-green.log": "eb3ececbd8c29c8b690a897d1c99e5740b4b486ddcc26ff6c8441b0969d391d5",
+    "evidence/battlefront/bf1/fix-1/test-after.mjs": "d64d23bba3da2363aa2b5e190829d7325e09d2d036d2bec893e019865ea4d8d6",
+    "evidence/battlefront/bf1/fix-1/test-before.mjs": "8059a8908ab9f268a508b3c12f6a249c116b0e4ed14cf491171d3c243df67106",
+    "evidence/battlefront/bf1/fix-1/test-red.mjs": "b939665f2498e8e2b8971f791a3c513a5ec2920ae91fcedaea9c676abf0f80fb"
+  }
+}

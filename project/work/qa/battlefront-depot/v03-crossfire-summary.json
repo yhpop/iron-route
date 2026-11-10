@@ -1,0 +1,22 @@
+{
+  "route": "direct",
+  "attempt": "v03-crossfire",
+  "mode": "pilot",
+  "verify": false,
+  "inputs": 2713,
+  "tick": 2712,
+  "phase": "playing",
+  "selectedConvoyChoiceId": "direct",
+  "hp": 8,
+  "truckHp": 64,
+  "truckArrived": false,
+  "shots": 0,
+  "alliedDamage": 0,
+  "failure": {
+    "reason": "diagnostic-crossfire-not-route"
+  },
+  "finalHash": "b94864b1bb1f16c2bd6cc044620a7c6d353299b33222f3201bc7e06b5aa3a7af",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "sourceHashesHash": "2d8e706932808be909a52a890e3ee3524f40eb6532f476bff1feb7cac8beb9a1",
+  "closureFiles": 31
+}

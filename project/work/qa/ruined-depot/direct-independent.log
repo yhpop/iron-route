@@ -1,0 +1,2 @@
+{"event":"start","route":"direct","mode":"pilot","verify":true,"attempt":"direct-pilot-01","specHash":"4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec","closureFiles":30}
+{"event":"progress","route":"direct","attempt":"direct-pilot-01","inputs":2000,"tick":1999,"phase":"playing","hp":100,"truckHp":100,"pose":{"x":15.646286696187385,"y":0.008,"z":-7.723157345182709,"yaw":-0.2233201148101891,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}

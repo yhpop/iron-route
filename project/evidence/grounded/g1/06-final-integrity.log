@@ -1,0 +1,36 @@
+{
+  "approvedSourceArchiveSHA256": "5746b1c62205353868221149bd5f47018edbc01f95a38a22700e7779d1a0bd95",
+  "baseManifestSHA256": "f9cb2f71b98f6a61fa3fbe73191c621542c4a5d3875f2fe857a184230599eaec",
+  "preexistingEntries": 1654,
+  "changedPreexisting": [
+    {
+      "path": "work/src/terrain-candidate/relief-view.js",
+      "old": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53",
+      "new": "9ebc5e6cf71836e35b6e662fc150adfcdaf0c6414dc4278904648fc68d7e510c"
+    },
+    {
+      "path": "work/tests/battlefront-depot-terrain.test.mjs",
+      "old": "fc728983e1d71a632cfa8a9473dc2ac979ccc4a7702fe79c7664c48a5ff7213d",
+      "new": "cffa47b1d5d907456bb37f432cebc1e3cbb34da1b865ee6347508783a6156916"
+    }
+  ],
+  "unexpectedPreexistingChanges": [],
+  "ownedSource": {
+    "work/src/battlefront-perimeter-view.js": "43e0685eec91350d4996513de2f3b9233e48d9943630fd0b5d5571bc04aebfd1",
+    "work/src/terrain-candidate/relief-view.js": "9ebc5e6cf71836e35b6e662fc150adfcdaf0c6414dc4278904648fc68d7e510c",
+    "work/tests/battlefront-depot-terrain.test.mjs": "cffa47b1d5d907456bb37f432cebc1e3cbb34da1b865ee6347508783a6156916",
+    "work/tests/battlefront-perimeter.test.mjs": "fe438a20edc7288d0c6ae15746596b1f49f5685ebe38676f966d4c9df060e011",
+    "work/tests/battlefront-grounded-terrain.test.mjs": "4057d44e9e7b407770671091cb9ddcbbd6419ce0e81a782dd164b4dcf7a2a4bd"
+  },
+  "redTestsExactPrelaunchBinding": {
+    "work/tests/battlefront-grounded-terrain.test.mjs": "c4445d761404019cbf129af023f79176c586b9898807dd741994a6c74f3ab32b",
+    "work/tests/battlefront-perimeter.test.mjs": "3f7c35c39c8a80c9cb0e167c0bd270b7d4c21dec5795e72cc85dfb5ada0a809c"
+  },
+  "workSourceTestScriptAssetCount": 385,
+  "completeWorkSourceTestScriptAssetHeadSHA256": "d4f625c03caff0fd5a6757fad208e8b05486805d8133059ce393fa2dc4c31f59",
+  "sourceDiffSHA256": "aaa0472297e65b0728a955a1e5e8af68b65adb0151877f28c68dc5782f5cdb31",
+  "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+  "sourceSnapshot": "evidence/grounded/g1/final-source",
+  "noGitHead": "No Git command permitted; complete content-addressed source head supplied instead."
+}
+retained physical authority: {'direct': {'sourceKeys': 31, 'mismatches': []}, 'covered': {'sourceKeys': 31, 'mismatches': []}}

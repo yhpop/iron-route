@@ -1,0 +1,110 @@
+{
+  "inputFiles": {
+    "evidence/lfa-recovered-two-uv-audit.blend": "e431e07679d6b9b01b0eda057f873d872199c5a58715182911c5ceffa3f85464",
+    "evidence/Ciment_bris\u00e9.png": "9078d1ae0ba86e0a84a998f0157fd272e0aa273eac98f6f38e690c7baf50d6c3",
+    "sources/destroyedwalls_by_lfa/destroyedWalls_UV1.obj": "dbf70cebd80e0eb80f2d5fc2174e2be9abe75b309f21ab020be115f0b63d0f42",
+    "sources/destroyedwalls_by_lfa/destroyedWalls_UV2.obj": "8885b13999bc34fc1f47e6593910aedbf8fc3f24b7c486356ba7d46b1e97bbe0",
+    "sources/destroyedwalls_by_lfa/detail.bmp": "d47aed414b88bbd7a0bc94528f1c3c89e64afc8efc1cc7779f53f8c0824ab89f",
+    "sources/destroyedwalls_by_lfa/wall.bmp": "2f4efb203f16af670c259ed83546cac4315131e8395af1c241b8da776d22d608"
+  },
+  "sourceObjects": {
+    "polySurface1011": {
+      "meshAndUVSha256": "363e3bb30abf622574c62b5bcc5560fbd0faee7171b06282dae479c26cd39a28",
+      "vertices": 155,
+      "polygons": 117,
+      "originalUV": [
+        "UV1",
+        "UV2"
+      ],
+      "triangles": 291,
+      "normalizedBlenderBounds": [
+        [
+          -4.79998779296875,
+          -6.265539646148682,
+          0.0
+        ],
+        [
+          4.799991130828857,
+          6.265538215637207,
+          3.299938678741455
+        ]
+      ]
+    },
+    "polySurface773": {
+      "meshAndUVSha256": "706f0d56aa6188781f26aeece98936359645c82ca1ad4607b74c71e2466ad581",
+      "vertices": 164,
+      "polygons": 103,
+      "originalUV": [
+        "UV1",
+        "UV2"
+      ],
+      "triangles": 308,
+      "normalizedBlenderBounds": [
+        [
+          -5.014026165008545,
+          -5.235354900360107,
+          0.0
+        ],
+        [
+          5.014026165008545,
+          5.235354900360107,
+          3.2999379634857178
+        ]
+      ]
+    },
+    "polySurface806": {
+      "meshAndUVSha256": "c4b9ef4be1a998e8f323b8d0d209965c07f81f2bef48c2abc72090d660c916a3",
+      "vertices": 89,
+      "polygons": 57,
+      "originalUV": [
+        "UV1",
+        "UV2"
+      ],
+      "triangles": 158,
+      "normalizedBlenderBounds": [
+        [
+          -4.800000190734863,
+          -0.22666016221046448,
+          0.0
+        ],
+        [
+          4.800000190734863,
+          0.22666016221046448,
+          3.2999379634857178
+        ]
+      ]
+    }
+  },
+  "exportSha256": "6c0748ab179e824f68fbf5ef339cefef9c9b1877628281ee300e405d66ef83c7",
+  "authoring": {
+    "colourMapping": "box projection blend .18, .30 repeats per metre / 3.333 metre source-image tile; deterministic ObjectInfo random phase; .23-scale low-frequency weather .72-1.0; uneven base grime .64-1 across lowest .65m; original upward fracture normals dotZ>.23 darkened by .44-.76 aggregate noise",
+    "atlasResolution": [
+      2048,
+      2048
+    ],
+    "islandMarginUV": 0.012,
+    "smartProjectionAngleDegrees": 30,
+    "bakeMarginPixels": 16,
+    "roughness": {
+      "body": [
+        0.78,
+        0.94
+      ],
+      "fractureAdditional": 0.1,
+      "clamp": [
+        0,
+        1
+      ]
+    },
+    "normal": "artist-authored noise26/metre, bump strength .22, distance .012m; upward fracture noise11/metre, strength .20 distance .018m; tangent-space bake; not measured PBR",
+    "sourceUVsPreserved": [
+      "UV1",
+      "UV2"
+    ],
+    "outputAxes": "glTF X right Y up Z = -Blender Y",
+    "scale": 0.8
+  },
+  "exportUVLayers": [
+    "DepotAtlas"
+  ]
+}

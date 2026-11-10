@@ -1,0 +1,207 @@
+--- approved-source/work/src/battlefront-perimeter-view.js
++++ grounded-g1/work/src/battlefront-perimeter-view.js
+@@ -0,0 +1,25 @@
++import * as THREE from 'three';
++
++/** Static optical backdrop only. Never sample or extend the authoritative field.
++ * One joined strip per original boundary edge, falling to y=0 at the exterior.
++ * 576 m encloses the production finite frustum over aspect .25..8; see G1 proof.
++ */
++export function createBattlefrontPerimeterGeometry(field){
++ const {columns,rows,bounds:b,dx,dz,heights}=field,margin=576;
++ const outerBounds={minX:b.minX-margin,maxX:b.maxX+margin,minZ:b.minZ-margin,maxZ:b.maxZ+margin};
++ const boundary=[];
++ for(let i=0;i<columns;i++)boundary.push([i,0]);
++ for(let j=0;j<rows;j++)boundary.push([columns,j]);
++ for(let i=columns;i>0;i--)boundary.push([i,rows]);
++ for(let j=rows;j>0;j--)boundary.push([0,j]);
++ const positions=[],uv=[],indices=[];
++ for(const [i,j] of boundary){
++  const x=b.minX+i*dx,z=b.minZ+j*dz;
++  // Corresponding rectangular parameters make adjacent strips share corners.
++  const ox=outerBounds.minX+i/columns*(outerBounds.maxX-outerBounds.minX),oz=outerBounds.minZ+j/rows*(outerBounds.maxZ-outerBounds.minZ);
++  positions.push(x,heights[j*(columns+1)+i],z,ox,0,oz);uv.push(x/4,-z/4,ox/4,-oz/4);
++ }
++ for(let k=0;k<boundary.length;k++){const a=k*2,b=((k+1)%boundary.length)*2;indices.push(a,b,a+1,b,b+1,a+1);}
++ const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geometry.setIndex(indices);geometry.computeVertexNormals();geometry.computeBoundingSphere();
++ return {geometry,diagnostics:{perimeterEdges:boundary.length,triangles:indices.length/3,drawCalls:1,outerBounds,margin,viewOnly:true,additionalTextureBytes:0}};
++}
+--- approved-source/work/src/terrain-candidate/relief-view.js
++++ grounded-g1/work/src/terrain-candidate/relief-view.js
+@@ -1,3 +1,4 @@
++import {createBattlefrontPerimeterGeometry} from '../battlefront-perimeter-view.js';
+ import {TERRAIN_TEXTURE_URLS} from '../../assets/terrain/runtime-textures.js';
+ import * as THREE from 'three';
+ 
+@@ -72,16 +73,24 @@
+ shader.fragmentShader=replaceChunk(shader.fragmentShader,'normal_fragment_maps',`vec3 terrainNormal=normalize(mix(texture2D(earthNormal,terrainUv).xyz*2.0-1.0,texture2D(normalMap,terrainUv).xyz*2.0-1.0,terrainBlend));
+ terrainNormal.xy*=normalScale*mix(.25+.55*terrainMasks.b,1.0,terrainBlend);normal=normalize(tbn*terrainNormal);`);
+ if(appearance==='battlefront')shader.fragmentShader=shader.fragmentShader
+- .replace('diffuseColor.rgb*=terrainColor;',`// battlefront authored mineral-earth trial; optical only, same six maps.
+-float mineralLuma=dot(earthDetail,vec3(.2126,.7152,.0722));
+-float ash=smoothstep(.36,.74,terrainMasks.b);
++ .replace('vec4 terrainMasks=texture2D(terrainMask,(terrainXZ-terrainBounds.xy)/terrainBounds.zw);',`bool terrainOutside=any(lessThan(terrainXZ,terrainBounds.xy))||any(greaterThan(terrainXZ,terrainBounds.xy+terrainBounds.zw));
++vec4 terrainMasks=terrainOutside?vec4(0.0,0.0,.18,0.0):texture2D(terrainMask,(terrainXZ-terrainBounds.xy)/terrainBounds.zw);`)
++ .replace('diffuseColor.rgb*=terrainColor;',`// battlefront coherent historic damage: mineral soil, dusty shoulders, charred cores; optical only.
++float battleLuma=dot(earthDetail,vec3(.2126,.7152,.0722));
++float battleAsh=smoothstep(.24,.48,terrainMasks.b)*(1.0-smoothstep(.64,.88,terrainMasks.b));
++float battleSoot=smoothstep(.57,.88,terrainMasks.b);
++float battleDamage=max(battleAsh,battleSoot);
+ vec3 mineralSoil=mix(vec3(.25,.22,.175),earthDetail*vec3(.94,.86,.73),.62);
+ vec3 compacted=mix(vec3(.25,.205,.15),earthDetail*vec3(1.0,.85,.65),.56);
+ compacted*=1.0-terrainMasks.a*.22;
+ mineralSoil=mix(mineralSoil,compacted,terrainMasks.g*.85);
+-vec3 mineralAsh=mix(vec3(.30,.28,.24),vec3(mineralLuma)*.86,.38);
+-vec3 mineralGround=mix(mineralSoil,mineralAsh,ash*.48)*(.87+coarseLuma*.44);
+-terrainColor=mix(mineralGround,asphaltColor,terrainBlend);
++vec3 battlePowder=mix(vec3(.34,.30,.25),vec3(battleLuma)*.86,.38);
++vec3 battleChar=mix(vec3(.035,.030,.026),vec3(battleLuma)*.20,.35);
++vec3 battleGround=mix(mineralSoil,battlePowder,battleAsh*.76)*(.87+coarseLuma*.44);
++battleGround=mix(battleGround,battleChar,battleSoot*.88);
++vec3 battlePigment=mix(battlePowder,battleChar,battleSoot);
++vec3 battleRoad=mix(asphaltColor,battlePigment,.25*battleDamage);
++terrainColor=mix(battleGround,battleRoad,terrainBlend);
+ diffuseColor.rgb*=terrainColor;`)
+  .replace('normalScale*mix(.25+.55*terrainMasks.b,1.0,terrainBlend)','normalScale*mix(.48,1.0,terrainBlend)');
+ if(appearance==='scorched')shader.fragmentShader=shader.fragmentShader
+@@ -139,6 +148,16 @@
+  const ridge=Math.exp(-(((x+warp)/11)**2+((z+18)/7)**2));
+  return clamp(.22+.19*weather+.09*breakup+.72*Math.max(west,east,ridge),0,1);
+ }
++/** Existing B channel: four anchored continuous elliptical historic damage zones.
++ * Quiet mineral negative space is deliberate; no displacement or contact changes.
++ */
++export function battlefrontWeatherWeight(x,z){
++ const weather=noise.simplex(x*.075+21.7,z*.075-14.2);
++ const warpX=1.2*noise.simplex(x*.11+9.3,z*.11-2.7),warpZ=1.2*noise.simplex(x*.11-4.6,z*.11+12.1);
++ const zone=(cx,cz,rx,rz)=>Math.exp(-(((x-cx+warpX)/rx)**2+((z-cz+warpZ)/rz)**2));
++ const damage=Math.max(zone(-26,25,8,10),zone(-30,18,7,10),zone(-32,-5,6,13),zone(19.5,0,6,10));
++ return clamp(.12+.035*weather+.83*damage,0,1);
++}
+ export function createReliefView(scene,field,{loadTextures=typeof document!=='undefined',maxAnisotropy=4,appearance='default'}={}){
+ const owned=[],loader=loadTextures?new THREE.TextureLoader():null,pending=[];
+ function map(name,slot){let t;if(loader){let resolve,reject;pending.push(new Promise((a,b)=>{resolve=a;reject=b;}));t=loader.load(TERRAIN_TEXTURE_URLS[name][slot],()=>resolve(),undefined,()=>reject(new Error(`Terrain texture failed: ${name}/${slot}`)));}else t=new THREE.DataTexture(new Uint8Array(slot==='normal'?[128,128,255,255]:[160,200,0,255]),1,1);
+@@ -151,14 +170,22 @@
+ const x=b.minX+(i+.5)/size*w,z=b.minZ+(j+.5)/size*h;
+ const dirtSample=roadSample(earth,x,z),hardSample=roadSample(asphalt,x,z),hard=roadMaterialWeight(hardSample,x,z),dirt=roadMaterialWeight(dirtSample,x,z)*(1-hard);
+ const tracks=dirtSample?Math.exp(-(((dirtSample.distance-dirtSample.width*.27)/.32)**2))*dirt:0;
+-const macro=(appearance==='crossfire'||appearance==='battlefront')?crossfireWeatherWeight(x,z):clamp(.5+.42*noise.simplex(x*.035,z*.035)+.13*noise.simplex(x*.11+3,z*.11-8),0,1);
++const macro=appearance==='battlefront'?battlefrontWeatherWeight(x,z):appearance==='crossfire'?crossfireWeatherWeight(x,z):clamp(.5+.42*noise.simplex(x*.035,z*.035)+.13*noise.simplex(x*.11+3,z*.11-8),0,1);
+ const k=(j*size+i)*4;data[k]=Math.round(hard*255);data[k+1]=Math.round(dirt*255);data[k+2]=Math.round(macro*255);data[k+3]=Math.round((tracks+(hard>0?hard*asphaltWeatherWeight(hardSample,x,z):0))*255);
+ }
+ const mask=new THREE.DataTexture(data,size,size);mask.magFilter=THREE.LinearFilter;mask.minFilter=THREE.LinearMipmapLinearFilter;mask.generateMipmaps=true;mask.needsUpdate=true;owned.push(mask);
+ const geometry=createReliefGeometry(field),material=new THREE.MeshStandardMaterial({vertexColors:false,roughness:1,metalness:0,map:maps.asphalt.color,normalMap:maps.asphalt.normal,roughnessMap:maps.asphalt.orm,normalScale:new THREE.Vector2(.6,.6)});
+ material.onBeforeCompile=shader=>patchReliefShader(shader,{terrainMask:{value:mask},earthColor:{value:maps.earth.color},earthNormal:{value:maps.earth.normal},earthOrm:{value:maps.earth.orm},terrainBounds:{value:new THREE.Vector4(b.minX,b.minZ,w,h)}},{appearance});
+-material.customProgramCacheKey=()=> appearance==='battlefront'?'relief-pbr-world-weather-v5-battlefront':appearance==='crossfire'?'relief-pbr-world-weather-v4-crossfire':appearance==='scorched'?'relief-pbr-world-weather-v3-scorched':'relief-pbr-world-weather-v3';
+-const mesh=new THREE.Mesh(geometry,material);mesh.name='shared-heightfield-relief';mesh.receiveShadow=true;scene.add(mesh);let disposed=false;
++material.customProgramCacheKey=()=> appearance==='battlefront'?'relief-pbr-world-weather-v6-battlefront-grounded':appearance==='crossfire'?'relief-pbr-world-weather-v4-crossfire':appearance==='scorched'?'relief-pbr-world-weather-v3-scorched':'relief-pbr-world-weather-v3';
++const mesh=new THREE.Mesh(geometry,material);mesh.name='shared-heightfield-relief';mesh.receiveShadow=true;scene.add(mesh);
++let perimeterMesh,perimeterDiagnostics;
++if(appearance==='battlefront'){
++ const perimeter=createBattlefrontPerimeterGeometry(field);perimeterDiagnostics=perimeter.diagnostics;
++ perimeterMesh=new THREE.Mesh(perimeter.geometry,material);perimeterMesh.name='battlefront-optical-exterior-ground';perimeterMesh.castShadow=false;perimeterMesh.receiveShadow=true;perimeterMesh.userData.viewOnly=true;
++ // Exclude this backdrop from generic selectable-object ray queries as well.
++ perimeterMesh.raycast=()=>{};scene.add(perimeterMesh);
++}
++let disposed=false;
+ // Static terrain still implements the campaign view lifecycle contract.
+-return {mesh,update(){},ready:Promise.all(pending),diagnostics:{triangles:geometry.index.count/3,drawCalls:1,materials:'embedded-original-PBR',maskResolution:size,maskBaseBytes:data.byteLength,...(['crossfire','battlefront'].includes(appearance)?{additionalTextureBytes:0,appearance,damageIsSurfaceOnly:true}:{}),maskMipmappedBytes:(data.byteLength*4-4)/3,terrainHeightSource:'same grid triangle interpolation as contact sampler'},dispose(){if(disposed)return;disposed=true;scene.remove(mesh);geometry.dispose();material.dispose();for(const t of owned)t.dispose();}};
++return {mesh,...(perimeterMesh?{perimeterMesh}:{}),update(){},ready:Promise.all(pending),diagnostics:{triangles:geometry.index.count/3+(perimeterDiagnostics?.triangles??0),drawCalls:perimeterMesh?2:1,...(perimeterMesh?{baseTriangles:geometry.index.count/3,perimeterTriangles:perimeterDiagnostics.triangles,perimeter:perimeterDiagnostics}:{}),materials:'embedded-original-PBR',maskResolution:size,maskBaseBytes:data.byteLength,...(['crossfire','battlefront'].includes(appearance)?{additionalTextureBytes:0,appearance,damageIsSurfaceOnly:true}:{}),maskMipmappedBytes:(data.byteLength*4-4)/3,terrainHeightSource:'same grid triangle interpolation as contact sampler'},dispose(){if(disposed)return;disposed=true;scene.remove(mesh);if(perimeterMesh){scene.remove(perimeterMesh);perimeterMesh.geometry.dispose();}geometry.dispose();material.dispose();for(const t of owned)t.dispose();}};
+ }
+--- approved-source/work/tests/battlefront-depot-terrain.test.mjs
++++ grounded-g1/work/tests/battlefront-depot-terrain.test.mjs
+@@ -7,7 +7,7 @@
+ const hash=b=>createHash('sha256').update(b).digest('hex');
+ test('old default/scorched/crossfire shader text is byte-exact; candidate adds no sampler and unique cache key',()=>{
+  for(const appearance of ['default','scorched','crossfire']){const a=shader(),b=shader();patchReliefShader(a,{}, {appearance});old.patchReliefShader(b,{}, {appearance});assert.deepEqual(a,b);}
+- const a=shader(),b=shader();patchReliefShader(a,{}, {appearance:'battlefront'});patchReliefShader(b,{}, {appearance:'crossfire'});assert.equal((a.fragmentShader.match(/sampler2D/g)||[]).length,(b.fragmentShader.match(/sampler2D/g)||[]).length);assert.match(a.fragmentShader,/mineralSoil/);assert.doesNotMatch(a.fragmentShader,/warChar/);
++ const a=shader(),b=shader();patchReliefShader(a,{}, {appearance:'battlefront'});patchReliefShader(b,{}, {appearance:'crossfire'});assert.equal((a.fragmentShader.match(/sampler2D/g)||[]).length,(b.fragmentShader.match(/sampler2D/g)||[]).length);assert.match(a.fragmentShader,/mineralSoil/);assert.match(a.fragmentShader,/battleChar/);assert.match(a.fragmentShader,/terrainOutside/);
+ });
+ test('old mask/geometry remain exact, candidate uses same six maps and existing B weather channel without geometry or map URL changes',()=>{
+  const {field}=createBattlefrontDepotFront();let candidate;
+@@ -15,7 +15,7 @@
+   const a=createReliefView(new THREE.Group(),field,{loadTextures:false,appearance}),b=old.createReliefView(new THREE.Group(),field,{loadTextures:false,appearance});
+   try{const sa=shader(),sb=shader();a.mesh.material.onBeforeCompile(sa);b.mesh.material.onBeforeCompile(sb);assert.equal(hash(sa.uniforms.terrainMask.value.image.data),hash(sb.uniforms.terrainMask.value.image.data));assert.deepEqual(a.mesh.geometry.attributes.position.array,b.mesh.geometry.attributes.position.array);assert.deepEqual(a.mesh.geometry.index.array,b.mesh.geometry.index.array);
+    if(appearance==='crossfire'){
+-    candidate=createReliefView(new THREE.Group(),field,{loadTextures:false,appearance:'battlefront'});const sc=shader();candidate.mesh.material.onBeforeCompile(sc);assert.equal(hash(sc.uniforms.terrainMask.value.image.data),hash(sa.uniforms.terrainMask.value.image.data));assert.equal(candidate.mesh.material.customProgramCacheKey(),'relief-pbr-world-weather-v5-battlefront');assert.notEqual(candidate.mesh.material.customProgramCacheKey(),a.mesh.material.customProgramCacheKey());assert.deepEqual(candidate.mesh.geometry.attributes.position.array,a.mesh.geometry.attributes.position.array);assert.deepEqual(candidate.mesh.geometry.index.array,a.mesh.geometry.index.array);assert.equal(Object.values(sc.uniforms).filter(u=>u.value?.isTexture).length+3,7);assert.equal(candidate.diagnostics.additionalTextureBytes,0);assert.equal(candidate.diagnostics.maskResolution,1024);
++    candidate=createReliefView(new THREE.Group(),field,{loadTextures:false,appearance:'battlefront'});const sc=shader();candidate.mesh.material.onBeforeCompile(sc);const ca=sc.uniforms.terrainMask.value.image.data,oa=sa.uniforms.terrainMask.value.image.data;let bChanges=0;for(let i=0;i<ca.length;i+=4){assert.equal(ca[i],oa[i]);assert.equal(ca[i+1],oa[i+1]);assert.equal(ca[i+3],oa[i+3]);bChanges+=ca[i+2]!==oa[i+2];}assert.ok(bChanges>900000);assert.equal(candidate.mesh.material.customProgramCacheKey(),'relief-pbr-world-weather-v6-battlefront-grounded');assert.notEqual(candidate.mesh.material.customProgramCacheKey(),a.mesh.material.customProgramCacheKey());assert.deepEqual(candidate.mesh.geometry.attributes.position.array,a.mesh.geometry.attributes.position.array);assert.deepEqual(candidate.mesh.geometry.index.array,a.mesh.geometry.index.array);assert.equal(Object.values(sc.uniforms).filter(u=>u.value?.isTexture).length+3,7);assert.equal(candidate.diagnostics.additionalTextureBytes,0);assert.equal(candidate.diagnostics.maskResolution,1024);
+    }
+   }finally{a.dispose();b.dispose();candidate?.dispose();}
+  }
+--- approved-source/work/tests/battlefront-perimeter.test.mjs
++++ grounded-g1/work/tests/battlefront-perimeter.test.mjs
+@@ -0,0 +1,44 @@
++/** CPU geometry/frustum evidence only: not pixels, GPU compilation or measured performance. */
++import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import * as THREE from 'three';
++import {createBattlefrontDepotFront} from '../src/battlefront-depot-front.js';import * as relief from '../src/terrain-candidate/relief-view.js';
++const freeze=o=>{if(o&&typeof o==='object'&&!ArrayBuffer.isView(o)){Object.freeze(o);for(const v of Object.values(o))freeze(v);}return o;};
++const shader=()=>({uniforms:{},vertexShader:THREE.ShaderLib.standard.vertexShader,fragmentShader:THREE.ShaderLib.standard.fragmentShader});
++test('candidate supplies exact stitched 656-edge exterior-only ring with upward winding and joined corners',async()=>{
++ const {field}=createBattlefrontDepotFront(),before=JSON.stringify(field);freeze(field);
++ const scene=new THREE.Group(),view=relief.createReliefView(scene,field,{loadTextures:false,appearance:'battlefront'});
++ try{
++ assert.ok(view.perimeterMesh,'battlefront must supply missing optical exterior geometry');
++ const api=await import('../src/battlefront-perimeter-view.js');assert.equal(typeof api.createBattlefrontPerimeterGeometry,'function');
++ const {geometry:g,diagnostics}=api.createBattlefrontPerimeterGeometry(field),p=g.attributes.position,uv=g.attributes.uv,idx=g.index.array,b=field.bounds;
++ try{assert.equal(idx.length/3,1312);assert.equal(p.count,1312);assert.equal(diagnostics.perimeterEdges,656);assert.deepEqual(diagnostics.outerBounds,{minX:-616,maxX:616,minZ:-618,maxZ:618});
++ const expected=[];for(let i=0;i<160;i++)expected.push([i,0]);for(let j=0;j<168;j++)expected.push([160,j]);for(let i=160;i>0;i--)expected.push([i,168]);for(let j=168;j>0;j--)expected.push([0,j]);
++ const inner=new Set(),outer=new Set();for(let k=0;k<656;k++){const [i,j]=expected[k],n=k*2;assert.equal(p.getX(n),Math.fround(b.minX+i*field.dx));assert.equal(p.getZ(n),Math.fround(b.minZ+j*field.dz));assert.equal(p.getY(n),Math.fround(field.heights[j*161+i]));inner.add([p.getX(n),p.getZ(n)].join(','));outer.add([p.getX(n+1),p.getZ(n+1)].join(','));assert.equal(p.getY(n+1),0);assert.ok(p.getX(n+1)===-616||p.getX(n+1)===616||p.getZ(n+1)===-618||p.getZ(n+1)===618);}
++ assert.equal(inner.size,656);assert.equal(outer.size,656);for(const c of ['-616,-618','616,-618','616,618','-616,618'])assert.ok(outer.has(c));
++ let area=0;for(let k=0;k<idx.length;k+=3){const a=idx[k],c=idx[k+1],d=idx[k+2],signed=(p.getZ(c)-p.getZ(a))*(p.getX(d)-p.getX(a))-(p.getX(c)-p.getX(a))*(p.getZ(d)-p.getZ(a));assert.ok(signed>0,'every triangle faces up');area+=signed/2;
++ // Convex half-space proves each entire triangle is outside, not just its centroid.
++ assert.ok([['X',-40,-1],['X',40,1],['Z',-42,-1],['Z',42,1]].some(([axis,edge,sign])=>[a,c,d].every(n=>sign*(p['get'+axis](n)-edge)>=0)),'no positive-area interior overlap');}
++ assert.ok(Math.abs(area-(1232*1236-80*84))<1);for(let k=0;k<p.count;k++){assert.ok(Math.abs(uv.getX(k)-p.getX(k)/4)<1e-5);assert.ok(Math.abs(uv.getY(k)+p.getZ(k)/4)<1e-5);}
++ assert.equal(JSON.stringify(field),before);
++ }finally{g.dispose();}
++ }finally{view.dispose();}
++});
++test('candidate ring borrows one material and maps, has no raycast/caster, and disposes each resource exactly once',()=>{
++ const {field,spec}=createBattlefrontDepotFront(),before=JSON.stringify({field,spec});freeze(field);freeze(spec);const scene=new THREE.Scene(),v=relief.createReliefView(scene,field,{loadTextures:false,appearance:'battlefront'});
++ try{assert.ok(v.perimeterMesh,'missing ring');const r=v.perimeterMesh;assert.equal(r.material,v.mesh.material);assert.equal(r.castShadow,false);assert.equal(r.receiveShadow,true);assert.equal(r.material.transparent,false);assert.equal(r.material.opacity,1);assert.equal(new THREE.Raycaster(new THREE.Vector3(-50,100,0),new THREE.Vector3(0,-1,0)).intersectObject(r).length,0);
++ const s=shader();v.mesh.material.onBeforeCompile(s);const resources=new Set([r.geometry,v.mesh.geometry,v.mesh.material,v.mesh.material.map,v.mesh.material.normalMap,v.mesh.material.roughnessMap,...Object.values(s.uniforms).map(u=>u.value).filter(t=>t?.isTexture)]),counts=new Map();for(const x of resources){counts.set(x,0);x.addEventListener('dispose',()=>counts.set(x,counts.get(x)+1));}assert.equal(resources.size,10);assert.equal(v.diagnostics.drawCalls,2);assert.equal(v.diagnostics.perimeterTriangles,1312);assert.equal(v.diagnostics.additionalTextureBytes,0);const version=s.uniforms.terrainMask.value.version;v.update(freeze({phase:'playing'}),freeze([]),1/60);assert.equal(s.uniforms.terrainMask.value.version,version);assert.equal(JSON.stringify({field,spec}),before);v.dispose();v.dispose();assert.equal(scene.children.length,0);for(const n of counts.values())assert.equal(n,1);
++ }finally{v.dispose();}
++});
++test('actual production camera frustum and smoothing/aim envelope fit ring for aspect .25..8 and four review viewports',()=>{
++ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8'),cam=main.match(/PerspectiveCamera\(([^)]+)\)/)[1].split(',').map(Number),offsets=[...main.matchAll(/target\.[xyz]\+\(portrait\?(\d+):(\d+)\)/g)].map(m=>[+m[1],+m[2]]),aim=+main.match(/Math\.sin\(aim\)\*([\d.]+)/)[1],threshold=+main.match(/portrait=camera\.aspect<([\d.]+)/)[1];assert.deepEqual(cam,[42,1,.15,150]);assert.deepEqual(offsets,[[8,10],[23,19],[22,18]]);assert.equal(aim,2.2);assert.equal(threshold,.85);assert.match(main,/target\.lerp\(focus,1-Math\.exp\(-Math\.min\(dt,\.1\)\*5\)\)/,'target remains convex combination of prior targets/focus');
++ const {field,spec}=createBattlefrontDepotFront(),v=relief.createReliefView(new THREE.Group(),field,{loadTextures:false,appearance:'battlefront'});try{assert.ok(v.perimeterMesh,'missing ring');v.perimeterMesh.geometry.computeBoundingBox();const bounds=v.perimeterMesh.geometry.boundingBox,radial=150*Math.sqrt(1+Math.tan(21*Math.PI/180)**2*(1+8**2)),b=spec.bounds;assert.ok(radial>480&&radial<490);
++ const aspects=[.25,.849999,.85,8,400/300,844/390,1280/720,390/844];for(const aspect of aspects){const camera=new THREE.PerspectiveCamera(cam[0],aspect,cam[2],cam[3]),d=new THREE.Vector3(...offsets.map(pair=>pair[aspect<threshold?0:1]));
++ for(const x of [b.minX-aim,b.maxX+aim])for(const z of [b.minZ-aim,b.maxZ+aim])for(const y of [.5,4.7]){const target=new THREE.Vector3(x,y,z);camera.position.copy(target).add(d);camera.lookAt(target);camera.updateMatrixWorld();for(const sx of [-1,1])for(const sy of [-1,1])for(const depth of [-1,1]){const p=new THREE.Vector3(sx,sy,depth).unproject(camera);assert.ok(p.x>bounds.min.x&&p.x<bounds.max.x&&p.z>bounds.min.z&&p.z<bounds.max.z,'entire convex finite frustum enclosed');}}
++ }
++ // Continuous aspect range bound, not only sampled viewports or ray-plane division at horizon.
++ for(const axis of ['x','z']){const min=axis==='x'?b.minX:b.minZ,max=axis==='x'?b.maxX:b.maxZ,offset=Math.max(...offsets[axis==='x'?0:2]);assert.ok(min-aim+Math.min(...offsets[axis==='x'?0:2])-radial>bounds.min[axis]);assert.ok(max+aim+offset+radial<bounds.max[axis]);}
++ }finally{v.dispose();}
++});
++
++test('all three retained appearances remain one mesh with no optical ring',()=>{
++ const {field}=createBattlefrontDepotFront();for(const appearance of ['default','scorched','crossfire']){const scene=new THREE.Group(),v=relief.createReliefView(scene,field,{loadTextures:false,appearance});try{assert.equal(v.perimeterMesh,undefined);assert.equal(scene.children.length,1);assert.equal(v.diagnostics.drawCalls,1);assert.equal(v.diagnostics.triangles,53760);}finally{v.dispose();}assert.equal(scene.children.length,0);}
++});
+--- approved-source/work/tests/battlefront-grounded-terrain.test.mjs
++++ grounded-g1/work/tests/battlefront-grounded-terrain.test.mjs
+@@ -0,0 +1,27 @@
++/** CPU mask and actual GLSL arithmetic, not visual/GPU acceptance. */
++import test from 'node:test';import assert from 'node:assert/strict';import * as THREE from 'three';import * as relief from '../src/terrain-candidate/relief-view.js';import {createBattlefrontDepotFront} from '../src/battlefront-depot-front.js';
++const shader=()=>({uniforms:{},vertexShader:THREE.ShaderLib.standard.vertexShader,fragmentShader:THREE.ShaderLib.standard.fragmentShader});
++test('four actual damage anchors have bounded continuous high cores, smooth falloff and quiet negative space',()=>{
++ assert.equal(typeof relief.battlefrontWeatherWeight,'function','missing four-zone B composition');const f=relief.battlefrontWeatherWeight;for(const [x,z] of [[-26,25],[-30,18],[-32,-5],[19.5,0]]){assert.ok(f(x,z)>.78,'high core at '+[x,z]);assert.ok(f(x+20,z)<.35,'falloff at '+[x,z]);let high=0,maxDelta=0;for(let dz=-2;dz<=2;dz+=.25)for(let dx=-2;dx<=2;dx+=.25){high+=f(x+dx,z+dz)>.72;maxDelta=Math.max(maxDelta,Math.abs(f(x+dx,z+dz)-f(x+dx+.05,z+dz)));}assert.ok(high>100);assert.ok(maxDelta<.025);}
++ let count=0,low=0,high=0,maxDelta=0;for(let z=-42;z<42;z+=.5)for(let x=-40;x<40;x+=.5){const n=f(x,z);assert.ok(Number.isFinite(n)&&n>=0&&n<=1);assert.equal(n,f(x,z));low+=n<.35;high+=n>.72;count++;maxDelta=Math.max(maxDelta,Math.abs(n-f(x+.01,z)));}assert.ok(low/count>=.35);assert.ok(high/count<.2);assert.ok(maxDelta<.01);assert.ok(f(0,-20)<.35);for(const [x,z] of [[0,0],[1e6,-1e6],[-616,-618]])assert.ok(Number.isFinite(f(x,z)));
++});
++function evaluate(appearance,{weather=.1,dirt=0,ruts=0,asphalt=0,outside=false}={}){
++ const s=shader();relief.patchReliefShader(s,{}, {appearance});const marker='// battlefront coherent historic damage:';assert.ok(s.fragmentShader.includes(marker),'missing coherent char/ash pigment branch');const source=s.fragmentShader.split(marker)[1].split('diffuseColor.rgb*=terrainColor;')[0];const earth=[.32,.27,.19],luma=earth.reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0),mix=(a,b,t)=>a*(1-t)+b*t,smoothstep=(a,b,v)=>{const t=Math.max(0,Math.min(1,(v-a)/(b-a)));return t*t*(3-2*t);};
++ return earth.map((detail,c)=>{let body=source.slice(source.indexOf('float battleLuma=' )).replace(/dot\(earthDetail,vec3\(\.2126,\.7152,\.0722\)\)/g,'luma').replace(/vec3\(([^()]*)\)/g,(_,v)=>{const a=v.split(',');return '('+(a.length===1?a[0]:a[c])+')';}).replace(/\b(?:float|vec3)\s+/g,'let ').replace(/\bmax\(/g,'Math.max(').replaceAll('terrainMasks.b','weather').replaceAll('terrainMasks.g','dirt').replaceAll('terrainMasks.a','ruts');return new Function('mix','smoothstep','earthDetail','luma','weather','dirt','ruts','coarseLuma','asphaltColor','terrainBlend',`let terrainColor=0;${body};return terrainColor;`)(mix,smoothstep,detail,luma,weather,dirt,ruts,.32,.10,asphalt);});
++}
++test('candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25',()=>{
++ for(const weather of [.1,.5,.95]){const bare=evaluate('battlefront',{weather}),dirt=evaluate('battlefront',{weather,dirt:1}),rut=evaluate('battlefront',{weather,dirt:1,ruts:1});assert.ok(dirt.some((x,i)=>Math.abs(x-bare[i])>1e-6));assert.ok(rut.every((x,i)=>x<dirt[i]));assert.deepEqual(evaluate('battlefront',{weather,dirt:0,ruts:1}),bare);const road=evaluate('battlefront',{weather,asphalt:1});assert.deepEqual(road,evaluate('battlefront',{weather,asphalt:1,dirt:1}));for(const x of road)assert.ok(x>=.075&&x<=.175,'25% pigment over asphalt .1 bounded by pigment[0,.4]');}
++ const core=evaluate('battlefront',{weather:.95}),soil=evaluate('battlefront',{weather:.1}),ash=evaluate('battlefront',{weather:.5});assert.ok(core.every((v,i)=>v<soil[i]*.55));assert.ok(ash.every((v,i)=>v>core[i]*2));const s=shader();relief.patchReliefShader(s,{}, {appearance:'battlefront'});assert.match(s.fragmentShader,/terrainOutside\?vec4\(0\.0,0\.0,\.18,0\.0\)/);assert.match(s.fragmentShader,/battleRoad=mix\(asphaltColor,battlePigment,\.25\*battleDamage\)/);
++});
++test('actual 1024-square mask preserves R/G/A raw bytes, changes only existing B, and candidate alone has exterior predicate',()=>{
++ const {field}=createBattlefrontDepotFront(),a=relief.createReliefView(new THREE.Group(),field,{loadTextures:false,appearance:'crossfire'}),b=relief.createReliefView(new THREE.Group(),field,{loadTextures:false,appearance:'battlefront'});try{const sa=shader(),sb=shader();a.mesh.material.onBeforeCompile(sa);b.mesh.material.onBeforeCompile(sb);const x=sa.uniforms.terrainMask.value.image.data,y=sb.uniforms.terrainMask.value.image.data;let changes=0,low=0,high=0;for(let i=0;i<x.length;i+=4){assert.equal(y[i],x[i]);assert.equal(y[i+1],x[i+1]);assert.equal(y[i+3],x[i+3]);changes+=y[i+2]!==x[i+2];low+=y[i+2]<.35*255;high+=y[i+2]>.72*255;}assert.ok(changes>900000);assert.ok(low/(x.length/4)>=.35);assert.ok(high/(x.length/4)<.2);assert.equal(y.byteLength,4194304);assert.equal((sb.fragmentShader.match(/sampler2D/g)||[]).length,(sa.fragmentShader.match(/sampler2D/g)||[]).length);assert.doesNotMatch(sa.fragmentShader,/terrainOutside/);assert.notEqual(b.mesh.material.customProgramCacheKey(),a.mesh.material.customProgramCacheKey());assert.equal(b.mesh.material.customProgramCacheKey(),'relief-pbr-world-weather-v6-battlefront-grounded');for(const name of ['position','normal','uv','color'])assert.deepEqual(b.mesh.geometry.attributes[name].array,a.mesh.geometry.attributes[name].array);assert.deepEqual(b.mesh.geometry.index.array,a.mesh.geometry.index.array);
++ }finally{a.dispose();b.dispose();}
++});
++
++test('actual candidate outside-bounds mask predicate resets road/rut channels on all four sides, not on seam',()=>{
++ const s=shader();relief.patchReliefShader(s,{}, {appearance:'battlefront'});const source=s.fragmentShader.split('bool terrainOutside=')[1].split('terrainBlend=')[0];assert.ok(source);
++ const code=('let terrainOutside='+source).replace('vec4 terrainMasks=','let terrainMasks=').replaceAll('terrainBounds.xy+terrainBounds.zw','[40,42]').replaceAll('terrainBounds.xy','[-40,-42]').replaceAll('terrainXZ','[x,z]').replace(/texture2D\([^;]+?\);/,'sample;');
++ const any=a=>a.some(Boolean),lessThan=(a,b)=>a.map((v,i)=>v<b[i]),greaterThan=(a,b)=>a.map((v,i)=>v>b[i]),vec4=(...a)=>a,sample=[.8,.7,.9,.6];
++ const f=new Function('x','z','any','lessThan','greaterThan','vec4','sample',code+'return terrainMasks;');
++ for(const [x,z,outside] of [[-40,0,false],[40,0,false],[0,-42,false],[0,42,false],[-40,-42,false],[40,42,false],[-40.001,0,true],[40.001,0,true],[0,-42.001,true],[0,42.001,true],[-616,-618,true],[616,618,true]])assert.deepEqual(f(x,z,any,lessThan,greaterThan,vec4,sample),outside?[0,0,.18,0]:sample);
++});

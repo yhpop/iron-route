@@ -1,0 +1,156 @@
+{
+  "mode": "post",
+  "baseHeadSHA256": "d4f625c03caff0fd5a6757fad208e8b05486805d8133059ce393fa2dc4c31f59",
+  "sourceHeadSHA256": "da33d2baf957d806e6ee6c7e228516c1cb0802385dfe814c9a33b738f8369894",
+  "sourceFileCount": 387,
+  "changedFromG2Base": [
+    {
+      "path": "work/src/authored-scene-view.js",
+      "old": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "new": "56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab"
+    },
+    {
+      "path": "work/tests/battlefront-depot-scope.test.mjs",
+      "old": "87e481c2ca13778c9156989c229d338d0390492259442cc5618f797a7b55d0c0",
+      "new": "93b9781e22e8e2f0d0fb66f4e19b71177ff4ee7a707a979e25e5849fb1320748"
+    },
+    {
+      "path": "work/tests/crossfire-v4-front.test.mjs",
+      "old": "6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da",
+      "new": "95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd"
+    }
+  ],
+  "addedFromG2Base": [
+    "work/src/battlefront-building-finish.js",
+    "work/tests/battlefront-building-finish.test.mjs"
+  ],
+  "inheritedEntryCount": 1654,
+  "inheritedChanges": [
+    {
+      "path": "work/dist/build-manifest.json",
+      "old": "109b8b7271941fb8a6474aae29de6e67f0918ba1f9d3ad1e642a90d89918799c",
+      "new": "eb098bd99d5ad289878d0a9c80024bb028bd0f0fa106c99969cb48b9936268e4"
+    },
+    {
+      "path": "work/dist/build-metafile.json",
+      "old": "682f26a8ac385530c1be4ef520a15e106841afb4635418524e21ff734f69ff4a",
+      "new": "5f07250e15feb3ea36bd9cb88322eec388fb0c732e443c7589031cb07161cb4a"
+    },
+    {
+      "path": "work/dist/game.js",
+      "old": "2c4c9290ca1c947ab0cdb0d0718c80f5ed10f1645ac0bd7acc81ff695be9b0f3",
+      "new": "12e20eae7187051bfa6071ab5c1a02b7d28046cc4c05230dc70cce7fbe923c31"
+    },
+    {
+      "path": "work/dist/index.html",
+      "old": "eed734cb9913cd8c3f79dbe50f3f94ed460122987718e465a232d428e82b36b9",
+      "new": "cfb6e12f43bba526461ca4be7a888b63db5cffb6fd9818bf4f0e27b67dfa55fa"
+    },
+    {
+      "path": "work/dist/\u94c1\u6d41_\u7535\u8111\u6d4f\u89c8\u5668\u79bb\u7ebf\u7248.html",
+      "old": "9dd27f405fb191675eca826e5f919118e1f395e639e85c7b84414cc232278c81",
+      "new": "3d061b3dbf64efbbf0d4ee4959b94491b75fb5074ff15ae897a2a43dfd3b096d"
+    },
+    {
+      "path": "work/dist-en/Iron_Route_Desktop_Offline.html",
+      "old": "9e5ed961ed60ecd8881a688a7ac60d79ddd053e029f748033b03627b2a0217f9",
+      "new": "507796af246c27a70582e80401bfb10c6ccbb7f5f11d9a6483df9ef3e6322781"
+    },
+    {
+      "path": "work/dist-en/build-manifest.json",
+      "old": "6098ea564e485cdc357162fb94ceaf916a6b43582e03b196111935553430a64e",
+      "new": "33a2bc5c749abf87cce5e4c88856ad41e41144dd5f83673804e4add4d7387002"
+    },
+    {
+      "path": "work/dist-en/build-metafile.json",
+      "old": "72f5aabed8c94d9bc520e28a86ad05ca0a5e79fc734745aa5dad95ac32fff082",
+      "new": "96bcf54f05e3d34ec4f9ab91a9a3b16bda8ad77f7a0d95388061ab7a537b4f28"
+    },
+    {
+      "path": "work/dist-en/game.js",
+      "old": "071ba1e445a15d9597740b2612fb0d24da56b59eea6ecde60f48d0c76255647c",
+      "new": "a3e3dd5418547dd7afed25700cc9fc2c8eeb0e16b0a79e5655e180e0dcdf03a5"
+    },
+    {
+      "path": "work/dist-en/index.html",
+      "old": "97c9e2b854e7c0716adb8412b06cd8c7c5e9c309ab1571b9a25b742ea5263b4a",
+      "new": "18bbf82e57ad1848838961f472c1d643f7148c62363fd0f91fd5281abe191991"
+    },
+    {
+      "path": "work/src/authored-scene-view.js",
+      "old": "2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c",
+      "new": "56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab"
+    },
+    {
+      "path": "work/src/terrain-candidate/relief-view.js",
+      "old": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53",
+      "new": "9ebc5e6cf71836e35b6e662fc150adfcdaf0c6414dc4278904648fc68d7e510c"
+    },
+    {
+      "path": "work/tests/battlefront-depot-scope.test.mjs",
+      "old": "87e481c2ca13778c9156989c229d338d0390492259442cc5618f797a7b55d0c0",
+      "new": "93b9781e22e8e2f0d0fb66f4e19b71177ff4ee7a707a979e25e5849fb1320748"
+    },
+    {
+      "path": "work/tests/battlefront-depot-terrain.test.mjs",
+      "old": "fc728983e1d71a632cfa8a9473dc2ac979ccc4a7702fe79c7664c48a5ff7213d",
+      "new": "cffa47b1d5d907456bb37f432cebc1e3cbb34da1b865ee6347508783a6156916"
+    },
+    {
+      "path": "work/tests/crossfire-v4-front.test.mjs",
+      "old": "6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da",
+      "new": "95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd"
+    }
+  ],
+  "protectedParentSourceFileCount": 382,
+  "protectedParentSourceHeadSHA256": "9de857120ed130b231c1761c99098babf35e02b0fbfa809c1f1ab52b513a378e",
+  "mainSHA256": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+  "originalMainSHA256": "9d937baf1d64fcb3409d3e975e1cf836c221e900dea420fdd57741289867e6dc",
+  "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+  "noGit": "Canonical SHA256 sorted compact JSON map; no Git operations or commits.",
+  "fullSuiteToFinalTestOnlyDrift": [
+    {
+      "path": "work/tests/battlefront-depot-scope.test.mjs",
+      "fullSuiteSHA256": "87e481c2ca13778c9156989c229d338d0390492259442cc5618f797a7b55d0c0",
+      "finalSHA256": "93b9781e22e8e2f0d0fb66f4e19b71177ff4ee7a707a979e25e5849fb1320748"
+    },
+    {
+      "path": "work/tests/crossfire-v4-front.test.mjs",
+      "fullSuiteSHA256": "6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da",
+      "finalSHA256": "95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd"
+    }
+  ],
+  "allProductionAssetsScriptsOtherTestsExactToFullSuite": true,
+  "fullSuiteSourceHeadSHA256": "7b14f59b031208455818bff3b6bcb8377726b9aee95d238496284f016b84c76a",
+  "fullSuiteActualCounts": {
+    "tests": 1117,
+    "pass": 1094,
+    "fail": 2,
+    "cancelled": 0,
+    "skipped": 21
+  },
+  "fullSuiteDisposition": "Once-only full suite has two obsolete authored-view identity guard failures; NOT a zero-failure full-suite result. Two repaired guards checked separately.",
+  "recoveryGuardTerminal": {
+    "name": "08-guards",
+    "utc": "2026-10-31T14:29:28.875582+00:00",
+    "timeoutSeconds": 60.0,
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "--test-name-pattern=^(BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings|V4 retains V3 physical sources and spec; grounded view and preserved V3 view have separate exact SHA bindings)$",
+      "tests/battlefront-depot-scope.test.mjs",
+      "tests/crossfire-v4-front.test.mjs"
+    ],
+    "cwd": "/workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work",
+    "runnerSHA256": "0d07e3a29710269389f639e9165b8423f5b37ed3cfcc006c7eb692b02936f512",
+    "pid": 5,
+    "exitCode": 0,
+    "timedOut": false,
+    "elapsedSeconds": 0.8834483629907481,
+    "sourceIdentityUnchanged": true,
+    "signaledPids": [],
+    "livingGroupAfterWait": []
+  },
+  "sourceDiffSHA256": "c5ef68385790957a399370478a1264d73f56ff3b6e60ded49a06c8efd8c812ed"
+}

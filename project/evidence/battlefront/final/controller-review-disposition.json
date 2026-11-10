@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-31T12:38:49.130068+00:00",
+  "wholeReviewSHA256": "8a20728a3c9f9545f16334b66b19465c4e610493ce8f28ca1cfe56c3cdfc6416",
+  "privateFreezeApproved": true,
+  "requiredFindingsOpen": 0,
+  "M1": "deferred, preserve historical compressed harness; format only before future substantive changes",
+  "M2": "historical runner not reused; new packaging uses separate session/process-group termination/wait; fix+verify before any future reuse",
+  "declinedBehaviorDispositions": {
+    "renderingShaderDecodeAndBeauty": "pending authorized Mac GPU observation",
+    "submittedDrawsAndTotalMemory": "unmeasured, CPU inventory only",
+    "DOMTouchAndTemporalOcclusion": "pending device, source dots not full meshes/history",
+    "instantaneousInRangeLOSCut": "not proved and not claimed",
+    "allFiveCompleteRoutesAndTurns": "not proved, two Sandfalcon routes/basic five rigs only",
+    "reverseNearTruckAndGeneralBalance": "not fixed or generally validated",
+    "allOldFullReplays": "21 original env-gated cases skipped; no fresh universal play claim",
+    "secondsLongScheduling": "unresolved, no cause/fix claim or clock/safety change",
+    "RED02PrelaunchIdentity": "unrecoverable missing prelaunch capture, retrospective only",
+    "reviewerFreshExecution": "saved-source/evidence review only",
+    "publicCommercialRights": "unresolved Vanguard rights, private only",
+    "archiveContentsAndPortability": "subsequent actual ZIP/hash/CRC inspection required; no dependency/authoring-source completeness overclaim"
+  },
+  "integrationChoice": "User-established private new source+device Library creates; no Git merge/push/delete permitted; preserve candidate and old versions",
+  "noRepeatHeavyRuns": "Actual full suite/build/replays ran on this identical frozen head; fresh identity checks bind delivery without repeating them",
+  "browserVerified": false,
+  "publicReleaseApproved": false,
+  "macPerformanceFixProved": false
+}

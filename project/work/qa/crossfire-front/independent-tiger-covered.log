@@ -1,0 +1,12 @@
+{"event":"replay-start","file":"newc-tiger-covered-locked-westlane-inputs.json.gz","at":"2026-10-30T21:01:28.726Z"}
+{"event":"replay-end","sourceDifferences":[],"recordedSourceHashes":{"campaign-simulation.js":"501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae","combat.js":"bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6","combat-relations.js":"10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2","crossfire-front.js":"4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6","player-vehicles.js":"fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f","player-config.js":"1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197","tank-controller.js":"61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44","campaign-world.js":"f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6","interceptor.js":"7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63","mission-runtime.js":"f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34","crushing.js":"f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212","terrain-candidate/combat-world.js":"60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"},"mutual":{"supportShots":6,"flankerShots":7,"supportDamageEvents":6,"flankerDamageEvents":7},"file":"newc-tiger-covered-locked-westlane-inputs.json.gz","inputSHA256":"6e9c9af3c35d7b12021d7210dd219d02f55db39d0bf442357ff25723047b9a7c","specHash":"2ed5e250044a5a39ac11044173fbbfbab6e936205ade2f50f2beee183266078b","vehicleId":"newc-tiger","vehicleVersion":1,"inputs":13217,"tick":13216,"phase":"won","expectedFinalHash":"f178b095bd4c38384b34d7391754c2e2988fc66cb8eb59fb39a85ac2371f1cc5","finalHash":"f178b095bd4c38384b34d7391754c2e2988fc66cb8eb59fb39a85ac2371f1cc5","hp":147,"truckHp":100,"truckArrived":true,"at":"2026-10-30T21:03:52.417Z"}
+✔ crossfire controls and config binding newc-tiger-covered-locked-westlane-inputs.json.gz (69.327684ms)
+✔ crossfire complete independent input replay newc-tiger-covered-locked-westlane-inputs.json.gz (143699.381473ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144155.429246

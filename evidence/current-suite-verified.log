@@ -1,0 +1,87 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test --test-concurrency=1 tests/*.test.mjs
+
+✔ tiger-west real compressed input corruption is detected by the CLI before replay (75.397647ms)
+✔ sandfalcon-west real compressed input corruption is detected by the CLI before replay (76.887317ms)
+✔ sandfalcon-east real compressed input corruption is detected by the CLI before replay (77.006006ms)
+✔ tiger-east real compressed input corruption is detected by the CLI before replay (69.275943ms)
+✔ recompressed valid JSON with changed ordinary control is rejected rather than silently adopted (128.354632ms)
+✔ corrupted persisted result cannot redefine the expected victory (104.828046ms)
+✔ corrupted lossless V8 events fail without falling back to lossy JSON (75.460902ms)
+✔ truncated compressed input fails with the named provenance boundary (74.013914ms)
+✔ changed file bytes fail the fixed SHA-256 check (3.477507ms)
+✔ matching file bytes are returned without normalization (1.315727ms)
+✔ manifest paths cannot escape their declared root (0.241413ms)
+✔ changed source or dependency fails before simulation (0.79901ms)
+✔ unsupported Node version fails rather than silently normalizing V8 evidence (0.259039ms)
+✔ valid original partial-prefix input is accepted (24.82739ms)
+✔ rejects zero run length (9.200146ms)
+✔ rejects fractional run length (9.203932ms)
+✔ rejects excessive run length (8.411451ms)
+✔ rejects missing declared input (22.094394ms)
+✔ rejects saved-state injection (8.757502ms)
+✔ rejects nonfinite steering (8.355156ms)
+✔ rejects out of range throttle (8.845243ms)
+✔ rejects non-boolean fire (7.405519ms)
+✔ rejects nonfinite aim (9.07641ms)
+✔ rejects hidden aim property (7.114191ms)
+✔ rejects unknown convoy command (9.568179ms)
+✔ rejects unknown governor (7.062634ms)
+✔ rejects changed time step (7.842156ms)
+✔ rejects wrong vehicle (8.469077ms)
+✔ rejects misreported old prefix (22.496839ms)
+✔ rejects false full historical replay claim (21.221182ms)
+✔ rejects second start or resurrection (11.141494ms)
+✔ rejects changed historical input (17.870685ms)
+✔ real stored victory and complete ordered events satisfy escort contract (0.27343ms)
+✔ rejects false victory (0.735766ms)
+✔ rejects dead player (0.561554ms)
+✔ rejects dead escort (0.616727ms)
+✔ rejects false arrival flag (0.647203ms)
+✔ rejects teleported destination claim (1.099382ms)
+✔ rejects missing physical arrival event (0.770779ms)
+✔ rejects premature mission completion (0.61225ms)
+✔ rejects wrong route (0.754444ms)
+✔ JSON zero-sign loss is not accepted as lossless event equality (6.40125ms)
+✔ full final-state drift fails even if victory and HP still match (4.742417ms)
+✔ same-tick shot and physical impact are valid even without a live end-frame projectile (0.456987ms)
+✔ shot without a projectile or physical same-tick impact fails (0.157546ms)
+✔ friendly damage fails even with a valid projectile chain (0.155464ms)
+✔ damage without preceding physical impact fails (0.180011ms)
+✔ duplicate shot projectile IDs fail (0.154152ms)
+✔ duplicate event IDs fail (0.211848ms)
+✔ impact and damage before the shot in the same tick fail causal ordering (0.196045ms)
+✔ one projectile cannot cause two physical impact and damage chains (0.276836ms)
+✔ live projectile with wrong owner cannot satisfy shot creation (0.293601ms)
+✔ arrival event must agree with the supply position in its actual event frame (0.530988ms)
+✔ arrival event must not claim a still-moving unarrived supply (0.45967ms)
+✔ matching known failures are reported as still failing, never as a green historical suite (1.660966ms)
+✔ added failure and missing historical failure are both surfaced (0.184807ms)
+✔ incomplete log cannot be mistaken for zero failures (0.815065ms)
+✔ TAP summaries and duplicate detailed failures retain exact counts (0.201372ms)
+✔ a zero exit cannot turn recorded failures into a passing suite (0.263185ms)
+✔ unexpected process termination cannot attest the exact recorded failing baseline (0.126741ms)
+✔ historical baseline and its external reference files remain separately pinned (2.638525ms)
+✔ tiger-west fresh-process literal CPU victory, escort and full-event regression (69207.953885ms)
+ℹ {"route":"tiger-west","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":14781,"tick":14780,"phase":"won","playerHp":139,"supplyHp":84,"supplyArrived":true,"events":132,"finalHash":"2b315d36f0ee39c4c658671b9fd7de40f5359abac8a390629ce7ea27b0267b29","eventsHash":"e1754c6ad927b8f5508754c1b6c00308f35d74f3e938bd9f5540009dfeda391d","stats":{"muzzleChecks":14781,"lateNorthernShots":3,"lateNorthernDamage":3,"alliedContacts":0,"damageChecks":26,"projectileChecks":44,"sameTickImpacts":0},"retainedHistoricalInputs":12334,"originalHistoricalInputs":12334,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":false}
+✔ sandfalcon-west fresh-process literal CPU victory, escort and full-event regression (73670.337167ms)
+ℹ {"route":"sandfalcon-west","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":16157,"tick":16156,"phase":"won","playerHp":72,"supplyHp":100,"supplyArrived":true,"events":160,"finalHash":"1d6e0791c959ae4ce96027374017e2c6fd1eb2110348e97636c67e4e475ba68d","eventsHash":"a60077df0536c70a878882debf2f776ed66547b5b6ba64a56eb3c3f94e927e67","stats":{"muzzleChecks":16157,"lateNorthernShots":1,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":26,"projectileChecks":58,"sameTickImpacts":0},"retainedHistoricalInputs":10617,"originalHistoricalInputs":10617,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":false}
+✔ sandfalcon-east fresh-process literal CPU victory, escort and full-event regression (71713.012097ms)
+ℹ {"route":"sandfalcon-east","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":15613,"tick":15612,"phase":"won","playerHp":34,"supplyHp":100,"supplyArrived":true,"events":156,"finalHash":"0a2bc16968682ced0fff29f54ffed8c589f7f9265fd1c9a2d09473eb6b1a920b","eventsHash":"63c214a4460ed3c87a2cfc856c29bde4630b33fbb8f8df3b6bf2f216294523c4","stats":{"muzzleChecks":15613,"lateNorthernShots":0,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":33,"projectileChecks":62,"sameTickImpacts":0},"retainedHistoricalInputs":9190,"originalHistoricalInputs":9190,"completeOldTapeConsumed":true,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":true}
+✔ tiger-east fresh-process literal CPU victory, escort and full-event regression (35851.268365ms)
+ℹ {"route":"tiger-east","nodeVersion":"v24.22.1","boundary":"CPU-only literal-input regression; not historical compatibility or browser/GPU/device/human acceptance.","sourceFiles":409,"dependencyFiles":1329,"inputs":6401,"tick":6400,"phase":"won","playerHp":155,"supplyHp":86,"supplyArrived":true,"events":143,"finalHash":"e54602c2b7e737c2b734cbc657d6220b710037284341db989a237be8e5d9e6da","eventsHash":"5e670992fe1f41e3e944e9aa5c4fb85252a15461ce620ee498e3a0f0ac215c0c","stats":{"muzzleChecks":6401,"lateNorthernShots":1,"lateNorthernDamage":0,"alliedContacts":0,"damageChecks":24,"projectileChecks":58,"sameTickImpacts":0},"retainedHistoricalInputs":2400,"originalHistoricalInputs":9543,"completeOldTapeConsumed":false,"entireStateAndEventsStrictEqual":true,"losslessRawEvidence":true}
+ℹ tests 65
+ℹ suites 0
+ℹ pass 65
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 251826.556137
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

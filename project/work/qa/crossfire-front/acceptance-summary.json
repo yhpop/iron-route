@@ -1,0 +1,1253 @@
+{
+  "schema": 1,
+  "completedAt": "2026-10-30T21:55:22.824Z",
+  "successfulIndependentReplays": 8,
+  "successfulVehicleRoutePairs": [
+    "newc-leichttraktor/covered",
+    "newc-leichttraktor/direct",
+    "newc-tiger/covered",
+    "newc-tiger/direct",
+    "pz3/covered",
+    "pz3/direct",
+    "vanguard/covered",
+    "vanguard/direct"
+  ],
+  "eightVehicleRoutePairsComplete": true,
+  "rows": [
+    {
+      "recovery": null,
+      "recoveryPrefixVerified": false,
+      "sourceDifferences": [],
+      "recordedSourceHashes": {
+        "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+        "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+        "combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+        "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+        "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+        "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+        "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+        "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+        "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+        "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+        "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+        "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+      },
+      "mutual": {
+        "supportShots": 5,
+        "flankerShots": 6,
+        "supportDamageEvents": 4,
+        "flankerDamageEvents": 6
+      },
+      "file": "newc-leichttraktor-covered-locked-westlane-straight-clear-inputs.json.gz",
+      "inputSHA256": "e774e4d08132808b4ae635aa97af2e62ec6892a0583d578faead6c874a55c53f",
+      "specHash": "466094edb7a27b3b5b81891be542265a73ad7e638363314c5b960f3cef7ad444",
+      "vehicleId": "newc-leichttraktor",
+      "vehicleVersion": 1,
+      "inputs": 11169,
+      "tick": 11168,
+      "phase": "won",
+      "expectedFinalHash": "1adde47e0ef88a4245f017ddff7444bab7cbd7fca008bf9cbb7b1a85876896f6",
+      "finalHash": "1adde47e0ef88a4245f017ddff7444bab7cbd7fca008bf9cbb7b1a85876896f6",
+      "hp": 52,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T21:19:57.474Z",
+      "playerDestroyed": [
+        "hostile-flanker",
+        "ridge-gun",
+        "ridge-fence-2",
+        "ridge-fence-3",
+        "ridge-fence-4"
+      ],
+      "destroyedBy": {
+        "ridge-fence-0": "crushing-or-unspecified",
+        "ridge-fence-1": "crushing-or-unspecified",
+        "hostile-flanker": "tank",
+        "ridge-gun": "tank",
+        "ridge-fence-2": "tank",
+        "ridge-fence-3": "tank",
+        "ridge-fence-4": "tank"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 30,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "idle"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "destroyed"
+      },
+      "route": "covered",
+      "attempt": "locked-westlane-straight-clear",
+      "shots": 21
+    },
+    {
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 9,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 9
+      },
+      "file": "newc-leichttraktor-direct-locked-inputs.json.gz",
+      "inputSHA256": "0fec43c64d81f20ae73d71085d28d619552e78be61f9599b993a25bb3df1a722",
+      "specHash": "466094edb7a27b3b5b81891be542265a73ad7e638363314c5b960f3cef7ad444",
+      "vehicleId": "newc-leichttraktor",
+      "vehicleVersion": 1,
+      "inputs": 7618,
+      "tick": 7617,
+      "phase": "won",
+      "expectedFinalHash": "1602f295ca757a768cafb730e33fb2605f3dacafdc7fe9c4b64ca13b6285bb38",
+      "finalHash": "1602f295ca757a768cafb730e33fb2605f3dacafdc7fe9c4b64ca13b6285bb38",
+      "hp": 60,
+      "truckHp": 86,
+      "truckArrived": true,
+      "at": "2026-10-30T20:52:37.256Z",
+      "playerDestroyed": [
+        "road-gun",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "road-gun": "tank",
+        "ridge-gun": "tank",
+        "hostile-flanker": "allied-support"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 2,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "idle"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "destroyed"
+      },
+      "route": "direct",
+      "attempt": "locked",
+      "shots": 9,
+      "sourceDifferences": []
+    },
+    {
+      "sourceDifferences": [],
+      "recordedSourceHashes": {
+        "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+        "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+        "combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+        "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+        "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+        "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+        "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+        "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+        "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+        "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+        "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+        "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+      },
+      "mutual": {
+        "supportShots": 6,
+        "flankerShots": 7,
+        "supportDamageEvents": 6,
+        "flankerDamageEvents": 7
+      },
+      "file": "newc-tiger-covered-locked-westlane-inputs.json.gz",
+      "inputSHA256": "6e9c9af3c35d7b12021d7210dd219d02f55db39d0bf442357ff25723047b9a7c",
+      "specHash": "2ed5e250044a5a39ac11044173fbbfbab6e936205ade2f50f2beee183266078b",
+      "vehicleId": "newc-tiger",
+      "vehicleVersion": 1,
+      "inputs": 13217,
+      "tick": 13216,
+      "phase": "won",
+      "expectedFinalHash": "f178b095bd4c38384b34d7391754c2e2988fc66cb8eb59fb39a85ac2371f1cc5",
+      "finalHash": "f178b095bd4c38384b34d7391754c2e2988fc66cb8eb59fb39a85ac2371f1cc5",
+      "hp": 147,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T21:03:52.417Z",
+      "playerDestroyed": [
+        "hostile-flanker",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "ridge-fence-1": "crushing-or-unspecified",
+        "ridge-fence-2": "crushing-or-unspecified",
+        "ridge-fence-3": "crushing-or-unspecified",
+        "ridge-fence-0": "crushing-or-unspecified",
+        "hostile-flanker": "tank",
+        "ridge-gun": "tank"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 26,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "idle"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "destroyed"
+      },
+      "route": "covered",
+      "attempt": "locked-westlane",
+      "shots": 3
+    },
+    {
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 10,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 10
+      },
+      "file": "newc-tiger-direct-locked-inputs.json.gz",
+      "inputSHA256": "2a284f243d3331443806ad9181fcc6a67d2d4ca3d42deb0512e80968e8fefc2e",
+      "specHash": "2ed5e250044a5a39ac11044173fbbfbab6e936205ade2f50f2beee183266078b",
+      "vehicleId": "newc-tiger",
+      "vehicleVersion": 1,
+      "inputs": 9231,
+      "tick": 9230,
+      "phase": "won",
+      "expectedFinalHash": "c8b3ebc13c400728fc9e6ab58a1c94af307fc2263a0074459d607b786cd53db2",
+      "finalHash": "c8b3ebc13c400728fc9e6ab58a1c94af307fc2263a0074459d607b786cd53db2",
+      "hp": 125,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:54:05.973Z",
+      "playerDestroyed": [
+        "road-gun",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "road-gun": "tank",
+        "ridge-gun": "tank",
+        "allied-support": "hostile-flanker"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "destroyed"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 14,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "idle"
+      },
+      "route": "direct",
+      "attempt": "locked",
+      "shots": 4,
+      "sourceDifferences": []
+    },
+    {
+      "recovery": null,
+      "recoveryPrefixVerified": false,
+      "sourceDifferences": [],
+      "recordedSourceHashes": {
+        "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+        "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+        "combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+        "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+        "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+        "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+        "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+        "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+        "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+        "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+        "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+        "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+      },
+      "mutual": {
+        "supportShots": 5,
+        "flankerShots": 6,
+        "supportDamageEvents": 5,
+        "flankerDamageEvents": 6
+      },
+      "file": "pz3-covered-locked-westlane-straight-clear-inputs.json.gz",
+      "inputSHA256": "ce464cf8ed970c121b0e88f7b5468429af61b8f80562fe9f652eeb6932c79e01",
+      "specHash": "9ead673691a4ca1c22739c12ea2dd6093f0cc54e9a492b58ad8b87c08aad7089",
+      "vehicleId": "pz3",
+      "vehicleVersion": 1,
+      "inputs": 11482,
+      "tick": 11481,
+      "phase": "won",
+      "expectedFinalHash": "a4fff47b4d38746ec5e38588560af2d07c87ec15a25fe702ede7c6888ea117aa",
+      "finalHash": "a4fff47b4d38746ec5e38588560af2d07c87ec15a25fe702ede7c6888ea117aa",
+      "hp": 67,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T21:17:44.373Z",
+      "playerDestroyed": [
+        "hostile-flanker",
+        "ridge-gun",
+        "ridge-fence-2",
+        "ridge-fence-3",
+        "ridge-fence-4"
+      ],
+      "destroyedBy": {
+        "ridge-fence-0": "crushing-or-unspecified",
+        "ridge-fence-1": "crushing-or-unspecified",
+        "hostile-flanker": "tank",
+        "ridge-gun": "tank",
+        "ridge-fence-2": "tank",
+        "ridge-fence-3": "tank",
+        "ridge-fence-4": "tank"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 30,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "idle"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "destroyed"
+      },
+      "route": "covered",
+      "attempt": "locked-westlane-straight-clear",
+      "shots": 15
+    },
+    {
+      "sourceDifferences": [
+        {
+          "file": "combat-relations.js",
+          "recordedSHA256": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+          "currentSHA256": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+          "reason": "Explicitly reviewed validation-only addition rejecting asymmetric hostilePairs; no recorded input/config/expected hash rewritten. Exact full state remains independently required."
+        }
+      ],
+      "recordedSourceHashes": {
+        "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+        "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+        "combat-relations.js": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+        "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+        "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+        "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+        "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+        "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+        "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+        "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+        "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+        "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+      },
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 10,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 10
+      },
+      "file": "pz3-direct-locked-inputs.json.gz",
+      "inputSHA256": "e24e39b036fab1016a8a0aefa33c6f1362c1c76dfedbfe9dbe80338c1b68a857",
+      "specHash": "9ead673691a4ca1c22739c12ea2dd6093f0cc54e9a492b58ad8b87c08aad7089",
+      "vehicleId": "pz3",
+      "vehicleVersion": 1,
+      "inputs": 7779,
+      "tick": 7778,
+      "phase": "won",
+      "expectedFinalHash": "26e7494745b53c4c168899f53a104530a589bba0d9ae2671678dd6e7e522825f",
+      "finalHash": "26e7494745b53c4c168899f53a104530a589bba0d9ae2671678dd6e7e522825f",
+      "hp": 75,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:54:45.140Z",
+      "playerDestroyed": [
+        "road-gun",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "road-gun": "tank",
+        "ridge-gun": "tank",
+        "allied-support": "hostile-flanker"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "destroyed"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 14,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "idle"
+      },
+      "route": "direct",
+      "attempt": "locked",
+      "shots": 6
+    },
+    {
+      "mutual": {
+        "supportShots": 5,
+        "flankerShots": 6,
+        "supportDamageEvents": 5,
+        "flankerDamageEvents": 6
+      },
+      "file": "vanguard-covered-locked-westlane-inputs.json.gz",
+      "inputSHA256": "45fbd46b80cc0c1f8127cd239851820e2920574bbcd9bf49b7179c85a9b1f8a9",
+      "specHash": "800e58feb9c9371f8dba8feaf86c6ef4df69abf503d36dba55f2a46b7873fe64",
+      "vehicleId": "vanguard",
+      "vehicleVersion": 1,
+      "inputs": 11187,
+      "tick": 11186,
+      "phase": "won",
+      "expectedFinalHash": "12fd06de8ee2c58af5905c39b465b468e9c70f8391a94f2e9a0765b4bd43c688",
+      "finalHash": "12fd06de8ee2c58af5905c39b465b468e9c70f8391a94f2e9a0765b4bd43c688",
+      "hp": 100,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:57:02.072Z",
+      "playerDestroyed": [
+        "hostile-flanker",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "ridge-fence-2": "crushing-or-unspecified",
+        "ridge-fence-3": "crushing-or-unspecified",
+        "ridge-fence-1": "crushing-or-unspecified",
+        "hostile-flanker": "tank",
+        "ridge-gun": "tank",
+        "ridge-fence-0": "crushing-or-unspecified"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 30,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "idle"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "destroyed"
+      },
+      "route": "covered",
+      "attempt": "locked-westlane",
+      "shots": 4,
+      "sourceDifferences": []
+    },
+    {
+      "sourceDifferences": [
+        {
+          "file": "combat-relations.js",
+          "recordedSHA256": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+          "currentSHA256": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+          "reason": "Explicitly reviewed validation-only addition rejecting asymmetric hostilePairs; no recorded input/config/expected hash rewritten. Exact full state remains independently required."
+        }
+      ],
+      "recordedSourceHashes": {
+        "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+        "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+        "combat-relations.js": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+        "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+        "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+        "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+        "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+        "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+        "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+        "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+        "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+        "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+      },
+      "mutual": {
+        "supportShots": 8,
+        "flankerShots": 10,
+        "supportDamageEvents": 8,
+        "flankerDamageEvents": 10
+      },
+      "file": "vanguard-direct-locked-inputs.json.gz",
+      "inputSHA256": "6d1e75bedec10f83ef5fe8bc8c0b644bdc99abbab6a1b2fb6556cdab93906fd6",
+      "specHash": "800e58feb9c9371f8dba8feaf86c6ef4df69abf503d36dba55f2a46b7873fe64",
+      "vehicleId": "vanguard",
+      "vehicleVersion": 1,
+      "inputs": 8207,
+      "tick": 8206,
+      "phase": "won",
+      "expectedFinalHash": "1ad2a7046efdd85f95da96dafcfa5cb28b65f15639a2ed5c6c433de8e1ed0c49",
+      "finalHash": "1ad2a7046efdd85f95da96dafcfa5cb28b65f15639a2ed5c6c433de8e1ed0c49",
+      "hp": 100,
+      "truckHp": 86,
+      "truckArrived": true,
+      "at": "2026-10-30T20:56:40.116Z",
+      "playerDestroyed": [
+        "road-gun",
+        "ridge-gun"
+      ],
+      "destroyedBy": {
+        "road-gun": "tank",
+        "ridge-gun": "tank",
+        "allied-support": "hostile-flanker"
+      },
+      "alliedSupportTerminal": {
+        "id": "allied-support",
+        "hp": 0,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": 2,
+          "yaw": 0
+        },
+        "status": "destroyed"
+      },
+      "hostileFlankerTerminal": {
+        "id": "hostile-flanker",
+        "hp": 14,
+        "pose": {
+          "x": -27,
+          "y": 0.008,
+          "z": -19,
+          "yaw": 3.141592653589793
+        },
+        "status": "idle"
+      },
+      "route": "direct",
+      "attempt": "locked",
+      "shots": 4
+    }
+  ],
+  "blockedConvoyRecovery": {
+    "fullRecoveryVerified": false,
+    "status": "bounded-attempt-inconclusive",
+    "file": "pz3-covered-locked-westlane-straight-recovery-escape-report.json",
+    "phase": "playing",
+    "tick": 19743,
+    "hp": 67,
+    "truckHp": 100,
+    "failure": {
+      "kind": "pilot-inconclusive",
+      "reason": "blocked-aim",
+      "id": "ridge-fence-2"
+    },
+    "reverseDisplacement": 1.1598702421577447,
+    "contactsBefore": [
+      "supply"
+    ],
+    "contactsAfter": [],
+    "independentFailedTrajectoryVerified": true,
+    "diagnostic": {
+      "schema": 1,
+      "at": "2026-10-30T21:55:16.215Z",
+      "file": "pz3-covered-locked-westlane-straight-recovery-escape-inputs.json.gz",
+      "inputSHA256": "e8689592eb091175005df8aac9af9eba8e8f73db0d0ea652e9e84e6e27961d69",
+      "inputs": 19744,
+      "tick": 19743,
+      "phase": "playing",
+      "expectedFinalHash": "873673b55a7e933771635ea9127f5059f29e189e1daa4c92f17a85ba28cfbaa6",
+      "finalHash": "873673b55a7e933771635ea9127f5059f29e189e1daa4c92f17a85ba28cfbaa6",
+      "originalObstacleVerified": true,
+      "realSupplyContactPrefixVerified": true,
+      "reverseEscapeVerified": true,
+      "reverseDisplacement": 1.1598702421577447,
+      "hp": 67,
+      "truckHp": 100,
+      "truckStoppedReason": "obstacle",
+      "failure": {
+        "kind": "pilot-inconclusive",
+        "reason": "blocked-aim",
+        "id": "ridge-fence-2"
+      },
+      "muzzle": {
+        "position": {
+          "x": -13.560141979094503,
+          "y": 1.111837444533671,
+          "z": 22.101628057926995
+        },
+        "direction": {
+          "x": -0.555644559837358,
+          "y": -0.0803701022804797,
+          "z": -0.8275262955233351
+        },
+        "barrelStart": {
+          "x": -12.715562248141719,
+          "y": 1.234,
+          "z": 23.359468027122464
+        },
+        "barrelEnd": {
+          "x": -13.560141979094503,
+          "y": 1.111837444533671,
+          "z": 22.101628057926995
+        },
+        "turretOrigin": {
+          "x": -12.403391450513645,
+          "y": 1.052,
+          "z": 23.82438672228136
+        },
+        "hinge": {
+          "x": -12.715562248141719,
+          "y": 1.234,
+          "z": 23.359468027122464
+        },
+        "pose": {
+          "x": -12.403391450513645,
+          "y": 0.008,
+          "z": 23.82438672228136,
+          "yaw": -1.9812623182790752,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turret": {
+          "yawRel": 2.572570843235404,
+          "elevation": -0.08045687789744373,
+          "recoil": 0,
+          "recoilVelocity": 0
+        }
+      },
+      "aim": {
+        "x": -19,
+        "y": 0.325,
+        "z": 14
+      },
+      "aimDot": 1.0000000000000002,
+      "nearestRayHit": {
+        "id": "supply",
+        "colliderId": "supply",
+        "fraction": 0.7461984666758628,
+        "distance": 7.3054143017655875,
+        "point": {
+          "x": -17.619355693228577,
+          "y": 0.5247005498994914,
+          "z": 16.056205623523724
+        },
+        "position": {
+          "x": -17.619355693228577,
+          "y": 0.5247005498994914,
+          "z": 16.056205623523724
+        },
+        "normal": {
+          "x": 0.961523947640823,
+          "y": 0,
+          "z": -0.2747211278973784
+        }
+      },
+      "remainingFenceHp": 90,
+      "interpretation": "Normal reverse and body separation verified. Full blocked-convoy recovery did not complete; no further pilot strategy attempted."
+    },
+    "interpretation": "The authentic truck-contact state can be escaped by reverse. This bounded continuation then failed to aim at fence2 and did not complete convoy recovery; not a ninth accepted win, and not proof of an impossible mission."
+  },
+  "legacy20": {
+    "complete": true,
+    "rows": [
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-001-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-001",
+        "inputs": 1752,
+        "tick": 1751,
+        "phase": "won",
+        "hash": "20c2b50913df2876b6c0bc97e159e3959467e3738f56a64f91409fe41bbf6957",
+        "expectedHash": "20c2b50913df2876b6c0bc97e159e3959467e3738f56a64f91409fe41bbf6957",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/opening-v5-west-crafted20-002-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-002",
+        "inputs": 2620,
+        "tick": 2619,
+        "phase": "won",
+        "hash": "f017822087074d7c65e7baece5181c8874bf0158d72f19088b89dd63e8a734d3",
+        "expectedHash": "f017822087074d7c65e7baece5181c8874bf0158d72f19088b89dd63e8a734d3",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-003-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-003",
+        "inputs": 5468,
+        "tick": 5467,
+        "phase": "won",
+        "hash": "7c02c1314bc45d51df36f639e3f6bec03497031aff30e4c61ca8dd72b31e0f26",
+        "expectedHash": "7c02c1314bc45d51df36f639e3f6bec03497031aff30e4c61ca8dd72b31e0f26",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-004-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-004",
+        "inputs": 3099,
+        "tick": 3098,
+        "phase": "won",
+        "hash": "64149080d2e67fe89d8d4759f200b8f0378b63901dd40dca7d916841b9497387",
+        "expectedHash": "64149080d2e67fe89d8d4759f200b8f0378b63901dd40dca7d916841b9497387",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-005-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-005",
+        "inputs": 5025,
+        "tick": 5024,
+        "phase": "won",
+        "hash": "d1aeab1e76b02fd4d29419c9015132c8466a2940178e1ea8088768cc5ee4ed24",
+        "expectedHash": "d1aeab1e76b02fd4d29419c9015132c8466a2940178e1ea8088768cc5ee4ed24",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-006-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-006",
+        "inputs": 3273,
+        "tick": 3272,
+        "phase": "won",
+        "hash": "3b94dcd03b734298e51b41a663e8151f6858adfb0eb84c83ec73f1e79701d909",
+        "expectedHash": "3b94dcd03b734298e51b41a663e8151f6858adfb0eb84c83ec73f1e79701d909",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-007-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-007",
+        "inputs": 4200,
+        "tick": 4199,
+        "phase": "won",
+        "hash": "7858ce8db47192625c56db6966addeee1780e10b17fe5c1b88bdfecfe76165cb",
+        "expectedHash": "7858ce8db47192625c56db6966addeee1780e10b17fe5c1b88bdfecfe76165cb",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-008-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-008",
+        "inputs": 4784,
+        "tick": 4783,
+        "phase": "won",
+        "hash": "00025333a964ae089f50fb53ff839771760a2e6ca973b83c173867de944beee2",
+        "expectedHash": "00025333a964ae089f50fb53ff839771760a2e6ca973b83c173867de944beee2",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-009-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-009",
+        "inputs": 3397,
+        "tick": 3396,
+        "phase": "won",
+        "hash": "b4f3fa42d7f3214e5cfac60716bd5b0cda84d709f8fbad146da12f4a1b0275c7",
+        "expectedHash": "b4f3fa42d7f3214e5cfac60716bd5b0cda84d709f8fbad146da12f4a1b0275c7",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-crafted20-010-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-010",
+        "inputs": 3763,
+        "tick": 3762,
+        "phase": "won",
+        "hash": "da59ee2587fa864da45442f4d50b79160e34a36a1f91e4ae8afd1358f7137dc8",
+        "expectedHash": "da59ee2587fa864da45442f4d50b79160e34a36a1f91e4ae8afd1358f7137dc8",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-011-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-011",
+        "inputs": 4589,
+        "tick": 4588,
+        "phase": "won",
+        "hash": "f78c44ddf3ecd3c1673846225a1f086ee80d0fc72ba3d8ff73aca00e7be35e37",
+        "expectedHash": "f78c44ddf3ecd3c1673846225a1f086ee80d0fc72ba3d8ff73aca00e7be35e37",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-012-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-012",
+        "inputs": 6594,
+        "tick": 6593,
+        "phase": "won",
+        "hash": "3d7ab2263b46b16d12e14efda9ef9064b4504114cfa4d35fded6e1292eef1d3e",
+        "expectedHash": "3d7ab2263b46b16d12e14efda9ef9064b4504114cfa4d35fded6e1292eef1d3e",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-013-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-013",
+        "inputs": 4763,
+        "tick": 4762,
+        "phase": "won",
+        "hash": "3b8a9fb48c8ef38ec5e1105f4990d345d67acdc1fe7342f694173aa95a4e84e6",
+        "expectedHash": "3b8a9fb48c8ef38ec5e1105f4990d345d67acdc1fe7342f694173aa95a4e84e6",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-014-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-014",
+        "inputs": 4031,
+        "tick": 4030,
+        "phase": "won",
+        "hash": "3514a33cdd49fa55ef8b702ec1ab557c90454fb43f05075c03602c07200507cd",
+        "expectedHash": "3514a33cdd49fa55ef8b702ec1ab557c90454fb43f05075c03602c07200507cd",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-015-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-015",
+        "inputs": 2616,
+        "tick": 2615,
+        "phase": "won",
+        "hash": "be02a981d7d2ad858d67f072a65910c537faffc36c3848517bc94646609d9cbc",
+        "expectedHash": "c369a3eeef1e24f37dad7002f8066d669c70d74cd6c982550b3836aa250ad4b6",
+        "specMatches": true,
+        "stateMatches": false,
+        "historicalMismatchAlsoInFrozenV1": true,
+        "frozenV1Hash": "be02a981d7d2ad858d67f072a65910c537faffc36c3848517bc94646609d9cbc"
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-016-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-016",
+        "inputs": 5633,
+        "tick": 5632,
+        "phase": "won",
+        "hash": "9f4f1f350c73f6b95d0e4295fab90d85af1a3f09a5f293b5720d0167b80da2fc",
+        "expectedHash": "9f4f1f350c73f6b95d0e4295fab90d85af1a3f09a5f293b5720d0167b80da2fc",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-017-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-017",
+        "inputs": 8530,
+        "tick": 8529,
+        "phase": "won",
+        "hash": "51105c3e530ce4bf13377d9b6da6a658d448f8545fd0e81fa6f47b241aafae5e",
+        "expectedHash": "51105c3e530ce4bf13377d9b6da6a658d448f8545fd0e81fa6f47b241aafae5e",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-018-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-018",
+        "inputs": 4653,
+        "tick": 4652,
+        "phase": "won",
+        "hash": "48c24247724283a7fc86a2a8c80909c40b6b1a599549972a69985e1e2d93a551",
+        "expectedHash": "48c24247724283a7fc86a2a8c80909c40b6b1a599549972a69985e1e2d93a551",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-019-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-019",
+        "inputs": 6251,
+        "tick": 6250,
+        "phase": "won",
+        "hash": "a24466e4e242d9021148b6a59a1aee924280c99a18095b27ce72ebbdc66742a4",
+        "expectedHash": "a24466e4e242d9021148b6a59a1aee924280c99a18095b27ce72ebbdc66742a4",
+        "specMatches": true,
+        "stateMatches": true
+      },
+      {
+        "schema": 1,
+        "trace": "qa/accepted40/accepted-main-b-crafted20-020-inputs.json.gz",
+        "source": "src",
+        "missionId": "crafted20-020",
+        "inputs": 11270,
+        "tick": 11269,
+        "phase": "won",
+        "hash": "a4ae0eb3e1db03fa23357cf398ac8408c0ce156956f5af7ce8dd4fe4374627ef",
+        "expectedHash": "a4ae0eb3e1db03fa23357cf398ac8408c0ce156956f5af7ce8dd4fe4374627ef",
+        "specMatches": true,
+        "stateMatches": true
+      }
+    ]
+  },
+  "v1FiveOriginalHashes": true,
+  "openingAndPause": {
+    "specHash": "45ff7a7bea4545f9bee6262f6fecab0cf3b50dc9d9954e74a9048d2547c63f00",
+    "ticks": 1800,
+    "seconds": 30,
+    "pauseHeldTicks": 120,
+    "pauseFullStateHash": "d9f15cc628f3b0a6b80ac4fc1581a7744d4eaaa6116e6ac00e2bbb712c66b5ad",
+    "pauseExact": true,
+    "hp": {
+      "ridge-fence-0": 90,
+      "ridge-fence-1": 90,
+      "ridge-fence-2": 90,
+      "ridge-fence-3": 90,
+      "ridge-fence-4": 90,
+      "supply": 100,
+      "road-gun": 90,
+      "ridge-gun": 90,
+      "allied-support": 50,
+      "hostile-flanker": 62
+    },
+    "events": [
+      {
+        "id": "event-3",
+        "tick": 121,
+        "type": "shot",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -16.92002887889173
+        },
+        "projectileId": "projectile-1"
+      },
+      {
+        "id": "event-4",
+        "tick": 145,
+        "type": "shot",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -0.07997112110826965
+        },
+        "projectileId": "projectile-2"
+      },
+      {
+        "id": "event-6",
+        "tick": 199,
+        "type": "damaged",
+        "targetId": "allied-support",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": 1.255931
+        },
+        "value": 12
+      },
+      {
+        "id": "event-8",
+        "tick": 223,
+        "type": "damaged",
+        "targetId": "hostile-flanker",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": -18.255930999999997
+        },
+        "value": 12
+      },
+      {
+        "id": "event-9",
+        "tick": 494,
+        "type": "shot",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -16.92002887889173
+        },
+        "projectileId": "projectile-3"
+      },
+      {
+        "id": "event-11",
+        "tick": 572,
+        "type": "damaged",
+        "targetId": "allied-support",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": 1.255931
+        },
+        "value": 12
+      },
+      {
+        "id": "event-12",
+        "tick": 590,
+        "type": "shot",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -0.07997112110826965
+        },
+        "projectileId": "projectile-4"
+      },
+      {
+        "id": "event-14",
+        "tick": 668,
+        "type": "damaged",
+        "targetId": "hostile-flanker",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": -18.255930999999997
+        },
+        "value": 12
+      },
+      {
+        "id": "event-15",
+        "tick": 867,
+        "type": "shot",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -16.92002887889173
+        },
+        "projectileId": "projectile-5"
+      },
+      {
+        "id": "event-17",
+        "tick": 945,
+        "type": "damaged",
+        "targetId": "allied-support",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": 1.255931
+        },
+        "value": 12
+      },
+      {
+        "id": "event-18",
+        "tick": 1035,
+        "type": "shot",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -0.07997112110826965
+        },
+        "projectileId": "projectile-6"
+      },
+      {
+        "id": "event-20",
+        "tick": 1113,
+        "type": "damaged",
+        "targetId": "hostile-flanker",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": -18.255930999999997
+        },
+        "value": 12
+      },
+      {
+        "id": "event-21",
+        "tick": 1240,
+        "type": "shot",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -16.92002887889173
+        },
+        "projectileId": "projectile-7"
+      },
+      {
+        "id": "event-23",
+        "tick": 1318,
+        "type": "damaged",
+        "targetId": "allied-support",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": 1.255931
+        },
+        "value": 12
+      },
+      {
+        "id": "event-24",
+        "tick": 1480,
+        "type": "shot",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -0.07997112110826965
+        },
+        "projectileId": "projectile-8"
+      },
+      {
+        "id": "event-26",
+        "tick": 1558,
+        "type": "damaged",
+        "targetId": "hostile-flanker",
+        "entityId": "allied-support",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": -18.255930999999997
+        },
+        "value": 12
+      },
+      {
+        "id": "event-27",
+        "tick": 1613,
+        "type": "shot",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.224630315006867,
+          "z": -16.92002887889173
+        },
+        "projectileId": "projectile-9"
+      },
+      {
+        "id": "event-29",
+        "tick": 1691,
+        "type": "damaged",
+        "targetId": "allied-support",
+        "entityId": "hostile-flanker",
+        "position": {
+          "x": -27,
+          "y": 1.1125867267123208,
+          "z": 1.255931
+        },
+        "value": 12
+      }
+    ]
+  },
+  "failedPilot": {
+    "file": "vanguard-covered-locked-report.json",
+    "phase": "playing",
+    "tick": 8315,
+    "failure": {
+      "kind": "pilot-inconclusive",
+      "reason": "no-motion",
+      "target": {
+        "x": -26,
+        "z": 4
+      }
+    },
+    "contacts": [
+      "allied-support"
+    ],
+    "interpretation": "old x=-26 player path collides with real support; convoy centre x=-22 remains open; normal tactical route succeeded"
+  },
+  "sourceGateNote": "Initial strict gate9/11 with2 explicit combat-relations source revisions; both rerun under exact reviewed validation-only hash-pair allowance, unchanged full state required. Original tapes untouched.",
+  "limitations": [
+    "Actual deterministic simulation/terrain only, not browser/model/HUD/Mac acceptance.",
+    "Only listed successful pairs accepted; pilot failures and superseded initial attempts retained."
+  ]
+}

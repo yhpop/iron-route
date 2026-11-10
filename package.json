@@ -1,0 +1,13 @@
+{
+  "name": "iron-route",
+  "version": "0.8.2-preview.1",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "setup": "npm ci --prefix project/work --no-audit --no-fund",
+    "build": "npm run build --prefix project/work && node project/work/build-english.mjs",
+    "test": "cd project/work && node --test --test-concurrency=2 --test-reporter=tap tests/*.test.mjs",
+    "test:historical-regression": "node --test tests/*.test.mjs"
+  }
+}

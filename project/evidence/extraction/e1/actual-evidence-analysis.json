@@ -1,0 +1,1090 @@
+{
+  "boundary": "Saved recording analysis only; damaged events do not carry projectileId in production. Chains link shot→impact by projectileId and impact→immediately adjacent damaged by tick/owner/target/position + exact HP delta.",
+  "results": [
+    {
+      "name": "playerloss-01",
+      "rawSHA256": "31da743a02c1dbd911fe85cd90966e197b6f182e4880884f746bd1062822092e",
+      "inputs": 3125,
+      "tick": 3124,
+      "phase": "lost",
+      "cause": "tank-destroyed",
+      "playerHp": 0,
+      "supplyHp": 100,
+      "preparationComplete": {
+        "id": "event-17",
+        "tick": 1080,
+        "type": "objective-changed",
+        "entityId": "prepare-extraction",
+        "value": "complete"
+      },
+      "choiceFrame": null,
+      "firstPreparationChain": {
+        "shotId": "event-1",
+        "projectileId": "projectile-1",
+        "shotTick": 121,
+        "impactId": "event-2",
+        "impactTick": 140,
+        "damageId": "event-3",
+        "damageTick": 140,
+        "owner": "hostile-flanker",
+        "target": "tank",
+        "damage": 12,
+        "beforeHp": 100,
+        "afterHp": 88,
+        "preparation": {
+          "id": "prepare-extraction",
+          "status": "active",
+          "progress": 0.12962962962962943,
+          "elapsed": 2.33333333333333,
+          "completedTick": null
+        },
+        "position": {
+          "x": 0.2694875570903653,
+          "y": 0.9142049513293151,
+          "z": 22.056793550183706
+        }
+      },
+      "allHostileDamageChains": [
+        {
+          "shotId": "event-1",
+          "projectileId": "projectile-1",
+          "shotTick": 121,
+          "impactId": "event-2",
+          "impactTick": 140,
+          "damageId": "event-3",
+          "damageTick": 140,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.12962962962962943,
+            "elapsed": 2.33333333333333,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-7",
+          "projectileId": "projectile-3",
+          "shotTick": 494,
+          "impactId": "event-8",
+          "impactTick": 513,
+          "damageId": "event-9",
+          "damageTick": 513,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 88,
+          "afterHp": 76,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.47500000000000026,
+            "elapsed": 8.550000000000004,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-13",
+          "projectileId": "projectile-5",
+          "shotTick": 867,
+          "impactId": "event-14",
+          "impactTick": 886,
+          "damageId": "event-15",
+          "damageTick": 886,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 76,
+          "afterHp": 64,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.8203703703703877,
+            "elapsed": 14.76666666666698,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-21",
+          "projectileId": "projectile-7",
+          "shotTick": 1240,
+          "impactId": "event-22",
+          "impactTick": 1259,
+          "damageId": "event-23",
+          "damageTick": 1259,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 64,
+          "afterHp": 52,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-27",
+          "projectileId": "projectile-9",
+          "shotTick": 1613,
+          "impactId": "event-28",
+          "impactTick": 1632,
+          "damageId": "event-29",
+          "damageTick": 1632,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 52,
+          "afterHp": 40,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-30",
+          "projectileId": "projectile-10",
+          "shotTick": 1986,
+          "impactId": "event-31",
+          "impactTick": 2005,
+          "damageId": "event-32",
+          "damageTick": 2005,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 40,
+          "afterHp": 28,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-36",
+          "projectileId": "projectile-12",
+          "shotTick": 2359,
+          "impactId": "event-37",
+          "impactTick": 2378,
+          "damageId": "event-38",
+          "damageTick": 2378,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 28,
+          "afterHp": 16,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-40",
+          "projectileId": "projectile-14",
+          "shotTick": 2732,
+          "impactId": "event-41",
+          "impactTick": 2751,
+          "damageId": "event-42",
+          "damageTick": 2751,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 16,
+          "afterHp": 4,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-46",
+          "projectileId": "projectile-16",
+          "shotTick": 3105,
+          "impactId": "event-47",
+          "impactTick": 3124,
+          "damageId": "event-48",
+          "damageTick": 3124,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 4,
+          "beforeHp": 4,
+          "afterHp": 0,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        }
+      ],
+      "retry": true,
+      "failure": null
+    },
+    {
+      "name": "win-direct-01",
+      "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+      "inputs": 9190,
+      "tick": 9189,
+      "phase": "won",
+      "cause": "objectives-complete",
+      "playerHp": 52,
+      "supplyHp": 100,
+      "preparationComplete": {
+        "id": "event-17",
+        "tick": 1080,
+        "type": "objective-changed",
+        "entityId": "prepare-extraction",
+        "value": "complete"
+      },
+      "choice": {
+        "id": "event-19",
+        "tick": 1427,
+        "type": "convoy-route-selected",
+        "value": "direct",
+        "choiceId": "direct"
+      },
+      "choiceFrame": {
+        "tick": 1427,
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": 28,
+            "yaw": 0
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "activationObjectiveId": "prepare-extraction",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 0,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        }
+      },
+      "arrival": {
+        "id": "event-47",
+        "tick": 9189,
+        "type": "vehicle-arrived",
+        "entityId": "supply",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -32,
+          "yaw": 1.0516502125483707
+        }
+      },
+      "firstPreparationChain": {
+        "shotId": "event-1",
+        "projectileId": "projectile-1",
+        "shotTick": 121,
+        "impactId": "event-2",
+        "impactTick": 140,
+        "damageId": "event-3",
+        "damageTick": 140,
+        "owner": "hostile-flanker",
+        "target": "tank",
+        "damage": 12,
+        "beforeHp": 100,
+        "afterHp": 88,
+        "preparation": {
+          "id": "prepare-extraction",
+          "status": "active",
+          "progress": 0.12962962962962943,
+          "elapsed": 2.33333333333333,
+          "completedTick": null
+        },
+        "position": {
+          "x": 0.2694875570903653,
+          "y": 0.9142049513293151,
+          "z": 22.056793550183706
+        }
+      },
+      "allHostileDamageChains": [
+        {
+          "shotId": "event-1",
+          "projectileId": "projectile-1",
+          "shotTick": 121,
+          "impactId": "event-2",
+          "impactTick": 140,
+          "damageId": "event-3",
+          "damageTick": 140,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.12962962962962943,
+            "elapsed": 2.33333333333333,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-20",
+          "projectileId": "projectile-6",
+          "shotTick": 1557,
+          "impactId": "event-21",
+          "impactTick": 1623,
+          "damageId": "event-22",
+          "damageTick": 1623,
+          "owner": "road-gun",
+          "target": "tank",
+          "damage": 14,
+          "beforeHp": 88,
+          "afterHp": 74,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 7.341521769996744,
+            "y": 0.8720778186645108,
+            "z": 20.88372261788622
+          }
+        },
+        {
+          "shotId": "event-26",
+          "projectileId": "projectile-8",
+          "shotTick": 1942,
+          "impactId": "event-27",
+          "impactTick": 1975,
+          "damageId": "event-28",
+          "damageTick": 1975,
+          "owner": "road-gun",
+          "target": "tank",
+          "damage": 14,
+          "beforeHp": 74,
+          "afterHp": 60,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 14.767037876557636,
+            "y": 0.9157505965028614,
+            "z": 18.973968609891298
+          }
+        },
+        {
+          "shotId": "event-37",
+          "projectileId": "projectile-12",
+          "shotTick": 3411,
+          "impactId": "event-38",
+          "impactTick": 3479,
+          "damageId": "event-39",
+          "damageTick": 3479,
+          "owner": "ridge-gun",
+          "target": "tank",
+          "damage": 8,
+          "beforeHp": 60,
+          "afterHp": 52,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 16.453611359350035,
+            "y": 0.8662337221906414,
+            "z": -15.998379712019183
+          }
+        }
+      ],
+      "retry": false,
+      "failure": null
+    },
+    {
+      "name": "win-direct-01-fresh",
+      "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+      "inputs": 9190,
+      "tick": 9189,
+      "phase": "won",
+      "cause": "objectives-complete",
+      "playerHp": 52,
+      "supplyHp": 100,
+      "preparationComplete": {
+        "id": "event-17",
+        "tick": 1080,
+        "type": "objective-changed",
+        "entityId": "prepare-extraction",
+        "value": "complete"
+      },
+      "choice": {
+        "id": "event-19",
+        "tick": 1427,
+        "type": "convoy-route-selected",
+        "value": "direct",
+        "choiceId": "direct"
+      },
+      "choiceFrame": {
+        "tick": 1427,
+        "supply": {
+          "id": "supply",
+          "kind": "truck",
+          "yieldForTankTurn": true,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": 28,
+            "yaw": 0
+          },
+          "hp": 100,
+          "protected": true,
+          "routeId": "ridge-east",
+          "speed": 0,
+          "escortRange": 19,
+          "team": "allied",
+          "activationObjectiveId": "prepare-extraction",
+          "maxHp": 100,
+          "alive": true,
+          "destroyed": false,
+          "status": "waiting",
+          "width": 1.8,
+          "depth": 3.6,
+          "height": 2.2,
+          "routeIndex": 0,
+          "arrived": false,
+          "maxSpeed": 1.15,
+          "stoppedReason": null
+        }
+      },
+      "arrival": {
+        "id": "event-47",
+        "tick": 9189,
+        "type": "vehicle-arrived",
+        "entityId": "supply",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -32,
+          "yaw": 1.0516502125483707
+        }
+      },
+      "firstPreparationChain": {
+        "shotId": "event-1",
+        "projectileId": "projectile-1",
+        "shotTick": 121,
+        "impactId": "event-2",
+        "impactTick": 140,
+        "damageId": "event-3",
+        "damageTick": 140,
+        "owner": "hostile-flanker",
+        "target": "tank",
+        "damage": 12,
+        "beforeHp": 100,
+        "afterHp": 88,
+        "preparation": {
+          "id": "prepare-extraction",
+          "status": "active",
+          "progress": 0.12962962962962943,
+          "elapsed": 2.33333333333333,
+          "completedTick": null
+        },
+        "position": {
+          "x": 0.2694875570903653,
+          "y": 0.9142049513293151,
+          "z": 22.056793550183706
+        }
+      },
+      "allHostileDamageChains": [
+        {
+          "shotId": "event-1",
+          "projectileId": "projectile-1",
+          "shotTick": 121,
+          "impactId": "event-2",
+          "impactTick": 140,
+          "damageId": "event-3",
+          "damageTick": 140,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.12962962962962943,
+            "elapsed": 2.33333333333333,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-20",
+          "projectileId": "projectile-6",
+          "shotTick": 1557,
+          "impactId": "event-21",
+          "impactTick": 1623,
+          "damageId": "event-22",
+          "damageTick": 1623,
+          "owner": "road-gun",
+          "target": "tank",
+          "damage": 14,
+          "beforeHp": 88,
+          "afterHp": 74,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 7.341521769996744,
+            "y": 0.8720778186645108,
+            "z": 20.88372261788622
+          }
+        },
+        {
+          "shotId": "event-26",
+          "projectileId": "projectile-8",
+          "shotTick": 1942,
+          "impactId": "event-27",
+          "impactTick": 1975,
+          "damageId": "event-28",
+          "damageTick": 1975,
+          "owner": "road-gun",
+          "target": "tank",
+          "damage": 14,
+          "beforeHp": 74,
+          "afterHp": 60,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 14.767037876557636,
+            "y": 0.9157505965028614,
+            "z": 18.973968609891298
+          }
+        },
+        {
+          "shotId": "event-37",
+          "projectileId": "projectile-12",
+          "shotTick": 3411,
+          "impactId": "event-38",
+          "impactTick": 3479,
+          "damageId": "event-39",
+          "damageTick": 3479,
+          "owner": "ridge-gun",
+          "target": "tank",
+          "damage": 8,
+          "beforeHp": 60,
+          "afterHp": 52,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "complete",
+            "progress": 1,
+            "elapsed": 18.00000000000026,
+            "completedTick": 1080
+          },
+          "position": {
+            "x": 16.453611359350035,
+            "y": 0.8662337221906414,
+            "z": -15.998379712019183
+          }
+        }
+      ],
+      "retry": false,
+      "failure": null
+    },
+    {
+      "name": "truckloss-01",
+      "rawSHA256": "d4b654fe1ae691ea48f5b176649616dcd89d22b73c1a2e30fc68fff6acb1fe1e",
+      "inputs": 1240,
+      "tick": 1239,
+      "phase": "playing",
+      "playerHp": 88,
+      "supplyHp": 88,
+      "choiceFrame": null,
+      "firstPreparationChain": {
+        "shotId": "event-1",
+        "projectileId": "projectile-1",
+        "shotTick": 121,
+        "impactId": "event-2",
+        "impactTick": 140,
+        "damageId": "event-3",
+        "damageTick": 140,
+        "owner": "hostile-flanker",
+        "target": "tank",
+        "damage": 12,
+        "beforeHp": 100,
+        "afterHp": 88,
+        "preparation": {
+          "id": "prepare-extraction",
+          "status": "active",
+          "progress": 0.12962962962962943,
+          "elapsed": 2.33333333333333,
+          "completedTick": null
+        },
+        "position": {
+          "x": 0.2694875570903653,
+          "y": 0.9142049513293151,
+          "z": 22.056793550183706
+        }
+      },
+      "allHostileDamageChains": [
+        {
+          "shotId": "event-1",
+          "projectileId": "projectile-1",
+          "shotTick": 121,
+          "impactId": "event-2",
+          "impactTick": 140,
+          "damageId": "event-3",
+          "damageTick": 140,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.12962962962962943,
+            "elapsed": 2.33333333333333,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-13",
+          "projectileId": "projectile-5",
+          "shotTick": 867,
+          "impactId": "event-14",
+          "impactTick": 903,
+          "damageId": "event-15",
+          "damageTick": 903,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        }
+      ],
+      "retry": false,
+      "failure": {
+        "name": "Error",
+        "message": "no-motion {\"target\":{\"x\":-22,\"z\":23},\"contacts\":[\"south-depot\"],\"pose\":{\"x\":-19.314542663231094,\"y\":0.008,\"z\":23.056899066314024,\"yaw\":1.549611710871229,\"basis\":{\"right\":[1,-4.0192406735573345e-21,0],\"up\":[4.0192406735573345e-21,1,0],\"forward\":[0,0,1]}}}",
+        "action": "drive -22,23",
+        "inputs": 1240,
+        "tick": 1239
+      }
+    },
+    {
+      "name": "truckloss-02",
+      "rawSHA256": "58032bdd11727a1820207a115f67cfa1e328f55191785a3a2133b1969a12bc53",
+      "inputs": 3888,
+      "tick": 3887,
+      "phase": "lost",
+      "cause": "protected-vehicle-destroyed",
+      "playerHp": 88,
+      "supplyHp": 0,
+      "choiceFrame": null,
+      "firstPreparationChain": {
+        "shotId": "event-1",
+        "projectileId": "projectile-1",
+        "shotTick": 121,
+        "impactId": "event-2",
+        "impactTick": 140,
+        "damageId": "event-3",
+        "damageTick": 140,
+        "owner": "hostile-flanker",
+        "target": "tank",
+        "damage": 12,
+        "beforeHp": 100,
+        "afterHp": 88,
+        "preparation": {
+          "id": "prepare-extraction",
+          "status": "active",
+          "progress": 0.12962962962962943,
+          "elapsed": 2.33333333333333,
+          "completedTick": null
+        },
+        "position": {
+          "x": 0.2694875570903653,
+          "y": 0.9142049513293151,
+          "z": 22.056793550183706
+        }
+      },
+      "allHostileDamageChains": [
+        {
+          "shotId": "event-1",
+          "projectileId": "projectile-1",
+          "shotTick": 121,
+          "impactId": "event-2",
+          "impactTick": 140,
+          "damageId": "event-3",
+          "damageTick": 140,
+          "owner": "hostile-flanker",
+          "target": "tank",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0.12962962962962943,
+            "elapsed": 2.33333333333333,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2694875570903653,
+            "y": 0.9142049513293151,
+            "z": 22.056793550183706
+          }
+        },
+        {
+          "shotId": "event-13",
+          "projectileId": "projectile-5",
+          "shotTick": 867,
+          "impactId": "event-14",
+          "impactTick": 903,
+          "damageId": "event-15",
+          "damageTick": 903,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 100,
+          "afterHp": 88,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-19",
+          "projectileId": "projectile-7",
+          "shotTick": 1240,
+          "impactId": "event-20",
+          "impactTick": 1276,
+          "damageId": "event-21",
+          "damageTick": 1276,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 88,
+          "afterHp": 76,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-25",
+          "projectileId": "projectile-9",
+          "shotTick": 1613,
+          "impactId": "event-26",
+          "impactTick": 1649,
+          "damageId": "event-27",
+          "damageTick": 1649,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 76,
+          "afterHp": 64,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-28",
+          "projectileId": "projectile-10",
+          "shotTick": 1986,
+          "impactId": "event-29",
+          "impactTick": 2022,
+          "damageId": "event-30",
+          "damageTick": 2022,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 64,
+          "afterHp": 52,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-34",
+          "projectileId": "projectile-12",
+          "shotTick": 2359,
+          "impactId": "event-35",
+          "impactTick": 2395,
+          "damageId": "event-36",
+          "damageTick": 2395,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 52,
+          "afterHp": 40,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-38",
+          "projectileId": "projectile-14",
+          "shotTick": 2732,
+          "impactId": "event-41",
+          "impactTick": 2768,
+          "damageId": "event-42",
+          "damageTick": 2768,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 40,
+          "afterHp": 28,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-44",
+          "projectileId": "projectile-16",
+          "shotTick": 3105,
+          "impactId": "event-45",
+          "impactTick": 3141,
+          "damageId": "event-46",
+          "damageTick": 3141,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 28,
+          "afterHp": 16,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-49",
+          "projectileId": "projectile-17",
+          "shotTick": 3478,
+          "impactId": "event-50",
+          "impactTick": 3514,
+          "damageId": "event-51",
+          "damageTick": 3514,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 12,
+          "beforeHp": 16,
+          "afterHp": 4,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        },
+        {
+          "shotId": "event-55",
+          "projectileId": "projectile-19",
+          "shotTick": 3851,
+          "impactId": "event-56",
+          "impactTick": 3887,
+          "damageId": "event-57",
+          "damageTick": 3887,
+          "owner": "hostile-flanker",
+          "target": "supply",
+          "damage": 4,
+          "beforeHp": 4,
+          "afterHp": 0,
+          "preparation": {
+            "id": "prepare-extraction",
+            "status": "active",
+            "progress": 0,
+            "elapsed": 0,
+            "completedTick": null
+          },
+          "position": {
+            "x": 0.2999999999999895,
+            "y": 0.8868625754175422,
+            "z": 26.2
+          }
+        }
+      ],
+      "retry": true,
+      "failure": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/audit_geometry.py", line 44, in <module>
+    result['atlasOverlapCheck']={'positiveAreaIntersectionsAbove1eMinus8':overlaps,'trianglePairsChecked':len(atlasTriangles)*(len(atlasTriangles)-1)//2};(A/'atlas-overlap-diagnostic.json').write_text(json.dumps(result['atlasOverlapCheck'],indent=2));assert not overlaps
+                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+AssertionError
+Blender 4.3.2
+Read blend: "/workspace/scratch/08f39b8da479/ruined_depot_candidate/originals/ruined-depot/evidence/lfa-recovered-two-uv-audit.blend"
+Read blend: "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/ruins-baked-preserved-uv.blend"
+
+Blender quit

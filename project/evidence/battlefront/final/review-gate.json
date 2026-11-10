@@ -1,0 +1,14 @@
+{
+  "controllerAuthorizesFreeze": true,
+  "independentTaskReviewsApproved": true,
+  "independentStrongestWholeReviewApproved": true,
+  "requiredFindingsOpen": 0,
+  "reviewSHA256": "8a20728a3c9f9545f16334b66b19465c4e610493ce8f28ca1cfe56c3cdfc6416",
+  "wholeHeadSHA256": "52b827337ae84830d0f3b5a7d6cfc39749cebe0a958a9d7c8a47104238cfca13",
+  "sourceManifestSHA256": "d1c5f94bb5589c2405f01da6618fa7e60ba005beee8af8f4242b45baa8b09d6f",
+  "preAuditSHA256": "20bf8c1ed324319673090d265d7ab8f5fe99b150018caa5ed1fe76b5d84fefcc",
+  "privateDevelopmentAcceptanceOnly": true,
+  "browserVerified": false,
+  "publicReleaseApproved": false,
+  "macPerformanceFixProved": false
+}

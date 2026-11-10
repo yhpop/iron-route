@@ -1,0 +1,391 @@
+{
+  "boundary": "Real unmodified CPU opening, no injected state",
+  "tick": 1800,
+  "phase": "playing",
+  "sweeps": 2399,
+  "blocked": 0,
+  "travel": {
+    "allied-support": 6.375903493441487,
+    "hostile-flanker": 3.4161485062997925
+  },
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active"
+    },
+    {
+      "id": "event-3",
+      "tick": 121,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -0.7402015276658831,
+        "y": 1.2750047174802046,
+        "z": 16.746160193855317
+      },
+      "projectileId": "projectile-1"
+    },
+    {
+      "id": "event-4",
+      "tick": 127,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -2.002626392553033,
+        "y": 1.2162098666215506,
+        "z": 17.23166308656757
+      },
+      "normal": {
+        "x": 0.8615408147161651,
+        "y": -0.36044813959363114,
+        "z": -0.35752561200800287
+      },
+      "projectileId": "projectile-1",
+      "value": "hit"
+    },
+    {
+      "id": "event-5",
+      "tick": 127,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -2.002626392553033,
+        "y": 1.2162098666215506,
+        "z": 17.23166308656757
+      },
+      "value": 12
+    },
+    {
+      "id": "event-6",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -2.0587487433202294,
+        "y": 1.2388187080886288,
+        "z": 17.253246599694673
+      },
+      "projectileId": "projectile-2"
+    },
+    {
+      "id": "event-7",
+      "tick": 151,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -0.8534789202851981,
+        "y": 1.2300145196996466,
+        "z": 16.78972437206921
+      },
+      "normal": {
+        "x": -0.830971430288194,
+        "y": 0.48627229834408553,
+        "z": -0.27023274025912136
+      },
+      "projectileId": "projectile-2",
+      "value": "hit"
+    },
+    {
+      "id": "event-8",
+      "tick": 151,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -0.8534789202851981,
+        "y": 1.2300145196996466,
+        "z": 16.78972437206921
+      },
+      "value": 12
+    },
+    {
+      "id": "event-9",
+      "tick": 494,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -2.0049919603346074,
+        "y": 1.3039257112908818,
+        "z": 16.027621094828945
+      },
+      "projectileId": "projectile-3"
+    },
+    {
+      "id": "event-10",
+      "tick": 499,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -3.092199569112836,
+        "y": 1.2685409877698464,
+        "z": 16.041691355565362
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-3",
+      "value": "hit"
+    },
+    {
+      "id": "event-11",
+      "tick": 499,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -3.092199569112836,
+        "y": 1.2685409877698464,
+        "z": 16.041691355565362
+      },
+      "value": 12
+    },
+    {
+      "id": "event-12",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -2.887957783263516,
+        "y": 1.320077061591494,
+        "z": 16.039048129784966
+      },
+      "projectileId": "projectile-4"
+    },
+    {
+      "id": "event-13",
+      "tick": 594,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -2.0400469848570455,
+        "y": 1.2935371989485331,
+        "z": 16.02807476469951
+      },
+      "normal": {
+        "x": -0.601885094073131,
+        "y": -0.4817241834600705,
+        "z": -0.6369271109022654
+      },
+      "projectileId": "projectile-4",
+      "value": "hit"
+    },
+    {
+      "id": "event-14",
+      "tick": 594,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -2.0400469848570455,
+        "y": 1.2935371989485331,
+        "z": 16.02807476469951
+      },
+      "value": 12
+    },
+    {
+      "id": "event-15",
+      "tick": 867,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -0.9513387075441173,
+        "y": 1.2809507221449064,
+        "z": 16.041504788858116
+      },
+      "projectileId": "projectile-5"
+    },
+    {
+      "id": "event-16",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -2.084346389246177,
+        "y": 1.233173269478225,
+        "z": 17.202378966009665
+      },
+      "projectileId": "projectile-6"
+    },
+    {
+      "id": "event-17",
+      "tick": 1044,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -0.18205760827299944,
+        "y": 1.2109798383428056,
+        "z": 16.48856512096145
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-6",
+      "value": "hit"
+    },
+    {
+      "id": "event-18",
+      "tick": 1044,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -0.18205760827299944,
+        "y": 1.2109798383428056,
+        "z": 16.48856512096145
+      },
+      "value": 12
+    },
+    {
+      "id": "event-19",
+      "tick": 1240,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -0.8341225526049059,
+        "y": 1.2923773057224932,
+        "z": 16.73978625529524
+      },
+      "projectileId": "projectile-7"
+    },
+    {
+      "id": "event-20",
+      "tick": 1246,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -2.0289845114405844,
+        "y": 1.2286395347586347,
+        "z": 17.185701526327808
+      },
+      "normal": {
+        "x": 0.9506536703603437,
+        "y": 0.10863476468907866,
+        "z": -0.29061329448487994
+      },
+      "projectileId": "projectile-7",
+      "value": "hit"
+    },
+    {
+      "id": "event-21",
+      "tick": 1246,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -2.0289845114405844,
+        "y": 1.2286395347586347,
+        "z": 17.185701526327808
+      },
+      "value": 12
+    },
+    {
+      "id": "event-22",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -2.1882067769627804,
+        "y": 1.224407461509276,
+        "z": 17.089685754793916
+      },
+      "projectileId": "projectile-8"
+    },
+    {
+      "id": "event-23",
+      "tick": 1484,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -1.4781498004451292,
+        "y": 1.2092423796680938,
+        "z": 16.82032967239206
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-8",
+      "value": "hit"
+    },
+    {
+      "id": "event-24",
+      "tick": 1484,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -1.4781498004451292,
+        "y": 1.2092423796680938,
+        "z": 16.82032967239206
+      },
+      "value": 12
+    },
+    {
+      "id": "event-25",
+      "tick": 1613,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -1.8416036490643442,
+        "y": 1.276275268180145,
+        "z": 16.823621191346117
+      },
+      "projectileId": "projectile-9"
+    },
+    {
+      "id": "event-26",
+      "tick": 1620,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -3.212831494855445,
+        "y": 1.1883274933672503,
+        "z": 17.413647274524912
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-9",
+      "value": "hit"
+    },
+    {
+      "id": "event-27",
+      "tick": 1620,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -3.212831494855445,
+        "y": 1.1883274933672503,
+        "z": 17.413647274524912
+      },
+      "value": 12
+    }
+  ]
+}

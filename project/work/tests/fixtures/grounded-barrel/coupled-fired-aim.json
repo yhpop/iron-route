@@ -1,0 +1,63 @@
+{
+  "description": "Declared isolated mechanics spawn on unchanged authored terrain; literal ordinary aim, one shot and forward drive. This is not the original Mac input history or a full mission route.",
+  "spawn": {
+    "x": 8.105954608,
+    "y": 0,
+    "z": -7.583887789,
+    "yaw": 0.337857932
+  },
+  "dt": 0.016666666666666666,
+  "runs": [
+    {
+      "n": 240,
+      "input": {
+        "aim": {
+          "worldPoint": {
+            "x": -5.638172335964065,
+            "y": 11.084567564771502,
+            "z": 7.625703417853415
+          }
+        }
+      }
+    },
+    {
+      "n": 180,
+      "input": {
+        "aim": {
+          "worldPoint": {
+            "x": -5.638172335964065,
+            "y": 4.084567564771502,
+            "z": 7.625703417853415
+          }
+        }
+      }
+    },
+    {
+      "n": 1,
+      "input": {
+        "throttle": 1,
+        "aim": {
+          "worldPoint": {
+            "x": 5.105954608,
+            "y": 1.8932227237882977,
+            "z": -7.583887789
+          }
+        },
+        "firePressed": true
+      }
+    },
+    {
+      "n": 499,
+      "input": {
+        "throttle": 1,
+        "aim": {
+          "worldPoint": {
+            "x": 5.105954608,
+            "y": 1.8932227237882977,
+            "z": -7.583887789
+          }
+        }
+      }
+    }
+  ]
+}

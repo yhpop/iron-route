@@ -1,0 +1,167 @@
+{
+  "phase": "final",
+  "utc": "2026-10-31T15:54:15.797084+00:00",
+  "sourceFileCount": 397,
+  "sourceHeadSHA256": "452dec8b3e6ed8c85b3b85ca15fc072e73730e7fe3fe2689016d7ff09ccdbc03",
+  "all1814Checked": true,
+  "changedBaselineFiles": [
+    "work/dist/build-manifest.json",
+    "work/dist/build-metafile.json",
+    "work/dist/game.js",
+    "work/dist/index.html",
+    "work/dist/\u94c1\u6d41_\u7535\u8111\u6d4f\u89c8\u5668\u79bb\u7ebf\u7248.html",
+    "work/dist-en/Iron_Route_Desktop_Offline.html",
+    "work/dist-en/build-manifest.json",
+    "work/dist-en/build-metafile.json",
+    "work/dist-en/game.js",
+    "work/dist-en/index.html",
+    "work/locales/en-missions.json",
+    "work/locales/en-ui.json",
+    "work/src/campaign-ui.js",
+    "work/src/main.js",
+    "work/tests/battlefront-depot-scope.test.mjs",
+    "work/tests/sweep-acceleration-entry.test.mjs"
+  ],
+  "authorizedSourceChanges": [
+    "work/src/main.js",
+    "work/src/campaign-ui.js",
+    "work/locales/en-ui.json",
+    "work/locales/en-missions.json",
+    "work/tests/sweep-acceleration-entry.test.mjs",
+    "work/tests/loading-extraction-entry.test.mjs",
+    "work/tests/battlefront-depot-scope.test.mjs"
+  ],
+  "E1ManifestSHA256": "c6373fbe913e3907017fc72542b5b53ee04cbeb59497435848f51cc3ad9a5f2e",
+  "E1FileCount": 99,
+  "E1AllExact": true,
+  "archiveCount": 14,
+  "archivesAllExact": true,
+  "U10DiffSHA256": "09c6dd7906d380c4b1cbdcbce99f025167f49f4ca0f83ee806e6f4ede773d802",
+  "snapshotPaths": [
+    "work/src/main.js",
+    "work/src/campaign-ui.js",
+    "work/locales/en-ui.json",
+    "work/locales/en-missions.json",
+    "work/tests/sweep-acceleration-entry.test.mjs",
+    "work/tests/loading-extraction-entry.test.mjs",
+    "work/tests/battlefront-depot-scope.test.mjs",
+    "work/build.mjs",
+    "work/build-english.mjs",
+    "work/package.json",
+    "work/package-lock.json",
+    "work/index.html",
+    "work/scripts/english-localization.mjs"
+  ]
+}
+{
+  "boundary": "Read-only analysis, not rebuild/replay/browser/device verification",
+  "onlySourceChangeSince06": [
+    "work/tests/battlefront-depot-scope.test.mjs"
+  ],
+  "builds": {
+    "dist": {
+      "javascriptSHA256": "a77d919100ad8f01958aa82a1fbe9d3c92fd0a39eec59f433eaa2990b228dfb6",
+      "javascriptBytes": 38704844,
+      "metafileSHA256": "ba09bfd994e1e650f66eb7528e11f4edec395e94256ac83b9ae187a7054deeea",
+      "manifestSHA256": "9c69767ff7e806a7e7506427f5e60b95add4562cdbd0d5b657528429e7834284",
+      "standalonePath": "work/dist/\u94c1\u6d41_\u7535\u8111\u6d4f\u89c8\u5668\u79bb\u7ebf\u7248.html",
+      "standaloneSHA256": "15b3533699708555fce46bbfdfd71497d087ac36f51657b876fa6c0733b3a793",
+      "standaloneBytes": 38736361,
+      "standaloneScriptExactBundle": true,
+      "newMissionInput": "src/loading-extraction-front.js",
+      "newMissionInputBytes": 1695,
+      "newSlugAndIdPresentInBundle": true,
+      "acceleratedChain": [
+        [
+          "src/main.js",
+          "src/ruined-depot-world-accelerated.js"
+        ],
+        [
+          "src/ruined-depot-world-accelerated.js",
+          "src/terrain-candidate/combat-world-accelerated.js"
+        ],
+        [
+          "src/terrain-candidate/combat-world-accelerated.js",
+          "src/campaign-world-accelerated.js"
+        ],
+        [
+          "src/campaign-world-accelerated.js",
+          "src/collision-broadphase.js"
+        ]
+      ],
+      "acceleratedIncomingUnique": true,
+      "originalOtherWorldsRetained": true,
+      "browserVerified": false,
+      "runtimeRequestsMeasured": false
+    },
+    "dist-en": {
+      "javascriptSHA256": "409fef1477c64444d9f6bfe07e53b3bd77eae57f5e4cc398ea001365abc5ff44",
+      "javascriptBytes": 38690368,
+      "metafileSHA256": "54eb63dc138c04b5b8117ab598033be43c989bafcc140ae8e96ba96eca67da7f",
+      "manifestSHA256": "d3df3cf79df54ae43443e0bf92f9873b49c97b3b6eeb4874aefe7b0f5cdf5c0a",
+      "standalonePath": "work/dist-en/Iron_Route_Desktop_Offline.html",
+      "standaloneSHA256": "d7fcb3a2253ef7924b6ad52f8c0379e80ac2cc1f571674b55b103dce2c7ddb1e",
+      "standaloneBytes": 38721903,
+      "standaloneScriptExactBundle": true,
+      "newMissionInput": "src/loading-extraction-front.js",
+      "newMissionInputBytes": 1867,
+      "newSlugAndIdPresentInBundle": true,
+      "acceleratedChain": [
+        [
+          "src/main.js",
+          "src/ruined-depot-world-accelerated.js"
+        ],
+        [
+          "src/ruined-depot-world-accelerated.js",
+          "src/terrain-candidate/combat-world-accelerated.js"
+        ],
+        [
+          "src/terrain-candidate/combat-world-accelerated.js",
+          "src/campaign-world-accelerated.js"
+        ],
+        [
+          "src/campaign-world-accelerated.js",
+          "src/collision-broadphase.js"
+        ]
+      ],
+      "acceleratedIncomingUnique": true,
+      "originalOtherWorldsRetained": true,
+      "browserVerified": false,
+      "runtimeRequestsMeasured": false
+    }
+  },
+  "E1": {
+    "win-direct-01": {
+      "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+      "physicalSourceFiles": 32,
+      "allPhysicalHashesAndTextExact": true,
+      "phase": "won",
+      "cause": "objectives-complete",
+      "freshReplayClaim": false
+    },
+    "win-direct-01-fresh": {
+      "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+      "physicalSourceFiles": 32,
+      "allPhysicalHashesAndTextExact": true,
+      "phase": "won",
+      "cause": "objectives-complete",
+      "freshReplayClaim": false
+    },
+    "playerloss-01": {
+      "rawSHA256": "31da743a02c1dbd911fe85cd90966e197b6f182e4880884f746bd1062822092e",
+      "physicalSourceFiles": 32,
+      "allPhysicalHashesAndTextExact": true,
+      "phase": "lost",
+      "cause": "tank-destroyed",
+      "freshReplayClaim": false
+    },
+    "truckloss-02": {
+      "rawSHA256": "58032bdd11727a1820207a115f67cfa1e328f55191785a3a2133b1969a12bc53",
+      "physicalSourceFiles": 32,
+      "allPhysicalHashesAndTextExact": true,
+      "phase": "lost",
+      "cause": "protected-vehicle-destroyed",
+      "freshReplayClaim": false
+    }
+  }
+}

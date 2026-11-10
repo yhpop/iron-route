@@ -1,0 +1,13 @@
+{
+  "route": "direct",
+  "verify": false,
+  "inputs": 8141,
+  "tick": 8140,
+  "phase": "won",
+  "hp": 100,
+  "truckHp": 86,
+  "truckArrived": true,
+  "events": 88,
+  "finalHash": "01d12230ff418c97463ee0ef384f7713c75b2276fba0fbbae8af712da4429444",
+  "specHash": "29bffced4fd2fb23a5cff0e1b201b6212600c47c71e8386c07fbc7f57c51ccaa"
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "name": "01-red",
+    "terminalSession": 24911,
+    "capSeconds": 120,
+    "exit": 1,
+    "seconds": 70.519694727,
+    "acceptedRED": false,
+    "sourceBoundary": "Mixed head: owned source edits happened while process pending. File-level failure only; no usable assertion transcript. Cause unestablished.",
+    "secondsSource": "Node TAP duration_ms, not measured wrapper wall time"
+  },
+  {
+    "name": "02-red",
+    "terminalSession": null,
+    "capSeconds": 120,
+    "exit": 1,
+    "seconds": 0.845984994,
+    "acceptedRED": true,
+    "sourceBoundary": "Four source files copied exactly from fixed backup before launch, implementation restored only after terminal. SHA inventory captured after terminal, not before launch.",
+    "secondsSource": "Node TAP duration_ms, not measured wrapper wall time"
+  },
+  {
+    "name": "03-focused",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "tests/battlefront-depot-presentation.test.mjs",
+      "tests/battlefront-depot-ground.test.mjs",
+      "tests/battlefront-depot-terrain.test.mjs",
+      "tests/battlefront-depot-entry.test.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T11:59:10.388755+00:00",
+    "seconds": 12.403319270000793,
+    "exit": 1,
+    "codeDrift": [],
+    "terminalSession": 96585
+  },
+  {
+    "name": "04-focused",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "tests/battlefront-depot-presentation.test.mjs",
+      "tests/battlefront-depot-ground.test.mjs",
+      "tests/battlefront-depot-terrain.test.mjs",
+      "tests/battlefront-depot-entry.test.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:00:02.849870+00:00",
+    "seconds": 10.25623589400493,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 13305
+  },
+  {
+    "name": "05-regression",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "tests/battlefront-depot-scope.test.mjs",
+      "tests/ruined-depot-runtime-view.test.mjs",
+      "tests/ruined-depot-entry.test.mjs",
+      "tests/scanned-cover-entry.test.mjs",
+      "tests/player-occlusion.test.mjs",
+      "tests/v4-tiny-viewport.test.mjs",
+      "tests/sweep-acceleration.test.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:02:49.153041+00:00",
+    "seconds": 18.273618310995516,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 4824
+  },
+  {
+    "name": "06-audit",
+    "command": [
+      "bash",
+      "-c",
+      "node scripts/battlefront-bf2-audit.mjs && node scripts/battlefront-bf2-projections.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:03:51.859100+00:00",
+    "seconds": 2.7758333579986356,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 25877
+  },
+  {
+    "name": "07-final-focused",
+    "command": [
+      "bash",
+      "-c",
+      "node --test --test-concurrency=1 tests/battlefront-depot-{presentation,ground,terrain,entry,scope}.test.mjs && node scripts/battlefront-bf2-audit.mjs && node scripts/battlefront-bf2-projections.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:05:09.961977+00:00",
+    "seconds": 14.149499029008439,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 20461
+  },
+  {
+    "name": "08-full-suite",
+    "command": [
+      "bash",
+      "-c",
+      "exec node --test --test-concurrency=2 tests/*.test.mjs"
+    ],
+    "capSeconds": 600,
+    "start": "2026-10-31T12:05:58.080557+00:00",
+    "seconds": 340.3307834669977,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 29048
+  },
+  {
+    "name": "09-direct-replay",
+    "command": [
+      "bash",
+      "-c",
+      "python3 ../evidence/battlefront/bf2/check-replay-mirror.py 09-before && { cd ../evidence/battlefront/bf2/replay-mirror/work; node scripts/battlefront-replay.mjs direct --verify --verification-tag=bf2-final; s=$?; cd ../../../../../..; python3 evidence/battlefront/bf2/check-replay-mirror.py 09-after; c=$?; test \"$s\" = 0 && test \"$c\" = 0; }"
+    ],
+    "capSeconds": 600,
+    "start": "2026-10-31T12:12:58.357024+00:00",
+    "seconds": 61.78887113899691,
+    "exit": 1,
+    "codeDrift": [],
+    "terminalSession": 37453
+  },
+  {
+    "name": "10-direct-postcheck",
+    "command": [
+      "python3",
+      "../evidence/battlefront/bf2/check-replay-mirror.py",
+      "09-after-recovered"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:14:46.844353+00:00",
+    "seconds": 0.1145196279976517,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": null
+  },
+  {
+    "name": "11-covered-replay",
+    "command": [
+      "bash",
+      "-c",
+      "evidence=\"$PWD/../evidence/battlefront/bf2\"; python3 \"$evidence/check-replay-mirror.py\" 11-before || exit $?; ( cd \"$evidence/replay-mirror/work\" && node scripts/battlefront-replay.mjs covered --verify --verification-tag=bf2-final ); s=$?; python3 \"$evidence/check-replay-mirror.py\" 11-after; c=$?; test \"$s\" = 0 && test \"$c\" = 0"
+    ],
+    "capSeconds": 600,
+    "start": "2026-10-31T12:15:00.456168+00:00",
+    "seconds": 119.94109041900083,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 7290
+  },
+  {
+    "name": "12-final-audit",
+    "command": [
+      "bash",
+      "-c",
+      "node ../evidence/battlefront/bf2/resource-buckets-audit.mjs && python3 ../evidence/battlefront/bf2/final-audit.py && node scripts/battlefront-bf2-audit.mjs"
+    ],
+    "capSeconds": 120,
+    "start": "2026-10-31T12:19:05.583141+00:00",
+    "seconds": 4.9428615479992,
+    "exit": 0,
+    "codeDrift": [],
+    "terminalSession": 65225
+  }
+]

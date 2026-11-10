@@ -1,0 +1,682 @@
+{
+  "schema": 1,
+  "id": "mission-9060",
+  "index": 9060,
+  "optional": true,
+  "terrainCombat": true,
+  "districtId": "south-wharf",
+  "title": "实景混凝土掩体 · 资源候选",
+  "briefing": "护送补给车到达北侧接应区。开局前方的蓝方支援车与敌方侧翼车会真实交火；两车会在装填间歇沿短路线机动，瞄准蓄力时停车，遇到障碍也会停下。支援车不是护送目标，损失它不会直接失败。东侧硬路短但有敌车封锁，西侧绕行可借山脊掩护。按 H 或点车队待命，先侦察再推进。友军会挡住炮弹：不要朝补给车或支援车开火，也不要挡在友军炮口前。无需消灭所有敌人，别让敌车残骸堵住车队路线。",
+  "bounds": {
+    "minX": -40,
+    "maxX": 40,
+    "minZ": -42,
+    "maxZ": 42
+  },
+  "spawn": {
+    "x": 0,
+    "y": 0,
+    "z": 23,
+    "yaw": 0
+  },
+  "geometry": [
+    {
+      "id": "south-depot",
+      "kind": "box",
+      "x": -25,
+      "z": 28,
+      "width": 8,
+      "depth": 9,
+      "height": 4,
+      "y": 0
+    },
+    {
+      "id": "west-workshop",
+      "kind": "box",
+      "x": -32,
+      "z": -5,
+      "width": 6,
+      "depth": 10,
+      "height": 3.5,
+      "y": 0
+    },
+    {
+      "id": "north-garage",
+      "kind": "box",
+      "x": 25,
+      "z": -30,
+      "width": 8,
+      "depth": 7,
+      "height": 3.2,
+      "y": 0
+    },
+    {
+      "id": "ridge-fence-0",
+      "kind": "box",
+      "x": -22.6,
+      "z": 14,
+      "width": 1.8,
+      "depth": 0.25,
+      "height": 0.65,
+      "destructible": true,
+      "hp": 90,
+      "crush": {
+        "seconds": 0.25,
+        "mode": "fence"
+      },
+      "y": 0
+    },
+    {
+      "id": "ridge-fence-1",
+      "kind": "box",
+      "x": -20.8,
+      "z": 14,
+      "width": 1.8,
+      "depth": 0.25,
+      "height": 0.65,
+      "destructible": true,
+      "hp": 90,
+      "crush": {
+        "seconds": 0.25,
+        "mode": "fence"
+      },
+      "y": 0
+    },
+    {
+      "id": "ridge-fence-2",
+      "kind": "box",
+      "x": -19,
+      "z": 14,
+      "width": 1.8,
+      "depth": 0.25,
+      "height": 0.65,
+      "destructible": true,
+      "hp": 90,
+      "crush": {
+        "seconds": 0.25,
+        "mode": "fence"
+      },
+      "y": 0
+    },
+    {
+      "id": "ridge-fence-3",
+      "kind": "box",
+      "x": -17.200000000000003,
+      "z": 14,
+      "width": 1.8,
+      "depth": 0.25,
+      "height": 0.65,
+      "destructible": true,
+      "hp": 90,
+      "crush": {
+        "seconds": 0.25,
+        "mode": "fence"
+      },
+      "y": 0
+    },
+    {
+      "id": "ridge-fence-4",
+      "kind": "box",
+      "x": -15.400000000000002,
+      "z": 14,
+      "width": 1.8,
+      "depth": 0.25,
+      "height": 0.65,
+      "destructible": true,
+      "hp": 90,
+      "crush": {
+        "seconds": 0.25,
+        "mode": "fence"
+      },
+      "y": 0
+    },
+    {
+      "id": "scorched-east-cover",
+      "x": 19.5,
+      "z": 9,
+      "width": 0.7,
+      "depth": 4,
+      "height": 1.8,
+      "kind": "box",
+      "y": 0
+    },
+    {
+      "id": "scorched-east-low-wall",
+      "x": 19.5,
+      "z": -4,
+      "width": 0.8,
+      "depth": 3,
+      "height": 1.05,
+      "kind": "box",
+      "y": 0
+    },
+    {
+      "id": "scorched-west-remnant",
+      "x": -30,
+      "z": 7,
+      "width": 5,
+      "depth": 0.8,
+      "height": 1.65,
+      "kind": "box",
+      "y": 2.3902619514768515e-24
+    },
+    {
+      "id": "scan-east-entry",
+      "kind": "box",
+      "x": 19.5,
+      "z": 16,
+      "y": 0,
+      "yaw": 1.5707963267948966,
+      "width": 1.56540936,
+      "depth": 0.44214198,
+      "height": 1.11195294
+    },
+    {
+      "id": "scan-east-mid",
+      "kind": "box",
+      "x": 19.5,
+      "z": -12,
+      "y": 0,
+      "yaw": 1.5707963267948966,
+      "width": 1.56540936,
+      "depth": 0.44214198,
+      "height": 1.11195294
+    },
+    {
+      "id": "scan-west-shoulder",
+      "kind": "box",
+      "x": -26.2,
+      "z": 8,
+      "y": 0,
+      "yaw": 1.5707963267948966,
+      "width": 1.56540936,
+      "depth": 0.44214198,
+      "height": 1.11195294
+    }
+  ],
+  "entities": [
+    {
+      "id": "supply",
+      "kind": "truck",
+      "yieldForTankTurn": true,
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 28,
+        "yaw": 0
+      },
+      "hp": 100,
+      "protected": true,
+      "routeId": "ridge-east",
+      "speed": 1.15,
+      "escortRange": 19,
+      "team": "allied"
+    },
+    {
+      "id": "road-gun",
+      "kind": "turret",
+      "pose": {
+        "x": 23,
+        "y": 0,
+        "z": 3,
+        "yaw": 0
+      },
+      "hp": 90,
+      "range": 19,
+      "chargeTime": 1.9,
+      "reload": 4.5,
+      "damage": 14,
+      "shieldArc": 1.7,
+      "vehicle": "pz3",
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "patrol": [
+        {
+          "x": 23,
+          "z": 3
+        },
+        {
+          "x": 23,
+          "z": -12
+        }
+      ],
+      "patrolIndex": 1,
+      "speed": 0,
+      "travel": 0,
+      "team": "hostile"
+    },
+    {
+      "id": "ridge-gun",
+      "kind": "turret",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      },
+      "hp": 90,
+      "range": 28,
+      "chargeTime": 2.2,
+      "reload": 3.8,
+      "damage": 8,
+      "shieldArc": 2.5,
+      "team": "hostile"
+    },
+    {
+      "id": "allied-support",
+      "kind": "turret",
+      "vehicle": "pz3",
+      "team": "allied",
+      "pose": {
+        "x": -4,
+        "z": 18,
+        "y": 0.01760499252811143,
+        "yaw": 0.5880026035475675
+      },
+      "hp": 110,
+      "protected": false,
+      "damage": 12,
+      "chargeTime": 2.4,
+      "reload": 5,
+      "range": 26,
+      "shieldArc": 0,
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "speed": 0,
+      "travel": 0,
+      "patrol": [
+        {
+          "x": -4,
+          "z": 18
+        },
+        {
+          "x": -5,
+          "z": 16
+        }
+      ]
+    },
+    {
+      "id": "hostile-flanker",
+      "kind": "turret",
+      "vehicle": "pz3",
+      "team": "hostile",
+      "pose": {
+        "x": 1.2,
+        "z": 16,
+        "y": 0.09107945940380308,
+        "yaw": 1.9379701606131159
+      },
+      "hp": 110,
+      "protected": false,
+      "damage": 12,
+      "chargeTime": 2,
+      "reload": 4.2,
+      "range": 22,
+      "shieldArc": 0,
+      "radius": 2.2,
+      "width": 1.921792,
+      "depth": 3.532506,
+      "height": 1.7,
+      "speed": 0,
+      "travel": 0,
+      "patrol": [
+        {
+          "x": 1.2,
+          "z": 16
+        },
+        {
+          "x": 0,
+          "z": 16
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ridge-east",
+      "width": 7,
+      "points": [
+        {
+          "x": 0,
+          "z": 28
+        },
+        {
+          "x": 14,
+          "z": 18
+        },
+        {
+          "x": 14,
+          "z": -24
+        },
+        {
+          "x": 0,
+          "z": -32
+        }
+      ]
+    },
+    {
+      "id": "ridge-west",
+      "width": 6,
+      "points": [
+        {
+          "x": 0,
+          "z": 28
+        },
+        {
+          "x": -18,
+          "z": 18
+        },
+        {
+          "x": -22,
+          "z": 4
+        },
+        {
+          "x": -22,
+          "z": -20
+        },
+        {
+          "x": 0,
+          "z": -32
+        }
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "id": "orders",
+      "polygon": [
+        {
+          "x": -4,
+          "z": 20
+        },
+        {
+          "x": 4,
+          "z": 20
+        },
+        {
+          "x": 4,
+          "z": 26
+        },
+        {
+          "x": -4,
+          "z": 26
+        }
+      ]
+    },
+    {
+      "id": "choose-east",
+      "polygon": [
+        {
+          "x": 5.5,
+          "z": 16
+        },
+        {
+          "x": 10.5,
+          "z": 16
+        },
+        {
+          "x": 10.5,
+          "z": 22
+        },
+        {
+          "x": 5.5,
+          "z": 22
+        }
+      ]
+    },
+    {
+      "id": "choose-west",
+      "polygon": [
+        {
+          "x": -10.5,
+          "z": 16
+        },
+        {
+          "x": -5.5,
+          "z": 16
+        },
+        {
+          "x": -5.5,
+          "z": 22
+        },
+        {
+          "x": -10.5,
+          "z": 22
+        }
+      ]
+    },
+    {
+      "id": "rendezvous",
+      "polygon": [
+        {
+          "x": -5,
+          "z": -36
+        },
+        {
+          "x": 5,
+          "z": -36
+        },
+        {
+          "x": 5,
+          "z": -28
+        },
+        {
+          "x": -5,
+          "z": -28
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    {
+      "id": "receive-orders",
+      "type": "reach",
+      "requires": [],
+      "nextIds": [
+        "escort-supply"
+      ],
+      "targetIds": [],
+      "zoneId": "orders",
+      "title": "接应补给车，驶入东西集结圈选路"
+    },
+    {
+      "id": "escort-supply",
+      "type": "escort",
+      "requires": [
+        "receive-orders"
+      ],
+      "nextIds": [],
+      "targetIds": [
+        "supply"
+      ],
+      "zoneId": "rendezvous",
+      "title": "护送补给车进入北部接应区"
+    }
+  ],
+  "convoyCommands": true,
+  "convoyChoice": {
+    "requiresObjectiveId": "receive-orders",
+    "prompt": "右侧硬路：短但暴露；左侧低地：长但有山脊掩护。驶入金圈锁定路线",
+    "options": [
+      {
+        "id": "direct",
+        "title": "东侧硬路",
+        "zoneId": "choose-east",
+        "routeByTruck": {
+          "supply": "ridge-east"
+        }
+      },
+      {
+        "id": "covered",
+        "title": "西侧低地土路",
+        "zoneId": "choose-west",
+        "routeByTruck": {
+          "supply": "ridge-west"
+        }
+      }
+    ]
+  },
+  "sceneDressing": {
+    "schema": 1,
+    "districtId": "south-wharf",
+    "ground": {
+      "material": "concrete"
+    },
+    "roads": [
+      {
+        "id": "ridge-east",
+        "material": "asphalt",
+        "width": 7,
+        "points": [
+          [
+            0,
+            28
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            14,
+            -24
+          ],
+          [
+            0,
+            -32
+          ]
+        ]
+      },
+      {
+        "id": "ridge-west",
+        "material": "earth",
+        "width": 6,
+        "points": [
+          [
+            0,
+            28
+          ],
+          [
+            -18,
+            18
+          ],
+          [
+            -22,
+            4
+          ],
+          [
+            -22,
+            -20
+          ],
+          [
+            0,
+            -32
+          ]
+        ]
+      }
+    ],
+    "landmarks": [
+      {
+        "geometryId": "south-depot",
+        "assetKey": "warehouse-sawtooth",
+        "role": "Departure depot"
+      },
+      {
+        "geometryId": "west-workshop",
+        "assetKey": "service-workshop",
+        "role": "Low road marker"
+      },
+      {
+        "geometryId": "north-garage",
+        "assetKey": "service-workshop",
+        "role": "Rendezvous landmark"
+      }
+    ],
+    "props": [],
+    "water": [],
+    "drains": [],
+    "appearance": "scorched",
+    "scorchedSources": [
+      {
+        "id": "depot-soot",
+        "x": -27,
+        "z": 29,
+        "baseHeight": 4
+      },
+      {
+        "id": "garage-soot",
+        "x": 28,
+        "z": -31,
+        "baseHeight": 3.2
+      }
+    ]
+  },
+  "design": {
+    "targetSeconds": [
+      150,
+      300
+    ],
+    "evidence": {
+      "humanPlaythrough": "unverified",
+      "combatBalance": "unverified"
+    },
+    "terrainProof": {
+      "blockedPose": {
+        "x": 8,
+        "z": -2,
+        "yaw": 0
+      },
+      "exposedPose": {
+        "x": 14,
+        "z": -18,
+        "yaw": 0
+      },
+      "targetId": "ridge-gun"
+    },
+    "integratedSlice": true,
+    "ecologyRole": "none: barren industrial ground",
+    "enemyRole": "mobile east-road denial; north fixed overwatch",
+    "victoryRule": "escort only, no kill quota",
+    "environmentRole": "solid cover and cosmetic distant smoke; no smoke occlusion or fire damage",
+    "terrainChange": "none; original shared field retained",
+    "newCoverIds": [
+      "scorched-east-cover",
+      "scorched-east-low-wall",
+      "scorched-west-remnant"
+    ],
+    "teamEncounter": "visible opening exchange between two real moving off-lane combat vehicles",
+    "supportRole": "temporary distraction; collision-swept reload patrols, parked during charge; not an escort objective",
+    "friendlyFireRule": "allied bodies absorb shells without friendly damage",
+    "newVehiclePositions": "short swept patrols off both convoy corridors; persistent wrecks remain solid",
+    "openingEvidence": "offline production simulation, compound sweeps and exact main-camera projections; not a GPU/CSS/device pass"
+  },
+  "livingWorld": false,
+  "scorchedFront": true,
+  "crossfireFront": true,
+  "combatRelations": {
+    "version": 1,
+    "playerTeam": "allied",
+    "teams": [
+      "allied",
+      "hostile"
+    ],
+    "hostilePairs": [
+      [
+        "allied",
+        "hostile"
+      ],
+      [
+        "hostile",
+        "allied"
+      ]
+    ],
+    "friendlyFire": "absorb"
+  },
+  "crossfireV3": true,
+  "crossfireV4": true,
+  "slug": "scanned-cover",
+  "scannedCover": true
+}

@@ -1,0 +1,1441 @@
+{
+  "schemaVersion": 1,
+  "sourceBlend": "source_v5/project/Tank_City_V5_Production.blend",
+  "sourceCollection": "01_TANK_EDITABLE",
+  "sourceObjects": 621,
+  "triangles": 49748,
+  "gameScale": 0.455,
+  "coordinates": "raw metres, +Y up, -Z forward",
+  "exportFile": "tank_v5_articulated.glb",
+  "bytes": 3501552,
+  "sha256": "ab3c8c530fc120671da0381b0a481a23014d685a36565de25366153ce98b3eb7",
+  "preservedOriginalHashes": {
+    "assets/tank_v5.glb": "e962c02c8f85c7d08b8091195e15387056100a27419e825eb0991e25c3045b45",
+    "assets/tank_salvage.glb": "01e17fb145b83d2b0d00d2df822571232f7c7e94ee7089be060d9267643b288f",
+    "assets/tank_v5_camo.png": "02b247f05f1b6fdd002e67d3a78dc1bdbfccc9fe3fdab4f598d6717beb697549",
+    "assets/tank_v5_orm.png": "3c6a318f5ef88a4c3d3f4c472b9293c928544023fefa8dc9ee48058298af853b",
+    "assets/tank_v5.asset.json": "9058b23477eba8aa8c19ab60681dd0e18ea1fc522be2fbd9514d22d35922c0bc",
+    "assets/tank_salvage.asset.json": "ccaa8dc1994eb20018d5bfce8aba35d721dfb325770335fa57ae9038faa33ac4",
+    "source_v5/project/Tank_City_V5_Production.blend": "8fc13fe7b7e07a1a8147967d8bd605d046c011bae7d9d0441ef22a46fdcf97eb"
+  },
+  "groups": [
+    {
+      "name": "Track_L_00",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 00",
+        "Track / hinge pin",
+        "Track / traction rubber pad"
+      ]
+    },
+    {
+      "name": "Track_L_01",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 01",
+        "Track / hinge pin.001",
+        "Track / traction rubber pad.001"
+      ]
+    },
+    {
+      "name": "Track_L_02",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 02",
+        "Track / hinge pin.002",
+        "Track / traction rubber pad.002"
+      ]
+    },
+    {
+      "name": "Track_L_03",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 03",
+        "Track / hinge pin.003",
+        "Track / traction rubber pad.003"
+      ]
+    },
+    {
+      "name": "Track_L_04",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 04",
+        "Track / hinge pin.004",
+        "Track / traction rubber pad.004"
+      ]
+    },
+    {
+      "name": "Track_L_05",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 05",
+        "Track / hinge pin.005",
+        "Track / traction rubber pad.005"
+      ]
+    },
+    {
+      "name": "Track_L_06",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 06",
+        "Track / hinge pin.006",
+        "Track / traction rubber pad.006"
+      ]
+    },
+    {
+      "name": "Track_L_07",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 07",
+        "Track / hinge pin.007",
+        "Track / traction rubber pad.007"
+      ]
+    },
+    {
+      "name": "Track_L_08",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 08",
+        "Track / hinge pin.008",
+        "Track / traction rubber pad.008"
+      ]
+    },
+    {
+      "name": "Track_L_09",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 09",
+        "Track / hinge pin.009",
+        "Track / traction rubber pad.009"
+      ]
+    },
+    {
+      "name": "Track_L_10",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 10",
+        "Track / hinge pin.010",
+        "Track / traction rubber pad.010"
+      ]
+    },
+    {
+      "name": "Track_L_11",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 11",
+        "Track / hinge pin.011",
+        "Track / traction rubber pad.011"
+      ]
+    },
+    {
+      "name": "Track_L_12",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 12",
+        "Track / hinge pin.012",
+        "Track / traction rubber pad.012"
+      ]
+    },
+    {
+      "name": "Track_L_13",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 13",
+        "Track / hinge pin.013",
+        "Track / traction rubber pad.013"
+      ]
+    },
+    {
+      "name": "Track_L_14",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 14",
+        "Track / hinge pin.014",
+        "Track / traction rubber pad.014"
+      ]
+    },
+    {
+      "name": "Track_L_15",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 15",
+        "Track / hinge pin.015",
+        "Track / traction rubber pad.015"
+      ]
+    },
+    {
+      "name": "Track_L_16",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 16",
+        "Track / hinge pin.016",
+        "Track / traction rubber pad.016"
+      ]
+    },
+    {
+      "name": "Track_L_17",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 17",
+        "Track / hinge pin.017",
+        "Track / traction rubber pad.017"
+      ]
+    },
+    {
+      "name": "Track_L_18",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 18",
+        "Track / hinge pin.018",
+        "Track / traction rubber pad.018"
+      ]
+    },
+    {
+      "name": "Track_L_19",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 19",
+        "Track / hinge pin.019",
+        "Track / traction rubber pad.019"
+      ]
+    },
+    {
+      "name": "Track_L_20",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 20",
+        "Track / hinge pin.020",
+        "Track / traction rubber pad.020"
+      ]
+    },
+    {
+      "name": "Track_L_21",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 21",
+        "Track / hinge pin.021",
+        "Track / traction rubber pad.021"
+      ]
+    },
+    {
+      "name": "Track_L_22",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 22",
+        "Track / hinge pin.022",
+        "Track / traction rubber pad.022"
+      ]
+    },
+    {
+      "name": "Track_L_23",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 23",
+        "Track / hinge pin.023",
+        "Track / traction rubber pad.023"
+      ]
+    },
+    {
+      "name": "Track_L_24",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 24",
+        "Track / hinge pin.024",
+        "Track / traction rubber pad.024"
+      ]
+    },
+    {
+      "name": "Track_L_25",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 25",
+        "Track / hinge pin.025",
+        "Track / traction rubber pad.025"
+      ]
+    },
+    {
+      "name": "Track_L_26",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 26",
+        "Track / hinge pin.026",
+        "Track / traction rubber pad.026"
+      ]
+    },
+    {
+      "name": "Track_L_27",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 27",
+        "Track / hinge pin.027",
+        "Track / traction rubber pad.027"
+      ]
+    },
+    {
+      "name": "Track_L_28",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 28",
+        "Track / hinge pin.028",
+        "Track / traction rubber pad.028"
+      ]
+    },
+    {
+      "name": "Track_L_29",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 29",
+        "Track / hinge pin.029",
+        "Track / traction rubber pad.029"
+      ]
+    },
+    {
+      "name": "Track_L_30",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 30",
+        "Track / hinge pin.030",
+        "Track / traction rubber pad.030"
+      ]
+    },
+    {
+      "name": "Track_L_31",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 31",
+        "Track / hinge pin.031",
+        "Track / traction rubber pad.031"
+      ]
+    },
+    {
+      "name": "Track_L_32",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 32",
+        "Track / hinge pin.032",
+        "Track / traction rubber pad.032"
+      ]
+    },
+    {
+      "name": "Track_L_33",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 33",
+        "Track / hinge pin.033",
+        "Track / traction rubber pad.033"
+      ]
+    },
+    {
+      "name": "Track_L_34",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 34",
+        "Track / hinge pin.034",
+        "Track / traction rubber pad.034"
+      ]
+    },
+    {
+      "name": "Track_L_35",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 35",
+        "Track / hinge pin.035",
+        "Track / traction rubber pad.035"
+      ]
+    },
+    {
+      "name": "Track_L_36",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 36",
+        "Track / hinge pin.036",
+        "Track / traction rubber pad.036"
+      ]
+    },
+    {
+      "name": "Track_L_37",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 37",
+        "Track / hinge pin.037",
+        "Track / traction rubber pad.037"
+      ]
+    },
+    {
+      "name": "Track_L_38",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 38",
+        "Track / hinge pin.038",
+        "Track / traction rubber pad.038"
+      ]
+    },
+    {
+      "name": "Track_L_39",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 39",
+        "Track / hinge pin.039",
+        "Track / traction rubber pad.039"
+      ]
+    },
+    {
+      "name": "Track_L_40",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 40",
+        "Track / hinge pin.040",
+        "Track / traction rubber pad.040"
+      ]
+    },
+    {
+      "name": "Track_L_41",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 41",
+        "Track / hinge pin.041",
+        "Track / traction rubber pad.041"
+      ]
+    },
+    {
+      "name": "Track_L_42",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 42",
+        "Track / hinge pin.042",
+        "Track / traction rubber pad.042"
+      ]
+    },
+    {
+      "name": "Track_L_43",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 43",
+        "Track / hinge pin.043",
+        "Track / traction rubber pad.043"
+      ]
+    },
+    {
+      "name": "Track_L_44",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 44",
+        "Track / hinge pin.044",
+        "Track / traction rubber pad.044"
+      ]
+    },
+    {
+      "name": "Track_L_45",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 45",
+        "Track / hinge pin.045",
+        "Track / traction rubber pad.045"
+      ]
+    },
+    {
+      "name": "Track_L_46",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 46",
+        "Track / hinge pin.046",
+        "Track / traction rubber pad.046"
+      ]
+    },
+    {
+      "name": "Track_L_47",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 47",
+        "Track / hinge pin.047",
+        "Track / traction rubber pad.047"
+      ]
+    },
+    {
+      "name": "Track_L_48",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 48",
+        "Track / hinge pin.048",
+        "Track / traction rubber pad.048"
+      ]
+    },
+    {
+      "name": "Track_L_49",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 49",
+        "Track / hinge pin.049",
+        "Track / traction rubber pad.049"
+      ]
+    },
+    {
+      "name": "Track_L_50",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 50",
+        "Track / hinge pin.050",
+        "Track / traction rubber pad.050"
+      ]
+    },
+    {
+      "name": "Track_L_51",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 51",
+        "Track / hinge pin.051",
+        "Track / traction rubber pad.051"
+      ]
+    },
+    {
+      "name": "Track_L_52",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 52",
+        "Track / hinge pin.052",
+        "Track / traction rubber pad.052"
+      ]
+    },
+    {
+      "name": "Track_L_53",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 53",
+        "Track / hinge pin.053",
+        "Track / traction rubber pad.053"
+      ]
+    },
+    {
+      "name": "Track_L_54",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 54",
+        "Track / hinge pin.054",
+        "Track / traction rubber pad.054"
+      ]
+    },
+    {
+      "name": "Track_L_55",
+      "triangles": 148,
+      "sources": [
+        "Tread link -1 55",
+        "Track / hinge pin.055",
+        "Track / traction rubber pad.055"
+      ]
+    },
+    {
+      "name": "Wheel_L_0",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 0",
+        "Steel road wheel hub",
+        "Wheel hub fastener",
+        "Wheel hub fastener.001",
+        "Wheel hub fastener.002",
+        "Wheel hub fastener.003",
+        "Wheel hub fastener.004",
+        "Wheel hub fastener.005",
+        "Wheel hub fastener.006",
+        "Wheel hub fastener.007",
+        "Wheel axle cap"
+      ]
+    },
+    {
+      "name": "Wheel_L_1",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 1",
+        "Steel road wheel hub.001",
+        "Wheel hub fastener.008",
+        "Wheel hub fastener.009",
+        "Wheel hub fastener.010",
+        "Wheel hub fastener.011",
+        "Wheel hub fastener.012",
+        "Wheel hub fastener.013",
+        "Wheel hub fastener.014",
+        "Wheel hub fastener.015",
+        "Wheel axle cap.001"
+      ]
+    },
+    {
+      "name": "Wheel_L_2",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 2",
+        "Steel road wheel hub.002",
+        "Wheel hub fastener.016",
+        "Wheel hub fastener.017",
+        "Wheel hub fastener.018",
+        "Wheel hub fastener.019",
+        "Wheel hub fastener.020",
+        "Wheel hub fastener.021",
+        "Wheel hub fastener.022",
+        "Wheel hub fastener.023",
+        "Wheel axle cap.002"
+      ]
+    },
+    {
+      "name": "Wheel_L_3",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 3",
+        "Steel road wheel hub.003",
+        "Wheel hub fastener.024",
+        "Wheel hub fastener.025",
+        "Wheel hub fastener.026",
+        "Wheel hub fastener.027",
+        "Wheel hub fastener.028",
+        "Wheel hub fastener.029",
+        "Wheel hub fastener.030",
+        "Wheel hub fastener.031",
+        "Wheel axle cap.003"
+      ]
+    },
+    {
+      "name": "Wheel_L_4",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 4",
+        "Steel road wheel hub.004",
+        "Wheel hub fastener.032",
+        "Wheel hub fastener.033",
+        "Wheel hub fastener.034",
+        "Wheel hub fastener.035",
+        "Wheel hub fastener.036",
+        "Wheel hub fastener.037",
+        "Wheel hub fastener.038",
+        "Wheel hub fastener.039",
+        "Wheel axle cap.004"
+      ]
+    },
+    {
+      "name": "Wheel_L_5",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel -1 5",
+        "Steel road wheel hub.005",
+        "Wheel hub fastener.040",
+        "Wheel hub fastener.041",
+        "Wheel hub fastener.042",
+        "Wheel hub fastener.043",
+        "Wheel hub fastener.044",
+        "Wheel hub fastener.045",
+        "Wheel hub fastener.046",
+        "Wheel hub fastener.047",
+        "Wheel axle cap.005"
+      ]
+    },
+    {
+      "name": "Guide_L_0",
+      "triangles": 380,
+      "sources": [
+        "End idler sprocket"
+      ]
+    },
+    {
+      "name": "Guide_L_1",
+      "triangles": 380,
+      "sources": [
+        "End idler sprocket.001"
+      ]
+    },
+    {
+      "name": "Track_R_00",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 00",
+        "Track / hinge pin.056",
+        "Track / traction rubber pad.056"
+      ]
+    },
+    {
+      "name": "Track_R_01",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 01",
+        "Track / hinge pin.057",
+        "Track / traction rubber pad.057"
+      ]
+    },
+    {
+      "name": "Track_R_02",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 02",
+        "Track / hinge pin.058",
+        "Track / traction rubber pad.058"
+      ]
+    },
+    {
+      "name": "Track_R_03",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 03",
+        "Track / hinge pin.059",
+        "Track / traction rubber pad.059"
+      ]
+    },
+    {
+      "name": "Track_R_04",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 04",
+        "Track / hinge pin.060",
+        "Track / traction rubber pad.060"
+      ]
+    },
+    {
+      "name": "Track_R_05",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 05",
+        "Track / hinge pin.061",
+        "Track / traction rubber pad.061"
+      ]
+    },
+    {
+      "name": "Track_R_06",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 06",
+        "Track / hinge pin.062",
+        "Track / traction rubber pad.062"
+      ]
+    },
+    {
+      "name": "Track_R_07",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 07",
+        "Track / hinge pin.063",
+        "Track / traction rubber pad.063"
+      ]
+    },
+    {
+      "name": "Track_R_08",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 08",
+        "Track / hinge pin.064",
+        "Track / traction rubber pad.064"
+      ]
+    },
+    {
+      "name": "Track_R_09",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 09",
+        "Track / hinge pin.065",
+        "Track / traction rubber pad.065"
+      ]
+    },
+    {
+      "name": "Track_R_10",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 10",
+        "Track / hinge pin.066",
+        "Track / traction rubber pad.066"
+      ]
+    },
+    {
+      "name": "Track_R_11",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 11",
+        "Track / hinge pin.067",
+        "Track / traction rubber pad.067"
+      ]
+    },
+    {
+      "name": "Track_R_12",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 12",
+        "Track / hinge pin.068",
+        "Track / traction rubber pad.068"
+      ]
+    },
+    {
+      "name": "Track_R_13",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 13",
+        "Track / hinge pin.069",
+        "Track / traction rubber pad.069"
+      ]
+    },
+    {
+      "name": "Track_R_14",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 14",
+        "Track / hinge pin.070",
+        "Track / traction rubber pad.070"
+      ]
+    },
+    {
+      "name": "Track_R_15",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 15",
+        "Track / hinge pin.071",
+        "Track / traction rubber pad.071"
+      ]
+    },
+    {
+      "name": "Track_R_16",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 16",
+        "Track / hinge pin.072",
+        "Track / traction rubber pad.072"
+      ]
+    },
+    {
+      "name": "Track_R_17",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 17",
+        "Track / hinge pin.073",
+        "Track / traction rubber pad.073"
+      ]
+    },
+    {
+      "name": "Track_R_18",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 18",
+        "Track / hinge pin.074",
+        "Track / traction rubber pad.074"
+      ]
+    },
+    {
+      "name": "Track_R_19",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 19",
+        "Track / hinge pin.075",
+        "Track / traction rubber pad.075"
+      ]
+    },
+    {
+      "name": "Track_R_20",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 20",
+        "Track / hinge pin.076",
+        "Track / traction rubber pad.076"
+      ]
+    },
+    {
+      "name": "Track_R_21",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 21",
+        "Track / hinge pin.077",
+        "Track / traction rubber pad.077"
+      ]
+    },
+    {
+      "name": "Track_R_22",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 22",
+        "Track / hinge pin.078",
+        "Track / traction rubber pad.078"
+      ]
+    },
+    {
+      "name": "Track_R_23",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 23",
+        "Track / hinge pin.079",
+        "Track / traction rubber pad.079"
+      ]
+    },
+    {
+      "name": "Track_R_24",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 24",
+        "Track / hinge pin.080",
+        "Track / traction rubber pad.080"
+      ]
+    },
+    {
+      "name": "Track_R_25",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 25",
+        "Track / hinge pin.081",
+        "Track / traction rubber pad.081"
+      ]
+    },
+    {
+      "name": "Track_R_26",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 26",
+        "Track / hinge pin.082",
+        "Track / traction rubber pad.082"
+      ]
+    },
+    {
+      "name": "Track_R_27",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 27",
+        "Track / hinge pin.083",
+        "Track / traction rubber pad.083"
+      ]
+    },
+    {
+      "name": "Track_R_28",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 28",
+        "Track / hinge pin.084",
+        "Track / traction rubber pad.084"
+      ]
+    },
+    {
+      "name": "Track_R_29",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 29",
+        "Track / hinge pin.085",
+        "Track / traction rubber pad.085"
+      ]
+    },
+    {
+      "name": "Track_R_30",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 30",
+        "Track / hinge pin.086",
+        "Track / traction rubber pad.086"
+      ]
+    },
+    {
+      "name": "Track_R_31",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 31",
+        "Track / hinge pin.087",
+        "Track / traction rubber pad.087"
+      ]
+    },
+    {
+      "name": "Track_R_32",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 32",
+        "Track / hinge pin.088",
+        "Track / traction rubber pad.088"
+      ]
+    },
+    {
+      "name": "Track_R_33",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 33",
+        "Track / hinge pin.089",
+        "Track / traction rubber pad.089"
+      ]
+    },
+    {
+      "name": "Track_R_34",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 34",
+        "Track / hinge pin.090",
+        "Track / traction rubber pad.090"
+      ]
+    },
+    {
+      "name": "Track_R_35",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 35",
+        "Track / hinge pin.091",
+        "Track / traction rubber pad.091"
+      ]
+    },
+    {
+      "name": "Track_R_36",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 36",
+        "Track / hinge pin.092",
+        "Track / traction rubber pad.092"
+      ]
+    },
+    {
+      "name": "Track_R_37",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 37",
+        "Track / hinge pin.093",
+        "Track / traction rubber pad.093"
+      ]
+    },
+    {
+      "name": "Track_R_38",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 38",
+        "Track / hinge pin.094",
+        "Track / traction rubber pad.094"
+      ]
+    },
+    {
+      "name": "Track_R_39",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 39",
+        "Track / hinge pin.095",
+        "Track / traction rubber pad.095"
+      ]
+    },
+    {
+      "name": "Track_R_40",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 40",
+        "Track / hinge pin.096",
+        "Track / traction rubber pad.096"
+      ]
+    },
+    {
+      "name": "Track_R_41",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 41",
+        "Track / hinge pin.097",
+        "Track / traction rubber pad.097"
+      ]
+    },
+    {
+      "name": "Track_R_42",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 42",
+        "Track / hinge pin.098",
+        "Track / traction rubber pad.098"
+      ]
+    },
+    {
+      "name": "Track_R_43",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 43",
+        "Track / hinge pin.099",
+        "Track / traction rubber pad.099"
+      ]
+    },
+    {
+      "name": "Track_R_44",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 44",
+        "Track / hinge pin.100",
+        "Track / traction rubber pad.100"
+      ]
+    },
+    {
+      "name": "Track_R_45",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 45",
+        "Track / hinge pin.101",
+        "Track / traction rubber pad.101"
+      ]
+    },
+    {
+      "name": "Track_R_46",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 46",
+        "Track / hinge pin.102",
+        "Track / traction rubber pad.102"
+      ]
+    },
+    {
+      "name": "Track_R_47",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 47",
+        "Track / hinge pin.103",
+        "Track / traction rubber pad.103"
+      ]
+    },
+    {
+      "name": "Track_R_48",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 48",
+        "Track / hinge pin.104",
+        "Track / traction rubber pad.104"
+      ]
+    },
+    {
+      "name": "Track_R_49",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 49",
+        "Track / hinge pin.105",
+        "Track / traction rubber pad.105"
+      ]
+    },
+    {
+      "name": "Track_R_50",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 50",
+        "Track / hinge pin.106",
+        "Track / traction rubber pad.106"
+      ]
+    },
+    {
+      "name": "Track_R_51",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 51",
+        "Track / hinge pin.107",
+        "Track / traction rubber pad.107"
+      ]
+    },
+    {
+      "name": "Track_R_52",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 52",
+        "Track / hinge pin.108",
+        "Track / traction rubber pad.108"
+      ]
+    },
+    {
+      "name": "Track_R_53",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 53",
+        "Track / hinge pin.109",
+        "Track / traction rubber pad.109"
+      ]
+    },
+    {
+      "name": "Track_R_54",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 54",
+        "Track / hinge pin.110",
+        "Track / traction rubber pad.110"
+      ]
+    },
+    {
+      "name": "Track_R_55",
+      "triangles": 148,
+      "sources": [
+        "Tread link 1 55",
+        "Track / hinge pin.111",
+        "Track / traction rubber pad.111"
+      ]
+    },
+    {
+      "name": "Wheel_R_0",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 0",
+        "Steel road wheel hub.006",
+        "Wheel hub fastener.048",
+        "Wheel hub fastener.049",
+        "Wheel hub fastener.050",
+        "Wheel hub fastener.051",
+        "Wheel hub fastener.052",
+        "Wheel hub fastener.053",
+        "Wheel hub fastener.054",
+        "Wheel hub fastener.055",
+        "Wheel axle cap.006"
+      ]
+    },
+    {
+      "name": "Wheel_R_1",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 1",
+        "Steel road wheel hub.007",
+        "Wheel hub fastener.056",
+        "Wheel hub fastener.057",
+        "Wheel hub fastener.058",
+        "Wheel hub fastener.059",
+        "Wheel hub fastener.060",
+        "Wheel hub fastener.061",
+        "Wheel hub fastener.062",
+        "Wheel hub fastener.063",
+        "Wheel axle cap.007"
+      ]
+    },
+    {
+      "name": "Wheel_R_2",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 2",
+        "Steel road wheel hub.008",
+        "Wheel hub fastener.064",
+        "Wheel hub fastener.065",
+        "Wheel hub fastener.066",
+        "Wheel hub fastener.067",
+        "Wheel hub fastener.068",
+        "Wheel hub fastener.069",
+        "Wheel hub fastener.070",
+        "Wheel hub fastener.071",
+        "Wheel axle cap.008"
+      ]
+    },
+    {
+      "name": "Wheel_R_3",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 3",
+        "Steel road wheel hub.009",
+        "Wheel hub fastener.072",
+        "Wheel hub fastener.073",
+        "Wheel hub fastener.074",
+        "Wheel hub fastener.075",
+        "Wheel hub fastener.076",
+        "Wheel hub fastener.077",
+        "Wheel hub fastener.078",
+        "Wheel hub fastener.079",
+        "Wheel axle cap.009"
+      ]
+    },
+    {
+      "name": "Wheel_R_4",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 4",
+        "Steel road wheel hub.010",
+        "Wheel hub fastener.080",
+        "Wheel hub fastener.081",
+        "Wheel hub fastener.082",
+        "Wheel hub fastener.083",
+        "Wheel hub fastener.084",
+        "Wheel hub fastener.085",
+        "Wheel hub fastener.086",
+        "Wheel hub fastener.087",
+        "Wheel axle cap.010"
+      ]
+    },
+    {
+      "name": "Wheel_R_5",
+      "triangles": 1300,
+      "sources": [
+        "Road wheel 1 5",
+        "Steel road wheel hub.011",
+        "Wheel hub fastener.088",
+        "Wheel hub fastener.089",
+        "Wheel hub fastener.090",
+        "Wheel hub fastener.091",
+        "Wheel hub fastener.092",
+        "Wheel hub fastener.093",
+        "Wheel hub fastener.094",
+        "Wheel hub fastener.095",
+        "Wheel axle cap.011"
+      ]
+    },
+    {
+      "name": "Guide_R_0",
+      "triangles": 380,
+      "sources": [
+        "End idler sprocket.002"
+      ]
+    },
+    {
+      "name": "Guide_R_1",
+      "triangles": 380,
+      "sources": [
+        "End idler sprocket.003"
+      ]
+    },
+    {
+      "name": "Chassis_Geometry",
+      "triangles": 10480,
+      "sources": [
+        "Sloped main armored hull",
+        "Lower suspension chassis",
+        "Hull deck",
+        "Side skirt armor",
+        "Skirt bolt",
+        "Skirt bolt.001",
+        "Side skirt armor.001",
+        "Skirt bolt.002",
+        "Skirt bolt.003",
+        "Side skirt armor.002",
+        "Skirt bolt.004",
+        "Skirt bolt.005",
+        "Side skirt armor.003",
+        "Skirt bolt.006",
+        "Skirt bolt.007",
+        "Side skirt armor.004",
+        "Skirt bolt.008",
+        "Skirt bolt.009",
+        "Rear mud flap",
+        "Skirt raised seam",
+        "Skirt raised seam.001",
+        "Skirt raised seam.002",
+        "Skirt raised seam.003",
+        "Skirt raised seam.004",
+        "Rear radiator slat",
+        "Rear radiator slat.001",
+        "Rear radiator slat.002",
+        "Rear radiator slat.003",
+        "Rear radiator slat.004",
+        "Rear radiator slat.005",
+        "Rear radiator slat.006",
+        "Rear radiator slat.007",
+        "Rear radiator slat.008",
+        "Hull deck grab rail",
+        "Hull deck grab rail.001",
+        "Hull deck grab rail.002",
+        "Hull deck grab rail.003",
+        "Glacis segmented applique",
+        "Glacis segmented applique.001",
+        "Side skirt armor.005",
+        "Skirt bolt.010",
+        "Skirt bolt.011",
+        "Side skirt armor.006",
+        "Skirt bolt.012",
+        "Skirt bolt.013",
+        "Side skirt armor.007",
+        "Skirt bolt.014",
+        "Skirt bolt.015",
+        "Side skirt armor.008",
+        "Skirt bolt.016",
+        "Skirt bolt.017",
+        "Side skirt armor.009",
+        "Skirt bolt.018",
+        "Skirt bolt.019",
+        "Rear mud flap.001",
+        "Skirt raised seam.005",
+        "Skirt raised seam.006",
+        "Skirt raised seam.007",
+        "Skirt raised seam.008",
+        "Skirt raised seam.009",
+        "Rear radiator slat.009",
+        "Rear radiator slat.010",
+        "Rear radiator slat.011",
+        "Rear radiator slat.012",
+        "Rear radiator slat.013",
+        "Rear radiator slat.014",
+        "Rear radiator slat.015",
+        "Rear radiator slat.016",
+        "Rear radiator slat.017",
+        "Hull deck grab rail.004",
+        "Hull deck grab rail.005",
+        "Hull deck grab rail.006",
+        "Hull deck grab rail.007",
+        "Glacis segmented applique.002",
+        "Glacis segmented applique.003",
+        "Engine cooling grille",
+        "Engine cooling grille.001",
+        "Engine cooling grille.002",
+        "Engine cooling grille.003",
+        "Engine cooling grille.004",
+        "Engine cooling grille.005",
+        "Engine cooling grille.006",
+        "Engine cooling grille.007",
+        "Engine cooling grille.008",
+        "Engine cooling grille.009",
+        "Engine cooling grille.010",
+        "Front headlight housing",
+        "Headlight glass",
+        "Front towing shackle",
+        "Front headlight housing.001",
+        "Headlight glass.001",
+        "Front towing shackle.001",
+        "V5 / rear tow cable 0",
+        "V5 / towing eye",
+        "V5 / towing eye.001",
+        "V5 / rear tow cable 1",
+        "V5 / towing eye.002",
+        "V5 / towing eye.003"
+      ]
+    },
+    {
+      "name": "Turret_Geometry",
+      "triangles": 4732,
+      "sources": [
+        "Turret ring",
+        "Sloped turret with cheek armor",
+        "Turret reactive cheek",
+        "Turret stowage bin",
+        "Smoke grenade launcher",
+        "Smoke grenade launcher.001",
+        "Smoke grenade launcher.002",
+        "Smoke grenade launcher.003",
+        "Turret armor bolt",
+        "Turret armor bolt.001",
+        "Turret armor bolt.002",
+        "Turret armor bolt.003",
+        "Turret reactive cheek.001",
+        "Turret stowage bin.001",
+        "Smoke grenade launcher.004",
+        "Smoke grenade launcher.005",
+        "Smoke grenade launcher.006",
+        "Smoke grenade launcher.007",
+        "Turret armor bolt.004",
+        "Turret armor bolt.005",
+        "Turret armor bolt.006",
+        "Turret armor bolt.007",
+        "Crew hatch",
+        "Hatch handle",
+        "Crew hatch.001",
+        "Hatch handle.001",
+        "Commander periscope",
+        "Commander periscope.001",
+        "Commander periscope.002",
+        "Commander periscope.003",
+        "Radio antenna",
+        "Roof MG mount",
+        "Roof machine gun receiver",
+        "Roof machine gun barrel",
+        "Commander optical housing",
+        "Commander optical aperture",
+        "Gunner sight box",
+        "Gunner sight optical aperture",
+        "V5 / secured canvas equipment roll",
+        "V5 / canvas retaining strap",
+        "V5 / canvas retaining strap.001"
+      ]
+    },
+    {
+      "name": "Mantlet_Geometry",
+      "triangles": 76,
+      "sources": [
+        "Gun mantlet"
+      ]
+    },
+    {
+      "name": "Barrel_Geometry",
+      "triangles": 764,
+      "sources": [
+        "Main gun tube",
+        "Barrel fume extractor",
+        "Gun muzzle",
+        "Dark bore opening",
+        "Barrel reinforcement ring",
+        "Barrel reinforcement ring.001",
+        "Barrel reinforcement ring.002",
+        "Barrel reinforcement ring.003",
+        "Barrel reinforcement ring.004"
+      ]
+    }
+  ],
+  "limitations": [
+    "Source reconstructed production V5; no new ownership/license claim.",
+    "Cosmetic running-gear kinematics, not suspension or physical track simulation.",
+    "No browser/device validation by this offline asset export."
+  ]
+}

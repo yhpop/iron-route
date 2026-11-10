@@ -1,0 +1,56 @@
+{
+  "objects": [
+    {
+      "name": "concrete_road_barrier_02",
+      "triangles": 23822,
+      "vertices": 12499,
+      "dimensions": [
+        1.5654094219207764,
+        0.44214197993278503,
+        1.1119529008865356
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        "concrete_road_barrier_02"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "concrete_road_barrier_02_diff",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "filepath": "/workspace/scratch/08f39b8da479/asset_round2_20261031/ruins/sources/textures/concrete_road_barrier_02_diff_1k.jpg"
+    },
+    {
+      "name": "concrete_road_barrier_02_nor_gl",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "filepath": "/workspace/scratch/08f39b8da479/asset_round2_20261031/ruins/sources/textures/concrete_road_barrier_02_nor_gl_1k.jpg"
+    },
+    {
+      "name": "concrete_road_barrier_02_rough",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "filepath": "/workspace/scratch/08f39b8da479/asset_round2_20261031/ruins/sources/textures/concrete_road_barrier_02_arm_1k.jpg"
+    }
+  ]
+}

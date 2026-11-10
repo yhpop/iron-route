@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "file": "industrial-canal-kit.blend",
+  "sha256": "b030b6a554c79bc5836cb2afcaf18025e847d11f253e411c5cf1c2a2f500a9f4",
+  "bytes": 7279730,
+  "packedImages": [
+    {
+      "image": "canvas_base.png",
+      "relativePath": "//textures/canvas_base.png",
+      "packedBytes": 197569,
+      "sha256": "2ec6305d857c221308e70ef6b7bf10d844249b29d97ad73341d0a31ef66b9b77"
+    },
+    {
+      "image": "canvas_orm.png",
+      "relativePath": "//textures/canvas_orm.png",
+      "packedBytes": 203057,
+      "sha256": "c04811cf46f0a61e4a47af1ca95659d24b786374e74aec6ca13f8a24d961254e"
+    },
+    {
+      "image": "clay_brick_base.png",
+      "relativePath": "//textures/clay_brick_base.png",
+      "packedBytes": 232303,
+      "sha256": "7e20a270e6242ba742ad525ae2e9e37e15e103e39097aa14dcbb6669a36d2816"
+    },
+    {
+      "image": "clay_brick_orm.png",
+      "relativePath": "//textures/clay_brick_orm.png",
+      "packedBytes": 203043,
+      "sha256": "eed0c3aa467e31337ba47b0a93f5403bd6277499e03421c1f5ae85f3d7c3a08c"
+    },
+    {
+      "image": "paint_ochre_base.png",
+      "relativePath": "//textures/paint_ochre_base.png",
+      "packedBytes": 239792,
+      "sha256": "c53fbac0a72a05639d95b069061fff3fc78ebfb4506023b1d707c49a89297f80"
+    },
+    {
+      "image": "paint_ochre_orm.png",
+      "relativePath": "//textures/paint_ochre_orm.png",
+      "packedBytes": 202225,
+      "sha256": "ccbafd2801bd342f6e40b865af7eaa9ccb6dffb2d60ea76afc37c1f11fc4128c"
+    },
+    {
+      "image": "paint_sage_base.png",
+      "relativePath": "//textures/paint_sage_base.png",
+      "packedBytes": 229441,
+      "sha256": "c6c39b247c1221dba7169846d6abb7cf99032f1f68aee931e06f62e2574f3723"
+    },
+    {
+      "image": "paint_sage_orm.png",
+      "relativePath": "//textures/paint_sage_orm.png",
+      "packedBytes": 202175,
+      "sha256": "16a64ab6abc3ed09cd27e30ccc2fc07b7586cd874c25166f6e801b7887636fd7"
+    },
+    {
+      "image": "roof_zinc_base.png",
+      "relativePath": "//textures/roof_zinc_base.png",
+      "packedBytes": 226411,
+      "sha256": "1f71435caefeb0d2dfe35633817bb97fa5e9c5777764d3640a8d8958340742b3"
+    },
+    {
+      "image": "roof_zinc_orm.png",
+      "relativePath": "//textures/roof_zinc_orm.png",
+      "packedBytes": 202462,
+      "sha256": "12a0affffcfee3106d0b270e8eda03076e4984c237263ce08f169969a9ace48f"
+    },
+    {
+      "image": "warm_concrete_base.png",
+      "relativePath": "//textures/warm_concrete_base.png",
+      "packedBytes": 197565,
+      "sha256": "bf5f39a3e48ce96b512ec689448f1d6c41bf089228f8797911091c1c0131bd03"
+    },
+    {
+      "image": "warm_concrete_orm.png",
+      "relativePath": "//textures/warm_concrete_orm.png",
+      "packedBytes": 203043,
+      "sha256": "eed0c3aa467e31337ba47b0a93f5403bd6277499e03421c1f5ae85f3d7c3a08c"
+    }
+  ],
+  "externalImageDependencies": [],
+  "externalBlendLibraries": [],
+  "runtimeGLBsReexported": false,
+  "normalization": "Staged copy only: relative paths and embedded images; original source and backups preserved."
+}

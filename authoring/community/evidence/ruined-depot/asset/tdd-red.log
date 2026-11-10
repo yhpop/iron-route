@@ -1,0 +1,143 @@
+✖ ruined depot production interface exists (2.458402ms)
+✖ actual GLB is closed, has three mapped modules, supported embedded PBR and exactly 757 triangles (5.438089ms)
+✖ native geometry load preserves metre bounds and clone shares resources without owning them (3.278586ms)
+✖ invalid bytes and actual missing decoded maps reject rather than create white fallback (1.068432ms)
+✖ external URI, missing embedded map, wrong geometry and missing module fail closed (0.531888ms)
+✖ rejected decoded material releases parsed resources exactly once (0.382848ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 194.381403
+
+✖ failing tests:
+
+test at work/tests/ruined-depot-art.test.mjs:14:1
+✖ ruined depot production interface exists (2.458402ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:14:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at work/tests/ruined-depot-art.test.mjs:15:1
+✖ actual GLB is closed, has three mapped modules, supported embedded PBR and exactly 757 triangles (5.438089ms)
+  Error: ENOENT: no such file or directory, open '/workspace/scratch/08f39b8da479/ruined_depot_candidate/work/assets/ruined-depot/ruins.glb'
+      at async open (node:internal/fs/promises:1345:25)
+      at async Object.readFile (node:internal/fs/promises:2003:14)
+      at async TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:15:123)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/workspace/scratch/08f39b8da479/ruined_depot_candidate/work/assets/ruined-depot/ruins.glb'
+  }
+
+test at work/tests/ruined-depot-art.test.mjs:16:1
+✖ native geometry load preserves metre bounds and clone shares resources without owning them (3.278586ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:16:116)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at work/tests/ruined-depot-art.test.mjs:17:1
+✖ invalid bytes and actual missing decoded maps reject rather than create white fallback (1.068432ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:17:112)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at work/tests/ruined-depot-art.test.mjs:18:1
+✖ external URI, missing embedded map, wrong geometry and missing module fail closed (0.531888ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:18:107)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at work/tests/ruined-depot-art.test.mjs:19:1
+✖ rejected decoded material releases parsed resources exactly once (0.382848ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:19:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,64 @@
+{
+  "mask": {
+    "changedB": 1041337,
+    "RGAByteMismatches": 0,
+    "quietFraction": 0.8550491333007812,
+    "highFraction": 0.044615745544433594
+  },
+  "coverage": {
+    "radius": 487.85419049982926,
+    "continuousReach": {
+      "minX": -522.0541904998292,
+      "maxX": 540.0541904998292,
+      "minZ": -514.0541904998292,
+      "maxZ": 554.0541904998292
+    },
+    "area": 1516032
+  },
+  "budget": {
+    "baseTriangles": 53760,
+    "addedTriangles": 1312,
+    "totalTriangles": 55072,
+    "baseDraws": 1,
+    "addedDraws": 1,
+    "totalDraws": 2,
+    "addedMaps": 0,
+    "additionalTextureBytes": 0,
+    "recurringJSUpdates": 0,
+    "GPUCost": "one extra draw and corresponding PBR fragments; no performance claim"
+  },
+  "anchors": [
+    {
+      "x": -26,
+      "z": 25,
+      "core": 0.9535461924040884,
+      "falloffX20": 0.12546597691246622,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.005056397559074055
+    },
+    {
+      "x": -30,
+      "z": 18,
+      "core": 0.9608920616438401,
+      "falloffX20": 0.11482010188627353,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.00535908433753296
+    },
+    {
+      "x": -32,
+      "z": -5,
+      "core": 0.9381265039373629,
+      "falloffX20": 0.12781920572810498,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.006292089056278316
+    },
+    {
+      "x": 19.5,
+      "z": 0,
+      "core": 0.9525454271454673,
+      "falloffX20": 0.10051509121568249,
+      "localHighFraction": 1,
+      "maxStepDeltaAt5cm": 0.005448893838492785
+    }
+  ]
+}

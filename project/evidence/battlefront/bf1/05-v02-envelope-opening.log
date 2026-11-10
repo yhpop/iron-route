@@ -1,0 +1,17 @@
+Sat Oct 31 11:20:55 UTC 2026
+✔ independent playable battlefront mission builder exists (414.077024ms)
+✔ new battlefield combatants and their full conservative patrol envelopes avoid convoy corridors and route-choice zones (63.818234ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 756.237511
+CONTRACT_EXIT:0
+{"event":"start","route":"direct","mode":"tape","verify":false,"attempt":"v02-opening","specHash":"b5bdc9c55c6f2b52f990d306b3e0509e78c8f93939201ebec5c10f0449c81fc9","closureFiles":31}
+{"event":"checkpoint","route":"direct","attempt":"v02-opening","action":"start","inputs":1801,"tick":1800,"phase":"playing","pose":{"x":0,"y":0.008,"z":23,"yaw":0,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}},"hp":40,"truck":{"x":0,"y":0,"z":28,"yaw":0},"truckReason":"route-choice","failure":null}
+{"event":"end","route":"direct","attempt":"v02-opening","mode":"tape","verify":false,"inputs":1801,"tick":1800,"phase":"playing","selectedConvoyChoiceId":null,"hp":40,"truckHp":100,"truckArrived":false,"shots":0,"alliedDamage":0,"failure":{"reason":"diagnostic-opening-not-route"},"finalHash":"82814b0929ef9ccc79e4b74873f70260d6ff19db9b14c9b3e43f2c3991606cfe","specHash":"b5bdc9c55c6f2b52f990d306b3e0509e78c8f93939201ebec5c10f0449c81fc9","sourceHashesHash":"eea67432dfcfa518ef9c4b91790476a53c16b61c8c92bd209b00470b53a7ba2d","closureFiles":31}
+OPENING_EXIT:0
+Sat Oct 31 11:21:07 UTC 2026

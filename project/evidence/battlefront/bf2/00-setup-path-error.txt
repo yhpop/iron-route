@@ -1,0 +1,6 @@
+Transcribed setup tool output (not a new execution or accepted test result):
+The command used doubled work/ paths while already in work/ and exited 1 before running tests.
+/bin/bash: line 1: work/tests/battlefront-depot-presentation.test.mjs: No such file or directory
+cp: cannot stat 'work/tests/battlefront-depot-presentation.test.mjs': No such file or directory
+/bin/bash: line 37: ../evidence/battlefront/bf2/01-red.log: No such file or directory
+Only accidental empty directories were created; they were removed before the successful file creation. No production/test file was written by this failed setup command.

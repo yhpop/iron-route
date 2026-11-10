@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "file": "terrain-lookdev.blend",
+  "sha256": "bf466ad1382ce4ddda002b45edf779b91c89ebae091d6e9462cc62df81f07203",
+  "bytes": 2098218,
+  "packedImages": [
+    {
+      "image": "asphalt-basecolor.webp",
+      "relativePath": "//asphalt-basecolor.webp",
+      "packedBytes": 39592,
+      "sha256": "7d2a455183e5b971f96862db1129e7e03c22f14a11d604f5b83f966d2e4bcb58"
+    },
+    {
+      "image": "asphalt-normal.png",
+      "relativePath": "//asphalt-normal.png",
+      "packedBytes": 515288,
+      "sha256": "482b1091cb87ffa20836bbe449b173f4bd3e8c7aa782f88982ecf42f99d1f6f3"
+    },
+    {
+      "image": "asphalt-orm.png",
+      "relativePath": "//asphalt-orm.png",
+      "packedBytes": 123889,
+      "sha256": "bc9d23e8dcd0642bd6cdccb4c2d787425f8d78ef9067549eab33bbef74c18270"
+    },
+    {
+      "image": "concrete-basecolor.webp",
+      "relativePath": "//concrete-basecolor.webp",
+      "packedBytes": 16562,
+      "sha256": "6ee4a66112612dd3dec00e5eda83b6ffd218addd7711f551470abc76c0b76eef"
+    },
+    {
+      "image": "concrete-normal.png",
+      "relativePath": "//concrete-normal.png",
+      "packedBytes": 345529,
+      "sha256": "ea14325870d28924959969d3abd648814d2bc38b809581319f23d35098c0611e"
+    },
+    {
+      "image": "concrete-orm.png",
+      "relativePath": "//concrete-orm.png",
+      "packedBytes": 89112,
+      "sha256": "3fb31eb07b73d475cf0ca165761472d0c85d1c2b32f321dc8f191dbb0e85a1c5"
+    }
+  ],
+  "externalImageDependencies": [],
+  "externalBlendLibraries": [],
+  "runtimeGLBsReexported": false,
+  "normalization": "Staged copy only: relative paths and embedded images; original source and backups preserved."
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-31T15:29:27.502710+00:00",
+  "base": "da33d2baf957d806e6ee6c7e228516c1cb0802385dfe814c9a33b738f8369894",
+  "head": "5474a97fe3f537164a8924a841e1a4b83288cb9b609f2750e31a0ee587bc903e",
+  "headFilesVerified": 389,
+  "e1EvidenceFilesVerified": 99,
+  "owned": [
+    "work/src/loading-extraction-front.js",
+    "work/tests/loading-extraction.test.mjs"
+  ],
+  "packageSHA256": "a9bea24f17fba29e4e1cb1e1c323d5b828f3d7a656a373d2604e4685d12db849",
+  "reportSHA256": "c024927880dcf989c734dfcd73887652a984c24ec838eb3b84da19ee6f59690e",
+  "sourceDiffSHA256": "7acd010321bd980f5483f6b92a259cb33ba28f55f38f3347b523cbc497e8c75c"
+}

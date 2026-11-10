@@ -1,0 +1,89 @@
+{
+  "positiveAreaIntersectionsAbove1eMinus8": [
+    {
+      "triangles": [
+        11,
+        39
+      ],
+      "uvArea": 5.765079097232173e-05
+    },
+    {
+      "triangles": [
+        13,
+        35
+      ],
+      "uvArea": 9.195110242284088e-07
+    },
+    {
+      "triangles": [
+        13,
+        83
+      ],
+      "uvArea": 1.4041698916111844e-07
+    },
+    {
+      "triangles": [
+        13,
+        86
+      ],
+      "uvArea": 2.150036337508765e-08
+    },
+    {
+      "triangles": [
+        13,
+        88
+      ],
+      "uvArea": 9.82629820983627e-08
+    },
+    {
+      "triangles": [
+        13,
+        89
+      ],
+      "uvArea": 2.0134426999274257e-07
+    },
+    {
+      "triangles": [
+        14,
+        35
+      ],
+      "uvArea": 1.0147890089903105e-05
+    },
+    {
+      "triangles": [
+        14,
+        39
+      ],
+      "uvArea": 4.156024711103601e-05
+    },
+    {
+      "triangles": [
+        14,
+        83
+      ],
+      "uvArea": 2.715317639168796e-06
+    },
+    {
+      "triangles": [
+        14,
+        86
+      ],
+      "uvArea": 9.678681529845523e-08
+    },
+    {
+      "triangles": [
+        14,
+        88
+      ],
+      "uvArea": 5.043947847727104e-07
+    },
+    {
+      "triangles": [
+        14,
+        89
+      ],
+      "uvArea": 9.560491781961111e-07
+    }
+  ],
+  "trianglePairsChecked": 286146
+}

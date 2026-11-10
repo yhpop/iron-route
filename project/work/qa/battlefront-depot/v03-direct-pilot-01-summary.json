@@ -1,0 +1,20 @@
+{
+  "route": "direct",
+  "attempt": "v03-direct-pilot-01",
+  "mode": "pilot",
+  "verify": false,
+  "inputs": 8323,
+  "tick": 8322,
+  "phase": "won",
+  "selectedConvoyChoiceId": "direct",
+  "hp": 28,
+  "truckHp": 100,
+  "truckArrived": true,
+  "shots": 6,
+  "alliedDamage": 0,
+  "failure": null,
+  "finalHash": "05d9ca4b9182d7525a786cce63eff0d0f0e62337e1b164c70eba662a33c6c5fa",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "sourceHashesHash": "2d8e706932808be909a52a890e3ee3524f40eb6532f476bff1feb7cac8beb9a1",
+  "closureFiles": 31
+}

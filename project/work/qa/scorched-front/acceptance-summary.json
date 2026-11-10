@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "completedAt": "2026-10-30T20:28:54.599014+00:00",
+  "recordAndIndependentReplayPassed": true,
+  "runs": [
+    {
+      "file": "newc-leichttraktor-direct-initial-inputs.json.gz",
+      "inputSHA256": "93ef7a9d82de2a0e887666cf83d0dfd776dd49b9e04f613d8c1688018d477952",
+      "specHash": "dbe2d863dcaee1d473c864c928bee73bd0103b8917058b2fb5f5e74d1fb68276",
+      "vehicleId": "newc-leichttraktor",
+      "vehicleVersion": 1,
+      "inputs": 7618,
+      "tick": 7617,
+      "phase": "won",
+      "expectedFinalHash": "ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5",
+      "finalHash": "ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5",
+      "hp": 60,
+      "truckHp": 86,
+      "truckArrived": true,
+      "at": "2026-10-30T20:24:51.766Z",
+      "shots": 9,
+      "maneuver": null
+    },
+    {
+      "file": "newc-tiger-direct-initial-inputs.json.gz",
+      "inputSHA256": "6abc9b56f4ed7c49b43d9df438d6e6348baccabdca0d426c24f0238d122c5518",
+      "specHash": "a76249e68aa8678e1accccfac18931e080e569fc5add42006b5382ecf02f84c5",
+      "vehicleId": "newc-tiger",
+      "vehicleVersion": 1,
+      "inputs": 9231,
+      "tick": 9230,
+      "phase": "won",
+      "expectedFinalHash": "4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4",
+      "finalHash": "4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4",
+      "hp": 125,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:26:05.771Z",
+      "shots": 4,
+      "maneuver": null
+    },
+    {
+      "file": "pz3-direct-initial-inputs.json.gz",
+      "inputSHA256": "18b8ef7da31798716c1f8b52ef5a770a10f34251412bebe8e02eaa69c1ef677d",
+      "specHash": "5626f8ee4948cc9f635dc026e0e506809a2d8dfaca3965045399d69104940dcf",
+      "vehicleId": "pz3",
+      "vehicleVersion": 1,
+      "inputs": 7779,
+      "tick": 7778,
+      "phase": "won",
+      "expectedFinalHash": "6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea",
+      "finalHash": "6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea",
+      "hp": 75,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:25:38.617Z",
+      "shots": 6,
+      "maneuver": null
+    },
+    {
+      "file": "vanguard-covered-maneuver-inputs.json.gz",
+      "inputSHA256": "6b3975868fe5f32ecd8622911bad691f5c6778ed1634a1c83e07b50573791239",
+      "specHash": "7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6",
+      "vehicleId": "vanguard",
+      "vehicleVersion": 1,
+      "inputs": 11921,
+      "tick": 11920,
+      "phase": "won",
+      "expectedFinalHash": "40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef",
+      "finalHash": "40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef",
+      "hp": 100,
+      "truckHp": 100,
+      "truckArrived": true,
+      "at": "2026-10-30T20:27:22.409Z",
+      "shots": 2,
+      "maneuver": {
+        "before": {
+          "x": 3.574306352916049,
+          "y": 0.008,
+          "z": 24.928983178976193,
+          "yaw": -1.7351453791066822,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "turned": {
+          "x": 3.574306352916049,
+          "y": 0.008,
+          "z": 24.928983178976193,
+          "yaw": -2.7851453791066865,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "after": {
+          "x": 2.9030194990143188,
+          "y": 0.008,
+          "z": 23.12615539400136,
+          "yaw": -2.7851453791066865,
+          "basis": {
+            "right": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "forward": [
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "truckBefore": {
+          "x": 0,
+          "y": 0,
+          "z": 28,
+          "yaw": 0
+        },
+        "distanceBefore": 4.712410234636539,
+        "distanceAfter": 5.672907848280228,
+        "turnRadians": -1.0500000000000043,
+        "reverseDisplacement": 1.9237499999996233,
+        "realControlsOnly": true
+      }
+    },
+    {
+      "file": "vanguard-direct-initial-inputs.json.gz",
+      "inputSHA256": "e74dcc6ba25333cbe2111dd5a1d54f972d99e9ae48b66882af24b835e4212b7f",
+      "specHash": "7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6",
+      "vehicleId": "vanguard",
+      "vehicleVersion": 1,
+      "inputs": 8207,
+      "tick": 8206,
+      "phase": "won",
+      "expectedFinalHash": "c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3",
+      "finalHash": "c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3",
+      "hp": 100,
+      "truckHp": 86,
+      "truckArrived": true,
+      "at": "2026-10-30T20:28:35.859Z",
+      "shots": 4,
+      "maneuver": null
+    }
+  ],
+  "sourceHashesAtCompletion": {
+    "scorched-front.js": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+    "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+    "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+    "campaign-simulation.js": "21ae3216ec092b9e7059a8e70e41781e88cb678c7469256724c19ef4e3be3c79",
+    "combat.js": "d25e53e6de5b9970d198c81e85858c00fd21211ea58bbbb7d783d349508e3ddc",
+    "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+    "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+    "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+    "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+    "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d",
+    "terrain-candidate/combat-surface.js": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+    "terrain-candidate/heightfield.js": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d",
+    "terrain-candidate/vertical-slice.js": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d"
+  },
+  "originalQA": {
+    "qa/vertical-slice": {
+      "filesCompared": 6,
+      "allByteUnchanged": true
+    },
+    "qa/accepted40": {
+      "filesCompared": 44,
+      "allByteUnchanged": true
+    }
+  },
+  "limitations": [
+    "Controls only in production simulation/terrain; no visual/main model-load verification.",
+    "Each complete final state matched current fresh independent replay; source hashes captured after completion, not a claimed prior immutable runtime attestation.",
+    "Only vanguard covered route and near-truck maneuver covered; all four have direct victories.",
+    "No gameplay parameters, health, poses or enemy state patched by recorder."
+  ],
+  "artifactsSHA256": {
+    "pz3-direct-initial.log": "9e5e61d9c96bbb24944948fce2b9a26b0aa6567d401cf5db377ed1f320f73fb7",
+    "vanguard-covered-maneuver-independent.json": "1af7424b0513201a3afa6ce37e823372a7772418c46637d91a84e486fa08189e",
+    "newc-leichttraktor-direct-initial-independent.json": "e7c38407557db3852b254cc277d2e3c3bbcb4cd2ffd94fe25550e068024f82e0",
+    "vanguard-direct-initial-independent.json": "5327198ef7eda4974c782e2d06382260c4c51a2b060e36b48972e4e73b0424e4",
+    "pz3-direct-initial-report.json": "b30888fdffaa9937f6b510cdb16bacc707667638b54ff9db00af4b335956f7c0",
+    "vanguard-direct-initial-report.json": "e2dbd935f8a64c283ba6f7410b70f6bfa08f6376a96333be3bca5c1d17ac4db1",
+    "vanguard-covered-maneuver-inputs.json.gz": "6b3975868fe5f32ecd8622911bad691f5c6778ed1634a1c83e07b50573791239",
+    "newc-tiger-direct-initial.log": "63082305f2c6444f88379ebcf43f808e45d34b0b345f97edd08eaa96363a49bc",
+    "vanguard-direct-initial-inputs.json.gz": "e74dcc6ba25333cbe2111dd5a1d54f972d99e9ae48b66882af24b835e4212b7f",
+    "newc-leichttraktor-direct-initial-report.json": "3059aeb8f3d19e345ab7a56c3f18b04dfaf326079daf54a96042594026d9c18a",
+    "pz3-direct-initial-inputs.json.gz": "18b8ef7da31798716c1f8b52ef5a770a10f34251412bebe8e02eaa69c1ef677d",
+    "vanguard-covered-maneuver-report.json": "bd6942193e080d5a6718276e7dad15c23482f46c6ac78993ed9d82266505c6fa",
+    "vanguard-direct-initial.log": "1b5c685e825ff0e3e1059a6910e6ae211c74e8ea28d14042c205f4bc0f3274e9",
+    "newc-tiger-direct-initial-report.json": "f07df0e180c053bf9094889a2ce3c9663b72411ebaaac4554936d486bfabf8af",
+    "pz3-direct-initial-independent.json": "722b82c73c6a20a96fc788dd9a3825c14c9c18c6b3934580126b539363ffa284",
+    "newc-leichttraktor-direct-initial.log": "d0ee99d18c554a52d9fe5f3bf18c0a03403a12940591a6f1d442c00979a59b6c",
+    "vanguard-covered-maneuver.log": "35de18ec73e76139d2b0bdd7fa7f617337d5b28643fdc4f2b56fa3f3d3f0d2ec",
+    "independent-tiger.log": "2d06b91457af872ebede44a65be9a6995d52577bb9f284514de218b932f3da15",
+    "newc-leichttraktor-direct-initial-inputs.json.gz": "93ef7a9d82de2a0e887666cf83d0dfd776dd49b9e04f613d8c1688018d477952",
+    "independent-first-four.log": "0a968e0c09ee058021b161d8b75f18bafba46cee62b32faa82facd5682b186fb",
+    "newc-tiger-direct-initial-independent.json": "a4344ee3e96166498b4ceab6e13b5e144697ed80c2c109947ce990e962fb122f",
+    "newc-tiger-direct-initial-inputs.json.gz": "6abc9b56f4ed7c49b43d9df438d6e6348baccabdca0d426c24f0238d122c5518",
+    "README.md": "28a691387c240b3ccf12074ac2ab1c02171da0a3fc77d22530c8e7ec1882b1f1"
+  }
+}

@@ -1,0 +1,2848 @@
+{
+  "scope": "input-only headless reuse attempt, not original recovery or device acceptance",
+  "route": "direct",
+  "tape": "../../evidence/extraction/e1/win-direct-01-inputs.json",
+  "tapeSHA256": "3e2974695f730124fb9dd79d6fb2d34932796ccd9fa663ada88b1262e54f4547",
+  "addedPreparationWait": 0,
+  "inputs": 9190,
+  "tick": 9189,
+  "phase": "won",
+  "result": {
+    "outcome": "won",
+    "cause": "objectives-complete",
+    "missionId": "mission-9102",
+    "tick": 9189,
+    "elapsed": 153.15000000001402,
+    "shotsFired": 7,
+    "damageTaken": 40,
+    "medals": []
+  },
+  "selectedRoute": "direct",
+  "playerHp": 60,
+  "supply": {
+    "hp": 100,
+    "alive": true,
+    "arrived": true,
+    "pose": {
+      "x": 0,
+      "y": 0,
+      "z": -32,
+      "yaw": 1.0516502125483707
+    }
+  },
+  "objectives": {
+    "prepare-extraction": {
+      "id": "prepare-extraction",
+      "status": "complete",
+      "progress": 1,
+      "elapsed": 18.00000000000026,
+      "completedTick": 1080
+    },
+    "escort-supply": {
+      "id": "escort-supply",
+      "status": "complete",
+      "progress": 1,
+      "elapsed": 0,
+      "completedTick": 9189
+    }
+  },
+  "lastInput": {
+    "brake": true
+  },
+  "finalHash": "51cf0bb4e68425a9bad7f9f44f822de866eb0d4958e34d885855d75a055c1a48",
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 115,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.805759646793216,
+        "y": 1.2084752933722651,
+        "z": 17.03186265531041
+      },
+      "projectileId": "projectile-1"
+    },
+    {
+      "id": "event-2",
+      "tick": 121,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 1.4297920594808418,
+        "y": 1.2367024780439433,
+        "z": 17.995727791817053
+      },
+      "projectileId": "projectile-2"
+    },
+    {
+      "id": "event-3",
+      "tick": 133,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-3"
+    },
+    {
+      "id": "event-4",
+      "tick": 138,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.3539671934826,
+        "y": 1.1204965984146025,
+        "z": 19.63083839627576
+      },
+      "normal": {
+        "x": -0.8682431421244593,
+        "y": 0,
+        "z": -0.49613893835683376
+      },
+      "projectileId": "projectile-1",
+      "value": "hit"
+    },
+    {
+      "id": "event-5",
+      "tick": 138,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.3539671934826,
+        "y": 1.1204965984146025,
+        "z": 19.63083839627576
+      },
+      "value": 14
+    },
+    {
+      "id": "event-6",
+      "tick": 140,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-2",
+      "value": "hit"
+    },
+    {
+      "id": "event-7",
+      "tick": 140,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.2694875570903653,
+        "y": 0.9142049513293151,
+        "z": 22.056793550183706
+      },
+      "value": 12
+    },
+    {
+      "id": "event-8",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -8.700634379361013,
+        "y": 1.233382819615261,
+        "z": 29.375792974201268
+      },
+      "projectileId": "projectile-4"
+    },
+    {
+      "id": "event-9",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.19424035314103,
+        "y": 1.2084752867488944,
+        "z": 18.968137344652018
+      },
+      "projectileId": "projectile-5"
+    },
+    {
+      "id": "event-10",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-6"
+    },
+    {
+      "id": "event-11",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-7"
+    },
+    {
+      "id": "event-12",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-8"
+    },
+    {
+      "id": "event-13",
+      "tick": 155,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 0.6097172637926722,
+        "y": 0.9231260457573853,
+        "z": 20.920939391749243
+      },
+      "projectileId": "projectile-9"
+    },
+    {
+      "id": "event-14",
+      "tick": 155,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-3",
+      "value": "hit"
+    },
+    {
+      "id": "event-15",
+      "tick": 155,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-16",
+      "tick": 160,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": 1.519198057721629,
+        "y": 1.0562833594228174,
+        "z": 17.697528946955412
+      },
+      "normal": {
+        "x": -0.6246950475544242,
+        "y": 0,
+        "z": 0.7808688094430304
+      },
+      "projectileId": "projectile-9",
+      "value": "hit"
+    },
+    {
+      "id": "event-17",
+      "tick": 160,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": 1.519198057721629,
+        "y": 1.0562833594228174,
+        "z": 17.697528946955412
+      },
+      "value": 45
+    },
+    {
+      "id": "event-18",
+      "tick": 167,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "road-gun",
+      "position": {
+        "x": 23.939796921805105,
+        "y": 1.1261790610650944,
+        "z": 16.537026812460102
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-5",
+      "value": "hit"
+    },
+    {
+      "id": "event-19",
+      "tick": 167,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "allied-east",
+      "position": {
+        "x": 23.939796921805105,
+        "y": 1.1261790610650944,
+        "z": 16.537026812460102
+      },
+      "value": 12
+    },
+    {
+      "id": "event-20",
+      "tick": 167,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-6",
+      "value": "hit"
+    },
+    {
+      "id": "event-21",
+      "tick": 167,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-22",
+      "tick": 185,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-7",
+      "value": "hit"
+    },
+    {
+      "id": "event-23",
+      "tick": 185,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-24",
+      "tick": 185,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-8",
+      "value": "hit"
+    },
+    {
+      "id": "event-25",
+      "tick": 185,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-26",
+      "tick": 209,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 0.6121247334322848,
+        "y": 0.9231260457573853,
+        "z": 20.921627549711136
+      },
+      "projectileId": "projectile-10"
+    },
+    {
+      "id": "event-27",
+      "tick": 214,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": 1.5244829332650625,
+        "y": 1.0561790639193065,
+        "z": 17.701756847390158
+      },
+      "normal": {
+        "x": -0.6246950475544242,
+        "y": 0,
+        "z": 0.7808688094430304
+      },
+      "projectileId": "projectile-10",
+      "value": "hit"
+    },
+    {
+      "id": "event-28",
+      "tick": 214,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": 1.5244829332650625,
+        "y": 1.0561790639193065,
+        "z": 17.701756847390158
+      },
+      "value": 45
+    },
+    {
+      "id": "event-29",
+      "tick": 215,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "normal": {
+        "x": -0.27472112789737824,
+        "y": 0,
+        "z": 0.961523947640823
+      },
+      "projectileId": "projectile-4",
+      "value": "hit"
+    },
+    {
+      "id": "event-30",
+      "tick": 215,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": 1.4961019455622098,
+        "y": 1.226755137213815,
+        "z": 16.629872568047357
+      },
+      "value": 12
+    },
+    {
+      "id": "event-31",
+      "tick": 263,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 0.6121247334322848,
+        "y": 0.9231260457573853,
+        "z": 20.921627549711136
+      },
+      "projectileId": "projectile-11"
+    },
+    {
+      "id": "event-32",
+      "tick": 268,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": 1.5244829332650625,
+        "y": 1.0561790639193065,
+        "z": 17.701756847390158
+      },
+      "normal": {
+        "x": -0.6246950475544242,
+        "y": 0,
+        "z": 0.7808688094430304
+      },
+      "projectileId": "projectile-11",
+      "value": "hit"
+    },
+    {
+      "id": "event-33",
+      "tick": 268,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "tank",
+      "position": {
+        "x": 1.5244829332650625,
+        "y": 1.0561790639193065,
+        "z": 17.701756847390158
+      },
+      "value": 8
+    },
+    {
+      "id": "event-34",
+      "tick": 268,
+      "type": "destroyed",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 2,
+        "y": 0.1264276131746473,
+        "z": 16,
+        "yaw": 2.4668517113662407
+      }
+    },
+    {
+      "id": "event-35",
+      "tick": 494,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-12"
+    },
+    {
+      "id": "event-36",
+      "tick": 500,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.831117649074656,
+        "y": 1.208355791771135,
+        "z": 17.057985668030565
+      },
+      "projectileId": "projectile-13"
+    },
+    {
+      "id": "event-37",
+      "tick": 516,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-12",
+      "value": "hit"
+    },
+    {
+      "id": "event-38",
+      "tick": 516,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-39",
+      "tick": 523,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.353341215745168,
+        "y": 1.1205551231182558,
+        "z": 19.63193601981848
+      },
+      "normal": {
+        "x": -0.8690844320282499,
+        "y": 0,
+        "z": -0.4946637747057432
+      },
+      "projectileId": "projectile-13",
+      "value": "hit"
+    },
+    {
+      "id": "event-40",
+      "tick": 523,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.353341215745168,
+        "y": 1.1205551231182558,
+        "z": 19.63193601981848
+      },
+      "value": 14
+    },
+    {
+      "id": "event-41",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.192492398836148,
+        "y": 1.208355783326755,
+        "z": 18.97120636401876
+      },
+      "projectileId": "projectile-14"
+    },
+    {
+      "id": "event-42",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-15"
+    },
+    {
+      "id": "event-43",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-16"
+    },
+    {
+      "id": "event-44",
+      "tick": 590,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-17"
+    },
+    {
+      "id": "event-45",
+      "tick": 611,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "road-gun",
+      "position": {
+        "x": 23.976302970127257,
+        "y": 1.1264969008797852,
+        "z": 16.571443923432575
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-14",
+      "value": "hit"
+    },
+    {
+      "id": "event-46",
+      "tick": 611,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "allied-east",
+      "position": {
+        "x": 23.976302970127257,
+        "y": 1.1264969008797852,
+        "z": 16.571443923432575
+      },
+      "value": 12
+    },
+    {
+      "id": "event-47",
+      "tick": 612,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-15",
+      "value": "hit"
+    },
+    {
+      "id": "event-48",
+      "tick": 612,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-49",
+      "tick": 630,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-16",
+      "value": "hit"
+    },
+    {
+      "id": "event-50",
+      "tick": 630,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-51",
+      "tick": 630,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-17",
+      "value": "hit"
+    },
+    {
+      "id": "event-52",
+      "tick": 630,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-53",
+      "tick": 855,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-18"
+    },
+    {
+      "id": "event-54",
+      "tick": 877,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-18",
+      "value": "hit"
+    },
+    {
+      "id": "event-55",
+      "tick": 877,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-56",
+      "tick": 885,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 25.101436124106943,
+        "y": 1.2042286724146705,
+        "z": 20.364317736686825
+      },
+      "projectileId": "projectile-19"
+    },
+    {
+      "id": "event-57",
+      "tick": 897,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 27.891183648600084,
+        "y": 1.1494261410084332,
+        "z": 20.156837640519704
+      },
+      "normal": {
+        "x": -0.5372238515968435,
+        "y": -0.8431366629033636,
+        "z": 0.022607541742357892
+      },
+      "projectileId": "projectile-19",
+      "value": "hit"
+    },
+    {
+      "id": "event-58",
+      "tick": 897,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 27.891183648600084,
+        "y": 1.1494261410084332,
+        "z": 20.156837640519704
+      },
+      "value": 14
+    },
+    {
+      "id": "event-59",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 27.92610319895388,
+        "y": 1.204230024097152,
+        "z": 20.15536815030645
+      },
+      "projectileId": "projectile-20"
+    },
+    {
+      "id": "event-60",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-21"
+    },
+    {
+      "id": "event-61",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-22"
+    },
+    {
+      "id": "event-62",
+      "tick": 1035,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-23"
+    },
+    {
+      "id": "event-63",
+      "tick": 1057,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-21",
+      "value": "hit"
+    },
+    {
+      "id": "event-64",
+      "tick": 1057,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-65",
+      "tick": 1075,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-22",
+      "value": "hit"
+    },
+    {
+      "id": "event-66",
+      "tick": 1075,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-67",
+      "tick": 1075,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-23",
+      "value": "hit"
+    },
+    {
+      "id": "event-68",
+      "tick": 1075,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-69",
+      "tick": 1080,
+      "type": "objective-changed",
+      "entityId": "prepare-extraction",
+      "value": "complete"
+    },
+    {
+      "id": "event-70",
+      "tick": 1080,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active"
+    },
+    {
+      "id": "event-71",
+      "tick": 1148,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "tank",
+      "position": {
+        "x": 1.801238468833548,
+        "y": 0.6910289335660231,
+        "z": 22.112539745381774
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-20",
+      "value": "friendly-block"
+    },
+    {
+      "id": "event-72",
+      "tick": 1216,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-24"
+    },
+    {
+      "id": "event-73",
+      "tick": 1238,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-24",
+      "value": "hit"
+    },
+    {
+      "id": "event-74",
+      "tick": 1238,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-75",
+      "tick": 1270,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.680502610746164,
+        "y": 1.210541170186446,
+        "z": 23.97949317828329
+      },
+      "projectileId": "projectile-25"
+    },
+    {
+      "id": "event-76",
+      "tick": 1295,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.293444377012918,
+        "y": 1.121619903363289,
+        "z": 20.528571230702134
+      },
+      "normal": {
+        "x": -0.9972055501690218,
+        "y": 0,
+        "z": 0.07470669790653761
+      },
+      "projectileId": "projectile-25",
+      "value": "hit"
+    },
+    {
+      "id": "event-77",
+      "tick": 1295,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.293444377012918,
+        "y": 1.121619903363289,
+        "z": 20.528571230702134
+      },
+      "value": 14
+    },
+    {
+      "id": "event-78",
+      "tick": 1427,
+      "type": "convoy-route-selected",
+      "value": "direct",
+      "choiceId": "direct"
+    },
+    {
+      "id": "event-79",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.37998660182022,
+        "y": 1.2112263236985634,
+        "z": 21.3043185426283
+      },
+      "projectileId": "projectile-26"
+    },
+    {
+      "id": "event-80",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-27"
+    },
+    {
+      "id": "event-81",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-28"
+    },
+    {
+      "id": "event-82",
+      "tick": 1480,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-29"
+    },
+    {
+      "id": "event-83",
+      "tick": 1502,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-27",
+      "value": "hit"
+    },
+    {
+      "id": "event-84",
+      "tick": 1502,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-85",
+      "tick": 1520,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-28",
+      "value": "hit"
+    },
+    {
+      "id": "event-86",
+      "tick": 1520,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-87",
+      "tick": 1520,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-29",
+      "value": "hit"
+    },
+    {
+      "id": "event-88",
+      "tick": 1520,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-89",
+      "tick": 1577,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-30"
+    },
+    {
+      "id": "event-90",
+      "tick": 1599,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-30",
+      "value": "hit"
+    },
+    {
+      "id": "event-91",
+      "tick": 1599,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-92",
+      "tick": 1655,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.200678057166385,
+        "y": 1.2174755542848565,
+        "z": 28.23181757482707
+      },
+      "projectileId": "projectile-31"
+    },
+    {
+      "id": "event-93",
+      "tick": 1695,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.55420667901538,
+        "y": 1.1164153753477357,
+        "z": 20.632779026685476
+      },
+      "normal": {
+        "x": -0.7789164870075301,
+        "y": 0,
+        "z": 0.6271276634528636
+      },
+      "projectileId": "projectile-31",
+      "value": "hit"
+    },
+    {
+      "id": "event-94",
+      "tick": 1695,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.55420667901538,
+        "y": 1.1164153753477357,
+        "z": 20.632779026685476
+      },
+      "value": 14
+    },
+    {
+      "id": "event-95",
+      "tick": 1925,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.878787872251557,
+        "y": 1.2185868959233292,
+        "z": 21.75184424965967
+      },
+      "projectileId": "projectile-32"
+    },
+    {
+      "id": "event-96",
+      "tick": 1925,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-33"
+    },
+    {
+      "id": "event-97",
+      "tick": 1925,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-34"
+    },
+    {
+      "id": "event-98",
+      "tick": 1925,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-35"
+    },
+    {
+      "id": "event-99",
+      "tick": 1929,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 15.389230799615532,
+        "y": 0.8828353209659235,
+        "z": 19.111392178709384
+      },
+      "projectileId": "projectile-36"
+    },
+    {
+      "id": "event-100",
+      "tick": 1938,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-37"
+    },
+    {
+      "id": "event-101",
+      "tick": 1947,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-33",
+      "value": "hit"
+    },
+    {
+      "id": "event-102",
+      "tick": 1947,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-103",
+      "tick": 1960,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-37",
+      "value": "hit"
+    },
+    {
+      "id": "event-104",
+      "tick": 1960,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-105",
+      "tick": 1965,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-34",
+      "value": "hit"
+    },
+    {
+      "id": "event-106",
+      "tick": 1965,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-107",
+      "tick": 1965,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-35",
+      "value": "hit"
+    },
+    {
+      "id": "event-108",
+      "tick": 1965,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-109",
+      "tick": 1967,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "road-gun",
+      "position": {
+        "x": 23.60555007540843,
+        "y": 1.119388319587689,
+        "z": 29.99104456052204
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-32",
+      "value": "hit"
+    },
+    {
+      "id": "event-110",
+      "tick": 1967,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "allied-east",
+      "position": {
+        "x": 23.60555007540843,
+        "y": 1.119388319587689,
+        "z": 29.99104456052204
+      },
+      "value": 12
+    },
+    {
+      "id": "event-111",
+      "tick": 1983,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 15.396069811177084,
+        "y": 0.8829978205536209,
+        "z": 19.100577557907872
+      },
+      "projectileId": "projectile-38"
+    },
+    {
+      "id": "event-112",
+      "tick": 2040,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.12132852987053,
+        "y": 1.218586929370239,
+        "z": 29.18508811687896
+      },
+      "projectileId": "projectile-39"
+    },
+    {
+      "id": "event-113",
+      "tick": 2084,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.59889644469807,
+        "y": 1.1155453800685577,
+        "z": 20.626701376010026
+      },
+      "normal": {
+        "x": -0.5390645454606858,
+        "y": 0,
+        "z": 0.8422644571791358
+      },
+      "projectileId": "projectile-39",
+      "value": "hit"
+    },
+    {
+      "id": "event-114",
+      "tick": 2084,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.59889644469807,
+        "y": 1.1155453800685577,
+        "z": 20.626701376010026
+      },
+      "value": 14
+    },
+    {
+      "id": "event-115",
+      "tick": 2299,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-40"
+    },
+    {
+      "id": "event-116",
+      "tick": 2321,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-40",
+      "value": "hit"
+    },
+    {
+      "id": "event-117",
+      "tick": 2321,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-118",
+      "tick": 2370,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.83542127244474,
+        "y": 1.2180657909049661,
+        "z": 21.723313362099944
+      },
+      "projectileId": "projectile-41"
+    },
+    {
+      "id": "event-119",
+      "tick": 2370,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-42"
+    },
+    {
+      "id": "event-120",
+      "tick": 2370,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-43"
+    },
+    {
+      "id": "event-121",
+      "tick": 2370,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-44"
+    },
+    {
+      "id": "event-122",
+      "tick": 2392,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-42",
+      "value": "hit"
+    },
+    {
+      "id": "event-123",
+      "tick": 2392,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-124",
+      "tick": 2408,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "road-gun",
+      "position": {
+        "x": 23.898930682549384,
+        "y": 1.1256372399174872,
+        "z": 29.028203958295
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-41",
+      "value": "shield"
+    },
+    {
+      "id": "event-125",
+      "tick": 2410,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-43",
+      "value": "hit"
+    },
+    {
+      "id": "event-126",
+      "tick": 2410,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-127",
+      "tick": 2410,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-44",
+      "value": "hit"
+    },
+    {
+      "id": "event-128",
+      "tick": 2410,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-129",
+      "tick": 2425,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.263870916096728,
+        "y": 1.2160741114766798,
+        "z": 27.14589685114563
+      },
+      "projectileId": "projectile-45"
+    },
+    {
+      "id": "event-130",
+      "tick": 2462,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.532648708108358,
+        "y": 1.1168053415255967,
+        "z": 20.58221216368358
+      },
+      "normal": {
+        "x": -0.5599161022620266,
+        "y": 0,
+        "z": 0.8285493095934
+      },
+      "projectileId": "projectile-45",
+      "value": "hit"
+    },
+    {
+      "id": "event-131",
+      "tick": 2462,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.532648708108358,
+        "y": 1.1168053415255967,
+        "z": 20.58221216368358
+      },
+      "value": 14
+    },
+    {
+      "id": "event-132",
+      "tick": 2660,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-46"
+    },
+    {
+      "id": "event-133",
+      "tick": 2682,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-46",
+      "value": "hit"
+    },
+    {
+      "id": "event-134",
+      "tick": 2682,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-135",
+      "tick": 2810,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 24.77644894611993,
+        "y": 1.208648599606652,
+        "z": 23.020087626349024
+      },
+      "projectileId": "projectile-47"
+    },
+    {
+      "id": "event-136",
+      "tick": 2815,
+      "type": "shot",
+      "entityId": "allied-east",
+      "position": {
+        "x": 28.26265313281009,
+        "y": 1.2096076244318827,
+        "z": 21.143333571126497
+      },
+      "projectileId": "projectile-48"
+    },
+    {
+      "id": "event-137",
+      "tick": 2815,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-49"
+    },
+    {
+      "id": "event-138",
+      "tick": 2815,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-50"
+    },
+    {
+      "id": "event-139",
+      "tick": 2815,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-51"
+    },
+    {
+      "id": "event-140",
+      "tick": 2833,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "allied-east",
+      "position": {
+        "x": 29.354766752895273,
+        "y": 1.1204325046449992,
+        "z": 20.373052914691517
+      },
+      "normal": {
+        "x": -0.8353415242964413,
+        "y": 0,
+        "z": 0.5497313323670918
+      },
+      "projectileId": "projectile-47",
+      "value": "hit"
+    },
+    {
+      "id": "event-141",
+      "tick": 2833,
+      "type": "damaged",
+      "targetId": "allied-east",
+      "entityId": "road-gun",
+      "position": {
+        "x": 29.354766752895273,
+        "y": 1.1204325046449992,
+        "z": 20.373052914691517
+      },
+      "value": 12
+    },
+    {
+      "id": "event-142",
+      "tick": 2833,
+      "type": "destroyed",
+      "entityId": "allied-east",
+      "position": {
+        "x": 30,
+        "y": 0.008,
+        "z": 20,
+        "yaw": 1.0516502125483738
+      }
+    },
+    {
+      "id": "event-143",
+      "tick": 2837,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-49",
+      "value": "hit"
+    },
+    {
+      "id": "event-144",
+      "tick": 2837,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 12
+    },
+    {
+      "id": "event-145",
+      "tick": 2838,
+      "type": "impact",
+      "entityId": "allied-east",
+      "targetId": "road-gun",
+      "position": {
+        "x": 23.922789492377763,
+        "y": 1.1262244447592675,
+        "z": 23.99936185651043
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-48",
+      "value": "hit"
+    },
+    {
+      "id": "event-146",
+      "tick": 2838,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "allied-east",
+      "position": {
+        "x": 23.922789492377763,
+        "y": 1.1262244447592675,
+        "z": 23.99936185651043
+      },
+      "value": 12
+    },
+    {
+      "id": "event-147",
+      "tick": 2855,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-50",
+      "value": "hit"
+    },
+    {
+      "id": "event-148",
+      "tick": 2855,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-149",
+      "tick": 2855,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-51",
+      "value": "hit"
+    },
+    {
+      "id": "event-150",
+      "tick": 2855,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-151",
+      "tick": 3021,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -0.7562663761025713,
+        "y": 1.2678891133355366,
+        "z": -18
+      },
+      "projectileId": "projectile-52"
+    },
+    {
+      "id": "event-152",
+      "tick": 3043,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "allied-north",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "normal": {
+        "x": 0.9886067190297922,
+        "y": 0.1505216100403838,
+        "z": 0
+      },
+      "projectileId": "projectile-52",
+      "value": "hit"
+    },
+    {
+      "id": "event-153",
+      "tick": 3043,
+      "type": "damaged",
+      "targetId": "allied-north",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": -5.858320739608196,
+        "y": 1.1553111528537399,
+        "z": -18
+      },
+      "value": 8
+    },
+    {
+      "id": "event-154",
+      "tick": 3260,
+      "type": "shot",
+      "entityId": "allied-north",
+      "position": {
+        "x": -5.922580176345132,
+        "y": 1.145527248201115,
+        "z": -18
+      },
+      "projectileId": "projectile-53"
+    },
+    {
+      "id": "event-155",
+      "tick": 3260,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-54"
+    },
+    {
+      "id": "event-156",
+      "tick": 3260,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-55"
+    },
+    {
+      "id": "event-157",
+      "tick": 3282,
+      "type": "impact",
+      "entityId": "allied-north",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-53",
+      "value": "hit"
+    },
+    {
+      "id": "event-158",
+      "tick": 3282,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "allied-north",
+      "position": {
+        "x": -0.8,
+        "y": 0.8466725295952817,
+        "z": -18
+      },
+      "value": 6
+    },
+    {
+      "id": "event-159",
+      "tick": 3282,
+      "type": "destroyed",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      }
+    },
+    {
+      "id": "event-160",
+      "tick": 3300,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-54",
+      "value": "hit"
+    },
+    {
+      "id": "event-161",
+      "tick": 3300,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-162",
+      "tick": 3300,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-55",
+      "value": "hit"
+    },
+    {
+      "id": "event-163",
+      "tick": 3300,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-164",
+      "tick": 3536,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 15.63055305848665,
+        "y": 0.8737707464428417,
+        "z": -17.578013618457934
+      },
+      "projectileId": "projectile-56"
+    },
+    {
+      "id": "event-165",
+      "tick": 3570,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "allied-north",
+      "position": {
+        "x": -6.374098000000001,
+        "y": 1.0515317374977766,
+        "z": -18.3833605263798
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": -6.123233995736766e-17
+      },
+      "projectileId": "projectile-56",
+      "value": "friendly-block"
+    },
+    {
+      "id": "event-166",
+      "tick": 3590,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 15.629914061499361,
+        "y": 0.8737707464428417,
+        "z": -17.559985080913382
+      },
+      "projectileId": "projectile-57"
+    },
+    {
+      "id": "event-167",
+      "tick": 3624,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "allied-north",
+      "position": {
+        "x": -6.374098000000001,
+        "y": 1.0514800941617337,
+        "z": -18.188495759535073
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": -6.123233995736766e-17
+      },
+      "projectileId": "projectile-57",
+      "value": "friendly-block"
+    },
+    {
+      "id": "event-168",
+      "tick": 3705,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-58"
+    },
+    {
+      "id": "event-169",
+      "tick": 3705,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-59"
+    },
+    {
+      "id": "event-170",
+      "tick": 3745,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-58",
+      "value": "hit"
+    },
+    {
+      "id": "event-171",
+      "tick": 3745,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 12
+    },
+    {
+      "id": "event-172",
+      "tick": 3745,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-59",
+      "value": "hit"
+    },
+    {
+      "id": "event-173",
+      "tick": 3745,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 12
+    },
+    {
+      "id": "event-174",
+      "tick": 4150,
+      "type": "shot",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -10.079907814392229
+      },
+      "projectileId": "projectile-60"
+    },
+    {
+      "id": "event-175",
+      "tick": 4150,
+      "type": "shot",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.2172597565897358,
+        "z": -17.92009218560777
+      },
+      "projectileId": "projectile-61"
+    },
+    {
+      "id": "event-176",
+      "tick": 4190,
+      "type": "impact",
+      "entityId": "allied-far-east",
+      "targetId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": 1
+      },
+      "projectileId": "projectile-60",
+      "value": "hit"
+    },
+    {
+      "id": "event-177",
+      "tick": 4190,
+      "type": "damaged",
+      "targetId": "hostile-far-east",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -19.255930999999997
+      },
+      "value": 2
+    },
+    {
+      "id": "event-178",
+      "tick": 4190,
+      "type": "destroyed",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 0.008,
+        "z": -20,
+        "yaw": -3.141592653589793
+      }
+    },
+    {
+      "id": "event-179",
+      "tick": 4190,
+      "type": "impact",
+      "entityId": "hostile-far-east",
+      "targetId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "projectileId": "projectile-61",
+      "value": "hit"
+    },
+    {
+      "id": "event-180",
+      "tick": 4190,
+      "type": "damaged",
+      "targetId": "allied-far-east",
+      "entityId": "hostile-far-east",
+      "position": {
+        "x": 30,
+        "y": 1.1161951655594404,
+        "z": -8.744069
+      },
+      "value": 2
+    },
+    {
+      "id": "event-181",
+      "tick": 4190,
+      "type": "destroyed",
+      "entityId": "allied-far-east",
+      "position": {
+        "x": 30,
+        "y": 0.008,
+        "z": -8,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "event-182",
+      "tick": 4830,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 22.250299112186926,
+        "y": 1.2013667244071555,
+        "z": 25.658913416487195
+      },
+      "projectileId": "projectile-62"
+    },
+    {
+      "id": "event-183",
+      "tick": 5070,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "terrain",
+      "position": {
+        "x": 3.014593456773183,
+        "y": 0,
+        "z": -26.87478287412225
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-62",
+      "value": "hit"
+    },
+    {
+      "id": "event-184",
+      "tick": 5215,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 20.954196039802472,
+        "y": 1.142887927951527,
+        "z": 22.442820376580293
+      },
+      "projectileId": "projectile-63"
+    },
+    {
+      "id": "event-185",
+      "tick": 5232,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "tank",
+      "position": {
+        "x": 17.187781325705053,
+        "y": 0.9108996618746085,
+        "z": 21.583303857081773
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-63",
+      "value": "hit"
+    },
+    {
+      "id": "event-186",
+      "tick": 5232,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 17.187781325705053,
+        "y": 0.9108996618746085,
+        "z": 21.583303857081773
+      },
+      "value": 14
+    },
+    {
+      "id": "event-187",
+      "tick": 5600,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 21.121304147329443,
+        "y": 1.150604164624391,
+        "z": 19.09929898981591
+      },
+      "projectileId": "projectile-64"
+    },
+    {
+      "id": "event-188",
+      "tick": 5619,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "tank",
+      "position": {
+        "x": 17.244773260128905,
+        "y": 0.9142049513293151,
+        "z": 20.96515886696299
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-64",
+      "value": "hit"
+    },
+    {
+      "id": "event-189",
+      "tick": 5619,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "road-gun",
+      "position": {
+        "x": 17.244773260128905,
+        "y": 0.9142049513293151,
+        "z": 20.96515886696299
+      },
+      "value": 14
+    },
+    {
+      "id": "event-190",
+      "tick": 5985,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 21.06091222271322,
+        "y": 1.1528748767072843,
+        "z": 15.331744732278722
+      },
+      "projectileId": "projectile-65"
+    },
+    {
+      "id": "event-191",
+      "tick": 6050,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "terrain",
+      "position": {
+        "x": 6.929956120211372,
+        "y": 0.34346439037385,
+        "z": 9.886232157427619
+      },
+      "normal": {
+        "x": 0.5393857843216828,
+        "y": 0.8391770067933371,
+        "z": 0.06960550941598509
+      },
+      "projectileId": "projectile-65",
+      "value": "hit"
+    },
+    {
+      "id": "event-192",
+      "tick": 9189,
+      "type": "vehicle-arrived",
+      "entityId": "supply",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -32,
+        "yaw": 1.0516502125483707
+      }
+    },
+    {
+      "id": "event-193",
+      "tick": 9189,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "complete"
+    },
+    {
+      "id": "event-194",
+      "tick": 9189,
+      "type": "mission-ended",
+      "value": "won",
+      "cause": "objectives-complete"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "credits/newc42/PROVENANCE.txt": {
+    "source": "/workspace/scratch/08f39b8da479/ruined_performance_candidate/originals/newc42/PROVENANCE.txt",
+    "bytes": 666,
+    "sha256": "8a3d4b57df8828ad54fe7ff04692066fafbf066edff2a9b60567d2fce17c597f"
+  },
+  "credits/newc42/CC0-1.0.txt": {
+    "source": "/workspace/scratch/08f39b8da479/ruined_performance_candidate/originals/newc42/CC0-1.0.txt",
+    "bytes": 7048,
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  "credits/quaternius/PROVENANCE.txt": {
+    "source": "/workspace/scratch/08f39b8da479/ruined_performance_candidate/originals/quaternius/PROVENANCE.txt",
+    "bytes": 785,
+    "sha256": "7a9b3039a945296cf7f194159fe8b1fe6aad20974a3aaebe4ece328aa26e5653"
+  },
+  "credits/quaternius/CC0-1.0.txt": {
+    "source": "/workspace/scratch/08f39b8da479/ruined_performance_candidate/originals/quaternius/CC0-1.0.txt",
+    "bytes": 7048,
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  }
+}

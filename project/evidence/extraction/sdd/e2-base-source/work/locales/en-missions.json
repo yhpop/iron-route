@@ -1,0 +1,576 @@
+{
+  "src/content/crafted20/south-wharf.js": [
+    {
+      "source": "'转角初火'",
+      "target": "'First Fire at the Corner'",
+      "occurrences": 1
+    },
+    {
+      "source": "'沿仓库边接近转角，找一个能停车瞄准的位置。内侧路线更短，外侧货场更宽；两条路都能直接完成任务，不必经过指定转角点。清除火力点后驶入北边装卸区。'",
+      "target": "'Approach the corner along the warehouse and find a place to stop and aim. The inside route is shorter; the outer freight yard gives you more room. Either route works, with no required corner checkpoint. Destroy the gun, then enter the loading area to the north.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除仓库转角的火力点'",
+      "target": "'Destroy the gun at the warehouse corner'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入北侧装卸区'",
+      "target": "'Reach the northern loading area'",
+      "occurrences": 1
+    },
+    {
+      "source": "'仓库两侧'",
+      "target": "'Two Ways Around'",
+      "occurrences": 1
+    },
+    {
+      "source": "'眼前的仓库把道路分成两边：左边碎石较慢，矮墙能挡住炮火；右边柏油较快，但转过仓角就会暴露。炮塔正面朝南，别急着对装甲开炮——继续绕到侧面，清除后驶入北侧出口。'",
+      "target": "'The warehouse ahead splits the road. Gravel on the left slows you down, but the low wall blocks gunfire. Asphalt on the right is faster, but you will be exposed as you round the corner. The turret armor faces south: do not waste shots on its front. Get around its side, destroy it, then reach the northern exit.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'绕到装甲侧面，清除仓库炮位'",
+      "target": "'Flank the armor and destroy the warehouse gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入仓库北侧出口'",
+      "target": "'Reach the exit north of the warehouse'",
+      "occurrences": 1
+    },
+    {
+      "source": "'回收车道'",
+      "target": "'Recovery Lane'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车停在南侧等候。先清除弯道火力点，再驶入西侧会合区接车；在区内转向，把主车道留给货车。沿弯道护送到东侧货场，离远时货车会等你，不必赶时间。'",
+      "target": "'A supply truck is waiting to the south. Clear the gun at the bend, then enter the western rendezvous area to collect the truck. Turn within the bay and leave the main lane clear. Escort it around the bends to the eastern freight yard. If you get too far away, the truck will wait for you; there is no need to rush.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除弯道火力点'",
+      "target": "'Destroy the gun at the bend'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入西侧会合区，留出车道'",
+      "target": "'Enter the western rendezvous area; keep the lane clear'",
+      "occurrences": 1
+    },
+    {
+      "source": "'护送补给车到东侧货场'",
+      "target": "'Escort the supply truck to the eastern freight yard'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/crafted20/south-wharf-advanced.js": [
+    {
+      "source": "'轨缝通路'",
+      "target": "'Through the Tracks'",
+      "occurrences": 1
+    },
+    {
+      "source": "'错开的货台挡住了直路。到中央信号牌确认通路，再驶往北侧装卸区。最后一段被炮塔看守：可以先清除，也可以沿西侧遮挡绕过去，不必消灭所有敌人。'",
+      "target": "'Staggered loading platforms block the straight road. Check the passage by the central signal board, then head to the northern loading area. A turret guards the final stretch. Destroy it first or go around behind cover on the west side; you do not need to destroy every enemy.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入中央信号牌旁的通路'",
+      "target": "'Reach the passage beside the central signal board'",
+      "occurrences": 1
+    },
+    {
+      "source": "'穿过轨道，抵达北侧装卸区'",
+      "target": "'Cross the tracks to the northern loading area'",
+      "occurrences": 1
+    },
+    {
+      "source": "'三角货场'",
+      "target": "'Triangle Yard'",
+      "occurrences": 1
+    },
+    {
+      "source": "'中央货仓把两座火力点分开。两者没有规定先后：东侧适合远距离开火，西侧能更早贴近掩体。清除两处后，从北边货场离开。'",
+      "target": "'The central warehouse separates two gun positions. Clear them in either order. The east side offers long-range shots; the west side lets you reach cover sooner. Destroy both, then leave through the northern freight yard.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除西侧货院炮位'",
+      "target": "'Destroy the western yard gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除东侧货院炮位'",
+      "target": "'Destroy the eastern yard gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'从北侧货场离开'",
+      "target": "'Leave through the northern freight yard'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/crafted20/lockside.js": [
+    {
+      "source": "'沿水折线'",
+      "target": "'Waterside Dogleg'",
+      "occurrences": 1
+    },
+    {
+      "source": "'水边直路较短，但很早就进入炮塔射界。泵房内侧可分段停车观察。炮塔正面朝南，选一个侧面角度清除它，再驶往北端堤口。'",
+      "target": "'The straight waterside road is shorter, but enters turret range early. The inland side of the pump house offers places to stop and look ahead. The turret armor faces south. Find a side angle, destroy it, then head for the northern embankment opening.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'绕到侧面，清除堤岸装甲炮位'",
+      "target": "'Flank and destroy the armored embankment gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入北端堤口'",
+      "target": "'Reach the northern embankment opening'",
+      "occurrences": 1
+    },
+    {
+      "source": "'修理便道'",
+      "target": "'Service Detour'",
+      "occurrences": 1
+    },
+    {
+      "source": "'修理棚旁的短路被可击破的施工围挡封住，西侧绕行道仍然通畅。自行选择是否开一条近路；到后方维修院后清除火力点，再驶向东侧出口。'",
+      "target": "'A breakable construction barrier blocks the short road beside the repair shed. The western detour remains open. Decide whether to blast a shortcut. Reach the service yard behind the shed, destroy the gun, then head for the eastern exit.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'抵达修理棚后方维修院'",
+      "target": "'Reach the service yard behind the repair shed'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除维修院火力点'",
+      "target": "'Destroy the service yard gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入东侧维修出口'",
+      "target": "'Reach the eastern service exit'",
+      "occurrences": 1
+    },
+    {
+      "source": "'双泊位'",
+      "target": "'Twin Berths'",
+      "occurrences": 1
+    },
+    {
+      "source": "'两辆补给车在装卸挡墙后等候。南侧横道可以依次压制两处炮位；进入某一侧会合区，只放行那一辆。可分批护送，也可准备好两边后同时出发。北侧近泊点各有独立停车湾。'",
+      "target": "'Two supply trucks wait behind loading walls. Use the southern crossway to deal with the two guns in turn. Entering a rendezvous area releases only the truck on that side. Escort them separately, or prepare both sides and set off together. Each has its own parking bay a short way to the north.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除东泊位沿线炮位'",
+      "target": "'Destroy the gun along the eastern berth route'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除西泊位沿线炮位'",
+      "target": "'Destroy the gun along the western berth route'",
+      "occurrences": 1
+    },
+    {
+      "source": "'进入西泊位会合区，放行西车'",
+      "target": "'Enter the western rendezvous area to release its truck'",
+      "occurrences": 1
+    },
+    {
+      "source": "'进入东泊位会合区，放行东车'",
+      "target": "'Enter the eastern rendezvous area to release its truck'",
+      "occurrences": 1
+    },
+    {
+      "source": "'将两辆补给车分别送入停车湾'",
+      "target": "'Escort both supply trucks into their separate parking bays'",
+      "occurrences": 1
+    },
+    {
+      "source": "'泵房背面'",
+      "target": "'Behind the Pumps'",
+      "occurrences": 1
+    },
+    {
+      "source": "'三座泵房形成能停车观察的错位空地。这次炮塔装甲朝北，不要照搬上一关的方向。先到南侧检查院，再从裸露的背面清除它，沿东侧横路离开。'",
+      "target": "'Three pump houses create staggered open spaces where you can stop and observe. This time the turret armor faces north; do not rely on the direction used before. Reach the inspection yard to the south, destroy the turret from its exposed rear, then leave along the eastern crossway.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'抵达泵房南侧检查院'",
+      "target": "'Reach the inspection yard south of the pump houses'",
+      "occurrences": 1
+    },
+    {
+      "source": "'从无装甲的一面清除泵房炮位'",
+      "target": "'Destroy the pump house gun from its unarmored side'",
+      "occurrences": 1
+    },
+    {
+      "source": "'沿东侧横路离开泵房区'",
+      "target": "'Leave the pump house area via the eastern crossway'",
+      "occurrences": 1
+    },
+    {
+      "source": "'环池会合'",
+      "target": "'Around the Basin'",
+      "occurrences": 1
+    },
+    {
+      "source": "'封闭沉淀池外有一整圈道路。先到西侧泊点，再去东侧会合区。北弧较短但有炮塔；南弧较长且由池壁遮挡，可以不交火完成会合。'",
+      "target": "'A road circles the enclosed settling basin. Reach the western landing, then the eastern rendezvous area. The northern arc is shorter but guarded by a turret. The longer southern arc is screened by the basin walls, allowing you to complete the rendezvous without fighting.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'抵达沉淀池西侧泊点'",
+      "target": "'Reach the landing west of the settling basin'",
+      "occurrences": 1
+    },
+    {
+      "source": "'绕过沉淀池，抵达东侧会合区'",
+      "target": "'Go around the basin to the eastern rendezvous area'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/crafted20/rail-works.js": [
+    {
+      "source": "'交错站台'",
+      "target": "'Staggered Platforms'",
+      "occurrences": 1
+    },
+    {
+      "source": "'两排仓台的尽头并不对齐。沿大路可以提前找到远射角度；穿过站台间的横道则更短，但要在出口先看清炮塔。清除北端火力点后进入铁路横道。'",
+      "target": "'The two rows of loading platforms have staggered ends. The main road offers an early long-range firing angle. The crossway between the platforms is shorter, but check for the turret before emerging. Destroy the gun at the northern end, then reach the rail crossing.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'找到斜射角度，清除站台炮位'",
+      "target": "'Find a diagonal firing angle and destroy the platform gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入北侧铁路横道'",
+      "target": "'Reach the northern rail crossing'",
+      "occurrences": 1
+    },
+    {
+      "source": "'尽头接车'",
+      "target": "'Dead-End Pickup'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车正在尽头装卸道挨打，先清除支路炮塔，再到东侧会合区接车；在区内转向，不要堵住货车出弯。沿车间北侧较宽的横道先行，带车向南返回。'",
+      "target": "'A supply truck is under fire at the end of the loading spur. Destroy the spur turret, then enter the eastern rendezvous area to collect the truck. Turn inside the bay without blocking the truck as it rounds the bend. Lead along the wider crossway north of the workshop, then escort it back south.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除装卸支路炮位'",
+      "target": "'Destroy the loading spur gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入东侧会合区，让货车出弯'",
+      "target": "'Enter the eastern rendezvous area; let the truck round the bend'",
+      "occurrences": 1
+    },
+    {
+      "source": "'护送补给车返回南侧货场'",
+      "target": "'Escort the supply truck back to the southern freight yard'",
+      "occurrences": 1
+    },
+    {
+      "source": "'十字吊场'",
+      "target": "'Crane Yard Crossroads'",
+      "occurrences": 1
+    },
+    {
+      "source": "'吊场十字路口连接两个不同朝向的装甲炮位。先处理哪一边由你决定。中央维修房能切断另一处射线，利用它调整炮塔，不要同时停在两条火线上。'",
+      "target": "'The crane yard crossroads link two armored guns facing different directions. Choose which to tackle first. The central service building blocks the other line of fire. Use its cover to aim your turret, and avoid stopping in both firing lanes at once.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除十字路口东臂装甲炮位'",
+      "target": "'Destroy the armored gun on the eastern arm of the crossroads'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除十字路口北臂装甲炮位'",
+      "target": "'Destroy the armored gun on the northern arm of the crossroads'",
+      "occurrences": 1
+    },
+    {
+      "source": "'穿过吊场北侧出口'",
+      "target": "'Leave through the northern crane yard exit'",
+      "occurrences": 1
+    },
+    {
+      "source": "'隔墙护送'",
+      "target": "'Escort Behind the Wall'",
+      "occurrences": 1
+    },
+    {
+      "source": "'车道贴着长墙西侧，火力点分守两端。接车前可先处理南端；接车后既能一路随行，也能暂时离远，让货车在墙后等待，独自观察北端。'",
+      "target": "'The convoy lane runs along the west side of a long wall, with guns guarding both ends. You can clear the southern end before collecting the truck. Then stay with it, or move away temporarily to let it wait behind the wall while you scout the northern end alone.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除长墙南端炮位'",
+      "target": "'Destroy the gun at the southern end of the wall'",
+      "occurrences": 1
+    },
+    {
+      "source": "'前往南侧会合区接车'",
+      "target": "'Collect the truck at the southern rendezvous area'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除长墙北端炮位'",
+      "target": "'Destroy the gun at the northern end of the wall'",
+      "occurrences": 1
+    },
+    {
+      "source": "'护送补给车抵达北侧货场'",
+      "target": "'Escort the supply truck to the northern freight yard'",
+      "occurrences": 1
+    },
+    {
+      "source": "'维修场捷径'",
+      "target": "'Workshop Shortcut'",
+      "occurrences": 1
+    },
+    {
+      "source": "'两条维修街围着车间相通，中央侧门各有一段可破围挡。炮位朝南装甲厚，可沿完整外圈绕侧面，也可以只打掉一边围挡，借中央通路换一个更近的角度。'",
+      "target": "'Two service streets connect around the workshop, with breakable barriers at the central side entrances. The gun has heavy armor facing south. Follow the intact outer loop to flank it, or destroy just one barrier and use the central passage for a closer firing angle.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'从侧面清除车间装甲炮位'",
+      "target": "'Flank and destroy the armored workshop gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入东侧检查区'",
+      "target": "'Reach the eastern inspection area'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/crafted20/north-harbor.js": [
+    {
+      "source": "'外堤绕行'",
+      "target": "'Outer Embankment'",
+      "occurrences": 1
+    },
+    {
+      "source": "'C 形堤墙把货院包在里面。先到北侧检查点，再处理东侧火力。内院可逐段靠墙观察；外堤路绕得更远，但能从另一端取得长射线。'",
+      "target": "'A C-shaped retaining wall surrounds the freight yard. Reach the northern checkpoint, then deal with the gun to the east. Inside the yard, advance along the wall and look ahead in stages. The outer embankment road is longer, but offers a long firing line from the other end.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'抵达堤墙内北侧检查点'",
+      "target": "'Reach the northern checkpoint inside the retaining wall'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除堤墙东侧火力点'",
+      "target": "'Destroy the gun east of the retaining wall'",
+      "occurrences": 1
+    },
+    {
+      "source": "'从东南堤口离开'",
+      "target": "'Leave through the southeastern embankment opening'",
+      "occurrences": 1
+    },
+    {
+      "source": "'两岸补给'",
+      "target": "'Supply on Both Banks'",
+      "occurrences": 1
+    },
+    {
+      "source": "'两条补给车道分居水渠两岸，只在南北两端相通。进入南侧会合点才会出发；可沿一岸清除威胁后护送，也可绕北端先清两岸。两车在不同停车湾到达，离得太远仍会等待。'",
+      "target": "'Two supply lanes run along opposite banks of the canal, connected only at the northern and southern ends. The trucks set off only after you enter the southern rendezvous area. Clear and escort one bank first, or circle around the north to clear both. The trucks finish in separate parking bays and will wait if you get too far away.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'进入南端会合区，放行两岸车队'",
+      "target": "'Enter the southern rendezvous area to release both trucks'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除西岸炮位'",
+      "target": "'Destroy the western bank gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除东岸炮位'",
+      "target": "'Destroy the eastern bank gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'将两岸补给车送入各自北侧货场'",
+      "target": "'Escort both supply trucks to their respective northern freight yards'",
+      "occurrences": 1
+    },
+    {
+      "source": "'指挥所转角'",
+      "target": "'Command Post Corners'",
+      "occurrences": 1
+    },
+    {
+      "source": "'错位的两翼建筑形成连续转角，两个装甲炮位朝向不同。利用每个院子的宽处转动车身，再单独调整炮塔；可以先走内侧短转角，也可以从东侧长路反向处理。'",
+      "target": "'Two staggered building wings create successive corners, with armored guns facing different directions. Use the wider parts of each yard to turn the hull, then aim the turret independently. Start with the short inner corners, or take the longer eastern road to tackle the guns in reverse order.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除指挥所西院装甲炮位'",
+      "target": "'Destroy the armored gun in the western command post yard'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除指挥所北院装甲炮位'",
+      "target": "'Destroy the armored gun in the northern command post yard'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入指挥所北侧撤离点'",
+      "target": "'Reach the extraction point north of the command post'",
+      "occurrences": 1
+    },
+    {
+      "source": "'去而复返'",
+      "target": "'Out and Back'",
+      "occurrences": 1
+    },
+    {
+      "source": "'先到北侧勘察点，再从西南撤离。两处炮位始终在场，没有突然刷出的敌人。可以先清回程炮位留一条短退路，也可以沿建筑另一侧绕远，避免在同一火线上来回停留。'",
+      "target": "'Reach the northern survey point, then withdraw to the southwest. Both guns are present from the start; no enemies suddenly spawn. Clear the return-route gun early to prepare a short retreat, or take the longer route around the other side of the buildings to avoid repeatedly stopping in the same line of fire.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'抵达北侧勘察点'",
+      "target": "'Reach the northern survey point'",
+      "occurrences": 1
+    },
+    {
+      "source": "'返回西南撤离路口'",
+      "target": "'Return to the southwestern extraction junction'",
+      "occurrences": 1
+    },
+    {
+      "source": "'最后一车'",
+      "target": "'The Last Truck'",
+      "occurrences": 1
+    },
+    {
+      "source": "'最后一辆补给车要穿过三个相连货院。按自己选择的顺序清掉两座装甲炮位，再到西侧会合区接车；在区内转向，把主路留给货车。沿西侧外沿向北，到了横路再向东并入车道，送到北侧码头。'",
+      "target": "'The last supply truck must cross three connected freight yards. Clear the two armored guns in either order, then collect the truck from the western rendezvous area. Turn inside the bay and keep the main road clear. Head north along the western edge, then turn east at the crossway to rejoin the convoy lane and deliver the truck to the northern pier.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除西侧装甲炮位'",
+      "target": "'Destroy the western armored gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'清除东侧装甲炮位'",
+      "target": "'Destroy the eastern armored gun'",
+      "occurrences": 1
+    },
+    {
+      "source": "'返回西侧会合区，留出主路'",
+      "target": "'Return to the western rendezvous area; keep the main road clear'",
+      "occurrences": 1
+    },
+    {
+      "source": "'护送最后一车补给到北侧码头'",
+      "target": "'Escort the last supply truck to the northern pier'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/optional-records.js": [
+    {
+      "source": "'仓区岔路'",
+      "target": "'Warehouse Fork'",
+      "occurrences": 1
+    },
+    {
+      "source": "'击破共同路障后，用坦克驶入岔路口：直行选较短但暴露的街道，左转选绕仓库的较长掩护路。两辆货车会锁定同一选择、保持间距并等待掉队的护送坦克；将两车护送到各自货场车位。'",
+      "target": "'Break through the shared roadblock, then drive into the fork. Go straight for the shorter, exposed street, or turn left for the longer route around the warehouse with more cover. Both trucks will commit to the same route, keep their spacing, and wait if their escort tank falls behind. Deliver each truck to its own freight yard parking bay.'",
+      "occurrences": 1
+    }
+  ],
+  "src/content/breach-cover.js": [
+    {
+      "source": "'拆墙还是借墙'",
+      "target": "'Break the Wall or Keep Its Cover'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入北侧出口即可完成，不必摧毁墙体或炮台。正前方的墙既挡路，也挡住右前方炮台的射线：开炮拆墙会同时打开近路和敌方火力。近路被仓库挡住，须提前转弯、留意炮管和车身的转向空间；需要撤退时先沿缺口倒回开阔处再转向。也可保留墙体，从左侧绕过封锁，走较长、有墙体掩护的碎石路。拆掉的掩体不会恢复，前装甲保护下的炮台也不能从正面轻易清除。'",
+      "target": "'Reach the northern exit to finish; destroying the wall or turret is optional. The wall ahead blocks both the road and shots from the turret ahead on your right. Blasting it opens a shortcut and an enemy firing line at the same time. A warehouse blocks the shortcut beyond it: turn early and leave room for both the hull and gun barrel. To retreat, reverse through the gap into open ground before turning. You can also leave the wall intact and take the longer gravel route around the left, using the wall as cover. Destroyed cover will not return, and the turret is difficult to destroy head-on through its front armor.'",
+      "occurrences": 1
+    }
+  ],
+  "src/terrain-candidate/interceptor-mission.js": [
+    {
+      "source": "'堤路护送 · 装甲巡逻队'",
+      "target": "'Ridge Escort - Armoured Patrol'",
+      "occurrences": 1
+    },
+    {
+      "source": "'东路出现装甲巡逻车：它在装填时转移阵地，发现目标后停车瞄准，炮口预警锁定后可以闪避。不要正面对射；利用山脊断开视线，或趁它装填绕到侧后。车队可以待命，先侦察再决定走东侧硬路还是西侧低地。玩家仍驾驶原有坦克。'",
+      "target": "'An armoured patrol guards the east road. It relocates while reloading and stops to aim; dodge after its warning locks. Break sight behind the ridge or flank during reload. Hold the convoy while scouting, then choose the exposed east road or sheltered west route. You still drive your original tank.'",
+      "occurrences": 1
+    }
+  ],
+  "src/terrain-candidate/vertical-slice.js": [
+    {
+      "source": "'林脊伏击 · 补给线'",
+      "target": "'Ridge Ambush - Supply Line'",
+      "occurrences": 1
+    },
+    {
+      "source": "'任务是把补给车送到北部接应区，不必消灭所有敌人。先选路线：东侧硬路短，装甲巡逻车会在装填时沿路转移；西侧低地绕远，但中央山脊能挡住炮火，入口木栅可以履带压开。按 H 或点车队待命，先独自侦察，再回到车队附近继续护送。北端固定炮位封锁会合口，留意预警，借掩体绕侧或趁装填通过。不要把敌车残骸打在车队路线上；残骸会挡车挡弹。草地与狐狸不是掩体，也不需要攻击；履带会压弯草，附近炮声会惊走狐狸。'",
+      "target": "'Get the supply truck to the northern rendezvous; eliminating every enemy is not required. Choose a route: the east road is shorter but an armoured patrol relocates there while reloading. The west valley is longer, with a ridge that blocks fire and an entry fence you can crush. Press H or Hold convoy to scout alone, then return close to resume escort. A fixed gun covers the northern approach: watch its warning, flank behind cover or cross during reload. Avoid wrecking the patrol on the convoy road: wrecks block vehicles and shells. Grass and foxes provide no cover and need not be attacked. Tracks bend grass; nearby gunfire frightens the foxes.'",
+      "occurrences": 1
+    }
+  ],
+  "src/scanned-cover-front.js": [
+    {
+      "source": "'实景混凝土掩体 · 资源候选'",
+      "target": "'Scanned Concrete Cover - Resource Candidate'",
+      "occurrences": 1
+    }
+  ],
+  "src/ruined-depot-front.js": [
+    {
+      "source": "废弃货场 · 断墙护送",
+      "target": "Ruined Depot · Escort Through Broken Walls",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车到达北侧接应区。山脊工房、装卸区断墙与东侧窗墙都是真实掩体；炮弹可穿过窗口和低矮缺口，但人行破口不是坦克通道。东路较短却有敌车封锁，西路可借山脊掩护。按 H 或点车队待命，先侦察再推进。友军与残骸会挡住炮弹和车辆，别挡住友军炮口或把敌车残骸留在车队路线上。无需消灭所有敌人。",
+      "target": "Escort the supply truck to the northern rendezvous. The ridge workshop, broken loading-bay walls and eastern window wall are real cover. Shells can pass through windows and low gaps, but pedestrian breaches are not tank passages. The eastern road is shorter but blocked by enemy vehicles; the western route uses the ridge for cover. Press H or order the convoy to hold, scout first, then advance. Friendly vehicles and wrecks block shells and vehicles: keep clear of friendly muzzles and avoid leaving enemy wrecks on the convoy route. You do not need to eliminate every enemy.",
+      "occurrences": 1
+    }
+  ],
+  "src/battlefront-depot-front.js": [
+    {
+      "source": "破损货场 · 双线接应",
+      "target": "Damaged Freight Yard · Two-Line Escort",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车穿过破损货场，到达北侧接应区。东侧硬路短，窗墙和装甲巡逻车封锁侧翼；西侧绕行可借中央山脊与装卸区断墙遮挡炮火。南侧支援车会真实交火，南侧支援车在装填间隙转移。按 H 或点车队待命，先侦察再推进。窗口可通炮弹，人行破口不是坦克通道。友军和残骸会挡住炮弹与车辆；不要把敌车残骸留在车队路线上。无需消灭所有敌人。",
+      "target": "Escort the supply truck through the damaged freight yard to the northern rendezvous. The eastern hard road is shorter, but a window wall and armored patrol cover its flank. The western detour uses the central ridge and broken loading walls to block fire. The southern support vehicle exchanges real fire and moves between reloads. Press H or tap the convoy to hold, scout, then advance. Shells pass through windows; pedestrian breaches are not tank lanes. Allies and wrecks block shells and vehicles: keep enemy wrecks off the convoy route. You need not destroy every enemy.",
+      "occurrences": 1
+    }
+  ]
+}

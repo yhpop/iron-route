@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-31T12:24:44.374189+00:00",
+  "stage": "BF2 review head",
+  "baseManifestSHA256": "ab7137a2a7cc6b92ce1d40cc7ff869f1192768179248c5321bc98fd2c4d45d77",
+  "finalSourceManifestSHA256": "d1c5f94bb5589c2405f01da6618fa7e60ba005beee8af8f4242b45baa8b09d6f",
+  "workDiffCount": 15,
+  "newEvidenceHelpers": 5,
+  "files": {
+    "work/src/battlefront-depot-ground-view.js": {
+      "bytes": 4980,
+      "sha256": "0184fd4b839f94c7573c05d7c663b0392384c7308721a823f61140e33dce38dc"
+    },
+    "work/src/campaign-view.js": {
+      "bytes": 9304,
+      "sha256": "1f17bcc7b24868201afb93ab15894ecf2b93686b4108e8cfe59d063cd3b6a042"
+    },
+    "work/src/crossfire-warfield-view.js": {
+      "bytes": 7583,
+      "sha256": "2b7e70b904646a8eb814c862a143d1ed155a492ce2671e324a77cc5fd6378a30"
+    },
+    "work/src/main.js": {
+      "bytes": 24303,
+      "sha256": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73"
+    },
+    "work/src/ruined-depot-view.js": {
+      "bytes": 2655,
+      "sha256": "1184c830911b03d0439fbbd5966f8f79c5c1bba9ca99ad1e2f6191f7bf0c593c"
+    },
+    "work/src/terrain-candidate/relief-view.js": {
+      "bytes": 12647,
+      "sha256": "c7d2a9a07c8fa26b951f8bd8ee2806e0a5f56d8d9b125a4327bbaa9608da7a53"
+    },
+    "work/tests/battlefront-depot-entry.test.mjs": {
+      "bytes": 5779,
+      "sha256": "cede9ef9025e815eb56d369e9bb148ad93e4bbd272b270f51e04e4ce0bcc8f36"
+    },
+    "work/tests/battlefront-depot-ground.test.mjs": {
+      "bytes": 5340,
+      "sha256": "c703ae210b7cd1ff870cc55474f4e45b9c0134fa6c258c4b4b2a4821274f9dd2"
+    },
+    "work/tests/battlefront-depot-presentation.test.mjs": {
+      "bytes": 7626,
+      "sha256": "45044730fbececb97ad63238e9935c8b5f7023133889949000e37178d8c6033f"
+    },
+    "work/tests/battlefront-depot-scope.test.mjs": {
+      "bytes": 984,
+      "sha256": "87e481c2ca13778c9156989c229d338d0390492259442cc5618f797a7b55d0c0"
+    },
+    "work/tests/battlefront-depot-terrain.test.mjs": {
+      "bytes": 3838,
+      "sha256": "fc728983e1d71a632cfa8a9473dc2ac979ccc4a7702fe79c7664c48a5ff7213d"
+    },
+    "work/tests/sweep-acceleration-entry.test.mjs": {
+      "bytes": 6977,
+      "sha256": "47894f1592518cb10d32423067bcd5f30006b83341bc3c42d77fc91e0311a57c"
+    },
+    "work/scripts/battlefront-bf2-audit.mjs": {
+      "bytes": 3893,
+      "sha256": "5afd1ba9a67c8c65f22eb9c7a2b7569bb29067c628be2e7ffd25fc4ea678c4b5"
+    },
+    "work/scripts/battlefront-bf2-projections.mjs": {
+      "bytes": 4111,
+      "sha256": "b7d65f4e6ce8befb055aad5c5cc83c5f69d021c2eba06a38ca83bbda98932f55"
+    },
+    "work/locales/en-missions.json": {
+      "bytes": 29792,
+      "sha256": "56bc120c55d4204505555b49b1d54d6d1f1089db5e63b76abbe8e925ddd202f4"
+    },
+    "evidence/battlefront/bf2/check-replay-mirror.py": {
+      "bytes": 1084,
+      "sha256": "3fb62e64ae860a3b20d3d0557aa4c0549923574da122cbf3fc87e032a67ff3f3"
+    },
+    "evidence/battlefront/bf2/final-audit.py": {
+      "bytes": 6208,
+      "sha256": "93922f63dfa61a7f377cd6ff238c6473769c024cd5891a577d62eb2e1f9500f9"
+    },
+    "evidence/battlefront/bf2/prepare-replay-mirror.py": {
+      "bytes": 2200,
+      "sha256": "95b08b681d48ca1c948dd62ec7461aaa67ec37b183f67e8520bd982120824a35"
+    },
+    "evidence/battlefront/bf2/resource-buckets-audit.mjs": {
+      "bytes": 2788,
+      "sha256": "d7f74bd5c921513aa8e5635473493939729850e18e51ba50b566acd740b8012a"
+    },
+    "evidence/battlefront/bf2/run-job.py": {
+      "bytes": 1553,
+      "sha256": "0aa0f5f1b0532c7d97e72cb034e8617db91d221f364805d7a8364c2246b6309b"
+    }
+  }
+}

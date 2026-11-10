@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-31T12:41:33.718270+00:00",
+  "reviewSHA256": "8a20728a3c9f9545f16334b66b19465c4e610493ce8f28ca1cfe56c3cdfc6416",
+  "wholeHeadSHA256": "52b827337ae84830d0f3b5a7d6cfc39749cebe0a958a9d7c8a47104238cfca13",
+  "sourceManifestSHA256": "d1c5f94bb5589c2405f01da6618fa7e60ba005beee8af8f4242b45baa8b09d6f",
+  "frozenCodeFiles": 324,
+  "completeWorkSetFiles": 756,
+  "parentWorkFilesExact": 709,
+  "predecessorArchiveHashes": {
+    "ruined_performance_candidate/iron-route-sweep-acceleration-source-candidate.zip": "83fcc0daee46a8e4e49371d49d4bf66487de7b88d2d57c659119dec6e30f246e",
+    "ruined_performance_candidate/iron-route-sweep-acceleration-device-copy.zip": "1a7d8ae21364fa2213e4931267638737842101caf2d2937c25d6ffab3303bdf2"
+  },
+  "suite": {
+    "tests": 1100,
+    "pass": 1079,
+    "fail": 0,
+    "skipped": 21,
+    "seconds": 340.3307834669977
+  },
+  "buildRows": {
+    "work/dist/THREE_LICENSE.txt": {
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    "work/dist/build-manifest.json": {
+      "sha256": "109b8b7271941fb8a6474aae29de6e67f0918ba1f9d3ad1e642a90d89918799c",
+      "bytes": 4057
+    },
+    "work/dist/build-metafile.json": {
+      "sha256": "682f26a8ac385530c1be4ef520a15e106841afb4635418524e21ff734f69ff4a",
+      "bytes": 69430
+    },
+    "work/dist/game.js": {
+      "sha256": "2c4c9290ca1c947ab0cdb0d0718c80f5ed10f1645ac0bd7acc81ff695be9b0f3",
+      "bytes": 38696403
+    },
+    "work/dist/game.js.LEGAL.txt": {
+      "sha256": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
+      "bytes": 188
+    },
+    "work/dist/index.html": {
+      "sha256": "eed734cb9913cd8c3f79dbe50f3f94ed460122987718e465a232d428e82b36b9",
+      "bytes": 3416
+    },
+    "work/dist/style.css": {
+      "sha256": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "bytes": 28174
+    },
+    "work/dist/铁流_电脑浏览器离线版.html": {
+      "sha256": "9dd27f405fb191675eca826e5f919118e1f395e639e85c7b84414cc232278c81",
+      "bytes": 38727920
+    },
+    "work/dist-en/Iron_Route_Desktop_Offline.html": {
+      "sha256": "9e5ed961ed60ecd8881a688a7ac60d79ddd053e029f748033b03627b2a0217f9",
+      "bytes": 38713886
+    },
+    "work/dist-en/THREE_LICENSE.txt": {
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    "work/dist-en/build-manifest.json": {
+      "sha256": "6098ea564e485cdc357162fb94ceaf916a6b43582e03b196111935553430a64e",
+      "bytes": 4386
+    },
+    "work/dist-en/build-metafile.json": {
+      "sha256": "72f5aabed8c94d9bc520e28a86ad05ca0a5e79fc734745aa5dad95ac32fff082",
+      "bytes": 69433
+    },
+    "work/dist-en/game.js": {
+      "sha256": "071ba1e445a15d9597740b2612fb0d24da56b59eea6ecde60f48d0c76255647c",
+      "bytes": 38682351
+    },
+    "work/dist-en/game.js.LEGAL.txt": {
+      "sha256": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
+      "bytes": 188
+    },
+    "work/dist-en/index.html": {
+      "sha256": "97c9e2b854e7c0716adb8412b06cd8c7c5e9c309ab1571b9a25b742ea5263b4a",
+      "bytes": 3434
+    },
+    "work/dist-en/style.css": {
+      "sha256": "65a371b577a0d0bea83a959fec7ae04f31489fa25c0c8ea922943b2162f3c2a0",
+      "bytes": 28174
+    }
+  },
+  "fullReplaysExact": [
+    "direct",
+    "covered"
+  ],
+  "privateOnly": true
+}

@@ -1,0 +1,720 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test:guards
+> node --test tests/guards.test.mjs
+
+✖ changed file bytes fail the fixed SHA-256 check (8.23728ms)
+✔ matching file bytes are returned without normalization (1.453173ms)
+✖ manifest paths cannot escape their declared root (0.262184ms)
+✖ changed source or dependency fails before simulation (0.694293ms)
+✖ unsupported Node version fails rather than silently normalizing V8 evidence (0.202003ms)
+✔ valid original partial-prefix input is accepted (0.200682ms)
+✖ rejects zero run length (17.853611ms)
+✖ rejects fractional run length (15.592602ms)
+✖ rejects excessive run length (15.370479ms)
+✖ rejects missing declared input (14.347271ms)
+✖ rejects saved-state injection (15.880385ms)
+✖ rejects nonfinite steering (13.472496ms)
+✖ rejects out of range throttle (14.830307ms)
+✖ rejects non-boolean fire (13.252506ms)
+✖ rejects nonfinite aim (9.394087ms)
+✖ rejects hidden aim property (7.859872ms)
+✖ rejects unknown convoy command (8.396548ms)
+✖ rejects unknown governor (7.257967ms)
+✖ rejects changed time step (9.652185ms)
+✖ rejects wrong vehicle (8.005871ms)
+✖ rejects misreported old prefix (8.045471ms)
+✖ rejects false full historical replay claim (9.347367ms)
+✖ rejects second start or resurrection (9.0497ms)
+✖ rejects changed historical input (8.573084ms)
+✔ real stored victory and complete ordered events satisfy escort contract (0.172589ms)
+✖ rejects false victory (0.729526ms)
+✖ rejects dead player (0.662365ms)
+✖ rejects dead escort (0.607132ms)
+✖ rejects false arrival flag (0.547704ms)
+✖ rejects teleported destination claim (0.580242ms)
+✖ rejects missing physical arrival event (0.572961ms)
+✖ rejects premature mission completion (0.574594ms)
+✖ rejects wrong route (0.580282ms)
+✖ JSON zero-sign loss is not accepted as lossless event equality (1.258551ms)
+✖ full final-state drift fails even if victory and HP still match (0.627874ms)
+✔ same-tick shot and physical impact are valid even without a live end-frame projectile (0.161363ms)
+✖ shot without a projectile or physical same-tick impact fails (0.13265ms)
+✖ friendly damage fails even with a valid projectile chain (0.115824ms)
+✖ damage without preceding physical impact fails (0.302855ms)
+✖ duplicate shot projectile IDs fail (0.180011ms)
+✖ duplicate event IDs fail (0.129285ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 4
+ℹ fail 37
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 381.752424
+
+✖ failing tests:
+
+test at tests/guards.test.mjs:20:1
+✖ changed file bytes fail the fixed SHA-256 check (8.23728ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:23:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /SHA-256 mismatch/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:30:1
+✖ manifest paths cannot escape their declared root (0.262184ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:31:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /unsafe relative path/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:33:1
+✖ changed source or dependency fails before simulation (0.694293ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:36:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /SHA-256 mismatch/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:38:1
+✖ unsupported Node version fails rather than silently normalizing V8 evidence (0.202003ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:39:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Node version/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects zero run length (17.853611ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /run length/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects fractional run length (15.592602ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /run length/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects excessive run length (15.370479ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /run length/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects missing declared input (14.347271ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /input count/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects saved-state injection (15.880385ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /ordinary input key/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects nonfinite steering (13.472496ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /finite.*steer/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects out of range throttle (14.830307ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /range.*throttle/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects non-boolean fire (13.252506ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /boolean.*firePressed/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects nonfinite aim (9.394087ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /finite aim/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects hidden aim property (7.859872ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /aim shape/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects unknown convoy command (8.396548ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /convoyOrder/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects unknown governor (7.257967ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /governor/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects changed time step (9.652185ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /time step/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects wrong vehicle (8.005871ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /vehicle/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects misreported old prefix (8.045471ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /prefix count/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects false full historical replay claim (9.347367ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /complete old tape/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects second start or resurrection (9.0497ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /start only once/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:62:52
+✖ rejects changed historical input (8.573084ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /historical prefix/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects false victory (0.729526ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /victory/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects dead player (0.662365ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /player alive/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects dead escort (0.607132ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /supply alive/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects false arrival flag (0.547704ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /arrived/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects teleported destination claim (0.580242ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /destination/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects missing physical arrival event (0.572961ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /one physical arrival/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects premature mission completion (0.574594ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /event order/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:77:4
+✖ rejects wrong route (0.580282ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /selected route/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:81:1
+✖ JSON zero-sign loss is not accepted as lossless event equality (1.258551ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:83:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /entire.*events/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:85:1
+✖ full final-state drift fails even if victory and HP still match (0.627874ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:87:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /entire final state/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:98:1
+✖ shot without a projectile or physical same-tick impact fails (0.13265ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:99:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /physical projectile/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:101:1
+✖ friendly damage fails even with a valid projectile chain (0.115824ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:102:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /friendly damage/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:104:1
+✖ damage without preceding physical impact fails (0.302855ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:105:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /damage.*impact/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:107:1
+✖ duplicate shot projectile IDs fail (0.180011ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:108:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /duplicate projectile/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/guards.test.mjs:110:1
+✖ duplicate event IDs fail (0.129285ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/tank-night-20261109/physics-route-regression/tests/guards.test.mjs:111:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /duplicate event/,
+    operator: 'throws',
+    diff: 'simple'
+  }

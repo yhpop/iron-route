@@ -1,0 +1,18 @@
+START 2026-10-31T12:15:00.456168+00:00
+COMMAND ["bash", "-c", "evidence=\"$PWD/../evidence/battlefront/bf2\"; python3 \"$evidence/check-replay-mirror.py\" 11-before || exit $?; ( cd \"$evidence/replay-mirror/work\" && node scripts/battlefront-replay.mjs covered --verify --verification-tag=bf2-final ); s=$?; python3 \"$evidence/check-replay-mirror.py\" 11-after; c=$?; test \"$s\" = 0 && test \"$c\" = 0"]
+CAP_SECONDS 600
+{"mirrorCheck": "11-before", "equalFiles": 120, "acceptedRawAndInputsUnchanged": true, "finalFrozenCodeDrift": []}
+{"event":"start","route":"covered","mode":"tape","verify":true,"attempt":"covered-tape-01","specHash":"402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef","closureFiles":31}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":2000,"tick":1999,"phase":"playing","hp":88,"truckHp":64,"pose":{"x":-19.487260600008856,"y":0.008,"z":17.62924562795875,"yaw":1.5266872822580027,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":4000,"tick":3999,"phase":"playing","hp":88,"truckHp":16,"pose":{"x":-22.11209228645544,"y":0.008,"z":-5.568203914832024,"yaw":-0.007766453958552688,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":6000,"tick":5999,"phase":"playing","hp":80,"truckHp":16,"pose":{"x":-22.22161582146398,"y":0.008,"z":-0.9986725473556176,"yaw":-3.129928409073914,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":8000,"tick":7999,"phase":"playing","hp":80,"truckHp":16,"pose":{"x":-12.19866429133718,"y":0.008,"z":23.3215102300021,"yaw":-2.8700587057961595,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":10000,"tick":9999,"phase":"playing","hp":80,"truckHp":16,"pose":{"x":-21.430012897797297,"y":0.008,"z":16.826724578488527,"yaw":-0.17588216709219928,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"progress","route":"covered","attempt":"covered-tape-01","inputs":12000,"tick":11999,"phase":"playing","hp":80,"truckHp":16,"pose":{"x":-21.000875669244895,"y":0.008,"z":-20.438767928592394,"yaw":-0.9094548482417224,"basis":{"right":[1,0,0],"up":[0,1,0],"forward":[0,0,1]}}}
+{"event":"end","route":"covered","attempt":"covered-tape-01","mode":"tape","verify":true,"inputs":13600,"tick":13599,"phase":"won","selectedConvoyChoiceId":"covered","hp":80,"truckHp":16,"truckArrived":true,"shots":9,"alliedDamage":0,"failure":null,"finalHash":"8d1c7ab8ba5a6d6b337c39e572eafe061f9169e4f88dd7643417693e38afe4cd","specHash":"402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef","sourceHashesHash":"2d8e706932808be909a52a890e3ee3524f40eb6532f476bff1feb7cac8beb9a1","closureFiles":31}
+{"mirrorCheck": "11-after", "equalFiles": 120, "acceptedRawAndInputsUnchanged": true, "finalFrozenCodeDrift": []}
+
+EXIT 0
+SECONDS 119.94109041900083
+CODE_DRIFT []
+END 2026-10-31T12:17:00.422091+00:00

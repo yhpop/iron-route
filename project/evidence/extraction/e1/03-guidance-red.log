@@ -1,0 +1,77 @@
+✖ new public builder authors exact defend→escort identity and retains all inherited physical data (73.329562ms)
+✔ UNIT FIXTURE: 18 simulated seconds, leaving resets unfinished hold, inclusive loading boundary (28.893174ms)
+✔ UNIT FIXTURE: no early choice/convoy; normal stationary selection then swept release and hold (61.629805ms)
+✔ UNIT FIXTURE: paused and terminal clocks/objectives do not advance (32.853522ms)
+✔ UNIT FIXTURE: losses are real objective defeat paths; public retry restores complete fresh state (25.798875ms)
+✖ real marker and tracker lead preparation into loading area, never the outside protected truck (18.778463ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 493.000234
+
+✖ failing tests:
+
+test at tests/loading-extraction.test.mjs:14:1
+✖ new public builder authors exact defend→escort identity and retains all inherited physical data (73.329562ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      {
+        duration: 18,
+        id: 'prepare-extraction',
+        nextIds: [
+  ...
+        requires: [],
+  +     targetIds: [
+  +       'supply'
+  +     ],
+  -     targetIds: [],
+        title: '掩护装卸 18 秒',
+        type: 'defend',
+        zoneId: 'loading-area'
+      },
+      {
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction.test.mjs:18:9)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { id: 'prepare-extraction', type: 'defend', title: '掩护装卸 18 秒', requires: [], nextIds: [Array], targetIds: [Array], zoneId: 'loading-area', duration: 18 }, { id: 'escort-supply', type: 'escort', title: '护送补给车撤离', requires: [Array], nextIds: [], targetIds: [Array], zoneId: 'rendezvous' } ],
+    expected: [ { id: 'prepare-extraction', type: 'defend', title: '掩护装卸 18 秒', requires: [], nextIds: [Array], targetIds: [], zoneId: 'loading-area', duration: 18 }, { id: 'escort-supply', type: 'escort', title: '护送补给车撤离', requires: [Array], nextIds: [], targetIds: [Array], zoneId: 'rendezvous' } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction.test.mjs:57:1
+✖ real marker and tracker lead preparation into loading area, never the outside protected truck (18.778463ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      {
+  +     id: 'supply',
+  -     id: 'loading-area',
+        type: 'defend',
+        x: 0,
+  +     z: 28
+  -     z: 23
+      }
+    ]
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction.test.mjs:59:47)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { id: 'supply', x: 0, z: 28, type: 'defend' } ],
+    expected: [ { id: 'loading-area', x: 0, z: 23, type: 'defend' } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

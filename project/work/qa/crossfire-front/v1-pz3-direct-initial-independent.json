@@ -1,0 +1,16 @@
+{
+  "file": "pz3-direct-initial-inputs.json.gz",
+  "inputSHA256": "18b8ef7da31798716c1f8b52ef5a770a10f34251412bebe8e02eaa69c1ef677d",
+  "specHash": "5626f8ee4948cc9f635dc026e0e506809a2d8dfaca3965045399d69104940dcf",
+  "vehicleId": "pz3",
+  "vehicleVersion": 1,
+  "inputs": 7779,
+  "tick": 7778,
+  "phase": "won",
+  "expectedFinalHash": "6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea",
+  "finalHash": "6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea",
+  "hp": 75,
+  "truckHp": 100,
+  "truckArrived": true,
+  "at": "2026-10-30T20:46:27.518Z"
+}

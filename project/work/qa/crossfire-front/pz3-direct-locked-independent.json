@@ -1,0 +1,47 @@
+{
+  "recovery": null,
+  "recoveryPrefixVerified": false,
+  "originalObstacleVerified": false,
+  "sourceDifferences": [
+    {
+      "file": "combat-relations.js",
+      "recordedSHA256": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+      "currentSHA256": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+      "reason": "Explicitly reviewed validation-only addition rejecting asymmetric hostilePairs; no recorded input/config/expected hash rewritten. Exact full state remains independently required."
+    }
+  ],
+  "recordedSourceHashes": {
+    "campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+    "combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+    "combat-relations.js": "bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa",
+    "crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+    "player-vehicles.js": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+    "player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+    "tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+    "interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+    "mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+    "crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+    "terrain-candidate/combat-world.js": "60fd35afac4ccb40790dbc999fb0e595b42abc915689a6a79acbbf510610236d"
+  },
+  "mutual": {
+    "supportShots": 8,
+    "flankerShots": 10,
+    "supportDamageEvents": 8,
+    "flankerDamageEvents": 10
+  },
+  "file": "pz3-direct-locked-inputs.json.gz",
+  "inputSHA256": "e24e39b036fab1016a8a0aefa33c6f1362c1c76dfedbfe9dbe80338c1b68a857",
+  "specHash": "9ead673691a4ca1c22739c12ea2dd6093f0cc54e9a492b58ad8b87c08aad7089",
+  "vehicleId": "pz3",
+  "vehicleVersion": 1,
+  "inputs": 7779,
+  "tick": 7778,
+  "phase": "won",
+  "expectedFinalHash": "26e7494745b53c4c168899f53a104530a589bba0d9ae2671678dd6e7e522825f",
+  "finalHash": "26e7494745b53c4c168899f53a104530a589bba0d9ae2671678dd6e7e522825f",
+  "hp": 75,
+  "truckHp": 100,
+  "truckArrived": true,
+  "at": "2026-10-31T00:15:29.452Z"
+}

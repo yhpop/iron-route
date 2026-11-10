@@ -1,0 +1,30 @@
+✔ ruined depot production interface exists (1.181241ms)
+✔ actual GLB is closed, has three mapped modules, supported embedded PBR and exactly 757 triangles (31.46241ms)
+✔ native geometry load preserves metre bounds and clone shares resources without owning them (80.786129ms)
+✔ invalid bytes and actual missing decoded maps reject rather than create white fallback (64.923646ms)
+✖ external URI, missing embedded map, wrong geometry and missing module fail closed (249.045464ms)
+✔ rejected decoded material releases parsed resources exactly once (77.116068ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 864.034244
+
+✖ failing tests:
+
+test at work/tests/ruined-depot-art.test.mjs:18:1
+✖ external URI, missing embedded map, wrong geometry and missing module fail closed (249.045464ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/ruined_depot_candidate/work/tests/ruined-depot-art.test.mjs:18:495)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /map|texture|module|triang|closed|URI/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }

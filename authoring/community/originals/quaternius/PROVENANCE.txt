@@ -1,0 +1,6 @@
+Tank by Quaternius, https://poly.pizza/m/FA5daiyZQq
+Official author distribution page explicitly states Public Domain (CC0), FBX/GLTF, dated Aug 26 2021; rechecked 2026-10-30.
+Original quaternius-tank.glb SHA256 d46acaeb563f401bfb389bd7708342f97d0cd62f9b2c6dc88f8537be8c85ed80
+CC0 legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Game changes: normalized orientation and scale with unit articulated parents, measured collision hull/turret/gun/muzzle, game-scale Sandfalcon identity and travel-driven original bone-track evaluator.
+The private package also contains an older original Vanguard asset whose independent commercial redistribution rights remain unverified; Quaternius CC0 does not clear unrelated assets or authorize public release of the whole game.

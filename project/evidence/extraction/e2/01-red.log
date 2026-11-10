@@ -1,0 +1,215 @@
+✖ real optional featured selection and direct slug bind own builder field, inherited dispatch, URL and no save writes (409.23043ms)
+✖ real preparation ticks, actual main pause/resume/lifecycle freeze and held-input release (275.876705ms)
+✖ BOUNDARY FIXTURES: real main ticks reset unfinished hold outside zone and replace countdown at escort activation (257.267924ms)
+✖ BOUNDARY FIXTURE: actual main tank-destroyed classification/retry restores full fresh state and clears held commands (240.7614ms)
+✖ BOUNDARY FIXTURE: actual main protected-vehicle-destroyed classification/retry restores full fresh state and clears held commands (251.082239ms)
+✖ new direct entry retries rejected loader and reuses successful app-owned cache (268.965603ms)
+✖ new entry async loading readiness discards stale selection and disposal decorations (378.73717ms)
+✖ candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text (49.269319ms)
+✖ actual production English modules translate new source/menu/readout and preserve default and old URLs (738.879522ms)
+✖ English inventory completely covers new source and all actual main Han literals before final production build (14.504873ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 0
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3170.786335
+
+✖ failing tests:
+
+test at tests/loading-extraction-entry.test.mjs:36:1
+✖ real optional featured selection and direct slug bind own builder field, inherited dispatch, URL and no save writes (409.23043ms)
+  AssertionError [ERR_ASSERTION]: new featured card
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:38:136)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:48:1
+✖ real preparation ticks, actual main pause/resume/lifecycle freeze and held-input release (275.876705ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:49:93)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:59:1
+✖ BOUNDARY FIXTURES: real main ticks reset unfinished hold outside zone and replace countdown at escort activation (257.267924ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:60:93)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:67:69
+✖ BOUNDARY FIXTURE: actual main tank-destroyed classification/retry restores full fresh state and clears held commands (240.7614ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:68:93)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:67:69
+✖ BOUNDARY FIXTURE: actual main protected-vehicle-destroyed classification/retry restores full fresh state and clears held commands (251.082239ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:68:93)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:77:1
+✖ new direct entry retries rejected loader and reuses successful app-owned cache (268.965603ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:78:142)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:80:1
+✖ new entry async loading readiness discards stale selection and disposal decorations (378.73717ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:81:145)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:85:1
+✖ candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text (49.269319ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '0/2 · 掩护装卸 18 秒'
+  - '0/2 · 装卸掩护 · 18.0s'
+           ^
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:87:35)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '0/2 · 掩护装卸 18 秒',
+    expected: '0/2 · 装卸掩护 · 18.0s',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:95:1
+✖ actual production English modules translate new source/menu/readout and preserve default and old URLs (738.879522ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'crafted20-002'
+  - 'mission-9090'
+  
+      at requireCandidate (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:31:39)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:97:83)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'crafted20-002',
+    expected: 'mission-9090',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/loading-extraction-entry.test.mjs:102:1
+✖ English inventory completely covers new source and all actual main Han literals before final production build (14.504873ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(englishInventory['src/loading-extraction-front.js'])
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/loading_extraction_candidate/work/tests/loading-extraction-entry.test.mjs:103:107)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

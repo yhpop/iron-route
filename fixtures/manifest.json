@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "nodeVersion": "v24.22.1",
+  "scope": "Frozen current-controller CPU witnesses. Not legacy compatibility or rendered/device acceptance.",
+  "routes": [
+    {
+      "route": "tiger-west",
+      "attempt": "west-flank-01",
+      "vehicle": "newc-tiger",
+      "selectedRoute": "covered",
+      "tick": 14780,
+      "inputs": 14781,
+      "playerHp": 139,
+      "supplyHp": 84,
+      "events": 132,
+      "finalHash": "2b315d36f0ee39c4c658671b9fd7de40f5359abac8a390629ce7ea27b0267b29",
+      "retainedOldPrefixInputs": 12334,
+      "originalHistoricalInputs": 12334,
+      "completeOldTapeConsumed": true,
+      "source": "physics-route-rebuild",
+      "files": {
+        "tape": {
+          "path": "fixtures/tiger-west/west-flank-01-inputs.json.gz",
+          "sha256": "fc49cf5ef713e9784a56371c24af53cdf9950feb7b59d092479f63586b62e1a5"
+        },
+        "result": {
+          "path": "fixtures/tiger-west/west-flank-01-result.json.gz",
+          "sha256": "3a6a20e0394e3e0c59154d4eb7f79b6bb2fe79f84496baf44fd3b249eab86683"
+        }
+      }
+    },
+    {
+      "route": "sandfalcon-west",
+      "attempt": "rejoin-west-02",
+      "vehicle": "sandfalcon",
+      "selectedRoute": "covered",
+      "tick": 16156,
+      "inputs": 16157,
+      "playerHp": 72,
+      "supplyHp": 100,
+      "events": 160,
+      "finalHash": "1d6e0791c959ae4ce96027374017e2c6fd1eb2110348e97636c67e4e475ba68d",
+      "retainedOldPrefixInputs": 10617,
+      "originalHistoricalInputs": 10617,
+      "completeOldTapeConsumed": true,
+      "source": "physics-route-rebuild-sandfalcon",
+      "files": {
+        "tape": {
+          "path": "fixtures/sandfalcon-west/rejoin-west-02-inputs.json.gz",
+          "sha256": "f7c0aed20f3141e97ec23f2361d7512ae3e6ff530a28ff8efcb28e745c9752bf"
+        },
+        "result": {
+          "path": "fixtures/sandfalcon-west/rejoin-west-02-result.json.gz",
+          "sha256": "63130869dd50ed48176db0d827efedfd14d4a041466800652cc26f91bca427ed"
+        }
+      }
+    },
+    {
+      "route": "sandfalcon-east",
+      "attempt": "rejoin-east-01",
+      "vehicle": "sandfalcon",
+      "selectedRoute": "direct",
+      "tick": 15612,
+      "inputs": 15613,
+      "playerHp": 34,
+      "supplyHp": 100,
+      "events": 156,
+      "finalHash": "0a2bc16968682ced0fff29f54ffed8c589f7f9265fd1c9a2d09473eb6b1a920b",
+      "retainedOldPrefixInputs": 9190,
+      "originalHistoricalInputs": 9190,
+      "completeOldTapeConsumed": true,
+      "source": "physics-route-rebuild-sandfalcon-east",
+      "files": {
+        "tape": {
+          "path": "fixtures/sandfalcon-east/rejoin-east-01-inputs.json.gz",
+          "sha256": "e6799621f0d89151146faad327b279dc8e00c70ab9cbc79406c68123bcf70544"
+        },
+        "result": {
+          "path": "fixtures/sandfalcon-east/rejoin-east-01-result.json.gz",
+          "sha256": "0f981d327101e58256a376fa8241edb8a5d22bc973b4f38fbc4cb9aa1c18a8e7"
+        },
+        "raw": {
+          "path": "fixtures/sandfalcon-east/rejoin-east-01-raw-result.v8",
+          "sha256": "2eed55725737979a7168577d5568a28d6730927424368f4a5273360727e55c75"
+        }
+      }
+    },
+    {
+      "route": "tiger-east",
+      "attempt": "escort-tiger-east-01",
+      "vehicle": "newc-tiger",
+      "selectedRoute": "direct",
+      "tick": 6400,
+      "inputs": 6401,
+      "playerHp": 155,
+      "supplyHp": 86,
+      "events": 143,
+      "finalHash": "e54602c2b7e737c2b734cbc657d6220b710037284341db989a237be8e5d9e6da",
+      "retainedOldPrefixInputs": 2400,
+      "originalHistoricalInputs": 9543,
+      "completeOldTapeConsumed": false,
+      "source": "physics-route-rebuild-tiger-east",
+      "files": {
+        "tape": {
+          "path": "fixtures/tiger-east/escort-tiger-east-01-inputs.json.gz",
+          "sha256": "ced964702cc361ab16e438079201b669b8d7bca964d5640bd485089f5418d4c0"
+        },
+        "result": {
+          "path": "fixtures/tiger-east/escort-tiger-east-01-result.json.gz",
+          "sha256": "5ff99c84b8efd2927d0616dc1cd631a67c406f79fa020077b61f36ab62573fef"
+        },
+        "raw": {
+          "path": "fixtures/tiger-east/escort-tiger-east-01-raw-result.v8",
+          "sha256": "f873589362f37c4a0ab809b3992468fa9381862de0e010b7b65f229b1fb7c4eb"
+        }
+      }
+    }
+  ],
+  "sourceManifest": {
+    "path": "fixtures/frozen-source-hashes.json",
+    "sha256": "2cf9817b0b99dda935f12e45e857fca0847a58a134552a0ec4d973d8b99c0f4e"
+  },
+  "runtimeManifest": {
+    "path": "fixtures/runtime-hashes.json",
+    "sha256": "7d681c3f77f9c771a6d8e03e6247e5138975140d10b2aef8daa3f04c4a81db62"
+  },
+  "historicalDependencyManifest": {
+    "path": "fixtures/historical-dependency-hashes.json",
+    "sha256": "e313526d52253ce87f57356306cfae502fcdd2e290b6b4966639c868907d0393"
+  },
+  "historicalBaseline": {
+    "path": "fixtures/historical-baseline.json",
+    "sha256": "c1113caef126267c67edd3b566028c7887d377f2fd570043bf9ebe4c89c0f632"
+  }
+}

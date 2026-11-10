@@ -1,0 +1,98 @@
+[
+  {
+    "file": "dist/build-manifest.json",
+    "bytes": 4057,
+    "sha256": "69eb4e1c6bbf5520b99fe6bd4d03783e19456cef74a5890a1b9465539a0861da",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/铁流_电脑浏览器离线版.html",
+    "bytes": 39538591,
+    "sha256": "1143aaf4ac35b0dd22a0944de797d202ec6c9e4beaa13beca77b193749c153c0",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/build-metafile.json",
+    "bytes": 72919,
+    "sha256": "a012ddbd82281df7ad75f098fd4abe407881127b293efbb9f3451f0733227da8",
+    "matches_candidate": false
+  },
+  {
+    "file": "dist/style.css",
+    "bytes": 36583,
+    "sha256": "1bee1c48b03835f86402031b035ed23fb064835c9e19465651d4bffe7c445ea8",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/index.html",
+    "bytes": 6309,
+    "sha256": "e97c61c281ed92491acd10f31f8122bde9ab421cc515768e7f136f89e6231658",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/THIRD_PARTY_NOTICES.txt",
+    "bytes": 2623,
+    "sha256": "de342889cdf16b19c32c4c28d2d60acc66ad4a4c84187ad4e5ccad1bad670c7c",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/game.js",
+    "bytes": 39495858,
+    "sha256": "6c321bde9efd597c01b890dc439dba93a7a3eaacaad8c44c726bb7ee83e86628",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist/THREE_LICENSE.txt",
+    "bytes": 1081,
+    "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/build-manifest.json",
+    "bytes": 4386,
+    "sha256": "b255b65673e9b01711dabbe36f7548baba820dd40e047091e2c062b0d5cb8d2d",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/build-metafile.json",
+    "bytes": 72919,
+    "sha256": "b26c97fe0d47aec7d0f963e4a1a6f4d52f3a07c073170171250e4e399e513bbf",
+    "matches_candidate": false
+  },
+  {
+    "file": "dist-en/style.css",
+    "bytes": 36583,
+    "sha256": "1bee1c48b03835f86402031b035ed23fb064835c9e19465651d4bffe7c445ea8",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/index.html",
+    "bytes": 6327,
+    "sha256": "6e0b0ea8dfb21849c5e909aafdb4db3ca5552b38a9d6a0f2a9175a131b1fc423",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/THIRD_PARTY_NOTICES.txt",
+    "bytes": 2623,
+    "sha256": "de342889cdf16b19c32c4c28d2d60acc66ad4a4c84187ad4e5ccad1bad670c7c",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/game.js",
+    "bytes": 39480170,
+    "sha256": "cd7cd1062ba97b384f0c35729a92a3cea4bbd9c6b781c639948fca71064cb0f7",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/Iron_Route_Desktop_Offline.html",
+    "bytes": 39522921,
+    "sha256": "447b7869f51fc56d639f187328227e609c9a78ce60c74544f4b1bcb3208ca94a",
+    "matches_candidate": true
+  },
+  {
+    "file": "dist-en/THREE_LICENSE.txt",
+    "bytes": 1081,
+    "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "matches_candidate": true
+  }
+]

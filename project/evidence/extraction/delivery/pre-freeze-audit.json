@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-31T16:07:48.342248+00:00",
+  "privateFreezeApproved": true,
+  "requiredFindingsOpen": 0,
+  "compositeGateAccepted": true,
+  "zeroFailureFullSuiteClaim": false,
+  "fullSuite": {
+    "tests": 1138,
+    "pass": 1116,
+    "fail": 1,
+    "skipped": 21,
+    "cancelled": 0
+  },
+  "focusedRecovery": {
+    "pass": 1,
+    "fail": 0
+  },
+  "sourceHeadSHA256": "452dec8b3e6ed8c85b3b85ca15fc072e73730e7fe3fe2689016d7ff09ccdbc03",
+  "wholeReviewSHA256": "8da4291a895282847d2ec078c60fef4606caac24109bee1cbd4c93181edad34b",
+  "browserVerified": false,
+  "macPerformanceFixProved": false,
+  "publicReleaseApproved": false
+}

@@ -1,0 +1,42 @@
+✔ old default/scorched/crossfire shader text is byte-exact; candidate adds no sampler and unique cache key (5.95608ms)
+✔ old mask/geometry remain exact, candidate uses same six maps and existing B weather channel without geometry or map URL changes (6046.037962ms)
+✔ four actual damage anchors have bounded continuous high cores, smooth falloff and quiet negative space (39.101842ms)
+✖ candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25 (1.343061ms)
+✔ actual 1024-square mask preserves R/G/A raw bytes, changes only existing B, and candidate alone has exterior predicate (1567.192124ms)
+✔ candidate supplies exact stitched 656-edge exterior-only ring with upward winding and joined corners (1476.047974ms)
+✔ candidate ring borrows one material and maps, has no raycast/caster, and disposes each resource exactly once (1461.626218ms)
+✔ actual production camera frustum and smoothing/aim envelope fit ring for aspect .25..8 and four review viewports (1708.875196ms)
+✔ default and previously device-tested scorched shader sources stay byte-identical (1.947749ms)
+✔ crossfire shallow weather is bounded, deterministic, spatially varied and not four metre periodic (6.865196ms)
+✔ crossfire shader uses existing channels and samples without geometry displacement or added sampler (0.630211ms)
+✔ crossfire view preserves field, roads and contact geometry; fixed mask has no frame upload and disposes once (481.9356ms)
+✔ actual crossfire final color consumes dirt and rut channels before ash/soot, with off-road and asphalt negative controls (5.303564ms)
+✔ pending real TextureLoader images stay unmarked and produce zero actual Three warnings (286.975573ms)
+✔ real TextureLoader completion marks all six valid images once and preserves configured sampling (192.717418ms)
+✔ decode failure still rejects readiness but does not leave persistent empty-image warnings (180.901285ms)
+✔ synchronous data-texture fallback and mask remain dirty with real initialized pixel buffers (136.026118ms)
+✔ dispose-before-completion releases maps once and late image callbacks never restore the mesh (199.558684ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 17
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14808.345407
+
+✖ failing tests:
+
+test at tests/battlefront-grounded-terrain.test.mjs:12:1
+✖ candidate shader darkens char core, warms ash shoulder, retains dirt/ruts, and asphalt pigment caps at .25 (1.343061ms)
+  ReferenceError [Error]: max is not defined
+      at eval (eval at <anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:10:416), <anonymous>:6:18)
+      at file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:10:586
+      at Array.map (<anonymous>)
+      at evaluate (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:10:15)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_grounded_candidate/work/tests/battlefront-grounded-terrain.test.mjs:13:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)

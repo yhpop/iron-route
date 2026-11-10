@@ -1,0 +1,323 @@
+{
+  "boundary": "source-only .25..8 aspect finite-frustum envelope; not unrestricted viewport nor screenshot proof",
+  "mainSHA256": "2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73",
+  "camera": [
+    42,
+    1,
+    0.15,
+    150
+  ],
+  "offsetsPortraitLandscape": [
+    [
+      8,
+      10
+    ],
+    [
+      23,
+      19
+    ],
+    [
+      22,
+      18
+    ]
+  ],
+  "aimOffset": 2.2,
+  "targetHeightRange": [
+    0.5,
+    4.7
+  ],
+  "smoothing": "target lerp is convex history/focus envelope",
+  "specBounds": {
+    "minX": -40,
+    "maxX": 40,
+    "minZ": -42,
+    "maxZ": 42
+  },
+  "actualField": {
+    "columns": 160,
+    "rows": 168,
+    "dx": 0.5,
+    "dz": 0.5,
+    "bounds": {
+      "minX": -40,
+      "maxX": 40,
+      "minZ": -42,
+      "maxZ": 42
+    },
+    "minHeight": 0,
+    "maxHeight": 4.2
+  },
+  "axialFarMaxEuclideanRadius": 487.85419049982926,
+  "continuousReach": {
+    "minX": -522.0541904998292,
+    "maxX": 540.0541904998292,
+    "minZ": -514.0541904998292,
+    "maxZ": 554.0541904998292
+  },
+  "outerBounds": {
+    "minX": -616,
+    "maxX": 616,
+    "minZ": -618,
+    "maxZ": 618
+  },
+  "ringProjectedArea": 1516032,
+  "expectedRingProjectedArea": 1516032,
+  "minPositiveDoubleTriangleArea": 288,
+  "geometrySHA256": "b47af5dd5a7d37ae7a7ea81a7268e66f48ee9f21fc06e333cf975a4d18916b7b",
+  "indexSHA256": "b83eba98d210aed92d52118b562ce6645a07e9fc793df015ae7f1005d11cf1e2",
+  "seam": "all 656 exact field-edge vertex triples checked in perimeter test; Float32 agrees original mesh",
+  "viewports": [
+    {
+      "width": 400,
+      "height": 300,
+      "aspect": 1.3333333333333333,
+      "illustrativeWestRouteTarget": [
+        -22,
+        0.5,
+        0
+      ],
+      "ground": [
+        {
+          "ndc": [
+            -1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -25.766330067568767,
+            0,
+            14.622279246246528
+          ]
+        },
+        {
+          "ndc": [
+            -1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -57.82928573603181,
+            0,
+            -12.599372291217602
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -7.5950979627732185,
+            0,
+            4.527150299137892
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -13.768900990488701,
+            0,
+            -37.07736381651935
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "aspect": 2.164102564102564,
+      "illustrativeWestRouteTarget": [
+        -22,
+        0.5,
+        0
+      ],
+      "ground": [
+        {
+          "ndc": [
+            -1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -31.42736776175508,
+            0,
+            17.76730018746114
+          ]
+        },
+        {
+          "ndc": [
+            -1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -71.555790214451,
+            0,
+            -4.973536469873601
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -1.9340602685869133,
+            0,
+            1.3821293579232723
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -0.04239651206949624,
+            0,
+            -44.703199637863335
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "aspect": 1.7777777777777777,
+      "illustrativeWestRouteTarget": [
+        -22,
+        0.5,
+        0
+      ],
+      "ground": [
+        {
+          "ndc": [
+            -1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -28.794868751701358,
+            0,
+            16.3048007374313
+          ]
+        },
+        {
+          "ndc": [
+            -1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -65.17268319362233,
+            0,
+            -8.51970703700065
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -4.566559278640628,
+            0,
+            2.8446288079531143
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -6.42550353289818,
+            0,
+            -41.1570290707363
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "aspect": 0.46208530805687204,
+      "illustrativeWestRouteTarget": [
+        -22,
+        0.5,
+        0
+      ],
+      "ground": [
+        {
+          "ndc": [
+            -1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -21.680109950343642,
+            0,
+            13.394249303131046
+          ]
+        },
+        {
+          "ndc": [
+            -1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -41.64846745417053,
+            0,
+            -25.469595953096103
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            -1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -13.6415658141488,
+            0,
+            10.47114234451474
+          ]
+        },
+        {
+          "ndc": [
+            1,
+            1
+          ],
+          "intersectsWithinClippedFrustum": true,
+          "point": [
+            -23.300988037843446,
+            0,
+            -32.14140664994231
+          ]
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "baseTriangles": 53760,
+    "addedTriangles": 1312,
+    "totalTriangles": 55072,
+    "baseDraws": 1,
+    "addedDraws": 1,
+    "totalDraws": 2,
+    "addedMaps": 0,
+    "additionalTextureBytes": 0,
+    "recurringJSUpdates": 0,
+    "GPUCost": "one extra draw and corresponding PBR fragments; no performance claim"
+  }
+}

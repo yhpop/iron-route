@@ -1,0 +1,119 @@
+{
+  "utc": "2026-10-31T11:49:46.108986+00:00",
+  "sourceRoot": "/workspace/scratch/08f39b8da479/ruined_performance_candidate",
+  "purpose": "Exact historical external test fixture closure copied for future full-suite; not new acceptance or rerun. Original source remains read-only. Existing historical tests regenerate selected copies only.",
+  "files": {
+    "evidence/baseline-v3-work-sha256.json": {
+      "bytes": 72795,
+      "sha256": "afc71bd2b656e33aa2b5bb44ae9f7e45f5696bc7c0b66478391e19f63f73e856"
+    },
+    "evidence/maneuver-v4/upright-mesh-tools.mjs": {
+      "bytes": 2594,
+      "sha256": "ba7c77121107d2c7f6450cb0ee47321f1f35bcddbc191a211399ee77179b8233"
+    },
+    "evidence/resource-round2/hud-projection/report.json": {
+      "bytes": 4343034,
+      "sha256": "26f1f1920c9ab5a4f364bd4ddd09f32bfd70cab56cf9c3520c5f8f35cfa42d80"
+    },
+    "evidence/resource-round2/hud-projection/56px-safearea-report.json": {
+      "bytes": 21742,
+      "sha256": "020ea9431b4873ec2ea80950e5678442228250d7ba7122bde33ba364fb4a8635"
+    },
+    "evidence/ruined-depot/layout/actual-world-cover-pairs.json": {
+      "bytes": 3680,
+      "sha256": "3b8085dbb3b99bb339b3a7c5385cf69ced5da10e3bd9156e436f5c9d313e1b32"
+    },
+    "evidence/ruined-depot/integration/route-qa/REPORT.md": {
+      "bytes": 11875,
+      "sha256": "7161820de61cee0faa54e4ad5079f9d8168d71ab62f776d350f9e9c9b508aee9"
+    },
+    "evidence/ruined-depot/integration/route-qa/artifact-identities.json": {
+      "bytes": 8634,
+      "sha256": "d6d282a8ec21226022b619fbdcb6111917e769d903730eec84c1247d2d8c366f"
+    },
+    "evidence/ruined-depot/integration/route-qa/covered-fence-observations.json": {
+      "bytes": 3396,
+      "sha256": "60927ab0e56530450be77d0244b802ce910ab29ec67479937e785e654bd331aa"
+    },
+    "evidence/ruined-depot/integration/route-qa/direct-cover-observations.json": {
+      "bytes": 4523,
+      "sha256": "f7c43be4e9f0d587b620384777bb4e14131b83bf76afbbefc3cf2e555aa9dc6e"
+    },
+    "evidence/ruined-depot/integration/route-qa/initial-groundPose-diagnostic.json": {
+      "bytes": 292148,
+      "sha256": "745472085d3874fcf6a48ecaa6eb39288f03125095ad0573ae4ea52c1430c295"
+    },
+    "evidence/ruined-depot/integration/route-qa/interruption-2026-10-31.json": {
+      "bytes": 787,
+      "sha256": "115b99b8ab4f265fa6060661d101054cd9418ef1401ac8ca4a1eaea488d89e51"
+    },
+    "evidence/ruined-depot/integration/route-qa/isolated-input-fired-shells.json": {
+      "bytes": 396541,
+      "sha256": "77d60c684d3deb18c4aaff0aa19a543dcfa8990c88a8d3304ba2403c9f196136"
+    },
+    "evidence/ruined-depot/integration/route-qa/isolated-stepGame-shells.json": {
+      "bytes": 6903,
+      "sha256": "af33b04e917874db29d511b7737d376b8b7af8d290180012d051d85b30344eca"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-checkpoints.json": {
+      "bytes": 12759,
+      "sha256": "50313bf9f550309b47b25dd224ff93252e5494a5c9c5f97ce1c15c919a447417"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-independent.json": {
+      "bytes": 1004,
+      "sha256": "be1bd8b9b844e4890e05cf3395c74f4db02fa7a8beb2d458a24184470c8d2211"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-inputs.json": {
+      "bytes": 3358147,
+      "sha256": "e8ffed889ef0532ad3f2f6c4a73c0a1f9186a3c1bac82a2130fb95ee29095217"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-inspection-checkpoints.json": {
+      "bytes": 174759,
+      "sha256": "e8b2425c55305ca9d05372439a11dfdc55b621b1ac962b6c1022c86b0f8c077b"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-result.json.gz": {
+      "bytes": 437148,
+      "sha256": "7b183427a5398c5d0ffed520076938f7a9d4f31903a2ebc53c33d6536d27d599"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-scene-inspection.json": {
+      "bytes": 178404,
+      "sha256": "6cc56464f8a33e8711177a4325e0d77f09c1fb367017048330b48f0438531717"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-covered-summary.json": {
+      "bytes": 593,
+      "sha256": "d637b762ed3eece410356bb6a1ad5a81c2b241c163aeb8ca97e0e10fdfb21cd5"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-checkpoints.json": {
+      "bytes": 12384,
+      "sha256": "71a4f39dbad35acf3317333b70ccaff2b4331918c8f6bc121b81836759439ca7"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-independent.json": {
+      "bytes": 1006,
+      "sha256": "cb2077583847ebfcef191c039a38e2326fab5a0ef399b97ffeeee1909a87f61c"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-inputs.json": {
+      "bytes": 1921297,
+      "sha256": "481c280eec55b60f9cf4248d06ece14ffc9bafd5aaa20f891a559de912e5130a"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-inspection-checkpoints.json": {
+      "bytes": 106211,
+      "sha256": "3de2cc95c5d2491d4058c275bbe22742faf195e0ac28d4e7efa1a5f5b9e20fde"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-result.json.gz": {
+      "bytes": 287522,
+      "sha256": "ee5ee1d850d0d4c7a2f343ff3be0b79f8f2abc55e14d93b5236dd578338a39fc"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-scene-inspection.json": {
+      "bytes": 108484,
+      "sha256": "bc6b4d56e12bb70e1ac7f7105188221fb1e3dee96f2b6de22784b946daf7aa6c"
+    },
+    "evidence/ruined-depot/integration/route-qa/sandfalcon-direct-summary.json": {
+      "bytes": 578,
+      "sha256": "1d9753097a87ed07e00b5650ffce965d437b01148fcbd5491abed6f72733a950"
+    },
+    "evidence/ruined-depot/integration/route-qa/status.json": {
+      "bytes": 7240,
+      "sha256": "b2ca4ef1580268a76ff160ca752042093044d9723ba920981772551e720fcec3"
+    }
+  }
+}

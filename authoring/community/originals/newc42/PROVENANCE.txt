@@ -1,0 +1,9 @@
+Source: https://newc-42.itch.io/german-low-poly-wwii-tanks
+Retrieved: 2026-10-30 UTC
+Author: Newc42
+Author page states: free under a CC0 license; use them in any project without attribution.
+Asset license: Creative Commons Zero v1.0 Universal
+Both original archives contain no standalone license file. Authority is saved author-page.html plus CC0-1.0 legal text.
+Original .blend files do not load in Blender 4.3.2 (newer header); author FBX package used, source geometry preserved under uniform transform.
+No payment/login; public itch download endpoint followed to provider-issued CDN URL, HTTP 200.
+No provenance claim inferred from unrelated GitHub repositories.

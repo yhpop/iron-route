@@ -1,0 +1,32 @@
+[
+  {
+    "path": "concrete_road_barrier_02_1k.gltf",
+    "expected_md5": "4e6ba4903224a56a2dc3ce4126529c1e",
+    "actual_md5": "4e6ba4903224a56a2dc3ce4126529c1e",
+    "match": true
+  },
+  {
+    "path": "concrete_road_barrier_02.bin",
+    "expected_md5": "205f6effdf30936bd1db4ea7d56e179c",
+    "actual_md5": "205f6effdf30936bd1db4ea7d56e179c",
+    "match": true
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_diff_1k.jpg",
+    "expected_md5": "f2f6eea94258691bc344441b9e6a15fc",
+    "actual_md5": "f2f6eea94258691bc344441b9e6a15fc",
+    "match": true
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_nor_gl_1k.jpg",
+    "expected_md5": "473dc2f984640804503c500ccf677ae4",
+    "actual_md5": "473dc2f984640804503c500ccf677ae4",
+    "match": true
+  },
+  {
+    "path": "textures/concrete_road_barrier_02_arm_1k.jpg",
+    "expected_md5": "1da1c5b70aacf06c2aef3f7fe72d3bda",
+    "actual_md5": "1da1c5b70aacf06c2aef3f7fe72d3bda",
+    "match": true
+  }
+]

@@ -1,0 +1,441 @@
+{
+  "fixture": "Copied V4 spec with allied-support removed; not a route tape",
+  "specHash": "932c06eae276059f57a55827f19d6b3ce98da7808e4b9aef2bfb3f58918774f6",
+  "inputs": 511,
+  "dt": 0.1,
+  "phase": "lost",
+  "hp": 0,
+  "terminalExact": true,
+  "retryExact": true,
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active"
+    },
+    {
+      "id": "event-3",
+      "tick": 20,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.8450495558721713,
+        "y": 1.2172520470504056,
+        "z": 18.0479723282072
+      },
+      "projectileId": "projectile-1"
+    },
+    {
+      "id": "event-4",
+      "tick": 23,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.16747194040157476,
+        "y": 0.9142049513293151,
+        "z": 22.01860704220891
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-1",
+      "value": "hit"
+    },
+    {
+      "id": "event-5",
+      "tick": 23,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.16747194040157476,
+        "y": 0.9142049513293151,
+        "z": 22.01860704220891
+      },
+      "value": 12
+    },
+    {
+      "id": "event-6",
+      "tick": 81,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 2.541283609515993e-16,
+        "y": 1.2350758357638396,
+        "z": 18.075115544567897
+      },
+      "projectileId": "projectile-2"
+    },
+    {
+      "id": "event-7",
+      "tick": 84,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 7.098091094905953e-16,
+        "y": 0.936056160500733,
+        "z": 21.79603123108468
+      },
+      "normal": {
+        "x": -0.000002945910091870612,
+        "y": 0.9999999999956022,
+        "z": -3.42727534830661e-7
+      },
+      "projectileId": "projectile-2",
+      "value": "hit"
+    },
+    {
+      "id": "event-8",
+      "tick": 84,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 7.098091094905953e-16,
+        "y": 0.936056160500733,
+        "z": 21.79603123108468
+      },
+      "value": 12
+    },
+    {
+      "id": "event-9",
+      "tick": 142,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.8385500942408737,
+        "y": 1.202799035156978,
+        "z": 18.04448445308621
+      },
+      "projectileId": "projectile-3"
+    },
+    {
+      "id": "event-10",
+      "tick": 145,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.17279153513717432,
+        "y": 0.9142049513293151,
+        "z": 21.97886704130356
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-3",
+      "value": "hit"
+    },
+    {
+      "id": "event-11",
+      "tick": 145,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.17279153513717432,
+        "y": 0.9142049513293151,
+        "z": 21.97886704130356
+      },
+      "value": 12
+    },
+    {
+      "id": "event-12",
+      "tick": 203,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.7512514749788095,
+        "y": 1.2212858866063563,
+        "z": 18.141684110421423
+      },
+      "projectileId": "projectile-4"
+    },
+    {
+      "id": "event-13",
+      "tick": 206,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.1473107906440998,
+        "y": 0.9142049513293151,
+        "z": 22.04734648951897
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-4",
+      "value": "hit"
+    },
+    {
+      "id": "event-14",
+      "tick": 206,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.1473107906440998,
+        "y": 0.9142049513293151,
+        "z": 22.04734648951897
+      },
+      "value": 12
+    },
+    {
+      "id": "event-15",
+      "tick": 264,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.04460443876752889,
+        "y": 1.2177483571992063,
+        "z": 18.082896460068245
+      },
+      "projectileId": "projectile-5"
+    },
+    {
+      "id": "event-16",
+      "tick": 267,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.011302425844787953,
+        "y": 0.9351981782601344,
+        "z": 21.754043326923846
+      },
+      "normal": {
+        "x": 0.1509530748169015,
+        "y": 0.988540929452687,
+        "z": -3.7566840432289633e-7
+      },
+      "projectileId": "projectile-5",
+      "value": "hit"
+    },
+    {
+      "id": "event-17",
+      "tick": 267,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.011302425844787953,
+        "y": 0.9351981782601344,
+        "z": 21.754043326923846
+      },
+      "value": 12
+    },
+    {
+      "id": "event-18",
+      "tick": 325,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.8493142678374471,
+        "y": 1.2266116203773383,
+        "z": 18.045666770948227
+      },
+      "projectileId": "projectile-6"
+    },
+    {
+      "id": "event-19",
+      "tick": 328,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.16424962466332416,
+        "y": 0.9142049513293151,
+        "z": 22.04187718946395
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-6",
+      "value": "hit"
+    },
+    {
+      "id": "event-20",
+      "tick": 328,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.16424962466332416,
+        "y": 0.9142049513293151,
+        "z": 22.04187718946395
+      },
+      "value": 12
+    },
+    {
+      "id": "event-21",
+      "tick": 386,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.697777742533138,
+        "y": 1.1967561000162745,
+        "z": 18.171999272753705
+      },
+      "projectileId": "projectile-7"
+    },
+    {
+      "id": "event-22",
+      "tick": 389,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.14621474583301447,
+        "y": 0.9142049513293151,
+        "z": 21.988324137922177
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-7",
+      "value": "hit"
+    },
+    {
+      "id": "event-23",
+      "tick": 389,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.14621474583301447,
+        "y": 0.9142049513293151,
+        "z": 21.988324137922177
+      },
+      "value": 12
+    },
+    {
+      "id": "event-24",
+      "tick": 447,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.024062639254139526,
+        "y": 1.2096842763993398,
+        "z": 18.080108214561896
+      },
+      "projectileId": "projectile-8"
+    },
+    {
+      "id": "event-25",
+      "tick": 450,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.006268703569849737,
+        "y": 0.9357932651009782,
+        "z": 21.718289258592264
+      },
+      "normal": {
+        "x": 0.08372249203036268,
+        "y": 0.996489108986192,
+        "z": -3.619726398065121e-7
+      },
+      "projectileId": "projectile-8",
+      "value": "hit"
+    },
+    {
+      "id": "event-26",
+      "tick": 450,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.006268703569849737,
+        "y": 0.9357932651009782,
+        "z": 21.718289258592264
+      },
+      "value": 12
+    },
+    {
+      "id": "event-27",
+      "tick": 508,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.849339831739458,
+        "y": 1.2331214091444884,
+        "z": 18.045517648186497
+      },
+      "projectileId": "projectile-9"
+    },
+    {
+      "id": "event-28",
+      "tick": 511,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "tank",
+      "position": {
+        "x": 0.1615394527860842,
+        "y": 0.9142049513293151,
+        "z": 22.05768652541451
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "projectileId": "projectile-9",
+      "value": "hit"
+    },
+    {
+      "id": "event-29",
+      "tick": 511,
+      "type": "damaged",
+      "targetId": "tank",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": 0.1615394527860842,
+        "y": 0.9142049513293151,
+        "z": 22.05768652541451
+      },
+      "value": 4
+    },
+    {
+      "id": "event-30",
+      "tick": 511,
+      "type": "destroyed",
+      "entityId": "tank",
+      "position": {
+        "x": 0.1615394527860842,
+        "y": 0.9142049513293151,
+        "z": 22.05768652541451
+      }
+    },
+    {
+      "id": "event-31",
+      "tick": 511,
+      "type": "mission-ended",
+      "value": "lost",
+      "cause": "tank-destroyed",
+      "entityId": "tank"
+    }
+  ]
+}

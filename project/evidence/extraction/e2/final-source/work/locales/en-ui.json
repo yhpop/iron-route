@@ -1,0 +1,1435 @@
+{
+  "index.html": [
+    {
+      "source": "lang=\"zh-CN\"",
+      "target": "lang=\"en\"",
+      "occurrences": 1
+    },
+    {
+      "source": "履带驾驶、独立瞄准、清障突围。",
+      "target": "Drive your tank, aim independently, and break through.",
+      "occurrences": 1
+    },
+    {
+      "source": "铁流 · 路线突围",
+      "target": "Iron Route · Break Through",
+      "occurrences": 2
+    },
+    {
+      "source": "铁流三维坦克战场",
+      "target": "Iron Route 3D tank battlefield",
+      "occurrences": 1
+    },
+    {
+      "source": "正在装载履带底盘与战场。",
+      "target": "Loading your tank and the battlefield.",
+      "occurrences": 1
+    },
+    {
+      "source": "请使用支持 WebGL 的浏览器。手机和平板请打开网页，不要在文件预览里运行。",
+      "target": "Use a WebGL-enabled browser. On phones and tablets, open the web page rather than a file preview.",
+      "occurrences": 1
+    }
+  ],
+  "src/campaign-input.js": [
+    {
+      "source": "`${title}摇杆：${subtitle}`",
+      "target": "`${title} stick: ${subtitle}`",
+      "occurrences": 1
+    },
+    {
+      "source": "'坦克触屏控制'",
+      "target": "'Tank touch controls'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驾驶'",
+      "target": "'Drive'",
+      "occurrences": 1
+    },
+    {
+      "source": "'前后油门 / 左右转向'",
+      "target": "'Forward/back to drive / left/right to steer'",
+      "occurrences": 1
+    },
+    {
+      "source": "'瞄准'",
+      "target": "'Aim'",
+      "occurrences": 1
+    },
+    {
+      "source": "'独立转动炮塔'",
+      "target": "'Rotate the turret independently'",
+      "occurrences": 1
+    },
+    {
+      "source": "'开火'",
+      "target": "'Fire'",
+      "occurrences": 1
+    },
+    {
+      "source": "'刹车'",
+      "target": "'Brake'",
+      "occurrences": 1
+    },
+    {
+      "source": "'加速'",
+      "target": "'Boost'",
+      "occurrences": 1
+    },
+    {
+      "source": "'速度上限'",
+      "target": "'Speed limit'",
+      "occurrences": 1
+    },
+    {
+      "source": "'低速'",
+      "target": "'Low'",
+      "occurrences": 1
+    },
+    {
+      "source": "'巡航'",
+      "target": "'Cruise'",
+      "occurrences": 1
+    },
+    {
+      "source": "'高速'",
+      "target": "'High'",
+      "occurrences": 1
+    }
+  ],
+  "src/gameplay-gestures.js": [
+    {
+      "source": "'页面已放大，行动已暂停。请先松开所有手指，再用双指捏合缩小页面，恢复正常后按“继续行动”。'",
+      "target": "'The page is zoomed in and the mission is paused. Lift all fingers, then pinch with two fingers to zoom the page back out. Once the page is back to normal, press Resume.'",
+      "occurrences": 1
+    }
+  ],
+  "src/main.js": [
+    {
+      "source": "'图形资源载入失败'",
+      "target": "'Graphics resources could not load'",
+      "occurrences": 1
+    },
+    {
+      "source": "'手工战役'",
+      "target": "'Handcrafted Campaign'",
+      "occurrences": 1
+    },
+    {
+      "source": "'图形连接已暂停。恢复后可继续，若无法恢复请重新打开页面。'",
+      "target": "'Graphics rendering was interrupted. You can resume after it recovers. If it does not recover, reopen the page.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'路障'",
+      "target": "'Barrier'",
+      "occurrences": 1
+    },
+    {
+      "source": "'火力点'",
+      "target": "'Gun position'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车'",
+      "target": "'Supply truck'",
+      "occurrences": 1
+    },
+    {
+      "source": "'目的地'",
+      "target": "'Destination'",
+      "occurrences": 1
+    },
+    {
+      "source": "'掩护点'",
+      "target": "'Defense zone'",
+      "occurrences": 1
+    },
+    {
+      "source": "'目标'",
+      "target": "'Objective'",
+      "occurrences": 1
+    },
+    {
+      "source": "'直行：短路有火力 · 左转：长路有掩护'",
+      "target": "'Straight: short, exposed route · Left: longer route with cover'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 已选掩护长路'",
+      "target": "' · Covered route selected'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 已选短路'",
+      "target": "' · Short route selected'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 碎石减速'",
+      "target": "' · Rubble slows you down'",
+      "occurrences": 1
+    }
+  ],
+  "src/campaign-ui.js": [
+    {
+      "source": "车队按令待命：敌火仍在，清路后继续护送",
+      "target": "Convoy holding: enemy fire continues. Clear the route, then advance.",
+      "occurrences": 1
+    },
+    {
+      "source": "指挥待命",
+      "target": "Holding on orders",
+      "occurrences": 1
+    },
+    {
+      "source": "继续护送 · H",
+      "target": "Advance convoy · H",
+      "occurrences": 1
+    },
+    {
+      "source": "车队待命 · H",
+      "target": "Hold convoy · H",
+      "occurrences": 2
+    },
+    {
+      "source": "`${missions.length} 关${campaign.title}`",
+      "target": "`${campaign.title} · ${missions.length} Missions`",
+      "occurrences": 1
+    },
+    {
+      "source": "`逐关解锁 ${missions.length} 个手工设计任务，已解锁任务可重玩。新战役使用独立存档，不读取或覆盖旧版进度。`",
+      "target": "`Unlock ${missions.length} handcrafted missions one by one, then replay any unlocked mission. This campaign uses a separate save and does not read or overwrite legacy progress.`",
+      "occurrences": 1
+    },
+    {
+      "source": "`第 ${value} 章`",
+      "target": "`Chapter ${value}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`旧版独立试验 · 不计入这 ${missions.length} 关，不影响新旧战役进度。`",
+      "target": "`Standalone legacy experiments · Separate from the ${missions.length} campaign missions. They do not affect new or legacy campaign progress.`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${campaign ? '旧版试验' : '支线试玩'} · 不影响战役进度`",
+      "target": "`${campaign ? '旧版试验' : '支线试玩'} · Does not affect campaign progress`",
+      "occurrences": 1
+    },
+    {
+      "source": "`行动 ${String(spec?.index || spec?.id?.slice(-3) || 1).padStart(3, '0')}`",
+      "target": "`Mission ${String(spec?.index || spec?.id?.slice(-3) || 1).padStart(3, '0')}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${missions.length} 关战役已完成。可在选择关卡中重玩已完成的任务。`",
+      "target": "`All ${missions.length} campaign missions complete. Open Missions to replay any completed mission.`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${road}已完成 · 用时 ${Math.round(state.result?.elapsed||state.elapsed||0)} 秒 · 补给车装甲 ${trucks.map(e=>Math.max(0,Math.round(e.hp))+'/'+e.maxHp).join('、')}`",
+      "target": "`${road} complete · Time: ${Math.round(state.result?.elapsed||state.elapsed||0)} s · Truck armor: ${trucks.map(e=>Math.max(0,Math.round(e.hp))+'/'+e.maxHp).join(', ')}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`行动已完成 · 用时 ${Math.round(state.result?.elapsed ?? state.elapsed ?? 0)} 秒 · 坦克装甲 ${armor}/${maxArmor} · 开火 ${state.result?.shotsFired ?? combat.shotsFired ?? 0} 次`",
+      "target": "`Mission complete · Time: ${Math.round(state.result?.elapsed ?? state.elapsed ?? 0)} s · Tank armor: ${armor}/${maxArmor} · Shots fired: ${state.result?.shotsFired ?? combat.shotsFired ?? 0}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`场景资源载入失败：${viewError}。请重试或选择其他关卡。`",
+      "target": "`Scene resources could not load: ${viewError}. Retry or choose another mission.`",
+      "occurrences": 1
+    },
+    {
+      "source": "`补给车 ${number}`",
+      "target": "`Truck ${number}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${name}，装甲 ${hpText}，${statusText}`",
+      "target": "`${name}, armor ${hpText}, ${statusText}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`另有 ${overflow} 辆受保护补给车未显示`",
+      "target": "`${overflow} more protected trucks not shown`",
+      "occurrences": 1
+    },
+    {
+      "source": "`装甲 ${Math.max(0, Math.ceil(combat.hp ?? 100))}`",
+      "target": "`Armor ${Math.max(0, Math.ceil(combat.hp ?? 100))}`",
+      "occurrences": 1
+    },
+    {
+      "source": "'突破标记路障'",
+      "target": "'Break through the marked barrier'",
+      "occurrences": 1
+    },
+    {
+      "source": "'绕到侧面，摧毁标记武器'",
+      "target": "'Flank and destroy the marked weapon'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驶入标记区域'",
+      "target": "'Enter the marked area'",
+      "occurrences": 1
+    },
+    {
+      "source": "'保护补给车抵达终点'",
+      "target": "'Protect the supply trucks until they reach the destination'",
+      "occurrences": 1
+    },
+    {
+      "source": "'守住标记区域'",
+      "target": "'Hold the marked area'",
+      "occurrences": 1
+    },
+    {
+      "source": "'你的坦克已被击毁。利用掩体避开蓄能火线，再试一次。'",
+      "target": "'Your tank was destroyed. Use cover to avoid enemy fire as it charges, then try again.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'受保护的补给车被击毁。先清除沿途威胁，并保持近距护送。'",
+      "target": "'A protected supply truck was destroyed. Clear threats along the route and stay close to escort it.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行动暂停'",
+      "target": "'Mission Paused'",
+      "occurrences": 1
+    },
+    {
+      "source": "'通道已打通'",
+      "target": "'Route Cleared'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行动未完成'",
+      "target": "'Mission Failed'",
+      "occurrences": 1
+    },
+    {
+      "source": "'完成标记目标'",
+      "target": "'Complete the marked objective'",
+      "occurrences": 1
+    },
+    {
+      "source": "'旧版战术试验'",
+      "target": "'Legacy Tactical Experiments'",
+      "occurrences": 1
+    },
+    {
+      "source": "'战术支线'",
+      "target": "'Tactical Side Missions'",
+      "occurrences": 1
+    },
+    {
+      "source": "'坦克状态'",
+      "target": "'Tank status'",
+      "occurrences": 1
+    },
+    {
+      "source": "'进度暂无法保存，关闭页面后可能丢失。'",
+      "target": "'Progress cannot be saved right now and may be lost when you close this page.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'受保护补给车状态'",
+      "target": "'Protected supply truck status'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行动菜单'",
+      "target": "'Mission menu'",
+      "occurrences": 1
+    },
+    {
+      "source": "'暂停'",
+      "target": "'Pause'",
+      "occurrences": 1
+    },
+    {
+      "source": "'关卡'",
+      "target": "'Missions'",
+      "occurrences": 1
+    },
+    {
+      "source": "'声音关'",
+      "target": "'Sound off'",
+      "occurrences": 2
+    },
+    {
+      "source": "'声音开'",
+      "target": "'Sound on'",
+      "occurrences": 1
+    },
+    {
+      "source": "'开启声音'",
+      "target": "'Turn sound on'",
+      "occurrences": 1
+    },
+    {
+      "source": "'关闭声音'",
+      "target": "'Turn sound off'",
+      "occurrences": 1
+    },
+    {
+      "source": "'本次选择已生效，但网址未能更新；刷新可能重新打开之前的行动。'",
+      "target": "'Your selection is active, but the URL could not be updated. Refreshing may reopen the previous mission.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'选择行动'",
+      "target": "'Choose a Mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'战术支线可随时试玩，不影响战役进度；普通战役通关后解锁下一关，已解锁任务可随时重玩。'",
+      "target": "'Side missions are always available and do not affect campaign progress. Complete a campaign mission to unlock the next one; replay any unlocked mission.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'筛选章节'",
+      "target": "'Filter chapters'",
+      "occurrences": 1
+    },
+    {
+      "source": "'全部章节'",
+      "target": "'All chapters'",
+      "occurrences": 1
+    },
+    {
+      "source": "'返回'",
+      "target": "'Back'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行动'",
+      "target": "'Mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 未解锁'",
+      "target": "' · Locked'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 已完成'",
+      "target": "' · Complete'",
+      "occurrences": 1
+    },
+    {
+      "source": "'暂无可选任务'",
+      "target": "'No missions available'",
+      "occurrences": 1
+    },
+    {
+      "source": "'上一页'",
+      "target": "'Previous'",
+      "occurrences": 1
+    },
+    {
+      "source": "'下一页'",
+      "target": "'Next'",
+      "occurrences": 1
+    },
+    {
+      "source": "'独立行动 · 不影响战役进度，可随时进入与重试。'",
+      "target": "'Standalone missions · No effect on campaign progress. Enter or retry at any time.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'装甲通道'",
+      "target": "'Iron Route'",
+      "occurrences": 3
+    },
+    {
+      "source": "'旧版试验'",
+      "target": "'Legacy experiment'",
+      "occurrences": 2
+    },
+    {
+      "source": "'支线试玩'",
+      "target": "'Side mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'支线'",
+      "target": "'Side mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'驾驶坦克打开安全通道。'",
+      "target": "'Drive your tank to open a safe route.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'时间已停止。继续时车辆不会保留之前按住的油门或开火。'",
+      "target": "'Time is stopped. Resuming clears any previously held throttle or fire input.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'本次行动目标已达成。'",
+      "target": "'Mission objectives complete.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'仓库掩护长路'",
+      "target": "'Long route with warehouse cover'",
+      "occurrences": 1
+    },
+    {
+      "source": "'短路'",
+      "target": "'Short route'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行动未能完成。可立即重试。'",
+      "target": "'Mission not completed. You can retry immediately.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'正在载入场景资源，请稍候。'",
+      "target": "'Loading scene resources. Please wait.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'等待放行的接力补给车也需要保护。可暂时离开车队处理威胁，车队会等待；等待不代表安全。'",
+      "target": "'Relay trucks waiting to be released also need protection. You may leave the convoy to deal with threats; it will wait, but waiting does not make it safe.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'左摇杆驾驶 · 右摇杆瞄准 · 点按开火\\n松开右摇杆会保留世界中的瞄准点，可再点按开火；移动后可重新瞄准。\\n低速转弯，高速赶路；加速需持续按住。\\n金色圆环：指令目标 · 十字准星：炮口预计命中点（红色：暂不能开火）'",
+      "target": "'Left stick: drive · Right stick: aim · Tap Fire to shoot\\nReleasing the right stick keeps your aim at the same point in the world. Tap Fire again, or readjust your aim after moving.\\nUse low speed for turns and high speed for travel. Hold Boost to accelerate.\\nGold ring: requested aim · Crosshair: projected muzzle impact (red: cannot fire yet)'",
+      "occurrences": 1
+    },
+    {
+      "source": "'W/S 油门与倒车 · A/D 转向 · 空格刹车\\n鼠标瞄准 · 左键/F 开火 · Shift 加速 · 1/2/3 限速\\n金色圆环：指令目标 · 十字准星：炮口预计命中点（红色：暂不能开火）'",
+      "target": "'W/S: forward and reverse · A/D: steer · Space: brake\\nMouse: aim · Left click/F: fire · Shift: boost · 1/2/3: speed limit\\nGold ring: requested aim · Crosshair: projected muzzle impact (red: cannot fire yet)'",
+      "occurrences": 1
+    },
+    {
+      "source": "'开始行动'",
+      "target": "'Start Mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'继续行动'",
+      "target": "'Resume'",
+      "occurrences": 1
+    },
+    {
+      "source": "'重新开始'",
+      "target": "'Restart'",
+      "occurrences": 1
+    },
+    {
+      "source": "'下一关'",
+      "target": "'Next Mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'选择关卡'",
+      "target": "'Choose Mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'待命'",
+      "target": "'Standby'",
+      "occurrences": 2
+    },
+    {
+      "source": "'等待靠近'",
+      "target": "'Waiting for escort'",
+      "occurrences": 1
+    },
+    {
+      "source": "'等待让路'",
+      "target": "'Clear the lane'",
+      "occurrences": 1
+    },
+    {
+      "source": "'保持车距'",
+      "target": "'Keeping distance'",
+      "occurrences": 1
+    },
+    {
+      "source": "'前方受阻'",
+      "target": "'Route blocked'",
+      "occurrences": 1
+    },
+    {
+      "source": "'等待选路'",
+      "target": "'Choose a route'",
+      "occurrences": 1
+    },
+    {
+      "source": "'已击毁'",
+      "target": "'Destroyed'",
+      "occurrences": 1
+    },
+    {
+      "source": "'已抵达'",
+      "target": "'Arrived'",
+      "occurrences": 1
+    },
+    {
+      "source": "'行进中'",
+      "target": "'Moving'",
+      "occurrences": 1
+    },
+    {
+      "source": "'待出发'",
+      "target": "'Ready to depart'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 正被瞄准'",
+      "target": "' · Targeted'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 已受损'",
+      "target": "' · Damaged'",
+      "occurrences": 1
+    },
+    {
+      "source": "' 倒车'",
+      "target": "' Reverse'",
+      "occurrences": 1
+    },
+    {
+      "source": "'炮口受阻'",
+      "target": "'Muzzle blocked'",
+      "occurrences": 1
+    },
+    {
+      "source": "'可开火'",
+      "target": "'Ready to fire'",
+      "occurrences": 1
+    },
+    {
+      "source": "'全部目标完成'",
+      "target": "'All objectives complete'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车等待：请靠近车队'",
+      "target": "'Trucks waiting: move closer to the convoy'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车等待：请让出车道'",
+      "target": "'Trucks waiting: clear the lane'",
+      "occurrences": 1
+    },
+    {
+      "source": "'车队正在保持安全间距'",
+      "target": "'Convoy is keeping a safe distance'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车前方受阻：请清障或让路'",
+      "target": "'Truck route blocked: clear the obstacle or move aside'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车等待道路放行'",
+      "target": "'Trucks waiting for the route to open'",
+      "occurrences": 1
+    },
+    {
+      "source": "'直行选短路（有火力），左转选长路（仓库掩护）；驶入后锁定'",
+      "target": "'Straight: short, exposed route. Left: longer route with warehouse cover. Entering locks the choice.'",
+      "occurrences": 1
+    },
+    {
+      "source": "'补给车等待通行'",
+      "target": "'Trucks waiting for a clear route'",
+      "occurrences": 1
+    },
+    {
+      "source": "' · 转向受限'",
+      "target": "' · Traverse limited'",
+      "occurrences": 1
+    },
+    {
+      "source": " · 行驶抬炮",
+      "target": " · Travel gun clearance",
+      "occurrences": 1
+    },
+    {
+      "source": "'整仓装填'",
+      "target": "'Magazine reload'",
+      "occurrences": 1
+    },
+    {
+      "source": "'射击间隔'",
+      "target": "'Shot interval'",
+      "occurrences": 1
+    },
+    {
+      "source": "'装填'",
+      "target": "'Reload'",
+      "occurrences": 1
+    },
+    {
+      "source": "'代表关试玩'",
+      "target": "'Featured mission'",
+      "occurrences": 1
+    },
+    {
+      "source": "'独立试玩，不改变战役解锁与存档。'",
+      "target": "'Standalone preview. Campaign unlocks and saves are unchanged.'",
+      "occurrences": 1
+    },
+    {
+      "source": "追踪只是导航，不会跳过其他目标。行动中按 Q 或点目标条切换追踪。",
+      "target": "Tracking only changes navigation. All objectives still apply. Press Q or tap the objective strip to switch.",
+      "occurrences": 1
+    },
+    {
+      "source": "先后自定，全部须完成",
+      "target": "Any order; all required",
+      "occurrences": 1
+    },
+    {
+      "source": "并行目标，全部须完成",
+      "target": "Parallel tasks; all required",
+      "occurrences": 1
+    },
+    {
+      "source": "Q / 点按切换",
+      "target": "Q / tap to switch",
+      "occurrences": 1
+    },
+    {
+      "source": "当前追踪：${objectiveText(active)}。${rule}。按 Q 或点击切换追踪，不改变任务条件。",
+      "target": "Tracking: ${objectiveText(active)}. ${rule}. Press Q or click to switch navigation. Mission conditions are unchanged.",
+      "occurrences": 1
+    },
+    {
+      "source": "出战车辆",
+      "target": "FIELD LOADOUT",
+      "occurrences": 2
+    },
+    {
+      "source": "选择装备，再打开运输通道。数值为游戏设定。",
+      "target": "Choose a vehicle, then open the supply route. Values are gameplay tuning.",
+      "occurrences": 1
+    },
+    {
+      "source": "装甲 ${value(vehicle.hp)} · 单发 ${value(vehicle.weapon?.damage)}",
+      "target": "HP ${value(vehicle.hp)} · Shot ${value(vehicle.weapon?.damage)}",
+      "occurrences": 1
+    },
+    {
+      "source": "装填 ${value(vehicle.weapon?.reload)} s · 行驶 ${value(vehicle.controller?.governorCaps?.travel)} m/s",
+      "target": "Reload ${value(vehicle.weapon?.reload)} s · Travel ${value(vehicle.controller?.governorCaps?.travel)} m/s",
+      "occurrences": 1
+    },
+    {
+      "source": "'独立行动 · 不影响战役进度'",
+      "target": "'Independent operation · Campaign progress is unchanged'",
+      "occurrences": 1
+    },
+    {
+      "source": "独立行动",
+      "target": "Independent operation",
+      "occurrences": 1
+    },
+    {
+      "source": "友军支援状态",
+      "target": "Allied support status",
+      "occurrences": 2
+    },
+    {
+      "source": "暂停查看状态",
+      "target": "Pause for status",
+      "occurrences": 2
+    },
+    {
+      "source": "完整战斗状态",
+      "target": "Full combat status",
+      "occurrences": 1
+    },
+    {
+      "source": "战斗状态",
+      "target": "Combat status",
+      "occurrences": 1
+    },
+    {
+      "source": "补给 —",
+      "target": "Supply —",
+      "occurrences": 1
+    },
+    {
+      "source": "'状态'",
+      "target": "'Status'",
+      "occurrences": 2
+    },
+    {
+      "source": "`补给 ${",
+      "target": "`Supply ${",
+      "occurrences": 1
+    },
+    {
+      "source": "装卸掩护 · ",
+      "target": "Cover loading · ",
+      "occurrences": 1
+    }
+  ],
+  "src/threat-warnings.js": [
+    {
+      "source": "`${(Math.max(1, Math.ceil(remaining * 10 - 1e-9)) / 10).toFixed(1)}秒`",
+      "target": "`${(Math.max(1, Math.ceil(remaining * 10 - 1e-9)) / 10).toFixed(1)}s`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${target === 'tank' ? '瞄你' : '瞄车'}${arrow || direction}${timeText(remaining)}`",
+      "target": "`${target === 'tank' ? 'Targets you' : 'Targets truck'} ${arrow || direction} ${timeText(remaining)}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`最快${timeText(earliestRemaining)}`",
+      "target": "`soonest ${timeText(earliestRemaining)}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${entries.length}处蓄力·你${tankCount}车${convoyCount}·${summaryTime}`",
+      "target": "`${entries.length} charging · You ${tankCount} / Truck ${convoyCount} · ${summaryTime}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${tankCount ? `你${tankCount}` : ''}${convoyCount ? `车${convoyCount}` : ''}·${summaryTime}`",
+      "target": "`${tankCount ? `You ${tankCount} ` : ''}${convoyCount ? `Truck ${convoyCount}` : ''}·${summaryTime}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${entries.length}处·${unknownTimeCount ? '时未知' : timeText(earliestRemaining).replace('秒','s')}`",
+      "target": "`${entries.length} threats · ${unknownTimeCount ? 'time unknown' : timeText(earliestRemaining).replace('s','s')}`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${entries.length}处敌方正在蓄力，${tankCount}处瞄准你的坦克，${convoyCount}处瞄准受保护车队；当前仅显示汇总，未逐一显示方向。`",
+      "target": "`${entries.length} enemies charging: ${tankCount} targeting your tank and ${convoyCount} targeting the protected convoy. Summary only; individual directions are not shown.`",
+      "occurrences": 1
+    },
+    {
+      "source": "`${entries.length}处敌方正在蓄力，${semanticEntries.map(entry => `${entry.direction}敌人瞄准${entry.target === 'tank' ? '你的坦克' : '受保护车队'}`).join('；')}。`",
+      "target": "`${entries.length} enemies charging: ${semanticEntries.map(entry => `enemy ${entry.direction} targeting ${entry.target === 'tank' ? 'your tank' : 'the protected convoy'}`).join('; ')}.`",
+      "occurrences": 1
+    },
+    {
+      "source": "'右方'",
+      "target": "'to the right'",
+      "occurrences": 1
+    },
+    {
+      "source": "'右下方'",
+      "target": "'to the lower right'",
+      "occurrences": 1
+    },
+    {
+      "source": "'下方'",
+      "target": "'below'",
+      "occurrences": 1
+    },
+    {
+      "source": "'左下方'",
+      "target": "'to the lower left'",
+      "occurrences": 1
+    },
+    {
+      "source": "'左方'",
+      "target": "'to the left'",
+      "occurrences": 1
+    },
+    {
+      "source": "'左上方'",
+      "target": "'to the upper left'",
+      "occurrences": 1
+    },
+    {
+      "source": "'上方'",
+      "target": "'above'",
+      "occurrences": 1
+    },
+    {
+      "source": "'右上方'",
+      "target": "'to the upper right'",
+      "occurrences": 1
+    },
+    {
+      "source": "'方位未知'",
+      "target": "'direction unknown'",
+      "occurrences": 2
+    },
+    {
+      "source": "'时间未知'",
+      "target": "'time unknown'",
+      "occurrences": 1
+    },
+    {
+      "source": "'时间未全知'",
+      "target": "'some times unknown'",
+      "occurrences": 1
+    }
+  ],
+  "src/startup-diagnostic.js": [
+    {
+      "source": "'当前环境无法启动三维画面'",
+      "target": "\"This environment could not start 3D graphics\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'此页面未能创建 WebGL 图形上下文，游戏尚未进入资源加载。请在完整浏览器中重新打开页面，或尝试另一个支持 WebGL 的浏览器或设备。若仍失败，请把下方技术详情发给维护者。'",
+      "target": "\"This page could not create a WebGL graphics context, so game assets have not started loading. Open the page in a full browser, or try another browser or device that supports WebGL. If it still fails, share the technical details below with the maintainer.\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'游戏资源未能载入'",
+      "target": "\"Game assets could not load\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'图形初始化已通过，但战场或坦克资源未能载入。请重新打开游戏页面；若仍失败，请把下方技术详情发给维护者。'",
+      "target": "\"Graphics initialization succeeded, but battlefield or tank assets could not load. Reopen the game page. If it still fails, share the technical details below with the maintainer.\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'游戏暂未启动'",
+      "target": "\"The game could not start\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'启动过程中发生了错误，尚未进入游戏。请重新打开页面；若问题持续，请把下方技术详情发给维护者。'",
+      "target": "\"An error occurred during startup, before gameplay began. Reopen the page. If the problem continues, share the technical details below with the maintainer.\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'此提示不会清除已保存的进度，也不会自动刷新页面。'",
+      "target": "\"This message does not clear saved progress or automatically reload the page.\"",
+      "occurrences": 1
+    },
+    {
+      "source": "'技术详情'",
+      "target": "\"Technical details\"",
+      "occurrences": 1
+    }
+  ],
+  "src/content/crush-flank.js": [
+    {
+      "source": "压开侧翼 · 碾压候选",
+      "target": "Crush a Flank - Candidate",
+      "occurrences": 1
+    },
+    {
+      "source": "前方仓库无法撞穿。西边维修道的低木栅可以用履带顶住压断：保持前进，只有车身真正碰到的栅栏段才会倒下，留下可驶过的碎木。压开西侧缺口可以绕到炮塔侧面；也可走东边较快但暴露的柏油路。此候选只实现分段低栅栏碾压，高杆和房屋坍塌尚未实现。",
+      "target": "The warehouse cannot be rammed through. Drive into the low timber fence on the west maintenance lane and keep pressing forward: only the segments touched by the hull collapse, leaving traversable debris. Open a west-side gap to flank the gun, or take the faster exposed east road. This candidate implements low fence crushing only; tall poles and building collapse are not yet implemented.",
+      "occurrences": 1
+    }
+  ],
+  "src/terrain-candidate/combat-mission.js": [
+    {
+      "source": "坡地侧翼 · 战斗整合候选",
+      "target": "Hillside flank · Combat integration candidate",
+      "occurrences": 1
+    },
+    {
+      "source": "原坦克与战斗系统的坡地整合候选：炮口、瞄准与弹丸共用坡面坐标，山坡可挡住射线。碾开低木栅，从侧翼攻击炮位后驶入北侧出口。建筑底座为平整地基。采用保守倾斜包围盒，无逐轮悬挂；当前未完成实机验收。",
+      "target": "An isolated hillside integration of the original tank and combat systems. Muzzle, aiming and shells share the terrain surface; hills block shots. Crush the low fence, flank the gun and reach the north exit. Buildings stand on level foundations. Tilted collision uses conservative bounds, without individual suspension. Device testing is pending.",
+      "occurrences": 1
+    }
+  ],
+  "src/terrain-candidate/ridge-convoy.js": [
+    {
+      "source": "堤路护送 · 山脊与双线",
+      "target": "Ridge Convoy - Two Roads",
+      "occurrences": 1
+    },
+    {
+      "source": "把补给车带到北部接应区，而不是清空所有炮位。驶入东侧金圈选硬路：路短，但会暴露在炮位前；驶入西侧金圈选低地土路：路长，中央山脊能挡弹，入口木栅须用履带压开。选路后锁定。可点“车队待命”或按 H 把车留在掩体后，绕侧清炮后再按“继续护送”；待命时敌火不会暂停。补给车会等待你靠近，也会停在未清障碍或你的车身后。可先清炮位，再回车队，也可边走边护送。山脊后的北炮位需绕侧才能击中，正面装甲会挡弹。",
+      "target": "Escort the supply truck to the northern rendezvous; you do not have to destroy every gun. Enter the eastern gold circle for a shorter exposed paved road, or the western circle for a longer sheltered dirt route. Crush the west gate with your hull. Selection locks the truck route. Stay nearby; the truck waits when blocked or when you are too far away. Clear threats first or fight on the move. Flank the northern gun beyond the ridge; its frontal armor blocks shots. After choosing a route, use Hold convoy or H to wait behind cover; clear the flank and order Advance convoy. Enemy fire continues while held.",
+      "occurrences": 1
+    },
+    {
+      "source": "接应补给车，驶入东西集结圈选路",
+      "target": "Meet the supply truck and enter a route assembly circle",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车进入北部接应区",
+      "target": "Escort the supply truck to the northern rendezvous",
+      "occurrences": 1
+    },
+    {
+      "source": "右侧硬路：短但暴露；左侧低地：长但有山脊掩护。驶入金圈锁定路线",
+      "target": "Right: short exposed road. Left: longer valley road sheltered by the ridge. Enter a gold circle to lock the route",
+      "occurrences": 1
+    },
+    {
+      "source": "东侧硬路",
+      "target": "East paved road",
+      "occurrences": 1
+    },
+    {
+      "source": "西侧低地土路",
+      "target": "West valley dirt road",
+      "occurrences": 1
+    }
+  ],
+  "src/combat-feedback.js": [
+    {
+      "source": "'装甲车'",
+      "target": "'Armored car'",
+      "occurrences": 1
+    },
+    {
+      "source": "'炮位'",
+      "target": "'Gun position'",
+      "occurrences": 1
+    },
+    {
+      "source": "`${name}正面挡弹 · 尝试绕侧`",
+      "target": "`${name}: frontal armor blocked · try flanking`",
+      "occurrences": 1
+    },
+    {
+      "source": "'挡弹 · 绕侧'",
+      "target": "'Blocked · flank'",
+      "occurrences": 1
+    },
+    {
+      "source": "'挡弹'",
+      "target": "'Blocked'",
+      "occurrences": 1
+    },
+    {
+      "source": "`命中${name} · 伤害 ${damage}`",
+      "target": "`Hit ${name} · ${damage} damage`",
+      "occurrences": 1
+    },
+    {
+      "source": "`命中 −${damage}`",
+      "target": "`Hit −${damage}`",
+      "occurrences": 1
+    }
+  ],
+  "src/player-vehicles.js": [
+    {
+      "source": "先锋 M-1",
+      "target": "Vanguard M-1",
+      "occurrences": 1
+    },
+    {
+      "source": "均衡突击",
+      "target": "Balanced assault",
+      "occurrences": 1
+    },
+    {
+      "source": "中等装甲与装填；适合贴掩体推进",
+      "target": "Balanced protection and reload; advance between cover.",
+      "occurrences": 1
+    },
+    {
+      "source": "机动侧击",
+      "target": "Mobile flanker",
+      "occurrences": 1
+    },
+    {
+      "source": "速度快、装填短；装甲较薄，需绕开正面火线",
+      "target": "Fast travel and reload; lighter protection rewards flanking.",
+      "occurrences": 1
+    },
+    {
+      "source": "轻装侦察",
+      "target": "Light scout",
+      "occurrences": 1
+    },
+    {
+      "source": "小口径快射与灵活倒车；装甲薄，不宜硬扛火力",
+      "target": "Rapid small-calibre fire and agile reverse; avoid trading hits.",
+      "occurrences": 1
+    },
+    {
+      "source": "重装突破",
+      "target": "Heavy breakthrough",
+      "occurrences": 1
+    },
+    {
+      "source": "高耐久与重炮；车体大、装填慢，提前规划转向",
+      "target": "High durability and heavy gun; large hull and slow reload need planning.",
+      "occurrences": 1
+    }
+  ],
+  "src/scorched-front.js": [
+    {
+      "source": "焦土货运站 · 穿越封锁",
+      "target": "Scorched Freight Yard · Break the Blockade",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车穿过废弃货运站，到达北侧接应区。东侧硬路短，但装甲巡逻车封锁路口；西侧泥路较长，中央山脊可遮挡炮火。东路外沿的混凝土断墙是真实掩体，不能碾碎；西侧木栅仍可履带压开。按 H 或点车队待命，先侦察再让车队前进。远处烟柱只是环境，不会挡住敌人的视线。无需消灭所有敌人，别把敌车残骸堵在车队路线上。",
+      "target": "Escort the supply truck through the abandoned freight yard to the northern rendezvous. The shorter eastern road is guarded by an armoured patrol; the longer western track uses the ridge as cover. Concrete wall remnants are solid cover, not crushable. Wooden western barriers can be crushed. Press H or use Hold convoy to scout before advancing. Distant smoke is cosmetic and does not block enemy sight. You need not destroy every enemy; keep wrecks off the convoy route.",
+      "occurrences": 1
+    }
+  ],
+  "src/crossfire-front.js": [
+    {
+      "source": "焦土交叉火线 · 协同护送",
+      "target": "Scorched Crossfire · Combined Escort",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车穿过焦土货运站，到达北侧接应区。蓝方支援车在西路外侧牵制敌方侧翼车，双方会真实交火；支援车不是护送目标，损失它不会直接失败。东侧硬路短但有敌车封锁，西侧绕行可借山脊掩护。按 H 或点车队待命，先侦察再推进。友军会挡住炮弹：不要朝补给车或支援车开火，也不要挡在友军炮口前。无需消灭所有敌人，别让敌车残骸堵住车队路线。",
+      "target": "Escort the supply truck through the scorched freight yard to the northern rendezvous. The blue support tank west of the road engages an enemy flanker with real fire; it is not an escort objective, and losing it does not immediately fail the mission. The eastern road is shorter but guarded; the western route uses the ridge as cover. Press H or Hold convoy to scout before advancing. Friendly vehicles stop shells: do not fire at the truck or support tank, and keep clear of friendly muzzles. You need not destroy every enemy. Keep wrecks off the convoy route.",
+      "occurrences": 1
+    }
+  ],
+  "src/battlefield-guidance.js": [
+    {
+      "source": "装填·换位受阻",
+      "target": "Reloading · maneuver blocked",
+      "occurrences": 1
+    },
+    {
+      "source": "换位受阻",
+      "target": "Maneuver blocked",
+      "occurrences": 1
+    },
+    {
+      "source": "装填机动",
+      "target": "Reloading on the move",
+      "occurrences": 1
+    },
+    {
+      "source": "机动换位",
+      "target": "Repositioning",
+      "occurrences": 1
+    },
+    {
+      "source": "再尝试倒车拉开侧向间距",
+      "target": "then try reversing to create side clearance",
+      "occurrences": 1
+    },
+    {
+      "source": "辆支援未逐一显示方位",
+      "target": " additional support units without individual bearings",
+      "occurrences": 1
+    },
+    {
+      "source": "正在瞄准敌方蓄力",
+      "target": "charging at an enemy",
+      "occurrences": 1
+    },
+    {
+      "source": "把炮管转离障碍",
+      "target": "turn the gun away from the obstacle",
+      "occurrences": 1
+    },
+    {
+      "source": "障碍接触未确认",
+      "target": "Obstacle contact unconfirmed",
+      "occurrences": 1
+    },
+    {
+      "source": "炮管转动受限",
+      "target": "Gun rotation limited",
+      "occurrences": 1
+    },
+    {
+      "source": "仍可能受阻",
+      "target": "may still be blocked",
+      "occurrences": 1
+    },
+    {
+      "source": "及其他障碍",
+      "target": " and other obstacles",
+      "occurrences": 1
+    },
+    {
+      "source": "生死未确认",
+      "target": "Life status unknown",
+      "occurrences": 2
+    },
+    {
+      "source": "目标待确认",
+      "target": "Target unconfirmed",
+      "occurrences": 1
+    },
+    {
+      "source": "辆友军支援",
+      "target": " allied support units",
+      "occurrences": 1
+    },
+    {
+      "source": "尝试倒车",
+      "target": "try reverse",
+      "occurrences": 1
+    },
+    {
+      "source": "支援单位",
+      "target": "Support unit",
+      "occurrences": 1
+    },
+    {
+      "source": "方位未知",
+      "target": "bearing unknown",
+      "occurrences": 1
+    },
+    {
+      "source": "炮口受阻",
+      "target": "Muzzle obstructed",
+      "occurrences": 1
+    },
+    {
+      "source": "炮管转离",
+      "target": "turn gun away",
+      "occurrences": 1
+    },
+    {
+      "source": "瞄敌蓄力",
+      "target": "charging at enemy",
+      "occurrences": 1
+    },
+    {
+      "source": "距离未知",
+      "target": "range unknown",
+      "occurrences": 2
+    },
+    {
+      "source": "车体受阻",
+      "target": "Hull obstructed",
+      "occurrences": 1
+    },
+    {
+      "source": "先停稳",
+      "target": "Stop first",
+      "occurrences": 1
+    },
+    {
+      "source": "勿强挤",
+      "target": "do not force through",
+      "occurrences": 2
+    },
+    {
+      "source": "右上方",
+      "target": "upper-right",
+      "occurrences": 1
+    },
+    {
+      "source": "右下方",
+      "target": "lower-right",
+      "occurrences": 1
+    },
+    {
+      "source": "左上方",
+      "target": "upper-left",
+      "occurrences": 1
+    },
+    {
+      "source": "左下方",
+      "target": "lower-left",
+      "occurrences": 1
+    },
+    {
+      "source": "留侧隙",
+      "target": "make side clearance",
+      "occurrences": 1
+    },
+    {
+      "source": "补给车",
+      "target": "supply truck",
+      "occurrences": 1
+    },
+    {
+      "source": "装填中",
+      "target": "reloading",
+      "occurrences": 1
+    },
+    {
+      "source": "上方",
+      "target": "above",
+      "occurrences": 1
+    },
+    {
+      "source": "下方",
+      "target": "below",
+      "occurrences": 1
+    },
+    {
+      "source": "停稳",
+      "target": "stop first",
+      "occurrences": 1
+    },
+    {
+      "source": "友军",
+      "target": "ally",
+      "occurrences": 1
+    },
+    {
+      "source": "右方",
+      "target": "right",
+      "occurrences": 1
+    },
+    {
+      "source": "存活",
+      "target": "alive",
+      "occurrences": 1
+    },
+    {
+      "source": "屏幕",
+      "target": "screen ",
+      "occurrences": 1
+    },
+    {
+      "source": "左方",
+      "target": "left",
+      "occurrences": 1
+    },
+    {
+      "source": "已毁",
+      "target": "destroyed",
+      "occurrences": 1
+    },
+    {
+      "source": "待机",
+      "target": "idle",
+      "occurrences": 1
+    },
+    {
+      "source": "接触",
+      "target": "Contact: ",
+      "occurrences": 1
+    },
+    {
+      "source": "支援",
+      "target": "Support",
+      "occurrences": 1
+    },
+    {
+      "source": "残骸",
+      "target": " wreck",
+      "occurrences": 1
+    },
+    {
+      "source": "距离",
+      "target": "range ",
+      "occurrences": 1
+    },
+    {
+      "source": "另",
+      "target": "+",
+      "occurrences": 2
+    },
+    {
+      "source": "援",
+      "target": "SUP",
+      "occurrences": 2
+    },
+    {
+      "source": "米",
+      "target": " metres",
+      "occurrences": 1
+    },
+    {
+      "source": "，",
+      "target": ", ",
+      "occurrences": 8
+    },
+    {
+      "source": "。",
+      "target": ".",
+      "occurrences": 3
+    },
+    {
+      "source": "：",
+      "target": ": ",
+      "occurrences": 4
+    },
+    {
+      "source": "；",
+      "target": "; ",
+      "occurrences": 2
+    }
+  ],
+  "src/player-vehicles-v3.js": [
+    {
+      "source": "沙隼 S-5",
+      "target": "Sandfalcon S-5",
+      "occurrences": 1
+    },
+    {
+      "source": "低姿火力支援",
+      "target": "Low-profile fire support",
+      "occurrences": 1
+    },
+    {
+      "source": "低矮车身便于藏身；宽履带难过窄隙，火力与先锋相同",
+      "target": "Low hull reduces exposure; wide tracks limit tight gaps. Same firepower as Vanguard.",
+      "occurrences": 1
+    }
+  ],
+  "src/crossfire-v3-front.js": [
+    {
+      "source": "焦土交叉火线 V3 · 前沿接应",
+      "target": "Scorched Crossfire V3 · Forward Support",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车到达北侧接应区。开局左前方的蓝方支援车与敌方侧翼车会真实交火；两车在路外固定阵位，支援车不是护送目标，损失它不会直接失败。东侧硬路短但有敌车封锁，西侧绕行可借山脊掩护。按 H 或点车队待命，先侦察再推进。友军会挡住炮弹：不要朝补给车或支援车开火，也不要挡在友军炮口前。无需消灭所有敌人，别让敌车残骸堵住车队路线。",
+      "target": "Escort the supply truck to the northern rendezvous. The blue support tank ahead-left and an enemy flanker exchange real fire from fixed positions off the routes. Support is not the escort objective; losing it does not directly fail the mission. The eastern hard road is short but guarded; the western detour uses the ridge for cover. Press H or order the convoy to hold while scouting. Allied hulls block shells: do not fire at supply or support vehicles, or stand in front of their guns. You need not destroy every enemy. Keep wrecks out of the convoy lane.",
+      "occurrences": 1
+    }
+  ],
+  "src/crossfire-v4-front.js": [
+    {
+      "source": "焦土交叉火线 V4 · 机动接应",
+      "target": "Scorched Crossfire V4 · Maneuvering Support",
+      "occurrences": 1
+    },
+    {
+      "source": "护送补给车到达北侧接应区。开局前方的蓝方支援车与敌方侧翼车会真实交火；两车会在装填间歇沿短路线机动，瞄准蓄力时停车，遇到障碍也会停下。支援车不是护送目标，损失它不会直接失败。东侧硬路短但有敌车封锁，西侧绕行可借山脊掩护。按 H 或点车队待命，先侦察再推进。友军会挡住炮弹：不要朝补给车或支援车开火，也不要挡在友军炮口前。无需消灭所有敌人，别让敌车残骸堵住车队路线。",
+      "target": "Escort the supply truck to the northern rendezvous. At the start, the blue support tank and enemy flanker exchange real fire ahead. Both reposition along short patrols while reloading, stop to charge their shots, and stop if blocked. The support tank is not an escort objective; losing it does not directly fail the mission. The eastern hard road is shorter but guarded; the western detour offers ridge cover. Press H or select Hold convoy to scout before advancing. Friendly vehicles block shells: do not fire at the supply truck or support tank, and keep clear of friendly muzzles. You need not destroy every enemy. Avoid leaving enemy wrecks on the convoy route.",
+      "occurrences": 1
+    }
+  ],
+  "src/recovery-direction.js": [
+    {
+      "source": "先停稳，接触对象在后方，可尝试前进拉开间距，再把炮管转离障碍；若受阻就换方向，勿强挤。",
+      "target": "Stop first. The contact is behind you: try moving forward to create space, then turn the gun away. If blocked, try another direction; do not force through.",
+      "occurrences": 1
+    },
+    {
+      "source": "先停稳，接触对象在前方，可尝试倒车拉开间距，再把炮管转离障碍；若受阻就换方向，勿强挤。",
+      "target": "Stop first. The contact is ahead: try reversing to create space, then turn the gun away. If blocked, try another direction; do not force through.",
+      "occurrences": 1
+    },
+    {
+      "source": "先停稳，方向未明，观察接触位置后尝试前进或倒车留侧隙，再把炮管转离障碍；仍可能受阻，勿强挤。",
+      "target": "Stop first. Direction is unclear: check the contact, then try forward or reverse to leave side clearance and turn the gun away. You may still be blocked; do not force through.",
+      "occurrences": 1
+    },
+    {
+      "source": "停稳→试前进→留侧隙，炮管转离；受阻换向",
+      "target": "Stop → try forward → leave space; turn gun away. If blocked, change direction.",
+      "occurrences": 1
+    },
+    {
+      "source": "停稳→试倒车→留侧隙，炮管转离；受阻换向",
+      "target": "Stop → try reverse → leave space; turn gun away. If blocked, change direction.",
+      "occurrences": 1
+    },
+    {
+      "source": "停稳→看接触→试前进或倒车，留侧隙转炮；勿强挤",
+      "target": "Stop → check contact → try forward/reverse; leave space and turn gun away. Do not force.",
+      "occurrences": 1
+    }
+  ]
+}

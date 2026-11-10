@@ -1,0 +1,6 @@
+# E2 implementation design
+Bound to the full task-e2-brief and its amendments; expanded BASE head 917d3cbd8475a29e354f49af1a3c11e42b4d8d30c01896c5c06209b7c1e51c19.
+- Add new builder import/instance, default Sandfalcon, ID-first terrain route, direct optional resolver, featured allow-list/card. Keep existing default resolution/save policy and all old routes untouched.
+- Only within existing objective DOM text: candidate + prepare-extraction + unfinished + finite positive duration displays `装卸掩护 · N.Ns`. Read real objective definition duration minus real state elapsed (clamped at zero), including briefing. Escort resumes unchanged generic text. English inventory translates the literal string and complete new mission source.
+- Tests execute actual main, UI, input, clock, simulation and accelerated world at Node fake DOM/GPU boundaries; no browser/layout/art/decode claims. Short real simulation checks, explicitly labeled pose/elapsed/HP boundary fixtures for exit/escort/loss/retry, actual pause/resume/input reset via production commands/lifecycle. E1 natural outcomes remain the natural evidence, no new long route.
+- Copy the tested E1 runner verbatim except identity path expansion to locales + actual root build/config inputs. No process mechanics changed. Preserve failed attempts. Freeze before final suite; controller go required.

@@ -1,0 +1,11 @@
+✔ real featured entry uses exact mission flags, Sandfalcon, shared field and accelerated world path (1140.959945ms)
+✔ candidate real direct URL retries rejected library without poisoning cache (882.410999ms)
+✔ candidate waits for actual loaded world readiness and discards stale selection (447.24263ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3034.467823

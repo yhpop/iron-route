@@ -1,0 +1,352 @@
+TAP version 13
+# Subtest: tiger-west real compressed input corruption is detected by the CLI before replay
+ok 1 - tiger-west real compressed input corruption is detected by the CLI before replay
+  ---
+  duration_ms: 86.305051
+  type: 'test'
+  ...
+# Subtest: sandfalcon-west real compressed input corruption is detected by the CLI before replay
+ok 2 - sandfalcon-west real compressed input corruption is detected by the CLI before replay
+  ---
+  duration_ms: 77.751771
+  type: 'test'
+  ...
+# Subtest: sandfalcon-east real compressed input corruption is detected by the CLI before replay
+ok 3 - sandfalcon-east real compressed input corruption is detected by the CLI before replay
+  ---
+  duration_ms: 80.556212
+  type: 'test'
+  ...
+# Subtest: tiger-east real compressed input corruption is detected by the CLI before replay
+ok 4 - tiger-east real compressed input corruption is detected by the CLI before replay
+  ---
+  duration_ms: 81.876772
+  type: 'test'
+  ...
+# Subtest: recompressed valid JSON with changed ordinary control is rejected rather than silently adopted
+ok 5 - recompressed valid JSON with changed ordinary control is rejected rather than silently adopted
+  ---
+  duration_ms: 130.953735
+  type: 'test'
+  ...
+# Subtest: corrupted persisted result cannot redefine the expected victory
+ok 6 - corrupted persisted result cannot redefine the expected victory
+  ---
+  duration_ms: 84.449273
+  type: 'test'
+  ...
+# Subtest: corrupted lossless V8 events fail without falling back to lossy JSON
+ok 7 - corrupted lossless V8 events fail without falling back to lossy JSON
+  ---
+  duration_ms: 78.493261
+  type: 'test'
+  ...
+# Subtest: truncated compressed input fails with the named provenance boundary
+ok 8 - truncated compressed input fails with the named provenance boundary
+  ---
+  duration_ms: 62.797952
+  type: 'test'
+  ...
+# Subtest: changed file bytes fail the fixed SHA-256 check
+ok 9 - changed file bytes fail the fixed SHA-256 check
+  ---
+  duration_ms: 8.691083
+  type: 'test'
+  ...
+# Subtest: matching file bytes are returned without normalization
+ok 10 - matching file bytes are returned without normalization
+  ---
+  duration_ms: 1.427846
+  type: 'test'
+  ...
+# Subtest: manifest paths cannot escape their declared root
+ok 11 - manifest paths cannot escape their declared root
+  ---
+  duration_ms: 0.290687
+  type: 'test'
+  ...
+# Subtest: changed source or dependency fails before simulation
+ok 12 - changed source or dependency fails before simulation
+  ---
+  duration_ms: 0.883638
+  type: 'test'
+  ...
+# Subtest: unsupported Node version fails rather than silently normalizing V8 evidence
+ok 13 - unsupported Node version fails rather than silently normalizing V8 evidence
+  ---
+  duration_ms: 0.53874
+  type: 'test'
+  ...
+# Subtest: valid original partial-prefix input is accepted
+ok 14 - valid original partial-prefix input is accepted
+  ---
+  duration_ms: 30.059407
+  type: 'test'
+  ...
+# Subtest: rejects zero run length
+ok 15 - rejects zero run length
+  ---
+  duration_ms: 10.012047
+  type: 'test'
+  ...
+# Subtest: rejects fractional run length
+ok 16 - rejects fractional run length
+  ---
+  duration_ms: 8.668088
+  type: 'test'
+  ...
+# Subtest: rejects excessive run length
+ok 17 - rejects excessive run length
+  ---
+  duration_ms: 8.199563
+  type: 'test'
+  ...
+# Subtest: rejects missing declared input
+ok 18 - rejects missing declared input
+  ---
+  duration_ms: 26.107589
+  type: 'test'
+  ...
+# Subtest: rejects saved-state injection
+ok 19 - rejects saved-state injection
+  ---
+  duration_ms: 8.811423
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite steering
+ok 20 - rejects nonfinite steering
+  ---
+  duration_ms: 9.056501
+  type: 'test'
+  ...
+# Subtest: rejects out of range throttle
+ok 21 - rejects out of range throttle
+  ---
+  duration_ms: 10.375639
+  type: 'test'
+  ...
+# Subtest: rejects non-boolean fire
+ok 22 - rejects non-boolean fire
+  ---
+  duration_ms: 16.692066
+  type: 'test'
+  ...
+# Subtest: rejects nonfinite aim
+ok 23 - rejects nonfinite aim
+  ---
+  duration_ms: 10.948556
+  type: 'test'
+  ...
+# Subtest: rejects hidden aim property
+ok 24 - rejects hidden aim property
+  ---
+  duration_ms: 14.062475
+  type: 'test'
+  ...
+# Subtest: rejects unknown convoy command
+ok 25 - rejects unknown convoy command
+  ---
+  duration_ms: 15.01722
+  type: 'test'
+  ...
+# Subtest: rejects unknown governor
+ok 26 - rejects unknown governor
+  ---
+  duration_ms: 15.859245
+  type: 'test'
+  ...
+# Subtest: rejects changed time step
+ok 27 - rejects changed time step
+  ---
+  duration_ms: 13.455844
+  type: 'test'
+  ...
+# Subtest: rejects wrong vehicle
+ok 28 - rejects wrong vehicle
+  ---
+  duration_ms: 13.594953
+  type: 'test'
+  ...
+# Subtest: rejects misreported old prefix
+ok 29 - rejects misreported old prefix
+  ---
+  duration_ms: 29.30313
+  type: 'test'
+  ...
+# Subtest: rejects false full historical replay claim
+ok 30 - rejects false full historical replay claim
+  ---
+  duration_ms: 30.952761
+  type: 'test'
+  ...
+# Subtest: rejects second start or resurrection
+ok 31 - rejects second start or resurrection
+  ---
+  duration_ms: 7.895757
+  type: 'test'
+  ...
+# Subtest: rejects changed historical input
+ok 32 - rejects changed historical input
+  ---
+  duration_ms: 14.810651
+  type: 'test'
+  ...
+# Subtest: real stored victory and complete ordered events satisfy escort contract
+ok 33 - real stored victory and complete ordered events satisfy escort contract
+  ---
+  duration_ms: 0.27947
+  type: 'test'
+  ...
+# Subtest: rejects false victory
+ok 34 - rejects false victory
+  ---
+  duration_ms: 1.102136
+  type: 'test'
+  ...
+# Subtest: rejects dead player
+ok 35 - rejects dead player
+  ---
+  duration_ms: 0.601835
+  type: 'test'
+  ...
+# Subtest: rejects dead escort
+ok 36 - rejects dead escort
+  ---
+  duration_ms: 0.64589
+  type: 'test'
+  ...
+# Subtest: rejects false arrival flag
+ok 37 - rejects false arrival flag
+  ---
+  duration_ms: 0.667553
+  type: 'test'
+  ...
+# Subtest: rejects teleported destination claim
+ok 38 - rejects teleported destination claim
+  ---
+  duration_ms: 0.780683
+  type: 'test'
+  ...
+# Subtest: rejects missing physical arrival event
+ok 39 - rejects missing physical arrival event
+  ---
+  duration_ms: 0.620953
+  type: 'test'
+  ...
+# Subtest: rejects premature mission completion
+ok 40 - rejects premature mission completion
+  ---
+  duration_ms: 0.617548
+  type: 'test'
+  ...
+# Subtest: rejects wrong route
+ok 41 - rejects wrong route
+  ---
+  duration_ms: 0.683387
+  type: 'test'
+  ...
+# Subtest: JSON zero-sign loss is not accepted as lossless event equality
+ok 42 - JSON zero-sign loss is not accepted as lossless event equality
+  ---
+  duration_ms: 5.960122
+  type: 'test'
+  ...
+# Subtest: full final-state drift fails even if victory and HP still match
+ok 43 - full final-state drift fails even if victory and HP still match
+  ---
+  duration_ms: 4.55068
+  type: 'test'
+  ...
+# Subtest: same-tick shot and physical impact are valid even without a live end-frame projectile
+ok 44 - same-tick shot and physical impact are valid even without a live end-frame projectile
+  ---
+  duration_ms: 0.364698
+  type: 'test'
+  ...
+# Subtest: shot without a projectile or physical same-tick impact fails
+ok 45 - shot without a projectile or physical same-tick impact fails
+  ---
+  duration_ms: 0.262745
+  type: 'test'
+  ...
+# Subtest: friendly damage fails even with a valid projectile chain
+ok 46 - friendly damage fails even with a valid projectile chain
+  ---
+  duration_ms: 0.249405
+  type: 'test'
+  ...
+# Subtest: damage without preceding physical impact fails
+ok 47 - damage without preceding physical impact fails
+  ---
+  duration_ms: 0.312189
+  type: 'test'
+  ...
+# Subtest: duplicate shot projectile IDs fail
+ok 48 - duplicate shot projectile IDs fail
+  ---
+  duration_ms: 0.165278
+  type: 'test'
+  ...
+# Subtest: duplicate event IDs fail
+ok 49 - duplicate event IDs fail
+  ---
+  duration_ms: 0.208344
+  type: 'test'
+  ...
+# Subtest: impact and damage before the shot in the same tick fail causal ordering
+ok 50 - impact and damage before the shot in the same tick fail causal ordering
+  ---
+  duration_ms: 0.178619
+  type: 'test'
+  ...
+# Subtest: one projectile cannot cause two physical impact and damage chains
+ok 51 - one projectile cannot cause two physical impact and damage chains
+  ---
+  duration_ms: 0.241093
+  type: 'test'
+  ...
+# Subtest: matching known failures are reported as still failing, never as a green historical suite
+ok 52 - matching known failures are reported as still failing, never as a green historical suite
+  ---
+  duration_ms: 2.330092
+  type: 'test'
+  ...
+# Subtest: added failure and missing historical failure are both surfaced
+ok 53 - added failure and missing historical failure are both surfaced
+  ---
+  duration_ms: 0.264918
+  type: 'test'
+  ...
+# Subtest: incomplete log cannot be mistaken for zero failures
+ok 54 - incomplete log cannot be mistaken for zero failures
+  ---
+  duration_ms: 1.068686
+  type: 'test'
+  ...
+# Subtest: TAP summaries and duplicate detailed failures retain exact counts
+ok 55 - TAP summaries and duplicate detailed failures retain exact counts
+  ---
+  duration_ms: 0.323446
+  type: 'test'
+  ...
+# Subtest: a zero exit cannot turn recorded failures into a passing suite
+ok 56 - a zero exit cannot turn recorded failures into a passing suite
+  ---
+  duration_ms: 0.324828
+  type: 'test'
+  ...
+# Subtest: historical baseline and its external reference files remain separately pinned
+ok 57 - historical baseline and its external reference files remain separately pinned
+  ---
+  duration_ms: 4.175695
+  type: 'test'
+  ...
+1..57
+# tests 57
+# suites 0
+# pass 57
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 791.132637

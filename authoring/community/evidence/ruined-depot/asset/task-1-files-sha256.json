@@ -1,0 +1,281 @@
+{
+  "status": "DONE_WITH_CONCERNS",
+  "files": {
+    "evidence/ruined-depot/asset/atlas-overlap-diagnostic.json": {
+      "sha256": "15de33f56b5f9ec5a2ace940bb77dd8f918ba160cb22ba3912e6010dcad91e66",
+      "bytes": 84
+    },
+    "evidence/ruined-depot/asset/audit_geometry.py": {
+      "sha256": "38d0f460a7fcc817dd8b891a22403724b784ce6f15fa5c4c6a7470da5ea76bed",
+      "bytes": 4629
+    },
+    "evidence/ruined-depot/asset/author-denoise-unavailable.log": {
+      "sha256": "873d09e0a05e8c3b9dd20ceb4d1e2773713bdc4a997c5ab314f4eb13ff2785e2",
+      "bytes": 2763
+    },
+    "evidence/ruined-depot/asset/author-export-enum-error.log": {
+      "sha256": "4b26299992fd6ae35229c08f310d7b7831c0ee5b45c31a5008b4ae97e47f3b81",
+      "bytes": 17903
+    },
+    "evidence/ruined-depot/asset/author-final-uv.log": {
+      "sha256": "58526ec0952b246671ab04eeaef4decbb604713e776cd2a7d394a7142ae8dea6",
+      "bytes": 29770
+    },
+    "evidence/ruined-depot/asset/author-refinement.log": {
+      "sha256": "eb58cced8540c1716cfd92b4cee93831217112acdffe8b8beab4e27848be4c07",
+      "bytes": 29060
+    },
+    "evidence/ruined-depot/asset/author.log": {
+      "sha256": "08eacd74adcdb77757dace3e5288fddd9df7cfaa277fab869e460f7fa5de3d67",
+      "bytes": 29326
+    },
+    "evidence/ruined-depot/asset/author_ruins.py": {
+      "sha256": "103130e29cf74836a45ee6f21db494746105d09264f0c78c5368eda26660c1fd",
+      "bytes": 15737
+    },
+    "evidence/ruined-depot/asset/baseColor.png": {
+      "sha256": "a8c7b320f5d56f3b4b57303802064958a2ab5df87e16718ad1b26c00d59490f2",
+      "bytes": 6308529
+    },
+    "evidence/ruined-depot/asset/baseline-closeup.png": {
+      "sha256": "8cad6d25651b3d3c9376fb69f93a4935900225d586c491bc358a8785995a18d9",
+      "bytes": 1312165
+    },
+    "evidence/ruined-depot/asset/baseline-gameplay.png": {
+      "sha256": "df9be3f2a8386e6b2c81c6a90f69b05f7a5f6d8bbb1f3bf97c8b1b243d4f1f36",
+      "bytes": 1472853
+    },
+    "evidence/ruined-depot/asset/export_baked.py": {
+      "sha256": "2147a2cfcf15a11a11061b9e23caaf2028edbc0028d5ed5ea01873ce9dd30f3f",
+      "bytes": 1951
+    },
+    "evidence/ruined-depot/asset/final-export.log": {
+      "sha256": "de4a1f19c65636436af805793ca7cf76de7d49640944094f67bdd537b5de1302",
+      "bytes": 1177
+    },
+    "evidence/ruined-depot/asset/firstpass/author_ruins.py": {
+      "sha256": "febc865a515139529b4c667d38f1918f557e1ac7fbfa034c3e53e011187bf01a",
+      "bytes": 11131
+    },
+    "evidence/ruined-depot/asset/firstpass/baseline-closeup.png": {
+      "sha256": "3416a9db51619d5e05d0eb39d8739c7ea419161b9e5a840447b8e0b4b711abd3",
+      "bytes": 1312165
+    },
+    "evidence/ruined-depot/asset/firstpass/baseline-gameplay.png": {
+      "sha256": "33d2d8605042aaeb71582a8320afe00648f6c4e103d99076041178048b24cdaf",
+      "bytes": 1472853
+    },
+    "evidence/ruined-depot/asset/firstpass/geometry-uv-audit.json": {
+      "sha256": "61e7c4bc00339f6921c8b6169557ba2307b8e8d61ca8c8f2e1262fb7780d9616",
+      "bytes": 4034
+    },
+    "evidence/ruined-depot/asset/firstpass/manifest.json": {
+      "sha256": "8e633ccd5d0fcc62796b39e575a697e2dc7a7dae7c7806e7b9cddf85728b6458",
+      "bytes": 8335
+    },
+    "evidence/ruined-depot/asset/firstpass/matched-render-settings.json": {
+      "sha256": "80bacc18e9a0c57e7414b420e358c9da190c176cbd4306b8e6f6c584fd447fb3",
+      "bytes": 2675
+    },
+    "evidence/ruined-depot/asset/firstpass/revised-closeup.png": {
+      "sha256": "569bb04fbd6d9e4e8625523c5c6ae50c84353219a5999d9faf6be30165fb6ef9",
+      "bytes": 1393376
+    },
+    "evidence/ruined-depot/asset/firstpass/revised-gameplay.png": {
+      "sha256": "44ea70e8863c4ce92c9f5bc63a8cd333039556912f3d890febd1c60836d67fd0",
+      "bytes": 1449655
+    },
+    "evidence/ruined-depot/asset/firstpass/source-checkpoint.json": {
+      "sha256": "0eb2e2c231da7df6726b1c235007b1de3d9088c3b363ad29c94bcebd28982474",
+      "bytes": 2880
+    },
+    "evidence/ruined-depot/asset/geometry-uv-audit.json": {
+      "sha256": "ef4a265bc6a48d4c020833aac85778118002f9106176607000517010d19eab62",
+      "bytes": 4062
+    },
+    "evidence/ruined-depot/asset/geometry-uv-audit.log": {
+      "sha256": "c81b5e6342eef6b3d5ee30e229795be47b0200ed954cfd568a0d0495c656969c",
+      "bytes": 4353
+    },
+    "evidence/ruined-depot/asset/manifest-generation.log": {
+      "sha256": "08df4f469a6b52a85b1b8513485ba51c818733e85ae14f3e05a7e3ca68a2e066",
+      "bytes": 1644
+    },
+    "evidence/ruined-depot/asset/matched-render-final.log": {
+      "sha256": "ea5500f9f12e7006e02bb9785dec5c6c171bedcbab2b6fb4b0e8920a2714715d",
+      "bytes": 22427
+    },
+    "evidence/ruined-depot/asset/matched-render-settings.json": {
+      "sha256": "80bacc18e9a0c57e7414b420e358c9da190c176cbd4306b8e6f6c584fd447fb3",
+      "bytes": 2675
+    },
+    "evidence/ruined-depot/asset/matched-render.log": {
+      "sha256": "e7cb6aa8ee60f44286a32a9be1393fb38c90be2622ba5ade99496179d3674b47",
+      "bytes": 22299
+    },
+    "evidence/ruined-depot/asset/normal.png": {
+      "sha256": "c61ffb3f505939690bed9f5c465cadeeae1d0ff885f6e1cc1f80ec1c077fafc5",
+      "bytes": 3370913
+    },
+    "evidence/ruined-depot/asset/old-work-file-verification.json": {
+      "sha256": "29bc8a949c033d6f8225ae03d3ca0c49a2d3bac07e05889d253646d75da447b5",
+      "bytes": 63
+    },
+    "evidence/ruined-depot/asset/overlap-faces.log": {
+      "sha256": "e7eac32b8567eb6cf809418e3b0b48fdc9aeb70ba75ca56df824be23661c1819",
+      "bytes": 6182
+    },
+    "evidence/ruined-depot/asset/probe-uv-layout.log": {
+      "sha256": "01e66a11e467bd856123694fa7fc8aec8077502971ca97d34cb5829a6a5c3238",
+      "bytes": 258
+    },
+    "evidence/ruined-depot/asset/probe_uv_layout.py": {
+      "sha256": "47008414873b5293609b09c2c936446ca6fe900d8f38306d789590197ffed429",
+      "bytes": 1093
+    },
+    "evidence/ruined-depot/asset/reimport-audit.json": {
+      "sha256": "59aa8a8e71f68593f0c9b2bbecaa59bbd23e7381975f5bdc0d6d08f4c7149c9d",
+      "bytes": 1534
+    },
+    "evidence/ruined-depot/asset/render_matched_proof.py": {
+      "sha256": "4ea9580cf96a1f5b31ede67ddc08a5d8fd39faa36a7fe6f70f62f9f05bdcaddb",
+      "bytes": 3000
+    },
+    "evidence/ruined-depot/asset/revised-closeup.png": {
+      "sha256": "c008e5cef93e63a3103d77d58a8d3bfa2dce657cb1f9349b91ec219006f93e5d",
+      "bytes": 1350197
+    },
+    "evidence/ruined-depot/asset/revised-gameplay.png": {
+      "sha256": "5b4f6a0ead26b56077b82da5f9e5f622cbaa99aff32104eb29a67c81e4c54c68",
+      "bytes": 1432427
+    },
+    "evidence/ruined-depot/asset/roughness.png": {
+      "sha256": "66003a9d02d25ec8f548c0bccf186b42eb76fc4cca63fc2b22d153d374450268",
+      "bytes": 2701644
+    },
+    "evidence/ruined-depot/asset/ruins-authoring.blend": {
+      "sha256": "5a316ec8c9736ef8d21e50cbe3ef432515763a3c858d4062e52c8782e017adcb",
+      "bytes": 4335476
+    },
+    "evidence/ruined-depot/asset/ruins-baked-preserved-uv.blend": {
+      "sha256": "2039bb7424a0824dd942abec09b1426365ed3a5ed70611f834402c8003d45dab",
+      "bytes": 14007032
+    },
+    "evidence/ruined-depot/asset/ruins-reimport-proof.blend": {
+      "sha256": "340de046e6b0cf9e8937aaa803d9d1b32f290a2fd398c27bb07867127c0abff1",
+      "bytes": 12856353
+    },
+    "evidence/ruined-depot/asset/source-checkpoint.json": {
+      "sha256": "16bd15779da67400297f2041ce4e3646c61cafa132c3eb0e0b781e5a06570397",
+      "bytes": 3334
+    },
+    "evidence/ruined-depot/asset/source-inspection.log": {
+      "sha256": "b19ff07c96867fffa3e92fe77e58a34e57517816dcecbddba04cb65d7be18686",
+      "bytes": 340
+    },
+    "evidence/ruined-depot/asset/tdd-green.log": {
+      "sha256": "3210bb3c390a3212165e552b93c81f60d7e5dc07fdcbeea93213be5d6c1c5c21",
+      "bytes": 685
+    },
+    "evidence/ruined-depot/asset/tdd-missing-bound-uv-red.log": {
+      "sha256": "9f809ba4383469038bb4924d62808a885f97b45ea4a0f39d70e107400d696e6d",
+      "bytes": 1396
+    },
+    "evidence/ruined-depot/asset/tdd-red.log": {
+      "sha256": "72c892123fa70b6649ee91e471b01040bc227bb7c4fd2375624aa2f9813ba461",
+      "bytes": 6289
+    },
+    "evidence/ruined-depot/asset/test-object3d-dispose-assumption-red.log": {
+      "sha256": "4eeffaa6ca73498e56e4d358e7ae017835ef0f182461466b265da3a13bb77a63",
+      "bytes": 1445
+    },
+    "evidence/ruined-depot/asset/uv-65-degree-overlap-red.json": {
+      "sha256": "a6b89f49f3b44513adf647492bb3c2abac51236eb9760417dcb9452ea391c691",
+      "bytes": 1336
+    },
+    "evidence/ruined-depot/asset/uv-65-degree-overlap-red.log": {
+      "sha256": "022d9006c8afdd4cf65fa134059109214ea268c2c2a21e5fc14190eed409d46f",
+      "bytes": 1014
+    },
+    "evidence/ruined-depot/asset/uv-export-layer-diagnostic.log": {
+      "sha256": "080f6d3f1fdd1caaceeff72ebde1d7a9159eaba08571d6fb0e7f519dad633f5a",
+      "bytes": 606
+    },
+    "evidence/ruined-depot/asset/uv-layout-30-degree-check.json": {
+      "sha256": "ed7b8e6ea402f8bbe9eb94e1a6fe7f67c802045ff34b0d03dc751d815b05ebdd",
+      "bytes": 117
+    },
+    "evidence/ruined-depot/asset/write_manifest.py": {
+      "sha256": "465e61ae9dd8a9ddedd34f28b5b4c7a5020d16468a3597e0b82e48c37ee7f22a",
+      "bytes": 3468
+    },
+    "evidence/ruined-depot/sdd/task-1-report.md": {
+      "sha256": "5b6aea1551cb519e4c7fff6044095fb8c0276f17d077b04f8a1ad96751874cb7",
+      "bytes": 7850
+    },
+    "originals/ruined-depot/README.md": {
+      "sha256": "09cc54b9cfc7180cbdda62359da3b5fd5a651330145f9e62d094efed8944da0a",
+      "bytes": 1031
+    },
+    "originals/ruined-depot/evidence/Ciment_bris\u00e9.png": {
+      "sha256": "9078d1ae0ba86e0a84a998f0157fd272e0aa273eac98f6f38e690c7baf50d6c3",
+      "bytes": 2600817
+    },
+    "originals/ruined-depot/evidence/lfa-recovered-two-uv-audit.blend": {
+      "sha256": "e431e07679d6b9b01b0eda057f873d872199c5a58715182911c5ceffa3f85464",
+      "bytes": 3246952
+    },
+    "originals/ruined-depot/input-hashes.json": {
+      "sha256": "9ae6e84f7e98589ee853d0bcdaef274ccaf23765a089b45df177e5bffc65a6f7",
+      "bytes": 1354
+    },
+    "originals/ruined-depot/sources/destroyed-city.html": {
+      "sha256": "cec10755f0a8eaed6de567f3d6f90aa4b23c94ffb76e02e66604553fd73909ff",
+      "bytes": 24117
+    },
+    "originals/ruined-depot/sources/destroyed-walls.html": {
+      "sha256": "6cee22c3f7d278241395c2c7a4ab8619a9a0e6d3d6a0bf92d0a6b28370f7036f",
+      "bytes": 60481
+    },
+    "originals/ruined-depot/sources/destroyedwalls_by_lfa/destroyedWalls_UV1.obj": {
+      "sha256": "dbf70cebd80e0eb80f2d5fc2174e2be9abe75b309f21ab020be115f0b63d0f42",
+      "bytes": 2059507
+    },
+    "originals/ruined-depot/sources/destroyedwalls_by_lfa/destroyedWalls_UV2.obj": {
+      "sha256": "8885b13999bc34fc1f47e6593910aedbf8fc3f24b7c486356ba7d46b1e97bbe0",
+      "bytes": 2056261
+    },
+    "originals/ruined-depot/sources/destroyedwalls_by_lfa/detail.bmp": {
+      "sha256": "d47aed414b88bbd7a0bc94528f1c3c89e64afc8efc1cc7779f53f8c0824ab89f",
+      "bytes": 263224
+    },
+    "originals/ruined-depot/sources/destroyedwalls_by_lfa/wall.bmp": {
+      "sha256": "2f4efb203f16af670c259ed83546cac4315131e8395af1c241b8da776d22d608",
+      "bytes": 786488
+    },
+    "work/assets/ruined-depot/README.md": {
+      "sha256": "6a2fab1a3e466bf2fca8c65f6a2739580012171012bb85cbb7c3e5b395cda794",
+      "bytes": 3702
+    },
+    "work/assets/ruined-depot/manifest.json": {
+      "sha256": "c5df0f54c77fa704786fb71501edcbba68fe83cda1d8edcdf98712d01f9a9232",
+      "bytes": 8800
+    },
+    "work/assets/ruined-depot/ruins.glb": {
+      "sha256": "6c0748ab179e824f68fbf5ef339cefef9c9b1877628281ee300e405d66ef83c7",
+      "bytes": 12332368
+    },
+    "work/licenses/LFA_RUINED_DEPOT_CC_BY_3.md": {
+      "sha256": "765c226d921dce5882463ecd716206c07fb9dfda31ae812dd58825881ee04d10",
+      "bytes": 1587
+    },
+    "work/src/ruined-depot-art.js": {
+      "sha256": "e85e720bbcc583e8ed3db6f67f4e16f8995247e0f519e8e65f33d4b04f9a4477",
+      "bytes": 7128
+    },
+    "work/tests/ruined-depot-art.test.mjs": {
+      "sha256": "21814edb59ee00b0dd9ccfd3df8bc237e42b4b3832edcf7d5da3512ebae39cc8",
+      "bytes": 6305
+    }
+  }
+}

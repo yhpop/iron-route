@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getMission} from '../src/content/index.js';import {createWorld} from '../src/campaign-world.js';import {createGame,stepGame,retry} from '../src/campaign-simulation.js';
+test('three authored missions boot, start, drive, pause and retry through actual modules',()=>{
+ for(const id of ['mission-001','mission-002','mission-003']){const spec=getMission(id),world=createWorld(spec);let s=createGame(spec);assert.equal(s?.phase,'briefing');s=stepGame(s,{start:true},1/60,world);assert.equal(s.phase,'playing');const start={...s.tank.pose};for(let i=0;i<120;i++)s=stepGame(s,{throttle:1,steer:0},1/60,world);assert.ok(Math.hypot(s.tank.pose.x-start.x,s.tank.pose.z-start.z)>1,`${id}: tank must move out of spawn`);assert.ok(s.tank.trackL!==0);const tick=s.tick;s=stepGame(s,{pause:true},1/60,world);s=stepGame(s,{throttle:1},1/60,world);assert.equal(s.tick,tick);assert.equal(s.phase,'paused');const fresh=retry(spec);assert.equal(fresh.phase,'briefing');assert.deepEqual(fresh.tank.pose,createGame(spec).tank.pose);world.dispose();}
+});

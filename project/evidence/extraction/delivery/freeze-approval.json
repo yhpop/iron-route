@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-31T16:07:31.365052+00:00",
+  "privateFreezeApproved": true,
+  "requiredFindingsOpen": 0,
+  "compositeGateAccepted": true,
+  "zeroFailureFullSuiteClaim": false,
+  "publicReleaseApproved": false,
+  "finalSourceHeadSHA256": "452dec8b3e6ed8c85b3b85ca15fc072e73730e7fe3fe2689016d7ff09ccdbc03",
+  "wholeReviewPath": "evidence/extraction/sdd/whole-review.md",
+  "e1ReviewPath": "evidence/extraction/sdd/e1-review.md",
+  "e2ReviewPath": "evidence/extraction/sdd/e2-review.md",
+  "reviewHeadPath": "evidence/extraction/sdd/whole-review-head.json",
+  "authority": "Parent-authorized isolated playable candidate; existing private Space/source/device workflow. No merge, overwrite, public release or Mac operation.",
+  "wholeReviewSHA256": "8da4291a895282847d2ec078c60fef4606caac24109bee1cbd4c93181edad34b",
+  "e1ReviewSHA256": "f9f016e00c5a3ddcb15e9f62f109093711f10e5ba0ceaf041f66749f48a47727",
+  "e2ReviewSHA256": "f0b222ad741b6d35454e8e2f7d66824f566c691ff7c8b031dce37e72a0f21e95",
+  "reviewHeadSHA256": "d8f44219164da2e3ea15502f5c39a0ccabf079e5a6a4b9c2fc49de38fa42d96a",
+  "declinedToJudgeDisposition": {
+    "1": "Future exclusive local freeze and independent postfreeze audit, no completed claim yet.",
+    "2": "Existing parent private Library delivery authorization; fresh identities/version/hash will be verified separately, no publicsharing.",
+    "3-8": "Device/browser/touch/visual/scheduler/natural-main/broader-route gates remain open and delegated only to parent authorized device thread; no retries of pending small-screen actions.",
+    "9": "Historical replay helper retained, not reused; only persisted-output equivalence qualified.",
+    "10": "Vanguard rights unresolved/private-only; no clearance inferred.",
+    "11": "No merge/public release/predecessor replacement.",
+    "12": "No universal pre-notice claim; small inspection exception preserved."
+  }
+}

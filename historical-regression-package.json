@@ -1,0 +1,16 @@
+{
+  "name": "iron-route-current-controller-regression",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "test:guards": "node --test tests/guards.test.mjs",
+    "test:routes": "node --test --test-concurrency=1 tests/routes.test.mjs",
+    "test:legacy": "npm --prefix project/work test",
+    "test:all": "node test-all.mjs",
+    "audit:legacy": "node compare-legacy.mjs"
+  },
+  "engines": {
+    "node": "24.22.1"
+  }
+}

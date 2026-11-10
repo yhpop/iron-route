@@ -1,0 +1,20 @@
+{
+  "route": "covered",
+  "attempt": "v03-covered-old-controls",
+  "mode": "tape",
+  "verify": false,
+  "inputs": 13600,
+  "tick": 13599,
+  "phase": "won",
+  "selectedConvoyChoiceId": "covered",
+  "hp": 80,
+  "truckHp": 16,
+  "truckArrived": true,
+  "shots": 9,
+  "alliedDamage": 0,
+  "failure": null,
+  "finalHash": "8d1c7ab8ba5a6d6b337c39e572eafe061f9169e4f88dd7643417693e38afe4cd",
+  "specHash": "402a75efdb0ab4fb53185393da64f6dd8d5948f5cdeb6c243a1e340c743588ef",
+  "sourceHashesHash": "2d8e706932808be909a52a890e3ee3524f40eb6532f476bff1feb7cac8beb9a1",
+  "closureFiles": 31
+}

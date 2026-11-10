@@ -1,0 +1,29 @@
+START 2026-10-31T12:00:02.849870+00:00
+COMMAND ["node", "--test", "--test-concurrency=1", "tests/battlefront-depot-presentation.test.mjs", "tests/battlefront-depot-ground.test.mjs", "tests/battlefront-depot-terrain.test.mjs", "tests/battlefront-depot-entry.test.mjs"]
+CAP_SECONDS 120
+✔ real featured entry uses exact mission flags, Sandfalcon, shared field and accelerated world path (848.549848ms)
+✔ candidate real direct URL retries rejected library without poisoning cache (290.064147ms)
+✔ candidate waits for actual loaded world readiness and discards stale selection (260.225704ms)
+✔ real English source/menu contains new translated entry without changing old default or old slugs (1459.566586ms)
+✔ all actual freight-yard ground triangles have authoritative containment, interior contact, continuous shared RGBA and bounded placement/budgets (868.77077ms)
+✔ explicit candidate-only boundary suppression retains logical zones and gold active choice rings (192.321251ms)
+✔ candidate owns one clone per original material identity, borrowing maps and geometry (45.650313ms)
+✔ candidate replaces all old generated warfield buckets with one static bounded ground-detail mesh (396.958086ms)
+✔ library or material clone failure is transactional and frees only created tint clones (43.423343ms)
+✔ real campaign updates suppress actual proxies but keep replacement details through phase updates (270.207783ms)
+✔ occlusion restores tint before adapter disposes it once; borrowed original never freed (27.595174ms)
+✔ old default/scorched/crossfire shader text is byte-exact; candidate adds no sampler and unique cache key (4.287474ms)
+✔ old mask/geometry remain exact, candidate uses same six maps and existing B weather channel without geometry or map URL changes (4418.02235ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10052.941078
+
+EXIT 0
+SECONDS 10.25623589400493
+CODE_DRIFT []
+END 2026-10-31T12:00:13.137564+00:00

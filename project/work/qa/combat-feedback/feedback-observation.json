@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "pass": true,
+  "originalFinalHash": "507cf29187b01d224eea4ecb2955571122c1869cbc21d6451bb16ea140d9dd13",
+  "expectedOriginalFinalHash": "507cf29187b01d224eea4ecb2955571122c1869cbc21d6451bb16ea140d9dd13",
+  "originalTapeControls": 4756,
+  "extension": {
+    "input": {
+      "brake": true
+    },
+    "ticks": 180,
+    "reason": "observe last damage notice until expiry; original tape unchanged"
+  },
+  "observedControls": 4936,
+  "notices": [
+    {
+      "kind": "blocked",
+      "text": "炮位正面挡弹 · 尝试绕侧",
+      "compactText": "挡弹 · 绕侧",
+      "minimalText": "挡弹",
+      "eventId": "event-20",
+      "firstTick": 3727,
+      "lastTick": 3877,
+      "activeTicks": 151,
+      "chargeHiddenTicks": 22,
+      "visibleTicks": 129,
+      "longestVisibleRunTicks": 129,
+      "firstVisibleTick": 3749,
+      "segments": [
+        {
+          "visible": false,
+          "startTick": 3727,
+          "endTick": 3748,
+          "ticks": 22
+        },
+        {
+          "visible": true,
+          "startTick": 3749,
+          "endTick": 3877,
+          "ticks": 129
+        }
+      ],
+      "visibleSeconds": 2.15,
+      "longestVisibleRunSeconds": 2.15
+    },
+    {
+      "kind": "damage",
+      "text": "命中炮位 · 伤害 45",
+      "compactText": "命中 −45",
+      "minimalText": "−45",
+      "eventId": "event-29",
+      "firstTick": 4755,
+      "lastTick": 4905,
+      "activeTicks": 151,
+      "chargeHiddenTicks": 77,
+      "visibleTicks": 74,
+      "longestVisibleRunTicks": 74,
+      "firstVisibleTick": 4832,
+      "segments": [
+        {
+          "visible": false,
+          "startTick": 4755,
+          "endTick": 4831,
+          "ticks": 77
+        },
+        {
+          "visible": true,
+          "startTick": 4832,
+          "endTick": 4905,
+          "ticks": 74
+        }
+      ],
+      "visibleSeconds": 1.2333333333333334,
+      "longestVisibleRunSeconds": 1.2333333333333334
+    }
+  ],
+  "domChecks": [
+    {
+      "key": "blocked:charge-priority",
+      "tick": 3727,
+      "noticeText": "炮位正面挡弹 · 尝试绕侧",
+      "actualBearingText": "瞄你→0.4秒",
+      "ariaLabel": "1处敌方正在蓄力，右方敌人瞄准你的坦克。",
+      "chargeTotal": 1,
+      "chargeRemaining": [
+        {
+          "id": "ridge-gun",
+          "remaining": 0.35000000000000187
+        }
+      ],
+      "targetHp": 90
+    },
+    {
+      "key": "blocked:visible",
+      "tick": 3749,
+      "noticeText": "炮位正面挡弹 · 尝试绕侧",
+      "actualBearingText": "炮位正面挡弹 · 尝试绕侧",
+      "ariaLabel": "炮位正面挡弹 · 尝试绕侧",
+      "chargeTotal": 0,
+      "chargeRemaining": [],
+      "targetHp": 90
+    },
+    {
+      "key": "damage:charge-priority",
+      "tick": 4755,
+      "noticeText": "命中炮位 · 伤害 45",
+      "actualBearingText": "瞄你→1.3秒",
+      "ariaLabel": "1处敌方正在蓄力，右方敌人瞄准你的坦克。",
+      "chargeTotal": 1,
+      "chargeRemaining": [
+        {
+          "id": "ridge-gun",
+          "remaining": 1.2666666666666657
+        }
+      ],
+      "targetHp": 45
+    },
+    {
+      "key": "damage:visible",
+      "tick": 4832,
+      "noticeText": "命中炮位 · 伤害 45",
+      "actualBearingText": "命中炮位 · 伤害 45",
+      "ariaLabel": "命中炮位 · 伤害 45",
+      "chargeTotal": 0,
+      "chargeRemaining": [],
+      "targetHp": 45
+    }
+  ],
+  "limitations": [
+    "CPU DOM stub, not rendered pixels or real font measurements.",
+    "Fixed projection validates real charge presence/priority, not on-screen enemy bearings.",
+    "Visibility counts are 60 Hz simulation ticks, not measured display frames or proof of reading comprehension."
+  ],
+  "feedbackSourceJSONSHA256": "8cec92655d2ddf18c8aaf5ade4ffae346bef575e14e9eedf26ec14d911db373d"
+}

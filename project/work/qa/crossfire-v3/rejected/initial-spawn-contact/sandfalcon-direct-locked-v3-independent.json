@@ -1,0 +1,14 @@
+{
+  "file": "sandfalcon-direct-locked-v3-inputs.json.gz",
+  "inputSHA256": "faf2e99e48552ab61e4c77aa5dd07e3203468d24ee8aa53a79f8bb0d568c3476",
+  "phase": "playing",
+  "tick": 244,
+  "inputs": 245,
+  "fullStateExact": true,
+  "finalHash": "6a6d48df77b7a0dfeb03d02607c31e75f43a56e0cf5dcde9758831e21b9da219",
+  "specHash": "f0b17f9d14cb54161fb98ccc66f9da6cc34a50a55cc6f22bd0a95aea37244691",
+  "sourceHashesExact": true,
+  "accepted": false,
+  "reason": "Irrecoverable opening spawn barrel contact with allied-support",
+  "at": "2026-10-30T23:26:09.129Z"
+}

@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "id": "ruin-west-loading",
+      "vertices": 126,
+      "minGap": -1.722979110925165e-30,
+      "maxGap": 7.987022740962857e-7
+    },
+    {
+      "id": "ruin-west-workshop",
+      "vertices": 144,
+      "minGap": -4.5231242535445663e-39,
+      "maxGap": 7.987022740962857e-7
+    },
+    {
+      "id": "ruin-east-window",
+      "vertices": 61,
+      "minGap": 0,
+      "maxGap": 7.987022740962857e-7
+    }
+  ],
+  "diagnostics": {
+    "exactTriangles": 757,
+    "instances": 3,
+    "movementSpanCount": 61,
+    "instanceAABBBroadphase": true
+  },
+  "routeEnvelopeNote": "east clear; west inherited destructible fence, real route acceptance separately required",
+  "newActors": 0,
+  "newAssets": 0,
+  "newMaps": 0,
+  "existingRuinDecodedMipmappedMiB": 64,
+  "existingPrivateCommercialRightsBoundaryUnchanged": true
+}

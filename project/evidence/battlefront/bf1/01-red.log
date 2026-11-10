@@ -1,0 +1,33 @@
+Sat Oct 31 11:17:26 UTC 2026
+✖ independent playable battlefront mission builder exists (2.534354ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 156.216298
+
+✖ failing tests:
+
+test at work/tests/battlefront-depot-front.test.mjs:4:1
+✖ independent playable battlefront mission builder exists (2.534354ms)
+  AssertionError [ERR_ASSERTION]: new playable battlefront builder is missing
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-front.test.mjs:4:81)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+EXIT:1
+Sat Oct 31 11:17:26 UTC 2026

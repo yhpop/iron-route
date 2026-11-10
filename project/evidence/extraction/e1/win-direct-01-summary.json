@@ -1,0 +1,31 @@
+{
+  "name": "win-direct-01",
+  "mode": "win",
+  "inputs": 9190,
+  "tick": 9189,
+  "elapsed": 153.15000000001402,
+  "phase": "won",
+  "cause": "objectives-complete",
+  "route": "direct",
+  "playerHp": 52,
+  "truckHp": 100,
+  "truckArrived": true,
+  "preparation": {
+    "id": "prepare-extraction",
+    "status": "complete",
+    "progress": 1,
+    "elapsed": 18.00000000000026,
+    "completedTick": 1080
+  },
+  "shots": 7,
+  "events": 49,
+  "closureFiles": 32,
+  "specHash": "be443ab70fac10ecd2bf3a9e04cc1a1bddd46545bc6c3201715e2e301fe075c3",
+  "sourceHashesHash": "4502dcf7b00095a950a0374a8315b846a90657cb4bad82a41b39b3d34a78e349",
+  "finalHash": "8ef63ee2ce6e517666914a67d07f3e52e1e6f00c81220e7feeb550b6adc2afa1",
+  "rawSHA256": "458c5034670c74e924d5740c11093c6f548c5e2b73c46d48e409158740bd7a79",
+  "retryProof": false,
+  "fullEvidenceExact": null,
+  "failure": null,
+  "accepted": true
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "provenance": "Original deterministic periodic trigonometric field authored in water-material.js; no third-party images/assets.",
+  "source": "campaign/src/water-material.js",
+  "sourceSHA256": "d4084abc31d5f43ffee11555a4d56497ce0f7a62a2b0c03cda6e77d772314ecc",
+  "size": 256,
+  "files": [
+    {
+      "file": "water-basecolor.png",
+      "sha256": "afad075a186336f236dbfff42f939bd3ae1dbf0813ddb3b9bbacb94752260145",
+      "bytes": 15537,
+      "rawRuntimeRGBA256SHA256": "6dfc9decb76879f13dbbe162b40e98a46b12310195a5109592cfaebfd4486456"
+    },
+    {
+      "file": "water-normal.png",
+      "sha256": "d09799846ae8c688fcb4841ad53bb0aa361f4e00ec7659a4c1d221914f6386c3",
+      "bytes": 146767,
+      "rawRuntimeRGBA256SHA256": "68d74e1444b005c97170d9a8e9b5d9305b56eae6fd2fdd73190f8839f32f72a3"
+    },
+    {
+      "file": "water-roughness.png",
+      "sha256": "90701c2c29afeec2a3d54c7492e5c79d224c44b34bcaa88cf698a0aa37384096",
+      "bytes": 19769,
+      "rawRuntimeRGBA256SHA256": "5e3c00a99c2dd967f1788d6b1fe44bf778bf536e0e8e5ad8846762ecad364580"
+    }
+  ],
+  "material": {
+    "name": "industrial-basin-water",
+    "color": 16777215,
+    "roughness": 0.47,
+    "metalness": 0,
+    "normalScale": [
+      0.8,
+      0.8
+    ],
+    "transparent": false
+  },
+  "uv": {
+    "repeat": [
+      1,
+      1
+    ],
+    "initialOffset": [
+      0,
+      0
+    ],
+    "normalDriftPerSecond": [
+      0.004,
+      0.0015
+    ],
+    "maximumDt": 0.1,
+    "geometryUV": "Existing terrain water UVs are metres / 8; unchanged.",
+    "pngRows": "Vertically reversed relative to DataTexture byte rows for matching Blender UV orientation."
+  },
+  "runtime": {
+    "externalRequests": 0,
+    "customShader": false,
+    "vertexDisplacement": false,
+    "generatedMaps": 3,
+    "mipmappedGpuMiB": 1
+  }
+}

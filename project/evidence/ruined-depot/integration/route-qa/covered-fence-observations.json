@@ -1,0 +1,164 @@
+{
+  "boundary": "Actual accepted covered input-run observations; not a fixture or repaired state",
+  "route": "covered",
+  "finalHash": "dc586e3d3b7a3ec00217424a90c0ad2b1dcc36068e659dd3d19b9298d109588b",
+  "barrierOpenedEvents": [
+    {
+      "id": "event-44",
+      "tick": 2525,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-0",
+      "position": {
+        "x": -22.6,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "event-47",
+      "tick": 2525,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-1",
+      "position": {
+        "x": -20.8,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "event-85",
+      "tick": 8281,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-2",
+      "position": {
+        "x": -19,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "event-93",
+      "tick": 8388,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-3",
+      "position": {
+        "x": -17.200000000000003,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      }
+    },
+    {
+      "id": "event-101",
+      "tick": 8495,
+      "type": "barrier-opened",
+      "entityId": "ridge-fence-4",
+      "position": {
+        "x": -15.400000000000002,
+        "y": 0,
+        "z": 14,
+        "yaw": 0
+      }
+    }
+  ],
+  "hostileFinalStates": [
+    {
+      "id": "road-gun",
+      "hp": 90,
+      "alive": true,
+      "pose": {
+        "x": 23.0095364422716,
+        "y": 0.008000181279063044,
+        "z": -0.19626041150752527,
+        "yaw": 3.1386090375053364,
+        "basis": {
+          "right": [
+            1,
+            3.1421491195832314e-9,
+            0
+          ],
+          "up": [
+            -3.1421491195832314e-9,
+            1,
+            -3.457027767628448e-9
+          ],
+          "forward": [
+            -1.0862496756428512e-17,
+            3.457027767628448e-9,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ridge-gun",
+      "hp": 0,
+      "alive": false,
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      }
+    },
+    {
+      "id": "hostile-flanker",
+      "hp": 0,
+      "alive": false,
+      "pose": {
+        "x": 1.136599795011335,
+        "y": 0.13819142834353418,
+        "z": 15.997423117300794,
+        "yaw": -2.8614186734869858,
+        "basis": {
+          "right": [
+            0.999979247468301,
+            -0.006442408922948565,
+            5.421010862427523e-20
+          ],
+          "up": [
+            0.006434335314009267,
+            0.9987260762573409,
+            -0.050048216078927184
+          ],
+          "forward": [
+            0.00032243107384453826,
+            0.05004717745173653,
+            0.998746802782025
+          ]
+        }
+      }
+    }
+  ],
+  "supply": {
+    "id": "supply",
+    "kind": "truck",
+    "yieldForTankTurn": true,
+    "pose": {
+      "x": 0,
+      "y": 0,
+      "z": -32,
+      "yaw": -1.0714496051148223
+    },
+    "hp": 100,
+    "protected": true,
+    "routeId": "ridge-west",
+    "speed": 0,
+    "escortRange": 19,
+    "team": "allied",
+    "maxHp": 100,
+    "alive": true,
+    "destroyed": false,
+    "status": "arrived",
+    "width": 1.8,
+    "depth": 3.6,
+    "height": 2.2,
+    "routeIndex": 5,
+    "arrived": true,
+    "maxSpeed": 1.15,
+    "stoppedReason": null
+  }
+}

@@ -1,0 +1,25 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {getMission} from '../src/content/index.js';
+import {createGame,stepGame} from '../src/campaign-simulation.js';
+import {createWorld} from '../src/campaign-world.js';
+import {createUI} from '../src/campaign-ui.js';
+import {makeDOM} from './input-dom.mjs';
+const text=node=>node?[node.textContent,...node.children.map(text)].join(' '):'';
+test('real mission207 exposes aimed and damaged movement-locked truck before its escort unlocks',()=>{
+ const spec=getMission('mission-207'),world=createWorld(spec),dom=makeDOM(),ui=createUI({...dom,missions:[spec]});
+ const progress={schema:1,selectedMissionId:spec.id,unlockedIds:[spec.id],bestResults:{}};
+ let state=stepGame(createGame(spec),{start:true},1/60,world);
+ state=stepGame(state,{},1/60,world);
+ assert.equal(state.entities['gun-transfer'].targetId,'second-leg');assert.equal(state.entities['gun-transfer'].status,'charging');
+ assert.equal(state.objectiveStates['first-stop'].status,'active');assert.equal(state.objectiveStates['second-stop'].status,'locked');
+ ui.render(state,spec,progress);
+ let row=dom.mount.querySelector('[data-truck-id="second-leg"]');assert.ok(row,'locked protected truck has its own visible health row');
+ assert.match(text(row),/360/);assert.match(text(row),/待命/);assert.match(text(row),/瞄准/);
+ while(state.tick<146)state=stepGame(state,{},1/60,world);
+ assert.equal(state.entities['second-leg'].hp,348);assert.equal(state.entities['second-leg'].stoppedReason,'objective');
+ ui.render(state,spec,progress);row=dom.mount.querySelector('[data-truck-id="second-leg"]');
+ assert.match(text(row),/348\s*\/\s*360/);assert.match(text(row),/受损/);assert.doesNotMatch(text(row),/瞄准/);
+ assert.match(dom.mount.querySelector('.campaign-objective').textContent,/摧毁标记武器/);
+ ui.dispose();world.dispose();
+});

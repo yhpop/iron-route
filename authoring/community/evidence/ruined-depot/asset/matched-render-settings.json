@@ -1,0 +1,150 @@
+{
+  "baseline": {
+    "gameplay": {
+      "camera": [
+        21.0,
+        -36.0,
+        29.0
+      ],
+      "rotation": [
+        0.9980042576789856,
+        -3.772532153334396e-08,
+        0.5048612952232361
+      ],
+      "orthoScale": 44.0,
+      "resolution": [
+        1400,
+        900
+      ],
+      "lightLocation": [
+        2.0,
+        -10.0,
+        22.0
+      ],
+      "lightEnergy": 4500.0,
+      "lightSize": 14.0,
+      "worldColor": [
+        0.25,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "worldStrength": 0.5,
+      "samples": 24,
+      "denoising": false,
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "closeup": {
+      "camera": [
+        -9.300000190734863,
+        -7.0,
+        3.5
+      ],
+      "rotation": [
+        1.3129080533981323,
+        -8.307154075737344e-09,
+        0.23824472725391388
+      ],
+      "orthoScale": 6.199999809265137,
+      "resolution": [
+        1200,
+        800
+      ],
+      "lightLocation": [
+        2.0,
+        -10.0,
+        22.0
+      ],
+      "lightEnergy": 4500.0,
+      "lightSize": 14.0,
+      "worldColor": [
+        0.25,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "worldStrength": 0.5,
+      "samples": 24,
+      "denoising": false,
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    }
+  },
+  "revised": {
+    "gameplay": {
+      "camera": [
+        21.0,
+        -36.0,
+        29.0
+      ],
+      "rotation": [
+        0.9980042576789856,
+        -3.772532153334396e-08,
+        0.5048612952232361
+      ],
+      "orthoScale": 44.0,
+      "resolution": [
+        1400,
+        900
+      ],
+      "lightLocation": [
+        2.0,
+        -10.0,
+        22.0
+      ],
+      "lightEnergy": 4500.0,
+      "lightSize": 14.0,
+      "worldColor": [
+        0.25,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "worldStrength": 0.5,
+      "samples": 24,
+      "denoising": false,
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "closeup": {
+      "camera": [
+        -9.300000190734863,
+        -7.0,
+        3.5
+      ],
+      "rotation": [
+        1.3129080533981323,
+        -8.307154075737344e-09,
+        0.23824472725391388
+      ],
+      "orthoScale": 6.199999809265137,
+      "resolution": [
+        1200,
+        800
+      ],
+      "lightLocation": [
+        2.0,
+        -10.0,
+        22.0
+      ],
+      "lightEnergy": 4500.0,
+      "lightSize": 14.0,
+      "worldColor": [
+        0.25,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "worldStrength": 0.5,
+      "samples": 24,
+      "denoising": false,
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    }
+  }
+}

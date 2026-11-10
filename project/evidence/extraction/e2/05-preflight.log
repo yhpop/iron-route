@@ -1,0 +1,43 @@
+{
+  "phase": "preflight",
+  "utc": "2026-10-31T15:42:34.715661+00:00",
+  "sourceFileCount": 397,
+  "sourceHeadSHA256": "78dfd10848a94e26a1b37276f853f61041f8fe80bdbfbb55e96c9e9e744e3c84",
+  "all1814Checked": true,
+  "changedBaselineFiles": [
+    "work/locales/en-missions.json",
+    "work/locales/en-ui.json",
+    "work/src/campaign-ui.js",
+    "work/src/main.js",
+    "work/tests/sweep-acceleration-entry.test.mjs"
+  ],
+  "authorizedSourceChanges": [
+    "work/src/main.js",
+    "work/src/campaign-ui.js",
+    "work/locales/en-ui.json",
+    "work/locales/en-missions.json",
+    "work/tests/sweep-acceleration-entry.test.mjs",
+    "work/tests/loading-extraction-entry.test.mjs"
+  ],
+  "E1ManifestSHA256": "c6373fbe913e3907017fc72542b5b53ee04cbeb59497435848f51cc3ad9a5f2e",
+  "E1FileCount": 99,
+  "E1AllExact": true,
+  "archiveCount": 14,
+  "archivesAllExact": true,
+  "U10DiffSHA256": "ac39ea87d298d047d671a794a0bfa1aed730600b7e280c6e1ef6c945ba0e8604",
+  "snapshotPaths": [
+    "work/src/main.js",
+    "work/src/campaign-ui.js",
+    "work/locales/en-ui.json",
+    "work/locales/en-missions.json",
+    "work/tests/sweep-acceleration-entry.test.mjs",
+    "work/tests/loading-extraction-entry.test.mjs",
+    "work/build.mjs",
+    "work/build-english.mjs",
+    "work/package.json",
+    "work/package-lock.json",
+    "work/index.html",
+    "work/scripts/english-localization.mjs"
+  ]
+}
+{"translationFileCount":32,"translationEntryCount":393,"newMissionInventoryComplete":true,"mainSHA256":"11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5","pinConsumers":["tests/sweep-acceleration-entry.test.mjs","tests/sweep-acceleration-entry.test.mjs","tests/sweep-acceleration-entry.test.mjs","tests/sweep-acceleration-entry.test.mjs","scripts/battlefront-bf2-audit.mjs","scripts/inspect-002-opening.mjs"]}

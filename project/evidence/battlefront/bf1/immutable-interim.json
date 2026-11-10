@@ -1,0 +1,14 @@
+{
+  "baselineFiles": 709,
+  "changedPreexisting": [],
+  "newOwnFiles": [
+    "work/qa/battlefront-depot/v02-crossfire-summary.json",
+    "work/qa/battlefront-depot/v02-opening-summary.json",
+    "work/qa/battlefront-depot/v02-crossfire-result.json.gz",
+    "work/qa/battlefront-depot/v02-opening-result.json.gz",
+    "work/qa/battlefront-depot/v01-opening-summary.json",
+    "work/qa/battlefront-depot/v03-crossfire-summary.json",
+    "work/qa/battlefront-depot/v01-opening-result.json.gz",
+    "work/qa/battlefront-depot/v03-crossfire-result.json.gz"
+  ]
+}

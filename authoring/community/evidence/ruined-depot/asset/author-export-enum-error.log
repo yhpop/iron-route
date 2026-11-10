@@ -1,0 +1,161 @@
+Blender 4.3.2
+Read blend: "/workspace/scratch/08f39b8da479/asset_round2_20261031/structures/evidence/lfa-recovered-two-uv-audit.blend"
+Fra:1 Mem:13.28M (Peak 13.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broken-corner
+Fra:1 Mem:13.28M (Peak 13.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | PROOF-ground
+Fra:1 Mem:13.37M (Peak 13.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:13.35M (Peak 13.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading wall.bmp
+Fra:1 Mem:13.35M (Peak 13.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading detail.bmp
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:15.09M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:15.17M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:15.18M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.01 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.01 | Mem:2.04M, Peak:2.04M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.01 | Mem:2.04M, Peak:2.04M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.02 | Mem:2.07M, Peak:2.07M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.02 | Mem:2.09M, Peak:2.12M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:15.22M (Peak 19.37M) | Time:00:00.02 | Mem:2.09M, Peak:2.12M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.09M, Peak:2.12M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.20M, Peak:2.20M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.20M, Peak:2.20M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.20M, Peak:2.20M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.20M, Peak:2.20M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.12M, Peak:2.20M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.21M, Peak:2.21M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.21M, Peak:2.21M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:15.25M (Peak 19.37M) | Time:00:00.02 | Mem:2.21M, Peak:2.21M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:58.54M (Peak 58.54M) | Time:00:00.47 | Remaining:00:10.35 | Mem:45.48M, Peak:45.48M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:77.77M (Peak 116.22M) | Time:00:11.01 | Mem:45.48M, Peak:45.48M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:77.77M (Peak 116.22M) | Time:00:11.01 | Mem:45.48M, Peak:45.48M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/baseline-gameplay.png'
+Time: 00:11.85 (Saving: 00:00.82)
+
+Fra:1 Mem:13.24M (Peak 13.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | PROOF-ground
+Fra:1 Mem:13.24M (Peak 13.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | window-wall
+Fra:1 Mem:13.25M (Peak 13.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:13.24M (Peak 13.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading wall.bmp
+Fra:1 Mem:13.24M (Peak 13.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading detail.bmp
+Fra:1 Mem:15.03M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:15.03M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:15.03M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:15.03M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:15.12M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.02M, Peak:2.02M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.02M, Peak:2.03M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:15.13M (Peak 18.26M) | Time:00:00.02 | Mem:2.02M, Peak:2.03M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.02M, Peak:2.03M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.11M, Peak:2.11M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.11M, Peak:2.11M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.11M, Peak:2.11M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.11M, Peak:2.11M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.03M, Peak:2.11M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:15.14M (Peak 18.26M) | Time:00:00.02 | Mem:2.12M, Peak:2.12M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:48.13M (Peak 48.13M) | Time:00:00.56 | Remaining:00:12.43 | Mem:35.09M, Peak:35.09M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:62.78M (Peak 92.07M) | Time:00:12.05 | Mem:35.09M, Peak:35.09M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:62.78M (Peak 92.07M) | Time:00:12.05 | Mem:35.09M, Peak:35.09M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/baseline-closeup.png'
+Time: 00:12.23 (Saving: 00:00.17)
+
+Fra:1 Mem:255.46M (Peak 255.46M) | Time:00:12.40 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:255.47M (Peak 255.47M) | Time:00:12.40 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:255.51M (Peak 255.51M) | Time:00:12.40 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:255.51M (Peak 255.51M) | Time:00:12.40 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-baseColor
+Fra:1 Mem:255.51M (Peak 255.51M) | Time:00:12.40 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:255.49M (Peak 803.82M) | Time:00:17.34 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:255.49M (Peak 803.82M) | Time:00:17.34 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:17.34 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:17.34 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-baseColor
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:17.34 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:255.49M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:255.49M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | window-wall
+Fra:1 Mem:255.49M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-baseColor
+Fra:1 Mem:255.51M (Peak 803.82M) | Time:00:20.58 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:277.69M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:277.69M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | window-wall
+Fra:1 Mem:277.71M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | workshop
+Fra:1 Mem:277.72M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:277.72M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-roughness
+Fra:1 Mem:277.72M (Peak 803.82M) | Time:00:23.76 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:277.69M (Peak 822.02M) | Time:00:29.48 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:277.69M (Peak 822.02M) | Time:00:29.48 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:29.48 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:29.48 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-roughness
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:29.48 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:277.69M (Peak 822.02M) | Time:00:34.07 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:277.69M (Peak 822.02M) | Time:00:34.07 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:34.07 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:34.07 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-roughness
+Fra:1 Mem:277.72M (Peak 822.02M) | Time:00:34.07 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:296.25M (Peak 822.02M) | Time:00:37.31 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:296.25M (Peak 822.02M) | Time:00:37.31 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:296.28M (Peak 822.02M) | Time:00:37.31 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:296.27M (Peak 822.02M) | Time:00:37.31 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-normal
+Fra:1 Mem:296.27M (Peak 822.02M) | Time:00:37.31 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:296.25M (Peak 844.45M) | Time:00:54.67 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | window-wall
+Fra:1 Mem:296.26M (Peak 844.45M) | Time:00:54.67 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:296.28M (Peak 844.45M) | Time:00:54.67 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:296.28M (Peak 844.45M) | Time:00:54.67 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-normal
+Fra:1 Mem:296.28M (Peak 844.45M) | Time:00:54.67 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Fra:1 Mem:296.26M (Peak 844.46M) | Time:01:05.17 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | broken-corner
+Fra:1 Mem:296.26M (Peak 844.46M) | Time:01:05.17 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | PROOF-ground
+Fra:1 Mem:296.29M (Peak 844.46M) | Time:01:05.17 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:296.29M (Peak 844.46M) | Time:01:05.17 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading depot-normal
+Fra:1 Mem:296.29M (Peak 844.46M) | Time:01:05.17 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading Ciment_brisé.png
+Traceback (most recent call last):
+  File "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/author_ruins.py", line 75, in <module>
+    bpy.ops.export_scene.gltf(filepath=str(ASSET/'ruins.glb'),export_format='GLB',use_selection=True,export_yup=True,export_texcoords=True,export_normals=True,export_materials='EXPORT',export_image_format='PNG',export_extras=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+TypeError: Converting py args to operator properties: enum "PNG" not found in ('AUTO', 'JPEG', 'WEBP', 'NONE')
+Info: Saved "ruins-authoring.blend"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved "ruins-baked-preserved-uv.blend"
+
+Blender quit

@@ -1,0 +1,11 @@
+--- evidence/extraction/e1/run-job.py	2026-10-31 08:08:36.124588718 -0700
++++ evidence/extraction/e2/run-job.py	2026-10-31 08:36:58.954748995 -0700
+@@ -7,7 +7,7 @@
+ ctypes.CDLL(None).prctl(36,1,0,0,0)
+ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+ def identity():
+-    paths=[*ROOT.joinpath('work/src').rglob('*'),*ROOT.joinpath('work/tests').rglob('*'),*ROOT.joinpath('work/scripts').rglob('*'),*OUT.glob('*.py'),*OUT.glob('*.mjs')]
++    paths=[*ROOT.joinpath('work/src').rglob('*'),*ROOT.joinpath('work/tests').rglob('*'),*ROOT.joinpath('work/scripts').rglob('*'),*ROOT.joinpath('work/locales').rglob('*'),*[ROOT/'work'/f for f in ['build.mjs','build-english.mjs','package.json','package-lock.json','index.html']],*OUT.glob('*.py'),*OUT.glob('*.mjs')]
+     return {str(p.relative_to(ROOT)):sha(p) for p in sorted(paths) if p.is_file()}
+ def reap():
+     while True:

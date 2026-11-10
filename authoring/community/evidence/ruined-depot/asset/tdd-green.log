@@ -1,0 +1,14 @@
+✔ ruined depot production interface exists (0.879217ms)
+✔ actual GLB is closed, has three mapped modules, supported embedded PBR and exactly 757 triangles (21.763734ms)
+✔ native geometry load preserves metre bounds and clone shares resources without owning them (43.257109ms)
+✔ invalid bytes and actual missing decoded maps reject rather than create white fallback (34.746055ms)
+✔ external URI, missing embedded map, wrong geometry and missing module fail closed (111.323057ms)
+✔ rejected decoded material releases parsed resources exactly once (38.424171ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 460.30798

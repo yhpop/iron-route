@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-31T16:01:34.615536+00:00",
+  "headFile": {
+    "bytes": 144110,
+    "sha256": "d8f44219164da2e3ea15502f5c39a0ccabf079e5a6a4b9c2fc49de38fa42d96a"
+  },
+  "package": {
+    "bytes": 114153,
+    "sha256": "b032ab283d688e541e254fed0267407e37da294fcfaba19f98cc6cfad6fc131a"
+  },
+  "fileCount": 609,
+  "sourceHead": "452dec8b3e6ed8c85b3b85ca15fc072e73730e7fe3fe2689016d7ff09ccdbc03",
+  "productChangedPaths": [
+    "work/locales/en-missions.json",
+    "work/locales/en-ui.json",
+    "work/src/campaign-ui.js",
+    "work/src/loading-extraction-front.js",
+    "work/src/main.js",
+    "work/tests/battlefront-depot-scope.test.mjs",
+    "work/tests/loading-extraction-entry.test.mjs",
+    "work/tests/loading-extraction.test.mjs",
+    "work/tests/sweep-acceleration-entry.test.mjs"
+  ],
+  "freezeWorker": {
+    "bytes": 10387,
+    "sha256": "41be0809183dfe78481845fb289aac8243238c4a92b17bd392b33ff55fe0bac9"
+  },
+  "freezeWorkerASTParse": true,
+  "noFreezeAttempted": true
+}

@@ -1,0 +1,16 @@
+{
+  "file": "newc-tiger-direct-initial-inputs.json.gz",
+  "inputSHA256": "6abc9b56f4ed7c49b43d9df438d6e6348baccabdca0d426c24f0238d122c5518",
+  "specHash": "a76249e68aa8678e1accccfac18931e080e569fc5add42006b5382ecf02f84c5",
+  "vehicleId": "newc-tiger",
+  "vehicleVersion": 1,
+  "inputs": 9231,
+  "tick": 9230,
+  "phase": "won",
+  "expectedFinalHash": "4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4",
+  "finalHash": "4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4",
+  "hp": 125,
+  "truckHp": 100,
+  "truckArrived": true,
+  "at": "2026-10-30T20:26:05.771Z"
+}

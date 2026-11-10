@@ -1,0 +1,3 @@
+2026-10-31 initial read-only inspection: `ls evidence/battlefront/bf4` failed (directory absent); `cat work/assets/terrain/manifest.json` failed (actual manifest is material-manifest.json). No production writes.
+2026-10-31 initial exploratory closure used nonexistent game.js/combat-world.js roots; replaced before implementation with explicit actual roots and recorded separate discovery closure (30 keys). This discovery count is not the retained BF1 31-key authority.
+2026-10-31 13:58 read-only retained snapshot checker attempted len(j['inputs']) but inputs is an integer; TypeError. Corrected metadata extraction to preserve raw integer. No source/test/runner changes from checker, no simulation.

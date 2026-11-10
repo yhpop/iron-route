@@ -1,0 +1,389 @@
+--- e2BASE/work/src/main.js
++++ e2/work/src/main.js
+@@ -1,10 +1,11 @@
++import {createLoadingExtraction} from './loading-extraction-front.js';
+ import {createBattlefrontDepotFront} from './battlefront-depot-front.js';
+ import {createCrossfireWarfieldView} from './crossfire-warfield-view.js';
+ import {createRuinedDepotFront} from './ruined-depot-front.js';
+ import {createRuinedDepotWorld} from './ruined-depot-world.js';
+ import {createRuinedDepotView} from './ruined-depot-view.js';
+ import {loadRuinedDepotLibrary} from './ruined-depot-loader.js';
+ import {createScannedCoverFront} from './scanned-cover-front.js';
+ import {loadScannedCoverLibrary} from './scanned-cover-loader.js';
+ import {applyScannedCoverView} from './scanned-cover-view.js';
+ import {applyWarVehicleFinish} from './war-vehicle-finish.js';
+@@ -57,44 +58,44 @@
+ function fail(error){showStartupFailure(help,error,startupPhase);console.error(error);}
+ async function boot(){
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,powerPreference:'high-performance'});
+  startupPhase='startup';
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.75));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
+  const audio=createTankAudio();let soundMuted=false;
+  const scene=new THREE.Scene();scene.background=new THREE.Color(0x8eaaa8);scene.fog=new THREE.Fog(0x8eaaa8,55,120);
+  const hemisphere=new THREE.HemisphereLight(0xe3f1ed,0x304b48,2.3);scene.add(hemisphere);const sun=new THREE.DirectionalLight(0xffe2ac,3.1);sun.position.set(-18,28,14);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-26,right:26,top:26,bottom:-26,near:1,far:80});sun.shadow.bias=-.0004;scene.add(sun,sun.target);
+  const camera=new THREE.PerspectiveCamera(42,1,.15,150);const target=new THREE.Vector3();let cameraReady=false;
+  const raycaster=new THREE.Raycaster(),plane=new THREE.Plane(new THREE.Vector3(0,1,0),-.8),hit=new THREE.Vector3();
+- const terrainCombat=createTerrainCombatMission(),ridgeConvoy=createRidgeConvoyMission(),interceptor=createInterceptorMission(),verticalSlice=createVerticalSlice(),scorchedFront=createScorchedFront(),crossfireFront=createCrossfireFront(),crossfireV3=createCrossfireV3Front(),crossfireV4=createCrossfireV4Front(),scannedCover=createScannedCoverFront(),ruinedDepot=createRuinedDepotFront(),battlefrontDepot=createBattlefrontDepotFront();battlefrontDepot.spec=withPlayerVehicle(battlefrontDepot.spec,'sandfalcon');ruinedDepot.spec=withPlayerVehicle(ruinedDepot.spec,'sandfalcon');scannedCover.spec=withPlayerVehicle(scannedCover.spec,'sandfalcon');crossfireV4.spec=withPlayerVehicle(crossfireV4.spec,'sandfalcon');crossfireV3.spec=withPlayerVehicle(crossfireV3.spec,'sandfalcon');crossfireFront.spec=withPlayerVehicle(crossfireFront.spec,'vanguard');scorchedFront.spec=withPlayerVehicle(scorchedFront.spec,'vanguard');
++ const terrainCombat=createTerrainCombatMission(),ridgeConvoy=createRidgeConvoyMission(),interceptor=createInterceptorMission(),verticalSlice=createVerticalSlice(),scorchedFront=createScorchedFront(),crossfireFront=createCrossfireFront(),crossfireV3=createCrossfireV3Front(),crossfireV4=createCrossfireV4Front(),scannedCover=createScannedCoverFront(),ruinedDepot=createRuinedDepotFront(),battlefrontDepot=createBattlefrontDepotFront(),loadingExtraction=createLoadingExtraction();loadingExtraction.spec=withPlayerVehicle(loadingExtraction.spec,'sandfalcon');battlefrontDepot.spec=withPlayerVehicle(battlefrontDepot.spec,'sandfalcon');ruinedDepot.spec=withPlayerVehicle(ruinedDepot.spec,'sandfalcon');scannedCover.spec=withPlayerVehicle(scannedCover.spec,'sandfalcon');crossfireV4.spec=withPlayerVehicle(crossfireV4.spec,'sandfalcon');crossfireV3.spec=withPlayerVehicle(crossfireV3.spec,'sandfalcon');crossfireFront.spec=withPlayerVehicle(crossfireFront.spec,'vanguard');scorchedFront.spec=withPlayerVehicle(scorchedFront.spec,'vanguard');
+  const livingConvoy={...ridgeConvoy,spec:{...ridgeConvoy.spec,id:'living-convoy',livingWorld:true}};
+- const terrainFor=spec=>spec.id===battlefrontDepot.spec.id?battlefrontDepot:spec.id===ruinedDepot.spec.id?ruinedDepot:spec.id===scannedCover.spec.id?scannedCover:spec.id===crossfireV4.spec.id?crossfireV4:spec.id===crossfireV3.spec.id?crossfireV3:spec.id===crossfireFront.spec.id?crossfireFront:spec.id===scorchedFront.spec.id?scorchedFront:spec.id===verticalSlice.spec.id?verticalSlice:spec.livingWorld?ridgeConvoy:spec.id===interceptor.spec.id?interceptor:spec.id===ridgeConvoy.spec.id?ridgeConvoy:terrainCombat;
++ const terrainFor=spec=>spec.id===loadingExtraction.spec.id?loadingExtraction:spec.id===battlefrontDepot.spec.id?battlefrontDepot:spec.id===ruinedDepot.spec.id?ruinedDepot:spec.id===scannedCover.spec.id?scannedCover:spec.id===crossfireV4.spec.id?crossfireV4:spec.id===crossfireV3.spec.id?crossfireV3:spec.id===crossfireFront.spec.id?crossfireFront:spec.id===scorchedFront.spec.id?scorchedFront:spec.id===verticalSlice.spec.id?verticalSlice:spec.livingWorld?ridgeConvoy:spec.id===interceptor.spec.id?interceptor:spec.id===ridgeConvoy.spec.id?ridgeConvoy:terrainCombat;
+  const missions=listMissions(),optionalMissions=listOptionalMissions();let storage;try{storage=localStorage;}catch{}
+  let progress=loadProgress(storage,missions,PROGRESS_NAMESPACE),spec,world,state,worldView,pendingEvents=[],previousTank,lastAim=null,winRecorded=false,disposed=false,input,ui,gestureGuard,artKit,tankView,clock,last=performance.now(),viewStatus='loading',viewError='';
+  let scanView=null,scanLibrary=null,scanLoad=null;
+  let ruinView=null,ruinLibrary=null,ruinLoad=null;
+  // App-owned successful/pending library; an actual decode rejection is retryable.
+  function ensureRuinLibrary(){
+   if(ruinLoad)return ruinLoad;
+   const pending=loadRuinedDepotLibrary().then(library=>{
+    if(disposed){library.dispose();return null;}
+    ruinLibrary=library;return library;
+   },error=>{if(ruinLoad===pending)ruinLoad=null;throw error;});
+   ruinLoad=pending;return pending;
+  }
+  function ensureScanLibrary(){
+   if(scanLoad)return scanLoad;
+   const pending=loadScannedCoverLibrary().then(library=>{if(disposed){library.dispose();return null;}scanLibrary=library;return library;},error=>{if(scanLoad===pending)scanLoad=null;throw error;});
+   scanLoad=pending;return pending;
+  }
+  let originalTankView,playerFinish=null,selectionEpoch=0,muzzleGuidanceState=null,muzzleGuidanceContacts=[];
+  let pendingConvoyOrder=null;const hitFeedback=createCombatFeedback(),objectiveTracker=createObjectiveTracker();
+- const resolveOptional=slug=>slug==='battlefront-depot'?battlefrontDepot.spec:slug==='ruined-depot'?ruinedDepot.spec:slug==='scanned-cover'?scannedCover.spec:slug==='crossfire-v4'?crossfireV4.spec:slug==='crossfire-v3'?crossfireV3.spec:slug==='crossfire-front'?crossfireFront.spec:slug==='scorched-front'?scorchedFront.spec:slug==='vertical-slice'?verticalSlice.spec:slug==='living-convoy'?livingConvoy.spec:slug==='interceptor'?interceptor.spec:slug==='ridge-convoy'?ridgeConvoy.spec:slug==='terrain-combat'?terrainCombat.spec:slug==='crush-flank'?crushFlank:getOptionalMission(slug);
++ const resolveOptional=slug=>slug==='loading-extraction'?loadingExtraction.spec:slug==='battlefront-depot'?battlefrontDepot.spec:slug==='ruined-depot'?ruinedDepot.spec:slug==='scanned-cover'?scannedCover.spec:slug==='crossfire-v4'?crossfireV4.spec:slug==='crossfire-v3'?crossfireV3.spec:slug==='crossfire-front'?crossfireFront.spec:slug==='scorched-front'?scorchedFront.spec:slug==='vertical-slice'?verticalSlice.spec:slug==='living-convoy'?livingConvoy.spec:slug==='interceptor'?interceptor.spec:slug==='ridge-convoy'?ridgeConvoy.spec:slug==='terrain-combat'?terrainCombat.spec:slug==='crush-flank'?crushFlank:getOptionalMission(slug);
+  let launch=resolveLaunch(globalThis.location?.search||'',missions,progress,resolveOptional),entryWarning=false;
+  const targeting=createTargetingView(scene);let occlusion=createPlayerOcclusion(scene);
+  function dispose(){
+   if(disposed)return;disposed=true;clock?.pause();gestureGuard?.dispose();input?.dispose();ui?.dispose();selectionEpoch++;playerFinish?.dispose();playerFinish=null;if(tankView!==originalTankView)tankView?.dispose();originalTankView?.dispose();occlusion.dispose();targeting.dispose();audio.dispose();scanView?.dispose();scanView=null;ruinView?.dispose();ruinView=null;worldView?.dispose();scanLibrary?.dispose();scanLibrary=null;ruinLibrary?.dispose();ruinLibrary=null;artKit?.dispose();world?.dispose();renderer.dispose();
+   window.removeEventListener('resize',resize);window.removeEventListener('blur',blur);document.removeEventListener('visibilitychange',pauseHidden);detachLifecycle();
+  }
+  const detachLifecycle=bindPageLifecycle(window,{pause:()=>{if(state?.phase==='playing')command('pause');},restore:()=>{resize();last=performance.now();updateUI();},dispose});
+  try{
+   startupPhase='assets';
+   artKit=await loadEmbeddedCampaignArt();if(disposed){artKit.dispose();return;}
+@@ -162,34 +163,34 @@
+    if(!disposed&&worldView===loadedView){viewStatus='failed';viewError=error?.message||'图形资源载入失败';if(state.phase==='playing')command('pause');console.error(error);updateUI();}
+   });else viewStatus='ready';
+   if(launch.progressWritable){progress={...progress,selectedMissionId:spec.id};progress.storageAvailable=persistLaunchProgress(launch,storage,progress,PROGRESS_NAMESPACE);}
+   pendingEvents=[];hitFeedback.reset();objectiveTracker.reset();pendingConvoyOrder=null;lastAim=null;winRecorded=false;cameraReady=false;input?.reset({clearAim:true});clock?.pause();audio.setPaused(true);updateUI();
+  }
+  function syncSelection(slug){try{entryWarning=!syncEntryUrl(globalThis.location,globalThis.history,slug,resolveOptional);}catch{entryWarning=true;}updateUI();}
+  function select(id){const selected=getMission(id);if(!selected||!progress.unlockedIds.includes(id))return;loadSelection({optional:false,spec:selected,progressWritable:true});syncSelection(null);}
+  function selectOptionalMission(slug){const selected=getOptionalMission(slug);if(!selected)return;loadSelection({optional:true,spec:selected,progressWritable:false});syncSelection(slug);}
+  let selectingFeatured=false;
+  async function selectFeaturedMission(slug){
+-  if(!['battlefront-depot','ruined-depot','vertical-slice','scorched-front','crossfire-front','crossfire-v3','crossfire-v4'].includes(slug)||selectingFeatured||disposed)return;
++  if(!['loading-extraction','battlefront-depot','ruined-depot','vertical-slice','scorched-front','crossfire-front','crossfire-v3','crossfire-v4'].includes(slug)||selectingFeatured||disposed)return;
+   selectingFeatured=true;const epoch=selectionEpoch;
+   if(state.phase==='playing')command('pause');viewStatus='loading';updateUI();
+   try{
+    if(!artKit.diagnostics?.communityVehicles){artKit=await attachInterceptorArt(artKit,tankView.root);if(disposed){artKit.dispose();return;}}
+    if(selectionEpoch!==epoch)return;
+    loadSelection({optional:true,spec:resolveOptional(slug),progressWritable:false});syncSelection(slug);
+   }catch(error){if(!disposed&&selectionEpoch===epoch){viewStatus='failed';viewError=error?.message||String(error);console.error(error);updateUI();}}
+   finally{selectingFeatured=false;}
+  }
+  function selectPlayerVehicle(id){if(disposed||!spec?.scorchedFront||state.phase!=='briefing'||viewStatus!=='ready')return;const selected=withPlayerVehicle(spec,id);loadSelection({...launch,spec:selected});}
+  function command(action){if(action==='pause')pendingConvoyOrder=null;if(!state||disposed||(['start','resume'].includes(action)&&viewStatus!=='ready'))return;state=stepGame(state,{[action]:true},1/60,world);input.reset();if(state.phase==='playing'){clock.resume();audio.setPaused(false);void audio.unlock();}else {clock.pause();audio.setPaused(true);}updateUI();}
+  input=createInput(canvas,{getTankPose:()=>state?.tank.pose,projectAim(x,y){const rect=canvas.getBoundingClientRect();raycaster.setFromCamera(new THREE.Vector2((x-rect.left)/rect.width*2-1,1-(y-rect.top)/rect.height*2),camera);if(spec?.terrainCombat){const a=raycaster.ray.origin,b=a.clone().addScaledVector(raycaster.ray.direction,200);return world.raycast(a,b,['tank'])?.point||null;}return raycaster.ray.intersectPlane(plane,hit)?boundAim(hit,state?.tank.pose):null;}});
+- ui=createUI({missions,optionalMissions,playerVehicles:listPlayerVehicles(),selectPlayerVehicle,featuredMissions:[{slug:'battlefront-depot',spec:battlefrontDepot.spec},{slug:'ruined-depot',spec:ruinedDepot.spec},{slug:'crossfire-v4',spec:crossfireV4.spec},{slug:'crossfire-v3',spec:crossfireV3.spec},{slug:'crossfire-front',spec:crossfireFront.spec},{slug:'scorched-front',spec:scorchedFront.spec},{slug:'vertical-slice',spec:verticalSlice.spec}],selectFeaturedMission,campaign:{id:CAMPAIGN_ID,title:'手工战役'},soundMuted:()=>soundMuted,toggleSound:()=>{soundMuted=!soundMuted;audio.setMuted(soundMuted);if(!soundMuted&&state.phase==='playing')void audio.unlock();},start:()=>command('start'),pause:()=>command('pause'),resume:()=>command('resume'),retry:()=>loadSelection(launch),selectMission:select,selectOptionalMission,setGovernor:mode=>input.setGovernor(mode),orderConvoy:order=>{pendingConvoyOrder=order;},cycleObjective:()=>{if(objectiveTracker.selectNext())updateUI();}});
++ ui=createUI({missions,optionalMissions,playerVehicles:listPlayerVehicles(),selectPlayerVehicle,featuredMissions:[{slug:'loading-extraction',spec:loadingExtraction.spec},{slug:'battlefront-depot',spec:battlefrontDepot.spec},{slug:'ruined-depot',spec:ruinedDepot.spec},{slug:'crossfire-v4',spec:crossfireV4.spec},{slug:'crossfire-v3',spec:crossfireV3.spec},{slug:'crossfire-front',spec:crossfireFront.spec},{slug:'scorched-front',spec:scorchedFront.spec},{slug:'vertical-slice',spec:verticalSlice.spec}],selectFeaturedMission,campaign:{id:CAMPAIGN_ID,title:'手工战役'},soundMuted:()=>soundMuted,toggleSound:()=>{soundMuted=!soundMuted;audio.setMuted(soundMuted);if(!soundMuted&&state.phase==='playing')void audio.unlock();},start:()=>command('start'),pause:()=>command('pause'),resume:()=>command('resume'),retry:()=>loadSelection(launch),selectMission:select,selectOptionalMission,setGovernor:mode=>input.setGovernor(mode),orderConvoy:order=>{pendingConvoyOrder=order;},cycleObjective:()=>{if(objectiveTracker.selectNext())updateUI();}});
+  gestureGuard=createGameplayGestureGuard(canvas,{onZoom:()=>{if(state?.phase==='playing')command('pause');}});
+  clock=createClock(dt=>{const was=state.phase;previousTank=state.tank;const controls=input.sample();if(pendingConvoyOrder){controls.convoyOrder=pendingConvoyOrder;pendingConvoyOrder=null;}if(controls.aim?.worldPoint)lastAim=controls.aim.worldPoint;state=stepGame(state,controls,dt,world);pendingEvents.push(...state.events);if(state.phase==='won'&&!winRecorded){winRecorded=true;progress=recordLaunchWin(launch,progress,{ticks:state.tick,hp:state.tankCombat.hp},missions);const saved=persistLaunchProgress(launch,storage,progress,PROGRESS_NAMESPACE);if(saved!==null)progress.storageAvailable=saved;}if(state.phase!==was){if(state.phase!=='playing'){clock.pause();audio.setPaused(true);}updateUI();}});
+  loadSelection(launch);
+  function resize(){const w=canvas.clientWidth||innerWidth,h=canvas.clientHeight||innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+  resize();window.addEventListener('resize',resize);
+  function pauseHidden(){if(document.hidden&&state.phase==='playing')command('pause');}
+  function blur(){if(state.phase==='playing')command('pause');}
+  document.addEventListener('visibilitychange',pauseHidden);window.addEventListener('blur',blur);
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();if(state.phase==='playing')command('pause');help.hidden=false;help.textContent='图形连接已暂停。恢复后可继续，若无法恢复请重新打开页面。';});
+  canvas.addEventListener('webglcontextrestored',()=>{help.hidden=true;resize();});
+--- e2BASE/work/src/campaign-ui.js
++++ e2/work/src/campaign-ui.js
+@@ -372,21 +372,24 @@
+     const velocity = Number.isFinite(frame.speedForward) ? frame.speedForward : ((tank.vL || 0) + (tank.vR || 0)) / 2;
+     setText(speed, `${Math.abs(velocity * 3.6).toFixed(1)} km/h${velocity < -0.05 ? ' 倒车' : ''}`);
+     // A blocked turret sweep does not obstruct the accepted muzzle direction.
+     const countdown = (Math.max(1, Math.ceil(combat.reload * 10 - 1e-9)) / 10).toFixed(1);
+     const cycleLabel = combat.magazineSize ? (combat.ammo === 0 ? '整仓装填' : '射击间隔') : '装填';
+     const firingStatus = tank.blocked?.muzzle ? '炮口受阻' : combat.reload > 0 ? `${cycleLabel} ${countdown}s` : '可开火';
+     setText(reload, firingStatus + (state.tankFrame?.travelClearance ? ' · 行驶抬炮' : '') + (tank.blocked?.barrel && !tank.blocked?.muzzle ? ' · 转向受限' : ''));
+     setAttribute(reload, 'data-ready', String(!(combat.reload > 0) && !tank.blocked?.muzzle));
+     const goals = spec?.objectives || [], done = goals.filter(item => complete(state?.objectiveStates?.[item.id])).length;
+     const active = objectiveGuidance?.objective || goals.find(item => state?.objectiveStates?.[item.id]?.status === 'active') || goals.find(item => !complete(state?.objectiveStates?.[item.id]));
+-    setText(objective, active ? `${done}/${goals.length} · ${objectiveText(active)}` : '全部目标完成');
++    // Candidate-only, real simulated hold time; reuse this existing HUD node.
++    const preparation = spec?.loadingExtraction && active?.id === 'prepare-extraction' && !complete(state?.objectiveStates?.[active.id]) && Number.isFinite(active.duration) && active.duration > 0;
++    const activeText = preparation ? `装卸掩护 · ${Math.max(0, active.duration - (state?.objectiveStates?.[active.id]?.elapsed || 0)).toFixed(1)}s` : active && objectiveText(active);
++    setText(objective, active ? `${done}/${goals.length} · ${activeText}` : '全部目标完成');
+     const parallel=objectiveGuidance?.activeCount>1&&!objectiveGuidance.routeChoicePending&&state?.phase==='playing'&&viewStatus==='ready'&&typeof actions.cycleObjective==='function';
+     objective.hidden=parallel;objectiveSwitch.hidden=!parallel;objectiveSwitch.disabled=!canCycleObjective();
+     if(parallel){
+       const rule=objectiveGuidance.freeOrder?'先后自定，全部须完成':'并行目标，全部须完成';
+       setText(objectiveSwitch,`${done}/${goals.length} · ${objectiveText(active)}\n${rule} · Q / 点按切换`);
+       setAttribute(objectiveSwitch,'aria-label',`当前追踪：${objectiveText(active)}。${rule}。按 Q 或点击切换追踪，不改变任务条件。`);
+       setAttribute(objectiveSwitch,'data-tracked-objective',active.id);
+     }
+     const waiting=Object.values(state?.entities||{}).find(e=>e.kind==='truck'&&e.alive&&!e.arrived&&e.stoppedReason);
+     const reasons={'commander-hold':'车队按令待命：敌火仍在，清路后继续护送','tank-away':'补给车等待：请靠近车队','tank':'补给车等待：请让出车道','traffic':'车队正在保持安全间距','obstacle':'补给车前方受阻：请清障或让路','objective':'补给车等待道路放行','route-choice':spec?.convoyChoice?.prompt||'直行选短路（有火力），左转选长路（仓库掩护）；驶入后锁定'};
+--- e2BASE/work/locales/en-ui.json
++++ e2/work/locales/en-ui.json
+@@ -770,20 +770,25 @@
+     },
+     {
+       "source": "'状态'",
+       "target": "'Status'",
+       "occurrences": 2
+     },
+     {
+       "source": "`补给 ${",
+       "target": "`Supply ${",
+       "occurrences": 1
++    },
++    {
++      "source": "装卸掩护 · ",
++      "target": "Cover loading · ",
++      "occurrences": 1
+     }
+   ],
+   "src/threat-warnings.js": [
+     {
+       "source": "`${(Math.max(1, Math.ceil(remaining * 10 - 1e-9)) / 10).toFixed(1)}秒`",
+       "target": "`${(Math.max(1, Math.ceil(remaining * 10 - 1e-9)) / 10).toFixed(1)}s`",
+       "occurrences": 1
+     },
+     {
+       "source": "`${target === 'tank' ? '瞄你' : '瞄车'}${arrow || direction}${timeText(remaining)}`",
+--- e2BASE/work/locales/en-missions.json
++++ e2/work/locales/en-missions.json
+@@ -565,12 +565,34 @@
+     {
+       "source": "破损货场 · 双线接应",
+       "target": "Damaged Freight Yard · Two-Line Escort",
+       "occurrences": 1
+     },
+     {
+       "source": "护送补给车穿过破损货场，到达北侧接应区。东侧硬路短，窗墙和装甲巡逻车封锁侧翼；西侧绕行可借中央山脊与装卸区断墙遮挡炮火。南侧支援车会真实交火，南侧支援车在装填间隙转移。按 H 或点车队待命，先侦察再推进。窗口可通炮弹，人行破口不是坦克通道。友军和残骸会挡住炮弹与车辆；不要把敌车残骸留在车队路线上。无需消灭所有敌人。",
+       "target": "Escort the supply truck through the damaged freight yard to the northern rendezvous. The eastern hard road is shorter, but a window wall and armored patrol cover its flank. The western detour uses the central ridge and broken loading walls to block fire. The southern support vehicle exchanges real fire and moves between reloads. Press H or tap the convoy to hold, scout, then advance. Shells pass through windows; pedestrian breaches are not tank lanes. Allies and wrecks block shells and vehicles: keep enemy wrecks off the convoy route. You need not destroy every enemy.",
+       "occurrences": 1
+     }
++  ],
++  "src/loading-extraction-front.js": [
++    {
++      "source": "'装卸点掩护 · 撤离'",
++      "target": "'Loading-Apron Cover · Extraction'",
++      "occurrences": 1
++    },
++    {
++      "source": "'留在装卸区内掩护装卸，累计守住 18 秒模拟时间；离开会重置尚未完成的准备。准备完成前补给车不能提前出发，完成后驶入东路或西路入口选择撤离路线，再护送补给车到达北侧接应区。按 H 或点车队待命可暂停车队，但待命时敌方炮火仍会继续。东侧硬路短，西侧绕行可借山脊和断墙掩护。补给车被毁或玩家阵亡都会失败；支援车不是护送目标。友军和残骸会挡住炮弹与车辆，无需消灭所有敌人。'",
++      "target": "'Stay inside the loading area and cover loading for 18 simulated seconds. Leaving resets unfinished preparation. The supply truck cannot depart early. Once preparation is complete, drive into the east or west entrance to choose an extraction route, then escort the truck to the northern rendezvous. Press H or tap Convoy Hold to hold the convoy; enemy fire continues during the hold. The eastern hard road is shorter; the western detour offers cover from the ridge and broken walls. Losing the supply truck or your tank means defeat. The support vehicle is not the escort target. Friendly vehicles and wrecks block shells and vehicles. You do not need to destroy every enemy.'",
++      "occurrences": 1
++    },
++    {
++      "source": "'掩护装卸 18 秒'",
++      "target": "'Cover loading for 18 seconds'",
++      "occurrences": 1
++    },
++    {
++      "source": "'护送补给车撤离'",
++      "target": "'Escort the supply truck to extraction'",
++      "occurrences": 1
++    }
+   ]
+ }
+--- e2BASE/work/tests/sweep-acceleration-entry.test.mjs
++++ e2/work/tests/sweep-acceleration-entry.test.mjs
+@@ -1,23 +1,24 @@
+ /** Build/source contracts only: no browser, FPS, or runtime layout claims. */
+ import test from 'node:test';
+ import assert from 'node:assert/strict';
+ import {readFile} from 'node:fs/promises';
+ import {createHash} from 'node:crypto';
+ import {spawnSync} from 'node:child_process';
+ import {fileURLToPath} from 'node:url';
+ import path from 'node:path';
+ const root=fileURLToPath(new URL('../',import.meta.url));
+ const hash=v=>createHash('sha256').update(v).digest('hex');
+-// BF2 authorizes a new optional main entry. BASE.json retains the old identity.
++// Historical original/BF2 identities remain recorded; E2 authorizes only its new optional entry.
+ const originalMainSHA256='9d937baf1d64fcb3409d3e975e1cf836c221e900dea420fdd57741289867e6dc';
+ const frozenCandidateMainSHA256='2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73';
++const loadingExtractionMainSHA256='11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5';
+ let api;
+ try { api=await import('../scripts/sweep-acceleration-plugin.mjs'); } catch(e) { if(e.code!=='ERR_MODULE_NOT_FOUND')throw e; }
+ 
+ test('resolver intercepts only exact ruined specifier from absolute actual main in file namespace',()=>{
+  assert.equal(typeof api?.createSweepAccelerationPlugin,'function','scoped resolver must exist');
+  const plugin=api.createSweepAccelerationPlugin({root});
+  const hooks=[];plugin.setup({onResolve(options,callback){hooks.push({options,callback});}});
+  assert.equal(hooks.length,1);const {options,callback}=hooks[0];assert.equal(options.namespace,'file');
+  const main=path.join(root,'src/main.js'),target=path.join(root,'src/ruined-depot-world-accelerated.js');
+  assert.equal(options.filter.test('./ruined-depot-world.js'),true);
+@@ -28,21 +29,21 @@
+  assert.equal(invoke('./ruined-depot-world.js',main,'virtual-main'),undefined);
+  // A second root is independent: no mutable global dispatch configuration.
+  const second=[];api.createSweepAccelerationPlugin({root:path.join(root,'isolated')}).setup({onResolve(options,callback){second.push(callback);}});
+  assert.equal(second[0]({path:'./ruined-depot-world.js',importer:main,namespace:'file'}),undefined);
+  assert.deepEqual(invoke('./ruined-depot-world.js',main),{path:target});
+ });
+ 
+ test('actual CN and EN build metafiles prove main-only accelerated closure and retain original other worlds',async()=>{
+  const baseline=JSON.parse(await readFile(path.join(root,'../BASE.json'),'utf8'));
+  assert.equal(baseline.files['src/main.js'].sha256,originalMainSHA256,'old performance-task baseline remains recorded');
+- const original=await readFile(path.join(root,'src/main.js'));assert.equal(hash(original),frozenCandidateMainSHA256);
++ const original=await readFile(path.join(root,'src/main.js'));assert.notEqual(loadingExtractionMainSHA256,frozenCandidateMainSHA256);assert.equal(hash(original),loadingExtractionMainSHA256);
+  const mainText=original.toString();assert.match(mainText,/import \{createBattlefrontDepotFront\} from '\.\/battlefront-depot-front.js'/);
+  assert.match(mainText,/slug==='battlefront-depot'\?battlefrontDepot.spec/);
+  assert.match(mainText,/world=spec.ruinedDepot\?createRuinedDepotWorld\(spec,terrainFor\(spec\).field\)/);
+  const {createBattlefrontDepotFront}=await import('../src/battlefront-depot-front.js');
+  const candidate=createBattlefrontDepotFront();assert.equal(candidate.spec.id,'mission-9080');assert.equal(candidate.spec.ruinedDepot,true);
+  for(const [script,directory] of [['build.mjs','dist'],['build-english.mjs','dist-en']]){
+   const result=spawnSync(process.execPath,[script],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024});
+   assert.equal(result.status,0,`${script}\n${result.stdout}\n${result.stderr}`);
+   const manifest=JSON.parse(await readFile(path.join(root,directory,'build-manifest.json'),'utf8'));
+   assert.equal(manifest.browserVerified,false);assert.equal(manifest.runtimeRequestsMeasured,false);
+--- e2BASE/work/tests/loading-extraction-entry.test.mjs (absent)
++++ e2/work/tests/loading-extraction-entry.test.mjs
+@@ -0,0 +1,127 @@
++/** Actual main/production input/clock/simulation + Node fake DOM/GPU boundary.
++ * Explicit boundary fixtures below are NOT natural playthroughs. E1 recordings
++ * remain the natural combat/win/death evidence. No browser/layout/decode claim. */
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import * as THREE from 'three';
++import {readFile} from 'node:fs/promises';
++import {boot,action} from './main-entry-harness.mjs';
++import {createRuinedDepotWorld} from '../src/ruined-depot-world-accelerated.js';
++import {createLoadingExtraction} from '../src/loading-extraction-front.js';
++import {createGame} from '../src/campaign-simulation.js';
++import {createUI} from '../src/campaign-ui.js';
++import {makeDOM} from './input-dom.mjs';
++const settle=()=>new Promise(r=>setImmediate(r));
++const objective=app=>app.mount.querySelector('.campaign-objective').textContent;
++function settings({failures=0,wait,lateView}={}){
++ let loads=0,decorations=0;const worlds=[],terrain=[];
++ return {worlds,terrain,get loads(){return loads;},get decorations(){return decorations;},viewReady:()=>lateView,
++ async loadModule(path){
++  if(path==='./ruined-depot-world.js')return {createRuinedDepotWorld(spec,field){worlds.push({spec,field});return createRuinedDepotWorld(spec,field);}};
++  if(path==='./ruined-depot-loader.js')return {async loadRuinedDepotLibrary(){loads++;await wait;if(loads<=failures)throw new Error('E2 boundary decode rejection');return {clone:()=>new THREE.Group(),dispose(){}};}};
++  if(path==='./scanned-cover-loader.js')return {loadScannedCoverLibrary:async()=>({clone:()=>new THREE.Group(),dispose(){}})};
++  if(path==='./scanned-cover-view.js')return {applyScannedCoverView:()=>({dispose(){}})};
++  if(path==='./ruined-depot-view.js'){const real=await import('../src/ruined-depot-view.js');return {createRuinedDepotView(...args){decorations++;return real.createRuinedDepotView(...args);}};}
++  if(path==='./terrain-candidate/relief-view.js')return {createReliefView(_root,field,options){terrain.push({field,options});return {dispose(){}};}};
++  if(path==='./player-model-loader.js')return {loadPlayerModel:async()=>({root:{visible:true},update(){},dispose(){}})};
++  if(path==='./interceptor-art-loader.js')return {attachInterceptorArt:async b=>b};
++  return import(new URL(path,new URL('../src/main.js',import.meta.url)));
++ }};
++}
++function requireCandidate(app){assert.equal(app.latest.spec.id,'mission-9090');assert.equal(app.latest.spec.loadingExtraction,true);}
++function tick(app,n=1){for(let i=0;i<n;i++)app.frame();}
++function neutral(app){assert.equal(app.metrics.lastControls.throttle,0);assert.equal(app.metrics.lastControls.steer,0);assert.equal(app.metrics.lastControls.boost,false);assert.equal(app.metrics.lastControls.firePressed,false);}
++function hold(app){for(const code of ['KeyW','KeyD','ShiftLeft','KeyF'])app.window.dispatch('keydown',{code});}
++
++test('real optional featured selection and direct slug bind own builder field, inherited dispatch, URL and no save writes',async()=>{
++ const b=settings(),app=await boot('?keep=x#stay',undefined,b),writes=app.storage.writes.length,bytes=[...app.storage.values];try{
++  action(app,'open-missions').dispatch('click');const card=app.mount.querySelector('[data-featured-slug="loading-extraction"]');assert.ok(card,'new featured card');card.dispatch('click');await settle();requireCandidate(app);
++  assert.equal(app.latest.spec.slug,'loading-extraction');assert.equal(app.latest.spec.playerVehicle.id,'sandfalcon');assert.equal(app.latest.spec.objectives[0].duration,18);
++  for(const flag of ['optional','battlefrontDepot','ruinedDepot','scannedCover','crossfireFront','terrainCombat'])assert.equal(app.latest.spec[flag],true,flag);
++  assert.equal(app.location.search,'?keep=x&sortie=loading-extraction');assert.equal(app.location.hash,'#stay');assert.equal(app.storage.writes.length,writes);assert.deepEqual([...app.storage.values],bytes);assert.equal(app.latest.status.viewStatus,'ready');
++  app.metrics.viewOptions.terrainFactory(new THREE.Group());assert.equal(b.terrain[0].field,b.worlds[0].field);assert.deepEqual(b.worlds[0].field,createLoadingExtraction().field);assert.equal(b.worlds[0].spec.id,'mission-9090');
++  assert.equal(app.metrics.viewOptions.suppressZoneBoundaries,true);assert.equal(b.terrain[0].options.appearance,'battlefront');assert.equal(app.latest.status.routeLabels.length,0);
++ }finally{app.dispose();}
++ const direct=await boot('?sortie=loading-extraction',undefined,settings());try{await settle();requireCandidate(direct);assert.equal(direct.historyCalls.length,0);assert.equal(direct.storage.writes.length,0);}finally{direct.dispose();}
++});
++
++test('real preparation ticks, actual main pause/resume/lifecycle freeze and held-input release',async()=>{
++ const app=await boot('?sortie=loading-extraction',undefined,settings());try{await settle();requireCandidate(app);assert.equal(objective(app),'0/2 · 装卸掩护 · 18.0s');app.uiActions.start();tick(app,12);
++  const elapsed=app.latest.state.objectiveStates['prepare-extraction'].elapsed;assert.ok(elapsed>0);assert.ok(elapsed<1);assert.equal(objective(app),`0/2 · 装卸掩护 · ${(18-elapsed).toFixed(1)}s`);
++  assert.equal(app.latest.state.selectedConvoyChoiceId,null);assert.equal(app.latest.state.entities.supply.pose.z,28);assert.equal(app.latest.status.objectiveGuidance.target.id,'loading-area');
++  for(const pause of [()=>app.uiActions.pause(),()=>app.window.dispatch('blur'),()=>{app.document.hidden=true;app.document.dispatch('visibilitychange');},()=>app.window.dispatch('pagehide',{persisted:true})]){
++   hold(app);app.uiActions.orderConvoy('hold');pause();assert.equal(app.latest.state.phase,'paused');assert.equal(app.metrics.inputEnabled,false);const frozen=structuredClone(app.latest.state),text=objective(app);tick(app,5);assert.deepEqual(app.latest.state,frozen);assert.equal(objective(app),text);
++   app.document.hidden=false;app.window.dispatch('pageshow',{persisted:true});app.uiActions.resume();tick(app);neutral(app);assert.notEqual(app.latest.state.convoyOrder,'hold');
++  }
++ }finally{app.dispose();}
++});
++
++test('BOUNDARY FIXTURES: real main ticks reset unfinished hold outside zone and replace countdown at escort activation',async()=>{
++ const app=await boot('?sortie=loading-extraction',undefined,settings());try{await settle();requireCandidate(app);app.uiActions.start();tick(app,8);assert.ok(app.latest.state.objectiveStates['prepare-extraction'].elapsed>0);
++  app.latest.state.tank.pose.x=5;tick(app);assert.equal(app.latest.state.objectiveStates['prepare-extraction'].elapsed,0);assert.equal(objective(app),'0/2 · 装卸掩护 · 18.0s');
++  app.latest.state.tank.pose.x=0;app.latest.state.objectiveStates['prepare-extraction'].elapsed=18-1/60;tick(app);assert.equal(app.latest.state.objectiveStates['prepare-extraction'].status,'complete');assert.equal(app.latest.state.objectiveStates['escort-supply'].status,'active');assert.equal(objective(app),'1/2 · 护送补给车撤离');assert.doesNotMatch(objective(app),/\d\.\ds/);
++  app.uiActions.pause();app.uiActions.retry();await settle();assert.equal(objective(app),'0/2 · 装卸掩护 · 18.0s');assert.equal(app.latest.state.objectiveStates['prepare-extraction'].elapsed,0);
++ }finally{app.dispose();}
++});
++
++for(const cause of ['tank-destroyed','protected-vehicle-destroyed'])test(`BOUNDARY FIXTURE: actual main ${cause} classification/retry restores full fresh state and clears held commands`,async()=>{
++ const app=await boot('?sortie=loading-extraction',undefined,settings());try{await settle();requireCandidate(app);const fresh=structuredClone(app.latest.state);app.uiActions.start();tick(app,6);hold(app);app.uiActions.orderConvoy('hold');
++  // Test-only HP/pose/choice fixtures isolate retry. These are not natural deaths.
++  app.latest.state.tank.pose.x=5;app.latest.state.selectedConvoyChoiceId='direct';app.latest.state.entities.supply.routeIndex=1;
++  if(cause==='tank-destroyed')app.latest.state.tankCombat.hp=0;else {app.latest.state.entities.supply.hp=0;app.latest.state.entities.supply.alive=false;}
++  tick(app);assert.equal(app.latest.state.phase,'lost');assert.equal(app.latest.state.result.cause,cause);assert.equal(app.metrics.inputEnabled,false);
++  app.uiActions.retry();await settle();assert.deepEqual(app.latest.state,fresh);assert.equal(app.storage.writes.length,0);assert.equal(app.latest.spec.id,'mission-9090');app.uiActions.start();tick(app);neutral(app);assert.notEqual(app.latest.state.convoyOrder,'hold');assert.equal(app.latest.state.selectedConvoyChoiceId,null);assert.equal(app.latest.state.entities.supply.routeIndex,null);assert.equal(app.latest.state.objectiveStates['prepare-extraction'].elapsed,1/60);
++ }finally{app.dispose();}
++});
++
++test('new direct entry retries rejected loader and reuses successful app-owned cache',async()=>{
++ let release;const wait=new Promise(r=>release=r),b=settings({failures:1,wait}),app=await boot('?sortie=loading-extraction',undefined,b);try{requireCandidate(app);release();await settle();assert.equal(app.latest.status.viewStatus,'failed');app.uiActions.start();assert.equal(app.latest.state.phase,'briefing');app.uiActions.retry();await settle();assert.equal(app.latest.status.viewStatus,'ready');assert.equal(b.loads,2);app.uiActions.retry();await settle();assert.equal(b.loads,2);assert.equal(app.latest.status.viewStatus,'ready');}finally{release();app.dispose();}
++});
++test('new entry async loading readiness discards stale selection and disposal decorations',async()=>{
++ let release;const wait=new Promise(r=>release=r),b=settings({wait,lateView:wait}),app=await boot('?sortie=loading-extraction',undefined,b);try{requireCandidate(app);assert.equal(app.latest.status.viewStatus,'loading');assert.equal(b.decorations,0);app.uiActions.selectMission('crafted20-002');release();await settle();assert.equal(app.latest.spec.id,'crafted20-002');assert.equal(b.decorations,0);await app.uiActions.selectFeaturedMission('loading-extraction');await settle();assert.equal(app.latest.status.viewStatus,'ready');assert.equal(b.decorations,1);}finally{release();app.dispose();}
++ let release2;const wait2=new Promise(r=>release2=r),b2=settings({wait:wait2,lateView:wait2}),disposed=await boot('?sortie=loading-extraction',undefined,b2);requireCandidate(disposed);disposed.dispose();release2();await settle();assert.equal(b2.decorations,0);
++});
++
++test('candidate-only readout uses definition duration/state elapsed, handles briefing, clamps zero and preserves exact old text',async()=>{
++ const dom=makeDOM(),ui=createUI(dom),{spec}=createLoadingExtraction(),state=createGame(spec);try{
++  ui.render(state,spec,{});assert.equal(objective(dom),'0/2 · 装卸掩护 · 18.0s');state.objectiveStates['prepare-extraction'].elapsed=4.25;spec.objectives[0].duration=20;ui.render(state,spec,{});assert.equal(objective(dom),'0/2 · 装卸掩护 · 15.8s');state.objectiveStates['prepare-extraction'].elapsed=21;ui.render(state,spec,{});assert.equal(objective(dom),'0/2 · 装卸掩护 · 0.0s');
++  delete spec.loadingExtraction;ui.render(state,spec,{});assert.equal(objective(dom),'0/2 · 掩护装卸 18 秒');
++ }finally{ui.dispose();}
++ for(const [search,id,text] of [
++  ['','crafted20-002','0/2 · 绕到装甲侧面，清除仓库炮位'],
++  ['?sortie=battlefront-depot','mission-9080','0/2 · 接应补给车，驶入东西集结圈选路'],
++  ['?sortie=ruined-depot','mission-9070','0/2 · 接应补给车，驶入东西集结圈选路'],
++  ['?sortie=scanned-cover','mission-9060','0/2 · 接应补给车，驶入东西集结圈选路'],
++  ['?sortie=warehouse-fork','mission-9001','0/3 · 突破标记路障']]){
++  const app=await boot(search,undefined,settings());try{await settle();assert.equal(app.latest.spec.id,id);assert.equal(objective(app),text);}finally{app.dispose();}
++ }
++});
++
++test('actual production English modules translate new source/menu/readout and preserve default and old URLs',async()=>{
++ const {bootEnglish,englishModules}=await import('./english-test-modules.mjs');const old=englishModules['./scanned-cover-view.js'];englishModules['./scanned-cover-view.js']={applyScannedCoverView:()=>({dispose(){}})};
++ try{const app=await bootEnglish('?sortie=loading-extraction');try{
++   await settle();requireCandidate(app);const fresh=structuredClone(app.latest.state);
++   assert.equal(app.latest.spec.title,'Loading-Apron Cover · Extraction');assert.equal(app.latest.spec.objectives[0].title,'Cover loading for 18 seconds');assert.equal(objective(app),'0/2 · Cover loading · 18.0s');
++   app.uiActions.start();tick(app,6);assert.equal(objective(app),`0/2 · Cover loading · ${(18-app.latest.state.objectiveStates['prepare-extraction'].elapsed).toFixed(1)}s`);
++   hold(app);app.uiActions.pause();const frozen=structuredClone(app.latest.state),text=objective(app);tick(app,5);assert.deepEqual(app.latest.state,frozen);assert.equal(objective(app),text);app.uiActions.resume();tick(app);neutral(app);
++   // English production modules; explicitly labeled pose/elapsed boundary fixtures.
++   app.latest.state.tank.pose.x=5;tick(app);assert.equal(app.latest.state.objectiveStates['prepare-extraction'].elapsed,0);assert.equal(objective(app),'0/2 · Cover loading · 18.0s');
++   app.latest.state.tank.pose.x=0;app.latest.state.objectiveStates['prepare-extraction'].elapsed=18-1/60;tick(app);assert.equal(app.latest.state.objectiveStates['escort-supply'].status,'active');assert.equal(objective(app),'1/2 · Escort the supply truck to extraction');assert.doesNotMatch(objective(app),/\d\.\ds/);
++   app.uiActions.pause();app.uiActions.retry();await settle();assert.deepEqual(app.latest.state,fresh);assert.equal(objective(app),'0/2 · Cover loading · 18.0s');
++   action(app,'open-missions').dispatch('click');assert.ok(app.mount.querySelector('[data-featured-slug="loading-extraction"]'));assert.doesNotMatch(app.mount.textContent+app.latest.spec.briefing,/\p{Script=Han}/u);
++  }finally{app.dispose();}
++  for(const [search,id,text] of [
++   ['','crafted20-002','0/2 · Flank the armor and destroy the warehouse gun'],
++   ['?sortie=battlefront-depot','mission-9080','0/2 · Meet the supply truck and enter a route assembly circle'],
++   ['?sortie=ruined-depot','mission-9070','0/2 · Meet the supply truck and enter a route assembly circle'],
++   ['?sortie=scanned-cover','mission-9060','0/2 · Meet the supply truck and enter a route assembly circle'],
++   ['?sortie=warehouse-fork','mission-9001','0/3 · Break through the marked barrier']]){
++   const app=await bootEnglish(search);try{await settle();assert.equal(app.latest.spec.id,id);assert.equal(objective(app),text);}finally{app.dispose();}
++  }
++ }finally{englishModules['./scanned-cover-view.js']=old;}
++});
++
++test('English inventory completely covers new source and all actual main Han literals before final production build',async()=>{
++ const {englishInventory,prepareEnglishSource}=await import('../scripts/english-localization.mjs');assert.ok(englishInventory['src/loading-extraction-front.js']);
++ for(const file of ['src/main.js','src/campaign-ui.js','src/loading-extraction-front.js']){const source=await readFile(new URL('../'+file,import.meta.url),'utf8');assert.doesNotMatch(prepareEnglishSource(file,source),/\p{Script=Han}/u);}
++});
+--- e2BASE/work/tests/battlefront-depot-scope.test.mjs
++++ e2/work/tests/battlefront-depot-scope.test.mjs
+@@ -1,7 +1,12 @@
+ /** Frozen BF1 physics/gameplay/assets/HUD ownership contract. */
+ import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+ const base=JSON.parse(readFileSync(new URL('../../evidence/battlefront/sdd/bf2-base-head.json',import.meta.url))),allowed=new Set(['src/main.js','src/campaign-view.js','src/ruined-depot-view.js','src/crossfire-warfield-view.js','src/terrain-candidate/relief-view.js','locales/en-missions.json','tests/sweep-acceleration-entry.test.mjs']);
++// Controller-authorized E2 readout/localization only: current AND original bytes bound.
++const e2Presentation={
++ 'src/campaign-ui.js':{current:'394761e2d1fa51f57fb07fa3d0d2176b376d3d681b24fb0ed391b4aa270f8567',before:'ac5e7801558b3fb9e8a99a950d687e344fb33303d20af5ee95a752a3b0f38c2f'},
++ 'locales/en-ui.json':{current:'c58168fd5a0b8562a3d9c64d03e4abd2435fcf66354dbc96d2fe56b56759147e',before:'91a1095c101bfb4973a02df426617af6fa2a3fc33891e29e90cc93a88325b5ce'}
++};
+ test('BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings',()=>{
+  // Controller-authorized G2-only view replacement: not a broad allowlist bypass.
+- const changed=[];for(const [file,info]of Object.entries(base.workFiles)){if(allowed.has(file))continue;const hash=createHash('sha256').update(readFileSync(new URL('../'+file,import.meta.url))).digest('hex');if(file==='src/authored-scene-view.js'){assert.equal(hash,'56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab','authorized grounded candidate view');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/authored-scene-view.before.js',import.meta.url))).digest('hex');assert.equal(original,'2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c');assert.equal(original,info.sha256,'preserved original BF2 view identity');continue;}if(file==='tests/crossfire-v4-front.test.mjs'){assert.equal(hash,'95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd','authorized V4 identity-guard adaptation');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/old-guards/crossfire-v4-front.test.mjs',import.meta.url))).digest('hex');assert.equal(original,'6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da');assert.equal(original,info.sha256,'preserved original V4 guard identity');continue;}if(hash!==info.sha256)changed.push(file);}assert.deepEqual(changed,[]);
++ const changed=[];for(const [file,info]of Object.entries(base.workFiles)){if(allowed.has(file))continue;const hash=createHash('sha256').update(readFileSync(new URL('../'+file,import.meta.url))).digest('hex');if(e2Presentation[file]){const binding=e2Presentation[file];assert.equal(hash,binding.current,'exact authorized E2 presentation '+file);const original=createHash('sha256').update(readFileSync(new URL('../../evidence/extraction/sdd/e2-base-source/work/'+file,import.meta.url))).digest('hex');assert.equal(original,binding.before,'preserved E2 original '+file);assert.equal(original,info.sha256,'preserved original BF2 identity '+file);continue;}if(file==='src/authored-scene-view.js'){assert.equal(hash,'56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab','authorized grounded candidate view');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/authored-scene-view.before.js',import.meta.url))).digest('hex');assert.equal(original,'2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c');assert.equal(original,info.sha256,'preserved original BF2 view identity');continue;}if(file==='tests/crossfire-v4-front.test.mjs'){assert.equal(hash,'95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd','authorized V4 identity-guard adaptation');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/old-guards/crossfire-v4-front.test.mjs',import.meta.url))).digest('hex');assert.equal(original,'6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da');assert.equal(original,info.sha256,'preserved original V4 guard identity');continue;}if(hash!==info.sha256)changed.push(file);}assert.deepEqual(changed,[]);
+ });

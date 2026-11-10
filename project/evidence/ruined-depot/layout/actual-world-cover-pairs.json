@@ -1,0 +1,179 @@
+{
+  "boundary": "Actual complete new-mission world segment fixtures. Real wall blocks / real window passes / sill blocks. Not injected projectile or input-only win.",
+  "coverPairs": [
+    {
+      "id": "ruin-west-loading",
+      "label": "solid-jamb",
+      "from": {
+        "x": -31.75,
+        "y": 1.4,
+        "z": 16
+      },
+      "to": {
+        "x": -31.75,
+        "y": 1.4,
+        "z": 10
+      },
+      "hit": {
+        "fraction": 0.463672399520874,
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "id": "ruin-west-loading",
+        "colliderId": "ruin-west-loading",
+        "triangleIndex": 43,
+        "distance": 2.782034397125244,
+        "point": {
+          "x": -31.75,
+          "y": 1.4,
+          "z": 13.217965602874756
+        },
+        "position": {
+          "x": -31.75,
+          "y": 1.4,
+          "z": 13.217965602874756
+        }
+      }
+    },
+    {
+      "id": "ruin-west-loading",
+      "label": "window",
+      "from": {
+        "x": -32.75,
+        "y": 1.4,
+        "z": 16
+      },
+      "to": {
+        "x": -32.75,
+        "y": 1.4,
+        "z": 10
+      },
+      "hit": null
+    },
+    {
+      "id": "ruin-west-loading",
+      "label": "window-sill",
+      "from": {
+        "x": -32.75,
+        "y": 0.3,
+        "z": 16
+      },
+      "to": {
+        "x": -32.75,
+        "y": 0.3,
+        "z": 10
+      },
+      "hit": {
+        "fraction": 0.463672399520874,
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "id": "ruin-west-loading",
+        "colliderId": "ruin-west-loading",
+        "triangleIndex": 105,
+        "distance": 2.782034397125244,
+        "point": {
+          "x": -32.75,
+          "y": 0.3,
+          "z": 13.217965602874756
+        },
+        "position": {
+          "x": -32.75,
+          "y": 0.3,
+          "z": 13.217965602874756
+        }
+      }
+    },
+    {
+      "id": "ruin-east-window",
+      "label": "solid-jamb",
+      "from": {
+        "x": 17.5,
+        "y": 1.4,
+        "z": -1.7500000000000002
+      },
+      "to": {
+        "x": 21.5,
+        "y": 1.4,
+        "z": -1.7499999999999998
+      },
+      "hit": {
+        "fraction": 0.4433349594473839,
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "id": "ruin-east-window",
+        "colliderId": "ruin-east-window",
+        "triangleIndex": 98,
+        "distance": 1.7733398377895355,
+        "point": {
+          "x": 19.273339837789536,
+          "y": 1.4,
+          "z": -1.75
+        },
+        "position": {
+          "x": 19.273339837789536,
+          "y": 1.4,
+          "z": -1.75
+        }
+      }
+    },
+    {
+      "id": "ruin-east-window",
+      "label": "window",
+      "from": {
+        "x": 17.5,
+        "y": 1.4,
+        "z": -2.75
+      },
+      "to": {
+        "x": 21.5,
+        "y": 1.4,
+        "z": -2.75
+      },
+      "hit": null
+    },
+    {
+      "id": "ruin-east-window",
+      "label": "window-sill",
+      "from": {
+        "x": 17.5,
+        "y": 0.3,
+        "z": -2.75
+      },
+      "to": {
+        "x": 21.5,
+        "y": 0.3,
+        "z": -2.75
+      },
+      "hit": {
+        "fraction": 0.4433349594473839,
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "id": "ruin-east-window",
+        "colliderId": "ruin-east-window",
+        "triangleIndex": 115,
+        "distance": 1.7733398377895355,
+        "point": {
+          "x": 19.273339837789536,
+          "y": 0.3,
+          "z": -2.75
+        },
+        "position": {
+          "x": 19.273339837789536,
+          "y": 0.3,
+          "z": -2.75
+        }
+      }
+    }
+  ]
+}

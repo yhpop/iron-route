@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.21.0",
+    "esbuild": "0.28.2",
+    "three": "0.186.1"
+  },
+  "name": "iron-route-campaign-preview",
+  "version": "0.8.2-preview.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

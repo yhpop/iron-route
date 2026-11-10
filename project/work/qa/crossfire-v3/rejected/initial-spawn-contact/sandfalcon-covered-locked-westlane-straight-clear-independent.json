@@ -1,0 +1,14 @@
+{
+  "file": "sandfalcon-covered-locked-westlane-straight-clear-inputs.json.gz",
+  "inputSHA256": "3fbe73054886dfdd7c20b30fba2eb5d5a507652b93a4f9ecd48b0d8da696a883",
+  "phase": "playing",
+  "tick": 244,
+  "inputs": 245,
+  "fullStateExact": true,
+  "finalHash": "6a6d48df77b7a0dfeb03d02607c31e75f43a56e0cf5dcde9758831e21b9da219",
+  "specHash": "f0b17f9d14cb54161fb98ccc66f9da6cc34a50a55cc6f22bd0a95aea37244691",
+  "sourceHashesExact": true,
+  "accepted": false,
+  "reason": "Irrecoverable opening spawn barrel contact with allied-support",
+  "at": "2026-10-30T23:26:00.412Z"
+}

@@ -1,0 +1,91 @@
+assetSHA 6c0748ab179e824f68fbf5ef339cefef9c9b1877628281ee300e405d66ef83c7
+bytes 12332368
+image stats [
+  {
+    "index": 0,
+    "name": "normal",
+    "role": "tangent-normal",
+    "mimeType": "image/png",
+    "width": 2048,
+    "height": 2048,
+    "embeddedBytes": 3370913,
+    "sha256": "c61ffb3f505939690bed9f5c465cadeeae1d0ff885f6e1cc1f80ec1c077fafc5",
+    "rgbExtrema": [
+      [
+        64,
+        177
+      ],
+      [
+        69,
+        194
+      ],
+      [
+        220,
+        255
+      ]
+    ],
+    "rgbStandardDeviation": [
+      3.1341657676536756,
+      2.902489586206728,
+      0.6739422231684011
+    ]
+  },
+  {
+    "index": 1,
+    "name": "baseColor",
+    "role": "base-colour",
+    "mimeType": "image/png",
+    "width": 2048,
+    "height": 2048,
+    "embeddedBytes": 6308529,
+    "sha256": "a8c7b320f5d56f3b4b57303802064958a2ab5df87e16718ad1b26c00d59490f2",
+    "rgbExtrema": [
+      [
+        0,
+        220
+      ],
+      [
+        0,
+        226
+      ],
+      [
+        0,
+        237
+      ]
+    ],
+    "rgbStandardDeviation": [
+      69.13745702034743,
+      70.91787750401154,
+      70.88606796657287
+    ]
+  },
+  {
+    "index": 2,
+    "name": "roughness",
+    "role": "roughness-green-metallic-blue",
+    "mimeType": "image/png",
+    "width": 2048,
+    "height": 2048,
+    "embeddedBytes": 2610029,
+    "sha256": "8e33866637ada1a18afdee19ef02ba04cc552a9fb9942b3796a3238184674204",
+    "rgbExtrema": [
+      [
+        255,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "rgbStandardDeviation": [
+      0.0,
+      100.35063793218094,
+      0.0
+    ]
+  }
+]

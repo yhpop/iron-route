@@ -1,0 +1,203 @@
+--- approved-g2-base/work/src/authored-scene-view.js
++++ grounded-g2/work/src/authored-scene-view.js
+@@ -1,3 +1,4 @@
++import {applyBattlefrontBuildingFinish} from './battlefront-building-finish.js';
+ import {applyWarVehicleFinish} from './war-vehicle-finish.js';
+ import {createCrossfireEffects} from './crossfire-effects.js';
+ import {updateInterceptorRunningGear,updateInterceptorWreck} from './interceptor-art.js';
+@@ -9,7 +10,7 @@
+ /** Authored art is an adapter, never a source of collision or simulation state. */
+ export function createAuthoredSceneView(scene,spec,artKit){
+  if(!artKit?.clone)throw new Error('Crafted campaign requires a loaded art kit');
+- const root=new THREE.Group();root.name='authored-scene-art';const solids=new Map(),entities=new Map(),rigs=new Map(),walls=[],traces=new Map(),owned=[],finishes=[];let disposed=false,details=null,crossfire=null;const crushViews=new Map();
++ const root=new THREE.Group();root.name='authored-scene-art';const solids=new Map(),entities=new Map(),rigs=new Map(),walls=[],traces=new Map(),owned=[],finishes=[],buildingFinishes=[];let disposed=false,details=null,crossfire=null;const crushViews=new Map();
+  const landmarks=new Map((spec.sceneDressing?.landmarks||[]).map(l=>[l.geometryId,l]));
+  for(const id of landmarks.keys())if(!spec.geometry.some(c=>c.id===id))throw new Error(`Art landmark references absent collider: ${id}`);
+  try{
+@@ -17,12 +18,12 @@
+    if(c.crush){const view=createCrushableView(c);walls.push(view);crushViews.set(c.id,view);object=view.root;}
+    else if(landmark){if(c.kind==='circle'||c.width<5.2||c.depth<5.2)throw new Error(`Building ${c.id} has a narrow/non-box collider; do not stretch building art`);object=new THREE.Group();object.name=`solid:${c.id}`;object.position.set(c.x,c.y||0,c.z);object.rotation.y=c.yaw||0;object.scale.set(c.width/8,c.height/4,c.depth/8);const model=artKit.clone(landmark.assetKey);const offset=landmark.yawOffset||0;if(Math.abs(Math.sin(offset*2))>1e-7)throw new Error(`Building ${c.id} yawOffset must be a quarter turn to preserve its collider footprint`);model.rotation.y=offset;object.add(model);}
+    else {if(c.kind==='circle')throw new Error(`Crafted circular solid has no authored art: ${c.id}`);const wall=createWallView(c,{appearance:spec.crossfireFront?'crossfire':'default'});walls.push(wall);object=wall.root;}
+-   root.add(object);solids.set(c.id,object);
++   root.add(object);solids.set(c.id,object);if(spec.battlefrontDepot&&c.id==='south-depot'&&landmark?.assetKey==='warehouse-sawtooth')buildingFinishes.push(applyBattlefrontBuildingFinish(object,{id:c.id}));
+   }
+   // Distant district context is explicitly outside the physics bounds. A low
+   // retaining edge makes the real movement limit legible, not a floating map.
+   const b=spec.bounds,cx=(b.minX+b.maxX)/2,cz=(b.minZ+b.maxZ)/2,context=new THREE.Group();context.name='outside-industrial-context';root.add(context);
+-  for(const [i,x,z,yaw]of [[0,b.minX-13,cz-18,Math.PI/2],[1,b.minX-16,cz+19,Math.PI/2],[2,b.maxX+15,cz-16,-Math.PI/2],[3,b.maxX+13,cz+21,-Math.PI/2],[4,cx-18,b.minZ-15,Math.PI],[5,cx+17,b.minZ-14,Math.PI]]){const o=artKit.clone(i%3===0?'warehouse-sawtooth':i%3===1?'pump-station':'service-workshop');o.position.set(x,0,z);o.rotation.y=yaw;o.scale.set(1.5,1.05,1.6);o.userData.collision='none-outside-bounds';context.add(o);}
++  for(const [i,x,z,yaw]of [[0,b.minX-13,cz-18,Math.PI/2],[1,b.minX-16,cz+19,Math.PI/2],[2,b.maxX+15,cz-16,-Math.PI/2],[3,b.maxX+13,cz+21,-Math.PI/2],[4,cx-18,b.minZ-15,Math.PI],[5,cx+17,b.minZ-14,Math.PI]]){const o=artKit.clone(i%3===0?'warehouse-sawtooth':i%3===1?'pump-station':'service-workshop');o.position.set(x,0,z);o.rotation.y=yaw;o.scale.set(1.5,1.05,1.6);o.userData.collision='none-outside-bounds';context.add(o);if(spec.battlefrontDepot&&(i===0||i===3))buildingFinishes.push(applyBattlefrontBuildingFinish(o,{id:`context-warehouse-${i}`}));}
+   for(const c of [{id:'edge-west',x:b.minX-.6,z:cz,width:.6,depth:b.maxZ-b.minZ+1.8,height:.8},{id:'edge-east',x:b.maxX+.6,z:cz,width:.6,depth:b.maxZ-b.minZ+1.8,height:.8},{id:'edge-north',x:cx,z:b.minZ-.6,width:b.maxX-b.minX+1.8,depth:.6,height:.8},{id:'edge-south',x:cx,z:b.maxZ+.6,width:b.maxX-b.minX+1.8,depth:.6,height:.8}]){const wall=createWallView(c,{appearance:spec.crossfireFront?'crossfire':'default'});walls.push(wall);wall.root.userData.collision='none-outside-bounds';context.add(wall.root);}
+   for(const source of spec.entities||[]){const object=new THREE.Group();object.name=`entity:${source.id}`;object.position.set(source.pose.x,source.pose.y||0,source.pose.z);object.rotation.y=source.pose.yaw||0;root.add(object);entities.set(source.id,object);
+    const asset=artKit.clone(source.vehicle==='pz3'?'pz3':source.kind==='truck'?'cargo-truck':'sentry-turret');object.add(asset);if(spec.crossfireFront&&(source.team==='allied'||source.team==='hostile')){const copies=new Map(),tint=new THREE.Color(source.team==='allied'?0x718d9b:0x9e7662);asset.traverse(o=>{if(!o.isMesh)return;const paint=m=>{if(!copies.has(m)){const copy=m.clone();if(copy.color)copy.color.lerp(tint,.48);copies.set(m,copy);owned.push(copy);}return copies.get(m);};o.material=Array.isArray(o.material)?o.material.map(paint):paint(o.material);});}if(spec.crossfireFront)finishes.push(applyWarVehicleFinish(asset,{team:source.team}));if(source.vehicle==='pz3')asset.traverse(o=>{if(o.isInstancedMesh)owned.push(o);});
+@@ -32,7 +33,7 @@
+    }
+   }
+  details=createIndustrialDetails(root,spec);if(spec.crossfireFront)crossfire=createCrossfireEffects(root,spec);
+- }catch(error){crossfire?.dispose();details?.dispose();for(const finish of finishes)finish.dispose();for(const wall of walls)wall.dispose();for(const resource of owned)resource.dispose();throw error;}
++ }catch(error){crossfire?.dispose();details?.dispose();for(const finish of buildingFinishes)finish.dispose();for(const finish of finishes)finish.dispose();for(const wall of walls)wall.dispose();for(const resource of owned)resource.dispose();throw error;}
+  scene.add(root);const seen=new Set();
+  function update(state,events=[],dt=0){if(disposed)return;crossfire?.update(state,events,dt);details?.update(state);const fired=new Set();for(const event of events)if(event.type==='shot'&&event.id!==undefined&&!seen.has(event.id)){seen.add(event.id);fired.add(event.entityId);}while(seen.size>256)seen.delete(seen.values().next().value);
+   for(const [id,object]of solids){const e=state.entities?.[id];if(crushViews.has(id)){crushViews.get(id).update(e,dt);continue;}object.visible=!(e?.destroyed||e?.alive===false);}
+@@ -43,5 +44,5 @@
+    }
+   }
+  }
+- return {root,solids,entities,update,ready:details.ready,diagnostics:{details:details.diagnostics,...(spec.crossfireFront?{vehicleFinishes:finishes.map(f=>f.diagnostics)}:{}),...(crossfire?{crossfire:crossfire.diagnostics}:{})},dispose(){if(disposed)return;disposed=true;crossfire?.dispose();details?.dispose();for(const finish of finishes)finish.dispose();root.removeFromParent();for(const wall of walls)wall.dispose();for(const resource of owned)resource.dispose();solids.clear();entities.clear();rigs.clear();seen.clear();}};
++ return {root,solids,entities,update,ready:details.ready,diagnostics:{details:details.diagnostics,...(spec.battlefrontDepot?{buildingFinishes:buildingFinishes.map(f=>f.diagnostics)}:{}),...(spec.crossfireFront?{vehicleFinishes:finishes.map(f=>f.diagnostics)}:{}),...(crossfire?{crossfire:crossfire.diagnostics}:{})},dispose(){if(disposed)return;disposed=true;crossfire?.dispose();details?.dispose();for(const finish of buildingFinishes)finish.dispose();for(const finish of finishes)finish.dispose();root.removeFromParent();for(const wall of walls)wall.dispose();for(const resource of owned)resource.dispose();solids.clear();entities.clear();rigs.clear();seen.clear();}};
+ }
+--- approved-g2-base/work/src/battlefront-building-finish.js
++++ grounded-g2/work/src/battlefront-building-finish.js
+@@ -0,0 +1,59 @@
++import {Matrix4} from 'three';
++/** Static, sealed historic fire damage. Geometry and every map remain borrowed.
++ * The inverse authored root is captured once, not recomputed during updates. */
++const activeRoots=new WeakMap(),marker='battlefront-building-finish-v1';
++const roles=new Set(['Concrete','Brick','Glass','Steel','SagePaint','DarkSteel','ZincRoof','Ivory']);
++const vertexAnchors=['#include <common>','#include <project_vertex>'];
++const fragmentAnchors=['#include <common>','#include <color_fragment>'];
++export function applyBattlefrontBuildingFinish(root,{id}={}){
++ if(!root?.traverse)throw new TypeError('Building finish requires an Object3D root');
++ const active=activeRoots.get(root);if(active)return active;
++ root.updateWorldMatrix(true,true);
++ const inverseRoot={value:new Matrix4().copy(root.matrixWorld).invert()},copies=new Map(),bindings=[];
++ const diagnostics={id,materialClones:0,meshBindings:0,shaderFallbacks:0,extraTextures:0,extraDrawCalls:0,disposed:false};
++ function paint(source){
++  if(!source||!roles.has(source.name)||(!source.isMeshStandardMaterial&&!source.isMeshPhysicalMaterial))return source;
++  if(copies.has(source))return copies.get(source);
++  const copy=source.clone();copies.set(source,copy);diagnostics.materialClones++;
++  const role=source.name,upstream=source.onBeforeCompile,upstreamKey=source.customProgramCacheKey.call(source);
++  const roof=role==='ZincRoof'||role==='SagePaint',glass=role==='Glass';
++  copy.roughness=Math.max(.88,source.roughness);copy.metalness=Math.min(.16,source.metalness);copy.envMapIntensity=Math.min(.3,source.envMapIntensity);
++  // Opaque existing northlights remain closed panels, not simulated openings.
++  copy.transparent=false;copy.opacity=1;
++  if(copy.isMeshPhysicalMaterial){copy.clearcoat=Math.min(.03,copy.clearcoat);copy.clearcoatRoughness=Math.max(.9,copy.clearcoatRoughness);copy.transmission=0;}
++  function install(material){
++   material.onBeforeCompile=function(shader,renderer){
++    upstream.call(this,shader,renderer);
++    if(!vertexAnchors.every(a=>shader.vertexShader.includes(a))||!fragmentAnchors.every(a=>shader.fragmentShader.includes(a))){diagnostics.shaderFallbacks++;return;}
++    shader.uniforms.buildingFinishInverseRoot=inverseRoot;
++    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nuniform mat4 buildingFinishInverseRoot;\nvarying vec3 buildingFinishPosition;').replace('#include <project_vertex>','#include <project_vertex>\nbuildingFinishPosition = (buildingFinishInverseRoot * modelMatrix * vec4(transformed, 1.0)).xyz;');
++    shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 buildingFinishPosition;').replace('#include <color_fragment>',`#include <color_fragment>
++// ${marker}: continuous soot/ash, never alpha, displacement or a painted hole.
++float buildingFinishLuma=dot(diffuseColor.rgb,vec3(0.2126,0.7152,0.0722));
++vec3 buildingFinishBase=mix(diffuseColor.rgb,vec3(buildingFinishLuma),${glass?'1.0':roof?'0.96':'0.76'});
++float buildingFinishWave=0.5+0.5*sin(buildingFinishPosition.x*0.47+sin(buildingFinishPosition.z*0.38));
++float buildingFinishApron=1.0-smoothstep(-3.5,3.5,buildingFinishPosition.z);
++float buildingFinishSoot=clamp(0.24+0.40*buildingFinishApron+0.12*buildingFinishWave-0.045*buildingFinishPosition.y,0.12,0.76);
++float buildingFinishAsh=smoothstep(1.3,3.8,buildingFinishPosition.y)*(0.24+0.22*buildingFinishWave);
++vec3 buildingFinishChar=vec3(0.035,0.032,0.029)+vec3(buildingFinishLuma*0.13);
++vec3 buildingFinishAshColor=vec3(0.29,0.275,0.25)+vec3(buildingFinishLuma*0.22);
++vec3 buildingFinishDry=buildingFinishBase*${glass?'0.52':roof?'0.68':'0.86'};
++diffuseColor.rgb=mix(mix(buildingFinishDry,buildingFinishChar,buildingFinishSoot),buildingFinishAshColor,buildingFinishAsh);
++`);
++   };
++   material.customProgramCacheKey=()=>`${upstreamKey}|${marker}|${role}`;
++   // THREE's default clone/copy omits custom shader callbacks. Occlusion owns
++   // its temporary fade copies; propagate hooks/binding, never register them
++   // as finish-owned resources. This also survives further clone generations.
++   const clone=material.clone;
++   material.clone=function(){const temporary=clone.call(this);install(temporary);return temporary;};
++   material.needsUpdate=true;
++  }
++  install(copy);return copy;
++ }
++ const restore=()=>{for(const{object,original,next}of bindings)if(object.material===next)object.material=original;for(const material of copies.values())material.dispose();};
++ try{root.traverse(object=>{if(!object.isMesh)return;const original=object.material,next=Array.isArray(original)?original.map(paint):paint(original);if(Array.isArray(original)?next.every((m,i)=>m===original[i]):next===original)return;object.material=next;bindings.push({object,original,next});diagnostics.meshBindings++;});}catch(error){restore();throw error;}
++ let disposed=false;
++ const handle={diagnostics,dispose(){if(disposed)return;disposed=true;diagnostics.disposed=true;restore();activeRoots.delete(root);}};
++ activeRoots.set(root,handle);return handle;
++}
+--- approved-g2-base/work/tests/battlefront-building-finish.test.mjs
++++ grounded-g2/work/tests/battlefront-building-finish.test.mjs
+@@ -0,0 +1,61 @@
++/** Actual shipping GLB geometry + raw material metadata; texture placeholders are
++ * explicitly mocked decode, NOT image decoding, WebGL compilation or visual QA. */
++import test from 'node:test';import assert from 'node:assert/strict';import * as T from 'three';
++import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
++import {parseArtGeometry,geometryLibrary} from './helpers/art-geometry.mjs';
++import {createCampaignArtLibrary} from '../src/art-kit.js';
++import {createAuthoredSceneView} from '../src/authored-scene-view.js';
++import {createPlayerOcclusion} from '../src/player-occlusion.js';
++import {createBattlefrontDepotFront} from '../src/battlefront-depot-front.js';
++import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
++import {createInterceptorLibrary} from '../src/interceptor-art.js';
++import {createGame} from '../src/campaign-simulation.js';
++const mod=await import('../src/battlefront-building-finish.js').catch(e=>{if(e.code==='ERR_MODULE_NOT_FOUND')return {};throw e;});
++const apply=(...a)=>{assert.equal(typeof mod.applyBattlefrontBuildingFinish,'function','bounded building finish adapter must exist');return mod.applyBattlefrontBuildingFinish(...a);};
++const raw=readFileSync(new URL('../assets/art-kit/warehouse-sawtooth.glb',import.meta.url)),json=JSON.parse(raw.subarray(20,20+raw.readUInt32LE(12)));
++const meshes=root=>{const a=[];root.traverse(n=>{if(n.isMesh)a.push(n);});return a;};
++const materials=root=>[...new Set(meshes(root).flatMap(n=>[].concat(n.material||[])))];
++const freeze=o=>{if(o&&typeof o==='object'&&!Object.isFrozen(o)){Object.freeze(o);for(const v of Object.values(o))freeze(v);}return o;};
++const shader=m=>{const s={uniforms:{},vertexShader:T.ShaderLib.standard.vertexShader,fragmentShader:T.ShaderLib.standard.fragmentShader};m.onBeforeCompile(s,{});return s;};
++function fixture(mat=new T.MeshStandardMaterial()){mat.name||='ZincRoof';const root=new T.Group(),mesh=new T.Mesh(new T.BoxGeometry(),mat);root.add(mesh);return {root,mesh,mat};}
++function geometrySnapshot(root){root.updateWorldMatrix(true,true);return meshes(root).map(n=>({node:n,geometry:n.geometry,index:n.geometry.index?.array.slice(),attrs:Object.fromEntries(Object.entries(n.geometry.attributes).map(([k,v])=>[k,v.array.slice()])),world:n.matrixWorld.toArray(),slots:[].concat(n.material||[]).map(m=>m?.name)}));}
++function verifySnapshot(root,before){root.updateWorldMatrix(true,true);assert.equal(meshes(root).length,before.length);for(const r of before){assert.equal(r.node.geometry,r.geometry);assert.deepEqual(r.node.geometry.index?.array,r.index);for(const[k,v]of Object.entries(r.attrs))assert.deepEqual(r.node.geometry.attributes[k].array,v);assert.deepEqual(r.node.matrixWorld.toArray(),r.world);assert.deepEqual([].concat(r.node.material||[]).map(m=>m?.name),r.slots);}}
++async function warehouse(){const record=await parseArtGeometry('warehouse-sawtooth'),root=record.scene.getObjectByName('WarehouseSawtooth');const textures=new Map();for(const m of materials(root)){const source=json.materials.find(s=>s.name===m.name);for(const [index,slots]of [[source.pbrMetallicRoughness?.baseColorTexture?.index,['map']],[source.pbrMetallicRoughness?.metallicRoughnessTexture?.index,['metalnessMap','roughnessMap']]])if(index!==undefined){if(!textures.has(index)){const t=new T.Texture();t.name=`MOCKED-DECODE:${json.images[json.textures[index].source].name||index}`;textures.set(index,t);}for(const slot of slots)m[slot]=textures.get(index);}}return {root,textures};}
++test('actual consolidated eight primitive 7156 triangle warehouse retains indices positions normals UV slots transforms and borrowed maps',async()=>{
++ assert.equal(createHash('sha256').update(raw).digest('hex'),'3d36f5cc331470bb6e685019da941e45f93145f360eb1740e61a730e42e84dca');assert.equal(json.meshes.length,1);assert.equal(json.meshes[0].primitives.length,8);assert.equal(json.nodes[0].name,'WarehouseSawtooth_Geometry');assert.deepEqual(json.nodes[0].translation,[0,.49000000953674316,3.890000104904175]);
++ const {root,textures}=await warehouse(),original=materials(root);root.position.set(-25,0,28);root.scale.set(1,1,1.125);const before=geometrySnapshot(root),handle=apply(root,{id:'south-depot'});assert.equal(meshes(root).length,8);assert.equal(meshes(root).reduce((s,n)=>s+n.geometry.index.count/3,0),7156);
++ assert.equal(handle.diagnostics.materialClones,8);assert.equal(handle.diagnostics.extraTextures,0);assert.equal(handle.diagnostics.extraDrawCalls,0);verifySnapshot(root,before);
++ for(let i=0;i<8;i++){const source=original[i],copy=materials(root)[i];assert.notEqual(copy,source);assert.equal(copy.name,json.materials[i].name);for(const slot of ['map','normalMap','metalnessMap','roughnessMap','aoMap','emissiveMap'])assert.equal(copy[slot],source[slot]);assert.equal(copy.transparent,false);assert.equal(copy.opacity,1);}
++ for(const role of ['ZincRoof','SagePaint','Glass']){const copy=materials(root).find(m=>m.name===role),s=shader(copy);assert.match(s.fragmentShader,/buildingFinishLuma/);assert.ok(copy.roughness>=.88);assert.ok(copy.metalness<=.16);assert.ok(copy.envMapIntensity<=.3);}
++ let borrowed=0,owned=0;for(const r of [...original,...textures.values(),...before.map(r=>r.geometry)])r.addEventListener('dispose',()=>borrowed++);for(const r of materials(root))r.addEventListener('dispose',()=>owned++);handle.dispose();handle.dispose();assert.deepEqual(materials(root),original);verifySnapshot(root,before);assert.equal(owned,8);assert.equal(borrowed,0);
++});
++test('all primitives share fixed inverse-root coordinates including transformed children; other roots isolate uniforms',()=>{
++ const f=fixture();f.root.position.set(-25,2,28);f.root.rotation.y=.7;f.root.scale.set(1.2,.9,1.125);f.mesh.position.set(0,.49,3.89);f.mesh.rotation.z=.13;const second=new T.Mesh(f.mesh.geometry,f.mat);second.position.set(2,3,-1);f.root.add(second);const other=fixture(f.mat),before=geometrySnapshot(f.root),h=apply(f.root,{id:'south-depot'}),h2=apply(other.root,{id:'context-warehouse-0'}),a=shader(f.mesh.material),b=shader(second.material),c=shader(other.mesh.material);
++ assert.equal(f.mesh.material,second.material);assert.equal(a.uniforms.buildingFinishInverseRoot,b.uniforms.buildingFinishInverseRoot);assert.notEqual(a.uniforms.buildingFinishInverseRoot,c.uniforms.buildingFinishInverseRoot);assert.match(a.vertexShader,/buildingFinishInverseRoot\s*\*\s*modelMatrix\s*\*\s*vec4\(\s*transformed/);
++ for(const node of [f.mesh,second]){const p=new T.Vector3(.2,1,-.3),actual=p.clone().applyMatrix4(node.matrixWorld).applyMatrix4(a.uniforms.buildingFinishInverseRoot.value),expected=p.clone().applyMatrix4(node.matrix);assert.ok(actual.distanceTo(expected)<1e-12);}verifySnapshot(f.root,before);h.dispose();h2.dispose();
++});
++test('arrays preserve identity sharing and unsupported missing or wrong materials stay untouched',()=>{
++ const m=new T.MeshStandardMaterial();m.name='SagePaint';const basic=new T.MeshBasicMaterial();basic.name='ZincRoof';const unknown=new T.MeshStandardMaterial();unknown.name='Unknown';const original=[m,m,basic,unknown,null],f=fixture(original),other=fixture(m),h=apply(f.root,{id:'south-depot'});assert.equal(f.mesh.material[0],f.mesh.material[1]);assert.notEqual(f.mesh.material[0],m);assert.equal(other.mesh.material,m);assert.deepEqual(f.mesh.material.slice(2),original.slice(2));h.dispose();assert.equal(f.mesh.material,original);
++ const g=fixture();g.mesh.material=undefined;apply(g.root,{id:'empty'}).dispose();assert.equal(g.mesh.material,undefined);
++});
++test('upstream hooks and keys chain through owned and temporary clone generations without owning temporary materials',()=>{
++ let calls=0;const f=fixture();f.mat.onBeforeCompile=function(s){calls++;assert.notEqual(this,f.mat);s.fragmentShader+='\n// upstream';};f.mat.customProgramCacheKey=()=> 'upstream-v7';const h=apply(f.root,{id:'south-depot'}),base=f.mesh.material,temp=base.clone(),twice=temp.clone(),a=shader(base),b=shader(temp),c=shader(twice);assert.equal(calls,3);assert.equal(a.vertexShader,b.vertexShader);assert.equal(a.fragmentShader,c.fragmentShader);assert.equal(a.uniforms.buildingFinishInverseRoot,b.uniforms.buildingFinishInverseRoot);assert.equal(base.customProgramCacheKey(),temp.customProgramCacheKey());assert.match(base.customProgramCacheKey(),/upstream-v7.*building-finish-v1.*ZincRoof/);let owned=0,temporary=0;base.addEventListener('dispose',()=>owned++);temp.addEventListener('dispose',()=>temporary++);h.dispose();assert.equal(owned,1);assert.equal(temporary,0);temp.dispose();twice.dispose();
++});
++test('missing anchors leave upstream intact and diagnose shader fallback; repeat apply and external replacements are safe',()=>{
++ const f=fixture(),h=apply(f.root,{id:'south-depot'});assert.equal(apply(f.root,{id:'again'}),h);const s={uniforms:{},vertexShader:'vertex',fragmentShader:'fragment'};f.mesh.material.onBeforeCompile(s,{});assert.deepEqual(s,{uniforms:{},vertexShader:'vertex',fragmentShader:'fragment'});assert.equal(h.diagnostics.shaderFallbacks,1);const replacement=new T.MeshStandardMaterial();f.mesh.material=replacement;h.dispose();h.dispose();assert.equal(f.mesh.material,replacement);const next=apply(f.root,{id:'again'});assert.notEqual(next,h);next.dispose();assert.throws(()=>apply(null,{id:'bad'}),/root/i);
++});
++test('throwing clone or upstream cache key rolls back earlier arrays and releases every created clone exactly once',()=>{
++ for(const mode of ['clone','cache']){const good=new T.MeshStandardMaterial(),bad=new T.MeshStandardMaterial();good.name='Brick';bad.name='ZincRoof';const f=fixture([good,good]),second=new T.Mesh(f.mesh.geometry,[bad,good]);f.root.add(second);const first=f.mesh.material,last=second.material;let freed=0,borrowed=0;for(const m of [good,bad]){m.addEventListener('dispose',()=>borrowed++);const clone=m.clone;m.clone=function(){if(this===bad&&mode==='clone')throw new Error('clone rejected');const c=clone.call(this);c.addEventListener('dispose',()=>freed++);return c;};}if(mode==='cache')bad.customProgramCacheKey=()=>{throw new Error('cache rejected');};assert.throws(()=>apply(f.root,{id:'south-depot'}),/rejected/);assert.equal(f.mesh.material,first);assert.equal(second.material,last);assert.equal(freed,mode==='clone'?1:2);assert.equal(borrowed,0);}
++});
++test('actual warehouse ray selection preserves shader/cache/uniform on occlusion fade and restores ownership in required disposal order',async()=>{
++ const {root}=await warehouse();const scene=new T.Scene();root.name='solid:south-depot';root.position.set(-25,0,28);root.scale.z=1.125;scene.add(root);const h=apply(root,{id:'south-depot'}),before=meshes(root).map(m=>m.material),camera=new T.PerspectiveCamera(42,1,.15,150);camera.position.set(-25,2,42);camera.lookAt(-25,1,18);const occlusion=createPlayerOcclusion(scene);assert.equal(occlusion.update(camera,{x:-25,y:0,z:18}),1);let temps=0,owned=0;for(let i=0;i<8;i++){const copy=meshes(root)[i].material,base=before[i];assert.notEqual(copy,base);assert.equal(copy.transparent,true);assert.equal(copy.opacity,.22);assert.equal(base.transparent,false);assert.equal(copy.depthWrite,false);assert.equal(copy.customProgramCacheKey(),base.customProgramCacheKey());const a=shader(base),b=shader(copy);assert.equal(a.fragmentShader,b.fragmentShader);assert.equal(a.uniforms.buildingFinishInverseRoot,b.uniforms.buildingFinishInverseRoot);copy.addEventListener('dispose',()=>temps++);base.addEventListener('dispose',()=>owned++);}assert.equal(occlusion.update(camera,{x:100,y:0,z:18}),0);assert.deepEqual(meshes(root).map(m=>m.material),before);assert.equal(temps,8);assert.equal(owned,0);occlusion.update(camera,{x:-25,y:0,z:18});occlusion.dispose();h.dispose();h.dispose();assert.equal(owned,8);
++});
++test('real scene integration changes only south-depot and context warehouse indices 0/3 with frozen spec/state and exact world geometry',async()=>{
++ const records=await geometryLibrary(),lib=createCampaignArtLibrary(records),tankBytes=readFileSync(new URL('../assets/pz3-interceptor.glb',import.meta.url)),extra=createInterceptorLibrary(await new GLTFLoader().parseAsync(tankBytes.buffer.slice(tankBytes.byteOffset,tankBytes.byteOffset+tankBytes.byteLength),'')),kit={clone:key=>key==='pz3'?extra.clone():lib.clone(key)},{spec}=createBattlefrontDepotFront(),state=freeze(createGame(spec)),oldSpec=freeze({...spec,battlefrontDepot:false});freeze(spec);const specBefore=JSON.stringify(spec),stateBefore=JSON.stringify(state),a=createAuthoredSceneView(new T.Scene(),oldSpec,kit),b=createAuthoredSceneView(new T.Scene(),spec,kit);await Promise.all([a.ready,b.ready]);const target=[b.solids.get('south-depot'),...b.root.getObjectByName('outside-industrial-context').children.filter((_,i)=>i===0||i===3)],other=[a.solids.get('south-depot'),...a.root.getObjectByName('outside-industrial-context').children.filter((_,i)=>i===0||i===3)];for(const role of ['ZincRoof','SagePaint'])assert.notEqual(materials(target[0]).find(m=>m.name===role),materials(other[0]).find(m=>m.name===role),'green material slots must have independent burned finish');assert.ok(b.diagnostics.buildingFinishes,'three building finishes are diagnosed');assert.equal(b.diagnostics.buildingFinishes.length,3);assert.deepEqual(b.diagnostics.buildingFinishes.map(d=>d.id),['south-depot','context-warehouse-0','context-warehouse-3']);
++ for(let i=0;i<3;i++){const expected=geometrySnapshot(other[i]),actual=geometrySnapshot(target[i]);assert.equal(actual.length,8);for(let j=0;j<8;j++){assert.equal(actual[j].geometry,expected[j].geometry);assert.deepEqual(actual[j].world,expected[j].world);assert.notEqual(actual[j].node.material,expected[j].node.material);}}
++ const ca=a.root.getObjectByName('outside-industrial-context').children,cb=b.root.getObjectByName('outside-industrial-context').children;for(const i of [1,2,4,5]){const left=meshes(ca[i]),right=meshes(cb[i]);for(let n=0;n<left.length;n++)assert.equal(left[n].material,right[n].material);}for(const [id,o]of b.solids)if(id!=='south-depot'&&a.solids.has(id)){const x=meshes(a.solids.get(id)),y=meshes(o);for(let i=0;i<x.length;i++){assert.equal(x[i].material.customProgramCacheKey(),y[i].material.customProgramCacheKey());assert.equal(x[i].material.color?.getHex(),y[i].material.color?.getHex());}}for(const [id,o]of b.entities){const x=materials(a.entities.get(id)),y=materials(o);assert.deepEqual(x.map(m=>m.customProgramCacheKey()),y.map(m=>m.customProgramCacheKey()));assert.ok(y.every(m=>!m.customProgramCacheKey().includes('building-finish')));}
++ const prototype=lib.clone('warehouse-sawtooth');assert.ok(materials(prototype).every(m=>!m.customProgramCacheKey().includes('building-finish')));const snapshots=target.map(geometrySnapshot);for(let i=0;i<3;i++){a.update(state,[],1/60);b.update(state,[],1/60);}for(let i=0;i<3;i++)verifySnapshot(target[i],snapshots[i]);assert.equal(JSON.stringify(spec),specBefore);assert.equal(JSON.stringify(state),stateBefore);let freed=0;for(const o of target)for(const m of materials(o))m.addEventListener('dispose',()=>freed++);b.dispose();b.dispose();assert.equal(freed,24);assert.equal(materials(prototype).length,8);a.dispose();lib.dispose();extra.dispose();
++});
++test('scene construction rejection after warehouse finish releases owned clones without touching library prototype',async()=>{
++ const lib=createCampaignArtLibrary(await geometryLibrary()),{spec}=createBattlefrontDepotFront();let created=0,freed=0,borrowed=0;const p=lib.clone('warehouse-sawtooth');for(const m of materials(p)){m.addEventListener('dispose',()=>borrowed++);const clone=m.clone;m.clone=function(){const c=clone.call(this);created++;c.addEventListener('dispose',()=>freed++);return c;};}let warehouses=0;const kit={clone(key){if(key==='warehouse-sawtooth'&&++warehouses===2)throw new Error('late art failure');return lib.clone(key);}},scene=new T.Scene();assert.throws(()=>createAuthoredSceneView(scene,spec,kit),/late art failure/);assert.ok(created>=8);assert.equal(freed,created);assert.equal(borrowed,0);assert.equal(scene.children.length,0);lib.dispose();
++});
+--- approved-g2-base/work/tests/battlefront-depot-scope.test.mjs
++++ grounded-g2/work/tests/battlefront-depot-scope.test.mjs
+@@ -1,6 +1,7 @@
+ /** Frozen BF1 physics/gameplay/assets/HUD ownership contract. */
+ import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+ const base=JSON.parse(readFileSync(new URL('../../evidence/battlefront/sdd/bf2-base-head.json',import.meta.url))),allowed=new Set(['src/main.js','src/campaign-view.js','src/ruined-depot-view.js','src/crossfire-warfield-view.js','src/terrain-candidate/relief-view.js','locales/en-missions.json','tests/sweep-acceleration-entry.test.mjs']);
+-test('all BF2 base work outside exact authorized presentation/localization/build-test files remains byte-exact including BF1 gameplay and raw',()=>{
+- const changed=[];for(const [file,info]of Object.entries(base.workFiles)){if(allowed.has(file))continue;const hash=createHash('sha256').update(readFileSync(new URL('../'+file,import.meta.url))).digest('hex');if(hash!==info.sha256)changed.push(file);}assert.deepEqual(changed,[]);
++test('BF2 frozen gameplay and raw remain exact; grounded view has separate candidate and preserved-original SHA bindings',()=>{
++ // Controller-authorized G2-only view replacement: not a broad allowlist bypass.
++ const changed=[];for(const [file,info]of Object.entries(base.workFiles)){if(allowed.has(file))continue;const hash=createHash('sha256').update(readFileSync(new URL('../'+file,import.meta.url))).digest('hex');if(file==='src/authored-scene-view.js'){assert.equal(hash,'56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab','authorized grounded candidate view');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/authored-scene-view.before.js',import.meta.url))).digest('hex');assert.equal(original,'2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c');assert.equal(original,info.sha256,'preserved original BF2 view identity');continue;}if(file==='tests/crossfire-v4-front.test.mjs'){assert.equal(hash,'95098da030f0efa120d4d1da48133857b2117c002762113569468610291831dd','authorized V4 identity-guard adaptation');const original=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/old-guards/crossfire-v4-front.test.mjs',import.meta.url))).digest('hex');assert.equal(original,'6a900c689224b4285b4ebe103465051a514a6324b49b6fb2d24709e1ec1f83da');assert.equal(original,info.sha256,'preserved original V4 guard identity');continue;}if(hash!==info.sha256)changed.push(file);}assert.deepEqual(changed,[]);
+ });
+--- approved-g2-base/work/tests/crossfire-v4-front.test.mjs
++++ grounded-g2/work/tests/crossfire-v4-front.test.mjs
+@@ -83,9 +83,13 @@
+  }finally{world.dispose();}}
+ });
+ 
+-test('V4 keeps frozen V3 builder/physical sources and spec hash unchanged',()=>{
++test('V4 retains V3 physical sources and spec; grounded view and preserved V3 view have separate exact SHA bindings',()=>{
+  const manifest=JSON.parse(readFileSync(new URL('../../evidence/baseline-v3-work-sha256.json',import.meta.url)));
+- for(const file of ['crossfire-v3-front.js','crossfire-front.js','scorched-front.js','campaign-simulation.js','interceptor.js','combat.js','terrain-candidate/combat-world.js','player-vehicles-v3.js','authored-scene-view.js','interceptor-art.js'])assert.equal(createHash('sha256').update(readFileSync(new URL('../src/'+file,import.meta.url))).digest('hex'),manifest['work/src/'+file],file);
++ // The optional grounded view is no longer byte-identical to V3; all nine
++ // physical/other source pins and the original view artifact remain protected.
++ const preservedView=createHash('sha256').update(readFileSync(new URL('../../evidence/grounded/g2/authored-scene-view.before.js',import.meta.url))).digest('hex');assert.equal(preservedView,'2e7da33acb99251e1a5b098c2d779749e43c9ce13f3efab8c4121607cfe1587c');assert.equal(preservedView,manifest['work/src/authored-scene-view.js']);
++ assert.equal(createHash('sha256').update(readFileSync(new URL('../src/authored-scene-view.js',import.meta.url))).digest('hex'),'56e855b45a6ce89dffdccc80fb08122e190a115398344f5fe481425cb3eaf1ab','authorized grounded candidate view');
++ for(const file of ['crossfire-v3-front.js','crossfire-front.js','scorched-front.js','campaign-simulation.js','interceptor.js','combat.js','terrain-candidate/combat-world.js','player-vehicles-v3.js','interceptor-art.js'])assert.equal(createHash('sha256').update(readFileSync(new URL('../src/'+file,import.meta.url))).digest('hex'),manifest['work/src/'+file],file);
+  assert.equal(sha(createCrossfireV3Front().spec),'f58408f8e47258b890124e3db264ae25ed0fd9f5b46911838c09f3df68b44b48');
+  const before=sha(createCrossfireV3Front());fixture();assert.equal(sha(createCrossfireV3Front()),before);
+ });

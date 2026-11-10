@@ -1,0 +1,28 @@
+{"event":"replay-start","file":"newc-leichttraktor-direct-initial-inputs.json.gz","at":"2026-10-30T20:42:08.164Z"}
+{"event":"replay-end","file":"newc-leichttraktor-direct-initial-inputs.json.gz","inputSHA256":"93ef7a9d82de2a0e887666cf83d0dfd776dd49b9e04f613d8c1688018d477952","specHash":"dbe2d863dcaee1d473c864c928bee73bd0103b8917058b2fb5f5e74d1fb68276","vehicleId":"newc-leichttraktor","vehicleVersion":1,"inputs":7618,"tick":7617,"phase":"won","expectedFinalHash":"ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5","finalHash":"ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5","hp":60,"truckHp":86,"truckArrived":true,"at":"2026-10-30T20:43:41.669Z"}
+{"event":"replay-start","file":"newc-tiger-direct-initial-inputs.json.gz","at":"2026-10-30T20:43:41.707Z"}
+{"event":"replay-end","file":"newc-tiger-direct-initial-inputs.json.gz","inputSHA256":"6abc9b56f4ed7c49b43d9df438d6e6348baccabdca0d426c24f0238d122c5518","specHash":"a76249e68aa8678e1accccfac18931e080e569fc5add42006b5382ecf02f84c5","vehicleId":"newc-tiger","vehicleVersion":1,"inputs":9231,"tick":9230,"phase":"won","expectedFinalHash":"4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4","finalHash":"4f4ae690e5c4c2be210ed08e3497785ed6cb5539e0660c7297516dbc5e3717e4","hp":125,"truckHp":100,"truckArrived":true,"at":"2026-10-30T20:45:11.848Z"}
+{"event":"replay-start","file":"pz3-direct-initial-inputs.json.gz","at":"2026-10-30T20:45:11.893Z"}
+{"event":"replay-end","file":"pz3-direct-initial-inputs.json.gz","inputSHA256":"18b8ef7da31798716c1f8b52ef5a770a10f34251412bebe8e02eaa69c1ef677d","specHash":"5626f8ee4948cc9f635dc026e0e506809a2d8dfaca3965045399d69104940dcf","vehicleId":"pz3","vehicleVersion":1,"inputs":7779,"tick":7778,"phase":"won","expectedFinalHash":"6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea","finalHash":"6bdf9429385c449f4163e439d40be3e7a5a785ed77c53fb05559aec581fe58ea","hp":75,"truckHp":100,"truckArrived":true,"at":"2026-10-30T20:46:27.518Z"}
+{"event":"replay-start","file":"vanguard-covered-maneuver-inputs.json.gz","at":"2026-10-30T20:46:27.571Z"}
+{"event":"replay-end","file":"vanguard-covered-maneuver-inputs.json.gz","inputSHA256":"6b3975868fe5f32ecd8622911bad691f5c6778ed1634a1c83e07b50573791239","specHash":"7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6","vehicleId":"vanguard","vehicleVersion":1,"inputs":11921,"tick":11920,"phase":"won","expectedFinalHash":"40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef","finalHash":"40b85ba4d19a7fd007c669aa52d2fd480b7444b70861fc26d2ae8e032f04fdef","hp":100,"truckHp":100,"truckArrived":true,"at":"2026-10-30T20:48:33.325Z"}
+{"event":"replay-start","file":"vanguard-direct-initial-inputs.json.gz","at":"2026-10-30T20:48:33.349Z"}
+{"event":"replay-end","file":"vanguard-direct-initial-inputs.json.gz","inputSHA256":"e74dcc6ba25333cbe2111dd5a1d54f972d99e9ae48b66882af24b835e4212b7f","specHash":"7b4f605e4617641d4bedcfe34ec29438a15391a28527a15a068c086a5bbce9c6","vehicleId":"vanguard","vehicleVersion":1,"inputs":8207,"tick":8206,"phase":"won","expectedFinalHash":"c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3","finalHash":"c0a1f87784a40900b6ebba382cd60c6a495813a84c8df02f79fddd96d66248f3","hp":100,"truckHp":86,"truckArrived":true,"at":"2026-10-30T20:49:18.283Z"}
+✔ scorched controls and config binding newc-leichttraktor-direct-initial-inputs.json.gz (87.696237ms)
+✔ scorched complete independent input replay newc-leichttraktor-direct-initial-inputs.json.gz (93507.022757ms)
+✔ scorched controls and config binding newc-tiger-direct-initial-inputs.json.gz (35.725638ms)
+✔ scorched complete independent input replay newc-tiger-direct-initial-inputs.json.gz (90143.042401ms)
+✔ scorched controls and config binding pz3-direct-initial-inputs.json.gz (42.561749ms)
+✔ scorched complete independent input replay pz3-direct-initial-inputs.json.gz (75626.906386ms)
+✔ scorched controls and config binding vanguard-covered-maneuver-inputs.json.gz (50.475226ms)
+✔ scorched complete independent input replay vanguard-covered-maneuver-inputs.json.gz (125755.204836ms)
+✔ scorched controls and config binding vanguard-direct-initial-inputs.json.gz (23.063021ms)
+✔ scorched complete independent input replay vanguard-direct-initial-inputs.json.gz (44935.377625ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 430616.709679

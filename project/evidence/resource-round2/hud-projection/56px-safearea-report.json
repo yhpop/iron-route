@@ -1,0 +1,758 @@
+{
+  "method": "Reuses full actual every-tick400x300 mesh projection records. Same300px height and vertical FOV42 imply x_screen=W/2+(300/2)*x_unit_aspect1, y_screen=(300/2)*(1-y_unit_aspect1); therefore changing400 to320 shifts every x by(320-400)/2=-40, without changing y. Camera branch remains landscape. This is exact projection math for the same source camera/state, NOT new browser evidence. Four-pixel mesh AABB margin retained. Existing tiny control formulas recomputed with bottom34, not merely top grouped rectangles.",
+  "cases": [
+    {
+      "viewport": [
+        400,
+        300
+      ],
+      "safeAreas": {
+        "left": 44,
+        "right": 44,
+        "top": 44,
+        "bottom": 34
+      },
+      "rects": {
+        "stats": {
+          "x": 44,
+          "y": 44,
+          "w": 56,
+          "h": 44
+        },
+        "convoy": {
+          "x": 218,
+          "y": 44,
+          "w": 88,
+          "h": 44
+        },
+        "menu": {
+          "x": 312,
+          "y": 44,
+          "w": 44,
+          "h": 44
+        },
+        "drive": {
+          "x": 44,
+          "y": 172,
+          "w": 88,
+          "h": 88
+        },
+        "aim": {
+          "x": 268,
+          "y": 172,
+          "w": 88,
+          "h": 88
+        },
+        "governor": {
+          "x": 156.0,
+          "y": 172,
+          "w": 88,
+          "h": 88
+        },
+        "fire": {
+          "x": 312,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        },
+        "brake": {
+          "x": 262,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        },
+        "boost": {
+          "x": 212,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        }
+      },
+      "controlPairConflicts": [],
+      "summary": {
+        "allied-support": {
+          "stats": {
+            "minSignedGap": 45.3413045386996,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1222,
+              "recoil": 0,
+              "bbox": {
+                "minX": 149.3413045386996,
+                "maxX": 199.73781506040325,
+                "minY": 97.93473386584796,
+                "maxY": 128.12985603544087
+              }
+            }
+          },
+          "convoy": {
+            "minSignedGap": 13.736284352043754,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.72941849629785,
+                "maxX": 200.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "menu": {
+            "minSignedGap": 107.73628435204375,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.72941849629785,
+                "maxX": 200.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "drive": {
+            "minSignedGap": 38.39481405450246,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 152.76993434726828,
+                "maxX": 198.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          },
+          "aim": {
+            "minSignedGap": 63.736284352043754,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.72941849629785,
+                "maxX": 200.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "governor": {
+            "minSignedGap": 38.39481405450246,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 152.76993434726828,
+                "maxX": 198.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          },
+          "fire": {
+            "minSignedGap": 107.73628435204375,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.72941849629785,
+                "maxX": 200.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "brake": {
+            "minSignedGap": 57.736284352043754,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.72941849629785,
+                "maxX": 200.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "boost": {
+            "minSignedGap": 7.736291875530327,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 414,
+              "recoil": 0,
+              "bbox": {
+                "minX": 150.24598305279758,
+                "maxX": 200.26370812446967,
+                "minY": 82.49477708617742,
+                "maxY": 110.27351310681959
+              }
+            }
+          }
+        },
+        "hostile-flanker": {
+          "stats": {
+            "minSignedGap": 99.37273400410984,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1704,
+              "recoil": 0,
+              "bbox": {
+                "minX": 203.37273400410984,
+                "maxX": 254.26259838899895,
+                "minY": 98.27795585709286,
+                "maxY": 129.0731752406706
+              }
+            }
+          },
+          "convoy": {
+            "minSignedGap": 5.005343956825897,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1426,
+              "recoil": 0,
+              "bbox": {
+                "minX": 204.16886117982133,
+                "maxX": 253.52804221679278,
+                "minY": 97.0053439568259,
+                "maxY": 131.0229352582756
+              }
+            }
+          },
+          "menu": {
+            "minSignedGap": 38.11108027162436,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1090,
+              "recoil": 0,
+              "bbox": {
+                "minX": 218.4999610448098,
+                "maxX": 269.88891972837564,
+                "minY": 101.95870830602871,
+                "maxY": 132.31317632742318
+              }
+            }
+          },
+          "drive": {
+            "minSignedGap": 67.37273400410984,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1704,
+              "recoil": 0,
+              "bbox": {
+                "minX": 203.37273400410984,
+                "maxX": 254.26259838899895,
+                "minY": 98.27795585709286,
+                "maxY": 129.0731752406706
+              }
+            }
+          },
+          "aim": {
+            "minSignedGap": 33.23752435100033,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 215.80436101546744,
+                "maxX": 269.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          },
+          "governor": {
+            "minSignedGap": 33.23752435100033,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 215.80436101546744,
+                "maxX": 269.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          },
+          "fire": {
+            "minSignedGap": 38.11108027162436,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1090,
+              "recoil": 0,
+              "bbox": {
+                "minX": 218.4999610448098,
+                "maxX": 269.88891972837564,
+                "minY": 101.95870830602871,
+                "maxY": 132.31317632742318
+              }
+            }
+          },
+          "brake": {
+            "minSignedGap": -11.88891972837564,
+            "failureEndpointSamples": 1762,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 216.95823099987788,
+                "maxX": 268.090428199645,
+                "minY": 104.5719767055803,
+                "maxY": 132.10377775400232
+              }
+            },
+            "worst": {
+              "tick": 1090,
+              "recoil": 0,
+              "bbox": {
+                "minX": 218.4999610448098,
+                "maxX": 269.88891972837564,
+                "minY": 101.95870830602871,
+                "maxY": 132.31317632742318
+              }
+            }
+          },
+          "boost": {
+            "minSignedGap": -16.76247564899967,
+            "failureEndpointSamples": 3602,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 216.95823099987788,
+                "maxX": 268.090428199645,
+                "minY": 104.5719767055803,
+                "maxY": 132.10377775400232
+              }
+            },
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 215.80436101546744,
+                "maxX": 269.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "viewport": [
+        320,
+        300
+      ],
+      "safeAreas": {
+        "left": 44,
+        "right": 44,
+        "top": 44,
+        "bottom": 34
+      },
+      "rects": {
+        "stats": {
+          "x": 44,
+          "y": 44,
+          "w": 56,
+          "h": 44
+        },
+        "convoy": {
+          "x": 138,
+          "y": 44,
+          "w": 88,
+          "h": 44
+        },
+        "menu": {
+          "x": 232,
+          "y": 44,
+          "w": 44,
+          "h": 44
+        },
+        "drive": {
+          "x": 44,
+          "y": 196.0,
+          "w": 64.0,
+          "h": 64.0
+        },
+        "aim": {
+          "x": 212.0,
+          "y": 196.0,
+          "w": 64.0,
+          "h": 64.0
+        },
+        "governor": {
+          "x": 116.0,
+          "y": 172,
+          "w": 88,
+          "h": 88
+        },
+        "fire": {
+          "x": 232,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        },
+        "brake": {
+          "x": 182,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        },
+        "boost": {
+          "x": 132,
+          "y": 122,
+          "w": 44,
+          "h": 44
+        }
+      },
+      "controlPairConflicts": [],
+      "summary": {
+        "allied-support": {
+          "stats": {
+            "minSignedGap": 5.426057095288684,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1231,
+              "recoil": 0,
+              "bbox": {
+                "minX": 109.42605709528868,
+                "maxX": 159.66581038908114,
+                "minY": 97.40672596441885,
+                "maxY": 128.61971175040296
+              }
+            }
+          },
+          "convoy": {
+            "minSignedGap": -13.048957409537422,
+            "failureEndpointSamples": 1732,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 120.62973072109418,
+                "maxX": 146.37158791801818,
+                "minY": 90.01881242506781,
+                "maxY": 128.7145324797624
+              }
+            },
+            "worst": {
+              "tick": 723,
+              "recoil": 0,
+              "bbox": {
+                "minX": 118.74554860179947,
+                "maxX": 157.8375552550882,
+                "minY": 78.95104259046258,
+                "maxY": 110.40479934372269
+              }
+            }
+          },
+          "menu": {
+            "minSignedGap": 67.73628435204375,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 110.72941849629785,
+                "maxX": 160.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "drive": {
+            "minSignedGap": 62.39481405450246,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 112.76993434726828,
+                "maxX": 158.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          },
+          "aim": {
+            "minSignedGap": 62.39481405450246,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 112.76993434726828,
+                "maxX": 158.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          },
+          "governor": {
+            "minSignedGap": 38.39481405450246,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 112.76993434726828,
+                "maxX": 158.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          },
+          "fire": {
+            "minSignedGap": 67.73628435204375,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 110.72941849629785,
+                "maxX": 160.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "brake": {
+            "minSignedGap": 17.736284352043754,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 424,
+              "recoil": 0,
+              "bbox": {
+                "minX": 110.72941849629785,
+                "maxX": 160.26371564795625,
+                "minY": 82.57581146255461,
+                "maxY": 109.67453321551872
+              }
+            }
+          },
+          "boost": {
+            "minSignedGap": -11.605185945497539,
+            "failureEndpointSamples": 2024,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 120.62973072109418,
+                "maxX": 146.37158791801818,
+                "minY": 90.01881242506781,
+                "maxY": 128.7145324797624
+              }
+            },
+            "worst": {
+              "tick": 1278,
+              "recoil": 0,
+              "bbox": {
+                "minX": 112.76993434726828,
+                "maxX": 158.93036573998265,
+                "minY": 95.97647313763574,
+                "maxY": 129.60518594549754
+              }
+            }
+          }
+        },
+        "hostile-flanker": {
+          "stats": {
+            "minSignedGap": 59.372734004109844,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1704,
+              "recoil": 0,
+              "bbox": {
+                "minX": 163.37273400410984,
+                "maxX": 214.26259838899895,
+                "minY": 98.27795585709286,
+                "maxY": 129.0731752406706
+              }
+            }
+          },
+          "convoy": {
+            "minSignedGap": 5.005343956825897,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1426,
+              "recoil": 0,
+              "bbox": {
+                "minX": 164.16886117982133,
+                "maxX": 213.52804221679278,
+                "minY": 97.0053439568259,
+                "maxY": 131.0229352582756
+              }
+            }
+          },
+          "menu": {
+            "minSignedGap": 6.056490691996686,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 936,
+              "recoil": 0,
+              "bbox": {
+                "minX": 178.57983350335923,
+                "maxX": 223.04425824963909,
+                "minY": 98.05649069199669,
+                "maxY": 133.01755246074723
+              }
+            }
+          },
+          "drive": {
+            "minSignedGap": 58.77139848965879,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 1333,
+              "recoil": 0,
+              "bbox": {
+                "minX": 170.67304175092397,
+                "maxX": 223.88761866953882,
+                "minY": 101.17002102803006,
+                "maxY": 133.2286015103412
+              }
+            }
+          },
+          "aim": {
+            "minSignedGap": 57.23752435100033,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 175.80436101546744,
+                "maxX": 229.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          },
+          "governor": {
+            "minSignedGap": 33.23752435100033,
+            "failureEndpointSamples": 0,
+            "firstFailure": null,
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 175.80436101546744,
+                "maxX": 229.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          },
+          "fire": {
+            "minSignedGap": -1.8889197283756403,
+            "failureEndpointSamples": 730,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 176.95823099987788,
+                "maxX": 228.09042819964498,
+                "minY": 104.5719767055803,
+                "maxY": 132.10377775400232
+              }
+            },
+            "worst": {
+              "tick": 1090,
+              "recoil": 0,
+              "bbox": {
+                "minX": 178.4999610448098,
+                "maxX": 229.88891972837564,
+                "minY": 101.95870830602871,
+                "maxY": 132.31317632742318
+              }
+            }
+          },
+          "brake": {
+            "minSignedGap": -16.76247564899967,
+            "failureEndpointSamples": 3602,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 176.95823099987788,
+                "maxX": 228.09042819964498,
+                "minY": 104.5719767055803,
+                "maxY": 132.10377775400232
+              }
+            },
+            "worst": {
+              "tick": 157,
+              "recoil": 0,
+              "bbox": {
+                "minX": 175.80436101546744,
+                "maxX": 229.24471666773763,
+                "minY": 102.85338523064898,
+                "maxY": 134.76247564899967
+              }
+            }
+          },
+          "boost": {
+            "minSignedGap": -13.519620117526728,
+            "failureEndpointSamples": 3602,
+            "firstFailure": {
+              "tick": 0,
+              "recoil": 0,
+              "bbox": {
+                "minX": 176.95823099987788,
+                "maxX": 228.09042819964498,
+                "minY": 104.5719767055803,
+                "maxY": 132.10377775400232
+              }
+            },
+            "worst": {
+              "tick": 1360,
+              "recoil": 0,
+              "bbox": {
+                "minX": 166.3304944250523,
+                "maxX": 219.28697728312642,
+                "minY": 99.69780541730256,
+                "maxY": 131.51962011752673
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

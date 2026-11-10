@@ -1,0 +1,75 @@
+{"event":"replay-start","file":"newc-leichttraktor-direct-locked-inputs.json.gz","at":"2026-10-30T20:51:19.278Z"}
+{"event":"replay-end","mutual":{"supportShots":8,"flankerShots":9,"supportDamageEvents":8,"flankerDamageEvents":9},"file":"newc-leichttraktor-direct-locked-inputs.json.gz","inputSHA256":"0fec43c64d81f20ae73d71085d28d619552e78be61f9599b993a25bb3df1a722","specHash":"466094edb7a27b3b5b81891be542265a73ad7e638363314c5b960f3cef7ad444","vehicleId":"newc-leichttraktor","vehicleVersion":1,"inputs":7618,"tick":7617,"phase":"won","expectedFinalHash":"1602f295ca757a768cafb730e33fb2605f3dacafdc7fe9c4b64ca13b6285bb38","finalHash":"1602f295ca757a768cafb730e33fb2605f3dacafdc7fe9c4b64ca13b6285bb38","hp":60,"truckHp":86,"truckArrived":true,"at":"2026-10-30T20:52:37.256Z"}
+{"event":"replay-start","file":"newc-tiger-direct-locked-inputs.json.gz","at":"2026-10-30T20:52:37.307Z"}
+{"event":"replay-end","mutual":{"supportShots":8,"flankerShots":10,"supportDamageEvents":8,"flankerDamageEvents":10},"file":"newc-tiger-direct-locked-inputs.json.gz","inputSHA256":"2a284f243d3331443806ad9181fcc6a67d2d4ca3d42deb0512e80968e8fefc2e","specHash":"2ed5e250044a5a39ac11044173fbbfbab6e936205ade2f50f2beee183266078b","vehicleId":"newc-tiger","vehicleVersion":1,"inputs":9231,"tick":9230,"phase":"won","expectedFinalHash":"c8b3ebc13c400728fc9e6ab58a1c94af307fc2263a0074459d607b786cd53db2","finalHash":"c8b3ebc13c400728fc9e6ab58a1c94af307fc2263a0074459d607b786cd53db2","hp":125,"truckHp":100,"truckArrived":true,"at":"2026-10-30T20:54:05.973Z"}
+{"event":"replay-start","file":"pz3-direct-locked-inputs.json.gz","at":"2026-10-30T20:54:05.997Z"}
+{"event":"replay-start","file":"vanguard-covered-locked-westlane-inputs.json.gz","at":"2026-10-30T20:54:06.041Z"}
+{"event":"replay-end","mutual":{"supportShots":5,"flankerShots":6,"supportDamageEvents":5,"flankerDamageEvents":6},"file":"vanguard-covered-locked-westlane-inputs.json.gz","inputSHA256":"45fbd46b80cc0c1f8127cd239851820e2920574bbcd9bf49b7179c85a9b1f8a9","specHash":"800e58feb9c9371f8dba8feaf86c6ef4df69abf503d36dba55f2a46b7873fe64","vehicleId":"vanguard","vehicleVersion":1,"inputs":11187,"tick":11186,"phase":"won","expectedFinalHash":"12fd06de8ee2c58af5905c39b465b468e9c70f8391a94f2e9a0765b4bd43c688","finalHash":"12fd06de8ee2c58af5905c39b465b468e9c70f8391a94f2e9a0765b4bd43c688","hp":100,"truckHp":100,"truckArrived":true,"at":"2026-10-30T20:57:02.072Z"}
+{"event":"replay-start","file":"vanguard-direct-locked-inputs.json.gz","at":"2026-10-30T20:57:02.096Z"}
+✔ crossfire controls and config binding newc-leichttraktor-direct-locked-inputs.json.gz (66.165932ms)
+✔ crossfire complete independent input replay newc-leichttraktor-direct-locked-inputs.json.gz (77979.60719ms)
+✔ crossfire controls and config binding newc-tiger-direct-locked-inputs.json.gz (49.512802ms)
+✔ crossfire complete independent input replay newc-tiger-direct-locked-inputs.json.gz (88666.147828ms)
+✔ crossfire controls and config binding pz3-direct-locked-inputs.json.gz (23.75373ms)
+✖ crossfire complete independent input replay pz3-direct-locked-inputs.json.gz (22.944526ms)
+✔ crossfire controls and config binding vanguard-covered-locked-westlane-inputs.json.gz (20.336719ms)
+✔ crossfire complete independent input replay vanguard-covered-locked-westlane-inputs.json.gz (176032.395376ms)
+✔ crossfire controls and config binding vanguard-direct-locked-inputs.json.gz (22.558175ms)
+✖ crossfire complete independent input replay vanguard-direct-locked-inputs.json.gz (27.697789ms)
+✔ actual unmodified opening exchanges live opposing shots/damage and pause freezes full state (17543.620965ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 9
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 360777.071039
+
+✖ failing tests:
+
+test at tests/crossfire-replay.test.mjs:8:2
+✖ crossfire complete independent input replay pz3-direct-locked-inputs.json.gz (22.944526ms)
+  AssertionError [ERR_ASSERTION]: recorded runtime changed: combat-relations.js
+  + actual - expected
+  
+  + '10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2'
+  - 'bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/scorched_crossfire_candidate/work/tests/crossfire-replay.test.mjs:8:393)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2',
+    expected: 'bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/crossfire-replay.test.mjs:8:2
+✖ crossfire complete independent input replay vanguard-direct-locked-inputs.json.gz (27.697789ms)
+  AssertionError [ERR_ASSERTION]: recorded runtime changed: combat-relations.js
+  + actual - expected
+  
+  + '10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2'
+  - 'bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/scorched_crossfire_candidate/work/tests/crossfire-replay.test.mjs:8:393)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2',
+    expected: 'bb652310a071634b48b75f55436d65e4d7adf32c077f3634cd06deaf9e6ea4aa',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

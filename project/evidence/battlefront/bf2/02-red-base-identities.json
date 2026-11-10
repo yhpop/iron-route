@@ -1,0 +1,9 @@
+{
+  "note": "Exact backup copies used by 02-red command. Hash inventory recorded after terminal; not prelaunch capture. 01-red is mixed-head/unaccepted.",
+  "files": {
+    "main.js": "9d937baf1d64fcb3409d3e975e1cf836c221e900dea420fdd57741289867e6dc",
+    "campaign-view.js": "8345711af9d93eda5e6481fe27ac47d5c1212f191a52840460cc79429da57644",
+    "ruined-depot-view.js": "b38915228adfd63fd3bd3e33eb49ed1e9fa6e48cd6560016da031dc3e7fee34d",
+    "crossfire-warfield-view.js": "53e57a87af08d64ef0ae545a987599b02cba8fb98edc1892656cbb9da2b6edc5"
+  }
+}

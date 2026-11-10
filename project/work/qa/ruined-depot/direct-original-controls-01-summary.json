@@ -1,0 +1,20 @@
+{
+  "route": "direct",
+  "attempt": "direct-original-controls-01",
+  "mode": "tape",
+  "verify": false,
+  "inputs": 8141,
+  "tick": 8140,
+  "phase": "won",
+  "selectedConvoyChoiceId": "direct",
+  "hp": 72,
+  "truckHp": 86,
+  "truckArrived": true,
+  "shots": 4,
+  "alliedDamage": 0,
+  "failure": null,
+  "finalHash": "ba67ec6206b2c23ec66a9689ce2c9a945e73c62d93dbfd317a66723b872c4222",
+  "specHash": "4501679426f876be1f96f61956d5df7ed96f3e5c2dd6fa9468c0b18f39ef42ec",
+  "sourceHashesHash": "43731151b349d8d5ad6bbeee24b43ad215d40426ebc2fea1e13b18d21bf0e8c8",
+  "closureFiles": 30
+}

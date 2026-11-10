@@ -1,0 +1,36 @@
+Sat Oct 31 11:45:39 UTC 2026
+✔ actual direct convoy win binds full spec/source closure and complete independent generated evidence (185.653566ms)
+✔ actual covered convoy win binds full spec/source closure and complete independent generated evidence (168.837722ms)
+✔ natural two-bearing crossfire uses actual firing origins about the identical player point plus overlapping real projectiles; ally and enemy exchange real damage (69.990448ms)
+✔ early retreat uses actual static cover against a live returning in-range enemy without health/state patches (1.089948ms)
+✖ I1 rejects an edited crossfire summary unsupported by unchanged frozen raw (78.428716ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 691.40816
+
+✖ failing tests:
+
+test at tests/battlefront-depot-replays.test.mjs:8:1
+✖ I1 rejects an edited crossfire summary unsupported by unchanged frozen raw (78.428716ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (AssertionError).
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-replays.test.mjs:8:317)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: { name: 'AssertionError' },
+    operator: 'throws',
+    diff: 'simple'
+  }
+EXIT:1
+Sat Oct 31 11:45:40 UTC 2026

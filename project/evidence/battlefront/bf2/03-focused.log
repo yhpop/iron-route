@@ -1,0 +1,117 @@
+START 2026-10-31T11:59:10.388755+00:00
+COMMAND ["node", "--test", "--test-concurrency=1", "tests/battlefront-depot-presentation.test.mjs", "tests/battlefront-depot-ground.test.mjs", "tests/battlefront-depot-terrain.test.mjs", "tests/battlefront-depot-entry.test.mjs"]
+CAP_SECONDS 120
+✖ real featured entry uses exact mission flags, Sandfalcon, shared field and accelerated world path (1565.809441ms)
+✖ candidate real direct URL retries rejected library without poisoning cache (288.782059ms)
+✔ candidate waits for actual loaded world readiness and discards stale selection (290.918833ms)
+✖ real English source/menu contains new translated entry without changing old default or old slugs (842.6991ms)
+✔ all actual freight-yard ground triangles have authoritative containment, interior contact, continuous shared RGBA and bounded placement/budgets (1268.164656ms)
+✖ explicit candidate-only boundary suppression retains logical zones and gold active choice rings (296.05969ms)
+✔ candidate owns one clone per original material identity, borrowing maps and geometry (40.290028ms)
+✔ candidate replaces all old generated warfield buckets with one static bounded ground-detail mesh (479.03067ms)
+✔ library or material clone failure is transactional and frees only created tint clones (66.2369ms)
+✖ real campaign updates suppress actual proxies but keep replacement details through phase updates (553.594375ms)
+✔ occlusion restores tint before adapter disposes it once; borrowed original never freed (54.922913ms)
+✔ old default/scorched/crossfire shader text is byte-exact; candidate adds no sampler and unique cache key (4.94977ms)
+✔ old mask/geometry remain exact, candidate uses same six maps and existing B weather channel without geometry or map URL changes (4919.400612ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 8
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12221.010889
+
+✖ failing tests:
+
+test at tests/battlefront-depot-entry.test.mjs:18:1
+✖ real featured entry uses exact mission flags, Sandfalcon, shared field and accelerated world path (1565.809441ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'sandfalcon'
+  - 'tiger'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-entry.test.mjs:20:1248)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'sandfalcon',
+    expected: 'tiger',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-depot-entry.test.mjs:23:1
+✖ candidate real direct URL retries rejected library without poisoning cache (288.782059ms)
+  AssertionError [ERR_ASSERTION]: actual main boot body must not hit fail()
+  + actual - expected
+  
+  + [
+  +   'Error: test reject\n' +
+  +     '    at loadRuinedDepotLibrary (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-entry.test.mjs:9:122)'
+  + ]
+  - []
+  
+      at boot (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/main-entry-harness.mjs:68:40)
+      at async TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-entry.test.mjs:24:37)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'Error: test reject\n    at loadRuinedDepotLibrary (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-entry.test.mjs:9:122)' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-depot-entry.test.mjs:29:1
+✖ real English source/menu contains new translated entry without changing old default or old slugs (842.6991ms)
+  AssertionError [ERR_ASSERTION]: actual main boot body must not hit fail()
+  + actual - expected
+  
+  + [
+  +   'Error: Missing scanned cover collider/view scan-east-entry\n' +
+  +     '    at applyScannedCoverView (eval at <anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/english-test-modules.mjs:12:27), <anonymous>:2017:36)\n' +
+  +     '    at campaign/src/main.js (imports source-resolved; GLB/WebGL boundaries stubbed):100:32\n' +
+  +     '    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n' +
+  +     '    at async Promise.all (index 2)'
+  + ]
+  - []
+  
+      at boot (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/main-entry-harness.mjs:68:40)
+      at async TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-entry.test.mjs:30:75)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'Error: Missing scanned cover collider/view scan-east-entry\n    at applyScannedCoverView (eval at <anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/english-test-modules.mjs:12:27), <anonymous>:2017:36)\n    at campaign/src/main.js (imports source-resolved; GLB/WebGL boundaries stubbed):100:32\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async Promise.all (index 2)' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/battlefront-depot-presentation.test.mjs:13:1
+✖ explicit candidate-only boundary suppression retains logical zones and gold active choice rings (296.05969ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'rotation')
+      at Object.update (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/src/authored-scene-view.js:40:190)
+      at Object.update (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/src/campaign-view.js:47:32)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-presentation.test.mjs:16:113)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/battlefront-depot-presentation.test.mjs:45:1
+✖ real campaign updates suppress actual proxies but keep replacement details through phase updates (553.594375ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'rotation')
+      at Object.update (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/src/authored-scene-view.js:40:190)
+      at Object.update (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/src/campaign-view.js:47:32)
+      at TestContext.<anonymous> (file:///workspace/scratch/08f39b8da479/battlefront_depot_candidate/work/tests/battlefront-depot-presentation.test.mjs:48:142)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+EXIT 1
+SECONDS 12.403319270000793
+CODE_DRIFT []
+END 2026-10-31T11:59:22.821755+00:00

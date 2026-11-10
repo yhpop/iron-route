@@ -1,0 +1,26 @@
+{
+  "boundary": "Production exact ray vs independent real Three Raycaster; exported GLB geometry, no GPU",
+  "rows": [
+    {
+      "moduleId": "workshop",
+      "counts": {
+        "hit": 350,
+        "clear": 112
+      }
+    },
+    {
+      "moduleId": "broken-corner",
+      "counts": {
+        "hit": 222,
+        "clear": 240
+      }
+    },
+    {
+      "moduleId": "window-wall",
+      "counts": {
+        "hit": 104,
+        "clear": 358
+      }
+    }
+  ]
+}

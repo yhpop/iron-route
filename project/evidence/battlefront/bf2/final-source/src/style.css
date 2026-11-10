@@ -1,0 +1,346 @@
+:root {
+  color-scheme: dark;
+  --ui-ink: #f2f3e6;
+  --ui-muted: #b8c1b4;
+  --ui-panel: rgba(19, 30, 29, .91);
+  --ui-line: rgba(211, 225, 192, .25);
+  --ui-accent: #e3b65a;
+  --ui-accent-dark: #332a19;
+  --ui-safe-top: max(12px, env(safe-area-inset-top));
+  --ui-safe-right: max(14px, env(safe-area-inset-right));
+  --ui-safe-bottom: max(14px, env(safe-area-inset-bottom));
+  --ui-safe-left: max(14px, env(safe-area-inset-left));
+  font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #152320;
+  color: var(--ui-ink);
+}
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; overscroll-behavior: none; }
+body { -webkit-text-size-adjust: 100%; }
+#world { display: block; width: 100vw; height: 100vh; height: 100dvh; touch-action: auto; outline: none; }
+button, select { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, select:focus-visible { outline: 3px solid var(--ui-accent); outline-offset: 3px; }
+[hidden] { display: none !important; }
+.campaign-ui, .campaign-controls { position: fixed; inset: 0; z-index: 10; pointer-events: none; user-select: none; -webkit-user-select: none; }
+.campaign-controls { z-index: 9; touch-action: none; }
+.campaign-ui button, .campaign-ui select, .campaign-controls button { pointer-events: auto; }
+.campaign-hud { position: absolute; top: var(--ui-safe-top); left: var(--ui-safe-left); max-width: min(425px, calc(100vw - 230px)); padding: 10px 13px; background: var(--ui-panel); border-left: 3px solid var(--ui-accent); border-radius: 3px 9px 9px 3px; box-shadow: 0 3px 18px #0003; }
+.campaign-mission-label { font-size: 11px; letter-spacing: .04em; color: var(--ui-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.campaign-stats { display: flex; gap: 15px; align-items: baseline; padding-top: 4px; font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.campaign-stat[data-stat="hp"] { font-weight: 750; }
+.campaign-stat[data-stat="reload"] { color: var(--ui-accent); }
+.campaign-objective { margin-top: 5px; font-size: 12px; line-height: 1.4; color: var(--ui-muted); }
+.campaign-convoy-health { margin-top: 5px; padding-top: 4px; border-top: 1px solid var(--ui-line); }
+.campaign-truck-health { display: grid; grid-template-columns: minmax(38px, 1fr) max-content minmax(0, 1.8fr); align-items: baseline; gap: 6px; font-size: 10px; line-height: 1.5; }
+.campaign-truck-health__label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ui-muted); }
+.campaign-truck-health__hp { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 650; }
+.campaign-truck-health__status { overflow-wrap: anywhere; }
+.campaign-truck-health[data-condition="aimed"], .campaign-truck-health[data-condition="destroyed"] { color: #ffa88d; }
+.campaign-truck-health[data-condition="damaged"] { color: #f0cd8d; }
+.campaign-convoy-overflow { font-size: 10px; line-height: 1.4; color: var(--ui-muted); }
+.campaign-nav { display: flex; gap: 6px; position: absolute; right: var(--ui-safe-right); top: var(--ui-safe-top); }
+.campaign-button { min-height: 44px; padding: 10px 15px; border: 1px solid var(--ui-line); border-radius: 6px; background: var(--ui-panel); color: var(--ui-ink); font-size: 13px; font-weight: 650; cursor: pointer; touch-action: manipulation; }
+.campaign-sound-button { font-size: 11px; padding-inline: 10px; color: var(--ui-muted); }
+.campaign-sound-button[aria-pressed="true"] { color: var(--ui-accent); }
+.campaign-button:hover:not(:disabled) { border-color: var(--ui-accent); }
+.campaign-button:active:not(:disabled) { transform: translateY(1px); }
+.campaign-button:disabled { cursor: not-allowed; opacity: .43; }
+.campaign-objective-switch { display: block; min-height: 44px; width: 100%; max-width: 100%; margin-top: 5px; padding: 5px 8px; text-align: left; white-space: pre-line; overflow-wrap: anywhere; font-size: 11px; line-height: 1.4; color: var(--ui-muted); border-color: var(--ui-accent); }
+.campaign-button--primary { background: var(--ui-accent); border-color: var(--ui-accent); color: var(--ui-accent-dark); }
+.campaign-modal-layer { position: absolute; inset: 0; display: grid; place-items: center; padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); background: #07131163; pointer-events: auto; }
+.campaign-dialog { width: min(460px, 100%); max-height: 100%; overflow-y: auto; overscroll-behavior: contain; border: 1px solid var(--ui-line); border-radius: 12px; padding: 25px; background: #142320f5; box-shadow: 0 20px 70px #0007; touch-action: auto; }
+.campaign-dialog[data-mode="missions"] { width: min(680px, 100%); }
+.campaign-eyebrow { font-size: 11px; letter-spacing: .14em; color: var(--ui-accent); }
+.campaign-dialog__title { font-size: clamp(21px, 4vw, 29px); line-height: 1.25; margin: 7px 0 12px; }
+.campaign-dialog__body { font-size: 14px; line-height: 1.7; color: var(--ui-muted); margin: 0 0 15px; }
+.campaign-brief-objectives { padding-left: 24px; margin: 12px 0 18px; font-size: 14px; line-height: 1.7; }
+.campaign-brief-objective { padding-left: 4px; margin: 5px 0; }
+.campaign-brief-objective::marker { color: var(--ui-accent); }
+.campaign-staged-escort-warning { margin: 10px 0; padding-left: 10px; border-left: 2px solid var(--ui-accent); font-size: 12px; line-height: 1.6; color: #f0cd8d; }
+.campaign-control-hints { border-top: 1px solid var(--ui-line); padding-top: 8px; font-size: 11px; line-height: 1.7; color: var(--ui-muted); white-space: pre-line; }
+.campaign-touch-hint { display: none; }
+.campaign-dialog__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.campaign-dialog__actions .campaign-button--primary { flex: 1; }
+.campaign-selector-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.campaign-chapter-select { min-height: 44px; min-width: 145px; border: 1px solid var(--ui-line); border-radius: 6px; padding: 8px 12px; color: var(--ui-ink); background: #1b302b; }
+.campaign-mission-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.campaign-mission-card { min-height: 68px; padding: 10px; text-align: left; line-height: 1.45; font-size: 12px; background: #22392f; }
+.campaign-mission-card[aria-current="true"] { box-shadow: inset 0 0 0 1px var(--ui-accent); border-color: var(--ui-accent); }
+.campaign-pagination { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; gap: 10px; }
+.campaign-page-label { color: var(--ui-muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.campaign-governor { display: flex; position: absolute; left: var(--ui-safe-left); top: auto; bottom: var(--ui-safe-bottom); gap: 4px; pointer-events: auto; }
+.campaign-governor__button { min-width: 52px; min-height: 39px; border-radius: 5px; border: 1px solid var(--ui-line); padding: 8px 9px; background: var(--ui-panel); color: var(--ui-muted); font-size: 11px; cursor: pointer; touch-action: manipulation; }
+.campaign-governor__button[aria-pressed="true"] { color: var(--ui-accent); border-color: var(--ui-accent); background: #29352ae8; }
+.campaign-stick, .campaign-touch-actions { display: none; }
+#launch-help { position: fixed; z-index: 100; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(440px, calc(100vw - 40px)); padding: 24px; border: 1px solid var(--ui-line); border-radius: 12px; background: var(--ui-panel); font-size: 14px; line-height: 1.7; }
+#launch-help { right: auto; bottom: auto; box-sizing: border-box; max-height: calc(100vh - 40px); overflow: auto; }
+#launch-help h1 { font-size: 22px; }
+#launch-help details { margin-top: 12px; }
+#launch-help summary { min-height: 44px; cursor: pointer; }
+#launch-help pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; }
+@media (any-pointer: coarse), (max-width: 900px) {
+  .campaign-stick { --stick-size: clamp(108px, 17vw, 150px); display: block; width: var(--stick-size); height: var(--stick-size); position: absolute; bottom: calc(var(--ui-safe-bottom) + 14px); border-radius: 50%; border: 2px solid #e1ebd648; background: radial-gradient(circle, #13282355 0 31%, #13282326 32% 68%, #c9dec42b 69%); pointer-events: auto; touch-action: none; -webkit-touch-callout: none; }
+  .campaign-stick--drive { left: calc(var(--ui-safe-left) + 8px); }
+  .campaign-stick--aim { right: calc(var(--ui-safe-right) + 8px); }
+  .campaign-stick__knob { display: block; position: absolute; width: 37%; height: 37%; top: 31.5%; left: 31.5%; border-radius: 50%; background: #d9e6cc70; border: 1px solid #edf5e266; pointer-events: none; box-shadow: 0 3px 12px #0002; }
+  .campaign-stick[data-active="true"] { border-color: #e3b65aa1; background-color: #e3b65a12; }
+  .campaign-stick[data-active="true"] .campaign-stick__knob { background: #e3b65aaa; }
+  .campaign-stick__label { position: absolute; left: 0; right: 0; bottom: -20px; text-align: center; font-size: 10px; letter-spacing: .1em; color: #edf1e8d9; text-shadow: 0 1px 3px #000; pointer-events: none; }
+  .campaign-touch-actions { display: block; position: absolute; bottom: calc(var(--ui-safe-bottom) + 14px); right: calc(var(--ui-safe-right) + 8px); width: clamp(108px, 17vw, 150px); height: clamp(108px, 17vw, 150px); pointer-events: none; }
+  .campaign-touch-button { position: absolute; border: 1px solid #dfe8d780; border-radius: 50%; width: 48px; height: 48px; background: #182b27d9; color: var(--ui-ink); font-size: 11px; font-weight: 700; touch-action: none; -webkit-touch-callout: none; }
+  .campaign-touch-button--fire { right: 1px; bottom: calc(100% + 17px); width: 66px; height: 66px; color: #302619; border: 2px solid #f5d790; background: #e3b65ad9; font-size: 14px; }
+  .campaign-touch-button--brake { right: calc(100% + 17px); bottom: 0; }
+  .campaign-touch-button--boost { right: calc(100% + 17px); bottom: 60px; }
+  .campaign-touch-button[data-active="true"] { background: #f6d996; color: #302619; box-shadow: 0 0 0 4px #e3b65a30; }
+  .campaign-governor { top: auto; bottom: calc(var(--ui-safe-bottom) + clamp(108px, 17vw, 150px) + 31px); left: calc(var(--ui-safe-left) + 2px); gap: 3px; }
+  .campaign-governor__button { min-width: 44px; min-height: 44px; padding: 7px; font-size: 10px; }
+  .campaign-touch-hint { display: block; }
+  .campaign-desktop-hint { display: none; }
+  .campaign-hud { padding: 7px 10px; }
+  .campaign-stats { gap: 10px; font-size: 12px; }
+  .campaign-objective { font-size: 11px; }
+}
+@media (orientation: landscape) and (max-height: 560px) {
+  .campaign-stick { --stick-size: 112px; bottom: calc(var(--ui-safe-bottom) + 7px); }
+  .campaign-touch-actions { width: 112px; height: 112px; bottom: calc(var(--ui-safe-bottom) + 7px); }
+  .campaign-touch-button--fire { width: 56px; height: 56px; bottom: calc(100% + 12px); }
+  .campaign-dialog { padding: 17px 22px; }
+  .campaign-dialog__title { font-size: 23px; margin-bottom: 8px; }
+  .campaign-dialog__body { margin-bottom: 9px; font-size: 13px; }
+  .campaign-brief-objectives { margin: 8px 0; font-size: 12px; }
+  .campaign-control-hints { font-size: 10px; }
+  .campaign-control-hints p { margin: 6px 0; }
+  .campaign-dialog__actions { margin-top: 12px; }
+}
+@media (orientation: landscape) and (max-height: 560px) and (any-pointer: coarse), (orientation: landscape) and (max-height: 560px) and (max-width: 900px) {
+  /* Keep the short-screen governor below the HUD, in the gap beside the drive
+     stick; do not lift fine-pointer desktop controls back into the HUD. */
+  .campaign-governor { left: calc(var(--ui-safe-left) + 128px); bottom: calc(var(--ui-safe-bottom) + 7px); gap: 0; }
+  .campaign-governor__button { width: 44px; min-width: 44px; padding-inline: 0; }
+}
+@media (orientation: landscape) and (max-height: 560px) and (max-width: 560px) {
+  /* Two governor rows fit between the sticks even with 44px side insets.
+     Move brake/boost above the aim stick instead of sharing that narrow gap. */
+  .campaign-governor { left: calc(var(--ui-safe-left) + 124px); width: 88px; flex-wrap: wrap; }
+  .campaign-touch-button--brake { right: 64px; bottom: calc(100% + 12px); }
+  .campaign-touch-button--boost { right: 64px; bottom: calc(100% + 68px); }
+}
+@media (orientation: portrait) and (max-width: 600px) {
+  .campaign-hud { max-width: calc(100vw - 100px); }
+  .campaign-mission-label { max-width: 195px; }
+  .campaign-nav { flex-direction: column; gap: 5px; }
+  .campaign-nav .campaign-button { min-height: 40px; padding: 8px 12px; font-size: 11px; }
+  .campaign-stats { flex-wrap: wrap; column-gap: 10px; row-gap: 2px; }
+  .campaign-objective { max-width: 215px; }
+  .campaign-stick { --stick-size: 112px; }
+  .campaign-touch-actions { width: 112px; height: 112px; }
+  .campaign-touch-button--brake { right: 65px; bottom: calc(100% + 23px); width: 44px; height: 44px; }
+  .campaign-touch-button--boost { right: 114px; bottom: calc(100% + 23px); width: 44px; height: 44px; }
+  .campaign-touch-button--fire { right: -3px; bottom: calc(100% + 17px); width: 58px; height: 58px; }
+  .campaign-governor { flex-direction: column; left: calc(var(--ui-safe-left) + 7px); bottom: calc(var(--ui-safe-bottom) + 144px); gap: 3px; }
+  .campaign-governor__button { min-height: 36px; min-width: 50px; }
+  .campaign-modal-layer { padding: max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left)); }
+  .campaign-dialog { padding: 22px 18px; }
+  .campaign-mission-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .campaign-mission-card { min-height: 54px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+.campaign-convoy-status,.campaign-save-status{margin-top:4px;font-size:11px;line-height:1.35;color:#f0cd8d;max-width:300px}.campaign-save-status{color:#ffa88d}
+.campaign-bearing{font-size:12px;color:#e3b65a;letter-spacing:.03em;margin-top:4px}
+/* Charge awareness replaces this existing line; never grow a floating warning
+   panel over the playfield. JS uses measured overflow to show an explicit count
+   summary rather than silently removing a simultaneous threat. */
+.campaign-bearing[data-charge-warning="true"], .campaign-bearing[data-hit-feedback-active="true"] { white-space: nowrap; overflow: hidden; }
+
+/* Only the active game owns browser gestures. Menus/recovery retain reading zoom. */
+html[data-gameplay-active="true"] #world,
+html[data-gameplay-active="true"] .campaign-controls,
+html[data-gameplay-active="true"] .campaign-ui { touch-action: none; }
+.campaign-zoom-recovery { position: fixed; z-index: 110; margin: 0; padding: 12px; border: 1px solid var(--ui-accent); border-radius: 8px; background: #142320f5; color: var(--ui-ink); font-size: 16px; line-height: 1.55; overflow-wrap: anywhere; touch-action: auto; }
+
+.campaign-route-label{position:fixed;pointer-events:none;transform:translate(-50%,-125%);padding:5px 9px;border:1px solid #e3b65a;border-radius:5px;background:rgba(19,30,29,.92);color:#fff0bc;font-size:12px;font-weight:600;white-space:nowrap;z-index:4;}
+
+.campaign-convoy-order { display: block; margin-top: 6px; min-height: 44px; width: 100%; touch-action: manipulation; }
+.campaign-convoy-order[hidden] { display: none; }
+
+/* Compact short-landscape HUD */
+@media (orientation: landscape) and (max-height: 450px) and (max-width: 900px) {
+  .campaign-hud { padding: 5px 8px; max-width: calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 222px); }
+  .campaign-nav { width: 210px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .campaign-nav .campaign-button { min-width: 0; min-height: 44px; padding: 5px 3px; font-size: 11px; line-height: 14px; white-space: normal; overflow-wrap: anywhere; }
+  .campaign-mission-label { display: none; }
+  .campaign-stats { gap: 6px; padding-top: 0; font-size: 11px; line-height: 16px; }
+  .campaign-stat[data-stat="reload"] { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .campaign-objective, .campaign-bearing, .campaign-convoy-status, .campaign-save-status {
+    margin-top: 2px; font-size: 10px; line-height: 14px; max-width: none;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .campaign-convoy-health { margin-top: 2px; padding-top: 2px; }
+  .campaign-truck-health { font-size: 10px; line-height: 14px; }
+  .campaign-truck-health__status { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .campaign-convoy-order { position: fixed; top: calc(var(--ui-safe-top) + 50px); right: var(--ui-safe-right); width: auto; margin-top: 0; min-height: 44px; }
+}
+
+@media (orientation: landscape) and (max-height: 450px) and (max-width: 900px) {
+  .campaign-objective, .campaign-convoy-status, .campaign-bearing[data-charge-warning="false"]:not([data-hit-feedback-active="true"]) { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; }
+}
+
+/* Scorched-front only: transport operations plate, not a second HUD. */
+.campaign-ui[data-scorched-front="true"] { --ui-panel: rgba(29, 28, 25, .95); --ui-ink: #eee8d9; --ui-muted: #c8c0ad; --ui-accent: #e3ac56; --ui-line: #8d80614d; }
+.campaign-ui[data-scorched-front="true"] .campaign-hud { border-radius: 2px; border-left-width: 4px; background: linear-gradient(115deg, #282923f5, #171a18ed); box-shadow: 0 5px 20px #0005; }
+.campaign-ui[data-scorched-front="true"] .campaign-mission-label { color: #e3ac56; letter-spacing: .09em; }
+.campaign-ui[data-scorched-front="true"] .campaign-dialog { width: min(680px, 100%); border-radius: 3px; border-top: 3px solid var(--ui-accent); background: linear-gradient(140deg, #292a25fa, #151917fa); }
+.campaign-ui[data-scorched-front="true"] .campaign-button { border-radius: 2px; }
+.campaign-ui[data-scorched-front="true"] .scorched-garage { margin: 14px 0 20px; padding-top: 12px; border-top: 1px solid var(--ui-line); }
+.campaign-ui[data-scorched-front="true"] .scorched-garage__heading { margin: 0 0 5px; font-size: 15px; letter-spacing: .06em; color: var(--ui-accent); }
+.campaign-ui[data-scorched-front="true"] .scorched-garage__note { margin: 0 0 10px; font-size: 12px; line-height: 1.5; color: var(--ui-muted); }
+.campaign-ui[data-scorched-front="true"] .scorched-garage__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.campaign-ui[data-scorched-front="true"] .scorched-vehicle { min-height: 44px; min-width: 0; padding: 12px; text-align: left; white-space: pre-line; overflow-wrap: anywhere; font-size: 12px; line-height: 1.65; font-weight: 500; }
+.campaign-ui[data-scorched-front="true"] .scorched-vehicle[aria-pressed="true"] { border-color: var(--ui-accent); box-shadow: inset 3px 0 0 var(--ui-accent); background: #51442b80; }
+@media (max-width: 520px) { .campaign-ui[data-scorched-front="true"] .scorched-garage__grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Crossfire feedback shares the existing HUD; no floating combat labels. The
+   compact tier retains bearing/range/life/activity, then wraps rather than clips. */
+.campaign-ui[data-crossfire-front="true"] .campaign-support-status {
+  margin-top: 3px; font-size: 11px; line-height: 1.35; color: #b9d5df;
+  max-width: 100%; white-space: nowrap; overflow: hidden;
+}
+.campaign-ui[data-crossfire-front="true"] .campaign-support-status[hidden] { display: none; }
+.campaign-ui[data-crossfire-front="true"] .campaign-convoy-status[data-recovery-active="true"] {
+  max-width: 100%; white-space: normal; overflow: visible; text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+@media (orientation: landscape) and (max-height: 450px) and (max-width: 900px) {
+  .campaign-ui[data-crossfire-front="true"] .campaign-support-status,
+  .campaign-ui[data-crossfire-front="true"] .campaign-convoy-status[data-recovery-active="true"] {
+    margin-top: 2px; font-size: 10px; line-height: 14px;
+  }
+}
+.campaign-ui[data-crossfire-front="true"] .campaign-support-status[data-guidance-detail="wrap"] {
+  white-space: normal; overflow: visible; overflow-wrap: anywhere;
+}
+
+/* V3 opening firefight is on the left shoulder. Keep the single primary panel
+   at the opposite edge rather than changing aiming camera/physics for a HUD.
+   Source rectangle checks are not a substitute for device layout acceptance. */
+.campaign-ui[data-crossfire-v3="true"] .campaign-hud {
+  left: auto; right: var(--ui-safe-right); width: min(425px, calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 222px)); max-width: none;
+}
+.campaign-ui[data-crossfire-v3="true"] .campaign-nav {
+  left: var(--ui-safe-left); right: auto; width: 210px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; flex-direction: row;
+}
+.campaign-ui[data-crossfire-v3="true"] .campaign-nav .campaign-button {
+  min-width: 0; min-height: 44px; padding: 5px 3px; font-size: 11px; line-height: 14px; white-space: normal; overflow-wrap: anywhere;
+}
+.campaign-ui[data-crossfire-v3="true"] .campaign-convoy-order { position: static; width: 100%; margin-top: 6px; }
+@media (orientation: portrait) {
+  .campaign-ui[data-crossfire-v3="true"] .campaign-hud { width: min(200px, calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 156px)); }
+  .campaign-ui[data-crossfire-v3="true"] .campaign-nav { width: 144px; }
+  .campaign-ui[data-crossfire-v3="true"] .campaign-stats { flex-wrap: wrap; gap: 2px 8px; }
+}
+@media (orientation: landscape) and (max-height: 450px) and (max-width: 900px) {
+  .campaign-ui[data-crossfire-v3="true"] .campaign-hud { width: min(400px, 45vw, calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 222px)); }
+}
+@media (orientation: landscape) and (max-width: 600px) {
+  .campaign-ui[data-crossfire-v3="true"] .campaign-nav { width: 144px; }
+  .campaign-ui[data-crossfire-v3="true"] .campaign-hud { width: min(200px, 45vw, calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 156px)); }
+}
+
+
+/* Scanned-cover compact: source layout contract; device acceptance pending. */
+.campaign-scanned-status, .campaign-scanned-opener { display: none; }
+.campaign-scanned-details { overflow-wrap: anywhere; white-space: pre-line; }
+@media (orientation: landscape) and (max-height: 560px) {
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-hud,
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-nav { display: none; }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-scanned-status {
+    display: block; position: fixed; top: var(--ui-safe-top); left: var(--ui-safe-left);
+    width: min(clamp(56px, calc(50vw - var(--ui-safe-left) - 66px), 300px), calc(100vw - var(--ui-safe-left) - var(--ui-safe-right) - 150px));
+    height: 44px; box-sizing: border-box; padding: 1px 5px; border: 1px solid var(--ui-line);
+    background: var(--ui-panel); color: var(--ui-ink); border-radius: 3px;
+    font-size: 10px; line-height: 13px; pointer-events: auto; overflow: hidden;
+  }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-scanned-status > div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-scanned-opener {
+    display: block; position: fixed; top: var(--ui-safe-top); right: var(--ui-safe-right);
+    width: 44px; height: 44px; min-width: 44px; min-height: 44px; padding: 2px; font-size: 11px; pointer-events: auto;
+  }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-hud .campaign-convoy-order {
+    display: block; position: fixed; top: var(--ui-safe-top); right: calc(var(--ui-safe-right) + 50px);
+    width: 88px; height: 44px; min-height: 44px; margin: 0; padding: 2px; font-size: 10px; line-height: 13px;
+  }
+  /* Keep the order's existing parent as a transparent, non-blocking container. */
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-hud {
+    display: contents;
+  }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-hud > :not(.campaign-convoy-order) { display: none; }
+  .campaign-ui[data-scanned-cover="true"][data-phase="playing"] .campaign-hud .campaign-convoy-order[hidden] { display: none; }
+}
+
+/* V4 tiny viewport: reserve separate bands for navigation, scrollable status,
+   action buttons and driving controls. Long CN/EN recovery text must scroll,
+   not grow over fire/brake/boost. Source budgets still require device QA. */
+@media (max-width: 600px) and (max-height: 360px) {
+  .campaign-ui[data-crossfire-v4="true"] .campaign-nav {
+    width: 140px; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px;
+  }
+  .campaign-ui[data-crossfire-v4="true"] .campaign-hud {
+    top: calc(var(--ui-safe-top) + 50px); left: var(--ui-safe-left); right: var(--ui-safe-right);
+    width: auto; max-width: none;
+    max-height: calc(100vh - var(--ui-safe-top) - var(--ui-safe-bottom) - 202px);
+    max-height: calc(100dvh - var(--ui-safe-top) - var(--ui-safe-bottom) - 202px);
+    padding: 2px 6px; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;
+    pointer-events: auto; touch-action: pan-y; overflow-wrap: anywhere;
+  }
+  .campaign-ui[data-crossfire-v4="true"] .campaign-convoy-order {
+    position: fixed; top: var(--ui-safe-top); right: var(--ui-safe-right); width: 88px;
+    min-height: 44px; height: 44px; margin: 0; padding: 2px; font-size: 10px; line-height: 13px;
+    white-space: normal; overflow-wrap: anywhere;
+  }
+  .campaign-ui[data-crossfire-v4="true"] .campaign-stats { flex-wrap: wrap; gap: 2px 8px; }
+  .campaign-ui[data-crossfire-v4="true"] .campaign-objective,
+  .campaign-ui[data-crossfire-v4="true"] .campaign-bearing,
+  .campaign-ui[data-crossfire-v4="true"] .campaign-support-status,
+  .campaign-ui[data-crossfire-v4="true"] .campaign-convoy-status,
+  .campaign-ui[data-crossfire-v4="true"] .campaign-truck-health__status {
+    white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere;
+  }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-stick {
+    --stick-size: clamp(44px, calc((100vw - var(--ui-safe-left) - var(--ui-safe-right) - 104px) / 2), 88px);
+    bottom: calc(var(--ui-safe-bottom) + 6px);
+  }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-stick--drive { left: var(--ui-safe-left); }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-stick--aim { right: var(--ui-safe-right); }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-stick__label { bottom: 2px; }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-touch-actions {
+    right: var(--ui-safe-right); bottom: calc(var(--ui-safe-bottom) + 6px); width: 88px; height: 88px;
+  }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-touch-button {
+    width: 44px; height: 44px; bottom: calc(100% + 6px); font-size: 10px;
+  }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-touch-button--fire { right: 0; }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-touch-button--brake { right: 50px; }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-touch-button--boost { right: 100px; }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-governor {
+    left: calc(var(--ui-safe-left) + (100vw - var(--ui-safe-left) - var(--ui-safe-right) - 88px) / 2);
+    top: auto; bottom: calc(var(--ui-safe-bottom) + 6px); width: 88px; height: 88px;
+    display: grid; grid-template-columns: repeat(2, 44px); grid-template-rows: repeat(2, 44px); gap: 0;
+  }
+  html[data-crossfire-v4="true"] .campaign-controls .campaign-governor__button {
+    width: 44px; min-width: 44px; height: 44px; min-height: 44px; padding: 2px;
+    white-space: normal; overflow-wrap: anywhere;
+  }
+}
+
+/* Compact pause footer: resume gets its own row; secondary controls still wrap. */
+@media (max-width: 600px) {
+  .campaign-dialog[data-mode="paused"] .campaign-dialog__actions > .campaign-button--primary {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+}

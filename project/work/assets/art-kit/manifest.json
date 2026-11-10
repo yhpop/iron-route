@@ -1,0 +1,557 @@
+{
+  "schema": 1,
+  "kit": "industrial-canal-20261028",
+  "provenance": "Original procedural Blender mesh and seeded raster surface authoring. No external assets, downloads or original tank changes. Existing tank used only as scale/style reference.",
+  "units": "metres",
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "pivot": "base-centre",
+  "lighting": "Dynamic PBR; no scene lighting baked into textures",
+  "runtimeDependencies": "glTF 2.0 native loader only; PNG textures embedded; no Draco/Meshopt/KTX decoder",
+  "optimization": "Branch consolidation and material reuse applied in authoring; no glTF Transform installation was present, so no new package was installed. Meshes are uncompressed indexed triangles.",
+  "budget": {
+    "maxTrianglesPerAsset": 30000,
+    "maxMaterialsPerAsset": 14,
+    "maxDrawPrimitivesPerAsset": 32,
+    "maxGLBBytes": 3000000,
+    "maxTextureDimension": 512
+  },
+  "assets": [
+    {
+      "assetKey": "warehouse-sawtooth",
+      "file": "warehouse-sawtooth.glb",
+      "root": "WarehouseSawtooth",
+      "sha256": "3d36f5cc331470bb6e685019da941e45f93145f360eb1740e61a730e42e84dca",
+      "bytes": 2340084,
+      "triangles": 7156,
+      "drawPrimitives": 8,
+      "materials": 8,
+      "embeddedTextures": [
+        {
+          "name": "warm_concrete_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 197565
+        },
+        {
+          "name": "warm_concrete_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "clay_brick_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 232303
+        },
+        {
+          "name": "clay_brick_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "paint_sage_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 229441
+        },
+        {
+          "name": "paint_sage_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 265990
+        },
+        {
+          "name": "roof_zinc_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 226411
+        },
+        {
+          "name": "roof_zinc_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 267249
+        }
+      ],
+      "boundsMeters": [
+        [
+          -4.0,
+          0.0,
+          -4.000000238418579
+        ],
+        [
+          4.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "dimensionsMeters": [
+        8.0,
+        4.0,
+        8.000000238418579
+      ],
+      "rootPivotMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "facadeReadability": {
+        "wallFrontPlaneZ": -3.750000238418579,
+        "panelFrontPlaneZ": -3.870000123977661,
+        "visibleReliefMeters": 0.11999988555908203
+      },
+      "collisionContract": {
+        "kind": "box",
+        "width": 8,
+        "depth": 8,
+        "height": 4,
+        "origin": "base-centre",
+        "scaleToAuthoredGeometry": true,
+        "facadeOverhangMeters": 0,
+        "notes": "All architectural detail contained inside collision footprint; roof shape is not a mesh collider."
+      },
+      "recommendedScale": {
+        "x": [
+          0.65,
+          1.8
+        ],
+        "y": [
+          0.7,
+          1.25
+        ],
+        "z": [
+          0.65,
+          2
+        ]
+      }
+    },
+    {
+      "assetKey": "pump-station",
+      "file": "pump-station.glb",
+      "root": "PumpStation",
+      "sha256": "494de850bc44dd8b512bacb0db906ed8c52790f043ee04ca19e1f39682299daf",
+      "bytes": 2267984,
+      "triangles": 7820,
+      "drawPrimitives": 7,
+      "materials": 7,
+      "embeddedTextures": [
+        {
+          "name": "warm_concrete_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 197565
+        },
+        {
+          "name": "warm_concrete_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "roof_zinc_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 226411
+        },
+        {
+          "name": "roof_zinc_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 267249
+        },
+        {
+          "name": "paint_sage_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 229441
+        },
+        {
+          "name": "paint_sage_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 265990
+        },
+        {
+          "name": "paint_ochre_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 239792
+        },
+        {
+          "name": "paint_ochre_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 266517
+        }
+      ],
+      "boundsMeters": [
+        [
+          -4.0,
+          0.0,
+          -4.000000238418579
+        ],
+        [
+          4.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "dimensionsMeters": [
+        8.0,
+        4.0,
+        8.000000238418579
+      ],
+      "rootPivotMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "facadeReadability": {
+        "wallFrontPlaneZ": -3.750000238418579,
+        "panelFrontPlaneZ": -3.870000123977661,
+        "visibleReliefMeters": 0.11999988555908203
+      },
+      "collisionContract": {
+        "kind": "box",
+        "width": 8,
+        "depth": 8,
+        "height": 4,
+        "origin": "base-centre",
+        "scaleToAuthoredGeometry": true,
+        "facadeOverhangMeters": 0,
+        "notes": "All architectural detail contained inside collision footprint; roof shape is not a mesh collider."
+      },
+      "recommendedScale": {
+        "x": [
+          0.65,
+          1.8
+        ],
+        "y": [
+          0.7,
+          1.25
+        ],
+        "z": [
+          0.65,
+          1.8
+        ]
+      }
+    },
+    {
+      "assetKey": "service-workshop",
+      "file": "service-workshop.glb",
+      "root": "ServiceWorkshop",
+      "sha256": "ba4bb392d92567ee6020c48a1b92a5741e8f88fb0dfd14a63a4d5f96b4f76b86",
+      "bytes": 2355760,
+      "triangles": 7540,
+      "drawPrimitives": 8,
+      "materials": 8,
+      "embeddedTextures": [
+        {
+          "name": "warm_concrete_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 197565
+        },
+        {
+          "name": "warm_concrete_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "clay_brick_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 232303
+        },
+        {
+          "name": "clay_brick_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "paint_sage_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 229441
+        },
+        {
+          "name": "paint_sage_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 265990
+        },
+        {
+          "name": "roof_zinc_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 226411
+        },
+        {
+          "name": "roof_zinc_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 267249
+        }
+      ],
+      "boundsMeters": [
+        [
+          -4.0,
+          0.0,
+          -4.000000238418579
+        ],
+        [
+          4.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "dimensionsMeters": [
+        8.0,
+        4.0,
+        8.000000238418579
+      ],
+      "rootPivotMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "facadeReadability": {
+        "wallFrontPlaneZ": -3.750000238418579,
+        "panelFrontPlaneZ": -3.870000123977661,
+        "visibleReliefMeters": 0.11999988555908203
+      },
+      "collisionContract": {
+        "kind": "box",
+        "width": 8,
+        "depth": 8,
+        "height": 4,
+        "origin": "base-centre",
+        "scaleToAuthoredGeometry": true,
+        "facadeOverhangMeters": 0,
+        "notes": "All architectural detail contained inside collision footprint; roof shape is not a mesh collider."
+      },
+      "recommendedScale": {
+        "x": [
+          0.65,
+          1.8
+        ],
+        "y": [
+          0.7,
+          1.25
+        ],
+        "z": [
+          0.65,
+          1.8
+        ]
+      }
+    },
+    {
+      "assetKey": "cargo-truck",
+      "file": "cargo-truck.glb",
+      "root": "CargoTruck",
+      "sha256": "5041c07daca267ac5eaf9d4eed182ff45b96e57810eccbc91274d8568cfcaabf",
+      "bytes": 2624812,
+      "triangles": 24468,
+      "drawPrimitives": 25,
+      "materials": 10,
+      "embeddedTextures": [
+        {
+          "name": "paint_sage_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 229441
+        },
+        {
+          "name": "paint_sage_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 265990
+        },
+        {
+          "name": "paint_ochre_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 239792
+        },
+        {
+          "name": "paint_ochre_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 266517
+        },
+        {
+          "name": "canvas_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 197569
+        },
+        {
+          "name": "canvas_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268178
+        }
+      ],
+      "boundsMeters": [
+        [
+          -0.8950000161332045,
+          0.008999922888585421,
+          -1.7999998331069946
+        ],
+        [
+          0.8950000161332045,
+          2.1590001602593505,
+          1.800000011920929
+        ]
+      ],
+      "dimensionsMeters": [
+        1.790000032266409,
+        2.150000237370765,
+        3.5999998450279236
+      ],
+      "rootPivotMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collisionContract": {
+        "kind": "box",
+        "width": 1.8,
+        "depth": 3.6,
+        "height": 2.2,
+        "origin": "base-centre",
+        "routeClearance": {
+          "width": 2.2,
+          "depth": 4
+        },
+        "notes": "Combat and dynamic body use 1.8 x 3.6 x 2.2; content uses conservative 2.2 x 4 route envelope."
+      },
+      "rig": {
+        "wheels": [
+          "WheelLFront",
+          "WheelLRear",
+          "WheelRFront",
+          "WheelRRear"
+        ],
+        "wheelSpinAxis": "local +X",
+        "wheelRadiusMeters": 0.36,
+        "forward": "-Z"
+      }
+    },
+    {
+      "assetKey": "sentry-turret",
+      "file": "sentry-turret.glb",
+      "root": "SentryTurret",
+      "sha256": "4e58d89cbe70ab7908fec2be73228511721fd5cd79eff14d99abb255874ef041",
+      "bytes": 1765484,
+      "triangles": 6460,
+      "drawPrimitives": 17,
+      "materials": 7,
+      "embeddedTextures": [
+        {
+          "name": "warm_concrete_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 197565
+        },
+        {
+          "name": "warm_concrete_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 268157
+        },
+        {
+          "name": "paint_sage_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 229441
+        },
+        {
+          "name": "paint_sage_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 265990
+        },
+        {
+          "name": "paint_ochre_base",
+          "width": 512,
+          "height": 512,
+          "bytes": 239792
+        },
+        {
+          "name": "paint_ochre_orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 266517
+        }
+      ],
+      "boundsMeters": [
+        [
+          -0.7821540236473083,
+          0.0,
+          -0.7821540236473083
+        ],
+        [
+          0.7821540236473083,
+          2.1699999570846558,
+          0.7821540236473083
+        ]
+      ],
+      "dimensionsMeters": [
+        1.5643080472946167,
+        2.1699999570846558,
+        1.5643080472946167
+      ],
+      "rootPivotMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collisionContract": {
+        "kind": "circle",
+        "radius": 0.8,
+        "height": 2.2,
+        "origin": "base-centre",
+        "barrelVisualOverhang": false,
+        "fullYawVisualSweepRadiusMeters": 0.7827921577316438,
+        "articulatedSweepRadiusMeters": 0.7827921577316438,
+        "sweepValidation": "analytic continuous pitch extrema, all yaw, recoil endpoints",
+        "notes": "Complete visual silhouette including the barrel stays inside radius .8 for all yaw, declared elevation and recoil extremes. No added collider. Use Muzzle for visual shot origin; combat remains authority."
+      },
+      "rig": {
+        "yaw": "TurretYaw",
+        "yawAxis": "local +Y",
+        "elevation": "GunPitch",
+        "elevationAxis": "local +X",
+        "recoil": "Recoil",
+        "recoilAxis": "local +Z",
+        "recoilRangeMeters": [
+          0,
+          0.07
+        ],
+        "muzzle": "Muzzle",
+        "optionalShield": "Shield",
+        "neutralMuzzleWorldMeters": [
+          0.0,
+          1.2799999713897705,
+          -0.7563999742269516
+        ],
+        "elevationRangeRadians": [
+          -0.08,
+          0.35
+        ]
+      }
+    }
+  ],
+  "source": [
+    "industrial-canal-kit.blend",
+    "../../scripts/art-kit/author_kit.py",
+    "../../scripts/art-kit/generate_textures.py"
+  ],
+  "renders": "renders/*.png are genuine offline Blender renders of exported/re-imported GLBs, NOT browser/gameplay evidence"
+}

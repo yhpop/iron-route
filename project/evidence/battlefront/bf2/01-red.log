@@ -1,0 +1,18 @@
+Sat Oct 31 11:55:01 UTC 2026
+✖ tests/battlefront-depot-presentation.test.mjs (70499.250777ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70519.694727
+
+✖ failing tests:
+
+test at tests/battlefront-depot-presentation.test.mjs:1:1
+✖ tests/battlefront-depot-presentation.test.mjs (70499.250777ms)
+  'test failed'
+EXIT:1
+Sat Oct 31 11:56:12 UTC 2026

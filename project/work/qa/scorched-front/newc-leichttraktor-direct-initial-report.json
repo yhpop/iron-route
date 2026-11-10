@@ -1,0 +1,2072 @@
+{
+  "maneuver": null,
+  "vehicleId": "newc-leichttraktor",
+  "vehicleVersion": 1,
+  "attempt": "initial",
+  "specHash": "dbe2d863dcaee1d473c864c928bee73bd0103b8917058b2fb5f5e74d1fb68276",
+  "route": "direct",
+  "phase": "won",
+  "tick": 7617,
+  "hp": 60,
+  "truckHp": 86,
+  "shots": 9,
+  "failure": null,
+  "checkpoints": [
+    {
+      "action": "drive 8,19",
+      "tick": 407,
+      "phase": "playing",
+      "tank": {
+        "x": 7.6500035580243875,
+        "y": 0.008,
+        "z": 19.23903627601931,
+        "yaw": -0.9739036231754792,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "moving",
+          "stoppedReason": null,
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23,
+            "y": 0.008000104822860139,
+            "z": -4.76680555555555,
+            "yaw": 0,
+            "basis": {
+              "right": [
+                0.9999999999999949,
+                -1.0075128837552606e-7,
+                -2.465190328815662e-32
+              ],
+              "up": [
+                1.0075128837552606e-7,
+                0.9999999999999949,
+                -1.2429700608645973e-9
+              ],
+              "forward": [
+                1.2523083504431425e-16,
+                1.242970060864591e-9,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 90,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "idle"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 14,18",
+      "tick": 717,
+      "phase": "playing",
+      "tank": {
+        "x": 13.577943048679973,
+        "y": 0.008,
+        "z": 17.988754391491565,
+        "yaw": -1.594843932435852,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23,
+            "y": 0.00800003879018164,
+            "z": -11.741805555555686,
+            "yaw": 0,
+            "basis": {
+              "right": [
+                1,
+                -8.44649783794181e-9,
+                0
+              ],
+              "up": [
+                8.44649783794181e-9,
+                1,
+                -1.1181061642750094e-9
+              ],
+              "forward": [
+                9.444081299138278e-18,
+                1.1181061642750094e-9,
+                1
+              ]
+            }
+          },
+          "status": "idle"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 90,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "idle"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 14,1",
+      "tick": 1504,
+      "phase": "playing",
+      "tank": {
+        "x": 13.92751424709527,
+        "y": 0.008,
+        "z": 1.412989120172619,
+        "yaw": -0.17251299013608978,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 100,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 90,
+          "pose": {
+            "x": 23.02704657400667,
+            "y": 0.008000103159970831,
+            "z": -6.017033252273789,
+            "yaw": 3.138593164496447,
+            "basis": {
+              "right": [
+                0.9999999999999964,
+                8.44460813147619e-8,
+                0
+              ],
+              "up": [
+                -8.44460813147619e-8,
+                0.9999999999999964,
+                1.8560549723324872e-9
+              ],
+              "forward": [
+                1.567365691182574e-16,
+                -1.8560549723324806e-9,
+                1
+              ]
+            }
+          },
+          "status": "cooldown"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 90,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "cooldown"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "shoot road-gun",
+      "tick": 1632,
+      "phase": "playing",
+      "tank": {
+        "x": 13.92751424709527,
+        "y": 0.008,
+        "z": 1.412989120172619,
+        "yaw": -0.17251299013608978,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 90,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "cooldown"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 18,-18",
+      "tick": 2154,
+      "phase": "playing",
+      "tank": {
+        "x": 17.906566005008067,
+        "y": 0.008,
+        "z": -17.574169710649603,
+        "yaw": -0.21603979084783198,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 90,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "charging"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "shoot ridge-gun",
+      "tick": 2339,
+      "phase": "playing",
+      "tank": {
+        "x": 17.906566005008067,
+        "y": 0.008,
+        "z": -17.574169710649603,
+        "yaw": -0.21603979084783198,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 16,22",
+      "tick": 3553,
+      "phase": "playing",
+      "tank": {
+        "x": 16.0136468159214,
+        "y": 0.008000000000000418,
+        "z": 21.56266913601346,
+        "yaw": 3.1103979900832144,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 0.8064437386903704,
+            "y": 0,
+            "z": 27.423968758078303,
+            "yaw": -0.9505468408120753
+          },
+          "status": "waiting",
+          "stoppedReason": "commander-hold",
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 18,-24",
+      "tick": 6047,
+      "phase": "playing",
+      "tank": {
+        "x": 17.981231327737753,
+        "y": 0.008,
+        "z": -23.561854596915715,
+        "yaw": -0.04278611949990463,
+        "basis": {
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "forward": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 14,
+            "y": 0,
+            "z": -11.501233008282188,
+            "yaw": 0
+          },
+          "status": "moving",
+          "stoppedReason": null,
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "drive 8,-36",
+      "tick": 6797,
+      "phase": "playing",
+      "tank": {
+        "x": 8.280194993010387,
+        "y": 0.008,
+        "z": -35.664176394975975,
+        "yaw": 0.6953331967263949,
+        "basis": {
+          "right": [
+            1,
+            -3.3357511433775574e-75,
+            0
+          ],
+          "up": [
+            3.3357511433775574e-75,
+            1,
+            -4.740596435184003e-68
+          ],
+          "forward": [
+            1.581344997895661e-142,
+            4.740596435184003e-68,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 13.61389251761122,
+            "y": 0,
+            "z": -24.220632847079308,
+            "yaw": 1.051650212548374
+          },
+          "status": "moving",
+          "stoppedReason": null,
+          "arrived": false
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    },
+    {
+      "action": "wait arrival",
+      "tick": 7617,
+      "phase": "won",
+      "tank": {
+        "x": 8.280194993010387,
+        "y": 0.008,
+        "z": -35.664176394975975,
+        "yaw": 0.6953331967263949,
+        "basis": {
+          "right": [
+            1,
+            -3.3357511433775574e-75,
+            0
+          ],
+          "up": [
+            3.3357511433775574e-75,
+            1,
+            -4.740596435184003e-68
+          ],
+          "forward": [
+            1.581344997895661e-142,
+            4.740596435184003e-68,
+            1
+          ]
+        }
+      },
+      "hp": 60,
+      "contacts": [],
+      "choice": "direct",
+      "entities": [
+        {
+          "id": "ridge-fence-0",
+          "hp": 90,
+          "pose": {
+            "x": -22.6,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-1",
+          "hp": 90,
+          "pose": {
+            "x": -20.8,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-2",
+          "hp": 90,
+          "pose": {
+            "x": -19,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-3",
+          "hp": 90,
+          "pose": {
+            "x": -17.200000000000003,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "ridge-fence-4",
+          "hp": 90,
+          "pose": {
+            "x": -15.400000000000002,
+            "y": 0,
+            "z": 14,
+            "yaw": 0
+          },
+          "status": "intact"
+        },
+        {
+          "id": "supply",
+          "hp": 86,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -32,
+            "yaw": 1.0516502125483707
+          },
+          "status": "arrived",
+          "stoppedReason": null,
+          "arrived": true
+        },
+        {
+          "id": "road-gun",
+          "hp": 0,
+          "pose": {
+            "x": 23.018415140487537,
+            "y": 0.008000099661580874,
+            "z": -3.139407308339931,
+            "yaw": 3.1385931644964593,
+            "basis": {
+              "right": [
+                0.9999999999999944,
+                1.0603953906107532e-7,
+                0
+              ],
+              "up": [
+                -1.0603953906107532e-7,
+                0.9999999999999944,
+                -2.1465897026842222e-9
+              ],
+              "forward": [
+                -2.276233826258856e-16,
+                2.14658970268421e-9,
+                1
+              ]
+            }
+          },
+          "status": "destroyed"
+        },
+        {
+          "id": "ridge-gun",
+          "hp": 0,
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "z": -18,
+            "yaw": 3.141592653589793
+          },
+          "status": "destroyed"
+        }
+      ],
+      "failure": null
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete",
+      "action": "start"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active",
+      "action": "start"
+    },
+    {
+      "id": "event-3",
+      "tick": 281,
+      "type": "convoy-route-selected",
+      "value": "direct",
+      "choiceId": "direct",
+      "action": "drive 8,19"
+    },
+    {
+      "id": "event-4",
+      "tick": 1385,
+      "type": "shot",
+      "entityId": "road-gun",
+      "position": {
+        "x": 21.929578589248923,
+        "y": 1.2632396613837364,
+        "z": -5.542025292698551
+      },
+      "projectileId": "projectile-1",
+      "action": "drive 14,1"
+    },
+    {
+      "id": "event-5",
+      "tick": 1461,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0.3634301915314072,
+        "y": 1.2861918855900367,
+        "z": -17.336670072508912
+      },
+      "projectileId": "projectile-2",
+      "action": "drive 14,1"
+    },
+    {
+      "id": "event-6",
+      "tick": 1505,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "terrain",
+      "position": {
+        "x": 5.28103928123983,
+        "y": 1.4016287954763968,
+        "z": -8.361088635093019
+      },
+      "normal": {
+        "x": 0.4817529968270273,
+        "y": 0.7786729884953606,
+        "z": -0.4019731670595468
+      },
+      "projectileId": "projectile-2",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-7",
+      "tick": 1537,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 14.904857207849632,
+        "y": 1.5950641176900515,
+        "z": 0.9939050382034516
+      },
+      "projectileId": "projectile-3",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-8",
+      "tick": 1546,
+      "type": "impact",
+      "entityId": "road-gun",
+      "targetId": "supply",
+      "position": {
+        "x": 2.1279149331353553,
+        "y": 1.982679642829029,
+        "z": 26.177191334165936
+      },
+      "normal": {
+        "x": 0.813733471206735,
+        "y": 0,
+        "z": -0.5812381937190962
+      },
+      "projectileId": "projectile-1",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-9",
+      "tick": 1546,
+      "type": "damaged",
+      "targetId": "supply",
+      "entityId": "road-gun",
+      "position": {
+        "x": 2.1279149331353553,
+        "y": 1.982679642829029,
+        "z": 26.177191334165936
+      },
+      "value": 14,
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-10",
+      "tick": 1553,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "road-gun",
+      "position": {
+        "x": 22.11709192062121,
+        "y": 1.131841446581445,
+        "z": -4.725898717613134
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-3",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-11",
+      "tick": 1553,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 22.11709192062121,
+        "y": 1.131841446581445,
+        "z": -4.725898717613134
+      },
+      "value": 24,
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-12",
+      "tick": 1564,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 14.945779095237397,
+        "y": 1.5933659380496414,
+        "z": 1.0398016507538217
+      },
+      "projectileId": "projectile-4",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-13",
+      "tick": 1579,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "road-gun",
+      "position": {
+        "x": 22.11533722674635,
+        "y": 1.132172862920657,
+        "z": -4.173697944019962
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-4",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-14",
+      "tick": 1579,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 22.11533722674635,
+        "y": 1.132172862920657,
+        "z": -4.173697944019962
+      },
+      "value": 24,
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-15",
+      "tick": 1591,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 14.987212031441754,
+        "y": 1.591656630725652,
+        "z": 1.0905218792060705
+      },
+      "projectileId": "projectile-5",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-16",
+      "tick": 1606,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "road-gun",
+      "position": {
+        "x": 22.113515043520568,
+        "y": 1.1325345138490996,
+        "z": -3.621729449044784
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-5",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-17",
+      "tick": 1606,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 22.113515043520568,
+        "y": 1.1325345138490996,
+        "z": -3.621729449044784
+      },
+      "value": 24,
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-18",
+      "tick": 1618,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 15.02872791715188,
+        "y": 1.5899567996719977,
+        "z": 1.1463990019097845
+      },
+      "projectileId": "projectile-6",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-19",
+      "tick": 1632,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "road-gun",
+      "position": {
+        "x": 22.11176034759628,
+        "y": 1.1329183510831744,
+        "z": -3.070112849953487
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-6",
+      "value": "hit",
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-20",
+      "tick": 1632,
+      "type": "damaged",
+      "targetId": "road-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 22.11176034759628,
+        "y": 1.1329183510831744,
+        "z": -3.070112849953487
+      },
+      "value": 18,
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-21",
+      "tick": 1632,
+      "type": "destroyed",
+      "entityId": "road-gun",
+      "position": {
+        "x": 23.018415140487537,
+        "y": 0.008000099661580874,
+        "z": -3.139407308339931,
+        "yaw": 3.1385931644964593,
+        "basis": {
+          "right": [
+            0.9999999999999944,
+            1.0603953906107532e-7,
+            0
+          ],
+          "up": [
+            -1.0603953906107532e-7,
+            0.9999999999999944,
+            -2.1465897026842222e-9
+          ],
+          "forward": [
+            -2.276233826258856e-16,
+            2.14658970268421e-9,
+            1
+          ]
+        }
+      },
+      "action": "shoot road-gun"
+    },
+    {
+      "id": "event-22",
+      "tick": 1822,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0.4577535721438683,
+        "y": 1.2873349589503027,
+        "z": -17.397896636753966
+      },
+      "projectileId": "projectile-7",
+      "action": "drive 18,-18"
+    },
+    {
+      "id": "event-23",
+      "tick": 1955,
+      "type": "impact",
+      "entityId": "ridge-gun",
+      "targetId": "scorched-east-cover",
+      "position": {
+        "x": 19.15,
+        "y": 1.7000202172783971,
+        "z": 7.188835451703828
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "projectileId": "projectile-7",
+      "value": "hit",
+      "action": "drive 18,-18"
+    },
+    {
+      "id": "event-24",
+      "tick": 2183,
+      "type": "shot",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0.7495805931093374,
+        "y": 1.2897016978486937,
+        "z": -17.899301581926284
+      },
+      "projectileId": "projectile-8",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-25",
+      "tick": 2231,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 16.30871501068676,
+        "y": 1.6121746854151981,
+        "z": -16.964462414239662
+      },
+      "projectileId": "projectile-9",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-26",
+      "tick": 2258,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 16.30871501068676,
+        "y": 1.6121746854151981,
+        "z": -16.964462414239662
+      },
+      "projectileId": "projectile-10",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-27",
+      "tick": 2258,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "normal": {
+        "x": 0.9800033168161472,
+        "y": 0,
+        "z": 0.19898115244753742
+      },
+      "projectileId": "projectile-9",
+      "value": "hit",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-28",
+      "tick": 2258,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "value": 24,
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-29",
+      "tick": 2285,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 16.30871501068676,
+        "y": 1.6121746854151981,
+        "z": -16.964462414239662
+      },
+      "projectileId": "projectile-11",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-30",
+      "tick": 2285,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "normal": {
+        "x": 0.9800033168161472,
+        "y": 0,
+        "z": 0.19898115244753742
+      },
+      "projectileId": "projectile-10",
+      "value": "hit",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-31",
+      "tick": 2285,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "value": 24,
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-32",
+      "tick": 2312,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 16.30871501068676,
+        "y": 1.6121746854151981,
+        "z": -16.964462414239662
+      },
+      "projectileId": "projectile-12",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-33",
+      "tick": 2312,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "normal": {
+        "x": 0.9800033168161472,
+        "y": 0,
+        "z": 0.19898115244753742
+      },
+      "projectileId": "projectile-11",
+      "value": "hit",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-34",
+      "tick": 2312,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "value": 24,
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-35",
+      "tick": 2339,
+      "type": "shot",
+      "entityId": "tank",
+      "position": {
+        "x": 16.30871501068676,
+        "y": 1.6121746854151981,
+        "z": -16.964462414239662
+      },
+      "projectileId": "projectile-13",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-36",
+      "tick": 2339,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "ridge-gun",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "normal": {
+        "x": 0.9800033168161472,
+        "y": 0,
+        "z": 0.19898115244753742
+      },
+      "projectileId": "projectile-12",
+      "value": "hit",
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-37",
+      "tick": 2339,
+      "type": "damaged",
+      "targetId": "ridge-gun",
+      "entityId": "tank",
+      "position": {
+        "x": 0.7840026534529179,
+        "y": 1.096321001891458,
+        "z": -17.84081507804197
+      },
+      "value": 18,
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-38",
+      "tick": 2339,
+      "type": "destroyed",
+      "entityId": "ridge-gun",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -18,
+        "yaw": 3.141592653589793
+      },
+      "action": "shoot ridge-gun"
+    },
+    {
+      "id": "event-39",
+      "tick": 2424,
+      "type": "impact",
+      "entityId": "tank",
+      "targetId": "terrain",
+      "position": {
+        "x": -32.20998139508029,
+        "y": 1.734723475976807e-18,
+        "z": -19.70328860702237
+      },
+      "normal": {
+        "x": -1.3993701920586738e-38,
+        "y": 1,
+        "z": -1.1770955120640897e-38
+      },
+      "projectileId": "projectile-13",
+      "value": "hit",
+      "action": "drive 16,22"
+    },
+    {
+      "id": "event-40",
+      "tick": 7617,
+      "type": "vehicle-arrived",
+      "entityId": "supply",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -32,
+        "yaw": 1.0516502125483707
+      },
+      "action": "wait arrival"
+    },
+    {
+      "id": "event-41",
+      "tick": 7617,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "complete",
+      "action": "wait arrival"
+    },
+    {
+      "id": "event-42",
+      "tick": 7617,
+      "type": "mission-ended",
+      "value": "won",
+      "cause": "objectives-complete",
+      "action": "wait arrival"
+    }
+  ],
+  "result": {
+    "outcome": "won",
+    "cause": "objectives-complete",
+    "missionId": "mission-9040",
+    "tick": 7617,
+    "elapsed": 126.94999999999408,
+    "shotsFired": 9,
+    "damageTaken": 0,
+    "medals": [
+      "undamaged"
+    ]
+  },
+  "finalHash": "ad8f39239d959931b199c36ff0d46565895bf2f9b8c46aaf24dbcc56c93fdcf5"
+}

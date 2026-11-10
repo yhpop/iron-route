@@ -1,0 +1,22 @@
+{
+  "route": "direct",
+  "attempt": "v01-opening",
+  "mode": "tape",
+  "verify": false,
+  "inputs": 1801,
+  "tick": 1800,
+  "phase": "playing",
+  "selectedConvoyChoiceId": null,
+  "hp": 64,
+  "truckHp": 100,
+  "truckArrived": false,
+  "shots": 0,
+  "alliedDamage": 0,
+  "failure": {
+    "reason": "diagnostic-opening-not-route"
+  },
+  "finalHash": "eff3d1262a549c9103d0dd884a135e046014f7c722a6bd1cbb6aeff86fc13f5e",
+  "specHash": "a5c1ba5f124a04bbf2cbb1f7650c63660d5e91f9fa50f4e54205beae3d81313c",
+  "sourceHashesHash": "9ca747074f368d81209a0fe547cc4931ed6c25909e511e143361c0e3826a144e",
+  "closureFiles": 31
+}

@@ -1,0 +1,49 @@
+{
+  "baseEntries": 1654,
+  "mismatches": [],
+  "physicalRoots": [
+    "work/src/campaign-simulation.js",
+    "work/src/campaign-world.js",
+    "work/src/ruined-depot-world-accelerated.js",
+    "work/src/terrain-candidate/combat-world-accelerated.js",
+    "work/src/battlefront-depot-front.js",
+    "work/src/session.js",
+    "work/src/campaign-input.js"
+  ],
+  "physicalClosure": {
+    "work/src/battlefront-depot-front.js": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+    "work/src/campaign-input.js": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f",
+    "work/src/campaign-simulation.js": "501dd62516c7b49e54242e0be1ca0149204748e779a16c2752e22548dc8fa3ae",
+    "work/src/campaign-world-accelerated.js": "bd1879bc34cafc2c4ce0b3207fa6d41aaf17742f7f10844b194883854966719f",
+    "work/src/campaign-world.js": "f649a72303cc9d86b4f7495d337dc8def1de89ec735ee17c26beb1c16755b1e6",
+    "work/src/collision-broadphase.js": "7c65a35ee156927f158e23fc47f7663f03d048786354fef4f7e0d5ad103be275",
+    "work/src/combat-relations.js": "10554eaa82bc585b662707c63d649732e291932d2ffe5e5c155480bd42472bd2",
+    "work/src/combat.js": "bbbadb16a3e992f46ab514f9e32c554972936301b35aed49134a18f253d449e6",
+    "work/src/crossfire-front.js": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+    "work/src/crossfire-v3-front.js": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9",
+    "work/src/crossfire-v4-front.js": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f",
+    "work/src/crushing.js": "f97e9e63736a8fab98413a1ecff4f131c114c211ed58850f652213b298677212",
+    "work/src/interceptor.js": "7d46bfd1a9d1bcf19468f35768548fc4a4f28f0853ff0af00814521181ed6b63",
+    "work/src/mission-runtime.js": "f9c34062bf6b76ee0fee8fa243278050bd29ff0e631ae14cf598635befe7ac34",
+    "work/src/player-config.js": "1950115c1aec52569d49e077dff9cdf5cfce0813ba1ca62bd381e8ac3a4e5197",
+    "work/src/ruined-depot-collision-data.js": "cff2b1cdc675a1203ec04fa83e2d4220b506a5f5e5c3763aff29a0fb7e4015e6",
+    "work/src/ruined-depot-layout.js": "3ab5ced6d8b924c5b14412c9cc375ea858ca9e40a371aea8411bbefe0adf8545",
+    "work/src/ruined-depot-world-accelerated.js": "8cfad7acf74f04f1c7939185a0f948ebb394c0811527f6d11ccecf7bd5d7a34f",
+    "work/src/scanned-cover-front.js": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1",
+    "work/src/scorched-front.js": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+    "work/src/sentry-rig.js": "23f3b7fdb83a228edf3dd7a9e4bf05558478c8113468cd641ef45ab6fdedf241",
+    "work/src/session.js": "7a58672a36bf64cccf2a49ea1369acfd16ebfcf83c459cad6154e0883903010b",
+    "work/src/tank-controller.js": "61e880363fb9b3a9ddbdb9059d5066e768101c2a5dcac18bd34d9ae134df8f44",
+    "work/src/terrain-candidate/combat-surface.js": "10404945f26983cb410f21b044810fcc2d85ac6e28a38d41eae90b837f8f9603",
+    "work/src/terrain-candidate/combat-world-accelerated.js": "92a435fbd24cee4b3cc8f6ad09b4a127bbd7aca0844d42c0374a62d1f4165987",
+    "work/src/terrain-candidate/heightfield.js": "f101cdac2b029c756a577687222fa314e8fc6b0b32dafedf447616146314920d",
+    "work/src/terrain-candidate/interceptor-mission.js": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+    "work/src/terrain-candidate/ridge-convoy.js": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+    "work/src/terrain-candidate/vendor/three-terrain/noise.js": "0bb467885e17befd4ea3563a2331c0c348fbd80f451c9352b965ec504dd72542",
+    "work/src/terrain-candidate/vertical-slice.js": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d"
+  },
+  "retainedReplays": {
+    "evidence/battlefront/bf2/replays/covered-generated-result.json.gz": "5a470daefbd47a83e045f772fe3bb4f3c568e1ab6bb0c4e2c66bdf21b810bb08",
+    "evidence/battlefront/bf2/replays/direct-generated-result.json.gz": "0d76b716b131103839fd8e9fcfb61de5aa74bc58cb44e6d0bbbdf1061dbc1361"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "boundary": "Read-only inventory audit, not a build or fresh replay",
+  "translationFileCount": 32,
+  "translationEntryCount": 393,
+  "newMissionInventoryComplete": true,
+  "mainSHA256": "11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5",
+  "pins": [
+    {
+      "file": "tests/sweep-acceleration-entry.test.mjs",
+      "line": 13,
+      "text": "const frozenCandidateMainSHA256='2f9e5103d6ff46f3ec162e54137b12f118a912417b5aeeb5108ff43a8af02e73';"
+    },
+    {
+      "file": "tests/sweep-acceleration-entry.test.mjs",
+      "line": 14,
+      "text": "const loadingExtractionMainSHA256='11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5';"
+    },
+    {
+      "file": "tests/sweep-acceleration-entry.test.mjs",
+      "line": 38,
+      "text": " assert.equal(baseline.files['src/main.js'].sha256,originalMainSHA256,'old performance-task baseline remains recorded');"
+    },
+    {
+      "file": "tests/sweep-acceleration-entry.test.mjs",
+      "line": 39,
+      "text": " const original=await readFile(path.join(root,'src/main.js'));assert.notEqual(loadingExtractionMainSHA256,frozenCandidateMainSHA256);assert.equal(hash(original),loadingExtractionMainSHA256);"
+    },
+    {
+      "file": "scripts/battlefront-bf2-audit.mjs",
+      "line": 12,
+      "text": "const report={boundary:'CPU only. Historical fixture identity is not new observed BF1 evidence.',geometry,resources,baseHeadFileSHA256:hash(readFileSync(resolve(out,'../sdd/bf2-base-head.json'))),changed,missing,added,current,assetFiles:assets.length,assetBytes:assets.reduce((n,[,v])=>n+v.bytes,0),assetIdentitySHA256:hash(JSON.stringify(assets)),legacyFixtureDrift:legacyDrift,baselineMainSHA256:old.files['src/main.js'].sha256};writeFileSync(resolve(out,'source-and-geometry-audit.json'),JSON.stringify(report,null,2)+'\\n');console.log(JSON.stringify({changed:changed.map(x=>x.file),added,missing,legacyDrift,geometry,resources}));"
+    },
+    {
+      "file": "scripts/inspect-002-opening.mjs",
+      "line": 65,
+      "text": "const output={provenance:'CPU-only: unchanged production main.js camera statements executed with Three.js; shipping GLB vertex meshes for art occlusion, image references omitted. Projection replay assumes one 60 Hz render per simulation step with renderTank=current tank (not observed browser interpolation). No browser pixels/device/performance/human acceptance.',cameraSource,touchExclusionModel:{viewports,cssSha256:createHash('sha256').update(readFileSync(new URL('../src/style.css',import.meta.url))).digest('hex'),portraitBottomInsets:[14,34],landscapeSideInsets:[14,44],padding:8,rects:touchExclusions},layouts:[]};"
+    }
+  ],
+  "translations": {
+    "index.html": {
+      "originalSHA256": "2f42dbe6626069160285e5f7fdef33ca1ef962b8a161b3311434ab68db0584c4",
+      "translatedSHA256": "2b90aeb5cec85c56d372e06b0dd349e6432a10e2651e1538191fbe6aa48a4a23",
+      "entries": 6
+    },
+    "src/campaign-input.js": {
+      "originalSHA256": "62cfc5a742b039c5dea8928b349af7b08ecda797504257989f8a92e47f0bcd1f",
+      "translatedSHA256": "48a15b998f56d20d629b1ee92691d8feda3c5ce5229dac3095797010f7d594c2",
+      "entries": 13
+    },
+    "src/gameplay-gestures.js": {
+      "originalSHA256": "253c8a5c3ee1a3f9060250b3b42f73800709e7ed694d1610c7a5d8111646e0d5",
+      "translatedSHA256": "c601fbe694107baf0f6b27ce84c5493758a8e2a520109f13357a9ec74da750bc",
+      "entries": 1
+    },
+    "src/main.js": {
+      "originalSHA256": "11e79899956451d04d9becae55f3c2be296efa2b99fe4f0bd808f96d2a09bde5",
+      "translatedSHA256": "e0b8ba3e6be5a8dbd4e3833fb12260709ccf99f5a5e301b3f8e347aaced58785",
+      "entries": 13
+    },
+    "src/campaign-ui.js": {
+      "originalSHA256": "394761e2d1fa51f57fb07fa3d0d2176b376d3d681b24fb0ed391b4aa270f8567",
+      "translatedSHA256": "03bab51585e26ecaee8076c84cdc0db70410b3c9caea5cf9d7848e4d4513cb3e",
+      "entries": 122
+    },
+    "src/threat-warnings.js": {
+      "originalSHA256": "8de7f09afbebe5d58be638aa1490dd539989759bce033cf570ffe4b339ef951d",
+      "translatedSHA256": "5550607fc126dc059f7e2514a525c4568d39be766390860de592111c129a6178",
+      "entries": 19
+    },
+    "src/startup-diagnostic.js": {
+      "originalSHA256": "62dd0a1ce84c6679ffc30b5842bb3ba3cfdf29995df8a6a8c6e916dd30dd9eec",
+      "translatedSHA256": "39b3f039a555760f022681762a5e49868415b5aa6fe09b0a5b36fea8ffbed5c9",
+      "entries": 8
+    },
+    "src/content/crush-flank.js": {
+      "originalSHA256": "653ab9fd997fd318789a71a6833b2ff7dc209f088595dffbb1c1f08196cd62ac",
+      "translatedSHA256": "c926a1e4eb3b50c7b8445dbbd95e160a863ce24625eb1a85a433e9fc2c8bf270",
+      "entries": 2
+    },
+    "src/terrain-candidate/combat-mission.js": {
+      "originalSHA256": "e17a68d6b0e0c9f02c9b6ab5eca81138f834fa5c7323f8696359657f0290e239",
+      "translatedSHA256": "4b034402c4bcfe2172184270f65f3201fde5c5bfdc366d6322d955980b0c2dd9",
+      "entries": 2
+    },
+    "src/terrain-candidate/ridge-convoy.js": {
+      "originalSHA256": "42b150d80c22f84ce21b0de3301d71515c5d42395fa68e3f677d095453853c21",
+      "translatedSHA256": "a21909d7be3221ec257e5613cc3497323684cda28604bc1eca7271e3c58004a8",
+      "entries": 7
+    },
+    "src/combat-feedback.js": {
+      "originalSHA256": "2117ec7e7c2e90fa4aa2cb873c3fb801a24144f9a78747f94ec0e3ad5b9888bf",
+      "translatedSHA256": "d99fe11e14e2681f0b50c3259b3a6a8914af36611dc0daab9a4919a9d7095a1f",
+      "entries": 7
+    },
+    "src/player-vehicles.js": {
+      "originalSHA256": "fad08713bca4a65bf3b2da8c2d4bb4f7d485ec66c3f1005a544e562f0401918f",
+      "translatedSHA256": "46c5b7ca1b9d9f63386431b4b6e3d6400a6d143538a33448ecd4f72eec0681a1",
+      "entries": 9
+    },
+    "src/scorched-front.js": {
+      "originalSHA256": "d59d09460be8d5ef230227531df228004dfeeb3e3103427624a7479311467e3b",
+      "translatedSHA256": "1f08db3434166c0bb2cb79f4f035cf4f4d5dc677bd1b8b33575fa035ecbb529f",
+      "entries": 2
+    },
+    "src/crossfire-front.js": {
+      "originalSHA256": "4a6b55c288ecd344e246fa96d9c2ec509c4dbbe9f33704da5badde6b535fa2b6",
+      "translatedSHA256": "cfcc074a107b8a9a2256f22eeb168c8de6e93b55eb41b92f166aec7a7216641f",
+      "entries": 2
+    },
+    "src/battlefield-guidance.js": {
+      "originalSHA256": "9040fcfcb7a56f0050ed3f3fdf839af5826c15b101d68fe359650e92cc80da23",
+      "translatedSHA256": "fdc094f35a008413f11e09e5c6e1160af97dac4510817c8b7478d01060c0e5d0",
+      "entries": 53
+    },
+    "src/player-vehicles-v3.js": {
+      "originalSHA256": "69ab18712fbc956dccd6ea235b5bb43bb1a63c3a164b5ce63f95b32374cad53a",
+      "translatedSHA256": "6604ad045e761598142389f704819c20c39e6c636b63e896bde70efd4229b018",
+      "entries": 3
+    },
+    "src/crossfire-v3-front.js": {
+      "originalSHA256": "ab2e834468e052c160178251530d3418cc17bee30db013aa99e94c5802d9d7b9",
+      "translatedSHA256": "25011616f71b0b4b9b91ca6bac4286818ba5e7be46a91301a0777dae978326ba",
+      "entries": 2
+    },
+    "src/crossfire-v4-front.js": {
+      "originalSHA256": "a1285097efdf7efc02350505e17efabdc6e2607363b06870f9c47f9ea0061e5f",
+      "translatedSHA256": "c9fc08bc0dd5a6ea7f9c113c3131ad60003fe7079caa4b0fd04c9bdd3407d0bb",
+      "entries": 2
+    },
+    "src/recovery-direction.js": {
+      "originalSHA256": "81b1defa74e29c889dfb357593817893206f2990a553cfa2cbac575d4c201108",
+      "translatedSHA256": "7e92efbe1b38bba507510b6747f5e10dc3b60ea4d716d7164e05c9d211b63dc3",
+      "entries": 6
+    },
+    "src/content/crafted20/south-wharf.js": {
+      "originalSHA256": "c475ff32f42520e2205ea229ca2e719731d0e604e432e7d1df25a9a0b8d74d16",
+      "translatedSHA256": "6b184ab514f896697f460c726a30fed64b9c594d788453bc4f4ffa1902e55aed",
+      "entries": 13
+    },
+    "src/content/crafted20/south-wharf-advanced.js": {
+      "originalSHA256": "390f0e6a16ccdaef4c865044768a8d8ce9593d797f1db3831bec2e131d7e44f5",
+      "translatedSHA256": "f8e0677c9a344f11918164b0a393f45c01e3a2503d412e4c184bc98c93d235e9",
+      "entries": 9
+    },
+    "src/content/crafted20/lockside.js": {
+      "originalSHA256": "014180300c7b7e790a7bc797ab5600d34e3f746f58aa4514b92a0deba0d06b6a",
+      "translatedSHA256": "f2871b411fc01729420e260be7437fafd75016071227bd9ea691063db44d0be4",
+      "entries": 25
+    },
+    "src/content/crafted20/rail-works.js": {
+      "originalSHA256": "3035718549828306c6ad5991a89c5c0f224ba00ee38d1b506d673878787d5e95",
+      "translatedSHA256": "05579be0c58a9593095775a13bbb59d309becd0eeab4d49bd199b74fd6dc8ec7",
+      "entries": 24
+    },
+    "src/content/crafted20/north-harbor.js": {
+      "originalSHA256": "42665972af459a0423eb93914ff155421115853e997bf1bb0059f5b9e3b0286e",
+      "translatedSHA256": "d00604c04d1ef3f2e28e739c3f10fe6d4c8a2fc416def1379351b8b00ef607c1",
+      "entries": 26
+    },
+    "src/content/optional-records.js": {
+      "originalSHA256": "793035ef7cd48b2f5c2836504dcc2335cd95df0ad8d9cde269b1ba30da27f7f2",
+      "translatedSHA256": "0ee0e0dfdc8174db9f6f7b09d6243b4ecc8475eac9870ab0ef7a8a208a878b65",
+      "entries": 2
+    },
+    "src/content/breach-cover.js": {
+      "originalSHA256": "7b98468b2ca799e503625acc6f06c231a1d616f23f2d9c3eb652caef61c5af58",
+      "translatedSHA256": "b70a08f8373e068b07903cd6d72379319a33168b30d6b2dec61f2fb61ddf1058",
+      "entries": 2
+    },
+    "src/terrain-candidate/interceptor-mission.js": {
+      "originalSHA256": "cd439da72691a7b721f7757152909b40fbc3cf7426d59118aec11b27f9207538",
+      "translatedSHA256": "8dd04602bf83990acfea7e82567a4358e6be8e34e9f1a7a7b5c95b35639a6cf8",
+      "entries": 2
+    },
+    "src/terrain-candidate/vertical-slice.js": {
+      "originalSHA256": "ad7ec5f7feab7ef459766d668c3a20505e98efd5553ea637f862cf4a711e207d",
+      "translatedSHA256": "f1d920e1688773baa11254902f99e42430aa111035d0e7f29612e0a620ca4e42",
+      "entries": 2
+    },
+    "src/scanned-cover-front.js": {
+      "originalSHA256": "55c8bfc0ed6a939fed752e9182c4bc68279b60d2fbf7e60438ff738abc0250d1",
+      "translatedSHA256": "fc19ddeb2c7e400123e5ccea4a46b3ded9aa9686e03199f7f3bd12c4c99745b0",
+      "entries": 1
+    },
+    "src/ruined-depot-front.js": {
+      "originalSHA256": "54320a398ac2c724d1042fa8237e185bb662ef09a168db276cdeb95fd952e921",
+      "translatedSHA256": "1931c0fd3ca3f9eed0206a406112bc6c5093a7a557c9b77abc6dc84540d8cdad",
+      "entries": 2
+    },
+    "src/battlefront-depot-front.js": {
+      "originalSHA256": "fdbd360c99bf16c113926fad85265463557af2b64829f7b0844d62194e69701c",
+      "translatedSHA256": "d4f4ee19a90f8a05c80a3d83184b9abe1926bf415a4de6184dc465e37e209d16",
+      "entries": 2
+    },
+    "src/loading-extraction-front.js": {
+      "originalSHA256": "3612649e944300ae85e4a2dc641adf825edad540c52c5aeffe46c9b8c061348c",
+      "translatedSHA256": "02fc99e76aba211b90015248a5603cd30289cba9541c4cb5a46b44060fce5e47",
+      "entries": 4
+    }
+  }
+}

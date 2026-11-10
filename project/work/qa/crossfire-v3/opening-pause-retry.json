@@ -1,0 +1,112 @@
+{
+  "missionId": "mission-9051",
+  "specHash": "9c07cea89919ef34bcd051eb14b41addace0a2ad5ba5375e16dbb96c28950234",
+  "openingTicks": 360,
+  "pauseTicks": 120,
+  "pauseExact": true,
+  "retryExact": true,
+  "events": [
+    {
+      "id": "event-1",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "receive-orders",
+      "value": "complete"
+    },
+    {
+      "id": "event-2",
+      "tick": 1,
+      "type": "objective-changed",
+      "entityId": "escort-supply",
+      "value": "active"
+    },
+    {
+      "id": "event-3",
+      "tick": 121,
+      "type": "shot",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -8.852286949528064,
+        "y": 2.461311180013493,
+        "z": 10.721569575707903
+      },
+      "projectileId": "projectile-1"
+    },
+    {
+      "id": "event-4",
+      "tick": 145,
+      "type": "shot",
+      "entityId": "allied-support",
+      "position": {
+        "x": -5.147349740537917,
+        "y": 1.4309194909218013,
+        "z": 16.27897538919312
+      },
+      "projectileId": "projectile-2"
+    },
+    {
+      "id": "event-5",
+      "tick": 156,
+      "type": "impact",
+      "entityId": "hostile-flanker",
+      "targetId": "allied-support",
+      "position": {
+        "x": -4.412735220305102,
+        "y": 1.4962525615599884,
+        "z": 17.38089716954233
+      },
+      "normal": {
+        "x": -0.554700196225229,
+        "y": 0,
+        "z": -0.8320502943378437
+      },
+      "projectileId": "projectile-1",
+      "value": "hit"
+    },
+    {
+      "id": "event-6",
+      "tick": 156,
+      "type": "damaged",
+      "targetId": "allied-support",
+      "entityId": "hostile-flanker",
+      "position": {
+        "x": -4.412735220305102,
+        "y": 1.4962525615599884,
+        "z": 17.38089716954233
+      },
+      "value": 12
+    },
+    {
+      "id": "event-7",
+      "tick": 176,
+      "type": "impact",
+      "entityId": "allied-support",
+      "targetId": "hostile-flanker",
+      "position": {
+        "x": -9.098111841556992,
+        "y": 2.3153696257285867,
+        "z": 10.352832237664478
+      },
+      "normal": {
+        "x": 0.5547001962252291,
+        "y": 0,
+        "z": 0.8320502943378437
+      },
+      "projectileId": "projectile-2",
+      "value": "hit"
+    },
+    {
+      "id": "event-8",
+      "tick": 176,
+      "type": "damaged",
+      "targetId": "hostile-flanker",
+      "entityId": "allied-support",
+      "position": {
+        "x": -9.098111841556992,
+        "y": 2.3153696257285867,
+        "z": 10.352832237664478
+      },
+      "value": 12
+    }
+  ]
+}

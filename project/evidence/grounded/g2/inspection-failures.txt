@@ -1,0 +1,3 @@
+Read-only inspection 14:13 UTC: grep output piped to head emitted grep: write error: Broken pipe; pipeline overall exit0. No files changed by inspection.
+Read-only inspection 14:15 UTC: grep work/src/ridge-convoy.js: No such file or directory (actual module under content); no source edit caused by this inspection.
+Read-only inspection 14:15 UTC: cat work/src/content/ridge-convoy.js missing; actual location not needed. Error preserved; no production edits.

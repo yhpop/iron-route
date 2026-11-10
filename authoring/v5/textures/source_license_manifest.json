@@ -1,0 +1,129 @@
+{
+  "retrieved_at_utc": "2026-10-04T03:24:37.125240+00:00",
+  "source": "Poly Haven",
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://polyhaven.com/license",
+  "license_evidence_summary": "Official license page states all Poly Haven assets are CC0; commercial use, modification and redistribution permitted, without required attribution. Both official asset pages display CC0 License.",
+  "license_evidence_quote": "Our assets are all licensed as CC0",
+  "license_verified_at_utc": "2026-10-04",
+  "assets": [
+    {
+      "id": "worn_asphalt",
+      "title": "Worn Asphalt",
+      "author": "Amal Kumar",
+      "asset_page": "https://polyhaven.com/a/worn_asphalt",
+      "physical_tile_width_m": 2.0,
+      "physical_scale_evidence": "Official asset page: 2m wide; 2K 10.2px/cm",
+      "normal_convention": "OpenGL (official page Normal (GL), nor_gl map)"
+    },
+    {
+      "id": "damaged_concrete_floor",
+      "title": "Damaged Concrete Floor",
+      "author": "Rob Tuytel",
+      "asset_page": "https://polyhaven.com/a/damaged_concrete_floor",
+      "physical_tile_width_m": 4.5,
+      "physical_scale_evidence": "Official asset page: 4.5m wide; 2K 4.6px/cm",
+      "normal_convention": "OpenGL (official page Normal (GL), nor_gl map)"
+    }
+  ],
+  "normal_map_note": "OpenGL normal maps, not DirectX. Use diffuse as sRGB and roughness/normal as Non-Color. These files are original downloaded 2K JPEG maps, with no image editing.",
+  "total_texture_bytes": 19035221,
+  "files": [
+    {
+      "asset": "worn_asphalt",
+      "map": "diff",
+      "filename": "worn_asphalt_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_diff_2k.jpg",
+      "expected_bytes": 3573942,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/worn_asphalt_diff_2k.jpg",
+      "bytes": 3573942,
+      "sha256": "8313d3f8d25515d6ef0be59d461cdeb0feb484694eae385711ecf688c0afa4de",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "RGB",
+      "format": "JPEG"
+    },
+    {
+      "asset": "worn_asphalt",
+      "map": "rough",
+      "filename": "worn_asphalt_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_rough_2k.jpg",
+      "expected_bytes": 1823718,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/worn_asphalt_rough_2k.jpg",
+      "bytes": 1823718,
+      "sha256": "71572c4d7f3b4f33bd45f2b25368b853101e58c85c826a7109bab851eb847a6a",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "L",
+      "format": "JPEG"
+    },
+    {
+      "asset": "worn_asphalt",
+      "map": "nor_gl",
+      "filename": "worn_asphalt_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_nor_gl_2k.jpg",
+      "expected_bytes": 5863366,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/worn_asphalt_nor_gl_2k.jpg",
+      "bytes": 5863366,
+      "sha256": "114db3391e7d74c03758b06c8af2901a2c9392cf4cb37e7a8a3254a3235ce63e",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "RGB",
+      "format": "JPEG"
+    },
+    {
+      "asset": "damaged_concrete_floor",
+      "map": "diff",
+      "filename": "damaged_concrete_floor_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/damaged_concrete_floor/damaged_concrete_floor_diff_2k.jpg",
+      "expected_bytes": 2655011,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/damaged_concrete_floor_diff_2k.jpg",
+      "bytes": 2655011,
+      "sha256": "966eb64db1609b43689280ddaa8b7e501855faec050deb2ede0665fc97862783",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "RGB",
+      "format": "JPEG"
+    },
+    {
+      "asset": "damaged_concrete_floor",
+      "map": "rough",
+      "filename": "damaged_concrete_floor_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/damaged_concrete_floor/damaged_concrete_floor_rough_2k.jpg",
+      "expected_bytes": 2547184,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/damaged_concrete_floor_rough_2k.jpg",
+      "bytes": 2547184,
+      "sha256": "16015336fdc9b85c89ac21448782eab5f1485445234ea51794b266482fea237f",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "L",
+      "format": "JPEG"
+    },
+    {
+      "asset": "damaged_concrete_floor",
+      "map": "nor_gl",
+      "filename": "damaged_concrete_floor_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/damaged_concrete_floor/damaged_concrete_floor_nor_gl_2k.jpg",
+      "expected_bytes": 2572000,
+      "local_path": "/workspace/scratch/08f39b8da479/tank_quality_v5_20261004/textures/damaged_concrete_floor_nor_gl_2k.jpg",
+      "bytes": 2572000,
+      "sha256": "2355737257e06e69e4952966f00c3667241a3eb8902e89ace66ce1441ed58a6c",
+      "pixel_dimensions": [
+        2048,
+        2048
+      ],
+      "color_mode": "RGB",
+      "format": "JPEG"
+    }
+  ]
+}

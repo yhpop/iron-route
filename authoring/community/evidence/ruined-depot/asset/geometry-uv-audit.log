@@ -1,0 +1,157 @@
+{
+  "modules": {
+    "workshop": {
+      "sourceVertexCount": 155,
+      "sourcePolygonCount": 117,
+      "sourceTriangleCount": 291,
+      "allVertexCoordinatesPreserved": true,
+      "allPolygonIndicesPreserved": true,
+      "originalUVHashesPreserved": {
+        "UV1": "562b81894c1f301840e4da0396797227d198365545a73bc5127cebfe05f9ffab",
+        "UV2": "23b03f059507309b1b90a2880545da17f222079e44a62c5e653d5f146f0e70e2"
+      },
+      "exportedUniquePositionsMatchSource": true,
+      "surfaceAreaM2": 184.47399977349414,
+      "atlasUVArea": 0.26482113777406996,
+      "meanAreaTexelsPerMetre": 77.59588553797361,
+      "minMaxTriangleTexelsPerMetre": [
+        55.5904168399954,
+        95.81987695096272
+      ],
+      "runtimeBounds": {
+        "min": [
+          -4.79998779296875,
+          0.0,
+          -6.265538215637207
+        ],
+        "max": [
+          4.799991130828857,
+          3.299938678741455,
+          6.265539646148682
+        ],
+        "size": [
+          9.599978923797607,
+          3.299938678741455,
+          12.531077861785889
+        ]
+      }
+    },
+    "broken-corner": {
+      "sourceVertexCount": 164,
+      "sourcePolygonCount": 103,
+      "sourceTriangleCount": 308,
+      "allVertexCoordinatesPreserved": true,
+      "allPolygonIndicesPreserved": true,
+      "originalUVHashesPreserved": {
+        "UV1": "f10eb858720e0c53cfb0df2d119bbbd44f04e4591990065339c72ceb1b6add1c",
+        "UV2": "24cbd91547eae3333b9664fa861cd69d542f87901451b5d0252423e730dd06f5"
+      },
+      "exportedUniquePositionsMatchSource": true,
+      "surfaceAreaM2": 98.25855820797733,
+      "atlasUVArea": 0.14085407705998473,
+      "meanAreaTexelsPerMetre": 77.54065581550572,
+      "minMaxTriangleTexelsPerMetre": [
+        0.0,
+        1050.2675849515683
+      ],
+      "runtimeBounds": {
+        "min": [
+          -5.014026165008545,
+          0.0,
+          -5.235354900360107
+        ],
+        "max": [
+          5.014026165008545,
+          3.2999379634857178,
+          5.235354900360107
+        ],
+        "size": [
+          10.02805233001709,
+          3.2999379634857178,
+          10.470709800720215
+        ]
+      }
+    },
+    "window-wall": {
+      "sourceVertexCount": 89,
+      "sourcePolygonCount": 57,
+      "sourceTriangleCount": 158,
+      "allVertexCoordinatesPreserved": true,
+      "allPolygonIndicesPreserved": true,
+      "originalUVHashesPreserved": {
+        "UV1": "3ad81315af81813e55d2f6853c1ad0765822f553eb12086dd0d7c3ff7de01b86",
+        "UV2": "645cd7c7605069374de1ce8c9482c911ffab953d5bb08cd133e15e124c0d9615"
+      },
+      "exportedUniquePositionsMatchSource": true,
+      "surfaceAreaM2": 44.62752403756531,
+      "atlasUVArea": 0.0639079533240752,
+      "meanAreaTexelsPerMetre": 77.50076879822238,
+      "minMaxTriangleTexelsPerMetre": [
+        67.91244061941934,
+        77.68946052251687
+      ],
+      "runtimeBounds": {
+        "min": [
+          -4.800000190734863,
+          0.0,
+          -0.22666016221046448
+        ],
+        "max": [
+          4.800000190734863,
+          3.2999379634857178,
+          0.22666016221046448
+        ],
+        "size": [
+          9.600000381469727,
+          3.2999379634857178,
+          0.45332032442092896
+        ]
+      }
+    }
+  },
+  "atlasOverlapCheck": {
+    "positiveAreaIntersectionsAbove1eMinus8": [],
+    "trianglePairsChecked": 286146
+  },
+  "totalAtlasCoverage": 0.4695831681581299,
+  "images": [
+    {
+      "bufferView": 4,
+      "mimeType": "image/png",
+      "name": "normal"
+    },
+    {
+      "bufferView": 5,
+      "mimeType": "image/png",
+      "name": "baseColor"
+    },
+    {
+      "bufferView": 6,
+      "mimeType": "image/png",
+      "name": "roughness"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Depot weathered concrete \u2014 baked",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ]
+}
+Blender 4.3.2
+Read blend: "/workspace/scratch/08f39b8da479/ruined_depot_candidate/originals/ruined-depot/evidence/lfa-recovered-two-uv-audit.blend"
+Read blend: "/workspace/scratch/08f39b8da479/ruined_depot_candidate/evidence/ruined-depot/asset/ruins-baked-preserved-uv.blend"
+
+Blender quit
